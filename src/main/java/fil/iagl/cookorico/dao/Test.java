@@ -7,5 +7,5 @@ public interface Test {
 
 	@Select("Select id from test")
 	public List<Integer> idlist();
-
+	
 }

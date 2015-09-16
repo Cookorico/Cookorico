@@ -1,5 +1,7 @@
 package fil.iagl.cookorico;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
@@ -12,12 +14,16 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import fil.iagl.cookorico.dao.Test;
+import fil.iagl.cookorico.dao.UserDao;
 
-@EnableAutoConfiguration
+
 @RestController
+@EnableAutoConfiguration
 @MapperScan(basePackages = "fil.iagl.cookorico.dao")
+@SpringBootApplication
 public class CookoricoApplication {
 
 	@Autowired
@@ -26,6 +32,9 @@ public class CookoricoApplication {
 	@Autowired
 	private Test test;
 
+	@Autowired
+	private UserDao userinterface;
+	
 	@Bean
 	public DataSource dataSource() {
 
@@ -39,14 +48,15 @@ public class CookoricoApplication {
 
 	}
 
-	@RequestMapping("/")
+	@RequestMapping("ok")
 	public String test() {
 		System.out.println("Debut Test DB");
 		System.out.println(test.idlist());
 		test.idlist().forEach(System.out::println);
 		return "COUCOU TOI ";
 	}
-
+	
+	
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
 		final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
@@ -55,7 +65,6 @@ public class CookoricoApplication {
 	}
 
 	public static void main(String[] args) {
-
 		SpringApplication.run(CookoricoApplication.class, args);
 	}
 }
