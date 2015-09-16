@@ -2,13 +2,16 @@ package fil.iagl.cookorico.entity;
 
 import java.sql.Date;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import lombok.Getter;
 import lombok.Setter;
 
 
+@JsonSerialize
 @Getter
 @Setter
-public class User {
+public class Member {
 	
 	private int id_user;
 	private String username;
@@ -19,4 +22,7 @@ public class User {
 	private char gender;
 	private String city;
 
+	public Member(){
+		
+	}
 }
