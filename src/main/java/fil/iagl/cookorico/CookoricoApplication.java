@@ -10,10 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import fil.iagl.cookorico.dao.Test;
 
 @EnableAutoConfiguration
 @RestController
@@ -22,9 +19,6 @@ public class CookoricoApplication {
 
 	@Autowired
 	private DataSource dataSource;
-
-	@Autowired
-	private Test test;
 
 	@Bean
 	public DataSource dataSource() {
@@ -39,16 +33,8 @@ public class CookoricoApplication {
 
 	}
 
-	@RequestMapping("/")
-	public String test() {
-		System.out.println("Debut Test DB");
-		System.out.println(test.idlist());
-		test.idlist().forEach(System.out::println);
-		return "COUCOU TOI ";
-	}
-
 	@Bean
-	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
+	public SqlSessionFactory sqlSessionFactory() throws Exception {
 		final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource);
 		return sessionFactory.getObject();
