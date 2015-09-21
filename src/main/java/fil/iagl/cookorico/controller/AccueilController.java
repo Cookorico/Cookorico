@@ -20,7 +20,7 @@ public class AccueilController {
 	
 	@RequestMapping("accueil")
 	public List<Member> accueil(){
-		List<Member> lst = userinterface.completelist();
+		List<Member> lst = userinterface.getAllMembers();
 		for(Member m : lst){
 			System.out.println(m.getUsername());
 			
