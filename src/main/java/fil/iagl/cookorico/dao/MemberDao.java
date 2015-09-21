@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Select;
 
 import fil.iagl.cookorico.entity.Member;
 
-public interface UserDao {
+public interface MemberDao {
 
 	@Select("Select id_user from MEMBER")
 	public List<Integer> idlist();
