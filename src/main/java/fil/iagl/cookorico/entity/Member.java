@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class Member {
 	
-	private int id_user;
+	private int id_member;
 	private String username;
 	private String firstname;
 	private String lastname;
