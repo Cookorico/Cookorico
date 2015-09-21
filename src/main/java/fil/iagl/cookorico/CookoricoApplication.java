@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import fil.iagl.cookorico.dao.Test;
 
 @EnableAutoConfiguration
 @RestController
@@ -22,9 +21,6 @@ public class CookoricoApplication {
 
 	@Autowired
 	private DataSource dataSource;
-
-	@Autowired
-	private Test test;
 
 	@Bean
 	public DataSource dataSource() {
@@ -42,9 +38,9 @@ public class CookoricoApplication {
 	@RequestMapping("/")
 	public String test() {
 		System.out.println("Debut Test DB");
-		System.out.println(test.idlist());
-		test.idlist().forEach(System.out::println);
-		return "COUCOU TOI ";
+		//System.out.println(test.idlist());
+		//test.idlist().forEach(System.out::println);
+		return "CONTENU PAGE '/' ";
 	}
 
 	@Bean
