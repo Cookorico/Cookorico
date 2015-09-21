@@ -1,5 +1,7 @@
 package fil.iagl.cookorico;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
@@ -10,7 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import fil.iagl.cookorico.entity.Member;
 
 
 @EnableAutoConfiguration
@@ -31,8 +36,20 @@ public class CookoricoApplication {
 		ds.setDriverClassName("org.postgresql.Driver");
 		ds.setMaxWait(25);
 		return ds;
-
 	}
+	
+	@RequestMapping("/test")
+	public String accueil(){
+		System.out.println("Display test");
+		/*List<Member> lst = userinterface.completelist();
+		for(Member m : lst){
+			System.out.println(m.getUsername());
+			
+		}
+		return lst;*/
+		return "test ";
+	}
+	
 
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {

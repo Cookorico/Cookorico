@@ -12,7 +12,6 @@ import fil.iagl.cookorico.entity.Member;
 @RestController
 public class AccueilController {
 	
-	
 	private static final String phrase = ("phrase de presentation");
 	
 	@Autowired
