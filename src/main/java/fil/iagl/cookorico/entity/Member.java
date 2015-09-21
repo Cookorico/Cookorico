@@ -4,13 +4,11 @@ import java.sql.Date;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 
 @JsonSerialize
-@Getter
-@Setter
+@Data
 public class Member {
 	
 	private int id_user;
@@ -21,10 +19,6 @@ public class Member {
 	private Date birthday;
 	private char gender;
 	private String city;
-
-	public Member(){
-		
-	}
 }
 
 

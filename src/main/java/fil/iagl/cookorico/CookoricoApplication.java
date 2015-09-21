@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -38,9 +38,9 @@ public class CookoricoApplication {
 	@RequestMapping("/")
 	public String test() {
 		System.out.println("Debut Test DB");
-		//System.out.println(test.idlist());
-		//test.idlist().forEach(System.out::println);
-		return "CONTENU PAGE '/' ";
+		System.out.println(test.idlist());
+		test.idlist().forEach(System.out::println);
+		return "COUCOU TOI ";
 	}
 
 	@Bean
