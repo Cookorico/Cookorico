@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class Member {
 	
-	private int idUser;
+	private Integer idUser;
 	private String username;
 	private String firstName;
 	private String lastName;
@@ -19,11 +19,11 @@ public class Member {
 	private String password;
 	private String salt;
 	private Date birthday;
-	private char gender;
+	private Character gender;
 	private String city;
-	private int currentAvatar;
+	private Integer currentAvatar;
 	private Date creationDate;
 	private Date modifDate;
-	private boolean disabled;
+	private Boolean disabled;
 	
 }
