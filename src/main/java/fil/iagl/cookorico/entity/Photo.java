@@ -9,7 +9,6 @@ import lombok.Data;
 @JsonSerialize
 @Data
 public class Photo {
-	
 	private int idPhoto;
 	private Member member;
 	private String filePath;
@@ -18,4 +17,5 @@ public class Photo {
 	private String description;
 	private Timestamp creationDate;
 	private boolean disabled;
+
 }

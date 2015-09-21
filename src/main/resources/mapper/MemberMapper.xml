@@ -5,7 +5,7 @@
 <mapper namespace='UserMapper'>
 
   <!-- Instead of referencing Fully Qualified Class Names we can register Aliases in mybatis-config.xml and use Alias names. -->
-  <resultMap type='Member' id='MemberResult'>
+  <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
     <id property='memberId' column='id_member'/>
     <result property='username' column='username'/>
     <result property='firstname' column='firstname'/>
@@ -20,27 +20,12 @@
     <result property='disabled' column='disabled'/>
   </resultMap>
 
-  <select id='getMemberById' parameterType='int' resultType='Member'>
-     SELECT 
-      id_member, 
-     FROM MEMBER
-     WHERE id_member = #{memberId}
+  <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
+    <id property="id" column="id_member" />
+  </resultMap>
+	
+  <select id="getAllMembers" resultType="memberResultMap">
+    SELECT * FROM member
   </select>
-
-  <select id='getAllMembers' resultMap='MemberResult'>
-   SELECT * FROM MEMBER
-  </select>
-
-  <insert id='insertMember' parameterType='Member' useGeneratedKeys='true' keyProperty='userId'>
-   <!-- TO DO WITH PASSWORD -->
-  </insert>
-
-  <update id='updateMember' parameterType='Member'>
-    <!-- TO DO -->
-  </update>
-
-  <delete id='deleteMember' parameterType='int'>
-    DELETE FROM MEMBER WHERE ID_MEMBER = #{idMember}
-  </delete>
 
 </mapper>

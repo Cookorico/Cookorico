@@ -10,22 +10,18 @@ import fil.iagl.cookorico.dao.MemberDao;
 import fil.iagl.cookorico.entity.Member;
 
 @RestController
-public class AccueilController {
-	
-	private static final String phrase = ("phrase de presentation");
-	
+public class HomeController {
+
 	@Autowired
 	private MemberDao userinterface;
-	
-	@RequestMapping("accueil")
-	public List<Member> accueil(){
-		System.out.println("Display accueil");
-		/*List<Member> lst = userinterface.completelist();
-		for(Member m : lst){
-			System.out.println(m.getUsername());
-			
+
+	@RequestMapping("home")
+	public List<Member> home() {
+		final List<Member> members = userinterface.getAllMembers();
+		for (final Member member : members) {
+			System.out.println(member.getUsername());
 		}
-		return lst;*/
-		return userinterface.completelist();
+		return members;
 	}
+
 }
