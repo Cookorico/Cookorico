@@ -10,6 +10,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,7 @@ import fil.iagl.cookorico.entity.Member;
 @EnableAutoConfiguration
 @RestController
 @MapperScan(basePackages = "fil.iagl.cookorico.dao")
+@SpringBootApplication
 public class CookoricoApplication {
 
 	@Autowired
