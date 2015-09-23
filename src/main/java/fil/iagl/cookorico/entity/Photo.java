@@ -9,12 +9,14 @@ import lombok.Data;
 @JsonSerialize
 @Data
 public class Photo {
-	private int idPhoto;
+	
+	private Integer idPhoto;
 	private Member member;
 	private String filePath;
 	private String fileName;
 	private String title;
 	private String description;
 	private Timestamp creationDate;
-	private boolean disabled;
+	private Boolean disabled;
+
 }

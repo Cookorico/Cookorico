@@ -6,29 +6,24 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 @JsonSerialize
-@Getter
-@Setter
+@Data
 public class Member {
 
-	private int		idMember;
-	private String	username;
-	private String	firstname;
-	private String	lastname;
-	private String	email;
-	private Date	birthday;
-	private char	gender;
-	private String	city;
+	private Integer idMember;
+	private String username;
+	private String firstname;
+	private String lastname;
+	private String email;
+	private Date birthday;
+	private Character gender;
+	private String city;
 	private Photo currentAvatar;
 	private List<Photo> photosOfUser;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
-	private boolean disabled;
+	private Boolean disabled;
 
-	public Member() {
-
-	}
 }
