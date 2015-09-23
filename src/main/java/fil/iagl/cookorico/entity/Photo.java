@@ -17,5 +17,4 @@ public class Photo {
 	private String description;
 	private Timestamp creationDate;
 	private boolean disabled;
-
 }

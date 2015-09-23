@@ -14,4 +14,6 @@ public class Tag {
 	private String name;
 	private String tagType; //TO DO ENUM
 	private Timestamp creationDate;
+	private Timestamp creationDateTagToRecipe;
+	private Timestamp creationDateTagToIngredient;
 }

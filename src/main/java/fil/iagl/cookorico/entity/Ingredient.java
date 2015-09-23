@@ -19,4 +19,7 @@ public class Ingredient {
 	private boolean validation;
 	private boolean disabled;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
+	private List<Photo> photos;
+	private int quantity; //can be null
+	private String unitOfMeasurement; //can be null
 }
