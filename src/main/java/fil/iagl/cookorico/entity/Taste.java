@@ -10,10 +10,10 @@ import lombok.Data;
 @Data
 public class Taste {
 	
-	private int idTaste;
+	private Integer idTaste;
 	private Member member;
 	private Ingredient ingredient;
-	private int grading;
+	private Integer grading;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
 
