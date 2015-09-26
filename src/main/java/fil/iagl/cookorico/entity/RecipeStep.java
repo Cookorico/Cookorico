@@ -11,13 +11,13 @@ import lombok.Data;
 @Data
 public class RecipeStep {
 	
-	private int idRecipeStep;
+	private Integer idRecipeStep;
 	private Recipe recipe;
-	private int rank;
+	private Integer rank;
 	private String name;
 	private String description;
-	private int durationTime;
+	private Integer durationTime;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
-	private boolean disabled;
+	private Boolean disabled;
 }

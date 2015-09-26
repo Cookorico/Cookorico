@@ -11,7 +11,8 @@ import lombok.Data;
 @JsonSerialize
 @Data
 public class Ingredient {
-	private int idIngredient;
+
+	private Integer idIngredient;
 	private String name;
 	private String description;
 	private Timestamp creationDate;
@@ -20,6 +21,7 @@ public class Ingredient {
 	private boolean disabled;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<Photo> photos;
-	private int quantity; //can be null
+	private Integer quantity; //can be null
 	private String unitOfMeasurement; //can be null
+
 }
