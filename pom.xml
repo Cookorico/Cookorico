@@ -26,15 +26,15 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,40 +70,114 @@
 			<version>9.3-1100-jdbc41</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>angularjs</artifactId>
+			<version>1.3.8</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jasmine</artifactId>
+			<version>2.0.0</version>
+			<scope>test</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-cypher-compiler-1.9</artifactId>
-			<version>2.0.3</version>
-		</dependency>
-		
-			<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.16.6</version>
-		<scope>provided</scope>
-	</dependency>
 
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-amqp</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j-cypher-compiler-2.1</artifactId>
-				<version>2.1.5</version>
-			</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.6</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+
 	</dependencies>
 
+
 	<build>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>${project.build.directory}/generated-resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<!-- Serves *only* to filter the wro.xml so it can get an absolute 
+							path for the project -->
+						<id>copy-resources</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/wro</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/wro</directory>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>ro.isdc.wro4j</groupId>
+				<artifactId>wro4j-maven-plugin</artifactId>
+				<version>1.7.6</version>
+				<executions>
+					<execution>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+					<cssDestinationFolder>${project.build.directory}/generated-resources/static/css</cssDestinationFolder>
+					<jsDestinationFolder>${project.build.directory}/generated-resources/static/js</jsDestinationFolder>
+					<wroFile>${project.build.directory}/wro/wro.xml</wroFile>
+					<extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
+					<contextFolder>${basedir}/src/main/wro</contextFolder>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.webjars</groupId>
+						<artifactId>jquery</artifactId>
+						<version>2.1.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.webjars</groupId>
+						<artifactId>angularjs</artifactId>
+						<version>1.3.8</version>
+					</dependency>
+					<dependency>
+						<groupId>org.webjars</groupId>
+						<artifactId>bootstrap</artifactId>
+						<version>3.2.0</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
