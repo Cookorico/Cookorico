@@ -21,8 +21,8 @@ import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
 
 import fil.iagl.cookorico.security.CsrfHeaderFilter;
 
-@MapperScan(basePackages = "fil.iagl.cookorico.dao")
 @SpringBootApplication
+@MapperScan( "fil.iagl.cookorico.dao")
 public class CookoricoApplication {
 
 	@Autowired
@@ -71,5 +71,6 @@ public class CookoricoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CookoricoApplication.class, args);
+		
 	}
 }
