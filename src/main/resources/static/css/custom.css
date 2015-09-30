@@ -1,0 +1,106 @@
+#ALaUne {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.thumbnail-carousel {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 0;
+    border: none;
+    background-color: none;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    opacity: .5;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: none;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.right {
+    left: auto;
+    right: 0;
+    background-image: none;
+}
+
+.carousel-control {
+    padding-top:10.25%;
+    width:5%;
+}
+
+
+#logo{
+    padding-bottom:15px; 
+    padding-top: 15px;
+}
+
+
+#screen-website{
+    margin: auto;
+    border-bottom: 1px solid;
+}
+
+#screen-website > img {
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+.comment-block {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    margin: 10px; 
+}
+
+.comment-thumbnails {
+    display: inline-block;
+    width: 33%;
+    max-height: 250px;
+    height: 250px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+
+
+.avis {
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #97AFB8;
+        margin-top: 100px;
+
+}
+
+.footer-text {
+    color: white;
+}
+
+#menuLogin {
+    margin-top: 5px;
+    float: right;
+    
+}
