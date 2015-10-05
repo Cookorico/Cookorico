@@ -1,29 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Hello AngularJS</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<style type="text/css">
-[ng\:cloak], [ng-cloak], .ng-cloak {
-	display: none !important;
-}
-</style>
-</head>
+    <head>
+        <title>Home</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
 
-<body ng-app="hello" ng-cloak class="ng-cloak">
-	<div ng-controller="navigation" class="container">
-		<ul class="nav nav-pills" role="tablist">
-			<li ng-class="{active:tab('home')}"><a href="#/">home</a></li>
-			<li><a href="#/login">login</a></li>
-			<li ng-show="authenticated"><a href="" ng-click="logout()">logout</a></li>
-		</ul>
-	</div>
-	<div ng-view class="container"></div>
-	<script src="js/angular.min.js" type="text/javascript"></script>
-	<script src="js/angular-route.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
-	<script src="js/hello.js"></script>
-</body>
-</html>
+    </head>
+
+    <body>
+        <div ng-app="cookorico">
+            <div class="fluid-container">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-8">
+                            <div class="login-block">
+                                <div class="dropdown" id="menuLogin">
+                                    <button class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</button>
+                                    <button class="btn btn-default"><a href="">logout</a></button>
+                                        <div class="dropdown-menu" style="padding:17px;">
+                                            <form class="form" id="formLogin"> 
+                                                <input name="username" id="username" type="text" placeholder="Username"> 
+                                                <input name="password" id="password" type="password" placeholder="Password"><br>
+                                                <a href="#/login" id="btnLogin" class="btn btn-success">Login</a>
+                                            </form>
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>	
+                        </div>
+
+                        <!--LOGO-->
+                        <div class="row">
+                            <div id="logo">
+                                <img class="img-responsive center-block" src="img/coq.gif" width="150px" height="150px" alt="logo_coq">
+                                <h1 class="text-center">Cookorico</h1>
+                            </div>
+                        </div>
+
+
+
+                        <!--CAROUSSEL-->
+                        <div id="ALaUne" class="row">
+                            <h2 class="text-center">À la une</h2>
+                            <div class="well-none">
+                                <div id="ALaUneCarousel" class="carousel slide">
+
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/1" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="# " class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/2" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/3" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/4" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+                                        <!--/item-->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/5" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/6" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/7" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/8" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+                                        <!--/item-->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/9" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/10" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/1" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-6"><a href="#" class="thumbnail-carousel"><img src="http://lorempixel.com/250/250/food/2" alt="Image" class="img-responsive">
+                                                    <div class="caption">
+                                                        <h4 class="text-center">Recette</h4>		
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                        </div>
+                                        <!--/item-->
+                                    </div>
+                                    <!--/carousel-inner--> 
+                                    <a class="left carousel-control" href="#ALaUneCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+
+                                    <a class="right carousel-control" href="#ALaUneCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                                </div>
+                                <!--/ALaUneCarousel-->
+                            </div>
+                            <!--/well-->
+                        </div>
+
+
+                        <div class="row">
+                            <div id="screen-website">
+                                <img class="img-responsive center-block" src="img/screen-website.png">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="avis">
+                                <h2 class="text-center">Avis</h2>
+
+                                <div class="comment-block">
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-block">
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                    <div class="comment-thumbnails">
+                                        <h3 class="comment-title">{{avis.titre}}</h3>
+                                        <p class="comment-author">{{avis.auteur}}</p>
+                                        <p class="comment-content">
+                                            {{avis.text}}
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <footer class="footer">
+                            <div class="container">
+                                <p class="footer-text">Cookorico®</p>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+
+            </body>
+        </html>
