@@ -8,18 +8,8 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.web.csrf.CsrfFilter;
-import org.springframework.security.web.csrf.CsrfTokenRepository;
-import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
-
-import fil.iagl.cookorico.security.CsrfHeaderFilter;
 
 @SpringBootApplication
 @MapperScan(value = "fil.iagl.cookorico.dao")
@@ -51,25 +41,6 @@ public class CookoricoApplication {
 		return ds;
 	}
 
-	// Security
-
-	@Configuration
-	@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-	protected static class CookoricoSecurityConfiguration extends WebSecurityConfigurerAdapter {
-
-		private CsrfTokenRepository csrfTokenRepository() {
-			HttpSessionCsrfTokenRepository repository = new HttpSessionCsrfTokenRepository();
-			repository.setHeaderName("X-XSRF-TOKEN");
-			return repository;
-		}
-
-		@Override
-		protected void configure(HttpSecurity http) throws Exception {
-			http.httpBasic().and().authorizeRequests().antMatchers("/index.html", "/home.html", "/login.html", "/")
-					.permitAll().anyRequest().authenticated().and().csrf().csrfTokenRepository(csrfTokenRepository())
-					.and().addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class);
-		}
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CookoricoApplication.class, args);
