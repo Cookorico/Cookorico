@@ -13,11 +13,11 @@
 		<result property="disabled" column="disabled" />
 	</resultMap>
 	
-	<select id="getAllPhotos" resultType="photoResultMap">
+	<select id="getAllPhotos" resultMap="photoResultMap">
 		SELECT * FROM photo
 	</select>
 	
-	<select id="getMemberPhoto" parameterType="Integer" resultType="Photo">
+	<select id="getMemberPhoto" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Photo">
 		SELECT * FROM photo WHERE fk_id_member=#{id_member}
 	</select>
 
