@@ -7,7 +7,7 @@
 	<result property="grading" column="grading"/>
 	<result property="" column=""/>
 	<result property="creationDate" column="creationDate"/>
-	<result property="modifDate" column="modifDate"/>
+<!-- 	<result property="modifDate" column="modifDate"/> -->
 <!-- 	<association property="member" javaType="Member"> -->
 <!-- 		<id property="id" column="memberResultMap"/> -->
 <!-- 	</association> -->
@@ -19,7 +19,7 @@
 		
 	</resultMap>
 	
-	<select id="getTasteById" parameterType="Integer" resultMap="ingredientResultMap">
+	<select id="getTasteById" parameterType="Integer" resultMap="tasteResultMap">
 		select * from taste, member where member = #{id}; 
 	</select>
 	
