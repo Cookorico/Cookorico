@@ -19,8 +19,6 @@ import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.security.web.csrf.CsrfTokenRepository;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
 
-import fil.iagl.cookorico.security.CsrfHeaderFilter;
-
 @SpringBootApplication
 @MapperScan(value = "fil.iagl.cookorico.dao")
 public class CookoricoApplication {
@@ -52,6 +50,13 @@ public class CookoricoApplication {
 	}
 
 	// Security
+	/*
+	 * 
+	 * 
+	 * CECI EST UN SUPER TEST DE COMMIT BLLBL
+	 * 
+	 * 
+	 */
 
 	@Configuration
 	@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
