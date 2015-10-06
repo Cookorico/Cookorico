@@ -19,7 +19,7 @@ public class CookoricoSecurityConfiguration extends WebSecurityConfigurerAdapter
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
-                .loginPage("/login")
+                .loginPage("/test")
                 .permitAll()
                 .and()
             .logout()
