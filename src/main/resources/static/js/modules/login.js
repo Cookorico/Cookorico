@@ -1,9 +1,8 @@
-(function () {
-    'use strict';
+'use strict';
     
-    var app = angular.module('Login-module', []);
+    var loginModule = angular.module('Login-module', []);
     
-    app.controller('LoginController', ['$http', function ($http, username, password) {
+    loginModule.controller('LoginController', ['$http', function ($http, username, password) {
     	this.user = {
                 username : "",
                 password : "",
@@ -20,6 +19,4 @@
     
     
     }]);
-    
-  
-})();
+ 
