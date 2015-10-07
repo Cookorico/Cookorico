@@ -1,0 +1,40 @@
+<div ng-controller="registerCtl">
+  <form novalidate class="simple-form">
+    current avatar : <input type="text" ng-model="member.currentAvatar" /><br/>
+    
+    Firstname : <input type="text" ng-model="member.firstname" /><br/>
+    Lastname : <input type="text" ng-model="member.lastname" /><br/>
+    Gender: <input type="radio" ng-model="member.gender" value="male" />Male
+    <input type="radio" ng-model="member.gender" value="female" />Female<br />
+    Birthday : <input type="text" ng-model="member.birthday" /><br/>
+    Email : <input type="text" ng-model="member.email" /><br/>
+    City : <input type="text" ng-model="member.city" /><br/>
+    
+    Username: <input type="text" ng-model="member.username" /><br/>
+    Password: <input type="password" ng-model="member.password" /><br/>
+    Password (Retapez): <input type="password" ng-model="member.password" /><br/>
+    
+    <input type="button" ng-click="reset()" value="Reset" />
+    <input type="submit" ng-click="update(member)" value="Save" />
+  </form>
+  <pre>member = {{member | json}}</pre>
+  <pre>master = {{master | json}}</pre>
+</div>
+
+
+<script>
+  angular.module('formRegister', [])
+    .controller('registerCtl', ['$scope', function($scope) {
+      $scope.master = {};
+
+      $scope.update = function(member) {
+      	$scope.master = angular.copy(member);
+      };
+
+      $scope.reset = function() {
+        $scope.member = angular.copy($scope.master);
+      };
+
+      $scope.reset();
+    }]);
+</script>
