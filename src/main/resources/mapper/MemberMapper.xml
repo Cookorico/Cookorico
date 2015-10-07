@@ -24,7 +24,7 @@
     SELECT * FROM member
   </select>
   
-  <select id="getMemberWithCredentials" parameterType="map">
+  <select id="getMemberWithCredentials" resultMap="memberResultMap">
   	SELECT * FROM member WHERE username=#{username} AND password=#{password}
   </select>
   
