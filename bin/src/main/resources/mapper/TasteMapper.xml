@@ -1,0 +1,26 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="fil.iagl.cookorico.dao.TasteDao">
+
+	<resultMap type="fil.iagl.cookorico.entity.Taste" id="tasteResultMap">
+	<id property="id" column="idtaste"/>
+	<result property="grading" column="grading"/>
+	<result property="" column=""/>
+	<result property="creationDate" column="creationDate"/>
+<!-- 	<result property="modifDate" column="modifDate"/> -->
+<!-- 	<association property="member" javaType="Member"> -->
+<!-- 		<id property="id" column="memberResultMap"/> -->
+<!-- 	</association> -->
+<!-- 	<association property="ingredient" javaType="Ingredient"> -->
+<!-- 		<id property="id" column="ingredientResultMap"/> -->
+<!-- 	</association> -->
+	
+	
+		
+	</resultMap>
+	
+	<select id="getTasteById" parameterType="Integer" resultMap="tasteResultMap">
+		select * from taste, member where member = #{id}; 
+	</select>
+	
+</mapper>

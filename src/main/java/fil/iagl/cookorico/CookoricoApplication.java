@@ -33,23 +33,13 @@ public class CookoricoApplication {
 		BasicDataSource ds = new BasicDataSource();
 		ds.setUsername("cookorico");
 		ds.setPassword("cookorico");
-		 ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
+		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
 //		// url to dev at home
 //		ds.setUrl("jdbc:postgresql://localhost:5432/cookoricodb");
 		ds.setDriverClassName("org.postgresql.Driver");
 		ds.setMaxWait(25);
 		return ds;
 	}
-
-
-	// Security
-	/*
-	 * 
-	 * 
-	 * CECI EST UN SUPER TEST DE COMMIT BLLBL
-	 * 
-	 * 
-	 */
 
 	public static void main(String[] args) {
 		SpringApplication.run(CookoricoApplication.class, args);
