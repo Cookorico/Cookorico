@@ -102,6 +102,60 @@ INSERT INTO INGREDIENT_IN_RECIPE(FK_ID_INGREDIENT,FK_ID_RECIPE,QUANTITY,MEASUREM
 INSERT INTO INGREDIENT_IN_RECIPE(FK_ID_INGREDIENT,FK_ID_RECIPE,QUANTITY,MEASUREMENT) VALUES('8','1',2,'gramme');
 
 
+/* -------------------- INSERT PHOTO  -------------------- */
+
+
+
+
+/* -------------------- INSERT RECIPE_STEP -------------------- */
+INSERT INTO RECIPE_STEP(FK_ID_RECIPE,RANK,NAME,DESCRIPTION,DURATION_TIME) VALUES(1,1,'Preparation','Battre les oeufs dans un saladier',180);
+INSERT INTO RECIPE_STEP(FK_ID_RECIPE,RANK,NAME,DESCRIPTION,DURATION_TIME) VALUES(1,2,'Assaisonner','Ajouter sel et poivre à votre convenance',100);
+INSERT INTO RECIPE_STEP(FK_ID_RECIPE,RANK,NAME,DESCRIPTION,DURATION_TIME) VALUES(1,3,'Verser','Verser les oeufs dans une poele chaude',20);
+INSERT INTO RECIPE_STEP(FK_ID_RECIPE,RANK,NAME,DESCRIPTION,DURATION_TIME) VALUES(1,4,'Cuisson','Quand les bords coagulent, les rabattre vers le centre. <br> Une fois l''omelette cuite, la servir dans une assiette. ',300);
+
+
+
+
+/* -------------------- INSERT TAG_TO_RECIPE -------------------- */
+INSERT INTO TAG_TO_RECIPE(FK_ID_TAG,FK_ID_RECIPE) VALUES('6','1');
+
+
+
+
+/* -------------------- INSERT COMMENT -------------------- */
+INSERT INTO COMMENT(FK_ID_RECIPE,FK_ID_MEMBER,TITLE,DESCRIPTION) VALUES('1','2','NON!','J''aime pas baveuse. nul!');
+INSERT INTO COMMENT(FK_ID_RECIPE,FK_ID_MEMBER,TITLE,DESCRIPTION) VALUES('1','1','OSEF','Mdr t''as qu''à la laisser plus longtemps');
+
+
+
+/* -------------------- INSERT NOTE -------------------- */
+INSERT INTO NOTE(FK_ID_MEMBER,FK_ID_RECIPE,FK_ID_COMMENT,RATING) VALUES('2','1','1',2)
+
+
+
+
+/* -------------------- INSERT PHOTO_IN_RECIPE -------------------- */
+
+
+
+
+/* -------------------- INSERT ADMINISTRATOR -------------------- */
+/* CREATE TYPE ADMIN_RANK AS ENUM ('Administrateur','Moderateur') */
+INSERT INTO ADMINISTRATOR(ID_ADMINISTRATOR,RANK) VALUES(3,'Administrateur');
+INSERT INTO ADMINISTRATOR(ID_ADMINISTRATOR,RANK) VALUES(2,'Moderateur');
+
+
+
+
+/* -------------------- INSERT PHOTO_OF_INGREDIENT -------------------- */
+
+
+
+
+/* -------------------- INSERT PHOTO_OF_USER -------------------- */
+
+
+
 
 
 

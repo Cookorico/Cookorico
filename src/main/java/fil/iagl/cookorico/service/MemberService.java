@@ -1,24 +1,16 @@
 package fil.iagl.cookorico.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
 
-import fil.iagl.cookorico.dao.MemberDao;
 import fil.iagl.cookorico.entity.Member;
 
-public class MemberService {
-	
-	@Autowired
-	private MemberDao memberDao;
-	
-	public Member getMember(String username, String password) {
-		return memberDao.getMemberWithCredentials(username, password);
-	}
-	
-	public void addMember(Member member) {
-		final String memberUsername = member.getUsername();
-		if (memberDao.getMemberWithUsername(memberUsername) == null) {
-			memberDao.addMember(member);
-		}
-	}
+public interface MemberService {
 
+	Member getMember(String username, String password);
+	
+	void addMember(Member member);
+	
+	List<Member> getAllMembers();
+		
+	
 }
