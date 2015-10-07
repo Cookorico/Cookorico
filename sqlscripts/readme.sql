@@ -1,8 +1,17 @@
 
 
 
-/* POUR SELECTIONNER UN ENUM */
+/* POUR SELECTIONNER UN ENUM 
+ */
 select enum_range(NULL::tag_type)
+
+/* POUR AFFICHER TOUTE LES TABLES
+ */
+\dt;
+
+/* POUR AFFICHER LE SCHEMA D'UNE TABLE
+ */
+\d+ tablename;
 
 
 /* équivalent a un type serial (si on primary = type integer)
