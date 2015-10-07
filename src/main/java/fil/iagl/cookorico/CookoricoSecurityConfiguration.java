@@ -7,7 +7,7 @@
 ////	@Override
 ////    protected void configure(HttpSecurity http) throws Exception {
 ////        http
-////            .authorizeRequests()
+//            .authorizeRequests()
 ////                .antMatchers("/", "/home").permitAll()
 ////                .anyRequest().authenticated()
 ////                .and()
