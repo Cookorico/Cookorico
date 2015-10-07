@@ -3,10 +3,11 @@
     var loginModule = angular.module('Login-module', []);
     
     loginModule.controller('LoginController', ['$scope','$http', function ($scope, $http) {
-    	var user = $scope.user
-    	
+    	var user;
     	this.login = function () {
-    		
+        	user = angular.toJson($scope.user);
+        	console.log(user);
+
         	$http({
         		method: 'POST', 
         		url : '/login',
