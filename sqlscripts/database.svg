@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial" font-size="12" width="1643" height="1403">
+	<desc>Flowchart diagram model</desc>
+	<g id="_f473ElbFEeWH7tmnkVHu6g">
+		<defs>
+			<linearGradient id="greyGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#E5E5E5" stop-opacity="1" />
+				
+			</linearGradient>
+			<linearGradient id="packageGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#EFE9DE" stop-opacity="1" />
+				
+			</linearGradient>
+			<linearGradient id="TableWidget" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#C8C8C8" stop-opacity="1" />
+				
+			</linearGradient>
+			<linearGradient id="TypeWidget" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+				<stop offset="0%" stop-color="#FFF" stop-opacity="1" />
+				<stop offset="100%" stop-color="#D6EEFF" stop-opacity="1" />
+				
+			</linearGradient>
+			
+		</defs>
+		<g id="_msbtYDjzEDO2JdFg6MMGKg" transform="translate(372 122)">
+			<rect x="0" y="0" width="199" height="349" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="199" height="349" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">MEMBER</text>
+			<g id="_tvp4gDjzEDO2JdFg6MMGKg">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_MEMBER: SERIAL</text>
+				
+			</g>
+			<g id="_61g7gDjzEDO2JdFg6MMGKg">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">USERNAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_00_jgDjzEDO2JdFg6MMGKg">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">FIRSTNAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_3a7rADjzEDO2JdFg6MMGKg">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">LASTNAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_5nQYoDjzEDO2JdFg6MMGKg">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">EMAIL: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_J6qvoUJeEDO3YpaNxRg4pg">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">PASSWORD: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_N_NjIEJeEDO3YpaNxRg4pg">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">SALT: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_RveV0Dj0EDO2JdFg6MMGKg">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">BIRTHDAY: DATE</text>
+				
+			</g>
+			<g id="_ZDUW4Dj0EDO2JdFg6MMGKg">
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="226" fill="#000000">GENDER: CHARACTER(1)</text>
+				
+			</g>
+			<g id="_rKySkDj0EDO2JdFg6MMGKg">
+				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="249" fill="#000000">CITY: VARCHAR(255)</text>
+				
+			</g>
+			<g id="__5Q8kDqQEDO1J_xd9rElFw">
+				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="272" fill="#000000">CURRENT_AVATAR: INTEGER</text>
+				
+			</g>
+			<g id="_IqjDcDp6EDO1J_xd9rElFw">
+				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="295" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_lPvWsDqEEDO1J_xd9rElFw">
+				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="318" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_tT7SwDqIEDO1J_xd9rElFw">
+				<image x="2" y="328" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="341" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_xow4EDjzEDO2JdFg6MMGKg" transform="translate(82 72)">
+			<rect x="0" y="0" width="50" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="26" dy="12">TEXT</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_0B-8wDj0EDO2JdFg6MMGKg" transform="translate(1002 2)">
+			<rect x="0" y="0" width="202" height="188" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="202" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="202" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="202" height="188" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="101" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT</text>
+			<g id="_6DVbMDj0EDO2JdFg6MMGKg">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_INGREDIENT: SERIAL</text>
+				
+			</g>
+			<g id="__uzwQDj0EDO2JdFg6MMGKg">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_y2ZBcTj2EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">DESCRIPTION: TEXT</text>
+				
+			</g>
+			<g id="_GXxukDqFEDO1J_xd9rElFw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_IoXRIDqFEDO1J_xd9rElFw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_KpgCcDqFEDO1J_xd9rElFw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">VALIDATION: BOOLEAN</text>
+				
+			</g>
+			<g id="_xdM1QDqIEDO1J_xd9rElFw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_Bvrb0Dj1EDO2JdFg6MMGKg" transform="translate(1322 422)">
+			<rect x="0" y="0" width="222" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="222" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="222" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="222" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="111" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG</text>
+			<g id="_ESfW0Dj1EDO2JdFg6MMGKg">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_TAG: SERIAL</text>
+				
+			</g>
+			<g id="_6iMIIDj5EDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_Cu8C8DkBEDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">TAG_TYPE: TAG_TYPE</text>
+				
+			</g>
+			<g id="_94jfgDqEEDO1J_xd9rElFw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			
+		</g>
+		<g id="_80thMDj1EDO2JdFg6MMGKg" transform="translate(682 2)">
+			<rect x="0" y="0" width="199" height="165" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="199" height="165" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">TASTE</text>
+			<g id="_9iGLoDj1EDO2JdFg6MMGKg">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_TASTE: SERIAL</text>
+				
+			</g>
+			<g id="_3cH2cDj2EDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				
+			</g>
+			<g id="_19EzoDj4EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				
+			</g>
+			<g id="_8yM4YDj4EDOniO2VLASIbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">GRADING: INTEGER</text>
+				
+			</g>
+			<g id="_VP_8gDqEEDO1J_xd9rElFw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_XTEzEDp6EDO1J_xd9rElFw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			
+		</g>
+		<g id="_wzNMQDj3EDOniO2VLASIbw" transform="translate(682 192)">
+			<rect x="0" y="0" width="204" height="326" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="204" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="204" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="204" height="326" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="102" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE</text>
+			<g id="_5W2oUDj3EDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_R7teMDj4EDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_UVKo4Dj4EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">DESCRIPTION: TEXT</text>
+				
+			</g>
+			<g id="_dXtAYDj4EDOniO2VLASIbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">PREPARATION_TIME: INTEGER</text>
+				
+			</g>
+			<g id="_gYuhYDj4EDOniO2VLASIbw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">COOKING_TIME: INTEGER</text>
+				
+			</g>
+			<g id="_xognIDj4EDOniO2VLASIbw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="157" fill="#000000">FK_CREATOR: INTEGER</text>
+				
+			</g>
+			<g id="_RIChYDj_EDOniO2VLASIbw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">DISH_TYPE: DISH_TYPE</text>
+				
+			</g>
+			<g id="_DU5o4DqEEDO1J_xd9rElFw">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">DIFFICULTY: DIFFICULTY</text>
+				
+			</g>
+			<g id="_q1EBcDp5EDO1J_xd9rElFw">
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="226" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_cyMHIDp6EDO1J_xd9rElFw">
+				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="249" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_BfEasDj6EDOniO2VLASIbw">
+				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="272" fill="#000000">VALIDATION: BOOLEAN</text>
+				
+			</g>
+			<g id="_sEYEgDqKEDO1J_xd9rElFw">
+				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="295" fill="#000000">VALIDATOR: INTEGER</text>
+				
+			</g>
+			<g id="_wRcMwDqIEDO1J_xd9rElFw">
+				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="318" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_LuGP8Dj5EDOniO2VLASIbw" transform="translate(1332 262)">
+			<rect x="0" y="0" width="221" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="221" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="221" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="221" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="111" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_INGREDIENT</text>
+			<g id="_WjIN4Dj7EDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_TAG_TO_INGREDIENT: SERIAL</text>
+				
+			</g>
+			<g id="_buACMDj5EDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_TAG: INTEGER</text>
+				
+			</g>
+			<g id="_ZeCKsDj5EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				
+			</g>
+			<g id="_7ZFzcDqEEDO1J_xd9rElFw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			
+		</g>
+		<g id="_Mu2s4Dj6EDOniO2VLASIbw" transform="translate(962 202)">
+			<rect x="0" y="0" width="275" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="275" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="275" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="275" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="138" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT_IN_RECIPE</text>
+			<g id="_dngPkDj7EDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_INGREDIENT_IN_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_P8wzUDj6EDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				
+			</g>
+			<g id="_SHCSgDj6EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_fiH-oDj6EDOniO2VLASIbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">QUANTITY: INTEGER</text>
+				
+			</g>
+			<g id="_s-NwUDj6EDOniO2VLASIbw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">MEASUREMENT: UNIT_OF_MEASUREMENT</text>
+				
+			</g>
+			
+		</g>
+		<g id="_9E5gADj6EDOniO2VLASIbw" transform="translate(332 32)">
+			<rect x="0" y="0" width="170" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="86" dy="12">UNIT_OF_MEASUREMENT</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_vn1BcDj7EDOniO2VLASIbw" transform="translate(672 1152)">
+			<rect x="0" y="0" width="207" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="207" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="207" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="207" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="104" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO</text>
+			<g id="_xN6OcDj7EDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_PHOTO: SERIAL</text>
+				
+			</g>
+			<g id="_9hqawDqKEDO1J_xd9rElFw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				
+			</g>
+			<g id="_2UbcUDj7EDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">FILE_PATH: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_4Zj80Dj7EDOniO2VLASIbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">FILE_NAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_WO6XoDqLEDO1J_xd9rElFw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">TITLE: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_X69CsDqLEDO1J_xd9rElFw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">DESCRIPTION: VARCHAR(1024)</text>
+				
+			</g>
+			<g id="_mHx9gDp6EDO1J_xd9rElFw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_4gza4DqIEDO1J_xd9rElFw">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_Pt2bUDj_EDOniO2VLASIbw" transform="translate(422 72)">
+			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="46" dy="12">DISH_TYPE</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_6-1ZIDj_EDOniO2VLASIbw" transform="translate(992 572)">
+			<rect x="0" y="0" width="206" height="234" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="206" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="206" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="206" height="234" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="103" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE_STEP</text>
+			<g id="_ALmY8DkAEDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_RECIPE_STEP: SERIAL</text>
+				
+			</g>
+			<g id="_sZ8hcDkBEDOj_ub0FU0Pbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_H_mgwDkAEDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="88" fill="#000000">RANK: INTEGER</text>
+				
+			</g>
+			<g id="_BelDwDkAEDOniO2VLASIbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">NAME: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_J78RoDkAEDOniO2VLASIbw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">DESCRIPTION: TEXT</text>
+				
+			</g>
+			<g id="_Sm5PkDkAEDOniO2VLASIbw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">DURATION_TIME: INTEGER</text>
+				
+			</g>
+			<g id="_e37roDp6EDO1J_xd9rElFw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_gQNGIDp6EDO1J_xd9rElFw">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_5q9g4DqIEDO1J_xd9rElFw">
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="226" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_rL2zIDkAEDOniO2VLASIbw" transform="translate(992 402)">
+			<rect x="0" y="0" width="199" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="199" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_RECIPE</text>
+			<g id="_sU3CkDkAEDOniO2VLASIbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_TAG_TO_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_tpbBwDkAEDOniO2VLASIbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_TAG: INTEGER</text>
+				
+			</g>
+			<g id="_zAvEsDkAEDOniO2VLASIbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_7FLY8DqEEDO1J_xd9rElFw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			
+		</g>
+		<g id="_EVGIcDkBEDOniO2VLASIbw" transform="translate(522 72)">
+			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="46" dy="12">TAG_TYPE</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_nfWPsDkBEDOj_ub0FU0Pbw" transform="translate(682 652)">
+			<rect x="0" y="0" width="199" height="257" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="199" height="257" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">COMMENT</text>
+			<g id="_pBMc8DkBEDOj_ub0FU0Pbw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_COMMENT: SERIAL</text>
+				
+			</g>
+			<g id="_vg2A8DkBEDOj_ub0FU0Pbw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_p44S4DkBEDOj_ub0FU0Pbw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				
+			</g>
+			<g id="_xg5NIDkBEDOj_ub0FU0Pbw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">TITLE: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_1OwmADkBEDOj_ub0FU0Pbw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">DESCRIPTION: TEXT</text>
+				
+			</g>
+			<g id="_GujtUTp5EDO1J_xd9rElFw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_UlejYDqFEDO1J_xd9rElFw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_W8A88DqFEDO1J_xd9rElFw">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">VALIDATION: BOOLEAN</text>
+				
+			</g>
+			<g id="_z5auIDqKEDO1J_xd9rElFw">
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="226" fill="#000000">VALIDATOR: INTEGER</text>
+				
+			</g>
+			<g id="_z6SiwDqIEDO1J_xd9rElFw">
+				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="249" fill="#000000">DISABLED: BOOLEAN</text>
+				
+			</g>
+			
+		</g>
+		<g id="_7HvyoDkBEDOj_ub0FU0Pbw" transform="translate(372 522)">
+			<rect x="0" y="0" width="199" height="188" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="199" height="188" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">NOTE</text>
+			<g id="_hYaRMDkCEDOrbbpUkOhogw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_NOTE: SERIAL</text>
+				
+			</g>
+			<g id="_iL6KsDkCEDOrbbpUkOhogw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				
+			</g>
+			<g id="_jJoXMDkCEDOrbbpUkOhogw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_kgdAMDkCEDOrbbpUkOhogw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDCxchAnaD/QAAAZJJREFUOMvVU7FLAnEU/nx6HRcO19HSZIFwiEOFdmNDNtTaHEQIUQQNBf4LQeCS0DWcCUEEQtDiFuciIhRKEDQ4hJCQCKKSp54/f7YUVJKt9a3v43vf+957wL+HY1QxHo8TER3KsrxUq9VOw+Fw/DuHRgkwxvb8fn8kFAoFPR7PUTQaXfnOcY7ovqWq6rGqqo5yuQwikjjna16v9ymTyTx88Fw/CUiStOrz+ajVakFRFHDOoWnauGVZOoDLX0ewbfux0WjAtm10Oh1IkoR2u41qtfrF9ZADwzCCiqKcuN3uyW63CyICEYExhlQq1Xm+v9/tAQsCcDskkEgk1gVB2A8EAvOWZYFzjnQ63Zq9vh4IjDmeVHUjdnFRJyAJYGZIQJblA03T5iqVClwuF3K5nJXP5/c2TTNIg4Gom+ZVDFj+vP4vGTidThsARFFENpt9LRQK24ZhnImM2UK/33unjf2YQalUumk2m9P1er1dLBYjuq4nAWAA1BzAYgOYIGDnt/sZggVMceCOAy8cOOdA5u880xvV8aCpQ9m0XQAAAABJRU5ErkJggg==" />
+				<text x="18" y="111" fill="#000000">FK_ID_COMMENT: INTEGER</text>
+				
+			</g>
+			<g id="_qVrhUDp6EDO1J_xd9rElFw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">RATING: INTEGER</text>
+				
+			</g>
+			<g id="_ySy9UDqEEDO1J_xd9rElFw">
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_yp2ycDqEEDO1J_xd9rElFw">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				
+			</g>
+			
+		</g>
+		<g id="_BiUQ8DqEEDO1J_xd9rElFw" transform="translate(522 32)">
+			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="46" dy="12">DIFFICULTY</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_U7Cm4DqJEDO1J_xd9rElFw" transform="translate(662 952)">
+			<rect x="0" y="0" width="205" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="205" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="205" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="205" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="103" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_IN_RECIPE</text>
+			<g id="_XrgjYDqJEDO1J_xd9rElFw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_PHOTO_IN_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_dFuwYDqJEDO1J_xd9rElFw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				
+			</g>
+			<g id="_2qcgwDqJEDO1J_xd9rElFw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_PHOTO: INTEGER</text>
+				
+			</g>
+			<g id="_iR23ADqJEDO1J_xd9rElFw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="111" fill="#000000">FK_ID_COMMENT: INTEGER</text>
+				
+			</g>
+			
+		</g>
+		<g id="_GJwucDqKEDO1J_xd9rElFw" transform="translate(82 122)">
+			<rect x="0" y="0" width="190" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="190" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="190" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="190" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="95" y="16" text-anchor="middle" font-weight="bold" fill="#333">ADMINISTRATOR</text>
+			<g id="_ggrX0DqKEDO1J_xd9rElFw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_ADMINISTRATOR: SERIAL</text>
+				
+			</g>
+			<g id="_lKFy8DqKEDO1J_xd9rElFw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">RANK: ADMIN_RANK</text>
+				
+			</g>
+			
+		</g>
+		<g id="_l1zCYDqKEDO1J_xd9rElFw" transform="translate(322 72)">
+			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="46" dy="12">ADMIN_RANK</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_h11-gDqLEDO1J_xd9rElFw" transform="translate(992 912)">
+			<rect x="0" y="0" width="240" height="112" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="240" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="240" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="240" height="112" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="120" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_OF_INGREDIENT</text>
+			<g id="_yiuLgDqLEDO1J_xd9rElFw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_PHOTO_OF_INGREDIENT: SERIAL</text>
+				
+			</g>
+			<g id="_7N7oIDqLEDO1J_xd9rElFw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				
+			</g>
+			<g id="_9xDFIDqLEDO1J_xd9rElFw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">FK_ID_PHOTO: INTEGER</text>
+				
+			</g>
+			
+		</g>
+		<g id="_djZfoDqQEDO1J_xd9rElFw" transform="translate(342 942)">
+			<rect x="0" y="0" width="210" height="62" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="210" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="210" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="210" height="62" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="105" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_OF_USER</text>
+			<g id="_fL_OEDqQEDO1J_xd9rElFw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">ID_PHOTO_OF_USER: INTEGER</text>
+				
+			</g>
+			
+		</g>
+		<g id="_okrI4U1hEDOGfY8mob7tSQ" transform="translate(72 32)">
+			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
+			<text y="8" text-anchor="middle" fill="#333">
+				<tspan x="46" dy="12">SERIAL</tspan>
+				
+			</text>
+			
+		</g>
+		<g id="_zXSdIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="682,62 621,62" />
+			<g transform="translate(682,62)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_zXSdIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="621,62 621,159" />
+			
+		</g>
+		<g id="_zXSdIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="621,159 571,159" />
+			<g transform="translate(571,159)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_0IkwIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="682,344 622,344" />
+			<g transform="translate(682,344)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_0IkwIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="622,344 622,159" />
+			
+		</g>
+		<g id="_0IkwIDj4EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="622,159 571,159" />
+			<g transform="translate(571,159)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_C9ZPUDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="881,85 941,85" />
+			<g transform="translate(881,85)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_C9ZPUDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="941,85 941,39" />
+			
+		</g>
+		<g id="_C9ZPUDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="941,39 1002,39" />
+			<g transform="translate(1002,39)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_rhE5YDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1553,322 1603,322" />
+			<g transform="translate(1553,322)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_rhE5YDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1603,322 1603,459" />
+			
+		</g>
+		<g id="_rhE5YDj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1603,459 1544,459" />
+			<g transform="translate(1544,459)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tCXF8Dj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1332,345 1273,345" />
+			<g transform="translate(1332,345)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tCXF8Dj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1273,345 1273,39" />
+			
+		</g>
+		<g id="_tCXF8Dj5EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1273,39 1204,39" />
+			<g transform="translate(1204,39)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_UvVKcDj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1237,262 1271,262" />
+			<g transform="translate(1237,262)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_UvVKcDj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1271,262 1271,39" />
+			
+		</g>
+		<g id="_UvVKcDj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1271,39 1204,39" />
+			<g transform="translate(1204,39)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_WRrG8Dj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="962,285 924,285" />
+			<g transform="translate(962,285)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_WRrG8Dj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,285 924,229" />
+			
+		</g>
+		<g id="_WRrG8Dj6EDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_1fXDQDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1191,462 1295,462" />
+			<g transform="translate(1191,462)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_1fXDQDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1295,462 1295,459" />
+			
+		</g>
+		<g id="_1fXDQDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1295,459 1322,459" />
+			<g transform="translate(1322,459)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_2lAcsDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="992,485 924,485" />
+			<g transform="translate(992,485)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_2lAcsDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,485 924,229" />
+			
+		</g>
+		<g id="_2lAcsDkAEDOniO2VLASIbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="992,632 925,632" />
+			<g transform="translate(992,632)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="925,632 925,229" />
+			
+		</g>
+		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="925,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_p4n-wDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="682,735 325,735" />
+			<g transform="translate(682,735)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_p4n-wDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="325,735 325,159" />
+			
+		</g>
+		<g id="_p4n-wDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="325,159 372,159" />
+			<g transform="translate(372,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_r5ki0DkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="881,712 926,712" />
+			<g transform="translate(881,712)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_r5ki0DkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="926,712 926,229" />
+			
+		</g>
+		<g id="_r5ki0DkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="926,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tacfsDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="571,605 924,605" />
+			<g transform="translate(571,605)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tacfsDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,605 924,229" />
+			
+		</g>
+		<g id="_tacfsDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="924,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_vTivUDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="372,582 326,582" />
+			<g transform="translate(372,582)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_vTivUDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="326,582 326,159" />
+			
+		</g>
+		<g id="_vTivUDkCEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="326,159 372,159" />
+			<g transform="translate(372,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tojXsDkDEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="571,628 628,628" />
+			<g transform="translate(571,628)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_tojXsDkDEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="628,628 628,689" />
+			
+		</g>
+		<g id="_tojXsDkDEDOrbbpUkOhogw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="628,689 682,689" />
+			<g transform="translate(682,689)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_pF9oEDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="867,1012 926,1012" />
+			<g transform="translate(867,1012)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_pF9oEDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="926,1012 926,229" />
+			
+		</g>
+		<g id="_pF9oEDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="926,229 886,229" />
+			<g transform="translate(886,229)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_vA8_0DqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="662,1058 632,1058" />
+			<g transform="translate(662,1058)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_vA8_0DqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="632,1058 632,689" />
+			
+		</g>
+		<g id="_vA8_0DqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="632,689 682,689" />
+			<g transform="translate(682,689)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_4KRUwDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="867,1035 947,1035" />
+			<g transform="translate(867,1035)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_4KRUwDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="947,1035 947,1189" />
+			
+		</g>
+		<g id="_4KRUwDqJEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="947,1189 879,1189" />
+			<g transform="translate(879,1189)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_hyF8YDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="272,159 320,159" />
+			<g transform="translate(272,159)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_hyF8YDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="320,159 320,159" />
+			
+		</g>
+		<g id="_hyF8YDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="320,159 372,159" />
+			<g transform="translate(372,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_urxkkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="682,482 51,482" />
+			<g transform="translate(682,482)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_urxkkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="51,482 51,159" />
+			
+		</g>
+		<g id="_urxkkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="51,159 82,159" />
+			<g transform="translate(82,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_3VhBkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="682,873 50,873" />
+			<g transform="translate(682,873)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_3VhBkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="50,873 50,159" />
+			
+		</g>
+		<g id="_3VhBkDqKEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="50,159 82,159" />
+			<g transform="translate(82,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_BeSBUDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="672,1212 326,1212" />
+			<g transform="translate(672,1212)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_BeSBUDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="326,1212 326,159" />
+			
+		</g>
+		<g id="_BeSBUDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="326,159 372,159" />
+			<g transform="translate(372,159)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="__oiyQDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1232,972 1266,972" />
+			<g transform="translate(1232,972)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="__oiyQDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1266,972 1266,39" />
+			
+		</g>
+		<g id="__oiyQDqLEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1266,39 1204,39" />
+			<g transform="translate(1204,39)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_Bq65sDqMEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="992,995 947,995" />
+			<g transform="translate(992,995)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_Bq65sDqMEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="947,995 947,1189" />
+			
+		</g>
+		<g id="_Bq65sDqMEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="947,1189 879,1189" />
+			<g transform="translate(879,1189)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_ilb2IDqQEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="552,979 583,979" />
+			<g transform="translate(552,979)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_ilb2IDqQEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="583,979 583,1189" />
+			
+		</g>
+		<g id="_ilb2IDqQEDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="583,1189 672,1189" />
+			<g transform="translate(672,1189)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_Diwy0DqREDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="372,389 265,389" />
+			<g transform="translate(372,389)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_Diwy0DqREDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="265,389 265,979" />
+			
+		</g>
+		<g id="_Diwy0DqREDO1J_xd9rElFw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="265,979 342,979" />
+			<g transform="translate(342,979)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		
+	</g>
+	
+</svg>
