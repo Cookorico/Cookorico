@@ -5,7 +5,7 @@
 <mapper namespace='fil.iagl.cookorico.dao.MemberDao'>
 
   <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
-    <id property='memberId' column='id_member'/>
+    <id property='idMember' column='id_member'/>
     <result property='username' column='username'/>
     <result property='password' column='password'/>
     <result property='firstname' column='firstname'/>
@@ -25,11 +25,11 @@
   </select>
   
   <select id="getMemberWithCredentials" resultMap="memberResultMap">
-  	SELECT * FROM member WHERE username=#{username} AND password=#{password}
+  	SELECT * FROM member WHERE username = #{username} AND password = #{password}
   </select>
   
   <select id="getMemberWithUsername" parameterType="java.lang.String">
-  	SELECT * FROM member WHERE username=#{username}
+  	SELECT * FROM member WHERE username = #{username}
   </select>
   
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">

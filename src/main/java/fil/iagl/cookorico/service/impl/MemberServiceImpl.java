@@ -1,5 +1,7 @@
 package fil.iagl.cookorico.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,8 @@ public class MemberServiceImpl implements MemberService{
 	
 	@Override
 	public Member getMember(String username, String password) {
-		return memberDao.getMemberWithCredentials(username, password);
+		Member member = memberDao.getMemberWithCredentials(username, password);
+		return member;
 	}
 	
 	@Override
@@ -24,6 +27,10 @@ public class MemberServiceImpl implements MemberService{
 		if (memberDao.getMemberWithUsername(memberUsername) == null) {
 			memberDao.addMember(member);
 		}
+	}
+	
+	public List<Member> getAllMembers(){
+		return memberDao.getAllMembers();
 	}
 
 }
