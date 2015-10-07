@@ -5,13 +5,12 @@
 
             <div class="dropdown" id="menuLogin">
                 <button class="btn btn-primary dropdown-toggle" ng-show="!loginCtrl.user.logged" href="#" data-toggle="dropdown" id="navLogin">Login</button>
+                <button class="btn btn-default" g-show="!RegisterCtrl.user.signuped"><a href="#/register">Register</a></button>
 
                 <div class="logged">
                     <p ng-show="loginCtrl.user.logged">Ouamar Sais</p>
                     <button class="btn btn-default" ng-show="loginCtrl.user.logged" ng-click="loginCtrl.logout()">logout</button>
                 </div>
-
-
 
                 <div class="dropdown-menu" style="padding:17px;">
                     <form name="loginForm" class="form" id="formLogin" ng-submit="loginForm.$valid && loginCtrl.login()" novalidate> 
@@ -21,7 +20,8 @@
                     </form>
                 </div>
             </div>
-        </div>                        </div>	
+        </div>                        
+        </div>	
 </div>
 
 <!--LOGO-->

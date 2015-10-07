@@ -1,0 +1,50 @@
+<div ng-controller="registerCtl">
+	<form novalidate class="simple-form">
+	
+		<label class="control-label">Select your avatar</label>
+		<input id="input-1" type="file" class="file" ng-model="user.currentAvatar">
+		
+		<div class="form-group">
+	    	<label for="email">Email</label>
+			<input type="email" class="form-control" id="email" placeholder="name@domain.fr"ng-model="user.email">
+		
+			<label for="firstname">Firstname</label>
+			<input type="text" class="form-control" id="firstname" placeholder="Firstname" ng-model="user.firstname">
+			
+			<label for="lastname">Lastname</label>
+			<input type="text" class="form-control" id="lastname" placeholder="Lastname" ng-model="user.lastname">
+	
+			<label for="firstname">Gender</label>
+			<div class="radio">
+				<label>
+					<input type="radio" name="lastname" id="lastname" ng-model="user.gender" value="male" />Male
+				</label>
+			</div>
+			<div class="radio">
+		  		<label>
+		  			<input type="radio" name="lastname" id="lastname" ng-model="user.gender" value="female" />Female
+	  			</label>
+			</div>
+
+			<label for="birthday">Birthday</label>
+			<input type="date" class="form-control" id="birthday" placeholder="Birthday" ng-model="user.birthday">
+
+			<label for="city">City</label>
+			<input type="text" class="form-control" id="city" placeholder="City" ng-model="user.city">
+		</div>
+			
+		<div class="form-group">
+			<label for="username">Username</label>
+			<input type="text" class="form-control" id="username" placeholder="Username" ng-model="user.username">
+			
+			<label for="password_bis">Password (bis)</label>
+			<input type="password" class="form-control" id="password" placeholder="Password" ng-model="user.password">
+			<input type="password" class="form-control" id="password_bis" placeholder="Password" ng-model="user.password_bis">
+		</div>
+		
+		<div class="form-group">
+			<input type="button" ng-click="reset()" value="Reset" />
+			<input type="submit" ng-click="update(user)" value="Save" />
+		</div>
+	</form>
+</div>
