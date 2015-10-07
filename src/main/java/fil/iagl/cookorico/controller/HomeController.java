@@ -18,8 +18,8 @@ public class HomeController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public Member login(@RequestBody LoginWrapper wrapper){
+		System.out.println(wrapper.getPassword() + "user = " + wrapper.getUsername());
 		Member member = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
-		System.out.println(member);
 		return member;
 	}
 	
