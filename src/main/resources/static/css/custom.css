@@ -29,7 +29,7 @@ time, mark, audio, video {
 /************** Menu ***************/
 
 nav.top-menu {
-    display: inline-block;
+    display: block;
     position: fixed;
     background-color: #33CC33;
     height: 60px;
@@ -60,7 +60,7 @@ nav.top-menu .top-menu-logo {
 
 
 nav.side-menu {
-    display: inline-block;
+    display: block;
     position: fixed;
     top: 60px;
     height: 100%;
@@ -76,7 +76,6 @@ nav.side-menu .side-menu-search-bar{
 
 nav.side-menu .side-menu-item{
     display: block;
-    position:relative;
     max-width: 100%;
     height: 50px;
     padding-left: 30px;
@@ -93,6 +92,15 @@ nav.side-menu .side-menu-item:active{
 
 nav.side-menu .side-menu-item:hover{
     background-color: #555;
+}
+
+.main-container{
+    background-color: blue;
+    display: block;
+    margin-left: 200px;
+    position: static;
+    max-width: 100%;
+    height: 1000px;
 }
 
 /************ Home page ************/
@@ -216,4 +224,13 @@ nav.side-menu .side-menu-item:hover{
 
 .logged{
  display: inline-block;
+
+}
+/****************** Recipe page *************/
+
+.recipe-main-container {
+    display: block;
+    background-color: blue;
+    width: 1000px;
+    height: 1000px;
 }
