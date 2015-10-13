@@ -1,9 +1,13 @@
 package fil.iagl.cookorico.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Recipe;
@@ -16,6 +20,28 @@ public class RecipeController {
 
 	@Autowired
 	RecipeService recipeService;
+	
+	
+	@RequestMapping(value="/recipelist", method = RequestMethod.GET)
+	public @ResponseBody List<Recipe> getListRecipe() {
+		
+		// USED TO TEST WITHOUT DATABASE
+		/*List<Recipe> lst = new ArrayList();
+		Recipe r1 = new Recipe();
+		r1.setName("COUCOU 1");
+		r1.setDescription("la description");
+		Recipe r2 = new Recipe();
+		r2.setName("Deuxieme recette");
+		r2.setDescription("description de la deuxieme");		
+		lst.add(r1);
+		lst.add(r2);
+		
+		return lst;*/
+		
+		return recipeService.getAllRecipes();
+
+	}
+	
 	
 	@RequestMapping(value = "/addrecipe", method = RequestMethod.POST)
 	public void addRecipe(@RequestBody RecipeWrapper wrapper){

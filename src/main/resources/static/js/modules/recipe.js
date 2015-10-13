@@ -6,18 +6,17 @@
     	
     	
     	$http({
-    		method: 'POST', 
-    		url : '/recipelist',
-    		data : recipe
+    		method: 'GET', 
+    		url : '/recipelist'
     	}).success(function(data, status, header, config){
-    		$scope.names = data.recipes;
+    		$scope.recipes = data;
     	}).error(function(data, status, header, config){
     		console.log(data, status, header, config);
     	});
     	
     	
     	
-    	this.recettes = [{
+    	/*this.recettes = [{
     			name : 'Coulée de lave',
     			description:'Cette recette est très brulante, attention !',
     			preparation_time: 45,
@@ -36,7 +35,7 @@
     	
     	this.test = function(){
     		alert("test");
-    	};
+    	};*/
         
     
     
