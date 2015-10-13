@@ -8,11 +8,11 @@
 		<result property="adminRank" column="adminRank"/>
 	</resultMap>
 	
-	<select id="getAllMembers" resultMap="memberResultMap">
-		SELECT * FROM member
+	<select id="getAllAdministrator" resultMap="AdministratorResultMap">
+		SELECT * FROM administrator
 	</select>
 	
-	<delete id="deleteMember" parameterType="java.lang.String">
-		DELETE FROM member WHERE username=#{username}
-	</delete>
+<!--	<delete id="deleteMember" parameterType="java.lang.String">
+		DELETE FROM administrator WHERE username=#{username}
+	</delete>-->
 </mapper>
