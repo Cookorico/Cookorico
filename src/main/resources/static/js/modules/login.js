@@ -18,13 +18,7 @@ loginModule.controller('LoginController', ['$scope','$http', function ($scope, $
     	});
 		
     };
-    
-<<<<<<< HEAD
-    this.logout = function () {
-        alert('logout')
-    };
-}]);
-=======
+
     loginModule.controller('LoginController', ['$scope','$http', function ($scope, $http) {
     	var user;
     	this.login = function () {
@@ -51,5 +45,4 @@ loginModule.controller('LoginController', ['$scope','$http', function ($scope, $
     
     
     }]);
->>>>>>> origin
  
