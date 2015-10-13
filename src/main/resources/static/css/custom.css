@@ -227,3 +227,39 @@ nav.side-menu .side-menu-item:hover{
     width: 1000px;
     height: 1000px;
 }
+
+/****************** User profile ***************/
+
+.user-profile-container {
+
+    display:block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.user-profile-bloc {
+    display:block;
+    margin:20%;
+}
+
+.user-profile-header {
+    display: block;
+    width:100%;
+    height: 150px;
+}
+
+.user-profile-avatar img{
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    margin: 5px 10px;
+    border: 1px solid #AAA;
+}
+
+.user-profile-username {
+    display: inline-block;
+    color: #000;
+    font-size: 23px;
+}
+
