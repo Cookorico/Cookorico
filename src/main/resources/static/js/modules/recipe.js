@@ -1,8 +1,22 @@
 'use strict';
-    var recipeModule = angular.module('Recette-module', []);
+    var recipeModule = angular.module('Recipe-module', []);
     
     
-    recipeModule.controller('RecetteController', ['$scope','$http', function ($scope, $http) {
+    recipeModule.controller('ListRecipeController', ['$scope','$http', function ($scope, $http) {
+    	
+    	
+    	$http({
+    		method: 'POST', 
+    		url : '/recipelist',
+    		data : recipe
+    	}).success(function(data, status, header, config){
+    		$scope.names = data.recipes;
+    	}).error(function(data, status, header, config){
+    		console.log(data, status, header, config);
+    	});
+    	
+    	
+    	
     	this.recettes = [{
     			name : 'Coulée de lave',
     			description:'Cette recette est très brulante, attention !',
@@ -10,7 +24,15 @@
     			coocking_time: 120,
     			dish_type : 'hot',
     			creator: 'Vesuve'
-    			}];
+    			},
+    			{
+        			name : 'Omelette',
+        			description:'Baveuse ou pas. Au choix',
+        			preparation_time: 45,
+        			coocking_time: 120,
+        			dish_type : 'hot',
+        			creator: 'Vesuve'
+        			}];
     	
     	this.test = function(){
     		alert("test");
