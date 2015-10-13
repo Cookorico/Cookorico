@@ -22,6 +22,10 @@
     SELECT * FROM recipe
   </select>
   
+   <select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="int">
+  	SELECT * FROM recipe WHERE id_recipe = #{id}
+  </select>
+  
   <select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="java.lang.String">
   	SELECT * FROM recipe WHERE name = #{name}
   </select>
