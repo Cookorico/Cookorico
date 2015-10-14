@@ -1,8 +1,10 @@
 'use strict';
     
+
     var loginModule = angular.module('Login-module', []);
     
     loginModule.controller('LoginController', ['$scope','$http','$location',  function ($scope, $http, $location) {
+
     	var user;
     	this.login = function () {
         	user = angular.toJson($scope.user);
@@ -19,16 +21,11 @@
             }).error(function(data, status, header, config){
         		console.log(data, status, header, config);
         	});
-    	
-        	
-    		
         };
         
         this.logout = function () {
             alert('logout')
         };
-    
-    
     }]);
     
     

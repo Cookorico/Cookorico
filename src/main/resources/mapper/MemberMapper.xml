@@ -28,7 +28,7 @@
   	SELECT * FROM member WHERE username = #{username} AND password = #{password}
   </select>
   
-  <select id="getMemberWithUsername" parameterType="java.lang.String">
+  <select id="getMemberWithUsername" parameterType="java.lang.String" resultMap="memberResultMap">
   	SELECT * FROM member WHERE username = #{username}
   </select>
   
