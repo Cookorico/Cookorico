@@ -26,9 +26,9 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
-	public @ResponseBody Recipe getRecipe(@PathVariable int ident) {
+	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
-		// USED TO TEST WITHOUT DATABASE
+		/* // USED TO TEST WITHOUT DATABASE
 		Member createur = new Member();
 		createur.setUsername("Jean-Pierre");
 		Recipe r1 = new Recipe();
@@ -39,14 +39,14 @@ public class RecipeController {
 		r1.setCreator(createur);
 		r1.setDifficulty("Facile");
 		r1.setDishType("Apéro");
-		return r1;
+		return r1;*/
 		
-		//return recipeService.getRecipeById(ident);
+		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
 	
 	@RequestMapping(value="/recipe/list", method = RequestMethod.GET)
 	public @ResponseBody List<Recipe> getListRecipe() {
-		
+		/*
 		// USED TO TEST WITHOUT DATABASE
 		List<Recipe> lst = new ArrayList();
 		Recipe r1 = new Recipe();
@@ -60,9 +60,9 @@ public class RecipeController {
 		lst.add(r1);
 		lst.add(r2);
 		
-		return lst;
+		return lst;*/
 		
-		//return recipeService.getAllRecipes();
+		return recipeService.getAllRecipes();
 
 	}
 	
