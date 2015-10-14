@@ -32,5 +32,9 @@ public class MemberServiceImpl implements MemberService{
 	public List<Member> getAllMembers(){
 		return memberDao.getAllMembers();
 	}
+	
+	public Member getMemberById(int id){
+		return memberDao.getMemberById(id);
+	}
 
 }
