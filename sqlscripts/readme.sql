@@ -24,3 +24,14 @@ ALTER TABLE MEMBER
   ALTER COLUMN id_member SET NOT NULL;
 
 ALTER SEQUENCE MEMBER_ID_MEMBER_SEQ OWNED BY MEMBER.ID_MEMBER;
+
+
+
+/*
+si des droits manquent
+*/
+GRANT SELECT ON recipe TO cookorico;
+GRANT INSERT ON recipe TO cookorico;
+GRANT UPDATE ON recipe TO cookorico;
+GRANT DELETE ON recipe TO cookorico;
+GRANT USAGE, SELECT ON SEQUENCE recipe_id_recipe_seq TO cookorico;
