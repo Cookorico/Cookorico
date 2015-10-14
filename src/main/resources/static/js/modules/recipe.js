@@ -10,6 +10,7 @@
     		url : '/recipelist'
     	}).success(function(data, status, header, config){
     		$scope.recipes = data;
+    		console.log($scope.recipes[0]);
     	}).error(function(data, status, header, config){
     		console.log(data, status, header, config);
     	});
@@ -37,6 +38,23 @@
     		alert("test");
     	};*/
         
+    
+    
+    }]);
+    
+    
+    recipeModule.controller('ShowRecipeController', ['$scope','$http','$routeParams', function ($scope, $http, $routeParams) {
+    	console.log($routeParams.recipeId.toString());
+    	
+    	$http({
+    		method: 'GET', 
+    		url : '/recipe/'+$routeParams.recipeId
+    	}).success(function(data, status, header, config){
+    		$scope.recipe = data;
+    		console.log($scope.recipe);
+    	}).error(function(data, status, header, config){
+    		console.log(data, status, header, config);
+    	});
     
     
     }]);

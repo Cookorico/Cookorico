@@ -12,6 +12,9 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	}).when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
 		controller : 'ListRecipeController'
+	}).when('/recipe/:recipeId', {
+		templateUrl : '../templates/showRecipe.html',
+		controller : 'ShowRecipeController'
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'

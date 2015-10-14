@@ -1,24 +1,25 @@
 
 <div class="row">
-    <div class="lateral-nav col-md-2">
-        <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" class="active"><a>Acceuil</a></li>
-            <li role="presentation"><a>Recettes</a></li>
-        </ul>
-    </div>
+    <div class="col-md-2">
+    	<ng-include src="'../includes/main-menu.html'"></ng-include>
+	</div>
 
-    <div class="col-md-10 recette-block" ng-controller="ListRecipeController as recetteCtrl">
-        <div class="recette-thumbnails">
+    <div class="col-md-10" ng-controller="ListRecipeController as recetteCtrl">
+    <div class="recette-block" >
+    <div class="recette-thumbnails">
             <h2 class="text-center nav-title">Recettes</h2>            
-            <div class="thumbnail" ng-repeat="recipe in recipes">
+            <div class="thumbnail col-sm-6 col-md-4" ng-repeat="recipe in recipes">
                 <img src="" alt="...">
                 <div class="caption">
                     <h3>{{recipe.name}}</h3>
-                    <p>{{recipe.description}}</p>
-                    <p><a href="" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    <p>{{recipe.description}}</p>   
+                                     
+                    <p><a href="#/recipe/{{recipe.idRecipe}}" class="btn btn-primary" role="button">Consulter</a></p>
                 </div>
             </div>
         </div>
+    </div>
+        
     </div>
 </div>
 

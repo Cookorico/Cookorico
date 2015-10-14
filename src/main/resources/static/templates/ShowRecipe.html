@@ -1,0 +1,17 @@
+<div class="row">
+<div class="col-md-2">
+    <ng-include src="'../includes/main-menu.html'"></ng-include>
+</div>
+
+    <div class="col-md-10 panel panel-default" ng-controller="ShowRecipeController as ShowRecipeCtrl">
+    <div class="panel-heading">
+    	<h3 class="panel-title">Recette : {{recipe.name}} by <em>{{recipe.creator}}</em></h3>
+  	</div>
+  	<div class="panel-body">
+  		<p><em>Difficulté</em> : {{recipe.difficulty}}</p>
+  		<p><em>Temps préparation</em> : {{recipe.preparationTime}}</p>
+  		<p><em>Temps cuisson</em> : {{recipe.cookingTime}}</p>
+		<p><em>Description</em> : {{recipe.description}}</p>
+  	</div>
+    </div>
+</div>
