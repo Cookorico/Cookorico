@@ -7,7 +7,7 @@
     	
     	$http({
     		method: 'GET', 
-    		url : '/recipelist'
+    		url : '/recipe/list'
     	}).success(function(data, status, header, config){
     		$scope.recipes = data;
     		console.log($scope.recipes[0]);
@@ -70,7 +70,7 @@
 
         	$http({
         		method: 'POST', 
-        		url : '/addrecipe',
+        		url : '/recipe/add',
         		data : recipe
         	}).success(function(data, status, header, config){
         		console.log(data, status, header, config);
