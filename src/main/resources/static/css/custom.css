@@ -1,3 +1,110 @@
+/************* CSS Reset ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color:black;
+    font-family: "Helvetica","Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+/************** Menu ***************/
+
+nav.top-menu {
+    display: block;
+    position: fixed;
+    background-color: #33CC33;
+    height: 60px;
+    width: 100%;
+    box-shadow:2px 0 3px 2px;
+}
+
+nav.top-menu .top-menu-name {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+
+nav.top-menu .top-menu-logo {
+    background: url("../img/coq.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float:left;
+    position: relative;
+    width: 70px;
+    height: 100%;
+}
+
+
+nav.side-menu {
+    display: block;
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    background-color: #ECEFF1;
+    width: 200px;
+    box-shadow:0 2px 3px 2px;
+}
+
+nav.side-menu .side-menu-search-bar{
+    margin-top: 10px;
+}
+
+
+nav.side-menu .side-menu-item{
+    display: block;
+    max-width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 25px;
+    vertical-align: middle;
+    border-bottom: 1px solid #AFBEC5;
+}
+
+nav.side-menu .side-menu-item:active{
+    background-color: #555;
+    color:#BBB;
+}
+
+
+nav.side-menu .side-menu-item:hover{
+    background-color: #555;
+}
+
+.main-container{
+    background-color: blue;
+    display: block;
+    margin-left: 200px;
+    position: static;
+    max-width: 100%;
+    height: 1000px;
+}
+
+/************ Home page ************/
+
 #ALaUne {
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -59,12 +166,6 @@
     padding-bottom: 10px;
 }
 
-
-
-
-
-
-
 .comment-block {
     width: 100%;
     height: 250px;
@@ -117,5 +218,48 @@
 
 .logged{
  display: inline-block;
+}
+/****************** Recipe page *************/
+
+.recipe-main-container {
+    display: block;
+    background-color: blue;
+    width: 1000px;
+    height: 1000px;
+}
+
+/****************** User profile ***************/
+
+.user-profile-container {
+
+    display:block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.user-profile-bloc {
+    display:block;
+    margin:20%;
+}
+
+.user-profile-header {
+    display: block;
+    width:100%;
+    height: 150px;
+}
+
+.user-profile-avatar img{
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    margin: 5px 10px;
+    border: 1px solid #AAA;
+}
+
+.user-profile-username {
+    display: inline-block;
+    color: #000;
+    font-size: 23px;
 }
 

@@ -1,7 +1,5 @@
 package fil.iagl.cookorico.controller;
 
-import java.security.Principal;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,16 +15,11 @@ public class HomeController {
 
 	@Autowired
 	MemberService memberService;
-
-	@RequestMapping(value = "/user")
-	public Principal user(Principal user){
-		return user;
-	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public Member login(@RequestBody LoginWrapper wrapper) {
-		
+	public Member login(@RequestBody LoginWrapper wrapper){
 		Member member = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
 		return member;
 	}
+		
 }
