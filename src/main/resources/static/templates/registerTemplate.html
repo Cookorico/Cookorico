@@ -1,60 +1,47 @@
-<div ng-controller="registerCtl">
-	<form novalidate class="simple-form">
-	
-		<div class="input-group">
-			<span class="input-group-addon">Firstname</span>
-			<input type="text" class="form-control" id="firstname" placeholder="Type your firstame" ng-model="user.firstname">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">Lastname</span>
-			<input type="text" class="form-control" id="lastname" placeholder="Type your lastname" ng-model="user.lastname">
-		</div>
-		
-		<label for="firstname">Gender</label>
+<div class="" style="padding:17px;"  ng-controller="RegisterController as RegisterCtrl">
+    <form role="Registerform" name="Form" class="form" id="formRegister" ng-submit="RegisterCtrl.register()"> 
+    	<div class="form-group">
+    		<label for="firstname">Firstname :</label>
+        	<input class="form-control" name="firstname" id="firstname" type="text" placeholder="Type your firstame" ng-model="user.firstname" required>
+        </div>
+        <div class="form-group">
+    		<label for="lastname">lastname :</label>
+        	<input class="form-control" name="lastname" id="lastname" type="text" placeholder="Type your lastname" ng-model="user.lastname" required>
+        </div>
+		<label for="gender">Gender</label>
 		<div class="radio">
 			<label>
-				<input type="radio" name="lastname" id="lastname" ng-model="user.gender" value="male" />Male
+				<input type="radio" name="gender" id="gender" ng-model="user.gender" value="male" />Male
 			</label>
 		</div>
 		<div class="radio">
 	  		<label>
-	  			<input type="radio" name="lastname" id="lastname" ng-model="user.gender" value="female" />Female
+	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="female" />Female
   			</label>
 		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">Birthday</span>
-			<input type="text" class="form-control" id="birthday" placeholder="Type your birthday" ng-model="user.birthday">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">City</span>
-			<input type="text" class="form-control" id="city" placeholder="Type your city" ng-model="user.city">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">Email</span>
-			<input type="text" class="form-control" id="email" placeholder="Type your email" ng-model="user.email">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">Username</span>
-			<input type="text" class="form-control" id="username" placeholder="Type your username" ng-model="user.username">
-		</div>
-		
-		<div class="input-group">
-			<span class="input-group-addon">Password</span>
-			<input type="password" class="form-control" id="password" placeholder="Type your password" ng-model="user.password">
-			<input type="password" class="form-control" id="password_bis" placeholder="Retype your password" ng-model="user.password_bis">
-		</div>
-
-		<label class="control-label">Select your avatar</label>
+        <div class="form-group">
+    		<label for="birthday">birthday :</label>
+        	<input class="form-control" name="birthday" id="birthday" type="text" placeholder="Type your birthday" ng-model="user.birthday" required>
+        </div>
+        <div class="form-group">
+    		<label for="city">city :</label>
+        	<input class="form-control" name="city" id="city" type="text" placeholder="Type your city" ng-model="user.city" required>
+        </div>
+        <div class="form-group">
+    		<label for="email">email :</label>
+        	<input class="form-control" name="email" id="email" type="text" placeholder="Type your email" ng-model="user.email" required>
+        </div>
+        <div class="form-group">
+    		<label for="username">username :</label>
+        	<input class="form-control" name="username" id="username" type="text" placeholder="Type your username" ng-model="user.username" required>
+        </div>
+        <div class="form-group">
+    		<label for="password">password :</label>
+        	<input class="form-control" name="password" id="password" type="password" placeholder="Type your password" ng-model="user.password" required>
+        </div>
+        <label class="control-label">Select your avatar</label>
 		<input id="input-1" type="file" class="file" ng-model="user.currentAvatar">
-
-		<div class="form-group">
-			<input type="button" ng-click="reset()" value="Reset" />
-			<input type="submit" ng-click="update(user)" value="Save" />
-		</div>
-	</form>
+        <br>	
+        <button id="btnRegister" role="submit" class="btn btn-success btn-block">Register</button>
+    </form>
 </div>
