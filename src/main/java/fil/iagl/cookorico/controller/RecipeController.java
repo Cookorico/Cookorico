@@ -24,6 +24,9 @@ public class RecipeController {
 	@Autowired
 	RecipeService recipeService;
 	
+	@Autowired
+	MemberService memberService;
+	
 	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
@@ -81,9 +84,15 @@ public class RecipeController {
 		recipe.setDescription(wrapper.getDescription());
 		recipe.setPreparationTime(wrapper.getPreparation_time());
 		recipe.setCookingTime(wrapper.getCooking_time());
-		recipe.setFkCreator(1);
-		recipeService.addRecipe(recipe);
+		Member createur = memberService.getMemberById(1);
 		
+		System.out.println("#########");
+		System.out.println(createur.getUsername());
+		System.out.println(createur.getIdMember());
+		recipe.setCreator(createur);
+		
+		
+		recipeService.addRecipe(recipe);	
 		
 		System.out.println("UNE RECETTE A ETE AJOUTEE. VOICI LA LISTE DES RECETTES PRESENTES EN BASE DE DONNEES:");
 		
