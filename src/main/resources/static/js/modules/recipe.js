@@ -40,6 +40,23 @@
     
     
     }]);
+    
+    
+    recipeModule.controller('ShowRecipeController', ['$scope','$http','$routeParams', function ($scope, $http, $routeParams) {
+    	console.log($routeParams.recipeId.toString());
+    	
+    	$http({
+    		method: 'GET', 
+    		url : '/recipe/'+$routeParams.recipeId
+    	}).success(function(data, status, header, config){
+    		$scope.recipe = data;
+    		console.log($scope.recipe);
+    	}).error(function(data, status, header, config){
+    		console.log(data, status, header, config);
+    	});
+    
+    
+    }]);
  
     
     recipeModule.controller('AddRecipeController', ['$scope','$http', function ($scope, $http) {

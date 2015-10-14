@@ -12,12 +12,18 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	}).when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
 		controller : 'ListRecipeController'
+	}).when('/recipe/:recipeId', {
+		templateUrl : '../templates/showRecipe.html',
+		controller : 'ShowRecipeController'
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
 	}) .when('/user/register', {
 		templateUrl : '../templates/registerTemplate.html',
 		controller : 'RegisterController'
+	}).when('/profile', {
+		templateUrl : '../templates/userProfile.html',
+		controller : 'ProfileController'
 	}).otherwise({
 		redirectTo : '/login'
 	});
