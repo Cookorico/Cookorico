@@ -84,7 +84,7 @@
     
     
     
-    recipeModule.controller('RegisterController', ['$scope','$http', function ($scope, $http) {
+    recipeModule.controller('RegisterController', ['$scope','$http','$location', function ($scope, $http, $location) {
     	var user
     	
     	this.register = function () {
@@ -98,6 +98,7 @@
         		data : user
         	}).success(function(data, status, header, config){
         		console.log(data, status, header, config);
+        		$location.path("/loghome");
         	}).error(function(data, status, header, config){
         		console.log(data, status, header, config);
         	});

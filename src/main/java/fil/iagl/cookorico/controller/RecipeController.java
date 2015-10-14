@@ -28,7 +28,7 @@ public class RecipeController {
 	MemberService memberService;
 	
 	
-	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
 		/* // USED TO TEST WITHOUT DATABASE
