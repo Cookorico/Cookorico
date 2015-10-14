@@ -12,16 +12,22 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	}).when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
 		controller : 'ListRecipeController'
+	}).when('/recipe/id/:recipeId', {
+		templateUrl : '../templates/showRecipe.html',
+		controller : 'ShowRecipeController'
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
-	})
-	.otherwise({
+	}) .when('/user/register', {
+		templateUrl : '../templates/registerTemplate.html',
+		controller : 'RegisterController'
+	}).when('/profile', {
+		templateUrl : '../templates/userProfile.html',
+		controller : 'ProfileController'
+	}).otherwise({
 		redirectTo : '/login'
 	});
-	
 }]);
-
 
 cookorico.controller('mainCtrl', ['$scope', '$http', function($scope, $http){
 	//alert("toto");
@@ -30,7 +36,11 @@ cookorico.controller('mainCtrl', ['$scope', '$http', function($scope, $http){
 cookorico.controller('indexCtrl', ['$scope', '$http', function($scope, $http){
 	//alert("tata");
 }]);
-	
+
+/*cookorico.controller('RegisterController', ['$scope', '$http', function($scope, $http){
+	//alert("toto");
+}]);*/
+
 /*app.config(function($routeProvider, $httpProvider) {
     $routeProvider.when('/', {
 		templateUrl : 'index.html',
