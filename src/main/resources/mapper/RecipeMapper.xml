@@ -32,7 +32,7 @@
   
   
   <insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
-  	INSERT INTO recipe(name, description, preparation_time, cooking_time,fk_creator) VALUES(#{recipe.name}, #{recipe.description}, #{recipe.preparationTime}, #{recipe.cookingTime}, #{recipe.fkCreator})
+  	INSERT INTO recipe(name, description, preparation_time, cooking_time,fk_creator) VALUES(#{recipe.name}, #{recipe.description}, #{recipe.preparationTime}, #{recipe.cookingTime}, #{recipe.creator.idMember})
   </insert>
 
 </mapper>

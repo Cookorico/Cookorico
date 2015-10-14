@@ -12,5 +12,5 @@ public interface MemberService {
 	
 	List<Member> getAllMembers();
 		
-	
+	Member getMemberById(int id);
 }

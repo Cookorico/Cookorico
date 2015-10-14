@@ -8,18 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.service.MemberService;
-import fil.iagl.cookorico.wrapper.LoginWrapper;
 
 @RestController
-public class HomeController {
+public class UserController {
 
 	@Autowired
 	MemberService memberService;
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public Member login(@RequestBody LoginWrapper wrapper){
-		Member member = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
-		return member;
-	}
-
+	@RequestMapping(value = "/user/register", method = RequestMethod.POST)
+	public void registerUser(@RequestBody Member member){
+		memberService.addMember(member);
+	}	
 }
