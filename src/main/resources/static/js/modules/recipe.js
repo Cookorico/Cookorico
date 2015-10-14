@@ -81,3 +81,25 @@
     
     
     }]);
+    
+    
+    
+    recipeModule.controller('RegisterController', ['$scope','$http', function ($scope, $http) {
+    	var user
+    	
+    	this.register = function () {
+    		
+    		user = angular.toJson($scope.user);
+        	console.log(user);
+    		
+        	$http({
+        		method: 'POST', 
+        		url : '/user/register',
+        		data : user
+        	}).success(function(data, status, header, config){
+        		console.log(data, status, header, config);
+        	}).error(function(data, status, header, config){
+        		console.log(data, status, header, config);
+        	});
+        };
+    }]);
