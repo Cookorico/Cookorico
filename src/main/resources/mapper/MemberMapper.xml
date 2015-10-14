@@ -32,6 +32,10 @@
   	SELECT * FROM member WHERE username = #{username}
   </select>
   
+  <select id="getMemberById" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMap" >
+  	SELECT * FROM member WHERE id_member = #{id}
+  </select>
+  
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">
   	INSERT INTO member(email, username, password) VALUES(#{member.email}, #{member.username}, #{member.password})
   </insert>
