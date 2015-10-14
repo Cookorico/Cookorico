@@ -1,0 +1,24 @@
+<div class="user-profile-container" ng-controller="ProfileController">
+	<div class="user-profile-bloc">
+		<div class="user-profile-header">
+			<span class="user-profile-avatar"><img src="{{user.avatar-url}}"/></span>
+			<span class="user-profile-username">{{user.username}}</span>
+		</div>
+		<div class="user-profile-informations">
+			<ul class="user-profile-information-list">
+				<li>
+					{{user.email}}
+				</li>
+				<li>
+					{{user.firstname}}
+				</li>
+				<li>
+					{{user.lastname}}
+				</li>
+				<li>
+					{{user.gender}}
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

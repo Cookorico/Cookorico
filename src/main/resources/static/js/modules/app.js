@@ -1,4 +1,4 @@
-var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recette-module']);
+var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module']);
 
 cookorico.config(['$routeProvider', function($routeProvider) {
 
@@ -11,7 +11,7 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 		controller : 'mainCtrl'
 	}).when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
-		controller : 'RecetteController'
+		controller : 'ListRecipeController'
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'

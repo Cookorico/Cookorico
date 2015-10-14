@@ -28,4 +28,9 @@ public class RecipeServiceImpl implements RecipeService{
 		return recipeDao.getAllRecipes();
 	}
 
+	@Override
+	public Recipe getRecipeById(int id) {
+		return recipeDao.getRecipeById(id);
+	}
+
 }

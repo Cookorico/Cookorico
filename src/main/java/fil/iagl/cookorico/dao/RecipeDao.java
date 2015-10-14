@@ -14,4 +14,6 @@ public interface RecipeDao {
 	
 	void addRecipe(@Param("recipe") Recipe recipe);
 
+	Recipe getRecipeById(@Param("id") int id);
+
 }
