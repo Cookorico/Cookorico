@@ -1,28 +1,34 @@
-var cookorico = angular.module('cookorico', ['ngRoute']);
+var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module']);
 
 cookorico.config(['$routeProvider', function($routeProvider) {
 
 	$routeProvider.when('/', {
-		templateUrl : '../..index.html',
-		controller : 'indexCtrl'			
+		templateUrl : '../templates/logoutHome.html',
+		controller : 'LoginController'			
 	})
 	.when('/login', {
-		templateUrl : '../..login.html',
+		templateUrl : '../templates/logoutHome.html',
 		controller : 'mainCtrl'
+	}).when('/loghome', {
+		templateUrl : '../templates/loginHome.html',
+		controller : 'ListRecipeController'
+	}).when('/recipe/add', {
+		templateUrl : '../templates/addRecipe.html',
+		controller : 'AddRecipeController'
 	})
 	.otherwise({
-		redirectTo : '../../login.html'
+		redirectTo : '/login'
 	});
 	
 }]);
 
 
 cookorico.controller('mainCtrl', ['$scope', '$http', function($scope, $http){
-	alert("toto");
+	//alert("toto");
 }]);
 
 cookorico.controller('indexCtrl', ['$scope', '$http', function($scope, $http){
-	alert("tata");
+	//alert("tata");
 }]);
 	
 /*app.config(function($routeProvider, $httpProvider) {

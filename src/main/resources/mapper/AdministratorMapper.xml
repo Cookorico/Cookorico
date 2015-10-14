@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+  'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+  
+<mapper namespace='fil.iagl.cookorico.dao.AdministratorMapper'>
+	<resultMap type="fil.iagl.cookorico.entity.Administrator" id="AdministratorResultMap">
+		<id property="id" column="id"/>
+		<result property="adminRank" column="adminRank"/>
+	</resultMap>
+	
+	<select id="getAllAdministrator" resultMap="AdministratorResultMap">
+		SELECT * FROM administrator
+	</select>
+	
+<!--	<delete id="deleteMember" parameterType="java.lang.String">
+		DELETE FROM administrator WHERE username=#{username}
+	</delete>-->
+</mapper>

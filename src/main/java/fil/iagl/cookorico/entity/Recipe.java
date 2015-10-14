@@ -17,6 +17,7 @@ public class Recipe {
 	private Integer preparationTime;
 	private Integer cookingTime;
 	private Member creator;
+	private int fkCreator; //TEMPORAIRE. EN ATTENDANT DE GERER LES OBJETS ETC ON SAIT PAS FAIRE.
 	private String dish_type; //TO DO ENUM
 	private String difficulty; //TO DO ENUM
 	private Timestamp creationDate;
