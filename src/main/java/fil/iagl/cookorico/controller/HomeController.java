@@ -21,8 +21,4 @@ public class HomeController {
 		Member member = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
 		return member;
 	}
-<<<<<<< HEAD
-=======
-		
->>>>>>> origin
 }
