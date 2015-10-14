@@ -31,8 +31,8 @@ public class CookoricoApplication {
 	public DataSource dataSource() {
 
 		BasicDataSource ds = new BasicDataSource();
-		ds.setUsername("postgres");
-		ds.setPassword("postgres");
+		ds.setUsername("cookorico");
+		ds.setPassword("cookorico");
 		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
 		// url to dev at home
 //		ds.setUrl("jdbc:postgresql://localhost:5432/cookoricodb");
