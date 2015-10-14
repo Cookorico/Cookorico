@@ -26,7 +26,7 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
-	public @ResponseBody Recipe getListRecipe(@PathVariable int ident) {
+	public @ResponseBody Recipe getRecipe(@PathVariable int ident) {
 		
 		// USED TO TEST WITHOUT DATABASE
 		Member createur = new Member();
@@ -42,10 +42,9 @@ public class RecipeController {
 		return r1;
 		
 		//return recipeService.getRecipeById(ident);
-
 	}
 	
-	@RequestMapping(value="/recipelist", method = RequestMethod.GET)
+	@RequestMapping(value="/recipe/list", method = RequestMethod.GET)
 	public @ResponseBody List<Recipe> getListRecipe() {
 		
 		// USED TO TEST WITHOUT DATABASE
@@ -66,7 +65,7 @@ public class RecipeController {
 	}
 	
 	
-	@RequestMapping(value = "/addrecipe", method = RequestMethod.POST)
+	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
 	public void addRecipe(@RequestBody RecipeWrapper wrapper){
 		
 		System.out.println(wrapper.getName());
