@@ -18,8 +18,10 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
-	})
-	.otherwise({
+	}).when('/profile', {
+		templateUrl : '../templates/userProfile.html',
+		controller : 'ProfileController'
+	}).otherwise({
 		redirectTo : '/login'
 	});
 	

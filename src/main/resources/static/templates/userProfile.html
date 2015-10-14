@@ -1,24 +1,32 @@
-<div class="user-profile-container" ng-controller="ProfileController">
-	<div class="user-profile-bloc">
-		<div class="user-profile-header">
-			<span class="user-profile-avatar"><img src="{{user.avatar-url}}"/></span>
-			<span class="user-profile-username">{{user.username}}</span>
+<div class="row">
+	<div class="col-md-2">
+	<ng-include src="'../includes/main-menu.html'"></ng-include>
+	</div>
+	<div class="user-profile-container col-md-10 panel panel-default" ng-controller="ProfileController">
+		<div class="user-profile-bloc panel-title">
+				<h3>{{user.username}}</h3>
 		</div>
-		<div class="user-profile-informations">
-			<ul class="user-profile-information-list">
-				<li>
-					{{user.email}}
-				</li>
-				<li>
-					{{user.firstname}}
-				</li>
-				<li>
-					{{user.lastname}}
-				</li>
-				<li>
-					{{user.gender}}
-				</li>
-			</ul>
-		</div>
+			<div class="user-profile-information panel-body">
+				<ul class="user-profile-information-list">
+					<li>
+						Email : {{user.email}}
+					</li>
+					<li>
+						{{user.firstname}}
+					</li>
+					<li>
+						{{user.lastname}}
+					</li>
+					<li>
+						{{user.gender}}
+					</li>
+					<li>
+						{{user.birthday}}
+					</li>
+					<li>
+						{{user.city}}
+					</li>								
+				</ul>
+			</div>
 	</div>
 </div>
