@@ -1,4 +1,4 @@
-<div class="" style="padding:17px;"  ng-controller="RegisterController as RegisterCtrl">
+<div class="" style="padding:17px;"  ng-controller="RegisterController as RegisterCtrl" novalidate>
     <form role="Registerform" name="Form" class="form" id="formRegister" ng-submit="RegisterCtrl.register()"> 
     	<div class="form-group">
     		<label for="firstname">Firstname :</label>
@@ -11,18 +11,18 @@
 		<label for="gender">Gender</label>
 		<div class="radio">
 			<label>
-				<input type="radio" name="gender" id="gender" ng-model="user.gender" value="male" />Male
+				<input type="radio" name="gender" id="gender" ng-model="user.gender" value="1" />Male
 			</label>
 		</div>
 		<div class="radio">
 	  		<label>
-	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="female" />Female
+	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="0" />Female
   			</label>
 		</div>
-        <div class="form-group">
+        <!-- div class="form-group">
     		<label for="birthday">birthday :</label>
         	<input class="form-control" name="birthday" id="birthday" type="text" placeholder="Type your birthday" ng-model="user.birthday" required>
-        </div>
+        </div> -->
         <div class="form-group">
     		<label for="city">city :</label>
         	<input class="form-control" name="city" id="city" type="text" placeholder="Type your city" ng-model="user.city" required>
