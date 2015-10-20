@@ -13,11 +13,12 @@ public class AdministratorServiceImpl implements AdministratorService{
 	@Autowired
 	private AdministratorDao adminDao;
 	
-	public List<Member> getAllMember(){
+	public List<Member> getAllMembers(){
 		return adminDao.getAllMembers();
 	}
 	
 	public int deleteMember(String username){
 		return adminDao.deleteMember(username);
 	}
+
 }

@@ -17,16 +17,17 @@ public class MemberServiceImpl implements MemberService{
 	
 	@Override
 	public Member getMember(String username, String password) {
-		Member member = memberDao.getMemberWithCredentials(username, password);
-		return member;
+		return memberDao.getMemberWithCredentials(username, password);
 	}
 	
 	@Override
-	public void addMember(Member member) {
+	public boolean addMember(Member member) {
 		final String memberUsername = member.getUsername();
 		if (memberDao.getMemberWithUsername(memberUsername) == null) {
 			memberDao.addMember(member);
+			return true;
 		}
+		return false;
 	}
 	
 	public List<Member> getAllMembers(){

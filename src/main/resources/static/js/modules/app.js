@@ -18,7 +18,7 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	}).when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
-	}) .when('/user/register', {
+	}) .when('/register', {
 		templateUrl : '../templates/registerTemplate.html',
 		controller : 'RegisterController'
 	}).when('/profile', {

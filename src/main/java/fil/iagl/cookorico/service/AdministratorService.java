@@ -6,7 +6,7 @@ import fil.iagl.cookorico.entity.Member;
 
 public interface AdministratorService {
 
-	public List<Member> getAllMember();
+	List<Member> getAllMembers();
 	
-	public int deleteMember(String username);
+	int deleteMember(String username);
 }
