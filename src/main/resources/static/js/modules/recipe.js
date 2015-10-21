@@ -49,32 +49,32 @@ recipeModule.controller('ShowRecipeController', ['$scope','$http','$routeParams'
     	});
     
     
-    }]);
+    }]
+);
  
-    recipeModule.controller('AddRecipeController', ['$scope','$http', function ($scope, $http) {
+recipeModule.controller('AddRecipeController', ['$scope','$http', function ($scope, $http) {
 	var recipe;
 	
 	this.add = function () {
 		
 		recipe = angular.toJson($scope.recipe);
-    	console.log(recipe);
+		console.log(recipe);
+	
+		$http({
+	    		method: 'POST', 
+	    		url : '/recipe/add',
+	    		data : recipe
+	    	}).success(function(data, status, header, config){
+	    		console.log(data, status, header, config);
+	    	}).error(function(data, status, header, config){
+	    		console.log(data, status, header, config);
+	    	});
+			
+	    };
+	}]
+);
+    
 
-    	$http({
-        		method: 'POST', 
-        		url : '/recipe/add',
-        		data : recipe
-        	}).success(function(data, status, header, config){
-        		console.log(data, status, header, config);
-        	}).error(function(data, status, header, config){
-        		console.log(data, status, header, config);
-        	});
-    		
-        };
-    
-    
-    }]);
-    
-    
     
 //    recipeModule.controller('RegisterController', ['$scope','$http','$location', function ($scope, $http, $location) {
 //    	var user
@@ -95,4 +95,4 @@ recipeModule.controller('ShowRecipeController', ['$scope','$http','$routeParams'
 //        		console.log(data, status, header, config);
 //        	});
 //        };
-    }]);
+//    }]);

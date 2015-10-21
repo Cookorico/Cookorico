@@ -25,8 +25,12 @@ public class MemberController {
 		return memberService.getMember(username, password);
 	}
 	
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	@RequestMapping(value = "user/register", method = RequestMethod.POST)
 	public boolean registerUser(@RequestBody RegisterWrapper wrapper) {
+		
+		
+		
+		
 		final String email = wrapper.getEmail();
 		final String username = wrapper.getUsername();
 		final String password = wrapper.getPassword();
@@ -34,6 +38,7 @@ public class MemberController {
 		final String lastName = wrapper.getLastName();
 		final String gender = wrapper.getGender();
 		final String city = wrapper.getCity();
+		
 		final Member member = new Member();
 		member.setFirstname(firstName);
 		member.setLastname(lastName);
@@ -42,6 +47,7 @@ public class MemberController {
 		member.setEmail(email);
 		member.setUsername(username);
 		member.setPassword(password);
+		
 		return memberService.addMember(member);
 	}
 }
