@@ -14,7 +14,6 @@ import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
-import fil.iagl.cookorico.wrapper.RecipeWrapper;
 
 @RestController
 public class RecipeController {
@@ -69,9 +68,9 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody RecipeWrapper wrapper){
+	public void addRecipe(@RequestBody Recipe recipe){
 		
-		System.out.println(wrapper.getName());
+		/*System.out.println(wrapper.getName());
 		System.out.println(wrapper.getDescription());
 		System.out.println(wrapper.getPreparationTime());
 		System.out.println(wrapper.getCookingTime());
@@ -80,8 +79,6 @@ public class RecipeController {
 		Recipe recipe = new Recipe();
 		recipe.setName(wrapper.getName());
 		recipe.setDescription(wrapper.getDescription());
-		recipe.setPreparationTime(wrapper.getPreparationTime());
-		recipe.setCookingTime(wrapper.getCookingTime());
 		Member createur = memberService.getMemberById(1);
 		
 		System.out.println("#########");
@@ -90,6 +87,7 @@ public class RecipeController {
 		recipe.setCreator(createur);
 		
 		
+		System.out.println(recipe.getCookingTime());
 		recipeService.addRecipe(recipe);	
 		
 		System.out.println("UNE RECETTE A ETE AJOUTEE. VOICI LA LISTE DES RECETTES PRESENTES EN BASE DE DONNEES:");
