@@ -4,21 +4,21 @@
     <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="AddRecipeCtrl.add()" novalidate> 
     	<div class="form-group">
     		<label for="recipename">Nom de la recette :</label>
-        	<input class="form-control" name="recipename" id="recipename" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
+        	<input class="form-control" name="recipeName" id="recipeName" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
         </div>
         <div class="row">
 	        <div class="form-group col-xs-12 col-sm-6 col-md-8">
 	       		<label for="recipepreparationtime">Temps de préparation (en secondes) :</label>
-	        	<input class="form-control" name="recipepreparationtime" id="recipepreparationtime" type="number" placeholder="Preparation time" ng-model="recipe.preparation_time" required>
+	        	<input class="form-control" name="recipePreparationTime" id="recipePreparationTime" type="number" placeholder="Preparation time" ng-model="recipe.preparationTime" required>
 	        </div>
 	        <div class="form-group col-xs-6 col-md-4">
 	        	<label for="recipecookingtime">Temps de cuisson (en secondes) :</label>
-	        	<input class="form-control" name="recipecookingtime" id="recipecookingtime" type="number" placeholder="Cooking time" ng-model="recipe.cooking_time" required>
+	        	<input class="form-control" name="recipeCookingTime" id="recipeCookingTime" type="number" placeholder="Cooking time" ng-model="recipe.cookingTime" required>
 	        </div>
         </div>
         <div class="form-group">
         	<label for="recipedescription">Description :</label>
-        	<textarea class="form-control" name="recipedescription" id="recipedescription" type="textarea" placeholder="description" ng-model="recipe.description" required></textarea>
+        	<textarea class="form-control" name="recipeDescription" id="recipeDescription" type="textarea" placeholder="description" ng-model="recipe.description" required></textarea>
         </div>
         <br>
         <button id="btnAddRecipe" role="submit" class="btn btn-success btn-block">Ajouter</button>
