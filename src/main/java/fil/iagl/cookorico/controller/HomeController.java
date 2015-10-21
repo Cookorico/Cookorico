@@ -1,25 +1,40 @@
 package fil.iagl.cookorico.controller;
 
+import java.security.Principal;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.service.MemberService;
-import fil.iagl.cookorico.wrapper.LoginWrapper;
 
 @RestController
 public class HomeController {
 
 	@Autowired
 	MemberService memberService;
-	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public Member login(@RequestBody LoginWrapper wrapper){
-		Member member = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
-		return member;
+
+	@RequestMapping("/user")
+	public Principal user(Principal user) {
+		return user;
 	}
+
+	@RequestMapping("/resource")
+	public Map<String, Object> home() {
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("id", UUID.randomUUID().toString());
+		model.put("content", "Hello World");
+		return model;
+	}
+
+	// @RequestMapping(value = "/login", method = RequestMethod.POST)
+	// public Member login(@RequestBody LoginWrapper wrapper){
+	// Member member = memberService.getMember(wrapper.getUsername(),
+	// wrapper.getPassword());
+	// return member;
+	// }
 
 }
