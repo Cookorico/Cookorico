@@ -7,7 +7,7 @@ public class RegisterWrapper {
 	
 	private String firstName;
 	private String lastName;
-	private Character gender;
+	private String gender;
 	private String city;
 	private String email;
 	private String username;

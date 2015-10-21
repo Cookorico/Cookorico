@@ -1,5 +1,6 @@
 package fil.iagl.cookorico.controller;
 
+import org.neo4j.cypher.internal.compiler.v2_1.functions.Str;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +32,7 @@ public class MemberController {
 		final String password = wrapper.getPassword();
 		final String firstName = wrapper.getFirstName();
 		final String lastName = wrapper.getLastName();
-		final Character gender = wrapper.getGender();
+		final String gender = wrapper.getGender();
 		final String city = wrapper.getCity();
 		final Member member = new Member();
 		member.setFirstname(firstName);

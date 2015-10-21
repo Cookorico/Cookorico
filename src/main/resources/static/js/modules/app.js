@@ -1,4 +1,4 @@
-var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module']);
+var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module', 'User-module']);
 
 cookorico.config(['$routeProvider', function($routeProvider) {
 
@@ -9,22 +9,28 @@ cookorico.config(['$routeProvider', function($routeProvider) {
 	.when('/login', {
 		templateUrl : '../templates/logoutHome.html',
 		controller : 'mainCtrl'
-	}).when('/loghome', {
+	})
+	.when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
 		controller : 'ListRecipeController'
-	}).when('/recipe/id/:recipeId', {
+	})
+	.when('/recipe/id/:recipeId', {
 		templateUrl : '../templates/showRecipe.html',
 		controller : 'ShowRecipeController'
-	}).when('/recipe/add', {
+	})
+	.when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
-	}) .when('/register', {
+	})
+	.when('/user/register', {
 		templateUrl : '../templates/registerTemplate.html',
 		controller : 'RegisterController'
-	}).when('/profile', {
+	})
+	.when('/profile', {
 		templateUrl : '../templates/userProfile.html',
 		controller : 'ProfileController'
-	}).otherwise({
+	})
+	.otherwise({
 		redirectTo : '/login'
 	});
 }]);

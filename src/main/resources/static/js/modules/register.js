@@ -1,14 +1,13 @@
 'use strict';
-    
-var RegisterModule = angular.module('Register-module', []);
+var registerModule = angular.module('User-module', []);
 
-RegisterModule.controller('RegisterController', ['$scope','$http', function ($scope, $http) {
-	var member
+registerModule.controller('RegisterController', ['$scope','$http','$location', function ($scope, $http, $location) {
+	var user
 	
 	this.register = function () {
 		
-		member = angular.toJson($scope.member);
-    	console.log(member);
+		user = angular.toJson($scope.user);
+    	// console.log(user);
 		
     	$http({
     		method: 'POST', 
@@ -16,32 +15,9 @@ RegisterModule.controller('RegisterController', ['$scope','$http', function ($sc
     		data : member
     	}).success(function(data, status, header, config){
     		console.log(data, status, header, config);
+    		$location.path("/loghome");
     	}).error(function(data, status, header, config){
     		console.log(data, status, header, config);
     	});
     };
 }]);
- 
-
-/*recipeModule.controller('AddRecipeController', ['$scope','$http', function ($scope, $http) {
-	var recipe;
-	
-	this.add = function () {
-		
-		recipe = angular.toJson($scope.recipe);
-    	console.log(recipe);
-
-    	$http({
-    		method: 'POST', 
-    		url : '/recipe/add',
-    		data : recipe
-    	}).success(function(data, status, header, config){
-    		console.log(data, status, header, config);
-    	}).error(function(data, status, header, config){
-    		console.log(data, status, header, config);
-    	});
-		
-    };
-
-
-}]);*/
