@@ -46,3 +46,9 @@ GRANT INSERT ON recipe TO cookorico;
 GRANT UPDATE ON recipe TO cookorico;
 GRANT DELETE ON recipe TO cookorico;
 GRANT USAGE, SELECT ON SEQUENCE recipe_id_recipe_seq TO cookorico;
+
+GRANT SELECT ON administrator TO cookorico;
+GRANT INSERT ON administrator TO cookorico;
+GRANT UPDATE ON administrator TO cookorico;
+GRANT DELETE ON administrator TO cookorico;
+GRANT USAGE, SELECT ON SEQUENCE administrator_id_administrator_seq TO cookorico;
