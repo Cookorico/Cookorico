@@ -1,19 +1,19 @@
 'use strict';
     
-var UserModule = angular.module('User-module', []);
+var RegisterModule = angular.module('Register-module', []);
 
-UserModule.controller('RegisterController', ['$scope','$http', function ($scope, $http) {
-	var user
+RegisterModule.controller('RegisterController', ['$scope','$http', function ($scope, $http) {
+	var member
 	
 	this.register = function () {
 		
-		user = angular.toJson($scope.user);
-    	console.log(user);
+		member = angular.toJson($scope.member);
+    	console.log(member);
 		
     	$http({
     		method: 'POST', 
-    		url : '/user/register',
-    		data : user
+    		url : '/register',
+    		data : member
     	}).success(function(data, status, header, config){
     		console.log(data, status, header, config);
     	}).error(function(data, status, header, config){
