@@ -1,6 +1,17 @@
 
 
 
+/*
+ * DESCRIPTION DE LA BASE DE DONNEE
+
+  La présence d'une ligne dans RECIPE_STEP_SUCCESSFUL représente la validation de l'étape par le membre.
+  La boolean SUCCESSFUL dans note représente la validation de la recette par le membre.
+
+
+
+*/
+
+
 /* POUR SELECTIONNER UN ENUM 
  */
 select enum_range(NULL::tag_type)
