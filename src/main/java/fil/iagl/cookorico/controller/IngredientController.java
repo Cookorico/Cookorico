@@ -23,7 +23,6 @@ public class IngredientController {
 	@RequestMapping(value="/ingredient/list", method = RequestMethod.GET)
 	public @ResponseBody List<Ingredient> getListIngredient() {
 		
-		
 		return ingredientService.getAllIngredients();
 
 	}
