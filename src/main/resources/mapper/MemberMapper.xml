@@ -58,7 +58,8 @@
   </select>
   
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">
-  	INSERT INTO member(email, username, password) VALUES(#{member.email}, #{member.username}, #{member.password})
+  	INSERT INTO member(username, firstname, lastname, email, password<!--,birthday-->, gender, city<!--,current_avatar-->) 
+  	VALUES(#{member.username}, #{member.firstname}, #{member.lastname}, #{member.email}, #{member.password}<!--, #{member.birthday}-->, #{member.gender}::gender, #{member.city} <!--, #{member.current_avatar}-->)
   </insert>
 
 </mapper>

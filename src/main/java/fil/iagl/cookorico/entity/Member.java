@@ -19,7 +19,7 @@ public class Member {
 	private String email;
 	private String password;
 	private Date birthday;
-	private Character gender;
+	private String gender;
 	private String city;
 	private Photo currentAvatar;
 	private List<Photo> photosOfUser;

@@ -14,7 +14,7 @@ public class AdministratorServiceImpl implements AdministratorService{
 	
 	@Autowired
 	private AdministratorDao adminDao;
-	
+
 	public List<Member> getAllAdministrator(){
 		return adminDao.getAllAdministrator();
 	}
