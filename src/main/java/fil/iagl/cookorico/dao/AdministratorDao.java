@@ -8,7 +8,6 @@ import fil.iagl.cookorico.entity.Member;
 
 public interface AdministratorDao {
 
-	List<Member> getAllMembers();
+	List<Member> getAllAdministrator();
 	
-	int deleteMember(@Param("username") String username);
 }
