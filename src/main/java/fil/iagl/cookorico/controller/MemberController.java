@@ -28,9 +28,6 @@ public class MemberController {
 	@RequestMapping(value = "user/register", method = RequestMethod.POST)
 	public boolean registerUser(@RequestBody RegisterWrapper wrapper) {
 		
-		
-		
-		
 		final String email = wrapper.getEmail();
 		final String username = wrapper.getUsername();
 		final String password = wrapper.getPassword();

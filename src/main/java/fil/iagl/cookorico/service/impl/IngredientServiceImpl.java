@@ -16,9 +16,9 @@ public class IngredientServiceImpl implements IngredientService{
 	private IngredientDao ingredientdao;
 
 	@Override
-	public void addIngredient(Ingredient ingredient) {
+	public boolean addIngredient(Ingredient ingredient) {
 		// TODO Auto-generated method stub
-		ingredientdao.addIngredient(ingredient);
+		return ingredientdao.addIngredient(ingredient);
 	}
 
 	@Override

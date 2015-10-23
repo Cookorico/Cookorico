@@ -8,7 +8,7 @@ import fil.iagl.cookorico.entity.Ingredient;
 
 public interface IngredientService {
 
-	void addIngredient(@Param("ingredient") Ingredient ingredient);
+	boolean addIngredient(@Param("ingredient") Ingredient ingredient);
 	
 	List<Ingredient> getAllIngredients();
 	
