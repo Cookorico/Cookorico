@@ -35,9 +35,9 @@ public class IngredientServiceImpl implements IngredientService{
 	}
 
 	@Override
-	public void deleteIngredient(Ingredient ingredient) {
+	public boolean deleteIngredient(Ingredient ingredient) {
 		// TODO Auto-generated method stub
-		ingredientdao.deleteIngredient(ingredient);
+		return ingredientdao.deleteIngredient(ingredient);
 	}
 	
 	
