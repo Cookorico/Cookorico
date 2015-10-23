@@ -23,4 +23,12 @@
 		select * from taste, member where member = #{id}; 
 	</select>
 	
+	<select id="getAllTaste" parameterType="fil.iagl.cookorico.entity.Taste" resultMap="tasteResultMap">
+		SELECT * FROM taste 
+	</select>
+	
+	<insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
+		INSERT INTO taste ()
+	</insert>
+	
 </mapper>
