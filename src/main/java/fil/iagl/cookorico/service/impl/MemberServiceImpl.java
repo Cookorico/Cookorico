@@ -1,5 +1,6 @@
 package fil.iagl.cookorico.service.impl;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,16 +18,18 @@ public class MemberServiceImpl implements MemberService{
 	
 	@Override
 	public Member getMember(String username, String password) {
-		Member member = memberDao.getMemberWithCredentials(username, password);
-		return member;
+		return memberDao.getMemberWithCredentials(username, password);
 	}
 	
 	@Override
-	public void addMember(Member member) {
-		final String memberUsername = member.getUsername();
-		if (memberDao.getMemberWithUsername(memberUsername) == null) {
+	public boolean addMember(Member member) {
+		// check gender value is valid and the member username not yet exists
+		if (memberDao.getMemberWithUsername(member.getUsername()) == null && Arrays.asList(new String[]{"M","F","U"}).contains(member.getGender())) {
+
 			memberDao.addMember(member);
+			return true;
 		}
+		return false;
 	}
 	
 	public List<Member> getAllMembers(){

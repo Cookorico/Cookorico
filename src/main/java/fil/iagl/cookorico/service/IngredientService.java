@@ -2,14 +2,18 @@ package fil.iagl.cookorico.service;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import fil.iagl.cookorico.entity.Ingredient;
 
 public interface IngredientService {
 
-	void addIngredient(Ingredient recipe);
+	boolean addIngredient(@Param("ingredient") Ingredient ingredient);
 	
 	List<Ingredient> getAllIngredients();
 	
-	Ingredient getIngredientById(int id);
+	Ingredient getIngredientById(int idIngredient);
+	
+	boolean deleteIngredient(@Param("ingredient") Ingredient ingredient); 
 	
 }

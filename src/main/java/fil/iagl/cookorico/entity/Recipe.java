@@ -17,12 +17,13 @@ public class Recipe {
 	private Integer preparationTime;
 	private Integer cookingTime;
 	private Member creator;
-	private int fkCreator; //TEMPORAIRE. EN ATTENDANT DE GERER LES OBJETS ETC ON SAIT PAS FAIRE.
+	//private int fkCreator; //TEMPORAIRE. EN ATTENDANT DE GERER LES OBJETS ETC ON SAIT PAS FAIRE.
 	private String dishType; //TO DO ENUM
-	private String difficulty; //TO DO ENUM
+	private int difficulty;
+	private boolean draft;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
-	private Boolean Validation;
+	private Boolean validation;
 	private Administrator validator;
 	private Boolean disabled;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.

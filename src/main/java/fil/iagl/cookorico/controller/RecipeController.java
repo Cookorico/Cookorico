@@ -1,6 +1,5 @@
 package fil.iagl.cookorico.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,22 +10,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.entity.Member;
-
+import fil.iagl.cookorico.entity.Recipe;
+import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
-import fil.iagl.cookorico.wrapper.RecipeWrapper;
 
 @RestController
 public class RecipeController {
 
 	@Autowired
-	RecipeService recipeService;
+	private RecipeService recipeService;
 	
 	@Autowired
-	MemberService memberService;
+	private MemberService memberService;
 	
+	@Autowired
+	AdministratorService administratorService;
 	
 	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
@@ -64,6 +64,14 @@ public class RecipeController {
 		lst.add(r2);
 		
 		return lst;*/
+		List<Recipe> lst = recipeService.getAllRecipes();
+		System.out.println(lst.size());
+		for (Recipe recipe : lst) {
+			System.out.println("RECETTE :");
+			System.out.println(recipe.getCreator().getIdMember());
+			System.out.println(recipe.getCreator());
+			System.out.println(recipe.getCreator().getUsername());
+		}
 		
 		return recipeService.getAllRecipes();
 
@@ -71,19 +79,17 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody RecipeWrapper wrapper){
+	public void addRecipe(@RequestBody Recipe recipe){
 		
-		System.out.println(wrapper.getName());
+		/*System.out.println(wrapper.getName());
 		System.out.println(wrapper.getDescription());
-		System.out.println(wrapper.getPreparation_time());
-		System.out.println(wrapper.getCooking_time());
+		System.out.println(wrapper.getPreparationTime());
+		System.out.println(wrapper.getCookingTime());
 		
 		
 		Recipe recipe = new Recipe();
 		recipe.setName(wrapper.getName());
 		recipe.setDescription(wrapper.getDescription());
-		recipe.setPreparationTime(wrapper.getPreparation_time());
-		recipe.setCookingTime(wrapper.getCooking_time());
 		Member createur = memberService.getMemberById(1);
 		
 		System.out.println("#########");
@@ -92,6 +98,7 @@ public class RecipeController {
 		recipe.setCreator(createur);
 		
 		
+		System.out.println(recipe.getCookingTime());
 		recipeService.addRecipe(recipe);	
 		
 		System.out.println("UNE RECETTE A ETE AJOUTEE. VOICI LA LISTE DES RECETTES PRESENTES EN BASE DE DONNEES:");

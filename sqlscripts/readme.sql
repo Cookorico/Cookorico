@@ -1,6 +1,17 @@
 
 
 
+/*
+ * DESCRIPTION DE LA BASE DE DONNEE
+
+  La présence d'une ligne dans RECIPE_STEP_SUCCESSFUL représente la validation de l'étape par le membre.
+  La boolean SUCCESSFUL dans note représente la validation de la recette par le membre.
+
+
+
+*/
+
+
 /* POUR SELECTIONNER UN ENUM 
  */
 select enum_range(NULL::tag_type)
@@ -35,3 +46,9 @@ GRANT INSERT ON recipe TO cookorico;
 GRANT UPDATE ON recipe TO cookorico;
 GRANT DELETE ON recipe TO cookorico;
 GRANT USAGE, SELECT ON SEQUENCE recipe_id_recipe_seq TO cookorico;
+
+GRANT SELECT ON administrator TO cookorico;
+GRANT INSERT ON administrator TO cookorico;
+GRANT UPDATE ON administrator TO cookorico;
+GRANT DELETE ON administrator TO cookorico;
+GRANT USAGE, SELECT ON SEQUENCE administrator_id_administrator_seq TO cookorico;
