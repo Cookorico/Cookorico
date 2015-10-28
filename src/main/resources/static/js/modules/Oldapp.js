@@ -1,43 +1,38 @@
-var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module']);
+var cookorico = angular.module('cookorico', ['ngRoute', 'Login-module', 'Recipe-module', 'User-module']);
 
-cookorico.config(['$routeProvider', function($routeProvider, $httpProvider) {
+cookorico.config(['$routeProvider', function($routeProvider) {
 
-	/*
 	$routeProvider.when('/', {
 		templateUrl : '../templates/logoutHome.html',
 		controller : 'LoginController'			
 	})
 	.when('/login', {
-		templateUrl : '../templates/login.html',
+		templateUrl : '../templates/logoutHome.html',
 		controller : 'mainCtrl'
-	}).when('/loghome', {
+	})
+	.when('/loghome', {
 		templateUrl : '../templates/loginHome.html',
 		controller : 'ListRecipeController'
-	}).when('/recipe/id/:recipeId', {
+	})
+	.when('/recipe/id/:recipeId', {
 		templateUrl : '../templates/showRecipe.html',
 		controller : 'ShowRecipeController'
-	}).when('/recipe/add', {
+	})
+	.when('/recipe/add', {
 		templateUrl : '../templates/addRecipe.html',
 		controller : 'AddRecipeController'
-	}) .when('/user/register', {
+	})
+	.when('/user/register', {
 		templateUrl : '../templates/registerTemplate.html',
 		controller : 'RegisterController'
-	}).when('/profile', {
+	})
+	.when('/profile', {
 		templateUrl : '../templates/userProfile.html',
 		controller : 'ProfileController'
-	}).otherwise('/');
-	*/
-	
-	$routeProvider.when('/', {
-		templateUrl : 'home.html',
-		controller : 'home'
-	}).when('/login', {
-		templateUrl : 'login.html',
-		controller : 'navigation'
-	}).otherwise('/');
-	
-	$httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
-	
+	})
+	.otherwise({
+		redirectTo : '/login'
+	});
 }]);
 
 cookorico.controller('mainCtrl', ['$scope', '$http', function($scope, $http){
