@@ -1,16 +1,14 @@
-var cookorico = angular.module('cookorico', ['ngRoute']);
+var cookorico = angular.module('cookorico', ['ngRoute'])
+    .config(function ($routeProvider, $httpProvider) {
 
-cookorico.config(['$routeProvider', function ($routeProvider, $httpProvider) {
+        $routeProvider.when('/', {
+            templateUrl: 'home.html',
+            controller: 'home'
+        }).when('/login', {
+            templateUrl: 'templates/login.html',
+            controller: 'navigation'
+        }).otherwise('/');
 
-    $routeProvider.when('/', {
-        templateUrl : 'home.html',
-        controller : 'home'
-    }).when('/login', {
-        templateUrl : 'login.html',
-        controller : 'navigation'
-    }).otherwise('/');
+        $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-    $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
-}
-]);
+    });

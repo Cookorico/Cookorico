@@ -30,11 +30,4 @@ public class HomeController {
 		return model;
 	}
 
-	// @RequestMapping(value = "/login", method = RequestMethod.POST)
-	// public Member login(@RequestBody LoginWrapper wrapper){
-	// Member member = memberService.getMember(wrapper.getUsername(),
-	// wrapper.getPassword());
-	// return member;
-	// }
-
 }
