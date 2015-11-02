@@ -17,10 +17,10 @@ public class HomeController {
 	@Autowired
 	MemberService memberService;
 
-	@RequestMapping("/user")
-	public Principal user(Principal user) {
-		return user;
-	}
+    @RequestMapping("/user")
+    public Principal user(Principal user) {
+        return user;
+    }
 
 	@RequestMapping("/resource")
 	public Map<String, Object> home() {

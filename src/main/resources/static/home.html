@@ -45,9 +45,6 @@
     <!-- /.container-fluid -->
 </nav>
 
-
-
-
 <!-- Header -->
 <header>
     <div class="container">
@@ -59,8 +56,10 @@
                 <span class="skills"> Apprendre la cuisine en s'amusant !</span>
 
                 <p style="margin-top:50px;">
-                    Cookorico est une application gratuite permettant d'apprendre à cuisiner en s'amusant comme dans un jeu.
-                    Avec des récompenses virtuelles, de nombreux talents à maitriser, de nombreux défis et un réseau social fort pour vous inspirer, Cookorico peut vous aider à
+                    Cookorico est une application gratuite permettant d'apprendre à cuisiner en s'amusant comme dans un
+                    jeu.
+                    Avec des récompenses virtuelles, de nombreux talents à maitriser, de nombreux défis et un réseau
+                    social fort pour vous inspirer, Cookorico peut vous aider à
                     devenir un(e) véritable chef en cuisine et impressioner vos amis !
                 </p>
             </div>
@@ -230,131 +229,6 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="sign-up">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Inscription</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Connection / Inscription</h4>
-                        </div>
-                        <div class="modal-body" ng-controller="LoginController">
-                            <div>
-                                <div class="alert alert-danger" ng-show="error">
-                                    There was a problem logging in. Please try again.
-                                </div>
-                                <form role="form" ng-submit="login()">
-                                    <div class="form-group">
-                                        <label for="username">Username:</label>
-                                        <input type="text"
-                                               class="form-control" id="username" name="username"
-                                               ng-model="credentials.username"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Password:</label>
-                                        <input type="password"
-                                               class="form-control" id="password" name="password"
-                                               ng-model="credentials.password"/>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-lg-8 col-lg-offset-2">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Pseudonyme</label>
-                            <input type="text" class="form-control" placeholder="Pseudonyme" id="name" required
-                                   data-validation-required-message="Champ obligatoire">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Adresse mail</label>
-                            <input type="email" class="form-control" placeholder="Adresse email" id="email" required
-                                   data-validation-required-message="Champ obligatoire.">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Mot de passe</label>
-                            <input type="password" class="form-control" placeholder="Mot de passe" id="password"
-                                   required data-validation-required-message="Champ obligatoire.">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Confirmation mot de passe</label>
-                            <input type="password" class="form-control" placeholder="Confirmation mot de passe"
-                                   id="password-confirm" required data-validation-required-message="Champ obligatoire.">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required
-                                   data-validation-required-message="Champ obligatoire.">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required
-                                      data-validation-required-message="Champ obligatoire."></textarea>
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success btn-lg">S'inscrire</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer class="text-center">
     <div class="footer-above">
@@ -402,7 +276,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>E
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll visible-xs visible-sm">
@@ -669,4 +543,28 @@
             </div>
         </div>
     </div>
+</div>
+<div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="alert alert-danger" ng-show="error">
+                    Il y a eu un problème lors de la connexion. Veuillez réessayer.
+                </div>
+                <form role="form" ng-submit="login()">
+                    <div class="form-group">
+                        <label for="username">Username:</label> <input type="text"
+                                                                       class="form-control" id="username"
+                                                                       name="username" ng-model="credentials.username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label> <input type="password"
+                                                                       class="form-control" id="password"
+                                                                       name="password" ng-model="credentials.password"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    <!--</div>-->
 </div>

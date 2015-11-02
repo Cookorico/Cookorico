@@ -36,14 +36,26 @@ public class CookoricoSecurityConfiguration extends WebSecurityConfigurerAdapter
                 .antMatchers("**");
     }
 
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.httpBasic().and().authorizeRequests()
+        http
+                .httpBasic()
+                .and()
+                .authorizeRequests()
                 .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll()
-                .anyRequest().authenticated().and().csrf()
-                .csrfTokenRepository(csrfTokenRepository()).and()
-                .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
+                .anyRequest().authenticated();
     }
+
+//
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        http.httpBasic().and().authorizeRequests()
+//                .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll()
+//                .anyRequest().authenticated().and().csrf()
+//                .csrfTokenRepository(csrfTokenRepository()).and()
+//                .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
+//    }
 
     private Filter csrfHeaderFilter() {
         return new OncePerRequestFilter() {

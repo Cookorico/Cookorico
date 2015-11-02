@@ -21,26 +21,27 @@ cookorico.controller('navigation', function ($rootScope, $scope, $http, $locatio
                 $rootScope.authenticated = false;
             }
             callback && callback($rootScope.authenticated);
-        }).error(function () {
+        }).error(function (e) {
             $rootScope.authenticated = false;
             callback && callback(false);
         });
 
-    }
+    };
 
     authenticate();
 
     $scope.credentials = {};
     $scope.login = function () {
         authenticate($scope.credentials, function (authenticated) {
+
             if (authenticated) {
                 console.log("Login succeeded")
-                $location.path("/");
+                //$location.path("/");
                 $scope.error = false;
                 $rootScope.authenticated = true;
             } else {
                 console.log("Login failed")
-                $location.path("/login");
+                //$location.path("/login");
                 $scope.error = true;
                 $rootScope.authenticated = false;
             }
