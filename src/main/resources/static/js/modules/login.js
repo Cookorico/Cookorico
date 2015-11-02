@@ -1,9 +1,8 @@
 'use strict';
     
 
-    var loginModule = angular.module('Login-module', []);
-    
-    loginModule.controller('LoginController', ['$scope','$http','$location',  function ($scope, $http, $location) {
+
+    cookorico.controller('LoginController', ['$scope','$http','$location',  function ($scope, $http, $location) {
 
     	var user;
     	this.login = function () {
@@ -16,6 +15,7 @@
         		data : user
         	}).success(function(data, status, header, config){
         		console.log(data, status, header, config);
+					alert("SUCCESSSSSSSSSSSS");
         	       $location.search(data);
         	       $location.path("/profile");      	
             }).error(function(data, status, header, config){
@@ -28,21 +28,5 @@
         };
     }]);
     
-    
-    loginModule.controller('ProfileController', ['$scope', '$http', '$location', function($scope, $http, $location){
-        var queryString = $location.search();
-        if (queryString) {
-        	console.log(queryString)
-        	$scope.user = queryString;
-        }
-    	/*$http({
-    		method: 'GET', 
-    		url : '/user/:username',
-    	}).success(function(data, status, header, config){
-    		console.log(data, status, header, config);
-    		
-    	}).error(function(data, status, header, config){
-    		console.log(data, status, header, config);
-    	});*/
-    }]);
+
  
