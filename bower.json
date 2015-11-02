@@ -1,0 +1,24 @@
+{
+  "name": "Cookorico",
+  "homepage": "https://github.com/Cookorico/Cookorico",
+  "authors": [
+    "Ly4m <will.leemans@gmail.com>"
+  ],
+  "description": "Projet IAGL",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}

@@ -19,7 +19,24 @@
 <!--     <result property='modifDate' column='modif_date'/> -->
     <result property='disabled' column='disabled'/>
   </resultMap>
-	
+  
+   <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMapSingle">
+    <id property='idMember' column='id_member'/>
+    <result property='username' column='username'/>
+    <result property='firstname' column='firstname'/>
+    <result property='lastname' column='lastname'/>
+    <result property='email' column='email'/>
+    <result property='birthday' column='birthday'/>
+    <result property='gender' column='gender'/>
+    <result property='city' column='city'/>
+    <result property='currentAvatar.id' column='current_avatar'/>
+    <result property='creationDate' column='creation_date'/>
+    <result property='modifDate' column='modif_date'/>
+    <result property='disabled' column='disabled'/>
+  </resultMap>
+  
+  
+  
   <select id="getAllMembers" resultMap="memberResultMap">
     SELECT * FROM member
   </select>
@@ -36,8 +53,13 @@
   	SELECT * FROM member WHERE id_member = #{id}
   </select>
   
+  <select id="getMemberByIdSingle" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMapSingle" >
+  	SELECT * FROM member WHERE id_member = #{id}
+  </select>
+  
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">
-  	INSERT INTO member(email, username, password) VALUES(#{member.email}, #{member.username}, #{member.password})
+  	INSERT INTO member(username, firstname, lastname, email, password<!--,birthday-->, gender, city<!--,current_avatar-->) 
+  	VALUES(#{member.username}, #{member.firstname}, #{member.lastname}, #{member.email}, #{member.password}<!--, #{member.birthday}-->, #{member.gender}::gender, #{member.city} <!--, #{member.current_avatar}-->)
   </insert>
 
 </mapper>
