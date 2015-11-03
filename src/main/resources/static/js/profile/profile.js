@@ -1,1 +1,8 @@
-angular.module('profile', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap'])
+angular.module('profile', []).controller('profile',
+		function($scope){
+
+
+
+		}
+
+);
