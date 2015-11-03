@@ -14,21 +14,31 @@ public class IngredientServiceImpl implements IngredientService{
 
 	@Autowired
 	private IngredientDao ingredientdao;
-	
+
 	@Override
-	public void addIngredient(Ingredient recipe) {
+	public boolean addIngredient(Ingredient ingredient) {
+		// TODO Auto-generated method stub
+		return ingredientdao.addIngredient(ingredient);
 	}
 
 	@Override
 	public List<Ingredient> getAllIngredients() {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return ingredientdao.getAllIngredients();
 	}
 
 	@Override
-	public Ingredient getIngredientById(int id) {
+	public Ingredient getIngredientById(int idIngredient) {
 		// TODO Auto-generated method stub
-		return null;
+		return ingredientdao.getIngredientById(idIngredient);
 	}
 
+	@Override
+	public boolean deleteIngredient(Ingredient ingredient) {
+		// TODO Auto-generated method stub
+		return ingredientdao.deleteIngredient(ingredient);
+	}
+	
+	
 }

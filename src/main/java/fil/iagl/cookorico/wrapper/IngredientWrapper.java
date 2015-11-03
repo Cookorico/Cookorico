@@ -1,16 +1,11 @@
 package fil.iagl.cookorico.wrapper;
-
 import lombok.Data;
 
 @Data
-public class RecipeWrapper {
-
-	public RecipeWrapper() {
-	}
-
+public class IngredientWrapper {
+	
 	private String name;
 	private String description;
-	private int	cookingTime;
-	private int	preparationTime;
+	
 
 }

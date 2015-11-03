@@ -11,12 +11,17 @@
 		<label for="gender">Gender</label>
 		<div class="radio">
 			<label>
-				<input type="radio" name="gender" id="gender" ng-model="user.gender" value="1" />Male
+				<input type="radio" name="gender" checked id="gender" ng-model="user.gender" value="U"/>Ne pas renseigné
 			</label>
 		</div>
 		<div class="radio">
 	  		<label>
-	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="0" />Female
+	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="M" />Homme
+  			</label>
+		</div>
+		<div class="radio">
+	  		<label>
+	  			<input type="radio" name="gender" id="gender" ng-model="user.gender" value="F" />Femme
   			</label>
 		</div>
         <!-- div class="form-group">
