@@ -15,7 +15,7 @@ angular
             }).when('/message', {
                 templateUrl : 'js/message/message.html',
                 controller : 'message'
-            }).when('/login', {
+            }).when('/accueil', {
                 templateUrl : 'js/navigation/login.html',
                 controller : 'navigation'
             }).otherwise('/');
@@ -26,6 +26,6 @@ angular
 
     // Initialize auth module with the home page and login/logout path
     // respectively
-    auth.init('/', '/login', '/logout');
+    auth.init('/', '/accueil', '/logout');
 
 });

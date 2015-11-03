@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html  ng-app="cookorico">
 <head>
     <title>Hello Angular</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <base href="/" />
 
     <link href="bower_components/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet">
@@ -16,22 +17,22 @@
 
 
 
-    <style type="text/css">
-        [ng\:cloak], [ng-cloak], .ng-cloak {
-            display: none !important;
-        }
-    </style>
+    <!--<style type="text/css">-->
+        <!--[ng\:cloak], [ng-cloak], .ng-cloak {-->
+            <!--display: none !important;-->
+        <!--}-->
+    <!--</style>-->
 </head>
 
-<body ng-app="cookorico" ng-cloak class="ng-cloak" id="page-top">
-<div ng-controller="navigation" class="container">
-    <ul class="nav nav-pills" role="tablist">
-        <li ng-class="{active:tab('home')}"><a href="/">home</a></li>
-        <li ng-class="{active:tab('message')}"><a href="/message">message</a></li>
-        <li ng-show="!authenticated()" ><a href="/login">login</a></li>
-        <li ng-show="authenticated()"><a href="" ng-click="logout()">logout</a></li>
-    </ul>
-</div>
+<body ng-cloak id="page-top" class="index">
+<!--<div ng-controller="navigation" class="container">-->
+    <!--<ul class="nav nav-pills" role="tablist">-->
+        <!--<li ng-class="{active:tab('home')}"><a href="/">home</a></li>-->
+        <!--<li ng-class="{active:tab('message')}"><a href="/message">message</a></li>-->
+        <!--<li ng-show="!authenticated()" ><a href="/login">login</a></li>-->
+        <!--<li ng-show="authenticated()"><a href="" ng-click="logout()">logout</a></li>-->
+    <!--</ul>-->
+<!--</div>-->
 <div ng-view></div>
 
 <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
@@ -47,13 +48,108 @@
 <script src="bower_components/freelancer/classie.js" type="text/javascript"></script>
 <script src="bower_components/freelancer/freelancer.js" type="text/javascript"></script>
 
+<!-- bower:js -->
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/rangy/rangy-core.js"></script>
+<script src="bower_components/rangy/rangy-classapplier.js"></script>
+<script src="bower_components/rangy/rangy-highlighter.js"></script>
+<script src="bower_components/rangy/rangy-selectionsaverestore.js"></script>
+<script src="bower_components/rangy/rangy-serializer.js"></script>
+<script src="bower_components/rangy/rangy-textrange.js"></script>
+<script src="bower_components/textAngular/src/textAngular.js"></script>
+<script src="bower_components/textAngular/src/textAngular-sanitize.js"></script>
+<script src="bower_components/textAngular/src/textAngularSetup.js"></script>
+<script src="bower_components/fullcalendar/fullcalendar.js"></script>
+<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+<script src="bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="bower_components/angular-perfect-scrollbar-4.1.1fixed/src/angular-perfect-scrollbar.js"></script>
+<script src="bower_components/Chart.js/Chart.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/c3/c3.js"></script>
+<script src="bower_components/c3-angular/c3js-directive.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-growl-v2/build/angular-growl.js"></script>
+<script src="bower_components/angular-growl-notifications/dist/angular-growl-notifications.js"></script>
+<script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+<script src="bower_components/SHA-1/sha1.js"></script>
+<script src="bower_components/angulartics/src/angulartics.js"></script>
+<script src="bower_components/angulartics/src/angulartics-adobe.js"></script>
+<script src="bower_components/angulartics/src/angulartics-chartbeat.js"></script>
+<script src="bower_components/angulartics/src/angulartics-clicky.js"></script>
+<script src="bower_components/angulartics/src/angulartics-cnzz.js"></script>
+<script src="bower_components/angulartics/src/angulartics-flurry.js"></script>
+<script src="bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+<script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+<script src="bower_components/angulartics/src/angulartics-gtm.js"></script>
+<script src="bower_components/angulartics/src/angulartics-kissmetrics.js"></script>
+<script src="bower_components/angulartics/src/angulartics-mixpanel.js"></script>
+<script src="bower_components/angulartics/src/angulartics-piwik.js"></script>
+<script src="bower_components/angulartics/src/angulartics-scroll.js"></script>
+<script src="bower_components/angulartics/src/angulartics-segmentio.js"></script>
+<script src="bower_components/angulartics/src/angulartics-splunk.js"></script>
+<script src="bower_components/angulartics/src/angulartics-woopra.js"></script>
+<script src="bower_components/angulartics/src/angulartics-marketo.js"></script>
+<script src="bower_components/angulartics/src/angulartics-intercom.js"></script>
+<script src="bower_components/angulartics/src/angulartics-inspectlet.js"></script>
+<script src="bower_components/angulartics/src/angulartics-newrelic-insights.js"></script>
+<!-- endbower -->
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/c3-angular/c3-angular.min.js"></script>
+<!-- endbuild -->
+
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/controllers/dashboard.js"></script>
+<script src="scripts/controllers/alertCtrl.js"></script>
+<script src="scripts/controllers/btnCtrl.js"></script>
+<script src="scripts/controllers/collapseCtrl.js"></script>
+<script src="scripts/controllers/dateCtrl.js"></script>
+<script src="scripts/controllers/dropdownCtrl.js"></script>
+<script src="scripts/controllers/modalCtrl.js"></script>
+<script src="scripts/controllers/paginationCtrl.js"></script>
+<script src="scripts/controllers/popoverCtrl.js"></script>
+<script src="scripts/controllers/tooltipCtrl.js"></script>
+<script src="scripts/controllers/progressCtrl.js"></script>
+<script src="scripts/controllers/tabsCtrl.js"></script>
+<script src="scripts/controllers/chartCtrl.js"></script>
+<script src="scripts/controllers/todoCtrl.js"></script>
+
+
+<script src="scripts/directives/pageheader/pageheader.js"></script>
+<script src="scripts/directives/sidenav/sidenav.js"></script>
+<script src="scripts/directives/sidenav/menu/menu.js"></script>
+<script src="scripts/directives/sidenav/comments/comments.js"></script>
+<script src="scripts/directives/relink/relink.js"></script>
+<script src="scripts/directives/sidenav/charts/charts.js"></script>
+<script src="scripts/directives/to-do-list/to-do.js"></script>
+<script src="scripts/directives/sidenav/calendar/calendar.js"></script>
+<script src="scripts/directives/sidenav/notification/notification.js"></script>
+<script src="scripts/directives/topnav/topnav.js"></script>
+<script src="scripts/directives/footer/footer.js"></script>
+<script src="scripts/directives/stats/stats.js"></script>
+<script src="scripts/directives/home-chart/home-chart.js"></script>
+
+<script src="bower_components/angular-css-injector/angular-css-injector.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+
 <script src="js/auth/auth.js" type="text/javascript"></script>
 <script src="js/home/home.js" type="text/javascript"></script>
 <script src="js/message/message.js" type="text/javascript"></script>
 <script src="js/navigation/navigation.js" type="text/javascript"></script>
 <script src="js/cookorico.js" type="text/javascript"></script>
 
-<div ng-if="authenticated()" ng-include="'views/partials/javascriptInjection.html'"></div>
+
+
 
 </body>
 </html>

@@ -18,7 +18,7 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap']).c
             modalInstance.result.then(function (selectedItem) {
                 $scope.selected = selectedItem;
             }, function () {
-                console.info('Modal dismissed at: ' + new Date());
+
             });
         };
 
