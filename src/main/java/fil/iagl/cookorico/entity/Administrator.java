@@ -10,6 +10,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper=false)
 public class Administrator extends Member{
 
-	private Integer id;
+	private Integer idAdministrator;
 	private String adminRank; //TO DO ENUM
 }

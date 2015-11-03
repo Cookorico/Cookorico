@@ -19,12 +19,16 @@
     SELECT * FROM ingredient
   </select>
   
-   <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
+  <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
   	SELECT * FROM ingredient WHERE id_ingredient = #{id}
   </select>
   
   <insert id="addIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
   	INSERT INTO ingredient(name, description) VALUES(#{ingredient.name}, #{ingredient.description})
   </insert>
+  
+  <delete id="deleteIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
+  	DELETE FROM ingredient WHERE name = #{name}
+  </delete>
 
 </mapper>

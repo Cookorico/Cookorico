@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Recipe;
+import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
 
@@ -24,6 +25,8 @@ public class RecipeController {
 	@Autowired
 	private MemberService memberService;
 	
+	@Autowired
+	AdministratorService administratorService;
 	
 	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
@@ -61,6 +64,14 @@ public class RecipeController {
 		lst.add(r2);
 		
 		return lst;*/
+		List<Recipe> lst = recipeService.getAllRecipes();
+		System.out.println(lst.size());
+		for (Recipe recipe : lst) {
+			System.out.println("RECETTE :");
+			System.out.println(recipe.getCreator().getIdMember());
+			System.out.println(recipe.getCreator());
+			System.out.println(recipe.getCreator().getUsername());
+		}
 		
 		return recipeService.getAllRecipes();
 
