@@ -34,9 +34,8 @@
                 <li class="page-scroll">
                     <a href="#sign-up">Inscription</a>
                 </li>
-                <li class="">
-                    <a type="button" class="login-button" data-toggle="modal" data-target="#myModal">Connexion</a>
-                    <!--<a class="login-button" href="#/login">Connexion</a>-->
+                <li>
+                    <a class="login-button" href="#/authentication">Connexion</a>
                 </li>
             </ul>
         </div>
@@ -276,7 +275,7 @@
             </div>
         </div>
     </div>
-</footer>E
+</footer>
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll visible-xs visible-sm">
@@ -543,28 +542,4 @@
             </div>
         </div>
     </div>
-</div>
-<div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="alert alert-danger" ng-show="error">
-                    Il y a eu un problème lors de la connexion. Veuillez réessayer.
-                </div>
-                <form role="form" ng-submit="login()">
-                    <div class="form-group">
-                        <label for="username">Username:</label> <input type="text"
-                                                                       class="form-control" id="username"
-                                                                       name="username" ng-model="credentials.username"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label> <input type="password"
-                                                                       class="form-control" id="password"
-                                                                       name="password" ng-model="credentials.password"/>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    <!--</div>-->
 </div>

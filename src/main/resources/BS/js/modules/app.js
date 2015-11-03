@@ -3,7 +3,13 @@ var cookorico = angular.module('cookorico', ['ngRoute'])
 
         $routeProvider.when('/', {
             templateUrl: 'home.html',
-            controller: 'navigation'
+            controller: 'homeCtlr'
+        }).when('/authentication', {
+            templateUrl: 'authentication.html',
+            controller: 'navigationCtlr'
+        }).when('/mainScreen', {
+            templateUrl: 'AccueilLogged.html',
+            controller: 'mainCtlr'
         }).otherwise('/');
 
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
