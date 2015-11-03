@@ -106,7 +106,7 @@ public class CookoricoApplication {
         @Override
         public void configure(WebSecurity web) throws Exception {
             super.configure(web);
-            web.ignoring().antMatchers(HttpMethod.GET, "/js/**", "/bower_components/**", "index.html");
+            web.ignoring().antMatchers(HttpMethod.GET, "/js/**","/font/**", "/css/**","/img/**", "/bower_components/**", "index.html");
         }
 
         @Override
