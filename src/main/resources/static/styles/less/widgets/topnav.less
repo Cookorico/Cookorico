@@ -1,0 +1,90 @@
+#bs-example-navbar-collapse-1 {
+	.nobadge {
+		display: inline-block;
+		min-width: 10px;
+		padding: 3px 7px;
+		font-size: 9px;
+		font-weight: bold;
+		color: #fff;
+		line-height: 1;
+		vertical-align: top;
+		white-space: nowrap;
+		text-align: center;
+		background-color: @brand-primary;
+		border-radius: 10px;
+		margin-left: -10px;
+		margin-top: -6px;
+	}
+}
+
+.top-nav {
+	>li {
+		border-left: solid 2px rgba(0,0,0,0.1);
+		>a {
+			border-left: solid 1px rgba(255, 255, 255, 0.1);
+			min-width: 60px;
+			text-align: center;
+			.fa {
+				font-size: 20px;
+				position: relative;
+				top:2px;
+			}
+		}
+
+	}
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	border-color: inherit;
+}
+
+.admin-img {
+  width: 28px;
+  margin: -5px 0;
+  border: 1px solid #737272 !important; 
+}
+
+.right-admin {
+	ul {
+		margin: 0;
+		.admin-img {
+			width: 32px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-fixed-top {
+		min-height: 50px;
+		height: 50px;
+	}
+	.solution {
+		display: none;
+		margin-top: 0;
+	}
+	span.brandbar {
+	  float: left;
+	  padding: 10px 15px;
+	  font-size: 20px;
+	}
+	.navbar-header {
+		width: 100% !important;
+		text-align: center;
+	}
+	.navbar-brand {
+		padding-top: 13px;
+		font-size: 20px !important;
+		display: inline-block;
+		float: none;
+		height: 50px;
+	}
+	.right-admin {
+	  float: right;
+	  margin-top: -37px;
+		.dropdown-menu {
+			top: 34px;
+			left: -105px;
+			min-width: 150px;
+		}	
+	}
+} 

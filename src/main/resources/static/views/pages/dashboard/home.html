@@ -1,0 +1,50 @@
+<div class="conter-wrapper">
+	<div class="container-fluid home-page">
+		<div class="row">
+			<div class="col-md-6 calendar-col">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Welcome Sanket!</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4 calendar-wrapper">
+								<div class="today">
+									<h2 class="date">{{date | date:'dd'}}</h2>  <span class="month">{{date | date:'MMMM'}}</span>
+								</div>									
+							</div>
+							<div class="col-md-8" relink-event="resize">
+								<div class="calendar-widget" ui-calendar ng-model="eventSources"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 graph-col">
+				<div class="panel panel-default line-chart">
+					<div class="panel-body" relink-event="resize">
+						<home-chart></home-chart>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="alert alert-white">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+				<strong>Attention: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius lacus vitae purus tincidunt blandit. Phasellus malesuada accumsan felis venenatis mollis. Suspendisse at pharetra enim, in congue mauris. Nam sodales turpis lorem, ac semper augue congue sed. Nam id ullamcorper elit, at sodales justo. Aliquam suscipit mi nec ex tempus laoreet. Donec tincidunt risus eu rutrum sagittis. <a ui-sref="c3chart">View Details</a>
+			</div>
+		</div>
+		<div>
+			<div class="row">
+				<div class="col-md-6 home-panel">
+					<stats bgclass="info" icon="eye" value="71,842" text="Profile Views"></stats>
+					<stats bgclass="warning" icon="bar-chart" value="6,123" text="Total Sales this week"></stats>
+					<stats bgclass="danger" icon="calculator" value="$12,34.00" text="Net Revenue"></stats>
+				</div>
+				<div class="col-md-6">
+					<todolist></todolist>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

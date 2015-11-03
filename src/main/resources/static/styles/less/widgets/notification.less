@@ -1,0 +1,48 @@
+.notification-wrap, a.notification-wrap, .dropdown-menu>li>a.notification-wrap {
+	display: table;
+	width: 100%;
+	white-space: normal;
+	padding: 5px 15px;
+	.notification-media, .notification-info {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.notification-media {
+		float: left;
+		text-align: center;
+		width: 40px;
+		img {
+			max-width: 100%;
+		}
+	}
+	.notification-info {
+		padding-left: 15px;
+		color: @text-color;
+		h5 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.dropdown-menu>li>a.notification-wrap {
+	font-size: 12px;
+}
+.ddown {
+	min-width: 300px;
+}
+
+#notification {
+	margin-left: 12px;
+	margin-right: 12px;
+	color: #cdcdcd;
+	.time-info {
+		float: right;
+		opacity: 0.7;
+	}
+	#notifhr {
+		margin-top: 14px;
+		margin-bottom: 14px;
+		opacity: .2;
+	}
+}

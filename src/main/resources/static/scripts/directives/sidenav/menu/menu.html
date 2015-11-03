@@ -1,0 +1,70 @@
+<div>
+    
+    <div class="tab-pane active" id="menu">
+        <div class="photo-container text-center">
+            <a ui-sref="profile">
+                <img src="images/profile1.jpg" alt="" class="img-circle dash-profile" />
+            </a>
+            <div class="t-p">
+                <a href="">Kumar Sanket</a>
+            </div>
+
+        </div>
+        <div class="section-heading">Menus</div>
+        <ul class="nav sidebar-nav">
+            <li ng-class="{active: $state.includes('home')}"><a ui-sref="home" ng-click="showSubNav(0)"><i class="fa fa-home"></i> <span class="menu-text"</span>Home</a>
+            </li>
+            <li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='uiElements'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('uiElements')"><i class="fa fa-toggle-off"></i> <span class="menu-text">UI Elements <i class="fa fa-angle-down  pull-right"></i></span></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='uiElements'">
+                    <li ng-class="{active: $state.includes('button')}"><a ui-sref="button" ><i class="fa fa-circle-o"></i> Button</a></li>
+                    <li ng-class="{active: $state.includes('dropdown')}"><a ui-sref="dropdown" ><i class="fa fa-arrows-v"></i> Dropdown</a></li>
+                    <li ng-class="{active: $state.includes('other-elements')}"><a ui-sref="other-elements" ><i class="fa fa-flag-o"></i> Other Elements</a></li>
+                    <li ng-class="{active: $state.includes('pagination')}"><a ui-sref="pagination" ><i class="fa fa-exchange"></i> Breadcrumbs & Pagination</a></li>
+                    <li ng-class="{active: $state.includes('progressbars')}"><a ui-sref="progressbars" ><i class="fa fa-angle-double-right"></i> Progressbars</a></li>
+                    <li ng-class="{active: $state.includes('alert')}"><a ui-sref="alert" ><i class="fa fa-warning"></i> Alerts</a></li>
+                    <li ng-class="{active: $state.includes('modal')}"><a ui-sref="modal" ><i class="fa fa-square-o"></i> Modal</a></li>
+                    <li ng-class="{active: $state.includes('collapse')}"><a ui-sref="collapse" ><i class="fa fa-align-justify"></i> Collapse</a></li>
+                    <li ng-class="{active: $state.includes('typography')}"><a ui-sref="typography" ><i class="fa fa-pencil"></i> Typography</a></li>
+                    <li ng-class="{active: $state.includes('icons')}"><a ui-sref="icons" ><i class="fa fa-cc-visa"></i> Icons</a></li>
+                </ul>
+            </li>
+            <li  ng-class="{active: $state.includes('panel')}"><a ui-sref="panel" ng-click="showSubNav(0)"><i class="fa fa-bookmark-o"></i> <span class="menu-text">Panel</span></a></li>
+            <li ng-class="{active: $state.includes('table')}"><a ui-sref="table" ng-click="showSubNav(0)"><i class="fa fa-table"></i> <span class="menu-text">Table</span></a></li>
+            <li ng-class="{active: $state.includes('grid')}"><a ui-sref="grid" ng-click="showSubNav(0)"><i class="fa fa-th-large"></i> <span class="menu-text">Grid</span></a></li>
+            <li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='mail'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('mail')"><i class="fa fa-pencil"></i> <span class="menu-text">Mail <i class="fa fa-angle-down fa-angle-down  pull-right"</span></i></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='mail'">
+                    <li ng-class="{active: $state.includes('inbox')}"><a ui-sref="inbox"><i class="fa fa-inbox"></i> Inbox</a></li>
+                    <li ng-class="{active: $state.includes('compose')}"><a ui-sref="compose"><i class="fa fa-pencil-square-o"></i> Compose</a></li>
+                </ul>
+            </li>
+            <li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='form'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('form')"><i class="fa fa-file-text-o"></i> <span class="menu-text">Forms <i class="fa fa-angle-down fa-angle-down  pull</span>-right"></i></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='form'">
+                    <li ng-class="{active: $state.includes('elements')}"><a ui-sref="elements"><i class="fa fa-edit"></i> Elememts</a></li>
+                    <li ng-class="{active: $state.includes('components')}"><a ui-sref="components"><i class="fa fa-keyboard-o"></i> Components</a></li>
+                </ul>
+            </li>
+            <li class="sidenav-dropdown" ng-class="{'show-subnav': showingSubNav=='chart'}" ng-mouseover="hoverCancel()">
+                <a class="subnav-toggle" href="javascript:;" ng-click="showSubNav('chart')"><i class="fa fa-area-chart"></i> <span class="menu-text">Charts <i class="fa fa-angle-down fa-angle-down  pull</span>-right"></i></a>
+                <ul class="nav sidenav-sub-menu" collapse="showingSubNav!='chart'">
+                    <li ng-class="{active: $state.includes('chartjs')}"><a ui-sref="chartjs"><i class="fa fa-line-chart"></i> Chart.js</a></li>
+                    <li ng-class="{active: $state.includes('c3chart')}"><a ui-sref="c3chart"><i class="fa fa-bar-chart"></i> C3.js</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes('invoice')}"><a ui-sref="invoice" ng-click="showSubNav(0)"><i class="fa fa-newspaper-o"></i> <span class="menu-text">Invoice </span></a>
+            </li>
+            <li ng-class="{active: $state.includes('calendar')}"><a ui-sref="calendar" ng-click="showSubNav(0)"><i class="fa fa-calendar"></i> <span class="menu-text">Calendar </span></a>
+            </li>
+            <li ng-class="{active: $state.includes('login')}"><a ui-sref="login" ng-click="showSubNav(0)"><i class="fa fa-sign-in"></i> <span class="menu-text">Log In </span></a>
+            </li>
+            <li ng-class="{active: $state.includes('signup')}"><a ui-sref="signup" ng-click="showSubNav(0)"><i class="fa fa-user-plus"></i> <span class="menu-text">Sign Up </span></a>
+            </li>
+            <li ng-class="{active: $state.includes('404-page')}"><a ui-sref="404-page" ng-click="showSubNav(0)"><i class="fa fa-exclamation-circle"></i> <span class="menu-text">404 Page </span></a>
+            </li>
+            <li ng-class="{active: $state.includes('blank')}"><a ui-sref="blank" ng-click="showSubNav(0)"><i class="fa fa-file-o"></i> <span class="menu-text">Blank Page </span></a>
+            </li>
+        </ul>
+    </div>
+</div>

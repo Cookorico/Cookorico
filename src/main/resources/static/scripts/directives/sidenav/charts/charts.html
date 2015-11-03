@@ -1,0 +1,38 @@
+ <div class="tab-pane" id="charts">
+    <div class="section-heading">Charts</div>
+    <div class="section-content text-center">
+
+        <h4>Today's View</h4>
+        <c3chart bindto-id="sidebar-chart">
+            <chart-column column-id="New" column-values="80" column-type="pie"/>    
+            <chart-column column-id="Returning" column-values="25" column-type="pie"/> 
+            <chart-column column-id="Referral" column-values="15" column-type="pie"/>  
+            <chart-legend show-legend="false"/>  
+            <chart-colors color-pattern="#06c5ac,#e8b769,#d57d6d,#a2d19e,#80b1cb"/>  
+            <chart-size chart-height="150" chart-width="200"/>
+        </c3chart>
+
+        <h4>Today's Signups</h4>
+        <c3chart bindto-id="signups-chart">
+            <chart-column column-id="signups" column-values="25, 59, 44, 90, 76, 55, 40, 70, 24" column-type="bar" /> 
+            <chart-legend show-legend="false"/>  
+            <chart-colors color-pattern="#06c5ac"/>  
+            <chart-size chart-height="120" chart-width="200"/>
+            <chart-tooltip show-tooltip="false" group-tooltip="false"/>
+            <chart-axis show-y="false" />
+        </c3chart>
+
+        <hr class="lighter">
+
+        <div class="transaction">
+            <div class="padder text-left">
+                <h4>Today's Stats</h4>
+                <progressbar value="97" type="success">97%</progressbar>        
+                <progressbar value="63" type="primary">63%</progressbar>        
+                <progressbar value="52" type="info">52%</progressbar>        
+                <progressbar value="31" type="warning">31%</progressbar>        
+                <progressbar value="16" type="danger">16%</progressbar>   
+            </div>
+        </div>
+    </div>
+</div>
