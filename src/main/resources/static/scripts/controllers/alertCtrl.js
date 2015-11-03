@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('AlertDemoCtrl', function ($scope) {
+angular.module('cookorico').controller('AlertDemoCtrl', function ($scope) {
   $scope.alerts = [
     { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' },
     { type: 'info', msg: 'Ok! Not bad, but you can do better.' },

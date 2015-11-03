@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('DropdownCtrl', function ($scope, $log) {
+angular.module('cookorico').controller('DropdownCtrl', function ($scope, $log) {
   $scope.items = [
     'The first choice!',
     'And another choice for you.',

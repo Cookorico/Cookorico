@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('ButtonsCtrl', function ($scope) {
+angular.module('cookorico').controller('ButtonsCtrl', function ($scope) {
   $scope.singleModel = 1;
 
   $scope.radioModel = 'Middle';

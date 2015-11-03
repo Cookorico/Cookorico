@@ -96,16 +96,16 @@
 			// Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
 			scaleBeginAtZero: false,
 
-			// String - Scale label font declaration for the scale label
+			// String - Scale label fonts declaration for the scale label
 			scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
-			// Number - Scale label font size in pixels
+			// Number - Scale label fonts size in pixels
 			scaleFontSize: 12,
 
-			// String - Scale label font weight style
+			// String - Scale label fonts weight style
 			scaleFontStyle: "normal",
 
-			// String - Scale label font colour
+			// String - Scale label fonts colour
 			scaleFontColor: "#666",
 
 			// Boolean - whether or not the chart should be responsive and resize when the browser does.
@@ -126,28 +126,28 @@
 			// String - Tooltip background colour
 			tooltipFillColor: "rgba(0,0,0,0.8)",
 
-			// String - Tooltip label font declaration for the scale label
+			// String - Tooltip label fonts declaration for the scale label
 			tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
-			// Number - Tooltip label font size in pixels
+			// Number - Tooltip label fonts size in pixels
 			tooltipFontSize: 14,
 
-			// String - Tooltip font weight style
+			// String - Tooltip fonts weight style
 			tooltipFontStyle: "normal",
 
-			// String - Tooltip label font colour
+			// String - Tooltip label fonts colour
 			tooltipFontColor: "#fff",
 
-			// String - Tooltip title font declaration for the scale label
+			// String - Tooltip title fonts declaration for the scale label
 			tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
-			// Number - Tooltip title font size in pixels
+			// Number - Tooltip title fonts size in pixels
 			tooltipTitleFontSize: 14,
 
-			// String - Tooltip title font weight style
+			// String - Tooltip title fonts weight style
 			tooltipTitleFontStyle: "bold",
 
-			// String - Tooltip title font colour
+			// String - Tooltip title fonts colour
 			tooltipTitleFontColor: "#fff",
 
 			// Number - pixel width of padding around tooltip text
@@ -1728,7 +1728,7 @@
 			this.drawingArea = (this.display) ? (this.size/2) - (this.fontSize/2 + this.backdropPaddingY) : (this.size/2);
 		},
 		calculateCenterOffset: function(value){
-			// Take into account half font size + the yPadding of the top value
+			// Take into account half fonts size + the yPadding of the top value
 			var scalingFactor = this.drawingArea / (this.max - this.min);
 
 			return (value - this.min) * scalingFactor;
@@ -3162,16 +3162,16 @@
 			//Number - Pixel width of the angle line
 			angleLineWidth : 1,
 
-			//String - Point label font declaration
+			//String - Point label fonts declaration
 			pointLabelFontFamily : "'Arial'",
 
-			//String - Point label font weight
+			//String - Point label fonts weight
 			pointLabelFontStyle : "normal",
 
-			//Number - Point label font size in pixels
+			//Number - Point label fonts size in pixels
 			pointLabelFontSize : 10,
 
-			//String - Point label font colour
+			//String - Point label fonts colour
 			pointLabelFontColor : "#666",
 
 			//Boolean - Whether to show a dot for each point

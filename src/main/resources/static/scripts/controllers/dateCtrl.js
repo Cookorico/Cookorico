@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('DatepickerDemoCtrl', function ($scope) {
+angular.module('cookorico').controller('DatepickerDemoCtrl', function ($scope) {
   $scope.today = function() {
     $scope.dt = new Date();
   };

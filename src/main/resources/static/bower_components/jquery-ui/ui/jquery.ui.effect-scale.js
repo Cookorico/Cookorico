@@ -215,7 +215,7 @@ $.effects.effect.size = function( o, done ) {
 	// Animate
 	if ( scale === "content" || scale === "both" ) { // Scale the children
 
-		// Add margins/font-size
+		// Add margins/fonts-size
 		vProps = vProps.concat([ "marginTop", "marginBottom" ]).concat(cProps);
 		hProps = hProps.concat([ "marginLeft", "marginRight" ]);
 		props2 = props0.concat(vProps).concat(hProps);

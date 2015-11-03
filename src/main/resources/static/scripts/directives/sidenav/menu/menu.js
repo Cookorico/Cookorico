@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('dashyAngular')
+angular.module('cookorico')
 	.directive('menu',function(){
 		return {
 	        templateUrl:'scripts/directives/sidenav/menu/menu.html?v='+window.app_version,

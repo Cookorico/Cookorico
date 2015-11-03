@@ -16,12 +16,12 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
-    font: inherit;
+    fonts-size: 100%;
+    fonts: inherit;
     vertical-align: baseline;
     text-decoration: none;
     color:black;
-    font-family: "Helvetica","Roboto", "Helvetica Neue", Arial, sans-serif;
+    fonts-family: "Helvetica","Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 */
@@ -44,7 +44,7 @@ nav.top-menu .top-menu-name {
     text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 30px;
+    fonts-size: 30px;
 }
 
 nav.top-menu .top-menu-logo {
@@ -367,7 +367,7 @@ nav.side-menu .side-menu-item:hover{
 .user-profile-username {
     display: inline-block;
     color: #000;
-    font-size: 23px;
+    fonts-size: 23px;
 }
 */
 

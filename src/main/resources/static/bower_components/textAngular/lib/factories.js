@@ -65,12 +65,12 @@ angular.module('textAngular.factories', [])
 
 	var convert_infos = [
 		{
-			property: 'font-weight',
+			property: 'fonts-weight',
 			values: [ 'bold' ],
 			tag: 'b'
 		},
 		{
-			property: 'font-style',
+			property: 'fonts-style',
 			values: [ 'italic' ],
 			tag: 'i'
 		}

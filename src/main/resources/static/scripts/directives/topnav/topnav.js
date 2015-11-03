@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('dashyAngular')
+angular.module('cookorico')
 	.directive('topnav',function(){
 		return {
 	        templateUrl:'scripts/directives/topnav/topnav.html?v='+window.app_version,

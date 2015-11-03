@@ -7,6 +7,6 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('CollapseDemoCtrl', function ($scope) {
+angular.module('cookorico').controller('CollapseDemoCtrl', function ($scope) {
   $scope.isCollapsed = false;
 });

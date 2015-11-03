@@ -28,16 +28,16 @@
 			//Number - Pixel width of the angle line
 			angleLineWidth : 1,
 
-			//String - Point label font declaration
+			//String - Point label fonts declaration
 			pointLabelFontFamily : "'Arial'",
 
-			//String - Point label font weight
+			//String - Point label fonts weight
 			pointLabelFontStyle : "normal",
 
-			//Number - Point label font size in pixels
+			//Number - Point label fonts size in pixels
 			pointLabelFontSize : 10,
 
-			//String - Point label font colour
+			//String - Point label fonts colour
 			pointLabelFontColor : "#666",
 
 			//Boolean - Whether to show a dot for each point

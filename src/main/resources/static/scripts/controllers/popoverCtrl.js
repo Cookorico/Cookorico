@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('PopoverDemoCtrl', function ($scope) {
+angular.module('cookorico').controller('PopoverDemoCtrl', function ($scope) {
   $scope.dynamicPopover = 'Hello, World!';
   $scope.dynamicPopoverTitle = 'Title';
 });

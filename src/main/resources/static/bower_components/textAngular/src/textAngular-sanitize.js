@@ -195,13 +195,13 @@ var blockElements = angular.extend({}, optionalEndTagBlockElements, makeMap("add
 
 // Inline Elements - HTML5
 var inlineElements = angular.extend({}, optionalEndTagInlineElements, makeMap("a,abbr,acronym,b," +
-        "bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,q,ruby,rp,rt,s," +
+        "bdi,bdo,big,br,cite,code,del,dfn,em,fonts,i,img,ins,kbd,label,map,mark,q,ruby,rp,rt,s," +
         "samp,small,span,strike,strong,sub,sup,time,tt,u,var"));
 
 // SVG Elements
 // https://wiki.whatwg.org/wiki/Sanitization_rules#svg_Elements
 var svgElements = makeMap("animate,animateColor,animateMotion,animateTransform,circle,defs," +
-        "desc,ellipse,font-face,font-face-name,font-face-src,g,glyph,hkern,image,linearGradient," +
+        "desc,ellipse,fonts-face,fonts-face-name,fonts-face-src,g,glyph,hkern,image,linearGradient," +
         "line,marker,metadata,missing-glyph,mpath,path,polygon,polyline,radialGradient,rect,set," +
         "stop,svg,switch,text,title,tspan,use");
 
@@ -228,8 +228,8 @@ var htmlAttrs = makeMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspac
 // https://wiki.whatwg.org/wiki/Sanitization_rules#svg_Attributes
 var svgAttrs = makeMap('accent-height,accumulate,additive,alphabetic,arabic-form,ascent,' +
     'attributeName,attributeType,baseProfile,bbox,begin,by,calcMode,cap-height,class,color,' +
-    'color-rendering,content,cx,cy,d,dx,dy,descent,display,dur,end,fill,fill-rule,font-family,' +
-    'font-size,font-stretch,font-style,font-variant,font-weight,from,fx,fy,g1,g2,glyph-name,' +
+    'color-rendering,content,cx,cy,d,dx,dy,descent,display,dur,end,fill,fill-rule,fonts-family,' +
+    'fonts-size,fonts-stretch,fonts-style,fonts-variant,fonts-weight,from,fx,fy,g1,g2,glyph-name,' +
     'gradientUnits,hanging,height,horiz-adv-x,horiz-origin-x,ideographic,k,keyPoints,' +
     'keySplines,keyTimes,lang,marker-end,marker-mid,marker-start,markerHeight,markerUnits,' +
     'markerWidth,mathematical,max,min,offset,opacity,orient,origin,overline-position,' +

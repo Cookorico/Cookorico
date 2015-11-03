@@ -45,6 +45,7 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
             if (authenticated) {
                 console.log("Login succeeded")
                 $scope.error = false;
+
                 $uibModalInstance.dismiss('cancel');
             } else {
                 console.log("Login failed")

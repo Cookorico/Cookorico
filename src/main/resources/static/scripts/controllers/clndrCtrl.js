@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular').controller('calendarCtrl', function ($scope) {
+angular.module('cookorico').controller('calendarCtrl', function ($scope) {
    
    $scope.eventSources = [];
     

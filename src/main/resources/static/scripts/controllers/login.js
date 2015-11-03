@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('dashyAngular')
+angular.module('cookorico')
   .controller('LoginCtrl', function($scope, $location) {
 
     $scope.submit = function() {
