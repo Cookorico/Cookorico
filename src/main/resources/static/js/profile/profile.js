@@ -1,0 +1,1 @@
+angular.module('profile', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap'])

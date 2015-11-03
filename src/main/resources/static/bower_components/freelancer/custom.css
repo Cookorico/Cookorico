@@ -374,3 +374,26 @@ nav.side-menu .side-menu-item:hover{
 
 #imgProto{  max-width: 60%;
 }
+
+.badges img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 3px;
+}
+
+
+.panel-heading h3{
+    font-variant: small-caps;
+}
+
+.profile {
+    background-color: rgb(24, 188, 156);
+}
+
+.user-info {
+    background-color: black;
+}
+
+
+
+
