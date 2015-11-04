@@ -1,0 +1,77 @@
+.nopadding{
+	padding: 0;
+}
+
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bs-glyphicons li {
+	width: 12.5%;
+    font-size: 15px;
+    float: left;
+    height: 160px;
+    padding: 10px;
+    line-height: 1.4;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #fff;
+}
+
+bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bs-glyphicons li:hover {
+    color: #000;
+    background-color: #F3F3D1;
+}
+
+.taste-zero{
+	background-color: #FF0000;
+}
+.taste-one{
+	background-color: #FF3300;
+}
+.taste-two{
+	background-color: #FF6600;
+}
+.taste-three{
+	background-color: #FF9900;
+}
+.taste-four{
+	background-color: #FFCC00;
+}
+.taste-five{
+	color: #888;
+	background-color: #FFFF00;
+}
+.taste-six{
+	background-color: #B8E600;
+}
+.taste-seven{
+	background-color: #8AE600;
+}
+.taste-eight{
+	background-color: #52CD00;
+}
+.taste-nine{
+	background-color: #24B300;
+}
+.taste-ten{
+	background-color: #009A00;
+}

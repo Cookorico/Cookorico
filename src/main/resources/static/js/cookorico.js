@@ -2,7 +2,7 @@
  * Created by leemans on 03/11/15.
  */
 angular
-    .module('cookorico', [ 'ngRoute', 'auth', 'home', 'message', 'navigation' ])
+    .module('cookorico', [ 'ngRoute', 'auth', 'home', 'message', 'navigation', 'taste' ])
     .config(
 
         function($routeProvider, $httpProvider, $locationProvider) {
@@ -18,6 +18,9 @@ angular
             }).when('/login', {
                 templateUrl : 'js/navigation/login.html',
                 controller : 'navigation'
+            }).when('/taste', {
+                templateUrl : 'js/taste/taste.html',
+                controller : 'taste'
             }).otherwise('/');
 
             $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
