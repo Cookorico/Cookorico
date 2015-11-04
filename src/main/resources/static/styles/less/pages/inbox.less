@@ -1,0 +1,417 @@
+.inbox-container-wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	.inbox-container, .message-list-wrapper, .text-wrapper {
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+.email-options {
+	.email-options-title {
+		opacity: 0.92;
+	}
+	.main-options {
+		padding-left: 0;
+		list-style-type: none;
+				
+		li {
+			font-size: 15px;
+			line-height: 40px;
+			padding-top: 3px;
+			transition: all .3s linear;
+			&:hover {
+				background: darken(#3B3B3B, 7%);
+			}
+			a {
+				color : #424242;
+				opacity: 0.9;
+				transition : all 0.1s ease-in-out;
+				&:hover {
+					color: #FFFFFF;
+				}
+			}
+		}	
+		.badge {
+			margin-top: 9px;
+		}
+	}
+}
+
+
+.wrap-list {
+	list-style-type: none;
+	position: relative;
+	.messages-list {
+		max-height: 400px;
+		overflow: auto;
+		.messages-item:hover {
+			opacity: 0.9;
+		}
+		.messages-item {
+			.fa {
+				color: #ccc;
+				font-size: 11px;
+				
+			}
+			.fa-starred {
+				color: @brand-primary;
+				font-size: 11px;
+				
+			}
+			.date-class {
+				font-size: 11px;
+				margin-top: 3px;
+			}
+			p {
+				font-size: 11.5px;
+				line-height: 14px;
+			}
+		}
+		.name {
+			font-size: 18px;
+			opacity: 0.7;
+		}
+		.text {
+			float: right;
+			font-size: 12px;
+			margin-top: -40px;
+			opacity: 0.7;
+		}
+		.messages-item-subject {
+			font-size: 13px;
+			font-weight: 600;
+			color: #555;
+		}
+		.messages-item-content {
+			p {
+				width: 240px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-bottom: 0;
+				line-height: 18px;
+			}
+		}
+		.fa:hover {
+			color: @brand-primary;
+		} 
+		.leftist {
+		  width: 8px;
+		  float: left;
+		  margin-left: -17px;
+		  margin-top: -2px;
+		  .checkbox1 {
+		  	margin-left: -2px;
+		  	span {
+		  		height: 12px;
+		  		width: 12px;
+		  		&::before {
+		  			font-size: 14px;
+		  			line-height: 11px;
+		  			border: solid 1px #ddd;
+
+		  		}
+		  	}
+		  }
+		}
+	}
+	
+	ul {
+		padding-left: 0px;
+	}
+	a {
+		color: #424242;
+	}
+	li.active-message {
+		.messages-item-subject, .date-class, .fa {
+			color: #fff;
+		}
+		background: @brand-primary;
+		color: #F3F3F3 !important;
+		.leftist .fa {
+			color: #fff;
+		}
+	}
+	.messages-search {
+		margin-bottom: 20px;
+	}
+	.messages-item {
+		padding-top: 10px;
+		border-bottom: 1px solid #C6C6C6;
+		padding-left: 30px;
+		padding-right: 10px;
+		height: 60px;
+	}
+	.wrap-options {
+		position: absolute;
+		left: 16px;
+		right: 30px;
+		height: 50px;
+		background-color: #fff;
+		z-index: 1;
+		top:0;
+		input.form-control {
+			padding-left: 10px;
+		}
+	}
+}
+
+.message-actions {
+	.nav-pills {
+		background: #E7E7E7;
+		
+		a {
+		transition: all .1s ease-in-out;
+		}
+		
+		a.repall:hover {
+			color: @brand-success;
+			}
+		a.print:hover {
+			color: @brand-info;
+			}
+		a.del:hover {
+			color: @brand-danger;
+			}
+	}
+	.print {
+		margin-left: 175px;
+	}
+}
+.message-header {
+	.message-time {
+	float: right;
+	margin-top: 28px;
+	margin-right: 463px;
+	opacity: 0.7;
+	font-size: 12px;
+	}
+	.message-from {
+	float: left;
+	margin-top: -70px;
+	margin-left: 132px;
+	font-size: 15px;
+	}
+	.icon {
+		margin-top: 10px;
+	}
+}
+.message-subject {
+		font-size: 14.5px;
+		opacity: 0.9;
+	}
+.message-to {
+	opacity: 0.8;
+}	
+.message-content {
+	opacity: 0.88;
+}
+
+ul.main-options {
+	li {
+		a {
+			display: block;
+		}
+	}
+}
+
+// .no-padding1 {
+// 	padding: 15px;
+// 	.row {
+// 		margin: -15px;
+// 	}
+// }
+
+.inbox-container {
+	border-radius: 5px 0 0 5px;
+	min-width: 170px;
+	background: lighten(#2E2E2E, 5%);
+	color: #E7E7E7;
+	.butt-container {
+		padding: 16px;
+		.btn-block {
+			height: 30px;
+			font-size: 13px;
+		}
+
+	}
+	.poor {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		opacity: 0.7;
+		border-top: 1px solid #848484;
+	}
+	
+	ul.main-options {
+		h5 {
+				margin-top: 15px;
+				margin-bottom: 5px;
+				font-size: 13px;
+				font-weight: 600;
+				padding-left: 13px;
+				opacity: 0.5;
+			}
+		li.activeli {
+
+
+				background: #4C4C4C;
+				.badge {
+					background: @brand-success;
+				}
+			}
+		li {
+			padding-left: 5px;
+			padding-right: 10px;
+			.fa-stop {
+				margin-top: 10px;
+			}
+			.faorange {
+				color: #FFB457;
+			}
+			.fayellow {
+				color: #FFFA9B;
+			}
+			.facyan {
+				color: #8AEFE6;
+			}
+			.fapurple {
+				color: #DD8BFF;
+			}
+			.badge {
+				background: @brand-danger;
+			}
+			a {
+				color: #E7E7E7;
+				font-size: 13px;
+	   		}	
+		}
+	}
+}
+.message-list-wrapper {
+  width: 300px;
+  background: #E9E9E9;
+  overflow: hidden;
+  position: relative;
+  padding-top: 107px;
+  border-right: solid 1px #ddd;
+  .searchbox {
+  	height: 107px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	.fa {
+  		font-size: 13px;
+  		opacity: 0.7;
+  	}
+  	.form-control {
+  		margin-top: 6px;
+  	}
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.8;
+  .sebox {
+  	font-size: 26px;
+  }
+	}
+  .wrap-list {
+  	background: #F5F5F5; 	
+  }	
+}
+.text-wrapper {
+  // width: 99%;
+
+   
+  .wrap-message {
+  	// max-height: 500px;
+  	overflow: hidden;
+  	.message-topic {
+	  padding: 15px;
+	  border-bottom: 1px solid #DEDEDE;
+	  font-size: 18px;
+	  line-height: 20px;
+	  color: #565656;
+	  .pull-right {
+	  	.fa {
+	  		font-size: 14px;
+	  		padding-left: 16px;
+	  		color: #B9B9B9;
+	  	}
+	  	a {
+	  		color: inherit;
+	  		&:hover {
+	  			.fa-reply {
+	  				color: @brand-success;
+	  			}
+	  			.fa-trash-o {
+	  				color: @brand-danger;
+	  			}
+	  		}
+	  	}
+	  }
+	}
+	.message-sender {
+		padding: 5px 15px;
+		border-bottom: 1px solid #DEDEDE;
+		color: #B5B5B5;
+		.fa-caret-o-down {
+			font-size: 13px;
+		}
+		a {
+			font-size: 14px;
+		}
+		.sender-img {
+		  	width: 40px;
+			border: 1px solid #ddd;
+		}
+		
+	}
+  }
+  .message-content {
+  	padding: 15px;
+  	overflow: auto;
+  	// height: 340px;
+  }
+  .messagefooter {
+  	  height: 70px;
+	  padding-top: 10px;
+	  padding-right: 15px;
+	  .btn-rounded {
+	  	font-size: 13px;
+		height: 30px;
+		width: 100px;
+	  }
+  }
+}
+
+@media (max-width: 1120px) {
+	.text-wrapper {
+		display: none !important;
+	}
+	.inbox-container {
+		width: 30%;
+	}
+	.message-list-wrapper {
+		width: 70%;
+	}
+} 
+@media (max-width: 550px) {
+	.message-list-wrapper {
+		display: none;
+	}
+	.inbox-container {
+		width: 100%;
+	}
+}
+
+
+* {
+	a:hover, a:focus, a:active {
+		text-decoration: none;
+		cursor: pointer;
+	}
+}

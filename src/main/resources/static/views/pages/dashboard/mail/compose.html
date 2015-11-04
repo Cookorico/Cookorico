@@ -1,0 +1,100 @@
+<pageheader pagename="Compose" subtitle="Bootstrap UI Elements"></pageheader>
+<div class="conter-wrapper">				
+	<div class="inbox-container-wrap">
+		<div class="inbox-container">
+			<div class="col email-options ps-container">
+				<div class="padding-15">
+					<div class="butt-container">
+					<a ui-sref="compose"><button class="btn btn-primary btn-block btn-rounded">
+							Compose 
+						</button></a>
+					</div>
+					<ul class="main-options">
+
+						<li class="activeli">
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Inbox</span>
+								<span class="badge pull-right">10</span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Junk Mail</span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Drafts</span>
+								<span class="badge pull-right">16</span>
+							</a>	
+						</li>
+
+						<li>
+							<a href="">
+								<span class="title"> &nbsp; Sent</span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Trash</span>
+							</a>	
+						</li>
+
+						<hr class="poor">
+						<h5>LABELS</h5>
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Clients <i class="fa fa-stop pull-right faorange"></i></span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Social <i class="fa fa-stop pull-right fayellow"></i></span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Family <i class="fa fa-stop pull-right facyan"></i></span>
+							</a>	
+						</li>
+
+						<li>
+						<a ui-sref="inbox">
+								<span class="title"> &nbsp; Friends <i class="fa fa-stop pull-right fapurple"></i></span>
+							</a>	
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="compose-container">
+			<div class="wrap-compose">
+				<div class="mail-header">
+					<h4>New Email</h4>
+				</div>
+				<div class="receipient">
+					<strong class="to">TO </strong> <span class="label label-primary">john@doe.com</span>
+				</div>
+				<div class="subject">
+					<strong class="strong-header">SUBJECT</strong> <strong class="subjetc">[LOGO] Envelope</strong>
+				</div>
+				<text-angular ng-model="htmlVariable"></text-angular>
+
+				<div class="send-footer">
+					<button type="button" class="btn btn-primary btn-rounded    ">
+					Send</button> 
+
+					&nbsp;&nbsp;&nbsp;<a href=""><i class="fa fa-paperclip"></i></a>
+					<a href=""><i class="fa fa-trash-o pull-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+	

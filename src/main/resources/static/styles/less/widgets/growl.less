@@ -1,0 +1,52 @@
+growl-notifications {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 5000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+
+  growl-notification {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px 20px;
+    width: 250px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid rgba(0,0,0,0.8);
+    font-size: 16px;
+  
+    .close {
+      color: #fff;
+      font-size: 16px;
+      margin-right: -10px;
+      margin-top: 2px;
+      opacity: 1;
+    }
+    .title {
+      font-size: 18px;
+    }
+
+    &.growl-primary {
+      color: #FFF;
+      background: @brand-primary;
+      border: 1px solid darken(@brand-primary, 5%);
+    }
+    &.growl-error {
+      color: #FFF;
+      background: @brand-danger;
+      border: 1px solid darken(@brand-danger, 5%);
+    }
+    &.growl-info {
+      color: #FFF;
+      background: @brand-info;
+      border: 1px solid darken(@brand-info, 5%);
+    }
+    &.growl-warning {
+      color: #FFF;
+      background: @brand-warning;
+      border: 1px solid darken(@brand-warning, 5%);
+    }
+  }
+}

@@ -1,8 +1,11 @@
 /**
  * Created by leemans on 03/11/15.
  */
-angular.module('home', []).controller('home', function($scope, $http) {
-    $http.get('/user/').success(function(data) {
-        $scope.user = data.name;
-    });
+window.app_version = 2;
+
+angular.module('home', ['angular.css.injector', 'auth'])
+    .controller('home', function ($scope, $http, auth, cssInjector) {
+
+
+
 });

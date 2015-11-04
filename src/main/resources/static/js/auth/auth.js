@@ -19,7 +19,7 @@ angular.module('auth', []).factory(
 
             authenticated : false,
 
-            loginPath : '/login',
+            loginPath : '/accueil',
             logoutPath : '/logout',
             homePath : '/',
             path : $location.path(),

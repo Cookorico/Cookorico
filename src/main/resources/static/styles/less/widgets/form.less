@@ -1,0 +1,70 @@
+.underline {
+	background: none !important;
+	background-image: none;
+	border: 1px solid #c8c7cc;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0 0 0 0 !important;
+	color: #5b5b60;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 1.2;
+	padding: 5px 4px;
+	transition-duration: 0.1s;
+	box-shadow: none !important;
+	-moz-transition: border 300ms ease-out;
+	-o-transition: border 300ms ease-out;
+	-webkit-transition: border 300ms ease-out;
+	transition: border 300ms ease-out;
+	&:focus {
+		border-color: @brand-primary;
+	}
+}
+.rounded {
+	border-radius: 50px;
+}
+.has-success {
+	.control-label {
+		color: inherit;
+	}
+	.form-control {
+		border-color: @brand-success;
+		&:focus {
+			border-color: darken(@brand-success, 10%);
+		}
+	}
+}
+.has-info {
+	.control-label {
+		color: inherit;
+	}
+	.form-control {
+		border-color: @brand-info;
+		&:focus {
+			border-color: darken(@brand-info, 10%);
+		}
+	}
+}
+.has-warning {
+	.control-label {
+		color: inherit;
+	}
+	.form-control {
+		border-color: @brand-warning;
+		&:focus {
+			border-color: darken(@brand-warning, 10%);
+		}
+	}
+}
+.has-error {
+	.control-label {
+		color: inherit;
+	}
+	.form-control {
+		border-color: @brand-danger;
+		&:focus {
+			border-color: darken(@brand-danger, 10%);
+		}
+	}
+}
