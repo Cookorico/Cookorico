@@ -1,8 +1,31 @@
 {
-  "name": "ng-spring-boot",
-  "dependencies":{
-    "angular":"~1.3.0",
-    "angular-resource":"~1.3.0",
-    "bootstrap-css-only":"~3.2.0"
+  "name": "Cookorico",
+  "homepage": "https://github.com/Cookorico/Cookorico",
+  "authors": [
+    "Ly4m <will.leemans@gmail.com>"
+  ],
+  "description": "Projet IAGL",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-cookies": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-bootstrap": "~0.14.3",
+    "bootstrap-css": "~3.3.4",
+    "jquery": "~2.1.4",
+    "jquery.easing": "~1.3.1",
+    "angular-css-injector": "~1.4.0"
   }
 }
