@@ -4,7 +4,8 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeDao'>
 
-  <resultMap type="Recipe" id="recipeResultMapSingle">
+  <!-- <resultMap type="Recipe" id="recipeResultMapSingle">-->
+  <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMapSingle">
     <id property='idRecipe' column='id_recipe'/>
     <result property='name' column='name'/>
     <result property='description' column='description'/>
@@ -20,7 +21,8 @@
   </resultMap>
   
    
-  <resultMap type="Recipe" id="recipeResultMap">
+  <!-- <resultMap type="Recipe" id="recipeResultMap"> -->
+  <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
     <id property='idRecipe' column='id_recipe'/>
     <result property='name' column='name'/>
     <result property='description' column='description'/>
@@ -43,16 +45,16 @@
     SELECT * FROM recipe
   </select>
   
-   <select id="getRecipeById" resultType="Recipe" parameterType="int">
+   <select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="int">
   	SELECT * FROM recipe WHERE id_recipe = #{id}
   </select>
   
-  <select id="getRecipeWithName" resultType="Recipe" parameterType="java.lang.String">
+  <select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="java.lang.String">
   	SELECT * FROM recipe WHERE name = #{name}
   </select>
   
   
-  <insert id="addRecipe" parameterType="Recipe">
+  <insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
   	INSERT INTO recipe(name, description, preparation_time, cooking_time,fk_creator) VALUES(#{recipe.name}, #{recipe.description}, #{recipe.preparationTime}, #{recipe.cookingTime}, #{recipe.creator.idMember})
   </insert>
 
