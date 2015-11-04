@@ -225,7 +225,6 @@ angular
                 url: '/blank',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/blank.html?v=' + window.app_version,
-
             })
             .state('calendar', {
                 url: '/calendar',
@@ -273,7 +272,15 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/charts/chartjs.html?v=' + window.app_version,
                 controller: 'ChartCtrl'
+            })
+            .state('progression', {
+                url: '/progression',
+                parent: 'dashboard',
+                templateUrl: 'views/pages/dashboard/maprogression.html?v=' + window.app_version,
+                controller: 'maprogressionCtrl'
             });
+
+
 
     })
     .run(function () {
