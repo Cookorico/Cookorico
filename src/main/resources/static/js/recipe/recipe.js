@@ -1,7 +1,5 @@
-/**
- * Created by dieulin on 03/11/15.
- */
-angular.module('recipe', []).controller('recipe', function($scope, $http) {
+angular.module('cookorico')
+    .controller('recipe', function($scope, $http) {
     $http.get('/recipe/list').success(function(data, status, headers, config) {
     	
     	objects = data;

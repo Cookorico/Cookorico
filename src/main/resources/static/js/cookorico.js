@@ -5,8 +5,7 @@
 window.app_version = 2;
 
 angular
-<<<<<<< HEAD
-    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation', 'recipe',
+    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -68,6 +67,7 @@ angular
                 templateUrl: 'js/navigation/login.html',
                 controller: 'navigation'
             })
+            
             .state('plain', {
                 abstract: true,
                 url: '',
@@ -226,12 +226,12 @@ angular
                 url: '/blank',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/blank.html?v=' + window.app_version,
-
             })
             .state('calendar', {
                 url: '/calendar',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/calendar.html?v=' + window.app_version,
+
             })
             .state('signup', {
                 url: '/signup',
@@ -273,20 +273,21 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/charts/chartjs.html?v=' + window.app_version,
                 controller: 'ChartCtrl'
+            })
+            .state('progression', {
+                url: '/progression',
+                parent: 'dashboard',
+                templateUrl: 'views/pages/dashboard/maprogression.html?v=' + window.app_version,
+                controller: 'maprogressionCtrl'
+            })
+            .state('recipe', {
+                url: '/recipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/recipe.html',
+                controller: 'recipe'
             });
-            $routeProvider.when('/', {
-                templateUrl : 'js/home/home.html',
-                controller : 'home'
-            }).when('/message', {
-                templateUrl : 'js/message/message.html',
-                controller : 'message'
-            }).when('/login', {
-                templateUrl : 'js/navigation/login.html',
-                controller : 'navigation'
-            }).when('/show', {
-                templateUrl : 'js/recipe/recipe.html',
-                controller : 'recipe'
-            }).otherwise('/');
+
+
 
     })
     .run(function () {
