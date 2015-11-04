@@ -5,7 +5,8 @@
 window.app_version = 2;
 
 angular
-    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation',
+<<<<<<< HEAD
+    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation', 'recipe',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -231,7 +232,6 @@ angular
                 url: '/calendar',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/calendar.html?v=' + window.app_version,
-
             })
             .state('signup', {
                 url: '/signup',
@@ -274,6 +274,19 @@ angular
                 templateUrl: 'views/pages/dashboard/charts/chartjs.html?v=' + window.app_version,
                 controller: 'ChartCtrl'
             });
+            $routeProvider.when('/', {
+                templateUrl : 'js/home/home.html',
+                controller : 'home'
+            }).when('/message', {
+                templateUrl : 'js/message/message.html',
+                controller : 'message'
+            }).when('/login', {
+                templateUrl : 'js/navigation/login.html',
+                controller : 'navigation'
+            }).when('/show', {
+                templateUrl : 'js/recipe/recipe.html',
+                controller : 'recipe'
+            }).otherwise('/');
 
     })
     .run(function () {
