@@ -5,7 +5,7 @@
 window.app_version = 2;
 
 angular
-    .module('cookorico', ['ngRoute', 'auth', 'message', 'navigation',
+    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -62,11 +62,6 @@ angular
         $urlRouterProvider.otherwise('/dashboard');
 
         $stateProvider
-            .state('base', {
-                url: '/base',
-                templateUrl: 'js/home/home.html',
-                controller: 'home'
-            })
             .state('accueil', {
                 url: '/',
                 templateUrl: 'js/navigation/login.html',

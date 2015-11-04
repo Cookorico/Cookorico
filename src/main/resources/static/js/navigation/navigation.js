@@ -1,10 +1,13 @@
 /**
  * Created by leemans on 03/11/15.
  */
-angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap']).controller(
+angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','angular.css.injector']).controller(
     'navigation',
 
-    function($scope, $route, $uibModal, auth) {
+    function($scope, $route, $uibModal, cssInjector) {
+
+        cssInjector.add("bower_components/freelancer/freelancer.css");
+        cssInjector.add("bower_components/freelancer/custom.css");
 
         $scope.open = function (size) {
 
@@ -18,7 +21,7 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap']).c
             modalInstance.result.then(function (selectedItem) {
                 $scope.selected = selectedItem;
             }, function () {
-
+                window.location = '/dashboard';
             });
         };
 
@@ -28,7 +31,7 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap']).c
 
     });
 
-angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth) {
+angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth, cssInjector) {
 
     $scope.credentials = {};
 
@@ -45,7 +48,7 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
             if (authenticated) {
                 console.log("Login succeeded")
                 $scope.error = false;
-
+                cssInjector.removeAll();
                 $uibModalInstance.dismiss('cancel');
             } else {
                 console.log("Login failed")
