@@ -67,6 +67,7 @@ angular
                 templateUrl: 'js/navigation/login.html',
                 controller: 'navigation'
             })
+            
             .state('plain', {
                 abstract: true,
                 url: '',
@@ -282,6 +283,12 @@ angular
             	url: '/taste',
             	parent: 'dashboard',
             	templateUrl : 'js/taste/taste.html?v=' + window.app_version
+            })
+            .state('recipe', {
+                url: '/recipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/recipe.html',
+                controller: 'recipe'
             });
 
     })

@@ -5,7 +5,4 @@ window.app_version = 2;
 
 angular.module('home', ['angular.css.injector', 'auth'])
     .controller('home', function ($scope, $http, auth, cssInjector) {
-
-
-
 });

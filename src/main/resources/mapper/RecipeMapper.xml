@@ -16,7 +16,7 @@
     <result property='creationDate' column='creation_date'/> 
     <result property='modifDate' column='modif_date'/>
     <result property='disabled' column='disabled'/>
-    <result property='creator.id' column='id'/>
+    <result property='creator.idMember' column='fk_creator'/>
   </resultMap>
   
    
