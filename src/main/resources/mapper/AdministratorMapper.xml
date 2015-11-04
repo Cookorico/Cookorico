@@ -4,7 +4,7 @@
   
 <mapper namespace='fil.iagl.cookorico.dao.AdministratorDao'>
 
-	<resultMap type="fil.iagl.cookorico.entity.Administrator" extends="fil.iagl.cookorico.dao.MemberDao.memberResultMapSingle" id="AdministratorResultMap">
+	<resultMap type="Administrator" extends="fil.iagl.cookorico.dao.MemberDao.memberResultMapSingle" id="AdministratorResultMap">
 		<id property="idAdministrator" column="id_administrator"/>
 		<result property="adminRank" column="adminRank"/>
 	</resultMap>

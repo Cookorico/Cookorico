@@ -4,12 +4,15 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 
+import org.apache.ibatis.type.Alias;
+
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
 
 @JsonSerialize
 @Data
+@Alias("Member")
 public class Member {
 
 	private Integer idMember;

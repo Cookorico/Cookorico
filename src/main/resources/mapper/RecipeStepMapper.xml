@@ -4,7 +4,7 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeStepDao'>
 
-  <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMapSingle">
+  <resultMap type="RecipeStep" id="recipeStepResultMapSingle">
     <id property='idRecipeStep' column='id_recipe_step'/>
     <result property='recipe.id' column='fk_id_recipe'/>
     <result property='rank' column='rank'/>
@@ -17,7 +17,7 @@
   </resultMap>
   
    
-  <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMap">
+  <resultMap type="RecipeStep" id="recipeStepResultMap">
     <id property='idRecipeStep' column='id_recipe_step'/>
     <result property='rank' column='rank'/>
     <result property='name' column='name'/>
@@ -31,15 +31,15 @@
   
 	
 
-   <select id="getRecipeStepById" resultType="fil.iagl.cookorico.entity.RecipeStep" parameterType="int">
+   <select id="getRecipeStepById" resultType="RecipeStep" parameterType="int">
   	SELECT * FROM recipe_step WHERE id_recipe_step = #{id}
   </select>
   
-  <select id="getRecipeStepByIdRecipe" resultType="fil.iagl.cookorico.entity.RecipeStep" parameterType="int">
+  <select id="getRecipeStepByIdRecipe" resultType="RecipeStep" parameterType="int">
   	SELECT * FROM recipe_step WHERE fk_id_recipe = #{id}
   </select>
   
-  <insert id="addRecipeStep" parameterType="fil.iagl.cookorico.entity.RecipeStep">
+  <insert id="addRecipeStep" parameterType="RecipeStep">
   	INSERT INTO recipe_step(fk_id_recipe, rank, name, description, duration_time) VALUES(#{recipeStep.recipe.id}, #{recipeStep.rank}, #{recipeStep.name}, #{recipeStep.description}, #{recipeStep.durationTime})
   </insert>
 

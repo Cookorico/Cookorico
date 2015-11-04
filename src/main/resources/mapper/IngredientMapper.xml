@@ -4,7 +4,7 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.IngredientDao'>
 
-  <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientResultMap">
+  <resultMap type="Ingredient" id="ingredientResultMap">
     <id property='idIngredient' column='id_ingredient'/>
     <result property='name' column='name'/>
     <result property='description' column='description'/>
@@ -19,15 +19,15 @@
     SELECT * FROM ingredient
   </select>
   
-  <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
+  <select id="getIngredientById" resultType="Ingredient" parameterType="int">
   	SELECT * FROM ingredient WHERE id_ingredient = #{id}
   </select>
   
-  <insert id="addIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
+  <insert id="addIngredient" parameterType="Ingredient">
   	INSERT INTO ingredient(name, description) VALUES(#{ingredient.name}, #{ingredient.description})
   </insert>
   
-  <delete id="deleteIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
+  <delete id="deleteIngredient" parameterType="Ingredient">
   	DELETE FROM ingredient WHERE name = #{name}
   </delete>
 

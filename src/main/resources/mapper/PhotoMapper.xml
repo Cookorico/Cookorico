@@ -2,7 +2,7 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.PhotoDao">
 
-	<resultMap type="fil.iagl.cookorico.entity.Photo" id="photoResultMap">
+	<resultMap type="Photo" id="photoResultMap">
 		<id property="id" column="id_photo" />
 		<result property="idMember" column="fk_id_member" />
 		<result property="filePath" column="file_path" />
@@ -17,7 +17,7 @@
 		SELECT * FROM photo
 	</select>
 	
-	<select id="getMemberPhoto" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Photo">
+	<select id="getMemberPhoto" parameterType="Integer" resultType="Photo">
 		SELECT * FROM photo WHERE fk_id_member=#{id_member}
 	</select>
 
