@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-btn-outline-rounded",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sahusoftcom/bootstrap-btn-outline-rounded",
+  "authors": [
+    "Sanket <sanket@sahusoft.com>"
+  ],
+  "description": "Bootstrap Outline and Rounded Buttons",
+  "main": "index.less",
+  "keywords": [
+    "Bootstrap",
+    "Button",
+    "Outline",
+    "Rounded"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

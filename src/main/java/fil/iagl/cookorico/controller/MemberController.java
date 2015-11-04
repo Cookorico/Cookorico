@@ -18,33 +18,33 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public Member login(@RequestBody LoginWrapper wrapper) {
-		final String username = wrapper.getUsername();
-		final String password = wrapper.getPassword();
-		return memberService.getMember(username, password);
-	}
-	
-	@RequestMapping(value = "user/register", method = RequestMethod.POST)
-	public boolean registerUser(@RequestBody RegisterWrapper wrapper) {
-		
-		final String email = wrapper.getEmail();
-		final String username = wrapper.getUsername();
-		final String password = wrapper.getPassword();
-		final String firstName = wrapper.getFirstName();
-		final String lastName = wrapper.getLastName();
-		final String gender = wrapper.getGender();
-		final String city = wrapper.getCity();
-		
-		final Member member = new Member();
-		member.setFirstname(firstName);
-		member.setLastname(lastName);
-		member.setCity(city);
-		member.setGender(gender);
-		member.setEmail(email);
-		member.setUsername(username);
-		member.setPassword(password);
-		
-		return memberService.addMember(member);
-	}
+//	@RequestMapping(value = "/login", method = RequestMethod.POST)
+//	public Member login(@RequestBody LoginWrapper wrapper) {
+//		final String username = wrapper.getUsername();
+//		final String password = wrapper.getPassword();
+//		return memberService.getMember(username, password);
+//	}
+//
+//	@RequestMapping(value = "user/register", method = RequestMethod.POST)
+//	public boolean registerUser(@RequestBody RegisterWrapper wrapper) {
+//
+//		final String email = wrapper.getEmail();
+//		final String username = wrapper.getUsername();
+//		final String password = wrapper.getPassword();
+//		final String firstName = wrapper.getFirstName();
+//		final String lastName = wrapper.getLastName();
+//		final String gender = wrapper.getGender();
+//		final String city = wrapper.getCity();
+//
+//		final Member member = new Member();
+//		member.setFirstname(firstName);
+//		member.setLastname(lastName);
+//		member.setCity(city);
+//		member.setGender(gender);
+//		member.setEmail(email);
+//		member.setUsername(username);
+//		member.setPassword(password);
+//
+//		return memberService.addMember(member);
+//	}
 }

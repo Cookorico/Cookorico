@@ -1,0 +1,33 @@
+<div class="striped-bg" id="sidenav" ng-controller="TabsDemoCtrl">
+    <div id="navTabs">
+        <div class="sidebar-controllers sidebar-top-nav">
+             <tabset justified="true">
+                <tab active="tabActive[0]">
+                    <tab-heading><i class="fa fa-bars"></i></tab-heading>
+                    <div class=" hidden-xs">
+                    <a class="toggle-menu" ng-click="menuToggle()"><i class="fa fa-chevron-left fa-2x left-chevron"></i>
+                    <i class="fa fa-chevron-right fa-2x right-chevron"></i>
+                    </a>
+                    </div>
+                    <menu></menu>
+                </tab>
+                <tab active="tabActive[1]">
+                    <tab-heading><i class="fa fa-comments-o"></i></tab-heading>
+                    <comments></comments>
+                </tab>
+                 <tab active="tabActive[2]">
+                    <tab-heading><i class="fa fa-line-chart"></i></tab-heading>
+                   <charts></charts>
+                </tab>
+                 <tab active="tabActive[3]">
+                    <tab-heading><i class="fa fa-calendar"></i></tab-heading>
+                    <calendar></calendar>
+                </tab>
+                <tab active="tabActive[4]">
+                    <tab-heading><i class="fa fa-bell-o"></i></tab-heading>
+                    <notification></notification>
+                </tab>
+            </tabset>              
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,98 @@
+.home-page {
+	.line-chart {
+		.panel-body {
+			padding: 0px !important;
+			overflow: hidden;
+
+			.line-chart-container {
+				margin: 0px -10px -30px -15px;
+			}
+		}
+	}
+	.calendar-col {
+		.panel {
+			box-shadow: none;
+		}
+	}
+	.calendar-wrapper {
+		.today {
+			text-align: center;
+			color: @brand-primary;
+			h2 {
+				font-size: 72px;
+			}
+
+			span.month {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+
+
+
+@media (min-width: 992px){ 
+	.home-page {
+		margin: -15px -15px 0 -15px;
+
+		> .row {
+			min-width: 100%;
+			&:after, .panel-body:after, .row:after, &:before, .panel-body:before, .row:before {
+				display: block;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+
+			display: table;
+
+			&:after, &:before {
+				display: none;
+			}
+
+
+			border-collapse: separate;
+		    border-spacing: 15px 15px;
+
+			> [class*="col-"] {
+
+				vertical-align: top;
+
+				&.graph-col {
+					vertical-align: bottom;
+				}
+
+			    float: none;
+			    display: table-cell;
+				background: #FFF;
+				border-radius: 5px;
+				overflow: hidden;
+				padding: 0;
+				margin: 0;
+
+				> .panel {
+					background: none;
+					border: none;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px){
+	.home-page {
+		margin: 0;
+		> .row {
+			display: block;
+			> [class*="col-"] {
+				display: block;
+				border-bottom: solid 1px #eee;
+				&:last-child {
+					border:none;
+				}
+			} 
+		}
+	}
+}
