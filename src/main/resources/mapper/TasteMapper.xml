@@ -2,6 +2,7 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.TasteDao">
 
+	<!-- <resultMap type="Taste" id="tasteResultMap"> -->
 	<resultMap type="fil.iagl.cookorico.entity.Taste" id="tasteResultMap">
 	<id property="id" column="idtaste"/>
 	<result property="grading" column="grading"/>
@@ -19,8 +20,16 @@
 		
 	</resultMap>
 	
-	<select id="getTasteById" parameterType="Integer" resultMap="tasteResultMap">
+	<select id="getTasteById" resultType="Integer" resultMap="tasteResultMap">
 		select * from taste, member where member = #{id}; 
 	</select>
+	
+	<select id="getAllTaste" resultType="fil.iagl.cookorico.entity.Taste" resultMap="tasteResultMap">
+		SELECT * FROM taste 
+	</select>
+	
+	<insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
+		INSERT INTO taste ()
+	</insert>
 	
 </mapper>

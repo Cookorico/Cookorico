@@ -3,12 +3,15 @@ package fil.iagl.cookorico.entity;
 
 import java.sql.Timestamp;
 
+import org.apache.ibatis.type.Alias;
+
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
 
 @JsonSerialize
 @Data
+@Alias("RecipeStep")
 public class RecipeStep {
 	
 	private Integer idRecipeStep;

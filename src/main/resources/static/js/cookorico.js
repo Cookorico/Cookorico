@@ -67,6 +67,7 @@ angular
                 templateUrl: 'js/navigation/login.html',
                 controller: 'navigation'
             })
+            
             .state('plain', {
                 abstract: true,
                 url: '',
@@ -230,7 +231,6 @@ angular
                 url: '/calendar',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/calendar.html?v=' + window.app_version,
-
             })
             .state('signup', {
                 url: '/signup',
@@ -278,9 +278,18 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/maprogression.html?v=' + window.app_version,
                 controller: 'maprogressionCtrl'
+            })
+            .state('taste', {
+            	url: '/taste',
+            	parent: 'dashboard',
+            	templateUrl : 'js/taste/taste.html?v=' + window.app_version
+            })
+            .state('recipe', {
+                url: '/recipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/recipe.html',
+                controller: 'recipe'
             });
-
-
 
     })
     .run(function () {
