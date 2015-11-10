@@ -15,10 +15,7 @@
 
 										<blockquote cite="#">
 											<p>{{recipe.description.substring(0,35)}}...</p>
-											<footer>
-												<a href="#">Par {{recipe.creator.lastname}}
-													{{recipe.creator.firstname}} ({{recipe.creator.email}})</a>
-											</footer>
+											<p>Par {{recipe.creator.lastname}} {{recipe.creator.firstname}} (<a href="mailto:{{recipe.creator.email}}">{{recipe.creator.email}}</a>)</p>
 										</blockquote>
 
 										<p>
