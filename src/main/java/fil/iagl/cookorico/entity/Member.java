@@ -31,6 +31,5 @@ public class Member {
 	private Boolean disabled;
 	private Integer experience;
 	private Integer level;
-	
 
 }

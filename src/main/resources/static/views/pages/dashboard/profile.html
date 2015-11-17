@@ -1,4 +1,4 @@
-<div class="home-wrapper conter-wrapper">
+<div class="home-wrapper conter-wrapper" ng-controller="profileCtrl">
 	<div class="cover-wrapper">
 		<div class="cover-photo" style="background-image: url( 'images/profile-cover.jpg ') ;">
 			<div class="name-desg">
@@ -32,13 +32,13 @@
             </div>
             <div class="panel-body">
                 <ul class="list-unstyled">
-                    <li><strong>Pseudo</strong> : Gordevil</li>
-                    <li><strong>Prénom</strong> : Gordon</li>
-                    <li><strong>Nom</strong> : Ramsay</li>
-                    <li><strong>Email</strong> : ramsay@gmail.com</li>
-                    <li><strong>Genre</strong> : M</li>
+                    <li><strong>Pseudo</strong> : {{user.username}}</li>
+                    <li><strong>Prénom</strong> : {{user.firstname}}</li>
+                    <li><strong>Nom</strong> : {{user.lastname}}</li>
+                    <li><strong>Email</strong> : {{user.email}}</li>
+                    <li><strong>Genre</strong> : {{user.gender}}</li>
                     <li><strong>Anniversaire</strong> : 12/04/1962</li>
-                    <li><strong>Experience</strong> : 1234 pts</li>
+                    <li><strong>Experience</strong> : {{user.experience }} pts</li>
                 </ul>
             </div>
         </div>

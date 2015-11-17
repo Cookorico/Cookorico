@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Level;
+import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.service.LevelService;
 import fil.iagl.cookorico.service.MemberService;
 
@@ -26,6 +27,23 @@ public class MemberController {
 		return levelService.getLevelByXP(Integer.parseInt(xp));
 	}
 	
+	
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+	public @ResponseBody Member getProfile() {
+		//En attendant recupération de l'user loggé ??
+		
+		Member m = new Member();
+		m.setIdMember(1);
+		m.setUsername("Gordevil");
+		m.setFirstname("Gordon");
+		m.setLastname("Ramsay");
+		m.setGender("M");
+		m.setEmail("gordon@ramsay.com");
+		m.setExperience(3250);
+		m.setLevel(34);
+		
+		return m;
+	}
 	
 	
 //	@RequestMapping(value = "/login", method = RequestMethod.POST)

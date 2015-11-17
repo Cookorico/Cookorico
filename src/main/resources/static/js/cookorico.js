@@ -5,7 +5,7 @@
 window.app_version = 2;
 
 angular
-    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation',
+    .module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'message', 'navigation',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -181,6 +181,7 @@ angular
                 url: '/profile',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/profile.html?v=' + window.app_version,
+                controller: 'profileCtrl'
             })
             .state('grid', {
                 url: '/grid',
