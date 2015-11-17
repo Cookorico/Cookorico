@@ -4,6 +4,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
@@ -12,9 +13,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.security.web.csrf.CsrfTokenRepository;
@@ -33,7 +37,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
-import java.security.Principal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -64,6 +67,8 @@ public class CookoricoApplication {
 		ds.setPassword("cookorico");
 		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
         // url to dev at home
+//		ds.setUsername("postgres");
+//		ds.setPassword("postgres");
 //        ds.setUrl("jdbc:postgresql://localhost:5432/postgres");
         ds.setDriverClassName("org.postgresql.Driver");
         ds.setMaxWait(25);
@@ -90,7 +95,7 @@ public class CookoricoApplication {
     @RequestMapping("/resource")
     @ResponseBody
     public Map<String, Object> home() {
-        Map<String, Object> model = new HashMap<String, Object>();
+        Map<String, Object> model = new HashMap<>();
         model.put("id", UUID.randomUUID().toString());
         model.put("content", "Hello World");
         return model;
@@ -99,7 +104,10 @@ public class CookoricoApplication {
 
     @Configuration
     @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-    protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+    static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+        @Autowired
+        private UserDetailsService userDetailsService;
 
         @Override
         public void configure(WebSecurity web) throws Exception {
@@ -114,6 +122,11 @@ public class CookoricoApplication {
                     .permitAll().anyRequest().authenticated().and().csrf()
                     .csrfTokenRepository(csrfTokenRepository()).and()
                     .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);
+        }
+
+        @Override
+        protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+            auth.userDetailsService(userDetailsService);
         }
 
         private Filter csrfHeaderFilter() {
