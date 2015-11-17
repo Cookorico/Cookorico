@@ -1,22 +1,32 @@
 package fil.iagl.cookorico.controller;
 
-import org.neo4j.cypher.internal.compiler.v2_1.functions.Str;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import fil.iagl.cookorico.entity.Member;
+import fil.iagl.cookorico.entity.Level;
+import fil.iagl.cookorico.service.LevelService;
 import fil.iagl.cookorico.service.MemberService;
-import fil.iagl.cookorico.wrapper.LoginWrapper;
-import fil.iagl.cookorico.wrapper.RegisterWrapper;
 
 @RestController
 public class MemberController {
 
 	@Autowired
 	private MemberService memberService;
+	
+	@Autowired
+	private LevelService levelService;
+
+	
+	@RequestMapping(value = "/level/xp/{xp}", method = RequestMethod.GET)
+	public @ResponseBody Level getLevelByXP(@PathVariable String xp) {
+		return levelService.getLevelByXP(Integer.parseInt(xp));
+	}
+	
+	
 	
 //	@RequestMapping(value = "/login", method = RequestMethod.POST)
 //	public Member login(@RequestBody LoginWrapper wrapper) {
