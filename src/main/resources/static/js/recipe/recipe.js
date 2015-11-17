@@ -20,18 +20,19 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
 	this.add = function () {
 		
 		recipe = angular.toJson($scope.recipe);
-		//console.log(recipe);
+		console.log(recipe);
 	
 		$http({
-	    		method: 'POST', 
-	    		url : '/recipe/add',
-	    		data : recipe
-	    	}).success(function(data, status, header, config){
-	    		console.log(data, status, header, config);
-	    	}).error(function(data, status, header, config){
-	    		console.log(data, status, header, config);
-	    	});
+    		method: 'POST', 
+    		url : '/recipe/add',
+    		data : recipe
+    	})
+    	.success(function(data, status, header, config){
+    		console.log(data, status, header, config);
+    	})
+    	.error(function(data, status, header, config){
+    		console.log(data, status, header, config);
+    	});
 			
-	    };
-	}]
-);
+    };
+}]);
