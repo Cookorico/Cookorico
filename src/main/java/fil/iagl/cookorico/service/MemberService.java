@@ -6,7 +6,7 @@ import fil.iagl.cookorico.entity.Member;
 
 public interface MemberService {
 
-	Member getMember(String username, String password);
+	Member getMemberByUserName(String username);
 	
 	boolean addMember(Member member);
 	
