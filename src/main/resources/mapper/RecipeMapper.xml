@@ -4,6 +4,7 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeDao'>
 
+  <!-- <resultMap type="Recipe" id="recipeResultMapSingle">-->
   <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMapSingle">
     <id property='idRecipe' column='id_recipe'/>
     <result property='name' column='name'/>
@@ -16,10 +17,11 @@
     <result property='creationDate' column='creation_date'/> 
     <result property='modifDate' column='modif_date'/>
     <result property='disabled' column='disabled'/>
-    <result property='creator.id' column='id'/>
+    <result property='creator.idMember' column='fk_creator'/>
   </resultMap>
   
    
+  <!-- <resultMap type="Recipe" id="recipeResultMap"> -->
   <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
     <id property='idRecipe' column='id_recipe'/>
     <result property='name' column='name'/>

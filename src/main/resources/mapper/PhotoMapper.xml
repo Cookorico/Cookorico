@@ -2,6 +2,7 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.PhotoDao">
 
+	<!-- <resultMap type="Photo" id="photoResultMap"> -->
 	<resultMap type="fil.iagl.cookorico.entity.Photo" id="photoResultMap">
 		<id property="id" column="id_photo" />
 		<result property="idMember" column="fk_id_member" />

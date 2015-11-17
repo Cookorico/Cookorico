@@ -2,6 +2,7 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.TasteDao">
 
+	<!-- <resultMap type="Taste" id="tasteResultMap"> -->
 	<resultMap type="fil.iagl.cookorico.entity.Taste" id="tasteResultMap">
 	<id property="id" column="idtaste"/>
 	<result property="grading" column="grading"/>

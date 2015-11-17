@@ -4,6 +4,7 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.MemberDao'>
 
+  <!-- <resultMap type="Member" id="memberResultMap"> -->
   <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
     <id property='idMember' column='id_member'/>
     <result property='username' column='username'/>
@@ -20,6 +21,7 @@
     <result property='disabled' column='disabled'/>
   </resultMap>
   
+   <!-- <resultMap type="Member" id="memberResultMapSingle"> -->
    <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMapSingle">
     <id property='idMember' column='id_member'/>
     <result property='username' column='username'/>
