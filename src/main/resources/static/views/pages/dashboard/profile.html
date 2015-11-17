@@ -1,63 +1,70 @@
 <div class="home-wrapper conter-wrapper" ng-controller="profileCtrl">
 	<div class="cover-wrapper">
-		<div class="cover-photo" style="background-image: url( 'images/profile-cover.jpg ') ;">
-			<div class="name-desg">
+		<div class="cover-photo"
+			style="background-image: url( 'images/profile-cover.jpg ');">
+			<div class="name-desg" >
 				<h3>
-					Gordon Ramsay
-					<small>Commis de cuisine</small>
+					{{user.firstname}} {{user.lastname}} <small>{{level.label_lvl}}</small>
 				</h3>
 			</div>
 		</div>
 		<div class="profile-photo-warp">
-			<img class="profile-photo img-responsive img-circle" src="images/profile1.jpg" alt="">
+			<img class="profile-photo img-responsive img-circle"
+				src="images/profile1.jpg" alt="">
 		</div>
 	</div>
-	
+
 	<div class="row">
-	<div class="col-md-8 level">
-                <h3>Chef Gordon  </h3>
-                <p>Level 3 <em>(Commis de cuisine)</em></p>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                        <span class="sr-only">30% Complete</span>
-                    </div>
-                </div>
-            </div>
+		<div class="col-md-8 level">
+			<h3>Chef {{user.username}}</h3>
+			<p>
+				Level {{level.id_level}} <em>({{level.label_lvl}})</em>
+			</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar"
+					aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+					style="width: 20%">
+					<span class="sr-only">40% Complete</span>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="conter-wrapper">
 		<div class="row">
-        <div class="panel panel-default col-md-10 user-info">
-            <div class="panel-heading">
-                <h3 class="panel-title text-center ">Vos informations</h3>
-            </div>
-            <div class="panel-body">
-                <ul class="list-unstyled">
-                    <li><strong>Pseudo</strong> : {{user.username}}</li>
-                    <li><strong>Prénom</strong> : {{user.firstname}}</li>
-                    <li><strong>Nom</strong> : {{user.lastname}}</li>
-                    <li><strong>Email</strong> : {{user.email}}</li>
-                    <li><strong>Genre</strong> : {{user.gender}}</li>
-                    <li><strong>Anniversaire</strong> : 12/04/1962</li>
-                    <li><strong>Experience</strong> : {{user.experience }} pts</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="panel panel-default col-md-10 user-info">
-            <div class="panel-heading">
-                <h3 class="panel-title text-center">Vos Badges</h3>
-            </div>
-            <div class="panel-body">
-                    <img class="img-circle badge-user" src="../../img/badges/chocolate.png" alt="">
-                    <img class="img-circle badge-user" src="../../img/badges/pasta.png" alt="">
-                    <img class="img-circle badge-user" src="../../img/badges/15.jpg" alt="">
+			<div class="panel panel-default col-md-10 user-info">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center ">Vos informations</h3>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><strong>Pseudo</strong> : {{user.username}}</li>
+						<li><strong>Prénom</strong> : {{user.firstname}}</li>
+						<li><strong>Nom</strong> : {{user.lastname}}</li>
+						<li><strong>Email</strong> : {{user.email}}</li>
+						<li><strong>Genre</strong> : {{user.gender}}</li>
+						<li><strong>Anniversaire</strong> :15/10/1993 </li>
+						<li><strong>Experience</strong> : {{user.experience }} pts</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-            
-            </div>
-        </div>
+		<div class="row">
+			<div class="panel panel-default col-md-10 user-info">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Vos Badges</h3>
+				</div>
+				<div class="panel-body">
+					<img class="img-circle badge-user"
+						src="../../img/badges/chocolate.png" alt=""> <img
+						class="img-circle badge-user" src="../../img/badges/pasta.png"
+						alt=""> <img class="img-circle badge-user"
+						src="../../img/badges/15.jpg" alt="">
 
-    </div>
+
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>
