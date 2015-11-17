@@ -15,12 +15,13 @@ public class MemberServiceImpl implements MemberService{
 	
 	@Autowired
 	private MemberDao memberDao;
-	
+
+
 	@Override
-	public Member getMember(String username, String password) {
-		return memberDao.getMemberWithCredentials(username, password);
+	public Member getMemberByUserName(String username) {
+		return memberDao.getMemberWithUsername(username);
 	}
-	
+
 	@Override
 	public boolean addMember(Member member) {
 		// check gender value is valid and the member username not yet exists
