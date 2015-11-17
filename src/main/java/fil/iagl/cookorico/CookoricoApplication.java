@@ -92,7 +92,7 @@ public class CookoricoApplication {
     @RequestMapping("/resource")
     @ResponseBody
     public Map<String, Object> home() {
-        Map<String, Object> model = new HashMap<String, Object>();
+        Map<String, Object> model = new HashMap<>();
         model.put("id", UUID.randomUUID().toString());
         model.put("content", "Hello World");
         return model;
@@ -101,7 +101,7 @@ public class CookoricoApplication {
 
     @Configuration
     @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
-    protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+    static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         @Override
         public void configure(WebSecurity web) throws Exception {
