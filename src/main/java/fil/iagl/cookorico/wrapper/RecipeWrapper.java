@@ -12,5 +12,6 @@ public class RecipeWrapper {
 	private String description;
 	private int	cookingTime;
 	private int	preparationTime;
+	private int experience_val;
 
 }
