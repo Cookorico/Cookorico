@@ -8,9 +8,10 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 
 	$http({
 		method: 'GET', 
-		url : '/profile'
+		url : '/user'
 	}).success(function(data, status, header, config){
-		$scope.user = data;
+		console.log(data.principal.member);
+			$scope.user = data.principal.member;
 	}).error(function(data, status, header, config){
 		console.log(data, status, header, config);
 	});
