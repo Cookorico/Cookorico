@@ -5,21 +5,15 @@
 window.app_version = 2;
 
 angular
-    .module('cookorico', ['ngRoute', 'auth', 'home', 'message', 'navigation',
-        'ui.router',
-        'ngAnimate',
-        'ui.bootstrap',
-        'textAngular',
-        'ui.calendar',
-        'perfect_scrollbar',
-        'angular-loading-bar',
-        'chart.js',
-        'angular-growl',
-        'angulartics',
-        'angulartics.google.analytics',
-        'gridshore.c3js.chart',
-        'growlNotifications',
-        'angular.css.injector'
+    .module('cookorico', [
+        'ngRoute', 'auth', 'home',
+        'ui.router', 'ngAnimate','message',
+        'ui.bootstrap', 'textAngular',
+        'ui.calendar', 'perfect_scrollbar',
+        'angular-loading-bar', 'chart.js',
+        'angular-growl', 'angulartics','navigation',
+        'angulartics.google.analytics', 'gridshore.c3js.chart',
+        'growlNotifications', 'angular.css.injector'
     ])
     //    .config(
     //
@@ -289,8 +283,13 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/recipe.html',
                 controller: 'recipe'
+            })
+            .state('newrecipe', {
+                url: '/newrecipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/newrecipe.html',
+                controller: 'recipe'
             });
-
     })
     .run(function () {
 

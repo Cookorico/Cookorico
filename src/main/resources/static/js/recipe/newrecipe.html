@@ -1,0 +1,27 @@
+<pageheader pagename="Nouvelle recette" subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
+<div class="container">
+	<div class="" style="padding:17px;"  ng-controller="newrecipe as AddRecipeCtrl">
+	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="AddRecipeCtrl.add()" novalidate> 
+	    	<div class="form-group">
+	    		<label for="recipename">Nom de la recette :</label>
+	        	<input class="form-control" name="recipeName" id="recipeName" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
+	        </div>
+	        <div class="col-xs-6 col-lg-4">
+		        <div class="form-group row">
+		       		<label for="recipepreparationtime">Temps de préparation (en secondes) :</label>
+		        	<input class="form-control" name="recipePreparationTime" id="recipePreparationTime" type="number" placeholder="Preparation time" ng-model="recipe.preparationTime" required>
+		        </div>
+		        <div class="form-group row">
+		        	<label for="recipecookingtime">Temps de cuisson (en secondes) :</label>
+		        	<input class="form-control" name="recipeCookingTime" id="recipeCookingTime" type="number" placeholder="Cooking time" ng-model="recipe.cookingTime" required>
+		        </div>
+	        </div>
+	        <div class="form-group col-xs-12 col-sm-6 col-lg-8">
+	        	<label for="recipedescription">Description :</label>
+	        	<textarea class="form-control" name="recipeDescription" id="recipeDescription" type="textarea" rows="6" placeholder="description" ng-model="recipe.description" required></textarea>
+	        </div>
+	        <br>
+	        <button id="btnAddRecipe" role="submit" class="btn btn-success btn-block">Créer</button>
+	    </form>
+	</div>
+</div>
