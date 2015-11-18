@@ -12,9 +12,9 @@
 <!-- 	<association property="member" javaType="Member"> -->
 <!-- 		<id property="id" column="memberResultMap"/> -->
 <!-- 	</association> -->
-<!-- 	<association property="ingredient" javaType="Ingredient"> -->
-<!-- 		<id property="id" column="ingredientResultMap"/> -->
-<!-- 	</association> -->
+ 	<association property="ingredient" javaType="Ingredient">
+ 		<id property="id" column="ingredientResultMap"/> 
+	</association>
 	
 	
 		

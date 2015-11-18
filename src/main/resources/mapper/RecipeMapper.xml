@@ -4,25 +4,6 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeDao'>
 
-	<!-- <resultMap type="Recipe" id="recipeResultMapSingle"> -->
-	<resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMapSingle">
-		<id property='idRecipe' column='id_recipe' />
-		<result property='name' column='name' />
-		<result property='description' column='description' />
-		<result property='preparationTime' column='preparation_time' />
-		<result property='cookingTime' column='cooking_time' />
-		<result property='dishType' column='dish_type' />
-		<result property='difficulty' column='difficulty' />
-		<result property='draft' column='draft' />
-		<result property='creationDate' column='creation_date' />
-		<result property='modifDate' column='modif_date' />
-		<result property='disabled' column='disabled' />
-		<result property='experience_val' column='experience_val' />
-		<result property='disabled' column='disabled' />
-		<result property='creator.idMember' column='fk_creator' />
-	</resultMap>
-
-
 	<!-- <resultMap type="Recipe" id="recipeResultMap"> -->
 	<resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
 		<id property='idRecipe' column='id_recipe' />
@@ -37,13 +18,10 @@
 		<result property='modifDate' column='modif_date' />
 		<result property='validation' column='validation' />
 		<result property='disabled' column='disabled' />
-		<result property='experience_val' column='experience_val'/>
-		<association property='creator' column='fk_creator'
-			select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
-		<association property='validator' column='validator'
-			select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
+		<result property='experience_val' column='experience_val' />
+		<association property='creator' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" /> 
+		<association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" /> 
 	</resultMap>
-
 
 
 	<select id="getAllRecipes" resultMap="recipeResultMap">
@@ -64,10 +42,95 @@
 	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
 		INSERT INTO recipe(name,
 		description, preparation_time,
-		cooking_time, experience_val, fk_creator)
+		cooking_time, experience_val,
+		fk_creator)
 		VALUES(#{recipe.name}, #{recipe.description},
 		#{recipe.preparationTime}, #{recipe.cookingTime},
 		#{recipe.experience_val}, #{recipe.creator.idMember})
 	</insert>
 
 </mapper>
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="BlogBestPractice">
+
+
+	<resultMap id="resultBlog" type="Blog">
+		<id property="id" column="idBlog" />
+		<result property="name" column="blogName" />
+		<result property="url" column="url" />
+		<association property="author" column="idBlog" javaType="Author">
+			<id property="id" column="idAuthor" />
+			<result property="name" column="authorName" />
+			<result property="email" column="email" />
+		</association>
+		<collection property="posts" column="idBlog" javaType="ArrayList" ofType="Post">
+			<id property="id" column="idPost" />
+			<result property="title" column="title" />
+			<collection property="tags" column="idBlog" javaType="ArrayList" ofType="Tag">
+				<id property="id" column="idTag" />
+				<result property="value" column="value" />
+			</collection>
+		</collection>
+	</resultMap>
+	
+	
+	<select id="selectBlogBestPractice" resultMap="resultBlog"> 
+	    SELECT B.idBlog as idBlog, 
+	    B.name as blogName, 
+	    B.url as url, 
+	    A.idAuthor as idAuthor,
+		A.name as authorName, 
+		A.email as email , 
+		P.idPost as idPost, 
+		P.title as title, 
+		T.idTag as idTag, 
+		T.value as value 
+		FROM BLOG as B 
+		left outer join Author A on B.idBlog = A.idBlog 
+		left outer join Post P on P.idBlog = B.idBlog 
+		left outer join Post_Tag PT on P.idPost = PT.idPost 
+		left outer join Tag T on PT.idTag = T.idTag
+	</select>
+		
+		
+</mapper>
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Blog">
+
+	<resultMap id="resultBlog" type="Blog">
+		<id property="id" column="idBlog" />
+		<result property="name" column="blogname" />
+		<result property="url" column="blogurl" />
+		<association property="author" column="idBlog" javaType="Author" select="selectAuthor" />
+		<collection property="posts" column="idBlog" javaType="ArrayList" ofType="Post" select="selectPosts" resultMap="resultTag" />
+	</resultMap>
+	
+	<resultMap id="resultPosts" type="Post">
+		<id property="id" column="idPost" />
+		<result property="title" column="title" />
+		<collection property="tags" column="idPost" javaType="ArrayList" ofType="Tag" resultMap="resultTag" />
+	</resultMap>
+	
+	<resultMap id="resultTag" type="Tag">
+		<id property="id" column="idTag" />
+		<result property="value" column="value" />
+	</resultMap>
+	
+	<select id="selectBlog" resultMap="resultBlog"> SELECT idBlog, name as blogname, url as blogurl FROM BLOG    </select>
+		
+	<select id="selectAuthor" parameterType="int" resultType="Author"> SELECT
+		idAuthor as id, name, email FROM AUTHOR WHERE idBlog = #{idBlog}
+	</select>
+	
+	<select id="selectPosts" parameterType="int" resultType="Post" resultMap="resultPosts"> SELECT P.idPost as idPost, P.title as title, T.idTag as
+		idTag, T.value as value FROM Post P left outer join Post_Tag PT on
+		P.idPost = PT.idPost left outer join Tag T on PT.idTag = T.idTag WHERE
+		P.idBlog = #{idBlog}   </select>
+		
+</mapper>
+
+
