@@ -24,6 +24,7 @@ public class MemberController {
 	
 	@RequestMapping(value = "/level/xp/{xp}", method = RequestMethod.GET)
 	public @ResponseBody Level getLevelByXP(@PathVariable String xp) {
+		System.out.println("LEVEL XP");
 		return levelService.getLevelByXP(Integer.parseInt(xp));
 	}
 	

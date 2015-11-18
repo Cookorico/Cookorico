@@ -22,16 +22,19 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 		method: 'GET', 
 		url : '/user'
 	}).success(function(data, status, header, config){
-		console.log(data.principal.member);
 		$scope.user = data.principal.member;
 	}).error(function(data, status, header, config){
 		console.log(data, status, header, config);
 	});
 
+	
+	console.log("/level/xp/" + $scope.user.experience);
+	
 	$http({
 		method: 'GET', 
-		url : '/level/xp/{{scope.user.experience}}'
+		url : '/level/xp/350'
 	}).success(function(data, status, header, config){
+		console.log(data);
 		$scope.level = data;
 	}).error(function(data, status, header, config){
 		console.log(data, status, header, config);
