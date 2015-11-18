@@ -47,7 +47,6 @@ angular
         parent: 'plain',
         templateUrl: 'views/layouts/boxed.html?v='+window.app_version,
     })
-
     .state('login', {
         url: '/login',
         parent: 'boxed',

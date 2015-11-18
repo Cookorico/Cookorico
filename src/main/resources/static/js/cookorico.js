@@ -4,8 +4,7 @@
 
 window.app_version = 2;
 
-angular
-    .module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'message', 'navigation',
+angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'message', 'navigation',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -290,8 +289,13 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/recipe.html',
                 controller: 'recipe'
+            })
+            .state('newrecipe', {
+                url: '/newrecipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/newrecipe.html',
+                controller: 'recipe'
             });
-
     })
     .run(function () {
 
