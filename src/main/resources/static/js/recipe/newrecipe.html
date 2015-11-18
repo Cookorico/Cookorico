@@ -3,6 +3,10 @@
 	<div class="" style="padding:17px;"  ng-controller="newrecipe as AddRecipeCtrl">
 	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="AddRecipeCtrl.add()" novalidate> 
 	    	<div class="form-group">
+	    		<label class="control-label">Photo</label>
+	        	<input id="input-24" type="file" multiple=true class="file-loading">
+	        </div>	    	
+	    	<div class="form-group">
 	    		<label for="recipename">Nom de la recette :</label>
 	        	<input class="form-control" name="recipeName" id="recipeName" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
 	        </div>
