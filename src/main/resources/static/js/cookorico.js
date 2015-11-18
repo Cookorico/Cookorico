@@ -4,16 +4,21 @@
 
 window.app_version = 2;
 
-angular
-    .module('cookorico', [
-        'ngRoute', 'auth', 'home',
-        'ui.router', 'ngAnimate','message',
-        'ui.bootstrap', 'textAngular',
-        'ui.calendar', 'perfect_scrollbar',
-        'angular-loading-bar', 'chart.js',
-        'angular-growl', 'angulartics','navigation',
-        'angulartics.google.analytics', 'gridshore.c3js.chart',
-        'growlNotifications', 'angular.css.injector'
+angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'message', 'navigation',
+        'ui.router',
+        'ngAnimate',
+        'ui.bootstrap',
+        'textAngular',
+        'ui.calendar',
+        'perfect_scrollbar',
+        'angular-loading-bar',
+        'chart.js',
+        'angular-growl',
+        'angulartics',
+        'angulartics.google.analytics',
+        'gridshore.c3js.chart',
+        'growlNotifications',
+        'angular.css.injector'
     ])
     //    .config(
     //
@@ -175,6 +180,7 @@ angular
                 url: '/profile',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/profile.html?v=' + window.app_version,
+                controller: 'profileCtrl'
             })
             .state('grid', {
                 url: '/grid',

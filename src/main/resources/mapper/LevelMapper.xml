@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+  'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+
+<mapper namespace='fil.iagl.cookorico.dao.LevelDao'>
+
+	<resultMap type="fil.iagl.cookorico.entity.Level" id="levelResultMap">
+		<id property='idLevel' column='id_level' />
+		<result property='label_lvl' column='label_lvl' />
+		<result property='level_num' column='level_num' />
+		<result property='level_pic' column='level_pic' />
+		<result property='xp_min' column='xp_min' />
+		<result property='xp_max' column='xp_max' />
+		<result property='level_num' column='level_num' />
+
+	</resultMap>
+
+
+
+	<select id="getLevelByXP" parameterType="int"
+		resultType="fil.iagl.cookorico.entity.Level" resultMap="levelResultMap">
+		SELECT * FROM
+		level WHERE #{xp} >= xp_min AND xp_max > #{xp}
+	</select>
+
+	<select id="getLevelById" parameterType="int"
+		resultType="fil.iagl.cookorico.entity.Level" resultMap="levelResultMap">
+		SELECT * FROM
+		level WHERE id_Level = #{id}
+	</select>
+
+</mapper>

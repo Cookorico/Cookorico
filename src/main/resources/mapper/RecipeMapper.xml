@@ -4,58 +4,70 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeDao'>
 
-  <!-- <resultMap type="Recipe" id="recipeResultMapSingle">-->
-  <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMapSingle">
-    <id property='idRecipe' column='id_recipe'/>
-    <result property='name' column='name'/>
-    <result property='description' column='description'/>
-    <result property='preparationTime' column='preparation_time'/>
-    <result property='cookingTime' column='cooking_time'/>
-    <result property='dishType' column='dish_type'/>
-    <result property='difficulty' column='difficulty' />
-    <result property='draft' column='draft' />
-    <result property='creationDate' column='creation_date'/> 
-    <result property='modifDate' column='modif_date'/>
-    <result property='disabled' column='disabled'/>
-    <result property='creator.idMember' column='fk_creator'/>
-  </resultMap>
-  
-   
-  <!-- <resultMap type="Recipe" id="recipeResultMap"> -->
-  <resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
-    <id property='idRecipe' column='id_recipe'/>
-    <result property='name' column='name'/>
-    <result property='description' column='description'/>
-    <result property='preparationTime' column='preparation_time'/>
-    <result property='cookingTime' column='cooking_time'/>
-    <result property='dishType' column='dish_type'/>
-    <result property='difficulty' column='difficulty' />
-    <result property='draft' column='draft' />
-    <result property='creationDate' column='creation_date'/> 
-    <result property='modifDate' column='modif_date'/>
-    <result property='validation' column='validation' />
-    <result property='disabled' column='disabled'/>
-    <association property='creator' column='fk_creator' select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
-    <association property='validator' column='validator' select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
-  </resultMap>
-  
-	
-	
-  <select id="getAllRecipes" resultMap="recipeResultMap">
-    SELECT * FROM recipe
-  </select>
-  
-   <select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="int">
-  	SELECT * FROM recipe WHERE id_recipe = #{id}
-  </select>
-  
-  <select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe" parameterType="java.lang.String">
-  	SELECT * FROM recipe WHERE name = #{name}
-  </select>
-  
-  
-  <insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
-  	INSERT INTO recipe(name, description, preparation_time, cooking_time,fk_creator) VALUES(#{recipe.name}, #{recipe.description}, #{recipe.preparationTime}, #{recipe.cookingTime}, #{recipe.creator.idMember})
-  </insert>
+	<!-- <resultMap type="Recipe" id="recipeResultMapSingle"> -->
+	<resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMapSingle">
+		<id property='idRecipe' column='id_recipe' />
+		<result property='name' column='name' />
+		<result property='description' column='description' />
+		<result property='preparationTime' column='preparation_time' />
+		<result property='cookingTime' column='cooking_time' />
+		<result property='dishType' column='dish_type' />
+		<result property='difficulty' column='difficulty' />
+		<result property='draft' column='draft' />
+		<result property='creationDate' column='creation_date' />
+		<result property='modifDate' column='modif_date' />
+		<result property='disabled' column='disabled' />
+		<result property='experience_val' column='experience_val' />
+		<result property='disabled' column='disabled' />
+		<result property='creator.idMember' column='fk_creator' />
+	</resultMap>
+
+
+	<!-- <resultMap type="Recipe" id="recipeResultMap"> -->
+	<resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
+		<id property='idRecipe' column='id_recipe' />
+		<result property='name' column='name' />
+		<result property='description' column='description' />
+		<result property='preparationTime' column='preparation_time' />
+		<result property='cookingTime' column='cooking_time' />
+		<result property='dishType' column='dish_type' />
+		<result property='difficulty' column='difficulty' />
+		<result property='draft' column='draft' />
+		<result property='creationDate' column='creation_date' />
+		<result property='modifDate' column='modif_date' />
+		<result property='validation' column='validation' />
+		<result property='disabled' column='disabled' />
+		<result property='experience_val' column='experience_val'/>
+		<association property='creator' column='fk_creator'
+			select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
+		<association property='validator' column='validator'
+			select='fil.iagl.cookorico.dao.MemberDao.getMemberByIdSingle' />
+	</resultMap>
+
+
+
+	<select id="getAllRecipes" resultMap="recipeResultMap">
+		SELECT * FROM recipe
+	</select>
+
+	<select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe"
+		parameterType="int">
+		SELECT * FROM recipe WHERE id_recipe = #{id}
+	</select>
+
+	<select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe"
+		parameterType="java.lang.String">
+		SELECT * FROM recipe WHERE name = #{name}
+	</select>
+
+
+	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
+		INSERT INTO recipe(name,
+		description, preparation_time,
+		cooking_time, experience_val, fk_creator)
+		VALUES(#{recipe.name}, #{recipe.description},
+		#{recipe.preparationTime}, #{recipe.cookingTime},
+		#{recipe.experience_val}, #{recipe.creator.idMember})
+	</insert>
 
 </mapper>

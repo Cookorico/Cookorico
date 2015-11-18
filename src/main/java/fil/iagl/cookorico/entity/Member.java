@@ -32,5 +32,7 @@ public class Member {
 	private Timestamp creationDate;
 	private Timestamp modifDate;
 	private Boolean disabled;
+	private Integer experience;
+	private Integer level;
 
 }
