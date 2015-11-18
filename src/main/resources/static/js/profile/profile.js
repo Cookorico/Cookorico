@@ -1,40 +1,41 @@
 
 window.app_version = 2;
 
+
 angular.module('profile', ['angular.css.injector', 'auth'])
-.controller('profileCtrl', function ($scope, $http, auth, cssInjector) {
+.service('profileService', function(){
+	var userExperience = 15;
 
-	$scope.user= {};
-	$scope.level ={};
+	return {
+		getXP: function () {
+			return userExperience;
+		},
+		setXP: function(value) {
+			userExperience = value;
+		}
+	};
 
-	//Get user details
+
+})
+.controller('profileCtrl', function ($scope, $http, auth, cssInjector, profileService) {
+
+
+	//Get user infos
 	$http({
 		method: 'GET', 
 		url : '/user'
 	}).success(function(data, status, header, config){
-		$scope.user = data.principal.member;
+		profileService.setXP(data.principal.member);
 	}).error(function(data, status, header, config){
 		console.log(data, status, header, config);
 	});
 
-	//Get user level
-	$http({
-		method: 'GET', 
-		url : '/user'
-	}).success(function(data, status, header, config){
-		$scope.user = data.principal.member;
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
+console.log(profileService.getXP());
 
-	
-	console.log("/level/xp/" + $scope.user.experience);
-	
 	$http({
 		method: 'GET', 
 		url : '/level/xp/350'
 	}).success(function(data, status, header, config){
-		console.log(data);
 		$scope.level = data;
 	}).error(function(data, status, header, config){
 		console.log(data, status, header, config);
