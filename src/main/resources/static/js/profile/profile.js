@@ -1,44 +1,33 @@
-
 window.app_version = 2;
 
-
 angular.module('profile', ['angular.css.injector', 'auth'])
-.service('profileService', function(){
-	var userExperience = 15;
+.controller('profileCtrl', function ($scope, $http, auth, cssInjector) {
 
-	return {
-		getXP: function () {
-			return userExperience;
-		},
-		setXP: function(value) {
-			userExperience = value;
-		}
-	};
+	$scope.user= {};
+	$scope.level ={};
 
-
-})
-.controller('profileCtrl', function ($scope, $http, auth, cssInjector, profileService) {
-
-
-	//Get user infos
+	//Get user details
 	$http({
 		method: 'GET', 
 		url : '/user'
-	}).success(function(data, status, header, config){
-		profileService.setXP(data.principal.member);
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
+	}).then(function successCallback(response) {
 
-console.log(profileService.getXP());
-
-	$http({
-		method: 'GET', 
-		url : '/level/xp/350'
-	}).success(function(data, status, header, config){
-		$scope.level = data;
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
+		$scope.user = response.data.principal.member;
+		
+		$http({
+			method: 'GET', 
+			url : '/level/xp/' + $scope.user.experience
+		}).success(function(data, status, header, config){
+			$scope.level = data;
+		}).error(function(data, status, header, config){
+			console.log(data, status, header, config);
+		});
+			
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
+	
+	
 
 });
