@@ -8,7 +8,7 @@ public interface MemberService {
 
 	Member getMemberByUserName(String username);
 	
-	boolean addMember(Member member);
+	void addMember(Member member);
 	
 	List<Member> getAllMembers();
 		

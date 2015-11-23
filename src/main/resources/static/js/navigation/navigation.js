@@ -1,10 +1,10 @@
 /**
  * Created by leemans on 03/11/15.
  */
-angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','angular.css.injector']).controller(
+angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','angular.css.injector','$http']).controller(
     'navigation',
 
-    function($scope, $route, $uibModal, cssInjector) {
+    function($scope, $route, $uibModal, cssInjector, $http) {
 
         cssInjector.add("bower_components/freelancer/freelancer.css");
         cssInjector.add("bower_components/freelancer/custom.css");
@@ -35,6 +35,8 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
 
     $scope.credentials = {};
 
+    $scope.registrationData = {};
+
     $scope.tab = function(route) {
         return $route.current && route === $route.current.controller;
     };
@@ -46,15 +48,24 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
     $scope.login = function() {
         auth.authenticate($scope.credentials, function(authenticated) {
             if (authenticated) {
-                console.log("Login succeeded")
+                console.log("Login succeeded");
                 $scope.error = false;
                 cssInjector.removeAll();
                 $uibModalInstance.dismiss('cancel');
             } else {
-                console.log("Login failed")
+                console.log("Login failed");
                 $scope.error = true;
             }
         })
+    };
+
+    $scope.register = function() {
+
+        console.log("")
+
+       $http.post("/user/register")
+
+
     };
 
     $scope.logout = auth.clear;

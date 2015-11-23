@@ -48,7 +48,7 @@
   </select>
   
   <select id="getMemberWithUsername" parameterType="java.lang.String" resultMap="memberResultMap">
-  	SELECT * FROM member WHERE username = #{username}
+  	SELECT * FROM MEMBER WHERE username = #{username}
   </select>
   
   <select id="getMemberById" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMap" >
