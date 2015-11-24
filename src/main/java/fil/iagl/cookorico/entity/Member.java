@@ -27,8 +27,8 @@ public class Member {
 	private Date birthday;
 	private String gender;
 	private String city;
-	private Photo currentAvatar;
-	private List<Photo> photosOfUser;
+	private Picture mainPicture;
+	private List<Picture> photosOfUser;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
 	private Boolean disabled;

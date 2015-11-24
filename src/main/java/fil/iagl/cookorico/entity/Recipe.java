@@ -31,6 +31,7 @@ public class Recipe {
 	private Boolean disabled;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<RecipeStep> steps;
-	private List<Photo> photos;
-	private Integer experience_val;
+	private List<Picture> photos;
+	private Integer experienceVal;
+	private Picture mainPicture;
 }

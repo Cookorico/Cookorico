@@ -18,10 +18,11 @@
 		<result property='modifDate' column='rcp_modif_date' />
 		<result property='validation' column='rcp_validation' />
 		<result property='disabled' column='rcp_disabled' />
-		<result property='experience_val' column='rcp_experience_val' />
+		<result property='experienceVal' column='rcp_experience_val' />
 		<association property='creator' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
-		<association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" /> 
-		<association property='main_picture' resultMap="fil.iagl.cookorico.dao.PictureDao.PictureResultMap" />
+		<!-- validator posera soucis tout de même avec les nom car il a les meme colonne mbr_ que creator -->
+		<!-- <association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" />  -->
+		<association property='mainPicture' resultMap="fil.iagl.cookorico.dao.PictureDao.pictureResultMap" />
 		<!-- TO DO EVENTUEL, LISTE RECIPE STEPS?  -->
 	</resultMap>
 

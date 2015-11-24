@@ -1,9 +1,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="fil.iagl.cookorico.dao.PhotoDao">
+<mapper namespace="fil.iagl.cookorico.dao.PictureDao">
 
-	<!-- <resultMap type="Photo" id="photoResultMap"> -->
-	<resultMap type="fil.iagl.cookorico.entity.Photo" id="photoResultMap">
+	<resultMap type="fil.iagl.cookorico.entity.Picture" id="pictureResultMap">
 		<id property="id" column="id_photo" />
 		<result property="idMember" column="fk_id_member" />
 		<result property="filePath" column="file_path" />
@@ -14,12 +13,12 @@
 		<result property="disabled" column="disabled" />
 	</resultMap>
 	
-	<select id="getAllPhotos" resultMap="photoResultMap">
-		SELECT * FROM photo
+	<select id="getAllPictures" resultMap="pictureResultMap">
+		SELECT * FROM picture
 	</select>
 	
-	<select id="getMemberPhoto" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Photo">
-		SELECT * FROM photo WHERE fk_id_member=#{id_member}
+	<select id="getMemberPicture" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Picture">
+		SELECT * FROM picture WHERE pic_fk_id_member=#{id_member}
 	</select>
 
 </mapper>

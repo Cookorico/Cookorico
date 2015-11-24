@@ -9,6 +9,8 @@ public class HomeController {
     
     @RequestMapping("/user")
     public Principal user(Principal user) {
+    	System.out.println("#############################################################################");
+    	System.out.println(user);
         return user;
     }
 }
