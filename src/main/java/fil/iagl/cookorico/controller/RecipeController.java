@@ -9,6 +9,7 @@ import org.apache.catalina.connector.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.AdministratorService;
@@ -95,8 +97,10 @@ public class RecipeController {
 		String name = String.valueOf(model.get("name"));
 		Date date = new Date();
 		Timestamp creationDate = new Timestamp(date.getTime());
-		int creatorId = Integer.valueOf(String.valueOf(model.get("fk_creator")));
-		Member creator = memberService.getMemberById(creatorId);
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member creator = currentUser.getMember();
+		/*int creatorId = Integer.valueOf(String.valueOf(model.get("fk_creator")));
+		Member creator = memberService.getMemberById(creatorId);*/
 		
 		Recipe recipe = new Recipe();
 		recipe.setCookingTime(cookingTime);

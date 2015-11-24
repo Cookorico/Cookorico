@@ -18,10 +18,10 @@ angular.module('cookorico').controller('recipe', function($scope, $http) {
 angular.module('cookorico').controller('newrecipe', ['$scope','$http', function ($scope, $http) {
 	
 	var recipe;
-	var user;
+	//var user;
 	
 	this.add = function () {
-		
+		/*
 		// get user info
 		$http({
     		method: 'GET', 
@@ -33,11 +33,10 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
     	})
     	.error(function(data, status, header, config){
     		//console.log(data);
-    	});
+    	});*/
 		
 		recipe = angular.toJson($scope.recipe);		
 		console.log(recipe);
-		
 		
 		// send recipe to the recipe controller
 		$http({
