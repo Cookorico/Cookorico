@@ -2,22 +2,13 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.TasteDao">
 
-	<!-- <resultMap type="Taste" id="tasteResultMap"> -->
+	<!--
 	<resultMap type="fil.iagl.cookorico.entity.Taste" id="tasteResultMap">
 	<id property="id" column="idtaste"/>
 	<result property="grading" column="grading"/>
 	<result property="" column=""/>
 	<result property="creationDate" column="creationDate"/>
-<!-- 	<result property="modifDate" column="modifDate"/> -->
-<!-- 	<association property="member" javaType="Member"> -->
-<!-- 		<id property="id" column="memberResultMap"/> -->
-<!-- 	</association> -->
- 	<association property="ingredient" javaType="Ingredient">
  		<id property="id" column="ingredientResultMap"/> 
-	</association>
-	
-	
-		
 	</resultMap>
 	
 	<select id="getTasteById" resultType="Integer" resultMap="tasteResultMap">
@@ -25,11 +16,12 @@
 	</select>
 	
 	<select id="getAllTaste" resultType="fil.iagl.cookorico.entity.Taste" resultMap="tasteResultMap">
-		SELECT * FROM taste 
+		SELECT * FROM taste ;
 	</select>
 	
-	<insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
+	 <insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
 		INSERT INTO taste ()
 	</insert>
+	-->
 	
 </mapper>

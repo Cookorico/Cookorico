@@ -6,51 +6,53 @@
 
 	<!-- <resultMap type="Recipe" id="recipeResultMap"> -->
 	<resultMap type="fil.iagl.cookorico.entity.Recipe" id="recipeResultMap">
-		<id property='idRecipe' column='id_recipe' />
-		<result property='name' column='name' />
-		<result property='description' column='description' />
-		<result property='preparationTime' column='preparation_time' />
-		<result property='cookingTime' column='cooking_time' />
-		<result property='dishType' column='dish_type' />
-		<result property='difficulty' column='difficulty' />
-		<result property='draft' column='draft' />
-		<result property='creationDate' column='creation_date' />
-		<result property='modifDate' column='modif_date' />
-		<result property='validation' column='validation' />
-		<result property='disabled' column='disabled' />
-		<result property='experience_val' column='experience_val' />
-		<association property='creator' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" /> 
+		<id property='idRecipe' column='rcp_id_recipe' />
+		<result property='name' column='rcp_name' />
+		<result property='description' column='rcp_description' />
+		<result property='preparationTime' column='rcp_preparation_time' />
+		<result property='cookingTime' column='rcp_cooking_time' />
+		<result property='dishType' column='rcp_dish_type' />
+		<result property='difficulty' column='rcp_difficulty' />
+		<result property='draft' column='rcp_draft' />
+		<result property='creationDate' column='rcp_creation_date' />
+		<result property='modifDate' column='rcp_modif_date' />
+		<result property='validation' column='rcp_validation' />
+		<result property='disabled' column='rcp_disabled' />
+		<result property='experience_val' column='rcp_experience_val' />
+		<association property='creator' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
 		<association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" /> 
+		<association property='main_picture' resultMap="fil.iagl.cookorico.dao.PictureDao.PictureResultMap" />
+		<!-- TO DO EVENTUEL, LISTE RECIPE STEPS?  -->
 	</resultMap>
 
 
 	<select id="getAllRecipes" resultMap="recipeResultMap">
 		SELECT * FROM recipe
 	</select>
-
+	
 	<select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe"
 		parameterType="int">
-		SELECT * FROM recipe WHERE id_recipe = #{id}
+		SELECT * FROM recipe WHERE rcp_id_recipe = #{id}
 	</select>
 
 	<select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe"
 		parameterType="java.lang.String">
-		SELECT * FROM recipe WHERE name = #{name}
+		SELECT * FROM recipe WHERE rcp_name = #{name}
 	</select>
 
 
 	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
-		INSERT INTO recipe(name,
-		description, preparation_time,
-		cooking_time, experience_val,
-		fk_creator)
+		INSERT INTO recipe(rcp_name,
+		rcp_description, rcp_preparation_time,
+		rcp_cooking_time, rcp_experience_val,
+		rcp_fk_creator)
 		VALUES(#{recipe.name}, #{recipe.description},
 		#{recipe.preparationTime}, #{recipe.cookingTime},
 		#{recipe.experience_val}, #{recipe.creator.idMember})
 	</insert>
 
 </mapper>
-
+<!-- 
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
@@ -97,7 +99,11 @@
 		
 		
 </mapper>
+-->
 
+
+
+<!-- 
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Blog">
 
@@ -132,5 +138,6 @@
 		P.idBlog = #{idBlog}   </select>
 		
 </mapper>
+-->
 
 
