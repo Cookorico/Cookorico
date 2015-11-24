@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-angular
+var cookoricoApp = angular
     .module('cookorico', [
         'ngRoute', 'auth', 'home',
         'ui.router', 'ngAnimate','message',
@@ -68,76 +68,16 @@ angular
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/profile.html?v=' + window.app_version,
             })
-            .state('grid', {
-                url: '/grid',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/grid.html?v=' + window.app_version,
-            })
-            .state('elements', {
-                url: '/form/elements',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/forms/elements.html?v=' + window.app_version,
-            })
-            .state('components', {
-                url: '/form/components',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/forms/components.html?v=' + window.app_version,
-            })
-            .state('invoice', {
-                url: '/invoice',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/invoice.html?v=' + window.app_version,
-            })
-            .state('inbox', {
-                url: '/mail/inbox',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/mail/inbox.html?v=' + window.app_version,
-            })
             .state('blank', {
                 url: '/blank',
                 parent: 'dashboard',
                 templateUrl: 'views/pages/dashboard/blank.html?v=' + window.app_version,
-            })
-            .state('signup', {
-                url: '/signup',
-                templateUrl: 'views/pages/signup.html?v=' + window.app_version,
-                parent: 'boxed',
-                controller: 'LoginCtrl'
-            })
-            .state('forgot-password', {
-                url: '/forgot-password',
-                parent: 'boxed',
-                templateUrl: 'views/pages/forgot-password.html?v=' + window.app_version,
-                controller: 'LoginCtrl'
             })
             .state('404-page', {
                 url: '/404-page',
                 parent: 'boxed',
                 templateUrl: 'views/pages/404-page.html?v=' + window.app_version,
                 controller: 'LoginCtrl'
-            })
-            .state('timepicker', {
-                url: '/ui-elements/timepicker',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/ui-elements/timepicker.html?v=' + window.app_version,
-                controller: 'TimepickerDemoCtrl'
-            })
-            .state('button', {
-                url: '/ui-elements/button',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/ui-elements/button.html?v=' + window.app_version,
-                controller: 'ButtonsCtrl'
-            })
-            .state('c3chart', {
-                url: '/charts/c3chart',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/charts/c3chart.html?v=' + window.app_version,
-            })
-            .state('chartjs', {
-                url: '/charts/chartjs',
-                parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/charts/chartjs.html?v=' + window.app_version,
-                controller: 'ChartCtrl'
             })
             .state('progression', {
                 url: '/progression',
@@ -163,11 +103,19 @@ angular
                 controller: 'recipe'
             });
     })
-    .run(function () {
+    .run( 'auth', function (auth) {
 
         var switchValue = JSON.parse(localStorage.getItem("switched"));
 
         if (switchValue)
             $('body').addClass('box-section');
+
+        $rootScope.$on('$routeChangeStart', function(event, toState, fromState) {
+            event.preventDefault();
+
+            console.log(auth.authenticated);
+
+        });
+
 
     });
