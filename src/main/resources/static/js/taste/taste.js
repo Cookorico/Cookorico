@@ -7,8 +7,25 @@
     });
 });*/
 
+var cookorico = angular.module('cookorico');
 
-angular.module('cookorico').controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
+
+cookorico.directive('myEnter', function () {
+    return function (scope, element, attrs) {
+        element.bind("keydown keypress", function (event) {
+            if(event.which === 13) {
+                scope.$apply(function (){
+                    scope.$eval(attrs.myEnter);
+                });
+
+                event.preventDefault();
+            }
+        });
+    };
+});
+
+
+cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
 	$scope.bdd_taste = {
 			'ingredients':[
@@ -56,9 +73,20 @@ angular.module('cookorico').controller('tasteCtrl', ['$scope', '$http', function
 	
 	$scope.addPersonnalTaste = function(ingredient){
 		$scope.taste['ingredients'].push(ingredient);
+		$('input[type="number"]:first').focus();
 		$scope.inputIngredient = "";
 		
 		//TODO req GET -> bdd
 	}
+	
+	$scope.sendUserTaste = function(ingredient){
+		console.log("ingredient sent !");
+		ingredient.value = $('input[type="number"]:first').val();
+		$('input[type="number"]:first').remove();
+		
+
+	}
+	
+	
 	
 }]);

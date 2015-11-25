@@ -45,6 +45,11 @@ bs-glyphicons .glyphicon {
     background-color: #F3F3D1;
 }
 
+input.input_value{
+	color:#000;
+	max-width: 40px;
+}
+
 .taste-zero{
 	background-color: #FF0000;
 }
