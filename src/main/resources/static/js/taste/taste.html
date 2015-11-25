@@ -1,26 +1,20 @@
 <link href="js/taste/taste.css" rel="stylesheet" type="text/css">
-<div class="container">
-	<!-- MODAL -->
-	<div ng-controller="ModalDemoCtrl">
-		<script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title">I'm a modal!</h3>
-        </div>
-        <div class="modal-body">
-            <ul>
-                <li ng-repeat="item in items">
-                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ selected.item }}</b>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-        </div>
-    </script>
-	</div>
 
+<div class="container" ng-controller="tasteCtrl">
+	<script type="text/ng-template" id="ingredient-tmpl">
+		<li>
+			<span aria-hidden="true">
+				<img src="{{ taste.ingredient.url }}">
+			</span> 
+			<span class="glyphicon-class">
+				{{ taste.ingredient.name }} 
+			</span> 
+			<span class="badge {{taste.ingredient.value }}">
+				{{ taste.ingredient.value }}
+			</span>
+		</li>
+	
+	</script>
 	<div class="text-center">
 		<h1>Goûts que vous avez renseignés</h1>
 	</div>
@@ -29,7 +23,7 @@
 		<div class="col-md-1 ">
 			<div class="input-group">
 				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">A---Z</button>
+					<button class="btn btn-default" type="button"ng-click))>A---Z</button>
 				</span>
 			</div>
 			<!-- /input-group -->
@@ -64,11 +58,17 @@
 		<div class="col-md-6">
 			<div class="input-group">
 				<input type="text" class="form-control"
-					placeholder="Chercher un ingredient"> <span
-					class="input-group-btn">
-					<button class="btn btn-default" type="button">Go!</button>
+					placeholder="Chercher un ingredient" ng-model="inputIngredient"> <span
+					class="input-group-btn" >				
+					<button class="btn btn-default" type="button" ng-click="click()">Ajouter</button>
 				</span>
-			</div>
+						</div>
+			<ul>
+				<li	ng-repeat="ingredient in bdd_taste.ingredients | filter:findIngredient">
+					<a ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
+					
+				</li>
+			</ul>
 			<!-- /input-group -->
 		</div>
 		<!-- /.col-lg-6 -->
@@ -76,20 +76,30 @@
 	<!-- /.row -->
 	<div class="bs-glyphicons">
 		<ul class="bs-glyphicons-list">
-
+			<li ng-repeat="ingredient in taste.ingredients">
+				<span aria-hidden="true">
+					<img src="{{ ingredient.url }}">
+				</span> 
+				<span class="glyphicon-class">
+					{{ ingredient.name }} 
+				</span> 
+				<span class="badge {{ ingredient.css_value }}">
+					<input type="number" class="input_value" min="1" max="10">
+					{{ ingredient.value }}
+				</span>
+			</li>
 			<li><span aria-hidden="true"><img
 					src="js/taste/chocolat.png"></span> <span class="glyphicon-class">chocolat
 					au lait </span> <span class="badge taste-eight">8</span></li>
 
-			<li><span class="glyphicon " aria-hidden="true"><img
+		<!-- <li><span class="glyphicon " aria-hidden="true"><img
 					src="js/taste/jambon-blanc.png"></span> <span
 				class="glyphicon-class">jambon blanc </span> <span
 				class="badge taste-three">3</span></li>
 
 			<li><span class="glyphicon " aria-hidden="true"><img
-					src="js/taste/choux-fleur.png"></span> <span
-				class="glyphicon-class">choux fleur</span> <span
-				class="badge taste-zero">0</span></li>
+					src="js/taste/choux-fleur.png"></span> <span class="glyphicon-class">choux
+					fleur</span> <span class="badge taste-zero">0</span></li>
 
 			<li><span class="glyphicon " aria-hidden="true"><img
 					src="js/taste/radis.png"></span> <span class="glyphicon-class">radis</span>
@@ -113,9 +123,8 @@
 				<span class="badge taste-two">2</span></li>
 
 			<li><span class="glyphicon " aria-hidden="true"><img
-					src="js/taste/choux-fleur.png"></span> <span
-				class="glyphicon-class">choux fleur</span> <span
-				class="badge taste-six">6</span></li>
+					src="js/taste/choux-fleur.png"></span> <span class="glyphicon-class">choux
+					fleur</span> <span class="badge taste-six">6</span></li>
 
 			<li><span class="glyphicon " aria-hidden="true"><img
 					src="js/taste/jambon-blanc.png"></span> <span
@@ -143,12 +152,13 @@
 				class="glyphicon-class"></span></li>
 
 			<li><span class="glyphicon " aria-hidden="true"></span> <span
-				class="glyphicon-class"></span></li>
-			<li><div ng-controller="ModalDemoCtrl" ng-click="open()" style="cursor: pointer;">
+				class="glyphicon-class"></span></li> 
+			<li><div ng-controller="ModalDemoCtrl" ng-click="open()"
+					style="cursor: pointer;">
 					<span class="glyphicon glyphicon-plus" style="font-size: 100px;"
 						aria-hidden="true" data-toggle="modal" data-target="#myModal"></span>
 					<span class="glyphicon-class">nouveau</span>
-				</div></li>
+				</div></li>-->
 		</ul>
 	</div>
 </div>

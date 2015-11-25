@@ -7,47 +7,58 @@
     });
 });*/
 
-angular.module('taste').controller('maprogressionCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
-}]);
-
-angular.module('taste').controller('ModalAddTasteCtrl', function ($scope, $modal, $log) {
-
-	$scope.items = ['item1', 'item2', 'item3'];
-
-	$scope.open = function (size) {
-
-		var modalInstance = $modal.open({
-			templateUrl: 'myModalContent.html',
-			controller: 'ModalInstanceCtrl',
-			size: size,
-			resolve: {
-				items: function () {
-					return $scope.items;
-				}
+angular.module('cookorico').controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
+	
+	$scope.bdd_taste = {
+			'ingredients':[
+				{
+				'url':'js/taste/artichaut.png',
+				'name':'choux',
+				'css_value': 'taste-eight',
+				'value':''
+			},
+			
+			{
+				'url':'js/taste/artichaut.png',
+				'name':'choux-fleur',
+				'css_value': 'taste-eight',
+				'value':''
+			},
+			{
+				'url':'js/taste/artichaut.png',
+				'name':'artichaut',
+				'css_value': 'taste-eight',
+				'value':''
+			},
+			{
+				'url':'js/taste/radis.png',
+				'name':'radis',
+				'css_value': 'taste-seven',
+				'value':''
 			}
-		});
+			]
+			
+	}
+	
+	$scope.taste = {
+			'ingredients':[]
+	}
+	
+	$scope.inputIngredient = '';
+	
+	$scope.findIngredient = function(ingredient){
 
-		modalInstance.result.then(function (selectedItem) {
-			$scope.selected = selectedItem;
-		}, function () {
-			$log.info('Modal dismissed at: ' + new Date());
-		});
-	};
-});
-
-angular.module('taste').controller('ModalAddTasteInstanceCtrl', function ($scope, $modalInstance, items) {
-
-	$scope.items = items;
-	$scope.selected = {
-			item: $scope.items[0]
-	};
-
-	$scope.ok = function () {
-		$modalInstance.close($scope.selected.item);
-	};
-
-	$scope.cancel = function () {
-		$modalInstance.dismiss('cancel');
-	};
-});
+		return ingredient.name.indexOf($scope.inputIngredient) != -1 
+		&& $scope.inputIngredient.length >= 3 
+		&& $.inArray(ingredient, $scope.taste['ingredients']) == -1; 
+	}
+	
+	$scope.addPersonnalTaste = function(ingredient){
+		$scope.taste['ingredients'].push(ingredient);
+		$scope.inputIngredient = "";
+		
+		//TODO req GET -> bdd
+	}
+	
+}]);
