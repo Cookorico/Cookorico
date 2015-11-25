@@ -1,12 +1,14 @@
 package fil.iagl.cookorico.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Level;
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.service.LevelService;
@@ -33,7 +35,10 @@ public class MemberController {
 	public @ResponseBody Member getProfile() {
 		//En attendant recupération de l'user loggé ??
 		
-		Member m = new Member();
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member m = currentUser.getMember();
+	    System.out.println("ERGDRSGDSFGDQSGHTEHzefrgzerfeGFTEHSZERGSEFSDFSDFSDFSDF"+m.getLevel());
+		/*Member m = new Member();
 		m.setIdMember(1);
 		m.setUsername("Gordevil");
 		m.setFirstname("Gordon");
@@ -41,7 +46,7 @@ public class MemberController {
 		m.setGender("M");
 		m.setEmail("gordon@ramsay.com");
 		m.setExperience(3250);
-		m.setLevel(34);
+		m.setLevel(34);*/
 		
 		return m;
 	}

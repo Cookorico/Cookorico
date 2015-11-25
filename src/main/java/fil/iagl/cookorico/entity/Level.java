@@ -14,10 +14,10 @@ import lombok.Data;
 public class Level {
 	
 	private Integer idLevel;
-	private Integer level_num;
-	private Integer level_pic;
-	private String label_lvl;
-	private Integer xp_min;
-	private Integer xp_max;
+	private Integer levelNum;
+	private Integer levelPic;
+	private String labelLvl;
+	private Integer xpMin;
+	private Integer xpMax;
 
 }

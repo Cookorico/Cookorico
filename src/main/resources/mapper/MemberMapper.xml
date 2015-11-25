@@ -5,44 +5,26 @@
 <mapper namespace='fil.iagl.cookorico.dao.MemberDao'>
 
   <!-- <resultMap type="Member" id="memberResultMap"> -->
-  <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
-    <id property='idMember' column='id_member'/>
-    <result property='username' column='username'/>
-    <result property='password' column='password'/>
-    <result property='firstname' column='firstname'/>
-    <result property='lastname' column='lastname'/>
-    <result property='email' column='email'/>
-<!--     <result property='birthday' column='birthday'/> -->
-    <result property='gender' column='gender'/>
-    <result property='city' column='city'/>
-     <result property='city' column='city'/>
-    <result property='level' column='level'/>
-     <result property='experience' column='experience'/>
-    
-<!--     <result property='currentAvatar' column='current_avatar'/> -->
-<!--     <result property='creationDate' column='creation_date'/> -->
-<!--     <result property='modifDate' column='modif_date'/> -->
-    <result property='disabled' column='disabled'/>
-  </resultMap>
+	<resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMap">
+		<id property='idMember' column='mbr_id_member' />
+		<result property='username' column='mbr_username' />
+		<result property='firstname' column='mbr_firstname' />
+		<result property='lastname' column='mbr_lastname' />
+		<result property='email' column='mbr_email' />
+		<result property='password' column='mbr_password' />
+		<result property='experience' column='mbr_experience' />
+		<result property='salt' column='mbr_salt' />
+		<result property='gender' column='mbr_gender' />
+		<result property='disabled' column='mbr_disabled' />
+		<result property='birthday' column='mbr_birthday' />
+		<!-- MAIN PICTURE TODO -->
+		<result property='city' column='mbr_city' />
+		<result property='creationDate' column='mbr_creation_date' />
+		<result property='modifDate' column='mbr_modif_date' />
+		<association property='level' resultMap="fil.iagl.cookorico.dao.LevelDao.levelResultMap" />
+		
+	</resultMap>
   
-   <!-- <resultMap type="Member" id="memberResultMapSingle"> -->
-   <resultMap type="fil.iagl.cookorico.entity.Member" id="memberResultMapSingle">
-    <id property='idMember' column='id_member'/>
-    <result property='username' column='username'/>
-    <result property='firstname' column='firstname'/>
-    <result property='lastname' column='lastname'/>
-    <result property='email' column='email'/>
-    <result property='birthday' column='birthday'/>
-    <result property='gender' column='gender'/>
-    <result property='city' column='city'/>
-    <result property='level' column='level'/>
-    <result property='experience' column='experience'/>
-    
-    <result property='currentAvatar.id' column='current_avatar'/>
-    <result property='creationDate' column='creation_date'/>
-    <result property='modifDate' column='modif_date'/>
-    <result property='disabled' column='disabled'/>
-  </resultMap>
   
   
   
@@ -51,24 +33,20 @@
   </select>
   
   <select id="getMemberWithCredentials" resultMap="memberResultMap">
-  	SELECT * FROM member WHERE username = #{username} AND password = #{password}
+  	SELECT * FROM member join level on lvl_id_level=mbr_level WHERE mbr_username = #{username} AND mbr_password = #{password}
   </select>
   
   <select id="getMemberWithUsername" parameterType="java.lang.String" resultMap="memberResultMap">
-  	SELECT * FROM MEMBER WHERE username = #{username}
+  	SELECT * FROM member join level on lvl_id_level=mbr_level WHERE mbr_username = #{username}
   </select>
   
   <select id="getMemberById" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMap" >
-  	SELECT * FROM member WHERE id_member = #{id}
+  	SELECT * FROM member WHERE mbr_id_member = #{id}
   </select>
-  
-  <select id="getMemberByIdSingle" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMapSingle" >
-  	SELECT * FROM member WHERE id_member = #{id}
-  </select>
-  
+
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">
-  	INSERT INTO member(username, firstname, lastname, email, password<!--,birthday-->, gender, city, level, experience<!--,current_avatar-->) 
-  	VALUES(#{member.username}, #{member.firstname}, #{member.lastname}, #{member.email}, #{member.password}<!--, #{member.birthday}-->, #{member.gender}::gender, #{member.city},#{member.level},#{member.experience}   <!--, #{member.current_avatar}-->)
+  	INSERT INTO member(mbr_username, mbr_firstname, mbr_lastname, mbr_email, mbr_password<!--,mbr_birthday-->, mbr_gender, mbr_city, mbr_level, mbr_experience) 
+  	VALUES(#{member.username}, #{member.firstname}, #{member.lastname}, #{member.email}, #{member.password}<!--, #{member.birthday}-->, #{member.gender}::gender, #{member.city},#{member.level},#{member.experience})
   </insert>
 
 </mapper>

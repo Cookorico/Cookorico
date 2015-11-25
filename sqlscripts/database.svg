@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial" font-size="12" width="1648" height="1453">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial" font-size="12" width="1857" height="1583">
 	<desc>Flowchart diagram model</desc>
 	<g id="_f473ElbFEeWH7tmnkVHu6g">
 		<defs>
@@ -26,85 +26,95 @@
 			</linearGradient>
 			
 		</defs>
-		<g id="_msbtYDjzEDO2JdFg6MMGKg" transform="translate(377 122)">
-			<rect x="0" y="0" width="199" height="349" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="199" height="349" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">MEMBER</text>
+		<g id="_msbtYDjzEDO2JdFg6MMGKg" transform="translate(445 122)">
+			<rect x="0" y="0" width="233" height="395" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="233" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="233" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="233" height="395" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="117" y="16" text-anchor="middle" font-weight="bold" fill="#333">MEMBER</text>
 			<g id="_tvp4gDjzEDO2JdFg6MMGKg">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_MEMBER: SERIAL</text>
+				<text x="18" y="42" fill="#000000">MBR_ID_MEMBER: SERIAL</text>
 				
 			</g>
 			<g id="_61g7gDjzEDO2JdFg6MMGKg">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
-				<text x="18" y="65" fill="#000000">USERNAME: VARCHAR(255)</text>
+				<text x="18" y="65" fill="#000000">MBR_USERNAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_00_jgDjzEDO2JdFg6MMGKg">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="88" fill="#000000">FIRSTNAME: VARCHAR(255)</text>
+				<text x="18" y="88" fill="#000000">MBR_FIRSTNAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_3a7rADjzEDO2JdFg6MMGKg">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">LASTNAME: VARCHAR(255)</text>
+				<text x="18" y="111" fill="#000000">MBR_LASTNAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_5nQYoDjzEDO2JdFg6MMGKg">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">EMAIL: VARCHAR(255)</text>
+				<text x="18" y="134" fill="#000000">MBR_EMAIL: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_J6qvoUJeEDO3YpaNxRg4pg">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">PASSWORD: VARCHAR(255)</text>
+				<text x="18" y="157" fill="#000000">MBR_PASSWORD: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_eoMMIF_tEDORFt8W2v5v8g">
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">MBR_EXPERIENCE: INTEGER</text>
+				
+			</g>
+			<g id="_CXxVIGCKEDOEPKixA6Cdxw">
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="203" fill="#000000">MBR_LEVEL: INTEGER</text>
 				
 			</g>
 			<g id="_N_NjIEJeEDO3YpaNxRg4pg">
-				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">SALT: VARCHAR(255)</text>
-				
-			</g>
-			<g id="_RveV0Dj0EDO2JdFg6MMGKg">
-				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">BIRTHDAY: DATE</text>
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="226" fill="#000000">MBR_SALT: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_ZDUW4Dj0EDO2JdFg6MMGKg">
-				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="226" fill="#000000">GENDER: GENDER</text>
-				
-			</g>
-			<g id="_rKySkDj0EDO2JdFg6MMGKg">
 				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="249" fill="#000000">CITY: VARCHAR(255)</text>
-				
-			</g>
-			<g id="__5Q8kDqQEDO1J_xd9rElFw">
-				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="272" fill="#000000">CURRENT_AVATAR: INTEGER</text>
-				
-			</g>
-			<g id="_IqjDcDp6EDO1J_xd9rElFw">
-				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="295" fill="#000000">CREATION_DATE: TIMESTAMP</text>
-				
-			</g>
-			<g id="_lPvWsDqEEDO1J_xd9rElFw">
-				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="318" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<text x="18" y="249" fill="#000000">MBR_GENDER: GENDER</text>
 				
 			</g>
 			<g id="_tT7SwDqIEDO1J_xd9rElFw">
+				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="272" fill="#000000">MBR_DISABLED: BOOLEAN</text>
+				
+			</g>
+			<g id="_RveV0Dj0EDO2JdFg6MMGKg">
+				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="295" fill="#000000">MBR_BIRTHDAY: DATE</text>
+				
+			</g>
+			<g id="__5Q8kDqQEDO1J_xd9rElFw">
+				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="318" fill="#000000">MBR_MAIN_PICTURE: INTEGER</text>
+				
+			</g>
+			<g id="_rKySkDj0EDO2JdFg6MMGKg">
 				<image x="2" y="328" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="341" fill="#000000">DISABLED: BOOLEAN</text>
+				<text x="18" y="341" fill="#000000">MBR_CITY: VARCHAR(255)</text>
+				
+			</g>
+			<g id="_IqjDcDp6EDO1J_xd9rElFw">
+				<image x="2" y="351" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="364" fill="#000000">MBR_CREATION_DATE: TIMESTAMP</text>
+				
+			</g>
+			<g id="_lPvWsDqEEDO1J_xd9rElFw">
+				<image x="2" y="374" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="387" fill="#000000">MBR_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_xow4EDjzEDO2JdFg6MMGKg" transform="translate(87 72)">
+		<g id="_xow4EDjzEDO2JdFg6MMGKg" transform="translate(215 72)">
 			<rect x="0" y="0" width="50" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="26" dy="12">TEXT</tspan>
@@ -112,63 +122,68 @@
 			</text>
 			
 		</g>
-		<g id="_0B-8wDj0EDO2JdFg6MMGKg" transform="translate(1007 2)">
-			<rect x="0" y="0" width="202" height="188" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="202" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="202" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="202" height="188" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="101" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT</text>
+		<g id="_0B-8wDj0EDO2JdFg6MMGKg" transform="translate(1135 2)">
+			<rect x="0" y="0" width="228" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="228" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="228" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="228" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="114" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT</text>
 			<g id="_6DVbMDj0EDO2JdFg6MMGKg">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_INGREDIENT: SERIAL</text>
+				<text x="18" y="42" fill="#000000">IGD_ID_INGREDIENT: SERIAL</text>
 				
 			</g>
 			<g id="__uzwQDj0EDO2JdFg6MMGKg">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
-				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				<text x="18" y="65" fill="#000000">IGD_NAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_y2ZBcTj2EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="88" fill="#000000">DESCRIPTION: TEXT</text>
+				<text x="18" y="88" fill="#000000">IGD_DESCRIPTION: TEXT</text>
+				
+			</g>
+			<g id="_iHmUgXBPEDOjuZKwmD9I0Q">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="111" fill="#000000">IGD_MAIN_PICTURE: INTEGER</text>
 				
 			</g>
 			<g id="_GXxukDqFEDO1J_xd9rElFw">
-				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">IGD_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_IoXRIDqFEDO1J_xd9rElFw">
-				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="157" fill="#000000">IGD_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_KpgCcDqFEDO1J_xd9rElFw">
-				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">VALIDATION: BOOLEAN</text>
+				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="180" fill="#000000">IGD_VALIDATION: BOOLEAN</text>
 				
 			</g>
 			<g id="_xdM1QDqIEDO1J_xd9rElFw">
-				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">DISABLED: BOOLEAN</text>
+				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="203" fill="#000000">IGD_DISABLED: BOOLEAN</text>
 				
 			</g>
 			
 		</g>
-		<g id="_Bvrb0Dj1EDO2JdFg6MMGKg" transform="translate(1327 422)">
-			<rect x="0" y="0" width="222" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="222" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="222" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="222" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="111" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG</text>
+		<g id="_Bvrb0Dj1EDO2JdFg6MMGKg" transform="translate(1515 422)">
+			<rect x="0" y="0" width="231" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="231" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="231" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="231" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="116" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG</text>
 			<g id="_ESfW0Dj1EDO2JdFg6MMGKg">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_TAG: SERIAL</text>
+				<text x="18" y="42" fill="#000000">TAG_ID_TAG: SERIAL</text>
 				
 			</g>
 			<g id="_6iMIIDj5EDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIEEQ02ve7i/gAAAWZJREFUOMvVk7svQ2EYxp/vnPOdtl+bXqPRKENrM1tcFonBLiw2CzMS8Rcwilh0tvgDDBImFoNb0kRCiAhp9aLanp6efl/PZxAlejPyru/z/t4n7wX490HaJTaP7kOibHldjCmFdL6oU09ueWbQ/qnTWhUvbZ0GHZysM7d7QlNVqvX4zypGdQXAza8A8Xh/kOr2iINqMYUAtk3dbi8NSylvCSGyK+ClIDAeZWRowAOXruD8rqQ8pE2yetGsbQmo2jVQlcHPNDioAk2VEEQiaTVrlVaAMrcg6l9ORV3CqnGkn4FHwMmB4Y4AXhIQ9To+EdHtDef0wtS86wmIAKMqsNfZgVEC5xyQHwgtmyGaaQROUo3Vk44Aw+AQwm44sG0JKSV8WQCA3nWIhXyqcnXNkrnMG3M4dRorWjxcfO29TLgCCrD4vXHbS5xd24+YRZN5QyEyeZjwzR3v7hCgD8ABgJgCjP2NZ3oHxtGBB/i1el8AAAAASUVORK5CYII=" />
-				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				<text x="18" y="65" fill="#000000">TAG_NAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_Cu8C8DkBEDOniO2VLASIbw">
@@ -178,184 +193,199 @@
 			</g>
 			<g id="_94jfgDqEEDO1J_xd9rElFw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="111" fill="#000000">TAG_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_80thMDj1EDO2JdFg6MMGKg" transform="translate(687 2)">
-			<rect x="0" y="0" width="199" height="165" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="199" height="165" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">TASTE</text>
+		<g id="_80thMDj1EDO2JdFg6MMGKg" transform="translate(815 12)">
+			<rect x="0" y="0" width="228" height="165" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="228" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="228" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="228" height="165" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="114" y="16" text-anchor="middle" font-weight="bold" fill="#333">TASTE</text>
 			<g id="_9iGLoDj1EDO2JdFg6MMGKg">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_TASTE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">TST_ID_TASTE: SERIAL</text>
 				
 			</g>
 			<g id="_3cH2cDj2EDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				<text x="18" y="65" fill="#000000">TST_FK_ID_MEMBER: INTEGER</text>
 				
 			</g>
 			<g id="_19EzoDj4EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				<text x="18" y="88" fill="#000000">TST_FK_ID_INGREDIENT: INTEGER</text>
 				
 			</g>
 			<g id="_8yM4YDj4EDOniO2VLASIbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">GRADING: INTEGER</text>
+				<text x="18" y="111" fill="#000000">TST_GRADING: INTEGER</text>
 				
 			</g>
 			<g id="_VP_8gDqEEDO1J_xd9rElFw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="134" fill="#000000">TST_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_XTEzEDp6EDO1J_xd9rElFw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<text x="18" y="157" fill="#000000">TST_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_wzNMQDj3EDOniO2VLASIbw" transform="translate(687 192)">
-			<rect x="0" y="0" width="204" height="326" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="204" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="204" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="204" height="326" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="102" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE</text>
+		<g id="_wzNMQDj3EDOniO2VLASIbw" transform="translate(815 202)">
+			<rect x="0" y="0" width="237" height="395" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="237" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="237" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="237" height="395" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="119" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE</text>
 			<g id="_5W2oUDj3EDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_RECIPE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">RCP_ID_RECIPE: SERIAL</text>
 				
 			</g>
 			<g id="_R7teMDj4EDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="65" fill="#000000">NAME: VARCHAR(255)</text>
+				<text x="18" y="65" fill="#000000">RCP_NAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_UVKo4Dj4EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="88" fill="#000000">DESCRIPTION: TEXT</text>
+				<text x="18" y="88" fill="#000000">RCP_DESCRIPTION: TEXT</text>
 				
 			</g>
 			<g id="_dXtAYDj4EDOniO2VLASIbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">PREPARATION_TIME: INTEGER</text>
+				<text x="18" y="111" fill="#000000">RCP_PREPARATION_TIME: INTEGER</text>
 				
 			</g>
 			<g id="_gYuhYDj4EDOniO2VLASIbw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">COOKING_TIME: INTEGER</text>
+				<text x="18" y="134" fill="#000000">RCP_COOKING_TIME: INTEGER</text>
 				
 			</g>
 			<g id="_xognIDj4EDOniO2VLASIbw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="157" fill="#000000">FK_CREATOR: INTEGER</text>
+				<text x="18" y="157" fill="#000000">RCP_FK_CREATOR: INTEGER</text>
 				
 			</g>
 			<g id="_RIChYDj_EDOniO2VLASIbw">
 				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">DISH_TYPE: DISH_TYPE</text>
+				<text x="18" y="180" fill="#000000">RCP_DISH_TYPE: DISH_TYPE</text>
 				
 			</g>
 			<g id="_DU5o4DqEEDO1J_xd9rElFw">
 				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">DIFFICULTY: INTEGER</text>
+				<text x="18" y="203" fill="#000000">RCP_DIFFICULTY: INTEGER</text>
+				
+			</g>
+			<g id="_-AR-UFokEDOhsuxeOGz6wg">
+				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="226" fill="#000000">RCP_DRAFT: BOOLEAN</text>
+				
+			</g>
+			<g id="_swBEsHBPEDOjuZKwmD9I0Q">
+				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="249" fill="#000000">RCP_MAIN_PICTURE: INTEGER</text>
 				
 			</g>
 			<g id="_q1EBcDp5EDO1J_xd9rElFw">
-				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="226" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="272" fill="#000000">RCP_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_cyMHIDp6EDO1J_xd9rElFw">
-				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="249" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="295" fill="#000000">RCP_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_BfEasDj6EDOniO2VLASIbw">
-				<image x="2" y="259" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="272" fill="#000000">VALIDATION: BOOLEAN</text>
+				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="318" fill="#000000">RCP_VALIDATION: BOOLEAN</text>
 				
 			</g>
 			<g id="_sEYEgDqKEDO1J_xd9rElFw">
-				<image x="2" y="282" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="295" fill="#000000">VALIDATOR: INTEGER</text>
+				<image x="2" y="328" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="341" fill="#000000">RCP_VALIDATOR: INTEGER</text>
 				
 			</g>
 			<g id="_wRcMwDqIEDO1J_xd9rElFw">
-				<image x="2" y="305" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="318" fill="#000000">DISABLED: BOOLEAN</text>
+				<image x="2" y="351" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="364" fill="#000000">RCP_DISABLED: BOOLEAN</text>
+				
+			</g>
+			<g id="_6Xzb4F_vEDOEPKixA6Cdxw">
+				<image x="2" y="374" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="387" fill="#000000">RCP_EXPERIENCE_VAL: INTEGER</text>
 				
 			</g>
 			
 		</g>
-		<g id="_LuGP8Dj5EDOniO2VLASIbw" transform="translate(1337 262)">
-			<rect x="0" y="0" width="221" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="221" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="221" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="221" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="111" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_INGREDIENT</text>
+		<g id="_LuGP8Dj5EDOniO2VLASIbw" transform="translate(1515 272)">
+			<rect x="0" y="0" width="245" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="245" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="245" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="245" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="123" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_INGREDIENT</text>
 			<g id="_WjIN4Dj7EDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_TAG_TO_INGREDIENT: SERIAL</text>
+				<text x="18" y="42" fill="#000000">TTI_ID_TAG_TO_INGREDIENT: SERIAL</text>
 				
 			</g>
 			<g id="_buACMDj5EDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_TAG: INTEGER</text>
+				<text x="18" y="65" fill="#000000">TTI_FK_ID_TAG: INTEGER</text>
 				
 			</g>
 			<g id="_ZeCKsDj5EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				<text x="18" y="88" fill="#000000">TTI_FK_ID_INGREDIENT: INTEGER</text>
 				
 			</g>
 			<g id="_7ZFzcDqEEDO1J_xd9rElFw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="111" fill="#000000">TTI_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_Mu2s4Dj6EDOniO2VLASIbw" transform="translate(967 202)">
-			<rect x="0" y="0" width="275" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="275" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="275" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="275" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="138" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT_IN_RECIPE</text>
+		<g id="_Mu2s4Dj6EDOniO2VLASIbw" transform="translate(1105 222)">
+			<rect x="0" y="0" width="297" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="297" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="297" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="297" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="149" y="16" text-anchor="middle" font-weight="bold" fill="#333">INGREDIENT_IN_RECIPE</text>
 			<g id="_dngPkDj7EDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_INGREDIENT_IN_RECIPE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">IIR_ID_INGREDIENT_IN_RECIPE: SERIAL</text>
 				
 			</g>
 			<g id="_P8wzUDj6EDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				<text x="18" y="65" fill="#000000">IIR_FK_ID_INGREDIENT: INTEGER</text>
 				
 			</g>
 			<g id="_SHCSgDj6EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="88" fill="#000000">IIR_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_fiH-oDj6EDOniO2VLASIbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">QUANTITY: INTEGER</text>
+				<text x="18" y="111" fill="#000000">IIR_QUANTITY: INTEGER</text>
 				
 			</g>
 			<g id="_s-NwUDj6EDOniO2VLASIbw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">MEASUREMENT: UNIT_OF_MEASUREMENT</text>
+				<text x="18" y="134" fill="#000000">IIR_MEASUREMENT: UNIT_OF_MEASUREMENT</text>
 				
 			</g>
 			
 		</g>
-		<g id="_9E5gADj6EDOniO2VLASIbw" transform="translate(337 32)">
+		<g id="_9E5gADj6EDOniO2VLASIbw" transform="translate(435 22)">
 			<rect x="0" y="0" width="170" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="86" dy="12">UNIT_OF_MEASUREMENT</tspan>
@@ -363,55 +393,55 @@
 			</text>
 			
 		</g>
-		<g id="_vn1BcDj7EDOniO2VLASIbw" transform="translate(677 1202)">
-			<rect x="0" y="0" width="207" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="207" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="207" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="207" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="104" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO</text>
+		<g id="_vn1BcDj7EDOniO2VLASIbw" transform="translate(795 1332)">
+			<rect x="0" y="0" width="234" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="234" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="234" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="234" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="117" y="16" text-anchor="middle" font-weight="bold" fill="#333">PICTURE</text>
 			<g id="_xN6OcDj7EDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_PHOTO: SERIAL</text>
+				<text x="18" y="42" fill="#000000">PIC_ID_PICTURE: SERIAL</text>
 				
 			</g>
 			<g id="_9hqawDqKEDO1J_xd9rElFw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				<text x="18" y="65" fill="#000000">PIC_FK_ID_MEMBER: INTEGER</text>
 				
 			</g>
 			<g id="_2UbcUDj7EDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="88" fill="#000000">FILE_PATH: VARCHAR(255)</text>
+				<text x="18" y="88" fill="#000000">PIC_FILE_PATH: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_4Zj80Dj7EDOniO2VLASIbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">FILE_NAME: VARCHAR(255)</text>
+				<text x="18" y="111" fill="#000000">PIC_FILE_NAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_WO6XoDqLEDO1J_xd9rElFw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">TITLE: VARCHAR(255)</text>
+				<text x="18" y="134" fill="#000000">PIC_TITLE: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_X69CsDqLEDO1J_xd9rElFw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">DESCRIPTION: VARCHAR(1024)</text>
+				<text x="18" y="157" fill="#000000">PIC_DESCRIPTION: VARCHAR(1024)</text>
 				
 			</g>
 			<g id="_mHx9gDp6EDO1J_xd9rElFw">
 				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="180" fill="#000000">PIC_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_4gza4DqIEDO1J_xd9rElFw">
 				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">DISABLED: BOOLEAN</text>
+				<text x="18" y="203" fill="#000000">PIC_DISABLED: BOOLEAN</text>
 				
 			</g>
 			
 		</g>
-		<g id="_Pt2bUDj_EDOniO2VLASIbw" transform="translate(427 72)">
+		<g id="_Pt2bUDj_EDOniO2VLASIbw" transform="translate(535 72)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">DISH_TYPE</tspan>
@@ -419,88 +449,88 @@
 			</text>
 			
 		</g>
-		<g id="_6-1ZIDj_EDOniO2VLASIbw" transform="translate(997 582)">
-			<rect x="0" y="0" width="206" height="234" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="206" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="206" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="206" height="234" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="103" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE_STEP</text>
+		<g id="_6-1ZIDj_EDOniO2VLASIbw" transform="translate(1155 592)">
+			<rect x="0" y="0" width="230" height="234" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="230" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="230" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="230" height="234" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="115" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE_STEP</text>
 			<g id="_ALmY8DkAEDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_RECIPE_STEP: SERIAL</text>
+				<text x="18" y="42" fill="#000000">RST_ID_RECIPE_STEP: SERIAL</text>
 				
 			</g>
 			<g id="_sZ8hcDkBEDOj_ub0FU0Pbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="65" fill="#000000">RST_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_H_mgwDkAEDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="88" fill="#000000">RANK: INTEGER</text>
+				<text x="18" y="88" fill="#000000">RST_RANK: INTEGER</text>
 				
 			</g>
 			<g id="_BelDwDkAEDOniO2VLASIbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">NAME: VARCHAR(255)</text>
+				<text x="18" y="111" fill="#000000">RST_NAME: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_J78RoDkAEDOniO2VLASIbw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">DESCRIPTION: TEXT</text>
+				<text x="18" y="134" fill="#000000">RST_DESCRIPTION: TEXT</text>
 				
 			</g>
 			<g id="_Sm5PkDkAEDOniO2VLASIbw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">DURATION_TIME: INTEGER</text>
+				<text x="18" y="157" fill="#000000">RST_DURATION_TIME: INTEGER</text>
 				
 			</g>
 			<g id="_e37roDp6EDO1J_xd9rElFw">
 				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="180" fill="#000000">RST_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_gQNGIDp6EDO1J_xd9rElFw">
 				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<text x="18" y="203" fill="#000000">RST_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_5q9g4DqIEDO1J_xd9rElFw">
 				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="226" fill="#000000">DISABLED: BOOLEAN</text>
+				<text x="18" y="226" fill="#000000">RST_DISABLED: BOOLEAN</text>
 				
 			</g>
 			
 		</g>
-		<g id="_rL2zIDkAEDOniO2VLASIbw" transform="translate(997 402)">
-			<rect x="0" y="0" width="199" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="199" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_RECIPE</text>
+		<g id="_rL2zIDkAEDOniO2VLASIbw" transform="translate(1125 402)">
+			<rect x="0" y="0" width="229" height="119" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="229" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="229" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="229" height="119" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="115" y="16" text-anchor="middle" font-weight="bold" fill="#333">TAG_TO_RECIPE</text>
 			<g id="_sU3CkDkAEDOniO2VLASIbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_TAG_TO_RECIPE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">TTR_ID_TAG_TO_RECIPE: SERIAL</text>
 				
 			</g>
 			<g id="_tpbBwDkAEDOniO2VLASIbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_TAG: INTEGER</text>
+				<text x="18" y="65" fill="#000000">TTR_FK_ID_TAG: INTEGER</text>
 				
 			</g>
 			<g id="_zAvEsDkAEDOniO2VLASIbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="88" fill="#000000">TTR_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_7FLY8DqEEDO1J_xd9rElFw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="111" fill="#000000">TTR_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_EVGIcDkBEDOniO2VLASIbw" transform="translate(527 72)">
+		<g id="_EVGIcDkBEDOniO2VLASIbw" transform="translate(635 72)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">TAG_TYPE</tspan>
@@ -508,113 +538,113 @@
 			</text>
 			
 		</g>
-		<g id="_nfWPsDkBEDOj_ub0FU0Pbw" transform="translate(667 742)">
-			<rect x="0" y="0" width="199" height="257" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="199" height="257" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">COMMENT</text>
+		<g id="_nfWPsDkBEDOj_ub0FU0Pbw" transform="translate(795 882)">
+			<rect x="0" y="0" width="232" height="257" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="232" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="232" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="232" height="257" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="116" y="16" text-anchor="middle" font-weight="bold" fill="#333">COMMENT</text>
 			<g id="_pBMc8DkBEDOj_ub0FU0Pbw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_COMMENT: SERIAL</text>
+				<text x="18" y="42" fill="#000000">CMT_ID_COMMENT: SERIAL</text>
 				
 			</g>
 			<g id="_vg2A8DkBEDOj_ub0FU0Pbw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="65" fill="#000000">CMT_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_p44S4DkBEDOj_ub0FU0Pbw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				<text x="18" y="88" fill="#000000">CMT_FK_ID_MEMBER: INTEGER</text>
 				
 			</g>
 			<g id="_xg5NIDkBEDOj_ub0FU0Pbw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="111" fill="#000000">TITLE: VARCHAR(255)</text>
+				<text x="18" y="111" fill="#000000">CMT_TITLE: VARCHAR(255)</text>
 				
 			</g>
 			<g id="_1OwmADkBEDOj_ub0FU0Pbw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">DESCRIPTION: TEXT</text>
+				<text x="18" y="134" fill="#000000">CMT_DESCRIPTION: TEXT</text>
 				
 			</g>
 			<g id="_GujtUTp5EDO1J_xd9rElFw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="157" fill="#000000">CMT_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_UlejYDqFEDO1J_xd9rElFw">
 				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<text x="18" y="180" fill="#000000">CMT_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_W8A88DqFEDO1J_xd9rElFw">
 				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">VALIDATION: BOOLEAN</text>
+				<text x="18" y="203" fill="#000000">CMT_VALIDATION: BOOLEAN</text>
 				
 			</g>
 			<g id="_z5auIDqKEDO1J_xd9rElFw">
 				<image x="2" y="213" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="226" fill="#000000">VALIDATOR: INTEGER</text>
+				<text x="18" y="226" fill="#000000">CMT_VALIDATOR: INTEGER</text>
 				
 			</g>
 			<g id="_z6SiwDqIEDO1J_xd9rElFw">
 				<image x="2" y="236" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="249" fill="#000000">DISABLED: BOOLEAN</text>
+				<text x="18" y="249" fill="#000000">CMT_DISABLED: BOOLEAN</text>
 				
 			</g>
 			
 		</g>
-		<g id="_7HvyoDkBEDOj_ub0FU0Pbw" transform="translate(367 602)">
-			<rect x="0" y="0" width="199" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="199" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="199" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="199" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="100" y="16" text-anchor="middle" font-weight="bold" fill="#333">NOTE</text>
+		<g id="_7HvyoDkBEDOj_ub0FU0Pbw" transform="translate(445 732)">
+			<rect x="0" y="0" width="232" height="211" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="232" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="232" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="232" height="211" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="116" y="16" text-anchor="middle" font-weight="bold" fill="#333">NOTE</text>
 			<g id="_hYaRMDkCEDOrbbpUkOhogw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_NOTE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">NOT_ID_NOTE: SERIAL</text>
 				
 			</g>
 			<g id="_iL6KsDkCEDOrbbpUkOhogw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_MEMBER: INTEGER</text>
+				<text x="18" y="65" fill="#000000">NOT_FK_ID_MEMBER: INTEGER</text>
 				
 			</g>
 			<g id="_jJoXMDkCEDOrbbpUkOhogw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="88" fill="#000000">NOT_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_kgdAMDkCEDOrbbpUkOhogw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDCxchAnaD/QAAAZJJREFUOMvVU7FLAnEU/nx6HRcO19HSZIFwiEOFdmNDNtTaHEQIUQQNBf4LQeCS0DWcCUEEQtDiFuciIhRKEDQ4hJCQCKKSp54/f7YUVJKt9a3v43vf+957wL+HY1QxHo8TER3KsrxUq9VOw+Fw/DuHRgkwxvb8fn8kFAoFPR7PUTQaXfnOcY7ovqWq6rGqqo5yuQwikjjna16v9ymTyTx88Fw/CUiStOrz+ajVakFRFHDOoWnauGVZOoDLX0ewbfux0WjAtm10Oh1IkoR2u41qtfrF9ZADwzCCiqKcuN3uyW63CyICEYExhlQq1Xm+v9/tAQsCcDskkEgk1gVB2A8EAvOWZYFzjnQ63Zq9vh4IjDmeVHUjdnFRJyAJYGZIQJblA03T5iqVClwuF3K5nJXP5/c2TTNIg4Gom+ZVDFj+vP4vGTidThsARFFENpt9LRQK24ZhnImM2UK/33unjf2YQalUumk2m9P1er1dLBYjuq4nAWAA1BzAYgOYIGDnt/sZggVMceCOAy8cOOdA5u880xvV8aCpQ9m0XQAAAABJRU5ErkJggg==" />
-				<text x="18" y="111" fill="#000000">FK_ID_COMMENT: INTEGER</text>
+				<text x="18" y="111" fill="#000000">NOT_FK_ID_COMMENT: INTEGER</text>
 				
 			</g>
 			<g id="_qVrhUDp6EDO1J_xd9rElFw">
 				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="134" fill="#000000">RATING: INTEGER</text>
+				<text x="18" y="134" fill="#000000">NOT_RATING: INTEGER</text>
 				
 			</g>
 			<g id="_W5FTcFnvEDOJJIo2_xyKqw">
 				<image x="2" y="144" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="157" fill="#000000">SUCCESSFUL: BOOLEAN</text>
+				<text x="18" y="157" fill="#000000">NOT_SUCCESSFUL: BOOLEAN</text>
 				
 			</g>
 			<g id="_ySy9UDqEEDO1J_xd9rElFw">
 				<image x="2" y="167" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="180" fill="#000000">CREATION_DATE: TIMESTAMP</text>
+				<text x="18" y="180" fill="#000000">NOT_CREATION_DATE: TIMESTAMP</text>
 				
 			</g>
 			<g id="_yp2ycDqEEDO1J_xd9rElFw">
 				<image x="2" y="190" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="203" fill="#000000">MODIF_DATE: TIMESTAMP</text>
+				<text x="18" y="203" fill="#000000">NOT_MODIF_DATE: TIMESTAMP</text>
 				
 			</g>
 			
 		</g>
-		<g id="_BiUQ8DqEEDO1J_xd9rElFw" transform="translate(527 32)">
+		<g id="_BiUQ8DqEEDO1J_xd9rElFw" transform="translate(625 22)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">DIFFICULTY</tspan>
@@ -622,53 +652,53 @@
 			</text>
 			
 		</g>
-		<g id="_U7Cm4DqJEDO1J_xd9rElFw" transform="translate(677 1022)">
-			<rect x="0" y="0" width="205" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="205" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="205" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="205" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="103" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_IN_RECIPE</text>
+		<g id="_U7Cm4DqJEDO1J_xd9rElFw" transform="translate(785 1152)">
+			<rect x="0" y="0" width="241" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="241" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="241" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="241" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="121" y="16" text-anchor="middle" font-weight="bold" fill="#333">PICTURE_IN_RECIPE</text>
 			<g id="_XrgjYDqJEDO1J_xd9rElFw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_PHOTO_IN_RECIPE: SERIAL</text>
+				<text x="18" y="42" fill="#000000">PIR_ID_PICTURE_IN_RECIPE: SERIAL</text>
 				
 			</g>
 			<g id="_dFuwYDqJEDO1J_xd9rElFw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_RECIPE: INTEGER</text>
+				<text x="18" y="65" fill="#000000">PIR_FK_ID_RECIPE: INTEGER</text>
 				
 			</g>
 			<g id="_2qcgwDqJEDO1J_xd9rElFw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_PHOTO: INTEGER</text>
+				<text x="18" y="88" fill="#000000">PIR_FK_ID_PICTURE: INTEGER</text>
 				
 			</g>
 			<g id="_iR23ADqJEDO1J_xd9rElFw">
 				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="111" fill="#000000">FK_ID_COMMENT: INTEGER</text>
+				<text x="18" y="111" fill="#000000">PIR_FK_ID_COMMENT: INTEGER</text>
 				
 			</g>
 			
 		</g>
-		<g id="_GJwucDqKEDO1J_xd9rElFw" transform="translate(87 122)">
-			<rect x="0" y="0" width="201" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="201" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="201" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="201" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="101" y="16" text-anchor="middle" font-weight="bold" fill="#333">ADMINISTRATOR</text>
+		<g id="_GJwucDqKEDO1J_xd9rElFw" transform="translate(115 132)">
+			<rect x="0" y="0" width="235" height="160" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="235" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="235" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="235" height="160" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="118" y="16" text-anchor="middle" font-weight="bold" fill="#333">ADMINISTRATOR</text>
 			<g id="_ggrX0DqKEDO1J_xd9rElFw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_ADMINISTRATOR: INTEGER</text>
+				<text x="18" y="42" fill="#000000">ADM_ID_ADMINISTRATOR: INTEGER</text>
 				
 			</g>
 			<g id="_lKFy8DqKEDO1J_xd9rElFw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
-				<text x="18" y="65" fill="#000000">RANK: ADMIN_RANK</text>
+				<text x="18" y="65" fill="#000000">ADM_RANK: ADMIN_RANK</text>
 				
 			</g>
 			
 		</g>
-		<g id="_l1zCYDqKEDO1J_xd9rElFw" transform="translate(327 72)">
+		<g id="_l1zCYDqKEDO1J_xd9rElFw" transform="translate(415 72)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">ADMIN_RANK</tspan>
@@ -676,43 +706,43 @@
 			</text>
 			
 		</g>
-		<g id="_h11-gDqLEDO1J_xd9rElFw" transform="translate(1007 912)">
-			<rect x="0" y="0" width="240" height="112" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="240" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="240" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="240" height="112" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="120" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_OF_INGREDIENT</text>
+		<g id="_h11-gDqLEDO1J_xd9rElFw" transform="translate(1135 922)">
+			<rect x="0" y="0" width="277" height="112" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="277" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="277" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="277" height="112" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="139" y="16" text-anchor="middle" font-weight="bold" fill="#333">PICTURE_OF_INGREDIENT</text>
 			<g id="_yiuLgDqLEDO1J_xd9rElFw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_PHOTO_OF_INGREDIENT: SERIAL</text>
+				<text x="18" y="42" fill="#000000">POI_ID_PICTURE_OF_INGREDIENT: SERIAL</text>
 				
 			</g>
 			<g id="_7N7oIDqLEDO1J_xd9rElFw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">FK_ID_INGREDIENT: INTEGER</text>
+				<text x="18" y="65" fill="#000000">POI_FK_ID_INGREDIENT: INTEGER</text>
 				
 			</g>
 			<g id="_9xDFIDqLEDO1J_xd9rElFw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">FK_ID_PHOTO: INTEGER</text>
+				<text x="18" y="88" fill="#000000">POI_FK_ID_PICTURE: INTEGER</text>
 				
 			</g>
 			
 		</g>
-		<g id="_djZfoDqQEDO1J_xd9rElFw" transform="translate(347 992)">
-			<rect x="0" y="0" width="210" height="62" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="210" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="210" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="210" height="62" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="105" y="16" text-anchor="middle" font-weight="bold" fill="#333">PHOTO_OF_USER</text>
+		<g id="_djZfoDqQEDO1J_xd9rElFw" transform="translate(455 1012)">
+			<rect x="0" y="0" width="253" height="66" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="253" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="253" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="253" height="66" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="127" y="16" text-anchor="middle" font-weight="bold" fill="#333">PICTURE_OF_USER</text>
 			<g id="_fL_OEDqQEDO1J_xd9rElFw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_PHOTO_OF_USER: INTEGER</text>
+				<text x="18" y="42" fill="#000000">POU_ID_PICTURE_OF_USER: INTEGER</text>
 				
 			</g>
 			
 		</g>
-		<g id="_okrI4U1hEDOGfY8mob7tSQ" transform="translate(77 32)">
+		<g id="_okrI4U1hEDOGfY8mob7tSQ" transform="translate(205 32)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">SERIAL</tspan>
@@ -720,30 +750,30 @@
 			</text>
 			
 		</g>
-		<g id="_pz6wUFnwEDOJJIo2_xyKqw" transform="translate(627 532)">
-			<rect x="0" y="0" width="262" height="96" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
-			<rect x="0" y="0" width="262" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
-			<line x1="0" y1="24" x2="262" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
-			<rect fill-opacity="0.0" x="0" y="0" width="262" height="96" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
-			<text x="131" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE_STEP_SUCCESSFUL</text>
+		<g id="_pz6wUFnwEDOJJIo2_xyKqw" transform="translate(695 642)">
+			<rect x="0" y="0" width="294" height="96" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="294" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="294" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="294" height="96" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="147" y="16" text-anchor="middle" font-weight="bold" fill="#333">RECIPE_STEP_SUCCESSFUL</text>
 			<g id="_EXl78Fn0EDOJJIo2_xyKqw">
 				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
-				<text x="18" y="42" fill="#000000">ID_RECIPE_STEP_SUCCESSFUL: SERIAL</text>
+				<text x="18" y="42" fill="#000000">RSS_ID_RECIPE_STEP_SUCCESSFUL: SERIAL</text>
 				
 			</g>
 			<g id="_wIklQFnwEDOJJIo2_xyKqw">
 				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="65" fill="#000000">ID_MEMBER: INTEGER</text>
+				<text x="18" y="65" fill="#000000">RSS_ID_MEMBER: INTEGER</text>
 				
 			</g>
 			<g id="_xN7q0FnwEDOJJIo2_xyKqw">
 				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
-				<text x="18" y="88" fill="#000000">ID_RECIPE_STEP: INTEGER</text>
+				<text x="18" y="88" fill="#000000">RSS_ID_RECIPE_STEP: INTEGER</text>
 				
 			</g>
 			
 		</g>
-		<g id="_guo68Fn9EDOFbZLfCoO8sw" transform="translate(237 32)">
+		<g id="_guo68Fn9EDOFbZLfCoO8sw" transform="translate(335 22)">
 			<rect x="0" y="0" width="90" height="30" rx="4" ry="0" fill="url(#TypeWidget)" stroke="#888" stroke-width="1" />
 			<text y="8" text-anchor="middle" fill="#333">
 				<tspan x="46" dy="12">GENDER</tspan>
@@ -751,9 +781,96 @@
 			</text>
 			
 		</g>
+		<g id="_vPWxQGByEDOEPKixA6Cdxw" transform="translate(115 702)">
+			<rect x="0" y="0" width="201" height="142" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="201" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="201" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="201" height="142" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="101" y="16" text-anchor="middle" font-weight="bold" fill="#333">LEVEL</text>
+			<g id="_0psTAGByEDOEPKixA6Cdxw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">LVL_ID_LEVEL: SERIAL</text>
+				
+			</g>
+			<g id="_XX1LYGCGEDOEPKixA6Cdxw">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">LVL_LABEL: VARCHAR(100)</text>
+				
+			</g>
+			<g id="_aJvSUGCGEDOEPKixA6Cdxw">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">LVL_MAIN_PICTURE: INTEGER</text>
+				
+			</g>
+			<g id="_6F_-0GRQEDOg44uQDoTRKw">
+				<image x="2" y="98" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="111" fill="#000000">LVL_XP_MIN: INTEGER</text>
+				
+			</g>
+			<g id="_9LS70GRQEDOg44uQDoTRKw">
+				<image x="2" y="121" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="134" fill="#000000">LVL_XP_MAX: INTEGER</text>
+				
+			</g>
+			
+		</g>
+		<g id="_Lw24AGRGEDOg44uQDoTRKw" transform="translate(105 1172)">
+			<rect x="0" y="0" width="255" height="62" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="255" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="255" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="255" height="62" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="128" y="16" text-anchor="middle" font-weight="bold" fill="#333">PICTURE_OF_LEVEL</text>
+			<g id="_YTU6EGRGEDOg44uQDoTRKw">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">POL_ID_PICTURE_OF_LEVEL: INTEGER</text>
+				
+			</g>
+			
+		</g>
+		<g id="_vycZoGR3EDOkA6aQFVtNBA" transform="translate(1515 632)">
+			<rect x="0" y="0" width="252" height="102" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="252" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="252" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="252" height="102" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="126" y="16" text-anchor="middle" font-weight="bold" fill="#333">USTENSIL</text>
+			<g id="_xMk1UGR3EDOkA6aQFVtNBA">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">UST_ID_USTENSIL: SERIAL</text>
+				
+			</g>
+			<g id="_3tdo0GUOEDOMjrBePdBjpA">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIDDQEb3G+TKgAAATxJREFUOMvV079KA0EQBvBv727vzF5IQoKKoBbGzt5CsPEh9EFUkDyBrfgEdj6BpdjYWKgIAcGoCCbm1ITL/Ulus7u3FqKCiXilbjvf/BiGWeDfP/JTYe/4viIjXsgxZvheN7BpvrO1vph+z1njmjf3z8qOILvMddcs06TWZOm8HyfbAG4yAdXqXJna6YpDrQWDAGlKXbdAp7TWDUKI/hV49iVWZxlZms8jZxu4uAuNB29Adi5Hs2OBJB2CmgwlZsGhBixTQxKNOs8IRIJDqq9JpdLgQwHPH80a4wARSkil8EEoqaC5Rq6ZEYjiEEIIQL8TQipEQ47TdkYgjgWkTD8nEEJBJQLF14w78Lvt/tU1q3deesyZsOltK2g8PoVB7+Qg+yVu1I5mBsGAFSoVEichd4rTrcPasvp7n+kNv3CHpBFXDvYAAAAASUVORK5CYII=" />
+				<text x="18" y="65" fill="#000000">UST_LABEL_USTENSIL: VARCHAR(255)</text>
+				
+			</g>
+			
+		</g>
+		<g id="_5-c_0GbWEDOgeucDQV1DqQ" transform="translate(1485 812)">
+			<rect x="0" y="0" width="248" height="102" rx="2" ry="0" fill="#FFF" stroke="transparent" stroke-width="0" />
+			<rect x="0" y="0" width="248" height="24" rx="0" ry="0" fill="url(#TableWidget)" stroke="transparent" stroke-width="0" />
+			<line x1="0" y1="24" x2="248" y2="24" stroke-width="1.0" stroke="#6E6E6E" />
+			<rect fill-opacity="0.0" x="0" y="0" width="248" height="102" rx="2" ry="0" stroke="#6E6E6E" stroke-width="1" />
+			<text x="124" y="16" text-anchor="middle" font-weight="bold" fill="#333">USTENSIL_IN_RECIPE</text>
+			<g id="_9HgbcGbWEDOgeucDQV1DqQ">
+				<image x="2" y="29" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFGSURBVDjLY/j//z8DJZhhcBtwa5ou062Zhp0PV7udvjVNO5lkA25M1Cx4czL//+/PJ/8/3xX+9myrqgfRBtycppf26mDs398fFv//cKXh/5vjdf/vLg74ui1PMZIoA+4utF7/893K/z+e1f3/8WLW/w8X6/5/e9Tw/+YM+w9EGXBrpknbl7ud/789yPr//VHx/2/34/9/uxX6/2y9xWe8BtycqmvycJXbqac7Au59uhn3/9ttv//f70b//3oDqLlB7/uiCAXcXrg1wyDm7jyrc98ezfz/9U7w/2833f6fmWD+5Xyz6YtLLWYvlscpBOMNxIerPc7/eLbw/6dLFv+/XXP/f3aK9deZ0cpJO4KleA/EyfISjMbH6zxO/nzZ9v/rTd//ZyZZfZ6bqBJLUkI62WvSenW+68vTvVYPlqarhg2DvEAMBgD1ZuZTUbWrEgAAAABJRU5ErkJggg==" />
+				<text x="18" y="42" fill="#000000">UIR_ID_USTENSIL_IN_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_BeUDoGbXEDOgeucDQV1DqQ">
+				<image x="2" y="52" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="65" fill="#000000">UIR_FK_ID_RECIPE: SERIAL</text>
+				
+			</g>
+			<g id="_B3_u8GbXEDOgeucDQV1DqQ">
+				<image x="2" y="75" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEUFxYuFIDgzwAAAVZJREFUOMvVk79qwlAYxU9uApoMEi6dRLDgFFxalDxAXdpHKHRycGjBoQXBJygU6nhbCAlCh0KLo1vBwcVJcCroILqJIGrNzfUSYp/AP8WpZ/3gx+/A+ZTNZoNjQnBkjgZou46e5xFCyKNpmhez2ey1WCy6fzIIw7CczWYrhUIhn06nn2q12uXBAM/zSpZlPWcyGYzHYyQSCZpKpRrVavX6oAq6rl9ZlkV83welFFEUwbZtg3P+AuB9r4GU8nuxWEBKCSEEdF1HEASYTqfqTgPXdfOUUpZMJk/W6zUIISCEIAxDNJtN0e/3S1sB9Xr9Jh6P3+dyuXPOOaIoQqvV8oUQK0VRMBwO7xzHaWwFmKb5YNv22WQygaZp6HQ6vNvtlgF8GoYBxtjPzh2oqioBIBaLod1ur3q93q3jOG8HD2k0Gn0tl8vT+XweDAaDCmPsY98Slf//TL8XzInjVYwe5AAAAABJRU5ErkJggg==" />
+				<text x="18" y="88" fill="#000000">UIR_FK_USTENSIL: SERIAL</text>
+				
+			</g>
+			
+		</g>
 		<g id="_zXSdIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="687,62 626,62" />
-			<g transform="translate(687,62)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="815,72 742,72" />
+			<g transform="translate(815,72)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -768,12 +885,12 @@
 			
 		</g>
 		<g id="_zXSdIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="626,62 626,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="742,72 742,159" />
 			
 		</g>
 		<g id="_zXSdIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="626,159 576,159" />
-			<g transform="translate(576,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="742,159 678,159" />
+			<g transform="translate(678,159)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -786,8 +903,8 @@
 			
 		</g>
 		<g id="_0IkwIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="687,344 627,344" />
-			<g transform="translate(687,344)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="815,354 742,354" />
+			<g transform="translate(815,354)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -802,12 +919,12 @@
 			
 		</g>
 		<g id="_0IkwIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="627,344 627,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="742,354 742,159" />
 			
 		</g>
 		<g id="_0IkwIDj4EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="627,159 576,159" />
-			<g transform="translate(576,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="742,159 678,159" />
+			<g transform="translate(678,159)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -820,8 +937,8 @@
 			
 		</g>
 		<g id="_C9ZPUDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="886,85 946,85" />
-			<g transform="translate(886,85)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1043,95 1089,95" />
+			<g transform="translate(1043,95)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -836,12 +953,12 @@
 			
 		</g>
 		<g id="_C9ZPUDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="946,85 946,39" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1089,95 1089,39" />
 			
 		</g>
 		<g id="_C9ZPUDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="946,39 1007,39" />
-			<g transform="translate(1007,39)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1089,39 1135,39" />
+			<g transform="translate(1135,39)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -854,8 +971,8 @@
 			
 		</g>
 		<g id="_rhE5YDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1558,322 1608,322" />
-			<g transform="translate(1558,322)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1760,332 1810,332" />
+			<g transform="translate(1760,332)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -870,12 +987,12 @@
 			
 		</g>
 		<g id="_rhE5YDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1608,322 1608,459" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1810,332 1810,459" />
 			
 		</g>
 		<g id="_rhE5YDj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1608,459 1549,459" />
-			<g transform="translate(1549,459)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1810,459 1746,459" />
+			<g transform="translate(1746,459)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -888,8 +1005,8 @@
 			
 		</g>
 		<g id="_tCXF8Dj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1337,345 1278,345" />
-			<g transform="translate(1337,345)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1515,355 1462,355" />
+			<g transform="translate(1515,355)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -904,12 +1021,12 @@
 			
 		</g>
 		<g id="_tCXF8Dj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1278,345 1278,39" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1462,355 1462,39" />
 			
 		</g>
 		<g id="_tCXF8Dj5EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1278,39 1209,39" />
-			<g transform="translate(1209,39)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1462,39 1363,39" />
+			<g transform="translate(1363,39)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -922,8 +1039,8 @@
 			
 		</g>
 		<g id="_UvVKcDj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1242,262 1276,262" />
-			<g transform="translate(1242,262)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1402,282 1464,282" />
+			<g transform="translate(1402,282)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -938,12 +1055,12 @@
 			
 		</g>
 		<g id="_UvVKcDj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1276,262 1276,39" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1464,282 1464,39" />
 			
 		</g>
 		<g id="_UvVKcDj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1276,39 1209,39" />
-			<g transform="translate(1209,39)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1464,39 1363,39" />
+			<g transform="translate(1363,39)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -956,8 +1073,8 @@
 			
 		</g>
 		<g id="_WRrG8Dj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="967,285 929,285" />
-			<g transform="translate(967,285)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1105,305 1086,305" />
+			<g transform="translate(1105,305)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -972,12 +1089,12 @@
 			
 		</g>
 		<g id="_WRrG8Dj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="929,285 929,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1086,305 1086,239" />
 			
 		</g>
 		<g id="_WRrG8Dj6EDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="929,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1086,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -990,8 +1107,8 @@
 			
 		</g>
 		<g id="_1fXDQDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1196,462 1300,462" />
-			<g transform="translate(1196,462)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1354,462 1473,462" />
+			<g transform="translate(1354,462)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1006,12 +1123,12 @@
 			
 		</g>
 		<g id="_1fXDQDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1300,462 1300,459" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1473,462 1473,459" />
 			
 		</g>
 		<g id="_1fXDQDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1300,459 1327,459" />
-			<g transform="translate(1327,459)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1473,459 1515,459" />
+			<g transform="translate(1515,459)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1024,8 +1141,8 @@
 			
 		</g>
 		<g id="_2lAcsDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="997,485 929,485" />
-			<g transform="translate(997,485)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1125,485 1085,485" />
+			<g transform="translate(1125,485)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1040,12 +1157,12 @@
 			
 		</g>
 		<g id="_2lAcsDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="929,485 929,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1085,485 1085,239" />
 			
 		</g>
 		<g id="_2lAcsDkAEDOniO2VLASIbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="929,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1085,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1058,8 +1175,8 @@
 			
 		</g>
 		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="997,642 930,642" />
-			<g transform="translate(997,642)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1155,652 1087,652" />
+			<g transform="translate(1155,652)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1074,12 +1191,12 @@
 			
 		</g>
 		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="930,642 930,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1087,652 1087,239" />
 			
 		</g>
 		<g id="_uoYu8DkBEDOj_ub0FU0Pbw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="930,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1087,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1092,8 +1209,8 @@
 			
 		</g>
 		<g id="_p4n-wDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="667,825 323,825" />
-			<g transform="translate(667,825)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="795,965 385,965" />
+			<g transform="translate(795,965)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1108,12 +1225,12 @@
 			
 		</g>
 		<g id="_p4n-wDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="323,825 323,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="385,965 385,159" />
 			
 		</g>
 		<g id="_p4n-wDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="323,159 377,159" />
-			<g transform="translate(377,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="385,159 445,159" />
+			<g transform="translate(445,159)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1126,8 +1243,8 @@
 			
 		</g>
 		<g id="_r5ki0DkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="866,802 932,802" />
-			<g transform="translate(866,802)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1027,942 1088,942" />
+			<g transform="translate(1027,942)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1142,12 +1259,12 @@
 			
 		</g>
 		<g id="_r5ki0DkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="932,802 932,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1088,942 1088,239" />
 			
 		</g>
 		<g id="_r5ki0DkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="932,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1088,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1160,8 +1277,8 @@
 			
 		</g>
 		<g id="_tacfsDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="566,685 931,685" />
-			<g transform="translate(566,685)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="677,815 1087,815" />
+			<g transform="translate(677,815)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1176,12 +1293,12 @@
 			
 		</g>
 		<g id="_tacfsDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="931,685 931,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1087,815 1087,239" />
 			
 		</g>
 		<g id="_tacfsDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="931,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1087,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1194,8 +1311,8 @@
 			
 		</g>
 		<g id="_vTivUDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="367,662 324,662" />
-			<g transform="translate(367,662)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="445,792 389,792" />
+			<g transform="translate(445,792)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1210,12 +1327,12 @@
 			
 		</g>
 		<g id="_vTivUDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="324,662 324,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="389,792 389,159" />
 			
 		</g>
 		<g id="_vTivUDkCEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="324,159 377,159" />
-			<g transform="translate(377,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="389,159 445,159" />
+			<g transform="translate(445,159)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1228,8 +1345,8 @@
 			
 		</g>
 		<g id="_tojXsDkDEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="566,708 618,708" />
-			<g transform="translate(566,708)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="677,838 738,838" />
+			<g transform="translate(677,838)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1242,12 +1359,12 @@
 			
 		</g>
 		<g id="_tojXsDkDEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="618,708 618,779" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="738,838 738,919" />
 			
 		</g>
 		<g id="_tojXsDkDEDOrbbpUkOhogw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="618,779 667,779" />
-			<g transform="translate(667,779)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="738,919 795,919" />
+			<g transform="translate(795,919)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1260,8 +1377,8 @@
 			
 		</g>
 		<g id="_pF9oEDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="882,1082 931,1082" />
-			<g transform="translate(882,1082)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1026,1212 1088,1212" />
+			<g transform="translate(1026,1212)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1276,12 +1393,12 @@
 			
 		</g>
 		<g id="_pF9oEDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="931,1082 931,229" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1088,1212 1088,239" />
 			
 		</g>
 		<g id="_pF9oEDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="931,229 891,229" />
-			<g transform="translate(891,229)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1088,239 1052,239" />
+			<g transform="translate(1052,239)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1294,8 +1411,8 @@
 			
 		</g>
 		<g id="_vA8_0DqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="677,1128 619,1128" />
-			<g transform="translate(677,1128)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="785,1258 764,1258" />
+			<g transform="translate(785,1258)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1310,12 +1427,12 @@
 			
 		</g>
 		<g id="_vA8_0DqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="619,1128 619,779" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="764,1258 764,919" />
 			
 		</g>
 		<g id="_vA8_0DqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="619,779 667,779" />
-			<g transform="translate(667,779)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="764,919 795,919" />
+			<g transform="translate(795,919)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1328,8 +1445,8 @@
 			
 		</g>
 		<g id="_4KRUwDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="882,1105 955,1105" />
-			<g transform="translate(882,1105)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1026,1235 1092,1235" />
+			<g transform="translate(1026,1235)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1344,12 +1461,12 @@
 			
 		</g>
 		<g id="_4KRUwDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="955,1105 955,1239" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1092,1235 1092,1369" />
 			
 		</g>
 		<g id="_4KRUwDqJEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="955,1239 884,1239" />
-			<g transform="translate(884,1239)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1092,1369 1029,1369" />
+			<g transform="translate(1029,1369)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1362,8 +1479,8 @@
 			
 		</g>
 		<g id="_hyF8YDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="288,159 330,159" />
-			<g transform="translate(288,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="350,169 384,169" />
+			<g transform="translate(350,169)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1376,12 +1493,12 @@
 			
 		</g>
 		<g id="_hyF8YDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="330,159 330,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="384,169 384,159" />
 			
 		</g>
 		<g id="_hyF8YDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="330,159 377,159" />
-			<g transform="translate(377,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="384,159 445,159" />
+			<g transform="translate(445,159)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1394,8 +1511,8 @@
 			
 		</g>
 		<g id="_urxkkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="687,482 61,482" />
-			<g transform="translate(687,482)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="815,538 98,538" />
+			<g transform="translate(815,538)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1410,12 +1527,12 @@
 			
 		</g>
 		<g id="_urxkkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="61,482 61,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="98,538 98,169" />
 			
 		</g>
 		<g id="_urxkkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="61,159 87,159" />
-			<g transform="translate(87,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="98,169 115,169" />
+			<g transform="translate(115,169)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1428,8 +1545,8 @@
 			
 		</g>
 		<g id="_3VhBkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="667,963 50,963" />
-			<g transform="translate(667,963)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="795,1103 84,1103" />
+			<g transform="translate(795,1103)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1444,12 +1561,12 @@
 			
 		</g>
 		<g id="_3VhBkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="50,963 50,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="84,1103 84,169" />
 			
 		</g>
 		<g id="_3VhBkDqKEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="50,159 87,159" />
-			<g transform="translate(87,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="84,169 115,169" />
+			<g transform="translate(115,169)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1462,8 +1579,8 @@
 			
 		</g>
 		<g id="_BeSBUDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="677,1262 322,1262" />
-			<g transform="translate(677,1262)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="795,1392 385,1392" />
+			<g transform="translate(795,1392)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1478,12 +1595,12 @@
 			
 		</g>
 		<g id="_BeSBUDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="322,1262 322,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="385,1392 385,159" />
 			
 		</g>
 		<g id="_BeSBUDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="322,159 377,159" />
-			<g transform="translate(377,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="385,159 445,159" />
+			<g transform="translate(445,159)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1496,8 +1613,8 @@
 			
 		</g>
 		<g id="__oiyQDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1247,972 1281,972" />
-			<g transform="translate(1247,972)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1412,982 1460,982" />
+			<g transform="translate(1412,982)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1512,12 +1629,12 @@
 			
 		</g>
 		<g id="__oiyQDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1281,972 1281,39" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1460,982 1460,39" />
 			
 		</g>
 		<g id="__oiyQDqLEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1281,39 1209,39" />
-			<g transform="translate(1209,39)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1460,39 1363,39" />
+			<g transform="translate(1363,39)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1530,8 +1647,8 @@
 			
 		</g>
 		<g id="_Bq65sDqMEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="1007,995 957,995" />
-			<g transform="translate(1007,995)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1135,1005 1094,1005" />
+			<g transform="translate(1135,1005)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1546,12 +1663,12 @@
 			
 		</g>
 		<g id="_Bq65sDqMEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="957,995 957,1239" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1094,1005 1094,1369" />
 			
 		</g>
 		<g id="_Bq65sDqMEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="957,1239 884,1239" />
-			<g transform="translate(884,1239)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1094,1369 1029,1369" />
+			<g transform="translate(1029,1369)">
 				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1564,8 +1681,8 @@
 			
 		</g>
 		<g id="_ilb2IDqQEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="557,1029 588,1029" />
-			<g transform="translate(557,1029)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="708,1049 722,1049" />
+			<g transform="translate(708,1049)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1578,12 +1695,12 @@
 			
 		</g>
 		<g id="_ilb2IDqQEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="588,1029 588,1239" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="722,1049 722,1369" />
 			
 		</g>
 		<g id="_ilb2IDqQEDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="588,1239 677,1239" />
-			<g transform="translate(677,1239)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="722,1369 795,1369" />
+			<g transform="translate(795,1369)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1596,8 +1713,8 @@
 			
 		</g>
 		<g id="_Diwy0DqREDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="377,389 270,389" />
-			<g transform="translate(377,389)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="445,435 420,435" />
+			<g transform="translate(445,435)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1612,12 +1729,12 @@
 			
 		</g>
 		<g id="_Diwy0DqREDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="270,389 270,1029" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="420,435 420,1049" />
 			
 		</g>
 		<g id="_Diwy0DqREDO1J_xd9rElFw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="270,1029 347,1029" />
-			<g transform="translate(347,1029)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="420,1049 455,1049" />
+			<g transform="translate(455,1049)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1630,8 +1747,8 @@
 			
 		</g>
 		<g id="_zQ8EYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="889,615 943,615" />
-			<g transform="translate(889,615)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="989,725 1118,725" />
+			<g transform="translate(989,725)">
 				<g transform="rotate(-90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1646,12 +1763,12 @@
 			
 		</g>
 		<g id="_zQ8EYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="943,615 943,619" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1118,725 1118,629" />
 			
 		</g>
 		<g id="_zQ8EYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="943,619 997,619" />
-			<g transform="translate(997,619)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1118,629 1155,629" />
+			<g transform="translate(1155,629)">
 				<g transform="rotate(90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
@@ -1664,8 +1781,8 @@
 			
 		</g>
 		<g id="_2UGTYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="627,592 322,592" />
-			<g transform="translate(627,592)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="695,702 680,702" />
+			<g transform="translate(695,702)">
 				<g transform="rotate(90)">
 					<g>
 						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
@@ -1680,13 +1797,251 @@
 			
 		</g>
 		<g id="_2UGTYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="322,592 322,159" />
+			<polyline fill="none" stroke-width="1" stroke="#000" points="680,702 680,159" />
 			
 		</g>
 		<g id="_2UGTYFnwEDOJJIo2_xyKqw">
-			<polyline fill="none" stroke-width="1" stroke="#000" points="322,159 377,159" />
-			<g transform="translate(377,159)">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="680,159 678,159" />
+			<g transform="translate(678,159)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_aurU8GCSEDOEPKixA6Cdxw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="445,320 350,320" />
+			<g transform="translate(445,320)">
 				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_aurU8GCSEDOEPKixA6Cdxw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="350,320 350,739" />
+			
+		</g>
+		<g id="_aurU8GCSEDOEPKixA6Cdxw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="350,739 316,739" />
+			<g transform="translate(316,739)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_okUGMGRPEDOg44uQDoTRKw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="115,785 95,785" />
+			<g transform="translate(115,785)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_okUGMGRPEDOg44uQDoTRKw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="95,785 95,1209" />
+			
+		</g>
+		<g id="_okUGMGRPEDOg44uQDoTRKw">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="95,1209 105,1209" />
+			<g transform="translate(105,1209)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_P4F84GR3EDOkA6aQFVtNBA">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="360,1209 580,1209" />
+			<g transform="translate(360,1209)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_P4F84GR3EDOkA6aQFVtNBA">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="580,1209 580,1369" />
+			
+		</g>
+		<g id="_P4F84GR3EDOkA6aQFVtNBA">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="580,1369 795,1369" />
+			<g transform="translate(795,1369)">
+				<g transform="rotate(90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_JIaokGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1733,895 1817,895" />
+			<g transform="translate(1733,895)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_JIaokGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1817,895 1817,669" />
+			
+		</g>
+		<g id="_JIaokGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1817,669 1767,669" />
+			<g transform="translate(1767,669)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_PdVjQGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1485,872 1085,872" />
+			<g transform="translate(1485,872)">
+				<g transform="rotate(90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_PdVjQGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1085,872 1085,239" />
+			
+		</g>
+		<g id="_PdVjQGbXEDOgeucDQV1DqQ">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1085,239 1052,239" />
+			<g transform="translate(1052,239)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_lHP8gHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1363,108 1430,108" />
+			<g transform="translate(1363,108)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_lHP8gHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1430,108 1430,959" />
+			
+		</g>
+		<g id="_lHP8gHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1430,959 1412,959" />
+			<g transform="translate(1412,959)">
+				<g transform="rotate(-90)">
+					<g>
+						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_yjKvEHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1052,446 1065,446" />
+			<g transform="translate(1052,446)">
+				<g transform="rotate(-90)">
+					<g>
+						<ellipse cx="0" cy="14" rx="4" ry="4" fill="#FFF" stroke="#000" stroke-width="1.0" />
+						<line x1="6" y1="0" x2="0" y2="8" stroke-width="1.0" stroke="#000" />
+						<line x1="0" y1="8" x2="-6" y2="0" stroke-width="1.0" stroke="#000" />
+						
+					</g>
+					
+				</g>
+				
+			</g>
+			
+		</g>
+		<g id="_yjKvEHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1065,446 1065,1189" />
+			
+		</g>
+		<g id="_yjKvEHBPEDOjuZKwmD9I0Q">
+			<polyline fill="none" stroke-width="1" stroke="#000" points="1065,1189 1026,1189" />
+			<g transform="translate(1026,1189)">
+				<g transform="rotate(-90)">
 					<g>
 						<line x1="6" y1="8" x2="-6" y2="8" stroke-width="1.0" stroke="#000" />
 						

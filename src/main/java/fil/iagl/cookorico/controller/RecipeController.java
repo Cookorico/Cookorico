@@ -78,9 +78,8 @@ public class RecipeController {
 		System.out.println(lst.size());
 		for (Recipe recipe : lst) {
 			System.out.println("RECETTE :");
-			System.out.println(recipe.getCreator().getIdMember());
 			System.out.println(recipe.getCreator());
-			System.out.println(recipe.getCreator().getUsername());
+			System.out.println(recipe.getName());
 		}
 		
 		return recipeService.getAllRecipes();
