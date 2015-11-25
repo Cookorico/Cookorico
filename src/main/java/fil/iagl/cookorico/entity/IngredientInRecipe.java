@@ -7,7 +7,6 @@ import org.apache.ibatis.type.Alias;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import fil.iagl.cookorico.enums.Measurement;
 import lombok.Data;
 
 @JsonSerialize
@@ -19,6 +18,6 @@ public class IngredientInRecipe {
 	private Ingredient ingredient;
 	private Recipe recipe;
 	private Integer quantity; //can be null
-	private Measurement unitOfMeasurement; //can be null
+	private String unitOfMeasurement; //can be null
 
 }
