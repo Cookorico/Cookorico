@@ -1,4 +1,5 @@
-angular.module('cookorico').controller('recipe', function($scope, $http) {
+angular.module('recipe', [])
+.controller('listingRecipeCtrl', function($scope, $http) {
     $http.get('/recipe/list')
     .success(function(data, status, headers, config) {
     	
@@ -14,9 +15,7 @@ angular.module('cookorico').controller('recipe', function($scope, $http) {
     .error(function(data, status, headers, config) {
         // log error
     });
-});
-
-angular.module('cookorico').controller('newrecipe', ['$scope','$http', function ($scope, $http) {
+}).controller('addRecipeCtrl', ['$scope','$http', function ($scope, $http) {
 	
 	var recipe;
 	//var user;
