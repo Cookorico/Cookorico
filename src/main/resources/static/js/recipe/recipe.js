@@ -1,5 +1,6 @@
 angular.module('cookorico').controller('recipe', function($scope, $http) {
-    $http.get('/recipe/list').success(function(data, status, headers, config) {
+    $http.get('/recipe/list')
+    .success(function(data, status, headers, config) {
     	
     	objects = data;
     	
@@ -9,7 +10,8 @@ angular.module('cookorico').controller('recipe', function($scope, $http) {
     	}
     	
         $scope.recipes = data;
-    }).error(function(data, status, headers, config) {
+    })
+    .error(function(data, status, headers, config) {
         // log error
     });
 });
