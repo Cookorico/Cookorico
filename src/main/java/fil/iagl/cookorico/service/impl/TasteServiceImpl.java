@@ -21,13 +21,11 @@ public class TasteServiceImpl implements TasteService{
 	}
 
 	@Override
-	public Taste getTastesById(Integer id) {
-		// TODO Auto-generated method stub
-		return tasteDao.getTastesById(id);
+	public List<Taste> getTastesByMember(Integer id) {
+		System.out.println("***************"+id);
+		return tasteDao.getTastesByMember(id);
 	}
-
 	
-
 	@Override
 	public boolean deleteTaste(Taste taste) {
 		// TODO Auto-generated method stub

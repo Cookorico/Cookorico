@@ -11,7 +11,7 @@ public interface TasteDao {
 
 	List<Taste> getAllTaste();
 	
-	Taste getTastesById(Integer id);
+	List<Taste> getTastesByMember(@Param("member") Integer id);
 	
 	boolean addTaste(@Param("taste") Taste taste, Ingredient ingredient);
 	
