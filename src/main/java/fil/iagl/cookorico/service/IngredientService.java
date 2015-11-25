@@ -12,6 +12,8 @@ public interface IngredientService {
 	
 	List<Ingredient> getAllIngredients();
 	
+	List<Ingredient> getAllIngredientsWithTags();
+	
 	Ingredient getIngredientById(int idIngredient);
 	
 	boolean deleteIngredient(@Param("ingredient") Ingredient ingredient); 

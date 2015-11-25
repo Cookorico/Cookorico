@@ -53,10 +53,11 @@
 	</insert>
 
 </mapper>
+
+
+
 <!-- 
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-
 <mapper namespace="BlogBestPractice">
 
 
@@ -100,11 +101,7 @@
 		
 		
 </mapper>
--->
 
-
-
-<!-- 
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Blog">
 
@@ -133,12 +130,12 @@
 		idAuthor as id, name, email FROM AUTHOR WHERE idBlog = #{idBlog}
 	</select>
 	
-	<select id="selectPosts" parameterType="int" resultType="Post" resultMap="resultPosts"> SELECT P.idPost as idPost, P.title as title, T.idTag as
+	<select id="selectPosts" parameterType="int" resultType="Post" resultMap="resultPosts">
+		SELECT P.idPost as idPost, P.title as title, T.idTag as
 		idTag, T.value as value FROM Post P left outer join Post_Tag PT on
 		P.idPost = PT.idPost left outer join Tag T on PT.idTag = T.idTag WHERE
 		P.idBlog = #{idBlog}   </select>
 		
 </mapper>
 -->
-
 
