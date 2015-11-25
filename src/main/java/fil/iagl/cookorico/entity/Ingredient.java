@@ -22,9 +22,8 @@ public class Ingredient {
 	private Timestamp modifDate;
 	private boolean validation;
 	private boolean disabled;
+	private Picture mainPicture;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<Picture> photos;
-	private Integer quantity; //can be null
-	private String unitOfMeasurement; //can be null
 
 }

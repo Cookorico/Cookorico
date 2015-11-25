@@ -27,6 +27,12 @@ public class IngredientServiceImpl implements IngredientService{
 		
 		return ingredientdao.getAllIngredients();
 	}
+	
+	@Override
+	public List<Ingredient> getAllIngredientsWithTags(){
+		
+		return ingredientdao.getAllIngredientsWithTags();
+	}
 
 	@Override
 	public Ingredient getIngredientById(int idIngredient) {
