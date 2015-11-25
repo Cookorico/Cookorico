@@ -1,4 +1,4 @@
-<pageheader pagename="Vos go�ts" subtitle="Go�ts que vous avez renseign�s"></pageheader>
+<pageheader pagename="Vos goûts" subtitle="Goûts que vous avez renseignés"></pageheader>
 <link href="js/taste/taste.css" rel="stylesheet" type="text/css">
 <div class="container" ng-controller="tasteCtrl">
 	<script type="text/ng-template" id="ingredient-tmpl">
@@ -64,7 +64,7 @@
 				</span>
 						</div>
 			<ul>
-				<li	ng-repeat="ingredient in bdd_taste.ingredients | filter:findIngredient">
+				<li	ng-repeat="ingredient in bdd_taste | filter:findIngredient">
 					<a ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
 					
 				</li>
@@ -78,7 +78,7 @@
 		<ul class="bs-glyphicons-list">
 			<li ng-repeat="ingredient in taste.ingredients">
 				<span aria-hidden="true">
-					<img src="{{ ingredient.url }}">
+					<img src="js/taste/radis.png">
 				</span> 
 				<span class="glyphicon-class">
 					{{ ingredient.name }} 

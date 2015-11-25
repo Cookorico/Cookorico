@@ -27,36 +27,47 @@ cookorico.directive('myEnter', function () {
 
 cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
-	$scope.bdd_taste = {
-			'ingredients':[
-				{
-				'url':'js/taste/artichaut.png',
-				'name':'choux',
-				'css_value': 'taste-eight',
-				'value':''
-			},
-			
-			{
-				'url':'js/taste/artichaut.png',
-				'name':'choux-fleur',
-				'css_value': 'taste-eight',
-				'value':''
-			},
-			{
-				'url':'js/taste/artichaut.png',
-				'name':'artichaut',
-				'css_value': 'taste-eight',
-				'value':''
-			},
-			{
-				'url':'js/taste/radis.png',
-				'name':'radis',
-				'css_value': 'taste-seven',
-				'value':''
-			}
-			]
-			
-	}
+//	$scope.bdd_taste = {
+//			'ingredients':[
+//				{
+//				'url':'js/taste/artichaut.png',
+//				'name':'choux',
+//				'css_value': 'taste-eight',
+//				'value':''
+//			},
+//			
+//			{
+//				'url':'js/taste/artichaut.png',
+//				'name':'choux-fleur',
+//				'css_value': 'taste-eight',
+//				'value':''
+//			},
+//			{
+//				'url':'js/taste/artichaut.png',
+//				'name':'artichaut',
+//				'css_value': 'taste-eight',
+//				'value':''
+//			},
+//			{
+//				'url':'js/taste/radis.png',
+//				'name':'radis',
+//				'css_value': 'taste-seven',
+//				'value':''
+//			}
+//			]
+//			
+//	}
+	
+	$http({
+	    method: 'GET',
+	    url: '/ingredients'
+	  }).success(function (data, status, headers, config) {
+		    $scope.bdd_taste = data;
+		    console.log($scope.bdd_taste);
+	  })
+	  .error(function (data, status, headers, config) {
+	    // erreur de récupération :(
+	  });
 	
 	$scope.taste = {
 			'ingredients':[]
@@ -65,13 +76,16 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.inputIngredient = '';
 	
 	$scope.findIngredient = function(ingredient){
-
-		return ingredient.name.indexOf($scope.inputIngredient) != -1 
-		&& $scope.inputIngredient.length >= 3 
-		&& $.inArray(ingredient, $scope.taste['ingredients']) == -1; 
+		if(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()))
+			console.log(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()));
+//		console.log($scope.inputIngredient.toLowerCase());
+		return ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()) 
+		&& $scope.inputIngredient.length >= 1 
+		&& $.inArray(ingredient.name.toLowerCase(), $scope.taste['ingredients']) == -1; 
 	}
 	
 	$scope.addPersonnalTaste = function(ingredient){
+		ingredient.name = ingredient.name.toLowerCase();
 		$scope.taste['ingredients'].push(ingredient);
 		$('input[type="number"]:first').focus();
 		$scope.inputIngredient = "";
