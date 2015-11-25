@@ -2,6 +2,27 @@
 <!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
   'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 
-<mapper namespace='UserMapper'>
+<mapper namespace='fil.iagl.cookorico.dao.TagDao'>
 
+
+    <resultMap type="fil.iagl.cookorico.entity.Tag" id="tagResultMap">
+    <id property='idTag' column='tag_id_tag'/>
+    <result property='name' column='tag_name'/>
+    <result property='tagType' column='tag_type'/>
+    <result property='creationDate' column='tag_creation_date' />
+    <!--  to do EVENTUEL, (à voir) (je sais pas) (peut etre) (possiblement) collection recipe, ingredient -->
+    <!-- <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" select="fil.iagl.cookorico.dao.Tagdao.selectTagFromIngredient" resultMap="fil.iagl.cookorico.dao.Tagdao.tagResultMap" />
+    -->
+  </resultMap>
+	
+	
+<!-- 
+  <select id="selectTagFromIngredient" parameterType="int" resultType="Tag" resultMap="tagResultMap">
+    SELECT tag_id_tag, tag_name, tag_type, tag_creation_date
+    From ingredient 
+    left join tag_to_ingredient on tti_fk_id_ingredient=igd_id_ingredient 
+    WHERE tti_fk_id_ingredient= #{id_ingredient}
+  </select>
+  -->
+  
 </mapper>

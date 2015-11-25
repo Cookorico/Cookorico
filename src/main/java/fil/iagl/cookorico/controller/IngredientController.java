@@ -21,12 +21,14 @@ public class IngredientController {
 	IngredientService ingredientService;
 	
 	
-	@RequestMapping(value="/ingredient/list", method = RequestMethod.GET)
-	public @ResponseBody List<Ingredient> getListIngredient() {
+	@RequestMapping(value="/ingredients", method = RequestMethod.GET)
+	public @ResponseBody List<Ingredient> getAllIngredients() {
 		
 		return ingredientService.getAllIngredients();
-
 	}
+	
+	
+	
 	@RequestMapping(value="/ingredient/list", method = RequestMethod.POST)
 	public boolean addIngredientToList(@RequestBody IngredientWrapper wrapper){
 		final String name = wrapper.getName();
