@@ -13,7 +13,6 @@
 		<result property='email' column='mbr_email' />
 		<result property='password' column='mbr_password' />
 		<result property='experience' column='mbr_experience' />
-		<result property='level' column='mbr_level' />
 		<result property='salt' column='mbr_salt' />
 		<result property='gender' column='mbr_gender' />
 		<result property='disabled' column='mbr_disabled' />
@@ -22,6 +21,8 @@
 		<result property='city' column='mbr_city' />
 		<result property='creationDate' column='mbr_creation_date' />
 		<result property='modifDate' column='mbr_modif_date' />
+		<association property='level' resultMap="fil.iagl.cookorico.dao.LevelDao.levelResultMap" />
+		
 	</resultMap>
   
   
@@ -32,11 +33,11 @@
   </select>
   
   <select id="getMemberWithCredentials" resultMap="memberResultMap">
-  	SELECT * FROM member WHERE mbr_username = #{username} AND mbr_password = #{password}
+  	SELECT * FROM member join level on lvl_id_level=mbr_level WHERE mbr_username = #{username} AND mbr_password = #{password}
   </select>
   
   <select id="getMemberWithUsername" parameterType="java.lang.String" resultMap="memberResultMap">
-  	SELECT * FROM member WHERE mbr_username = #{username}
+  	SELECT * FROM member join level on lvl_id_level=mbr_level WHERE mbr_username = #{username}
   </select>
   
   <select id="getMemberById" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMap" >

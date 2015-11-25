@@ -9,11 +9,14 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 	//Get user details
 	$http({
 		method: 'GET', 
-		url : '/user'
+		url : '/profile'
 	}).then(function successCallback(response) {
 
-		$scope.user = response.data.principal.member;
+		$scope.user = response.data;
 		
+		console.log($scope.user);
+		
+		/*
 		$http({
 			method: 'GET', 
 			url : '/level/xp/' + $scope.user.experience
@@ -22,6 +25,7 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 		}).error(function(data, status, header, config){
 			console.log(data, status, header, config);
 		});
+		*/
 			
 		
 	  }, function errorCallback(response) {

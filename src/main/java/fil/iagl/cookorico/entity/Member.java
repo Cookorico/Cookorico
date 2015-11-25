@@ -33,6 +33,6 @@ public class Member {
 	private Timestamp modifDate;
 	private Boolean disabled;
 	private Integer experience;
-	private Integer level;
+	private Level level;
 
 }

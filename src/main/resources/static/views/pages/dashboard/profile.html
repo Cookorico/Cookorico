@@ -4,7 +4,7 @@
 			style="background-image: url( 'images/profile-cover.jpg ');">
 			<div class="name-desg">
 				<h3>
-					{{user.firstname}} {{user.lastname}} <small>{{level.label_lvl}}</small>
+					{{user.firstname}} {{user.lastname}} <small>{{user.level.labelLvl}}</small>
 				</h3>
 			</div>
 		</div>
@@ -19,7 +19,7 @@
 		<div class="col-md-8 level">
 			<h3>Chef {{user.username}}</h3>
 			<p>
-				Level {{level.level_num}} <em>({{level.label_lvl}})</em>
+				Level {{user.level.levelNum}} <em>({{user.level.labelLvl}})</em>
 			</p>
 			<div class="progress">
 				<div class="progress-bar progress-bar-info" role="progressbar"
@@ -42,7 +42,7 @@
 						<li><strong>Prénom</strong> : {{user.firstname}}</li>
 						<li><strong>Nom</strong> : {{user.lastname}}</li>
 						<li><strong>Email</strong> : {{user.email}}</li>
-						<li><strong>Email</strong> : {{user.city}}</li>
+						<li><strong>Ville</strong> : {{user.city}}</li>
 						<li><strong>Genre</strong> : {{user.gender}}</li>
 						<li><strong>Anniversaire</strong> :15/10/1993</li>
 						<li><strong>Experience</strong> : {{user.experience }} pts</li>

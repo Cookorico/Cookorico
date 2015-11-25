@@ -37,7 +37,7 @@ public class MemberController {
 		
 		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 	    Member m = currentUser.getMember();
-	    
+	    System.out.println("ERGDRSGDSFGDQSGHTEHzefrgzerfeGFTEHSZERGSEFSDFSDFSDFSDF"+m.getLevel());
 		/*Member m = new Member();
 		m.setIdMember(1);
 		m.setUsername("Gordevil");
