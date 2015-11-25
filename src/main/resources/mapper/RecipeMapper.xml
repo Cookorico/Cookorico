@@ -26,11 +26,51 @@
 		<!-- TO DO EVENTUEL, LISTE RECIPE STEPS?  -->
 	</resultMap>
 
+	<sql id="select_all">
+		SELECT *
+		FROM recipe
+	</sql>
 
+	<sql id="join_creator">
+		LEFT JOIN member ON rcp_fk_creator=mbr_id_member
+	</sql>
+	
+	<sql id="join_tags">
+		LEFT JOIN tag_to_recipe ON ttr_fk_id_recipe=rcp_id_recipe
+    	LEFT JOIN tag ON ttr_fk_id_tag=tag_id_tag
+	</sql>
+	
+	<sql id="join_main_picture">
+		LEFT JOIN picture_in_recipe ON rcp_main_picture=pir_id_picture_in_recipe
+		LEFT JOIN picture ON pir_fk_id_picture=pic_id_picture
+	</sql>
+	
+	
 	<select id="getAllRecipes" resultMap="recipeResultMap">
-		SELECT * FROM recipe
+		<include refid="select_all"/>
+		<include refid="join_creator"/>
 	</select>
 	
+	<select id="getFullRecipes" resultMap="recipeResultMap">
+		<include refid="select_all"/>
+		<include refid="join_creator"/>
+		<include refid="join_main_picture"/>
+		<include refid="join_tags"/>
+	</select>
+	
+	  <select id="getAllRecipesWithMainPicture" resultMap="recipeResultMap">
+	 	 <include refid="select_all"/>
+		<include refid="join_creator"/>
+		<include refid="join_main_picture"/>
+	</select>
+	
+	<select id="getAllRecipesWithTags" resultMap="recipeResultMap">
+		<include refid="select_all"/>
+		<include refid="join_creator"/>
+		<include refid="join_tags"/>
+	</select>
+  
+  
 	<select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe"
 		parameterType="int">
 		SELECT * FROM recipe WHERE rcp_id_recipe = #{id}

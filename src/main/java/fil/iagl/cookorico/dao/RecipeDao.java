@@ -10,6 +10,12 @@ public interface RecipeDao {
 
 	List<Recipe> getAllRecipes();
 	
+	List<Recipe> getFullRecipes();
+	
+	List<Recipe> getAllRecipesWithTags();
+	
+	List<Recipe> getAllRecipesWithMainPicture();
+	
 	Recipe getRecipeWithName(@Param("name") String name);
 	
 	void addRecipe(@Param("recipe") Recipe recipe);

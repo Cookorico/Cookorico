@@ -3,22 +3,35 @@
 <mapper namespace="fil.iagl.cookorico.dao.PictureDao">
 
 	<resultMap type="fil.iagl.cookorico.entity.Picture" id="pictureResultMap">
-		<id property="id" column="id_photo" />
-		<result property="idMember" column="fk_id_member" />
-		<result property="filePath" column="file_path" />
-		<result property="fileName" column="file_name" />
-		<result property="title" column="title" />
-		<result property="description" column="description" />
-		<result property="creation_date" column="creation_date" />
-		<result property="disabled" column="disabled" />
+		<id property="idPicture" column="pic_id_picture" />
+		<result property="filePath" column="pic_file_path" />
+		<result property="fileName" column="pic_file_name" />
+		<result property="title" column="pic_title" />
+		<result property="description" column="pic_description" />
+		<result property="creationDate" column="pic_creation_date" />
+		<result property="disabled" column="pic_disabled" />
+		<association property="member" resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
 	</resultMap>
-	
+
 	<select id="getAllPictures" resultMap="pictureResultMap">
-		SELECT * FROM picture
-	</select>
-	
-	<select id="getMemberPicture" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Picture">
-		SELECT * FROM picture WHERE pic_fk_id_member=#{id_member}
+		SELECT * 
+		FROM picture
 	</select>
 
+	<select id="getPicturesFromMemberId" parameterType="Integer"
+		resultType="fil.iagl.cookorico.entity.Picture">
+		SELECT * 
+		FROM picture 
+		WHERE pic_fk_id_member=#{idMember}
+	</select>
+
+	<select id="getPicturesOfIngredient" parameterType="Integer"
+		resultType="fil.iagl.cookorico.entity.Picture">
+		SELECT * 
+		FROM picture 
+		LEFT JOIN picture_of_ingredient ON pic_id_picture=poi_fk_id_picture
+		WHERE poi_fk_id_ingredient=#{idIngredient}
+	</select>
+
+	
 </mapper>

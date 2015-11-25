@@ -55,7 +55,6 @@ public class CookoricoApplication {
 
         final PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/*Mapper.xml"));
-
         return sessionFactory.getObject();
     }
 
