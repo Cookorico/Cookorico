@@ -35,10 +35,10 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
     	});*/
 		
 		recipe = angular.toJson($scope.recipe);		
-		console.log(recipe);
+		console.log($scope.recipe);
 		
 		// send recipe to the recipe controller
-		$http({
+		/*$http({
     		method: 'POST', 
     		url : '/recipe/add',
     		data : recipe
@@ -48,6 +48,6 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
     	})
     	.error(function(data, status, header, config){
     		//console.log(data, status, header, config);
-    	});
+    	});*/
     };
 }]);
