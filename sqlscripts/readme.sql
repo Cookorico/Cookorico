@@ -8,6 +8,31 @@
   La boolean SUCCESSFUL dans note représente la validation de la recette par le membre.
 
 
+Trigramme:
+ADM ==> ADMINISTRATOR
+CMT ==> COMMENT
+IGD ==> INGREDIENT
+IIR ==> INGREDIENT_IN_RECIPE
+LVL ==> LEVEL
+MBR ==> MEMBER
+NOT ==> NOTE
+PIC ==> PICTURE
+PIR ==> PICTURE_IN_RECIPE
+POL ==> PICTURE_OF_LEVEL
+POI ==> PICTURE_OF_INGREDIENT
+POU ==> PICTURE_OF_USER
+RCP ==> RECIPE
+RSS ==> RECIPE_STEP_SUCCESSFUL
+RST ==> RECIPE_STEP
+TAG ==> TAG
+TTI ==> TAG_TO_INGREDIENT
+TTR ==> TAG_TO_RECIPE
+TST ==> TASTE
+UIR ==> USTENSIL_IN_RECIPE
+UST ==> USTENSIL
+
+
+
 
 */
 
@@ -41,14 +66,11 @@ ALTER SEQUENCE MEMBER_ID_MEMBER_SEQ OWNED BY MEMBER.ID_MEMBER;
 /*
 si des droits manquent
 */
-GRANT SELECT ON recipe TO cookorico;
-GRANT INSERT ON recipe TO cookorico;
-GRANT UPDATE ON recipe TO cookorico;
-GRANT DELETE ON recipe TO cookorico;
+GRANT SELECT, INSERT, UPDATE, DELETE ON recipe TO cookorico;
 GRANT USAGE, SELECT ON SEQUENCE recipe_id_recipe_seq TO cookorico;
 
 GRANT SELECT ON administrator TO cookorico;
 GRANT INSERT ON administrator TO cookorico;
 GRANT UPDATE ON administrator TO cookorico;
 GRANT DELETE ON administrator TO cookorico;
-GRANT USAGE, SELECT ON SEQUENCE administrator_id_administrator_seq TO cookorico;
+GRANT USAGE, SELECT ON SEQUENCE member_mbr_id_member_seq TO cookorico;

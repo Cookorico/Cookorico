@@ -48,7 +48,6 @@ public class IngredientController {
 		ingredient.setName(name);
 		
 		return ingredientService.deleteIngredient(ingredient);
-		
 	}
 		
 	

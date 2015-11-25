@@ -10,10 +10,10 @@ import lombok.Data;
 
 @JsonSerialize
 @Data
-@Alias("Photo")
-public class Photo {
+//@Alias("Picture")
+public class Picture {
 	
-	private Integer idPhoto;
+	private Integer idPicture;
 	private Member member;
 	private String filePath;
 	private String fileName;
