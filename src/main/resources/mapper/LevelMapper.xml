@@ -5,35 +5,26 @@
 <mapper namespace='fil.iagl.cookorico.dao.LevelDao'>
 
 	<resultMap type="fil.iagl.cookorico.entity.Level" id="levelResultMap">
-		<id property='idLevel' column='id_level' />
-		<result property='label_lvl' column='label_lvl' />
-		<result property='level_num' column='level_num' />
-		<result property='level_pic' column='level_pic' />
-		<result property='xp_min' column='xp_min' />
-		<result property='xp_max' column='xp_max' />
-	</resultMap>
-
-	<resultMap type="fil.iagl.cookorico.entity.Level" id="levelResultMapSingle">
-		<id property='idLevel' column='id_level' />
-		<result property='label_lvl' column='label_lvl' />
-		<result property='level_pic' column='level_pic' />
-		<result property='level_num' column='level_num' />
-		<result property='xp_min' column='xp_min' />
-		<result property='xp_max' column='xp_max' />
+		<id property='idLevel' column='lvl_id_level' />
+		<result property='labelLvl' column='lvl_label' />
+		<result property='levelNum' column='lvl_num' />
+		<result property='levelPic' column='lvl_main_picture' />
+		<result property='xpMin' column='lvl_xp_min' />
+		<result property='xpMax' column='lvl_xp_max' />
 	</resultMap>
 
 
 
-	<select id="getLevelByXp" parameterType="int"
+	<select id="getLevelByXP" parameterType="int"
 		resultType="fil.iagl.cookorico.entity.Level" resultMap="levelResultMap">
 		SELECT * FROM
-		level WHERE #{xp} >= xp_min AND xp_max > #{xp}
+		level WHERE #{xp} >= lvl_xp_min AND lvl_xp_max > #{xp}
 	</select>
 
 	<select id="getLevelById" parameterType="int"
 		resultType="fil.iagl.cookorico.entity.Level" resultMap="levelResultMap">
 		SELECT * FROM
-		level WHERE id_Level = #{id}
+		level WHERE lvl_id_Level = #{id}
 	</select>
 
 </mapper>

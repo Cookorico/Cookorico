@@ -6,16 +6,28 @@
 
 <!--   <resultMap type="Ingredient" id="ingredientResultMap"> -->
     <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientResultMap">
-    <id property='idIngredient' column='id_ingredient'/>
-    <result property='name' column='name'/>
-    <result property='description' column='description'/>
-<!--     <result property='currentAvatar' column='current_avatar'/> -->
-<!--     <result property='creationDate' column='creation_date'/> -->
-<!--     <result property='modifDate' column='modif_date'/> -->
-    <result property='disabled' column='disabled'/>
+    <id property='idIngredient' column='igd_id_ingredient'/>
+    <result property='name' column='igd_name'/>
+    <result property='description' column='igd_description'/>
+    <!-- TO DO igd_main_picture -->
+    <result property='creationDate' column='igd_creation_date' />
+	<result property='modifDate' column='igd_modif_date' />
+    <result property='disabled' column='igd_disabled'/>
+    <result property='validation' column='igd_validation'/>
+    <!--
+    <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" select="fil.iagl.cookorico.dao.TagDao.selectTagFromIngredient" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+    -->
+    <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+    
   </resultMap>
 	
-	
+  <select id="getAllIngredientsWithTags" resultMap="ingredientResultMap">
+    SELECT * 
+    From ingredient
+    left join tag_to_ingredient on tti_fk_id_ingredient=igd_id_ingredient
+    left join tag on tti_fk_id_tag=tag_id_tag
+  </select>
+
   <select id="getAllIngredients" resultMap="ingredientResultMap">
     SELECT * FROM ingredient
   </select>

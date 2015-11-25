@@ -6,7 +6,7 @@ import fil.iagl.cookorico.entity.Level;
 
 public interface LevelDao {
 
-	public Level getLevelByXp(@Param("xp") int xp);
+	public Level getLevelByXP(@Param("xp") int xp);
 	
 	public Level getLevelById(@Param("id") int id);
 }

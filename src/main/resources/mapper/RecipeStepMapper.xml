@@ -4,19 +4,6 @@
 
 <mapper namespace='fil.iagl.cookorico.dao.RecipeStepDao'>
 
-  <!-- <resultMap type="RecipeStep" id="recipeStepResultMapSingle"> -->
-  <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMapSingle">
-    <id property='idRecipeStep' column='id_recipe_step'/>
-    <result property='recipe.id' column='fk_id_recipe'/>
-    <result property='rank' column='rank'/>
-    <result property='name' column='name'/>
-    <result property='description' column='description'/>
-    <result property='durationTime' column='duration_time'/>
-    <result property='creationDate' column='creation_date'/> 
-    <result property='modifDate' column='modif_date'/>
-    <result property='disabled' column='disabled'/>
-  </resultMap>
-  
    
   <!-- <resultMap type="RecipeStep" id="recipeStepResultMap"> -->
   <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMap">

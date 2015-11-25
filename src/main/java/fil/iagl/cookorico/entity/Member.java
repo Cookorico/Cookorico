@@ -9,6 +9,9 @@ import org.apache.ibatis.type.Alias;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AccessLevel;
 
 @JsonSerialize
 @Data
@@ -24,13 +27,12 @@ public class Member {
 	private Date birthday;
 	private String gender;
 	private String city;
-	private Photo currentAvatar;
-	private List<Photo> photosOfUser;
+	private Picture mainPicture;
+	private List<Picture> photosOfUser;
 	private Timestamp creationDate;
 	private Timestamp modifDate;
 	private Boolean disabled;
 	private Integer experience;
-	private Integer level;
-	
+	private Level level;
 
 }

@@ -1,8 +1,17 @@
 package fil.iagl.cookorico.controller;
 
+import java.security.Principal;
+import java.util.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
+import org.apache.catalina.connector.Request;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.AdministratorService;
@@ -68,9 +78,8 @@ public class RecipeController {
 		System.out.println(lst.size());
 		for (Recipe recipe : lst) {
 			System.out.println("RECETTE :");
-			System.out.println(recipe.getCreator().getIdMember());
 			System.out.println(recipe.getCreator());
-			System.out.println(recipe.getCreator().getUsername());
+			System.out.println(recipe.getName());
 		}
 		
 		return recipeService.getAllRecipes();
@@ -79,36 +88,33 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody Recipe recipe){
+	public void addRecipe(@RequestBody ModelMap model){
 		
-		/*System.out.println(wrapper.getName());
-		System.out.println(wrapper.getDescription());
-		System.out.println(wrapper.getPreparationTime());
-		System.out.println(wrapper.getCookingTime());
-		
+		int preparationTime = Integer.valueOf(String.valueOf(model.get("preparationTime")));
+		int cookingTime = Integer.valueOf(String.valueOf(model.get("cookingTime")));
+		String description = String.valueOf(model.get("description"));
+		String name = String.valueOf(model.get("name"));
+		Date date = new Date();
+		Timestamp creationDate = new Timestamp(date.getTime());
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member creator = currentUser.getMember();
+		/*int creatorId = Integer.valueOf(String.valueOf(model.get("fk_creator")));
+		Member creator = memberService.getMemberById(creatorId);*/
 		
 		Recipe recipe = new Recipe();
-		recipe.setName(wrapper.getName());
-		recipe.setDescription(wrapper.getDescription());
-		Member createur = memberService.getMemberById(1);
+		recipe.setCookingTime(cookingTime);
+		recipe.setPreparationTime(preparationTime);
+		recipe.setDescription(description);
+		recipe.setName(name);
+		recipe.setCreationDate(creationDate);
+		recipe.setCreator(creator);
+		recipe.setDisabled(false);
+		recipe.setDifficulty(3); // TODO : a automatiser
+		recipe.setDishType("Entree"); // TODO : a automatiser
+		recipe.setModifDate(creationDate);
+		recipe.setValidation(false);
 		
-		System.out.println("#########");
-		System.out.println(createur.getUsername());
-		System.out.println(createur.getIdMember());
-		recipe.setCreator(createur);
-		
-		
-		System.out.println(recipe.getCookingTime());
-		recipeService.addRecipe(recipe);	
-		
-		System.out.println("UNE RECETTE A ETE AJOUTEE. VOICI LA LISTE DES RECETTES PRESENTES EN BASE DE DONNEES:");
-		
-		for(Recipe r : recipeService.getAllRecipes()){
-			System.out.println(r.getName());
-		}
-		/*Recipe recipe = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
-		System.out.println(recipe);*/
-		//return member;
+		this.recipeService.addRecipe(recipe);
 	}
 	
 }

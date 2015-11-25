@@ -1,18 +1,37 @@
-angular.module('profile', []).controller('profile',
-		function($scope, $http){
+window.app_version = 2;
 
-		$scope.user={
-				pseudo: "Max",
-				name :"Maxime",
-				gender: "Masculin",
-				email: "max@gmail.com",
-				birthday:"15/12/1993",
-				experience: "1235",
-				level: "3"
-		};
+angular.module('profile', ['angular.css.injector', 'auth'])
+.controller('profileCtrl', function ($scope, $http, auth, cssInjector) {
 
+	$scope.user= {};
+	$scope.level ={};
+
+	//Get user details
+	$http({
+		method: 'GET', 
+		url : '/profile'
+	}).then(function successCallback(response) {
+
+		$scope.user = response.data;
 		
+		console.log($scope.user);
+		
+		/*
+		$http({
+			method: 'GET', 
+			url : '/level/xp/' + $scope.user.experience
+		}).success(function(data, status, header, config){
+			$scope.level = data;
+		}).error(function(data, status, header, config){
+			console.log(data, status, header, config);
+		});
+		*/
+			
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
+	
+	
 
-		}
-
-);
+});
