@@ -1,11 +1,12 @@
 <pageheader pagename="Nouvelle recette" subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
 <div class="container">
-	<div class="" style="padding:17px;"  ng-controller="newrecipe as AddRecipeCtrl">
-	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="AddRecipeCtrl.add()" novalidate> 
+	<div class="" style="padding:17px;"  ng-controller="addRecipeCtrl">
+	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="addRecipeCtrl.add()" novalidate> 
+	    	
 	    	<div class="form-group">
-	    		<label class="control-label">Photo</label>
-	        	<input id="input-24" type="file" multiple=true class="file-loading">
-	        </div>	    	
+	    		<label for="recipepreparationtime">Photo :</label>
+	            <input class="form-control" name="picFile" id="picFile" type="file" ng-model="recipe.picFile" accept="image/*" >
+	        </div>
 	    	<div class="form-group">
 	    		<label for="recipename">Nom de la recette :</label>
 	        	<input class="form-control" name="recipeName" id="recipeName" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
@@ -23,6 +24,10 @@
 	        <div class="form-group col-xs-12 col-sm-6 col-lg-8">
 	        	<label for="recipedescription">Description :</label>
 	        	<textarea class="form-control" name="recipeDescription" id="recipeDescription" type="textarea" rows="6" placeholder="description" ng-model="recipe.description" required></textarea>
+	        </div>
+	        <div class="form-group col-xs-12 col-sm-6 col-lg-8">
+	        	<label for="recipedifficulty">Difficultée (Entre 1 et 5):</label>
+		        <input class="form-control" name="recipeDifficulty" id="recipedifficulty" type="number" placeholder="Difficulté" ng-model="recipe.difficulty" required>
 	        </div>
 	        <br>
 	        <button id="btnAddRecipe" role="submit" class="btn btn-success btn-block">Créer</button>

@@ -1,5 +1,8 @@
-angular.module('cookorico').controller('recipe', function($scope, $http) {
-    $http.get('/recipe/list').success(function(data, status, headers, config) {
+
+angular.module('recipe', [])
+.controller('listingRecipeCtrl', function($scope, $http) {
+    $http.get('/recipes?mainpic=true')
+    .success(function(data, status, headers, config) {
     	
     	objects = data;
     	
@@ -8,13 +11,13 @@ angular.module('cookorico').controller('recipe', function($scope, $http) {
     	    //console.log(value);
     	}
     	
+    	console.log(data);
         $scope.recipes = data;
-    }).error(function(data, status, headers, config) {
+    })
+    .error(function(data, status, headers, config) {
         // log error
     });
-});
-
-angular.module('cookorico').controller('newrecipe', ['$scope','$http', function ($scope, $http) {
+}).controller('addRecipeCtrl', ['$scope','$http', function ($scope, $http) {
 	
 	var recipe;
 	//var user;
@@ -35,10 +38,10 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
     	});*/
 		
 		recipe = angular.toJson($scope.recipe);		
-		console.log(recipe);
+		console.log($scope.recipe);
 		
 		// send recipe to the recipe controller
-		$http({
+		/*$http({
     		method: 'POST', 
     		url : '/recipe/add',
     		data : recipe
@@ -48,6 +51,6 @@ angular.module('cookorico').controller('newrecipe', ['$scope','$http', function 
     	})
     	.error(function(data, status, header, config){
     		//console.log(data, status, header, config);
-    	});
+    	});*/
     };
 }]);

@@ -1,4 +1,3 @@
-
 window.app_version = 2;
 
 angular.module('profile', ['angular.css.injector', 'auth'])
@@ -10,34 +9,29 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 	//Get user details
 	$http({
 		method: 'GET', 
-		url : '/user'
-	}).success(function(data, status, header, config){
-		$scope.user = data.principal.member;
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
+		url : '/profile'
+	}).then(function successCallback(response) {
 
-	//Get user level
-	$http({
-		method: 'GET', 
-		url : '/user'
-	}).success(function(data, status, header, config){
-		$scope.user = data.principal.member;
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
-
+		$scope.user = response.data;
+		
+		console.log($scope.user);
+		
+		/*
+		$http({
+			method: 'GET', 
+			url : '/level/xp/' + $scope.user.experience
+		}).success(function(data, status, header, config){
+			$scope.level = data;
+		}).error(function(data, status, header, config){
+			console.log(data, status, header, config);
+		});
+		*/
+			
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
 	
-	console.log("/level/xp/" + $scope.user.experience);
 	
-	$http({
-		method: 'GET', 
-		url : '/level/xp/350'
-	}).success(function(data, status, header, config){
-		console.log(data);
-		$scope.level = data;
-	}).error(function(data, status, header, config){
-		console.log(data, status, header, config);
-	});
 
 });

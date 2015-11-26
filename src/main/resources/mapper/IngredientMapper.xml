@@ -10,26 +10,39 @@
     <result property='name' column='igd_name'/>
     <result property='description' column='igd_description'/>
     <!-- TO DO igd_main_picture -->
-    <result property='creationDate' column='igd_creation_date' />
 	<result property='modifDate' column='igd_modif_date' />
     <result property='disabled' column='igd_disabled'/>
     <result property='validation' column='igd_validation'/>
-    <!--
-    <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" select="fil.iagl.cookorico.dao.TagDao.selectTagFromIngredient" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
-    -->
+    <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.pictureResultMap' />
     <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
     
   </resultMap>
 	
+  <select id="getAllIngredients" resultMap="ingredientResultMap">
+    SELECT * FROM ingredient
+  </select>
+  
+    <select id="getFullIngredients" resultMap="ingredientResultMap">
+    SELECT * FROM ingredient
+    LEFT JOIN tag_to_ingredient ON tti_fk_id_ingredient=igd_id_ingredient
+    LEFT JOIN tag ON tti_fk_id_tag=tag_id_tag
+    LEFT JOIN picture_of_ingredient ON igd_main_picture=poi_id_picture_of_ingredient
+    LEFT JOIN picture ON poi_fk_id_picture=pic_id_picture
+  </select>
+  
   <select id="getAllIngredientsWithTags" resultMap="ingredientResultMap">
     SELECT * 
     From ingredient
     left join tag_to_ingredient on tti_fk_id_ingredient=igd_id_ingredient
     left join tag on tti_fk_id_tag=tag_id_tag
+    
   </select>
-
-  <select id="getAllIngredients" resultMap="ingredientResultMap">
-    SELECT * FROM ingredient
+  
+  <select id="getAllIngredientsWithMainPicture" resultMap="ingredientResultMap" >
+    SELECT * 
+    FROM ingredient
+    LEFT JOIN picture_of_ingredient ON igd_main_picture=poi_id_picture_of_ingredient
+    LEFT JOIN picture ON poi_fk_id_picture=pic_id_picture
   </select>
   
   <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
