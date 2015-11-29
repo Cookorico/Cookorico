@@ -6,7 +6,7 @@
  * @description
  * # pageHeader
  */
-angular.module('cookorico')
+cookoricoApp
 	.directive('pageheader',function(){
 		return {
         templateUrl:'scripts/directives/pageheader/pageheader.html?v='+window.app_version,

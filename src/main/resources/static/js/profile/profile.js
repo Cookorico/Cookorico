@@ -1,7 +1,6 @@
 window.app_version = 2;
 
-angular.module('profile', ['angular.css.injector', 'auth'])
-.controller('profileCtrl', function ($scope, $http, auth, cssInjector) {
+cookoricoApp.controller('profileCtrl', function ($scope, $http) {
 
 	$scope.user= {};
 	$scope.level ={};

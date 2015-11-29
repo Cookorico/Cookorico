@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('cookorico')
+cookoricoApp
     .controller('DashboardCtrl', function ($scope, $state, cssInjector) {
 
 

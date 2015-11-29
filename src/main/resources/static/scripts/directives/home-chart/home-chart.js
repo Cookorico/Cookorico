@@ -6,7 +6,7 @@
  * @description
  * # pageHeader
  */
-angular.module('cookorico')
+cookoricoApp
 	.directive('homeChart',function(){
 		return {
 	        templateUrl:'scripts/directives/home-chart/home-chart.html?v='+window.app_version,

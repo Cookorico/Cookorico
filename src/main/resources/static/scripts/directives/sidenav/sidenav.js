@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cookorico')
+cookoricoApp
 	.directive('sidenav',function(){
 		return {
 	        templateUrl:'scripts/directives/sidenav/sidenav.html?v='+window.app_version,

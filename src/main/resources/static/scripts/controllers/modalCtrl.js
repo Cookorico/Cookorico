@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of dashyAngular
  */
-angular.module('cookorico').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+cookoricoApp.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
@@ -32,7 +32,7 @@ angular.module('cookorico').controller('ModalDemoCtrl', function ($scope, $modal
   };
 });
 
-angular.module('dashyAngular').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+cookoricoApp.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {

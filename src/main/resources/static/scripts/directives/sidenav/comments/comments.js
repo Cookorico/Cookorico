@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cookorico')
+cookoricoApp
 	.directive('comments',function(){
 		return {
         templateUrl:'scripts/directives/sidenav/comments/comments.html?v='+window.app_version,

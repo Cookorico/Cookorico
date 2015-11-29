@@ -21,7 +21,7 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','an
             modalInstance.result.then(function (selectedItem) {
                 $scope.selected = selectedItem;
             }, function () {
-                window.location = '/dashboard';
+                window.location = '/';
             });
         };
 
@@ -60,8 +60,6 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
     };
 
     $scope.register = function() {
-
-        console.log("")
 
        $http.post("/user/register")
 
