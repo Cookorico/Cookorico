@@ -20,7 +20,7 @@
 	</select>
 	
 	<select id="getAllTaste" resultMap="tasteResultMap">
-		SELECT * FROM taste ;
+		SELECT * FROM taste
 	</select>
 	
 	 <insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
