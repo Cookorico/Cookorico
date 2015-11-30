@@ -71,9 +71,11 @@
 	</select>
   
   
-	<select id="getRecipeById" resultType="fil.iagl.cookorico.entity.Recipe"
-		parameterType="int">
-		SELECT * FROM recipe WHERE rcp_id_recipe = #{id}
+	<select id="getRecipeById" parameterType="int" resultMap="recipeResultMap">
+	    <include refid="select_all"/>
+		<include refid="join_creator"/>
+		<include refid="join_main_picture"/>
+		WHERE rcp_id_recipe = #{id}
 	</select>
 
 	<select id="getRecipeWithName" resultType="fil.iagl.cookorico.entity.Recipe"

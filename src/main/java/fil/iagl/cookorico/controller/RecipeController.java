@@ -39,7 +39,7 @@ public class RecipeController {
 	@Autowired
 	AdministratorService administratorService;
 	
-	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
 		/* // USED TO TEST WITHOUT DATABASE
@@ -54,7 +54,10 @@ public class RecipeController {
 		r1.setDifficulty("Facile");
 		r1.setDishType("Apéro");
 		return r1;*/
-		
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		System.out.println("ID = "+id);
+		System.out.println((Integer.parseInt(id)));
+		System.out.println(recipeService.getRecipeById(Integer.parseInt(id)));
 		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
 	

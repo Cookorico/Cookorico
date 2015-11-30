@@ -1,6 +1,6 @@
 
 angular.module('recipe', [])
-.controller('listingRecipeCtrl', function($scope, $http) {
+.controller('RecipesCtrl', function($scope, $http) {
     $http.get('/recipes?mainpic=true')
     .success(function(data, status, headers, config) {
     	
@@ -53,4 +53,23 @@ angular.module('recipe', [])
     		//console.log(data, status, header, config);
     	});*/
     };
+}]).controller('RecipeCtrl',  ['$scope','$stateParams','$http', function ($scope, $stateParams, $http, auth, cssInjector) {
+	console.log("-------------------- RecipeCtrl --------------------");
+	
+	
+	$http({
+		method: 'GET', 
+		url : '/recipe/'+$stateParams.idRecipe
+	}).then(function successCallback(response) {
+
+		$scope.recipe = response.data;
+		console.log(response.data);
+
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
+	
+	
+	
 }]);

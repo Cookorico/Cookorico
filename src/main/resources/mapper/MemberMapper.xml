@@ -41,7 +41,7 @@
   </select>
   
   <select id="getMemberById" parameterType="int" resultType="fil.iagl.cookorico.entity.Member" resultMap="memberResultMap" >
-  	SELECT * FROM member WHERE mbr_id_member = #{id}
+  	SELECT * FROM member join level on lvl_id_level=mbr_level WHERE mbr_id_member = #{id}
   </select>
 
   <insert id="addMember" parameterType="fil.iagl.cookorico.entity.Member">
