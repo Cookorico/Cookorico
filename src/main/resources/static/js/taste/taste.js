@@ -66,7 +66,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 		    console.log($scope.bdd_taste);
 	  })
 	  .error(function (data, status, headers, config) {
-	    // erreur de récupération :(
+	    // TODO : erreur de récupération :(
 	  });
 	
 	$scope.taste = {
