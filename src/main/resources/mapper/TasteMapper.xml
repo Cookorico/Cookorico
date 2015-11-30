@@ -2,26 +2,29 @@
 
 <mapper namespace="fil.iagl.cookorico.dao.TasteDao">
 
-	<!--
 	<resultMap type="fil.iagl.cookorico.entity.Taste" id="tasteResultMap">
-	<id property="id" column="idtaste"/>
-	<result property="grading" column="grading"/>
-	<result property="" column=""/>
-	<result property="creationDate" column="creationDate"/>
- 		<id property="id" column="ingredientResultMap"/> 
+	<id property='idTaste' column='tst_id_taste'/>
+	<result property='grading' column='tst_grading'/>
+	<result property='creationDate' column='tst_creationDate'/>
+	<result property='modifDate' column='tst_modif_date' />
+	<association property='member' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
+	<association property='ingredient' resultMap="fil.iagl.cookorico.dao.IngredientDao.ingredientResultMap" />
+	
 	</resultMap>
 	
-	<select id="getTasteById" resultType="Integer" resultMap="tasteResultMap">
-		select * from taste, member where member = #{id}; 
+	<select id="getTastesByMember" resultMap="tasteResultMap" parameterType="Integer">
+    	Select * 
+    	from taste 
+    	left join ingredient on tst_fk_id_ingredient=igd_id_ingredient 
+    	where tst_fk_id_member=#{id}
 	</select>
 	
-	<select id="getAllTaste" resultType="fil.iagl.cookorico.entity.Taste" resultMap="tasteResultMap">
-		SELECT * FROM taste ;
+	<select id="getAllTaste" resultMap="tasteResultMap">
+		SELECT * FROM taste
 	</select>
 	
 	 <insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
-		INSERT INTO taste ()
+		<!-- INSERT INTO taste () -->
 	</insert>
-	-->
 	
 </mapper>

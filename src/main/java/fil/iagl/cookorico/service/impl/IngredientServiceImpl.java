@@ -28,6 +28,25 @@ public class IngredientServiceImpl implements IngredientService{
 		return ingredientdao.getAllIngredients();
 	}
 	
+
+	@Override
+	/*
+	 * can probably be improved to avoid 4 differents requests...?
+	 */
+	public List<Ingredient> getAllIngredients(boolean mainpic, boolean tags) {
+		if(mainpic & tags){
+			return ingredientdao.getFullIngredients();
+		}
+		else if(mainpic){
+			return ingredientdao.getAllIngredientsWithMainPicture();
+		}
+		else if(tags){
+			return ingredientdao.getAllIngredientsWithTags();
+		}
+		return ingredientdao.getAllIngredients();
+	}
+	
+	
 	@Override
 	public List<Ingredient> getAllIngredientsWithTags(){
 		
@@ -45,6 +64,7 @@ public class IngredientServiceImpl implements IngredientService{
 		// TODO Auto-generated method stub
 		return ingredientdao.deleteIngredient(ingredient);
 	}
+
 	
 	
 }

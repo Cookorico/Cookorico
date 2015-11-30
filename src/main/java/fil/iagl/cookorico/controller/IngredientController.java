@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,11 +23,11 @@ public class IngredientController {
 	
 	
 	@RequestMapping(value="/ingredients", method = RequestMethod.GET)
-	public @ResponseBody List<Ingredient> getAllIngredients() {
-		
-		return ingredientService.getAllIngredients();
+	public @ResponseBody List<Ingredient> getAllIngredients(
+			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
+			@RequestParam(value = "tags", required = false) boolean tags) {
+		return ingredientService.getAllIngredients(mainpic, tags);
 	}
-	
 	
 	
 	@RequestMapping(value="/ingredient/list", method = RequestMethod.POST)

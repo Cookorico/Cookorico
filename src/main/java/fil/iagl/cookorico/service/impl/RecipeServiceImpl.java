@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fil.iagl.cookorico.dao.RecipeDao;
+import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.RecipeService;
 
@@ -28,6 +29,24 @@ public class RecipeServiceImpl implements RecipeService{
 		return recipeDao.getAllRecipes();
 	}
 
+	@Override
+	/*
+	 * can probably be improved to avoid 4 differents requests...?
+	 */
+	public List<Recipe> getAllRecipes(boolean mainpic, boolean tags) {
+		if(mainpic & tags){
+			return recipeDao.getFullRecipes();
+		}
+		else if(mainpic){
+			return recipeDao.getAllRecipesWithMainPicture();
+		}
+		else if(tags){
+			return recipeDao.getAllRecipesWithTags();
+		}
+		return recipeDao.getAllRecipes();
+	}
+	
+	
 	@Override
 	public Recipe getRecipeById(int id) {
 		return recipeDao.getRecipeById(id);
