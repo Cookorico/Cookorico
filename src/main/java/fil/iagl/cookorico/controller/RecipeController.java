@@ -102,10 +102,10 @@ public class RecipeController {
 		Member creator = memberService.getMemberById(creatorId);*/
 		
 		Recipe recipe = new Recipe();
+		recipe.setName(name);
 		recipe.setCookingTime(cookingTime);
 		recipe.setPreparationTime(preparationTime);
 		recipe.setDescription(description);
-		recipe.setName(name);
 		recipe.setCreationDate(creationDate);
 		recipe.setCreator(creator);
 		recipe.setDisabled(false);
@@ -113,6 +113,7 @@ public class RecipeController {
 		recipe.setDishType("Entree"); // TODO : a automatiser
 		recipe.setModifDate(creationDate);
 		recipe.setValidation(false);
+		recipe.setExperienceVal(5); // TODO : à automatiser
 		
 		this.recipeService.addRecipe(recipe);
 	}

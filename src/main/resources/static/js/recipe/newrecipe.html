@@ -1,8 +1,8 @@
 <pageheader pagename="Nouvelle recette" subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
+
 <div class="container">
 	<div class="" style="padding:17px;"  ng-controller="addRecipeCtrl">
-	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="addRecipeCtrl.add()" novalidate> 
-	    	
+	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="add()" novalidate> 
 	    	<div class="form-group">
 	    		<label for="recipepreparationtime">Photo :</label>
 	            <input class="form-control" name="picFile" id="picFile" type="file" ng-model="recipe.picFile" accept="image/*" >
