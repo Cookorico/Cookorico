@@ -60,10 +60,11 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
 	$http({
 	    method: 'GET',
-	    url: '/ingredients'
+	    url: '/ingredients?mainpic=true'
 	  }).success(function (data, status, headers, config) {
 		    $scope.bdd_taste = data;
-		    console.log($scope.bdd_taste);
+		    
+//		    console.log($scope.bdd_taste);
 	  })
 	  .error(function (data, status, headers, config) {
 	    // TODO : erreur de récupération :(
@@ -76,8 +77,8 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.inputIngredient = '';
 	
 	$scope.findIngredient = function(ingredient){
-		if(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()))
-			console.log(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()));
+//		if(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()))
+//			console.log(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()));
 //		console.log($scope.inputIngredient.toLowerCase());
 		return ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()) 
 		&& $scope.inputIngredient.length >= 1 

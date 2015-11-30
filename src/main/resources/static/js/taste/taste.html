@@ -78,7 +78,7 @@
 		<ul class="bs-glyphicons-list">
 			<li ng-repeat="ingredient in taste.ingredients">
 				<span aria-hidden="true">
-					<img src="js/taste/radis.png">
+					<img src="({{ ingredient.mainPicure }} == 'null') ? ('js/taste/radis.png' :  {{ ingredient.mainPicture.filePath }} / {{ ingredient.mainPicture.fileName }})">
 				</span> 
 				<span class="glyphicon-class">
 					{{ ingredient.name }} 
