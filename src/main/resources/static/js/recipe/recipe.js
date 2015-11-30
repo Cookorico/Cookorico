@@ -17,40 +17,25 @@ angular.module('recipe', [])
     .error(function(data, status, headers, config) {
         // log error
     });
-}).controller('addRecipeCtrl', ['$scope','$http', function ($scope, $http) {
+}).controller('addRecipeCtrl', function ($scope, $location, $http) {
 	
-	var recipe;
-	//var user;
-	
-	this.add = function () {
-		/*
-		// get user info
-		$http({
-    		method: 'GET', 
-    		url : '/user'
-    	})
-    	.success(function(data, status, header, config){
-    		user = data.principal.member;
-    		$scope.recipe["fk_creator"] = user.idMember;
-    	})
-    	.error(function(data, status, header, config){
-    		//console.log(data);
-    	});*/
+	$scope.add = function () {
 		
-		recipe = angular.toJson($scope.recipe);		
-		console.log($scope.recipe);
+		var recipe = angular.toJson($scope.recipe);		
+		console.log($scope.recipe);		
 		
 		// send recipe to the recipe controller
-		/*$http({
+		$http({
     		method: 'POST', 
     		url : '/recipe/add',
     		data : recipe
     	})
     	.success(function(data, status, header, config){
-    		//console.log(data, status, header, config);
+    		$location.path('/recipe');
+    		//$flash.create('success', 'Recette crée', 'custom-class');
     	})
     	.error(function(data, status, header, config){
     		//console.log(data, status, header, config);
-    	});*/
+    	});
     };
-}]);
+});

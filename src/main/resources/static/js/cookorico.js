@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message', 'navigation',
+angular.module('cookorico', ['ngRoute', 'auth', 'flash', 'home', 'profile', 'recipe', 'message', 'navigation',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -20,34 +20,6 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
         'growlNotifications',
         'angular.css.injector'
     ])
-    //    .config(
-    //
-    //        function($routeProvider, $httpProvider, $locationProvider) {
-    //
-    //
-    //
-    //            $routeProvider
-    //                .when('/', {
-    //                templateUrl : 'js/home/home.html',
-    //                controller : 'home'
-    //            })
-    //                .when('/message', {
-    //                templateUrl : 'js/message/message.html',
-    //                controller : 'message'
-    //            }).when('/accueil', {
-    //                templateUrl : 'js/navigation/login.html',
-    //                controller : 'navigation'
-    //            }).otherwise('/');
-    //
-    //
-    //
-    //        }).run(function(auth) {
-    //
-    //    // Initialize auth module with the home page and login/logout path
-    //    // respectively
-    //    auth.init('/', '/accueil', '/logout');
-    //
-    //})
     .config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {
         cfpLoadingBarProvider.latencyThreshold = 5;
         cfpLoadingBarProvider.includeSpinner = false;

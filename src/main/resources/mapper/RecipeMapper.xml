@@ -89,7 +89,7 @@
 		rcp_fk_creator)
 		VALUES(#{recipe.name}, #{recipe.description},
 		#{recipe.preparationTime}, #{recipe.cookingTime},
-		#{recipe.experience_val}, #{recipe.creator.idMember})
+		#{recipe.experienceVal}, #{recipe.creator.idMember})
 	</insert>
 
 </mapper>
