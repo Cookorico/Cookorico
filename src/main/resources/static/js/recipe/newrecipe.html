@@ -2,6 +2,9 @@
 
 <div class="container">
 	<div class="" style="padding:17px;"  ng-controller="addRecipeCtrl">
+		
+		<div flash-message="3000"></div>
+		
 		<form role="form" name="addRecipeForm" class="form-horizontal" id="formAddRecipe" ng-submit="add()" novalidate>
 
 			<!-- Form Name -->
@@ -68,66 +71,16 @@
 			  </div>
 			</div>
 			
-			<!-- Button (Double) -->
+			<!-- Button -->
 			<div class="control-group">
 			  <label class="control-label" for="btnAddRecipe"></label>
 			  <div class="controls">
 			    <button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
-			    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger">Vider formulaire</button>
+			    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
 			  </div>
 			</div>
 		
 		</form>
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		<!-- 
-	    <form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="add()" novalidate> 
-	    	<div class="form-group">
-	    		<label for="recipepreparationtime">Photo :</label>
-	            <input class="form-control" name="picFile" id="picFile" type="file" ng-model="recipe.picFile" accept="image/*" >
-	        </div>
-	    	<div class="form-group">
-	    		<label for="recipename">Nom de la recette :</label>
-	        	<input class="form-control" name="recipeName" id="recipeName" type="text" placeholder="Recipe name" ng-model="recipe.name" required>
-	        </div>
-	        <div class="col-xs-6 col-lg-4">
-		        <div class="form-group row">
-		       		<label for="recipepreparationtime">Temps de préparation (en secondes) :</label>
-		        	<input class="form-control" name="recipePreparationTime" id="recipePreparationTime" type="number" placeholder="Preparation time" ng-model="recipe.preparationTime" required>
-		        </div>
-		        <div class="form-group row">
-		        	<label for="recipecookingtime">Temps de cuisson (en secondes) :</label>
-		        	<input class="form-control" name="recipeCookingTime" id="recipeCookingTime" type="number" placeholder="Cooking time" ng-model="recipe.cookingTime" required>
-		        </div>
-	        </div>
-	        <div class="form-group col-xs-12 col-sm-6 col-lg-8">
-	        	<label for="recipedescription">Description :</label>
-	        	<textarea class="form-control" name="recipeDescription" id="recipeDescription" type="textarea" rows="6" placeholder="description" ng-model="recipe.description" required></textarea>
-	        </div>
-	        <div class="form-group col-xs-12 col-sm-6 col-lg-8">
-	        	<label for="recipedifficulty">Difficultée (Entre 1 et 5):</label>
-		        <input class="form-control" name="recipeDifficulty" id="recipedifficulty" type="number" placeholder="Difficulté" ng-model="recipe.difficulty" required>
-	        </div>
-	        <br>
-	        <button id="btnAddRecipe" role="submit" class="btn btn-success btn-block">Créer</button>
-	    </form>
-	     -->
 	     
 	</div>
 </div>
