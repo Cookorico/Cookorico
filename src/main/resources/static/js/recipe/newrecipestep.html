@@ -1,0 +1,47 @@
+<link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
+<pageheader pagename="Nouvelle étape"
+	subtitle="Ajoutez une étape à votre recette"></pageheader>
+
+<div class="container">
+	<div class="" style="padding: 17px;" ng-controller="addRecipeStepCtrl">
+
+		<div class="container dynamicTile">
+			<div class="thumbnail  row header_recipe_step">
+				<div class="img-div col-md-4">
+					<img class="img-circle" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" />
+				</div>
+				<div class="caption col-md-10">
+					<h1>Nouvelle étape pour {{recipe.name}}</h1>
+				</div>
+			</div>
+		</div>
+
+		<form role="form" name="addRecipeForm" class="form" id="formAddRecipe"
+			ng-submit="addStep()" novalidate>
+			<div class="form-group">
+				<label for="recipe_step_name">Nom de l'étape :</label> <input
+					class="form-control" name="recipe_step_name" id="recipe_step_name"
+					type="text" placeholder="Nom de l'étape" ng-model="recipestep.name"
+					required>
+			</div>
+			<div class="col-xs-6 col-lg-4">
+				<div class="form-group row">
+					<label for="step_duration_time">durée de l'étape (en
+						secondes) :</label> <input class="form-control" name="step_duration_time"
+						id="step_duration_time" type="number" placeholder="Durée"
+						ng-model="recipestep.durationTime" required>
+				</div>
+			</div>
+			<div class="form-group col-xs-12 col-sm-6 col-lg-8">
+				<label for="recipedescription">Description :</label>
+				<textarea class="form-control" name="recipeDescription"
+					id="recipeDescription" type="textarea" rows="6"
+					placeholder="description" ng-model="recipestep.description"
+					required></textarea>
+			</div>
+			<br>
+			<button id="btnAddRecipeStep" role="submit"
+				class="btn btn-success btn-block">Ajouter l'étape</button>
+		</form>
+	</div>
+</div>

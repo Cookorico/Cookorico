@@ -279,6 +279,12 @@ angular.module('cookorico', ['ngRoute', 'auth', 'flash', 'home', 'profile', 'rec
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/recipe.html',
                 controller: 'RecipeCtrl'
+            })
+            .state('newrecipestep', {
+                url: '/recipe/:idRecipe/addstep',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/newrecipestep.html',
+                controller: 'addRecipeStepCtrl'
             });
     })
     .run(function () {

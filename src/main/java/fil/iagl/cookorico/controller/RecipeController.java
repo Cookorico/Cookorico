@@ -26,6 +26,7 @@ import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
+import fil.iagl.cookorico.service.RecipeStepService;
 
 @RestController
 public class RecipeController {
@@ -38,6 +39,7 @@ public class RecipeController {
 	
 	@Autowired
 	AdministratorService administratorService;
+	
 	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
@@ -94,7 +96,7 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody ModelMap model){
+	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
 		
 		int preparationTime = Integer.valueOf(String.valueOf(model.get("preparationTime")));
 		int cookingTime = Integer.valueOf(String.valueOf(model.get("cookingTime")));
@@ -122,6 +124,7 @@ public class RecipeController {
 		recipe.setExperienceVal(5); // TODO : à automatiser
 		
 		this.recipeService.addRecipe(recipe);
+		return recipe;
 	}
 	
 }

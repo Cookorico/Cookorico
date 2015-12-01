@@ -29,7 +29,7 @@
   </select>
   
   <insert id="addRecipeStep" parameterType="fil.iagl.cookorico.entity.RecipeStep">
-  	INSERT INTO recipe_step(fk_id_recipe, rank, name, description, duration_time) VALUES(#{recipeStep.recipe.id}, #{recipeStep.rank}, #{recipeStep.name}, #{recipeStep.description}, #{recipeStep.durationTime})
+  	INSERT INTO recipe_step(rst_fk_id_recipe, rst_rank, rst_name, rst_description, rst_duration_time) VALUES(#{recipeStep.recipe.idRecipe}, #{recipeStep.rank}, #{recipeStep.name}, #{recipeStep.description}, #{recipeStep.durationTime})
   </insert>
 
 </mapper>

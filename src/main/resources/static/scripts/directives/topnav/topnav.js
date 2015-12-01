@@ -56,3 +56,29 @@ angular.module('cookorico')
 	});
 
 
+
+angular.module('topnav', ['angular.css.injector', 'auth'])
+.controller('topnavCtrl', function ($scope, $http, auth, cssInjector) {
+		console.log("-------------------- menuCtrl --------------------");
+		$scope.user= {};
+		$scope.level ={};
+
+		//Get user details
+		$http({
+			method: 'GET', 
+			url : '/profile'
+		}).then(function successCallback(response) {
+
+			$scope.user = response.data;
+			
+			console.log($scope.user);
+			
+			
+		  }, function errorCallback(response) {
+				console.log(data, status, header, config);
+		  });
+		
+		
+
+	});
+
