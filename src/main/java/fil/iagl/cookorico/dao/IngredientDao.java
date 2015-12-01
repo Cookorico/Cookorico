@@ -10,6 +10,13 @@ public interface IngredientDao {
 	
 	List<Ingredient> getAllIngredients();
 	
+	List<Ingredient> getFullIngredients();
+	
+	List<Ingredient> getAllIngredientsWithTags();
+
+	List<Ingredient> getAllIngredientsWithMainPicture();
+
+	
 	Ingredient getIngredientById(int idIngredient);
 	
 	boolean deleteIngredient(@Param("ingredient") Ingredient ingredient);

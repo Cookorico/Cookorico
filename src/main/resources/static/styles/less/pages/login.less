@@ -1,0 +1,218 @@
+@yellow: #f9e38b;
+
+
+div.back {
+ 	width: 100%;
+ 	background: url(../images/login-bg.jpg);
+ 	background-size: cover;
+	height: 100%;
+	position: fixed;
+	top: 0;	
+	bottom: 0;
+	overflow: auto;
+}
+.errors {
+ 	margin-top: 50px;
+ 	margin-bottom: 20px;
+}
+
+.login-outer {
+	padding-top: 8%;
+	padding-bottom: 8%;
+	height: 100%;
+	a:hover {
+		text-decoration: none;
+	}
+	.login-wrap {
+		border-radius: 10px;
+		overflow: hidden;
+		max-width: 970px;
+		margin: 0 auto;
+		width: 90%;
+		height: 100%;
+		display: table;
+		min-height: 550px;
+		margin-bottom: 10px;
+
+		.login-left, .login-right {
+			display: table-cell;
+			vertical-align: middle;
+			width: 50%;
+			position: relative;
+		}
+
+		.login-left {
+			background-color:@brand-primary;
+			color: #fff;
+			.logo-lg {
+				text-transform: uppercase;
+				font-size: 32px;
+				color: #fff;
+				letter-spacing: -1px;
+				i {
+					color: @yellow;
+				}
+				&:hover, &:active, &:focus {
+					text-decoration: none;
+				}
+			}
+			.slogan {
+				font-size: 18px;
+				margin-top: 5px;
+				font-family: latothin;
+			}
+		}
+		.login-right {
+			background-color: #333;
+			color: #999;
+
+			.heading {
+				font-size: 21px;
+				padding:20px;
+				font-family: latothin;
+			}
+			.login-input-group {
+				input.form-control {
+					background: none;
+					border-radius: 0;
+					box-shadow: none;
+					border:none;
+					padding-left: 50px;
+					background-color: rgba(0,0,0,0.1);
+					height: 48px;
+					border-bottom: solid 1px rgba(0,0,0,0.05);
+					&:focus, &:active {
+						border-color: @brand-primary;
+					}
+				}
+				.login-input-group-addon {
+					position: absolute;
+					width: 50px;
+					text-align: center;
+					left: 0;
+					line-height: 48px;
+				}
+				&:last-child {
+					input.form-control {
+						border:none !important;
+					}
+				}
+			}
+			.btn {
+				background: none;
+				padding: 10px 30px;
+				border-radius: 0 30px 30px 0;
+				border:solid 2px @brand-primary;
+				border-left: none;
+				color: @brand-primary;
+				min-width: 160px;
+				.transition;
+				margin-top: 20px;
+				font-family: latothin;
+				&:hover, &:active, &:focus {
+					background-color: @brand-primary;
+					color: #fff;
+					box-shadow: none;
+				}
+			}
+			.login-other {
+				float: right;
+				width: 60%;
+				padding-right: 20px;
+				margin-top: -35px;
+				a {
+					display: inline-block;
+					padding: 3px;
+				}
+			}
+			.rightFooter {
+				position: absolute;
+				bottom: 0;
+				background-color: #222;
+				left: 0;
+				right: 0;
+				padding: 20px;
+				text-align: center;
+				font-size: 13px;
+				a {
+					color: #666;
+					&:hover {
+						color: #999;
+					}
+				}
+			}
+			.huge-heading {
+				margin: 0;
+				text-align: center;
+				font-size: 82px;
+				font-style: italic;
+				color: #666;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) { 
+
+	.login-outer {
+		height: auto;
+
+		.login-wrap { 
+			display: block;
+			.login-left, .login-right {
+				display: block;
+				width: 100%;
+			}
+			.login-left {
+				padding: 40px 20px;
+			}
+			.login-right {
+				border-radius: 0 0 10px 10px;
+				padding-top: 60px;
+				.rightFooter {
+					position: relative;
+					margin-top: 60px;
+					border-radius: 0 0 10px 10px;
+				}
+				.btn {
+					border-radius: 30px;
+					margin-left: 20px;
+					border: solid 2px @brand-primary;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) { 
+	.login-outer {
+		.login-wrap { 
+			.login-left {
+				.logo-lg {
+					font-size: 22px;
+				}
+				.slogan {
+					font-size: 16px;
+				}
+			}
+			.login-right {
+				.btn {
+					display: block;
+					margin: 30px auto 0;
+				}
+				.login-other {
+					float: none;
+					margin-top: 60px;
+					text-align: center;
+					width: auto;
+					padding-left: 25px;
+					a {
+						i {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

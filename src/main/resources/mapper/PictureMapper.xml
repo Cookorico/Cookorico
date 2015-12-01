@@ -1,0 +1,37 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="fil.iagl.cookorico.dao.PictureDao">
+
+	<resultMap type="fil.iagl.cookorico.entity.Picture" id="pictureResultMap">
+		<id property="idPicture" column="pic_id_picture" />
+		<result property="filePath" column="pic_file_path" />
+		<result property="fileName" column="pic_file_name" />
+		<result property="title" column="pic_title" />
+		<result property="description" column="pic_description" />
+		<result property="creationDate" column="pic_creation_date" />
+		<result property="disabled" column="pic_disabled" />
+		<association property="member" resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
+	</resultMap>
+
+	<select id="getAllPictures" resultMap="pictureResultMap">
+		SELECT * 
+		FROM picture
+	</select>
+
+	<select id="getPicturesFromMemberId" parameterType="Integer"
+		resultType="fil.iagl.cookorico.entity.Picture">
+		SELECT * 
+		FROM picture 
+		WHERE pic_fk_id_member=#{idMember}
+	</select>
+
+	<select id="getPicturesOfIngredient" parameterType="Integer"
+		resultType="fil.iagl.cookorico.entity.Picture">
+		SELECT * 
+		FROM picture 
+		LEFT JOIN picture_of_ingredient ON pic_id_picture=poi_fk_id_picture
+		WHERE poi_fk_id_ingredient=#{idIngredient}
+	</select>
+
+	
+</mapper>

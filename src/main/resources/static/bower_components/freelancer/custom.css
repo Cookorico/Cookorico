@@ -1,0 +1,33 @@
+
+#imgProto{  max-width: 60%;
+}
+
+.badge-user {
+    border : solid 1px;
+	background-color: blue;
+    max-width: 200px;
+    max-height: 200px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.panel-heading h3{
+    font-variant: small-caps;
+}
+
+.profile {
+    background-color: rgb(24, 188, 156);
+}
+
+.user-info {
+	margin-top: 20px;
+    background-color: black;
+}
+
+.level{
+	margin-left:10px;
+}
+
+
+

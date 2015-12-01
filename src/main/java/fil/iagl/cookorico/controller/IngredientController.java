@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,12 +22,14 @@ public class IngredientController {
 	IngredientService ingredientService;
 	
 	
-	@RequestMapping(value="/ingredient/list", method = RequestMethod.GET)
-	public @ResponseBody List<Ingredient> getListIngredient() {
-		
-		return ingredientService.getAllIngredients();
-
+	@RequestMapping(value="/ingredients", method = RequestMethod.GET)
+	public @ResponseBody List<Ingredient> getAllIngredients(
+			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
+			@RequestParam(value = "tags", required = false) boolean tags) {
+		return ingredientService.getAllIngredients(mainpic, tags);
 	}
+	
+	
 	@RequestMapping(value="/ingredient/list", method = RequestMethod.POST)
 	public boolean addIngredientToList(@RequestBody IngredientWrapper wrapper){
 		final String name = wrapper.getName();
@@ -48,7 +51,6 @@ public class IngredientController {
 		ingredient.setName(name);
 		
 		return ingredientService.deleteIngredient(ingredient);
-		
 	}
 		
 	

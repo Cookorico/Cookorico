@@ -1,62 +1,139 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html ng-app="cookorico">
+	<head>
+		<title>Cookorico | Bienvenu(e) !</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<base href="/"/>
+		
+		<!-- css files -->
+		<link href="styles/angular-flash.css" rel="stylesheet">
+		<link href="bower_components/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bower_components/freelancer/custom.css" rel="stylesheet">
+		<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		
+		<!--<style type="text/css">-->
+		    <!--[ng\:cloak], [ng-cloak], .ng-cloak {-->
+		        <!--display: none !important;-->
+		    <!--}-->
+		<!--</style>-->
+	</head>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Cookorico - Page d'accueil</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css">
-
-    <link href="css/custom.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top" class="index" ng-app="cookorico" class="container" ng-controller="navigation">
-
-<div ng-view ></div>
-
-
-<!-- jQuery -->
-<script src="js/jquery-2.1.4.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpAnimatedHeader.js"></script>
-
-
-<!-- AngularJS -->
-
-<script src="js/angular.min.js" type="text/javascript"></script>
-<script src="js/angular-route.min.js" type="text/javascript"></script>
-
-<script src="js/modules/app.js" type="text/javascript"></script>
-<script src="js/modules/controller/navigationCtlr.js" type="text/javascript"></script>
-<script src="js/modules/login.js" type="text/javascript"></script>
-
-
-<!-- Custom Theme JavaScript -->
-<script src="js/freelancer.js"></script>
-
-</body>
-
+	<body ng-cloak id="page-top" class="index">
+		
+		<!--  msg duration 5000 milli-secs -->
+		<div flash-message="5000" ></div> 
+		
+		<!-- page content here -->
+		<div ui-view></div>
+		
+		<!-- bower js files -->
+		<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="bower_components/jquery.easing/js/jquery.easing.min.js" type="text/javascript"></script>
+		<script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+		<script src="bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+		<script src="bower_components/angular-cookies/angular-cookies.min.js" type="text/javascript"></script>
+		<script src="bower_components/angular-animate/angular-animate.min.js" type="text/javascript"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+		<script src="bower_components/freelancer/classie.js" type="text/javascript"></script>
+		<script src="bower_components/freelancer/freelancer.js" type="text/javascript"></script>
+		
+		<!-- build:js scripts/oldieshim.js -->
+		<!--[if lt IE 9]>
+			<script src="bower_components/es5-shim/es5-shim.js"></script>
+			<script src="bower_components/json3/lib/json3.js"></script>
+		<![endif]-->
+		
+		<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+		<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/rangy/rangy-core.js"></script>
+		<script src="bower_components/rangy/rangy-classapplier.js"></script>
+		<script src="bower_components/rangy/rangy-highlighter.js"></script>
+		<script src="bower_components/rangy/rangy-selectionsaverestore.js"></script>
+		<script src="bower_components/rangy/rangy-serializer.js"></script>
+		<script src="bower_components/rangy/rangy-textrange.js"></script>
+		<script src="bower_components/textAngular/src/textAngular.js"></script>
+		<script src="bower_components/textAngular/src/textAngular-sanitize.js"></script>
+		<script src="bower_components/textAngular/src/textAngularSetup.js"></script>
+		<script src="bower_components/fullcalendar/fullcalendar.js"></script>
+		<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+		<script src="bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+		<script src="bower_components/angular-perfect-scrollbar-4.1.1fixed/src/angular-perfect-scrollbar.js"></script>
+		<script src="bower_components/Chart.js/Chart.js"></script>
+		<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+		<script src="bower_components/d3/d3.js"></script>
+		<script src="bower_components/c3/c3.js"></script>
+		<script src="bower_components/c3-angular/c3js-directive.js"></script>
+		<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+		<script src="bower_components/angular-growl-v2/build/angular-growl.js"></script>
+		<script src="bower_components/angular-growl-notifications/dist/angular-growl-notifications.js"></script>
+		<script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+		<script src="bower_components/SHA-1/sha1.js"></script>
+		<script src="bower_components/angulartics/src/angulartics.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-adobe.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-chartbeat.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-clicky.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-cnzz.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-flurry.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-gtm.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-kissmetrics.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-mixpanel.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-piwik.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-scroll.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-segmentio.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-splunk.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-woopra.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-marketo.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-intercom.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-inspectlet.js"></script>
+		<script src="bower_components/angulartics/src/angulartics-newrelic-insights.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="bower_components/c3-angular/c3-angular.min.js"></script>
+		<script src="bower_components/angular-css-injector/angular-css-injector.min.js"></script>
+		
+		<!-- Angular modules files -->
+		<script src="js/home/home.js" type="text/javascript"></script>
+		<script src="js/cookorico.js" type="text/javascript"></script>
+		<script src="js/recipe/recipe.js" type="text/javascript"></script>
+		<script src="js/taste/taste.js"></script>
+		<script src="js/auth/auth.js" type="text/javascript"></script>
+		<script src="js/message/message.js" type="text/javascript"></script>
+		<script src="js/profile/profile.js" type="text/javascript"></script>
+		<script src="js/navigation/navigation.js" type="text/javascript"></script>
+	
+		<!-- Others scripts -->
+		<script src="scripts/angular-flash.js"></script>
+		<script src="scripts/controllers/login.js"></script>
+		<script src="scripts/controllers/dashboard.js"></script>
+		<script src="scripts/controllers/alertCtrl.js"></script>
+		<script src="scripts/controllers/btnCtrl.js"></script>
+		<script src="scripts/controllers/collapseCtrl.js"></script>
+		<script src="scripts/controllers/dateCtrl.js"></script>
+		<script src="scripts/controllers/dropdownCtrl.js"></script>
+		<script src="scripts/controllers/modalCtrl.js"></script>
+		<script src="scripts/controllers/paginationCtrl.js"></script>
+		<script src="scripts/controllers/popoverCtrl.js"></script>
+		<script src="scripts/controllers/tooltipCtrl.js"></script>
+		<script src="scripts/controllers/progressCtrl.js"></script>
+		<script src="scripts/controllers/tabsCtrl.js"></script>
+		<script src="scripts/controllers/chartCtrl.js"></script>
+		<script src="scripts/controllers/todoCtrl.js"></script>
+		<script src="scripts/controllers/maprogressionCtrl.js"></script>
+		<script src="scripts/directives/pageheader/pageheader.js"></script>
+		<script src="scripts/directives/sidenav/sidenav.js"></script>
+		<script src="scripts/directives/sidenav/menu/menu.js"></script>
+		<script src="scripts/directives/sidenav/comments/comments.js"></script>
+		<script src="scripts/directives/relink/relink.js"></script>
+		<script src="scripts/directives/sidenav/charts/charts.js"></script>
+		<script src="scripts/directives/to-do-list/to-do.js"></script>
+		<script src="scripts/directives/sidenav/calendar/calendar.js"></script>
+		<script src="scripts/directives/sidenav/notification/notification.js"></script>
+		<script src="scripts/directives/topnav/topnav.js"></script>
+		<script src="scripts/directives/footer/footer.js"></script>
+		<script src="scripts/directives/stats/stats.js"></script>
+		<script src="scripts/directives/home-chart/home-chart.js"></script>
+	</body>
 </html>

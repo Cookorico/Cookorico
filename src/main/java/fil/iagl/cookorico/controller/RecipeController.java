@@ -1,17 +1,32 @@
 package fil.iagl.cookorico.controller;
 
+import java.security.Principal;
+import java.util.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
+import org.apache.catalina.connector.Request;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import fil.iagl.cookorico.entity.Administrator;
+import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Member;
+import fil.iagl.cookorico.entity.Picture;
 import fil.iagl.cookorico.entity.Recipe;
+import fil.iagl.cookorico.entity.RecipeStep;
+import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
@@ -28,7 +43,7 @@ public class RecipeController {
 	@Autowired
 	AdministratorService administratorService;
 	
-	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
 		/* // USED TO TEST WITHOUT DATABASE
@@ -43,12 +58,17 @@ public class RecipeController {
 		r1.setDifficulty("Facile");
 		r1.setDishType("Apéro");
 		return r1;*/
-		
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		System.out.println("ID = "+id);
+		System.out.println((Integer.parseInt(id)));
+		System.out.println(recipeService.getRecipeById(Integer.parseInt(id)));
 		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
 	
-	@RequestMapping(value="/recipe/list", method = RequestMethod.GET)
-	public @ResponseBody List<Recipe> getListRecipe() {
+	@RequestMapping(value="/recipes", method = RequestMethod.GET)
+	public @ResponseBody List<Recipe> getListRecipe(
+			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
+			@RequestParam(value = "tags", required = false) boolean tags) {
 		/*
 		// USED TO TEST WITHOUT DATABASE
 		List<Recipe> lst = new ArrayList();
@@ -63,52 +83,55 @@ public class RecipeController {
 		lst.add(r1);
 		lst.add(r2);
 		
-		return lst;*/
+		return lst;
 		List<Recipe> lst = recipeService.getAllRecipes();
-		System.out.println(lst.size());
+		ystem.out.println(lst.size());
 		for (Recipe recipe : lst) {
 			System.out.println("RECETTE :");
-			System.out.println(recipe.getCreator().getIdMember());
 			System.out.println(recipe.getCreator());
-			System.out.println(recipe.getCreator().getUsername());
-		}
+			System.out.println(recipe.getName());
+		}*/
 		
-		return recipeService.getAllRecipes();
+		return recipeService.getAllRecipes(mainpic, tags);
 
 	}
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody Recipe recipe){
+	public void addRecipe(@RequestBody ModelMap model){
 		
-		/*System.out.println(wrapper.getName());
-		System.out.println(wrapper.getDescription());
-		System.out.println(wrapper.getPreparationTime());
-		System.out.println(wrapper.getCookingTime());
-		
-		
+		// get form data
+		int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
+		int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
+		int difficulty = Integer.valueOf(String.valueOf(model.get("rcp_difficulty")));
+		String description = String.valueOf(model.get("rcp_description"));
+		String name = String.valueOf(model.get("rcp_name"));
+		String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
+		Date date = new Date();
+		Timestamp creationDate = new Timestamp(date.getTime());
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member creator = currentUser.getMember();
+	    
+	    // create recipe object
 		Recipe recipe = new Recipe();
-		recipe.setName(wrapper.getName());
-		recipe.setDescription(wrapper.getDescription());
-		Member createur = memberService.getMemberById(1);
+		recipe.setName(name);
+		recipe.setDescription(description);
+		recipe.setPreparationTime(preparationTime);
+		recipe.setCookingTime(cookingTime);
+		recipe.setCreator(creator);
+		recipe.setDishType(dish_type);
+		recipe.setDifficulty(difficulty);
+		recipe.setDraft(false); // TODO : valeur par défaut ?
+		// TODO : recipe.setPicture(integer)
+		recipe.setCreationDate(creationDate);
+		recipe.setModifDate(creationDate);
+		recipe.setValidation(false);
+		// TODO : recipe.SetValidator(integer)
+		recipe.setDisabled(false);
+		recipe.setExperienceVal(5); // TODO : à automatiser
 		
-		System.out.println("#########");
-		System.out.println(createur.getUsername());
-		System.out.println(createur.getIdMember());
-		recipe.setCreator(createur);
-		
-		
-		System.out.println(recipe.getCookingTime());
-		recipeService.addRecipe(recipe);	
-		
-		System.out.println("UNE RECETTE A ETE AJOUTEE. VOICI LA LISTE DES RECETTES PRESENTES EN BASE DE DONNEES:");
-		
-		for(Recipe r : recipeService.getAllRecipes()){
-			System.out.println(r.getName());
-		}
-		/*Recipe recipe = memberService.getMember(wrapper.getUsername(), wrapper.getPassword());
-		System.out.println(recipe);*/
-		//return member;
+		// save the recipe to bdd
+		this.recipeService.addRecipe(recipe);
 	}
 	
 }

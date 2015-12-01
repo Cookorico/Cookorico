@@ -1,0 +1,120 @@
+<pageheader pagename="C3 Charts" subtitle="Chart examples"></pageheader>
+
+<div class="conter-wrapper">				
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">Line Chart		  
+						<div class="panel-control pull-right">
+							<a class="panelButton"><i class="fa fa-refresh"></i></a>
+							<a class="panelButton"><i class="fa fa-minus"></i></a>
+							<a class="panelButton"><i class="fa fa-remove"></i></a>
+						</div>
+					</h3>
+
+				</div>
+
+				<div class="panel-body" relink-event="resize">
+					<c3chart bindto-id="line-chart">
+					    <chart-column column-id="data-1" column-values="30,200,100,400,150,250" column-type="line"/>  
+					    <chart-column column-id="data-2" column-values="100,400,150,250,30,100" column-type="line"/>  
+					    <chart-legend show-legend="false"/>  
+					    <chart-colors color-pattern="#06c5ac,#e8b769,#d57d6d,#a2d19e,#80b1cb"/>  
+					    <chart-size chart-height="300" width="450" />
+					</c3chart>
+				</div>
+
+			</div>
+		</div>	
+		<div class="col-md-6">
+			<div class="panel panel-warning">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">Pie Chart		  
+						<div class="panel-control pull-right">
+							<a class="panelButton"><i class="fa fa-refresh"></i></a>
+							<a class="panelButton"><i class="fa fa-minus"></i></a>
+							<a class="panelButton"><i class="fa fa-remove"></i></a>
+						</div>
+					</h3>
+
+				</div>
+
+				<div class="panel-body" relink-event="resize">
+					<c3chart bindto-id="pie-chart">
+					    <chart-column column-id="data-1" column-values="10" column-type="pie"/>    
+		                <chart-column column-id="data-2" column-values="30" column-type="pie"/>      
+					    <chart-column column-id="data-3" column-values="5" column-type="pie"/>  
+					    <chart-column column-id="data-4" column-values="19" column-type="pie"/>  
+					    <chart-column column-id="data-5" column-values="2" column-type="pie"/>  
+					    <chart-legend show-legend="false"/>  
+					    <chart-colors color-pattern="#06c5ac,#e8b769,#d57d6d,#a2d19e,#80b1cb"/>  
+					    <chart-size chart-height="300" chart-width="400"/>
+					    
+					</c3chart>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-success">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">Donut Chart		  
+						<div class="panel-control pull-right">
+							<a class="panelButton"><i class="fa fa-refresh"></i></a>
+							<a class="panelButton"><i class="fa fa-minus"></i></a>
+							<a class="panelButton"><i class="fa fa-remove"></i></a>
+						</div>
+					</h3>
+
+				</div>
+
+				<div class="panel-body" relink-event="resize">
+					<c3chart bindto-id="donut-chart">
+					    <chart-column column-id="data-1" column-values="30" column-type="donut"/>  
+					    <chart-column column-id="data-2" column-values="100" column-type="donut"/>  
+					    <chart-column column-id="data-3" column-values="200" column-type="donut"/>  
+					    <chart-legend show-legend="false"/>  
+					    <chart-colors color-pattern="#d57d6d,#a2d19e,#80b1cb"/>  
+					    <chart-size chart-height="300" width="450" />
+					    
+					</c3chart>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-danger">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">Area Chart		  
+						<div class="panel-control pull-right">
+							<a class="panelButton"><i class="fa fa-refresh"></i></a>
+							<a class="panelButton"><i class="fa fa-minus"></i></a>
+							<a class="panelButton"><i class="fa fa-remove"></i></a>
+						</div>
+					</h3>
+
+				</div>
+
+				<div class="panel-body" relink-event="resize">
+					<c3chart bindto-id="area-chart">
+					    <chart-column column-id="data-1" column-values="30,200,100,400,150,250" column-type="area"/>  
+					    <chart-column column-id="data-2" column-values="100,400,150,250,30,100" column-type="area"/>  
+					    <chart-legend show-legend="false"/>  
+					    <chart-colors color-pattern="#d57d6d,#a2d19e,#80b1cb"/>  
+					    <chart-size chart-height="300" width="450" />
+					    
+					</c3chart>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+</div>
+	

@@ -1,0 +1,34 @@
+<div class="todo-container panel panel-danger">
+	<div class="panel-heading">
+		<div class="todo-header text-center">
+			<h4><i class="fa fa-tasks"></i>&nbsp; To-do List</h4>
+		</div>
+	</div>
+	<div class="panel-body bg-danger">
+		<div class="todo-body" ng-controller="todoCtrl">
+			<div class="todo-list-wrap">
+				<ul class="todo-list">
+					<li ng-repeat="todo in todos">
+						<label class="checkbox1 animated bounceInRight" for="{{todo.id}}"> 
+							<input id="{{todo.id}}" type="checkbox" class="" ng-model="todo.done">
+							<span></span>
+						</label>
+						<span class="done-{{todo.done}} animated bounceInRight">{{todo.text}}</span>
+					</li>
+				</ul>
+			</div>
+			<form class="form-horizontal todo-from-bottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="" ng-model="formTodoText" ng-model-instant >
+							<span class="input-group-btn">
+								<button class="btn btn-default" ng-click="addTodo()" type="submit">Add</button>
+							</span>
+				    	</div>	
+				    </div>				
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
