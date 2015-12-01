@@ -154,6 +154,12 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
                 templateUrl: 'views/pages/dashboard/profile.html?v=' + window.app_version,
                 controller: 'profileCtrl'
             })
+            .state('profileMember', {
+                url: '/profile/:idMember',
+                parent: 'dashboard',
+                templateUrl: 'js/profile/profileMember.html?v=' + window.app_version,
+                controller: 'profileMemberCtrl'
+            })
             .state('grid', {
                 url: '/grid',
                 parent: 'dashboard',
@@ -256,17 +262,23 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
             	parent: 'dashboard',
             	templateUrl : 'js/taste/taste.html?v=' + window.app_version
             })
-            .state('recipe', {
-                url: '/recipe',
+            .state('recipes', {
+                url: '/recipes',
                 parent: 'dashboard',
-                templateUrl: 'js/recipe/recipe.html',
-                controller: 'listingRecipeCtrl'
+                templateUrl: 'js/recipe/recipes.html',
+                controller: 'RecipesCtrl'
             })
             .state('newrecipe', {
                 url: '/newrecipe',
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/newrecipe.html',
                 controller: 'addRecipeCtrl'
+            })
+            .state('recipe', {
+                url: '/recipe/:idRecipe',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/recipe.html',
+                controller: 'RecipeCtrl'
             });
     })
     .run(function () {

@@ -11,7 +11,7 @@ public interface TasteService {
 	
 	public List<Taste> getAllTaste();
 	
-	public Taste getTastesById(Integer id);
+	public List<Taste> getTastesByMember(@Param("member") Integer id);
 	
 	public boolean addTaste(@Param("taste") Taste taste, @Param("ingredient") Ingredient ingredient);
 	

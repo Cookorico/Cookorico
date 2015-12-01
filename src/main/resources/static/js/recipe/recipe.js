@@ -1,6 +1,7 @@
+
 angular.module('recipe', ['flash', 'ngAnimate'])
-.controller('listingRecipeCtrl', function($scope, $http) {
-    $http.get('/recipe/list')
+.controller('RecipesCtrl', function($scope, $http) {
+    $http.get('/recipes?mainpic=true')
     .success(function(data, status, headers, config) {
     	
     	objects = data;
@@ -10,6 +11,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
     	    //console.log(value);
     	}
     	
+    	console.log(data);
         $scope.recipes = data;
     })
     .error(function(data, status, headers, config) {
@@ -31,11 +33,31 @@ angular.module('recipe', ['flash', 'ngAnimate'])
     	})
     	.success(function(data, status, header, config){
     		Flash.create('success', 'Votre nouvelle recette a été bien ajoutée !');
-    		$location.path('/dashboard/recipe');
+    		$location.path('/dashboard/recipes');
     	})
     	.error(function(data, status, header, config){
     		Flash.create('danger', 'Suite à une erreur votre recette na pas été sauvegardée');
     		$location.path('/dashboard/home');
     	});
     };
+}]).controller('RecipeCtrl',  ['$scope','$stateParams','$http', function ($scope, $stateParams, $http, auth, cssInjector) {
+	console.log("-------------------- RecipeCtrl --------------------");
+	
+	
+	$http({
+		method: 'GET', 
+		url : '/recipe/'+$stateParams.idRecipe
+	}).then(function successCallback(response) {
+
+		$scope.recipe = response.data;
+		console.log(response.data);
+
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
+	
+	
+	
 }]);
+

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,7 +43,7 @@ public class RecipeController {
 	@Autowired
 	AdministratorService administratorService;
 	
-	@RequestMapping(value="/recipe/id/{id}", method = RequestMethod.GET)
+	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
 		/* // USED TO TEST WITHOUT DATABASE
@@ -57,12 +58,17 @@ public class RecipeController {
 		r1.setDifficulty("Facile");
 		r1.setDishType("Apéro");
 		return r1;*/
-		
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		System.out.println("ID = "+id);
+		System.out.println((Integer.parseInt(id)));
+		System.out.println(recipeService.getRecipeById(Integer.parseInt(id)));
 		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
 	
-	@RequestMapping(value="/recipe/list", method = RequestMethod.GET)
-	public @ResponseBody List<Recipe> getListRecipe() {
+	@RequestMapping(value="/recipes", method = RequestMethod.GET)
+	public @ResponseBody List<Recipe> getListRecipe(
+			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
+			@RequestParam(value = "tags", required = false) boolean tags) {
 		/*
 		// USED TO TEST WITHOUT DATABASE
 		List<Recipe> lst = new ArrayList();
@@ -77,16 +83,16 @@ public class RecipeController {
 		lst.add(r1);
 		lst.add(r2);
 		
-		return lst;*/
+		return lst;
 		List<Recipe> lst = recipeService.getAllRecipes();
-		System.out.println(lst.size());
+		ystem.out.println(lst.size());
 		for (Recipe recipe : lst) {
 			System.out.println("RECETTE :");
 			System.out.println(recipe.getCreator());
 			System.out.println(recipe.getName());
-		}
+		}*/
 		
-		return recipeService.getAllRecipes();
+		return recipeService.getAllRecipes(mainpic, tags);
 
 	}
 	

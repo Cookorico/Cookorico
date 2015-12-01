@@ -24,6 +24,7 @@ public class Member {
 	private String lastname;
 	private String email;
 	private String password;
+	private String salt;
 	private Date birthday;
 	private String gender;
 	private String city;
