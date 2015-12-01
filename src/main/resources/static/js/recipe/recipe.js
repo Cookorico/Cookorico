@@ -11,7 +11,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
     	    //console.log(value);
     	}
     	
-    	console.log(data);
+    	//console.log(data);
         $scope.recipes = data;
     })
     .error(function(data, status, headers, config) {
@@ -22,9 +22,9 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	$scope.add = function () {
 		
 		var recipe = angular.toJson($scope.recipe);
-		console.log($scope.recipe);
-		console.log(recipe);
-		
+		//console.log($scope.recipe);
+		//console.log(recipe);
+		//
 		// send recipe to the recipe controller
 		$http({
     		method: 'POST', 
@@ -50,11 +50,11 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	}).then(function successCallback(response) {
 
 		$scope.recipe = response.data;
-		console.log(response.data);
+		//console.log(response.data);
 
 		
 	  }, function errorCallback(response) {
-			console.log(data, status, header, config);
+			//console.log(data, status, header, config);
 	  });
 	
 	
