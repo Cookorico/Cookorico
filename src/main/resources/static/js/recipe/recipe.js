@@ -20,8 +20,11 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 }).controller('addRecipeCtrl', ['$rootScope', '$scope', 'Flash', '$location', '$http',  function ($rootScope, $scope, Flash, $location, $http) {
 	
 	$scope.add = function () {
+		//Set the value of experienceVal
+		$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
 		
 		var recipe = angular.toJson($scope.recipe);
+	
 		console.log($scope.recipe);
 		console.log(recipe);
 		

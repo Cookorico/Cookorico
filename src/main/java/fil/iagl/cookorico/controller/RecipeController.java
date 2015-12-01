@@ -104,6 +104,7 @@ public class RecipeController {
 		int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
 		int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
 		int difficulty = Integer.valueOf(String.valueOf(model.get("rcp_difficulty")));
+		int experienceVal = Integer.valueOf(String.valueOf(model.get("rcp_experienceVal")));
 		String description = String.valueOf(model.get("rcp_description"));
 		String name = String.valueOf(model.get("rcp_name"));
 		String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
@@ -128,7 +129,7 @@ public class RecipeController {
 		recipe.setValidation(false);
 		// TODO : recipe.SetValidator(integer)
 		recipe.setDisabled(false);
-		recipe.setExperienceVal(5); // TODO : à automatiser
+		recipe.setExperienceVal(experienceVal); // TODO : à automatiser
 		
 		// save the recipe to bdd
 		this.recipeService.addRecipe(recipe);
