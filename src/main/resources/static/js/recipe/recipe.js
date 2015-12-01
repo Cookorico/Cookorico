@@ -15,7 +15,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
     .error(function(data, status, headers, config) {
         // log error
     });
-}).controller('addRecipeCtrl', ['$rootScope', '$scope', 'Flash', '$location', '$http',  function ($rootScope, $scope, Flash, $location, $http) {
+}).controller('addRecipeCtrl', ['$rootScope', '$scope', 'Flash', '$location', '$htt p',  function ($rootScope, $scope, Flash, $location, $http) {
 	
 	$scope.add = function () {
 		

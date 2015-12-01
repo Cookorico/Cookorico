@@ -1,10 +1,10 @@
 /**
  * Created by leemans on 03/11/15.
  */
-angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','angular.css.injector']).controller(
+cookorico.controller(
     'navigation',
 
-    function($scope, $route, $uibModal, cssInjector) {
+    function($scope, $route, $uibModal, cssInjector, $state) {
 
         cssInjector.add("bower_components/freelancer/freelancer.css");
         cssInjector.add("bower_components/freelancer/custom.css");
@@ -21,7 +21,8 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','an
             modalInstance.result.then(function (selectedItem) {
                 $scope.selected = selectedItem;
             }, function () {
-                window.location = '/dashboard';
+                $state.go('home');
+                //window.location = '/dashboard';
             });
         };
 
@@ -31,7 +32,7 @@ angular.module('navigation', ['ngRoute', 'auth', 'ngAnimate', 'ui.bootstrap','an
 
     });
 
-angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth, cssInjector) {
+cookorico.controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth, cssInjector) {
 
     $scope.credentials = {};
 
@@ -41,7 +42,7 @@ angular.module('navigation').controller('ModalInstanceCtrl', function ($scope, $
 
     $scope.authenticated = function() {
         return auth.authenticated;
-    }
+    };
 
     $scope.login = function() {
         auth.authenticate($scope.credentials, function(authenticated) {
