@@ -89,8 +89,6 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 				console.log(data, status, header, config);
 			});
 			
-				
-			
 		  }, function errorCallback(response) {
 				console.log(data, status, header, config);
 		  });
