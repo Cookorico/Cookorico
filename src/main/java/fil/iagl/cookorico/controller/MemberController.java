@@ -51,6 +51,13 @@ public class MemberController {
 		return m;
 	}
 	
+	@RequestMapping(value = "/profile/{id}", method = RequestMethod.GET)
+	public @ResponseBody Member getProfileById(@PathVariable int id) {
+		//En attendant recupération de l'user loggé ??
+		
+		Member m = memberService.getMemberById(id);
+		return m;
+	}
 	
 //	@RequestMapping(value = "/login", method = RequestMethod.POST)
 //	public Member login(@RequestBody LoginWrapper wrapper) {

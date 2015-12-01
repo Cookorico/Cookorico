@@ -6,6 +6,7 @@
 		<base href="/"/>
 		
 		<!-- css files -->
+		<link href="styles/angular-flash.css" rel="stylesheet">
 		<link href="bower_components/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet">
 		<link href="bower_components/freelancer/custom.css" rel="stylesheet">
 		<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +22,10 @@
 
 	<body ng-cloak id="page-top" class="index">
 		
-		<!-- page content here -->		
+		<!--  msg duration 5000 milli-secs -->
+		<div flash-message="5000" ></div> 
+		
+		<!-- page content here -->
 		<div ui-view></div>
 		
 		<!-- bower js files -->
@@ -101,6 +105,7 @@
 		<script src="js/navigation/navigation.js" type="text/javascript"></script>
 	
 		<!-- Others scripts -->
+		<script src="scripts/angular-flash.js"></script>
 		<script src="scripts/controllers/login.js"></script>
 		<script src="scripts/controllers/dashboard.js"></script>
 		<script src="scripts/controllers/alertCtrl.js"></script>

@@ -1,7 +1,6 @@
-
-angular.module('recipe', [])
+angular.module('recipe', ['flash', 'ngAnimate'])
 .controller('listingRecipeCtrl', function($scope, $http) {
-    $http.get('/recipes?mainpic=true')
+    $http.get('/recipe/list')
     .success(function(data, status, headers, config) {
     	
     	objects = data;
@@ -11,46 +10,32 @@ angular.module('recipe', [])
     	    //console.log(value);
     	}
     	
-    	console.log(data);
         $scope.recipes = data;
     })
     .error(function(data, status, headers, config) {
         // log error
     });
-}).controller('addRecipeCtrl', ['$scope','$http', function ($scope, $http) {
+}).controller('addRecipeCtrl', ['$rootScope', '$scope', 'Flash', '$location', '$http',  function ($rootScope, $scope, Flash, $location, $http) {
 	
-	var recipe;
-	//var user;
-	
-	this.add = function () {
-		/*
-		// get user info
-		$http({
-    		method: 'GET', 
-    		url : '/user'
-    	})
-    	.success(function(data, status, header, config){
-    		user = data.principal.member;
-    		$scope.recipe["fk_creator"] = user.idMember;
-    	})
-    	.error(function(data, status, header, config){
-    		//console.log(data);
-    	});*/
+	$scope.add = function () {
 		
-		recipe = angular.toJson($scope.recipe);		
+		var recipe = angular.toJson($scope.recipe);
 		console.log($scope.recipe);
+		console.log(recipe);
 		
 		// send recipe to the recipe controller
-		/*$http({
+		$http({
     		method: 'POST', 
     		url : '/recipe/add',
     		data : recipe
     	})
     	.success(function(data, status, header, config){
-    		//console.log(data, status, header, config);
+    		Flash.create('success', 'Votre nouvelle recette a été bien ajoutée !');
+    		$location.path('/dashboard/recipe');
     	})
     	.error(function(data, status, header, config){
-    		//console.log(data, status, header, config);
-    	});*/
+    		Flash.create('danger', 'Suite à une erreur votre recette na pas été sauvegardée');
+    		$location.path('/dashboard/home');
+    	});
     };
 }]);
