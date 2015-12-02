@@ -44,7 +44,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			$location.path('/dashboard/home');
 		});
 	};
-}]).controller('RecipeCtrl',  ['$scope','Flash', '$stateParams', '$http', function ($scope, Flash, $stateParams, $http, auth, cssInjector) {
+}]).controller('RecipeCtrl',  ['$scope','Flash', '$stateParams', '$http', '$rootScope', function ($scope, Flash, $stateParams, $http,  $rootScope,  auth, cssInjector) {
 	console.log("-------------------- RecipeCtrl --------------------");
 
 	$scope.recipe;
@@ -65,7 +65,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 		console.log("DONE RECIPE");
 
 		$scope.idUser;
-		
+		$rootScope.newXp;
 		//Get user details
 		$http({
 			method: 'GET', 
@@ -74,7 +74,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 
 			$scope.idUser = response.data.idMember;
 			$scope.newXp = response.data.experience + $scope.recipe.experienceVal;
-			
+			$rootScope.newXp = $scope.newXp;
 			console.log($scope.idUser +  "   " + $scope.newXp);
 			
 			

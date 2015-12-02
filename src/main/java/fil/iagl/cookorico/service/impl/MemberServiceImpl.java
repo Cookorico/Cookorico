@@ -45,6 +45,7 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public void updateXpMember(Map<String, Integer> parms){
 		memberDao.updateXpMember(parms);
+		
 	}
 
 }
