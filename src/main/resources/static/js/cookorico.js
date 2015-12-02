@@ -26,7 +26,7 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
     }])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         $urlRouterProvider.when('/dashboard', '/dashboard/home');
@@ -279,6 +279,12 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/recipe.html',
                 controller: 'RecipeCtrl'
+            })
+            .state('newrecipestep', {
+                url: '/recipe/:idRecipe/addstep',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/newrecipestep.html',
+                controller: 'addRecipeStepCtrl'
             });
     })
     .run(function (auth) {

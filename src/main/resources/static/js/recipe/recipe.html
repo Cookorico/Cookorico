@@ -1,42 +1,52 @@
+
+<link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
 <pageheader pagename="Liste des recettes" subtitle="Toutes les recettes"></pageheader>
 <div class="container" ng-controller="RecipeCtrl">
-	>
 	<div class="conter-wrapper">
-		<div class="row">
-			<div flash-message="3000"></div>
-		
-			<div class="col-md-12">
+		<div class="container dynamicTile thumbnail">
+			<div class="row ">
+				<div class="col-md-4">
+					<div class="img-div-recipe">
+						<img class="img-thumbnail"
+							src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}"
+							alt="...">
+					</div>
+					<h6>tags:</h6>
+					<span ng-repeat="tag in recipe.tags"> #{{tag.name}} </span>
+					<p>
+						Par <a
+							ui-sref="profileMember({ idMember: recipe.creator.idMember })">
+							{{recipe.creator.username}}</a>
+					</p>
+					<button id="btnDoneRecipe" name="btnDoneRecipe" class="btn btn-primary" ng-click='doneRecipe()'>J'ai fait cette recette !</button>
+				</div>
+				<div class="col-md-8">
+					<div class=" desc-div-recipe">
+						<h1 class="text-center">{{recipe.name}}</h1>
+						<h3 class="text-center">{{recipe.description}}</h3>
+					</div>
+					<h6 class="text-center">__________________________________________________________________________________</h6>
 
-				<div class="container dynamicTile">
-					<div class="row">
-
-						<div class="">
-							<div class="thumbnail">
-								<img
-									src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}"
-									alt="...">
-								<div class="caption">
-									<h3>{{recipe.name}}</h3>
-
-									<blockquote cite="#">
-										<p>{{recipe.description}}</p>
-										<p>
-											Par
-											<a ui-sref="profileMember({ idMember: '{{recipe.creator.idMember}}' })"> {{recipe.creator.username}}</a>
-										</p>
-
-									</blockquote>
-									
-									<button id="btnDoneRecipe" name="btnDoneRecipe" class="btn btn-primary" ng-click='doneRecipe()'>J'ai fait cette recette !</button>
-									
-
-								</div>
-							</div>
+					<h2 class="text-center">Les Étapes :</h2>
+					<h6 class="text-center">--------------------------------------------------------------------------------</h6>
+					<div ng-repeat="step in recipe.steps">
+						<div class=" desc-div-recipe">
+							<h2 class="text-center">{{step.name}}</h2>
+							<blockquote cite="#">
+								<p>{{step.description}}</p>
+								<p></p>
+							</blockquote>
 						</div>
+						<br>
+					</div>
+					<div ng-if="iscreator">
+						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })"
+							class="btn btn-primary" role="button">Ajouter une étape</a>
 					</div>
 				</div>
-
 			</div>
+
 		</div>
 	</div>
+</div>
 </div>

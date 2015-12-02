@@ -34,4 +34,12 @@ public class Recipe {
 	private List<Picture> photos;
 	private Integer experienceVal;
 	private Picture mainPicture;
+	
+	public Recipe(){
+		
+	}
+	
+	public Recipe(int id){
+		this.idRecipe = id;
+	}
 }

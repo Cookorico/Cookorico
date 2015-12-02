@@ -30,6 +30,7 @@ import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
+import fil.iagl.cookorico.service.RecipeStepService;
 
 @RestController
 public class RecipeController {
@@ -42,6 +43,7 @@ public class RecipeController {
 	
 	@Autowired
 	AdministratorService administratorService;
+	
 	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
@@ -64,6 +66,21 @@ public class RecipeController {
 		System.out.println(recipeService.getRecipeById(Integer.parseInt(id)));
 		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
+	
+	/*
+	 * fonction ajouté en vitesse le 02/12, nom à check, utilisé dans recipectrl.
+	 */
+	@RequestMapping(value="/recipe/{id}/currentUserIsCreator", method = RequestMethod.GET)
+	public @ResponseBody Boolean currentUserIsCreator(@PathVariable String id) {
+		
+		Recipe recipe = recipeService.getRecipeById(Integer.parseInt(id));
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member m = currentUser.getMember();
+	    
+	    return m.getIdMember() == recipe.getCreator().getIdMember();
+	}
+	
+	
 	
 	@RequestMapping(value="/recipes", method = RequestMethod.GET)
 	public @ResponseBody List<Recipe> getListRecipe(
@@ -98,7 +115,7 @@ public class RecipeController {
 	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
-	public void addRecipe(@RequestBody ModelMap model){
+	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
 		
 		// get form data
 		int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
@@ -133,6 +150,7 @@ public class RecipeController {
 		
 		// save the recipe to bdd
 		this.recipeService.addRecipe(recipe);
+		return recipe;
 	}
 	
 }

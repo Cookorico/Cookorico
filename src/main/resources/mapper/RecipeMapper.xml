@@ -23,7 +23,8 @@
 		<!-- validator posera soucis tout de même avec les nom car il a les meme colonne mbr_ que creator -->
 		<!-- <association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" />  -->
 		<association property='mainPicture' resultMap="fil.iagl.cookorico.dao.PictureDao.pictureResultMap" />
-		<!-- TO DO EVENTUEL, LISTE RECIPE STEPS?  -->
+		<collection property='tags' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+    	<collection property='steps' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.RecipeStep" resultMap="fil.iagl.cookorico.dao.RecipeStepDao.recipeStepResultMapSingle" />
 	</resultMap>
 
 	<sql id="select_all">
@@ -45,6 +46,9 @@
 		LEFT JOIN picture ON pir_fk_id_picture=pic_id_picture
 	</sql>
 	
+	<sql id="join_recipe_steps">
+		LEFT JOIN recipe_step ON rst_fk_id_recipe=rcp_id_recipe
+	</sql>
 	
 	<select id="getAllRecipes" resultMap="recipeResultMap">
 		<include refid="select_all"/>
@@ -75,6 +79,8 @@
 	    <include refid="select_all"/>
 		<include refid="join_creator"/>
 		<include refid="join_main_picture"/>
+		<include refid="join_tags"/>
+		<include refid="join_recipe_steps"/>
 		WHERE rcp_id_recipe = #{id}
 	</select>
 
@@ -84,7 +90,7 @@
 	</select>
 
 
-	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe">
+	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe" useGeneratedKeys="true" keyProperty="recipe.idRecipe" keyColumn="rcp_id_recipe">
 		INSERT INTO recipe(rcp_name,
 		rcp_description, rcp_preparation_time,
 		rcp_cooking_time, rcp_experience_val,
@@ -95,89 +101,4 @@
 	</insert>
 
 </mapper>
-
-
-
-<!-- 
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="BlogBestPractice">
-
-
-	<resultMap id="resultBlog" type="Blog">
-		<id property="id" column="idBlog" />
-		<result property="name" column="blogName" />
-		<result property="url" column="url" />
-		<association property="author" column="idBlog" javaType="Author">
-			<id property="id" column="idAuthor" />
-			<result property="name" column="authorName" />
-			<result property="email" column="email" />
-		</association>
-		<collection property="posts" column="idBlog" javaType="ArrayList" ofType="Post">
-			<id property="id" column="idPost" />
-			<result property="title" column="title" />
-			<collection property="tags" column="idBlog" javaType="ArrayList" ofType="Tag">
-				<id property="id" column="idTag" />
-				<result property="value" column="value" />
-			</collection>
-		</collection>
-	</resultMap>
-	
-	
-	<select id="selectBlogBestPractice" resultMap="resultBlog"> 
-	    SELECT B.idBlog as idBlog, 
-	    B.name as blogName, 
-	    B.url as url, 
-	    A.idAuthor as idAuthor,
-		A.name as authorName, 
-		A.email as email , 
-		P.idPost as idPost, 
-		P.title as title, 
-		T.idTag as idTag, 
-		T.value as value 
-		FROM BLOG as B 
-		left outer join Author A on B.idBlog = A.idBlog 
-		left outer join Post P on P.idBlog = B.idBlog 
-		left outer join Post_Tag PT on P.idPost = PT.idPost 
-		left outer join Tag T on PT.idTag = T.idTag
-	</select>
-		
-		
-</mapper>
-
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Blog">
-
-	<resultMap id="resultBlog" type="Blog">
-		<id property="id" column="idBlog" />
-		<result property="name" column="blogname" />
-		<result property="url" column="blogurl" />
-		<association property="author" column="idBlog" javaType="Author" select="selectAuthor" />
-		<collection property="posts" column="idBlog" javaType="ArrayList" ofType="Post" select="selectPosts" resultMap="resultTag" />
-	</resultMap>
-	
-	<resultMap id="resultPosts" type="Post">
-		<id property="id" column="idPost" />
-		<result property="title" column="title" />
-		<collection property="tags" column="idPost" javaType="ArrayList" ofType="Tag" resultMap="resultTag" />
-	</resultMap>
-	
-	<resultMap id="resultTag" type="Tag">
-		<id property="id" column="idTag" />
-		<result property="value" column="value" />
-	</resultMap>
-	
-	<select id="selectBlog" resultMap="resultBlog"> SELECT idBlog, name as blogname, url as blogurl FROM BLOG    </select>
-		
-	<select id="selectAuthor" parameterType="int" resultType="Author"> SELECT
-		idAuthor as id, name, email FROM AUTHOR WHERE idBlog = #{idBlog}
-	</select>
-	
-	<select id="selectPosts" parameterType="int" resultType="Post" resultMap="resultPosts">
-		SELECT P.idPost as idPost, P.title as title, T.idTag as
-		idTag, T.value as value FROM Post P left outer join Post_Tag PT on
-		P.idPost = PT.idPost left outer join Tag T on PT.idTag = T.idTag WHERE
-		P.idBlog = #{idBlog}   </select>
-		
-</mapper>
--->
 
