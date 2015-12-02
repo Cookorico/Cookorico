@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message', 'navigation',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -26,7 +26,7 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
     }])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
-        $locationProvider.html5Mode(false);
+        $locationProvider.html5Mode(true);
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         $urlRouterProvider.when('/dashboard', '/dashboard/home');
@@ -281,11 +281,12 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
                 controller: 'RecipeCtrl'
             });
     })
-    .run(function () {
+    .run(function (auth) {
 
         var switchValue = JSON.parse(localStorage.getItem("switched"));
 
         if (switchValue)
             $('body').addClass('box-section');
 
+        auth.init("/dashboard/home","/", "/logout");
     });

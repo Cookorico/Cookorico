@@ -1,4 +1,3 @@
-
 angular.module('recipe', ['flash', 'ngAnimate'])
 .controller('RecipesCtrl', function($scope, $http) {
 	$http.get('/recipes?mainpic=true')

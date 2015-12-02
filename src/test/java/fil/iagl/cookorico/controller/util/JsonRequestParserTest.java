@@ -25,4 +25,6 @@ public class JsonRequestParserTest extends TestCase {
 		assertEquals(requestParser.getValue("password").toString(), "pwd");
 	}
 
+
+
 }
