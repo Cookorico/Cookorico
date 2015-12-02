@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-angular.module('cookorico', ['ngRoute', 'auth', 'flash', 'home', 'profile', 'recipe', 'message', 'navigation',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -287,11 +287,12 @@ angular.module('cookorico', ['ngRoute', 'auth', 'flash', 'home', 'profile', 'rec
                 controller: 'addRecipeStepCtrl'
             });
     })
-    .run(function () {
+    .run(function (auth) {
 
         var switchValue = JSON.parse(localStorage.getItem("switched"));
 
         if (switchValue)
             $('body').addClass('box-section');
 
+        auth.init("/dashboard/home","/", "/logout");
     });

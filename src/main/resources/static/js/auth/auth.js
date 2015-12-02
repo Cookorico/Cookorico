@@ -69,7 +69,7 @@ angular.module('auth', []).factory(
                     if (authenticated) {
                         $location.path(auth.path);
                     }
-                })
+                });
 
                 // Guard route changes and switch to login page if unauthenticated
                 $rootScope.$on('$routeChangeStart', function() {

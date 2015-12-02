@@ -1,4 +1,6 @@
+
 <link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
+<pageheader pagename="Liste des recettes" subtitle="Toutes les recettes"></pageheader>
 <div class="container" ng-controller="RecipeCtrl">
 	<div class="conter-wrapper">
 		<div class="container dynamicTile thumbnail">
@@ -16,6 +18,7 @@
 							ui-sref="profileMember({ idMember: recipe.creator.idMember })">
 							{{recipe.creator.username}}</a>
 					</p>
+					<button id="btnDoneRecipe" name="btnDoneRecipe" class="btn btn-primary" ng-click='doneRecipe()'>J'ai fait cette recette !</button>
 				</div>
 				<div class="col-md-8">
 					<div class=" desc-div-recipe">

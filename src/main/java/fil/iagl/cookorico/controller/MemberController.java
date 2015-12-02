@@ -1,5 +1,8 @@
 package fil.iagl.cookorico.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,7 +40,6 @@ public class MemberController {
 		
 		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 	    Member m = currentUser.getMember();
-	    System.out.println("ERGDRSGDSFGDQSGHTEHzefrgzerfeGFTEHSZERGSEFSDFSDFSDFSDF"+m.getLevel());
 		/*Member m = new Member();
 		m.setIdMember(1);
 		m.setUsername("Gordevil");
@@ -58,6 +60,20 @@ public class MemberController {
 		Member m = memberService.getMemberById(id);
 		return m;
 	}
+	
+	@RequestMapping(value = "/profile/{id}/{newXp}", method = RequestMethod.POST)
+	public void updateXpMember(@PathVariable int id, @PathVariable int newXp) {
+		Map<String, Integer> parms = new HashMap<String, Integer>();
+		parms.put("id", id);
+		parms.put("newXp", newXp);
+
+		//Mise à jour de l'xp
+		memberService.updateXpMember( parms);
+
+	
+	}
+	
+	
 	
 //	@RequestMapping(value = "/login", method = RequestMethod.POST)
 //	public Member login(@RequestBody LoginWrapper wrapper) {

@@ -48,5 +48,12 @@
   	INSERT INTO member(mbr_username, mbr_firstname, mbr_lastname, mbr_email, mbr_password<!--,mbr_birthday-->, mbr_gender, mbr_city, mbr_level, mbr_experience) 
   	VALUES(#{member.username}, #{member.firstname}, #{member.lastname}, #{member.email}, #{member.password}<!--, #{member.birthday}-->, #{member.gender}::gender, #{member.city},#{member.level},#{member.experience})
   </insert>
+  
+  
+  <update id="updateXpMember" parameterType="java.util.Map" >
+  UPDATE member SET mbr_experience = #{newXp} WHERE mbr_id_member = #{id}
+  </update>
+  
+  
 
 </mapper>
