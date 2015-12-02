@@ -70,23 +70,31 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			method: 'GET', 
 			url : '/profile'
 		}).then(function successCallback(response) {
-
+			
 			$scope.idUser = response.data.idMember;
-			$scope.newXp = response.data.experience + $scope.recipe.experienceVal;
-			$rootScope.newXp = $scope.newXp;
+			if($rootScope.newXp == null){
+				$scope.newXp = response.data.experience + $scope.recipe.experienceVal;
+				$rootScope.newXp = $scope.newXp;
+			}else{
+				$scope.newXp = $rootScope.newXp + $scope.recipe.experienceVal;
+				$rootScope.newXp = $scope.newXp;
+			}
+			
+			
 			console.log($scope.idUser +  "   " + $scope.newXp);
 			
 			
 			$http({
-				method: 'POST', 
-				url : '/profile/'+$scope.idUser+'/'+ $scope.newXp
-			}).success(function(data, status, header, config){
-				Flash.create('success', 'Votre experience à été mise à jour !');
-			}).error(function(data, status, header, config){
-				Flash.create('danger', 'Erreur !');
-
+				method: 'GET', 
+				url : '/level/xp/'+ $rootScope.newXp
+			}).then(function successCallback(response){
+				console.log(response);
+				$rootScope.level = response.data;
+			},function errorCallback(response) {
 				console.log(data, status, header, config);
 			});
+			
+		
 			
 				
 			

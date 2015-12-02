@@ -17,6 +17,10 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 			$scope.user.experience = $rootScope.newXp;
 
 		}
+		if($rootScope.level != null){
+			$scope.user.level = $rootScope.level;
+		}
+		
 		console.log($scope.user);
 		
 		/*
