@@ -7,18 +7,33 @@
    
   <!-- <resultMap type="RecipeStep" id="recipeStepResultMap"> -->
   <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMap">
-    <id property='idRecipeStep' column='id_recipe_step'/>
-    <result property='rank' column='rank'/>
-    <result property='name' column='name'/>
-    <result property='description' column='description'/>
-    <result property='durationTime' column='duration_time'/>
-    <result property='creationDate' column='creation_date'/> 
-    <result property='modifDate' column='modif_date'/>
-    <result property='disabled' column='disabled'/>
-    <association property='recipe' column='fk_id_recipe' select='fil.iagl.cookorico.dao.RecipeDao.getRecipeById' />
+    <id property='idRecipeStep' column='rst_id_recipe_step'/>
+    <result property='rank' column='rst_rank'/>
+    <result property='name' column='rst_name'/>
+    <result property='description' column='rst_description'/>
+    <result property='durationTime' column='rst_duration_time'/>
+    <result property='creationDate' column='rst_creation_date'/> 
+    <result property='modifDate' column='rst_modif_date'/>
+    <result property='disabled' column='rst_disabled'/>
+    <association property='recipe' column='rst_fk_id_recipe' select='fil.iagl.cookorico.dao.RecipeDao.getRecipeById' />
   </resultMap>
   
-	
+
+  <!-- <resultMap type="RecipeStep" id="recipeStepResultMap"> -->
+  <resultMap type="fil.iagl.cookorico.entity.RecipeStep" id="recipeStepResultMapSingle">
+    <id property='idRecipeStep' column='rst_id_recipe_step'/>
+    <result property='rank' column='rst_rank'/>
+    <result property='name' column='rst_name'/>
+    <result property='description' column='rst_description'/>
+    <result property='durationTime' column='rst_duration_time'/>
+    <result property='creationDate' column='rst_creation_date'/> 
+    <result property='modifDate' column='rst_modif_date'/>
+    <result property='disabled' column='rst_disabled'/>
+    <!-- boucle si on recupere la recette et ses étapes, les etapes recuperent la recette qui recuperer ses étapes etc...
+    <association property='recipe' column='rst_fk_id_recipe' select='fil.iagl.cookorico.dao.RecipeDao.getRecipeById' />
+    -->
+  </resultMap>
+  
 
    <select id="getRecipeStepById" resultType="fil.iagl.cookorico.entity.RecipeStep" parameterType="int">
   	SELECT * FROM recipe_step WHERE id_recipe_step = #{id}

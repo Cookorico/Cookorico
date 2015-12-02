@@ -63,6 +63,21 @@ public class RecipeController {
 		return recipeService.getRecipeById(Integer.parseInt(id));
 	}
 	
+	/*
+	 * fonction ajouté en vitesse le 02/12, nom à check, utilisé dans recipectrl.
+	 */
+	@RequestMapping(value="/recipe/{id}/currentUserIsCreator", method = RequestMethod.GET)
+	public @ResponseBody Boolean currentUserIsCreator(@PathVariable String id) {
+		
+		Recipe recipe = recipeService.getRecipeById(Integer.parseInt(id));
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	    Member m = currentUser.getMember();
+	    
+	    return m.getIdMember() == recipe.getCreator().getIdMember();
+	}
+	
+	
+	
 	@RequestMapping(value="/recipes", method = RequestMethod.GET)
 	public @ResponseBody List<Recipe> getListRecipe(
 			@RequestParam(value = "mainpic", required = false) boolean mainpic, 

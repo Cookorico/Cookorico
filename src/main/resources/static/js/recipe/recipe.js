@@ -58,8 +58,21 @@ angular.module('recipe', [])
 	  });
 	
 	
+	$http({
+		method: 'GET', 
+		url : '/recipe/'+$stateParams.idRecipe+'/currentUserIsCreator'
+	}).then(function successCallback(response) {
+
+		$scope.iscreator = response.data;
+		console.log(response.data);
+
+		
+	  }, function errorCallback(response) {
+			console.log(data, status, header, config);
+	  });
 	
-}]).controller('addRecipeStepCtrl',  ['$scope','$stateParams','$http', function ($scope, $stateParams, $http, auth, cssInjector) {
+	
+}]).controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams','$http', function ($scope, $window, $stateParams, $http, auth, cssInjector) {
 	console.log("-------------------- addRecipeStepCtrl --------------------");
 	
 	
@@ -89,7 +102,7 @@ angular.module('recipe', [])
 		})
 		.success(function(data, status, header, config){
 			console.log(data);
-			//$window.location.href = '#/dashboard/recipe/'+$stateParams.idRecipe+'/addstep';
+			$window.location.href = '#/dashboard/recipe/'+$stateParams.idRecipe;
 
 		})
 		.error(function(data, status, header, config){
