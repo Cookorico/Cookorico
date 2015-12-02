@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Taste;
 public interface TasteDao {
 
@@ -13,8 +12,10 @@ public interface TasteDao {
 	
 	List<Taste> getTastesByMember(Integer id);
 	
-	boolean addTaste(@Param("taste") Taste taste, Ingredient ingredient);
+	boolean addTaste(@Param("taste") Taste taste);
 	
 	boolean deleteTaste(@Param("taste") Taste taste);
+	
+	boolean updateTaste(@Param("taste") Taste taste);
 	
 }

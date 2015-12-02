@@ -13,8 +13,10 @@ public interface TasteService {
 	
 	public List<Taste> getTastesByMember(@Param("member") Integer id);
 	
-	public boolean addTaste(@Param("taste") Taste taste, @Param("ingredient") Ingredient ingredient);
+	public boolean addTaste(@Param("taste") Taste taste);
 	
 	public boolean deleteTaste(@Param("taste") Taste taste);
+
+	public boolean updateTaste(@Param("taste") Taste taste);
 
 }

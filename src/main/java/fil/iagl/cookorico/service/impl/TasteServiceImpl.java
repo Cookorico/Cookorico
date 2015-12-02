@@ -18,7 +18,6 @@ public class TasteServiceImpl implements TasteService{
 
 	@Override
 	public List<Taste> getAllTaste() {
-		// TODO Auto-generated method stub
 		return tasteDao.getAllTaste();
 	}
 
@@ -29,14 +28,17 @@ public class TasteServiceImpl implements TasteService{
 	
 	@Override
 	public boolean deleteTaste(Taste taste) {
-		// TODO Auto-generated method stub
 		return tasteDao.deleteTaste(taste);
 	}
 
 	@Override
-	public boolean addTaste(Taste taste, Ingredient ingredient) {
-		// TODO Auto-generated method stub
-		return tasteDao.addTaste(taste, ingredient);
+	public boolean addTaste(Taste taste) {
+		return tasteDao.addTaste(taste);
+	}
+
+	@Override
+	public boolean updateTaste(Taste taste) {
+		return tasteDao.updateTaste(taste);
 	}
 
 }

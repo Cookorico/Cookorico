@@ -26,4 +26,12 @@ public class Ingredient {
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<Picture> photos;
 
+	public Ingredient(){
+		
+	}
+	
+	public Ingredient(Integer idIgredient){
+		this.idIngredient = idIgredient;
+	}
+	
 }
