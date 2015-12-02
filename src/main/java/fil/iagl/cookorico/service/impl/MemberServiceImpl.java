@@ -2,6 +2,7 @@ package fil.iagl.cookorico.service.impl;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,6 +40,12 @@ public class MemberServiceImpl implements MemberService{
 	
 	public Member getMemberById(int id){
 		return memberDao.getMemberById(id);
+	}
+	
+	@Override
+	public void updateXpMember(Map<String, Integer> parms){
+		memberDao.updateXpMember(parms);
+		
 	}
 
 }

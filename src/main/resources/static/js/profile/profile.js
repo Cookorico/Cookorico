@@ -1,7 +1,7 @@
 window.app_version = 2;
 
 angular.module('profile', ['angular.css.injector', 'auth'])
-.controller('profileCtrl', function ($scope, $http, auth, cssInjector) {
+.controller('profileCtrl', function ($scope, $rootScope, $http, auth, cssInjector) {
 	console.log("-------------------- profileCtrl --------------------");
 	$scope.user= {};
 	$scope.level ={};
@@ -13,7 +13,10 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 	}).then(function successCallback(response) {
 
 		$scope.user = response.data;
-		
+		if($rootScope.newXp != null){
+			$scope.user.experience = $rootScope.newXp;
+
+		}
 		console.log($scope.user);
 		
 		/*
