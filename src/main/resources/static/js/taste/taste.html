@@ -78,18 +78,18 @@
 		<ul class="bs-glyphicons-list">
 			<li ng-repeat="ingredient in taste.ingredients">
 				<span aria-hidden="true">
-					<img src="({{ ingredient.mainPicure }} == 'null') ? ('js/taste/radis.png' :  {{ ingredient.mainPicture.filePath }} / {{ ingredient.mainPicture.fileName }})">
+					<img class="ingredient-pic" src="{{ ingredient.mainPicture  == null ? 'js/taste/default.png' :   ingredient.mainPicture.filePath + '/' + ingredient.mainPicture.fileName  }}">
 				</span> 
 				<span class="glyphicon-class">
 					{{ ingredient.name }} 
 				</span> 
-				<span class="badge {{ ingredient.css_value }}">
-					<input type="number" class="input_value" min="1" max="10" my-enter="sendUserTaste(ingredient)")>
-					{{ ingredient.value }}
+				<span class="badge {{ ingredient.css_value }}" ng-dblclick="ingredient.grading = '' ">
+					<input type="number" class="input_value" min="1" max="10" my-enter="sendUserTaste(ingredient)" ng-hide="ingredient.grading" auto-focus>
+					{{ ingredient.grading }}
 				</span>
 			</li>
-			<li><span aria-hidden="true"><img
-					src="js/taste/chocolat.png"></span> <span class="glyphicon-class">chocolat
+			<li><span aria-hidden="true"><img class="ingredient-pic" 
+					src="js/taste/default.png"></span> <span class="glyphicon-class">chocolat
 					au lait </span> <span class="badge taste-eight">8</span></li>
 
 		<!-- <li><span class="glyphicon " aria-hidden="true"><img

@@ -12,7 +12,7 @@
 }
 
 .bs-glyphicons li {
-	width: 12.5%;
+	max-width: 12.5%;
     font-size: 15px;
     float: left;
     height: 160px;
@@ -21,6 +21,11 @@
     text-align: center;
     background-color: #f9f9f9;
     border: 1px solid #fff;
+}
+
+.bs-glyphicons img.ingredient-pic {
+	max-width: 100px !important;
+	max-height: 100px !important;
 }
 
 bs-glyphicons .glyphicon {

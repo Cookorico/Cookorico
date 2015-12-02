@@ -1,11 +1,6 @@
 /**
  * Created by leemans on 03/11/15.
  */
-/*angular.module('taste').controller('taste', function($scope, $http) {
-    $http.get('/resource/').success(function(data) {
-        $scope.greeting = data;
-    });
-});*/
 
 var cookorico = angular.module('cookorico');
 
@@ -24,39 +19,23 @@ cookorico.directive('myEnter', function () {
     };
 });
 
+cookorico.directive('autoFocus', function($timeout) {
+    return {
+        restrict: 'AC',
+        link: function(_scope, _element) {
+            $timeout(function(){
+                _element[0].focus();
+            }, 0);
+        }
+    };
+});
 
 cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
-//	$scope.bdd_taste = {
-//			'ingredients':[
-//				{
-//				'url':'js/taste/artichaut.png',
-//				'name':'choux',
-//				'css_value': 'taste-eight',
-//				'value':''
-//			},
-//			
-//			{
-//				'url':'js/taste/artichaut.png',
-//				'name':'choux-fleur',
-//				'css_value': 'taste-eight',
-//				'value':''
-//			},
-//			{
-//				'url':'js/taste/artichaut.png',
-//				'name':'artichaut',
-//				'css_value': 'taste-eight',
-//				'value':''
-//			},
-//			{
-//				'url':'js/taste/radis.png',
-//				'name':'radis',
-//				'css_value': 'taste-seven',
-//				'value':''
-//			}
-//			]
-//			
-//	}
+	
+	$scope.taste = {
+			'ingredients':[]
+	};
 	
 	$http({
 	    method: 'GET',
@@ -70,9 +49,26 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	    // TODO : erreur de récupération :(
 	  });
 	
-	$scope.taste = {
-			'ingredients':[]
-	}
+	$http({
+		method: 'GET', 
+		url: '/tastes'
+	 }).success(function (data, status, headers, config) {
+//		    $scope.taste = data;
+		 	var ingredient;
+		 	angular.forEach(data, function(value, key){
+		 		console.log(data);
+		 		 ingredient = value.ingredient;
+		 		 ingredient.grading = value.grading;
+		 		 
+		 		 $scope.taste.ingredients.push(ingredient);
+		 	});
+	  })
+	  .error(function (data, status, headers, config) {
+	    // TODO : erreur de récupération :(
+	  });
+	
+
+
 	
 	$scope.inputIngredient = '';
 	
@@ -88,18 +84,41 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.addPersonnalTaste = function(ingredient){
 		ingredient.name = ingredient.name.toLowerCase();
 		$scope.taste['ingredients'].push(ingredient);
+		console.log($scope.taste['ingredients']);
 		$('input[type="number"]:first').focus();
 		$scope.inputIngredient = "";
 		
-		//TODO req GET -> bdd
 	}
 	
 	$scope.sendUserTaste = function(ingredient){
 		console.log("ingredient sent !");
-		ingredient.value = $('input[type="number"]:first').val();
+		ingredient.grading = $('input[type="number"]:first').val();
 		$('input[type="number"]:first').remove();
-		
+		$http({
+		    method: 'POST',
+		    url: '/taste',
+		    data: {'idIngredient':ingredient.idIngredient, 'grading': ingredient.grading}
+		  }).success(function (data, status, headers, config) {
+			  console.log("SUCCESS");
+//			   console.log($scope.bdd_taste);
+		  })
+		  .error(function (data, status, headers, config) {
+		    // TODO : erreur de récupération :(
+		  });
 
+	}
+	
+	$scope.updatePersonnalTaste = function(ingredient){
+		$http({
+		    method: 'PUT',
+		    url: '/taste',
+		    data: {'idIngredient':ingredient.idIngredient, 'grading': ingredient.grading}
+		  }).success(function (data, status, headers, config) {
+			  console.log("SUCCESS");
+		  })
+		  .error(function (data, status, headers, config) {
+		    // TODO : erreur de récupération :(
+		  });
 	}
 	
 	
