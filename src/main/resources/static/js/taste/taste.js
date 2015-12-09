@@ -30,8 +30,26 @@ cookorico.directive('autoFocus', function($timeout) {
     };
 });
 
+cookorico.filter('orderObjectBy', function() {
+	  return function(items, field, reverse) {
+	    var filtered = [];
+	    angular.forEach(items, function(item) {
+	      filtered.push(item);
+	    });
+	    filtered.sort(function (a, b) {
+	      return (a[field] > b[field] ? 1 : -1);
+	    });
+	    if(reverse) filtered.reverse();
+	    return filtered;
+	  };
+	});
+
 cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
+	$scope.order_item;
+	$scope.order_reverse;
+	$scope.button_order_alpha = 'A--Z';
+	$scope.button_order_num = '0--10';
 	
 	$scope.taste = {
 			'ingredients':[]
@@ -67,7 +85,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	    // TODO : erreur de récupération :(
 	  });
 	
-
+	
 
 	
 	$scope.inputIngredient = '';
@@ -92,19 +110,25 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	
 	$scope.sendUserTaste = function(ingredient){
 		console.log("ingredient sent !");
+		var http_method = 'POST';
+		if(ingredient.grading != undefined)
+			http_method = 'PUT';
 		ingredient.grading = $('input[type="number"]:first').val();
 		$('input[type="number"]:first').remove();
-		$http({
-		    method: 'POST',
-		    url: '/taste',
-		    data: {'idIngredient':ingredient.idIngredient, 'grading': ingredient.grading}
-		  }).success(function (data, status, headers, config) {
-			  console.log("SUCCESS");
-//			   console.log($scope.bdd_taste);
-		  })
-		  .error(function (data, status, headers, config) {
-		    // TODO : erreur de récupération :(
-		  });
+		
+		if(ingredient.grading != ''){
+			$http({
+			    method: http_method,
+			    url: '/taste',
+			    data: {'idIngredient':ingredient.idIngredient, 'grading': ingredient.grading}
+			  }).success(function (data, status, headers, config) {
+				  console.log("SUCCESS");
+	//			   console.log($scope.bdd_taste);
+			  })
+			  .error(function (data, status, headers, config) {
+			    // TODO : erreur de récupération :(
+			  });
+		}
 
 	}
 	
@@ -121,6 +145,9 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 		  });
 	}
 	
+	$scope.sortByName = function(){
+		
+	}
 	
 	
 }]);
