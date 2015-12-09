@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name dashyAngular.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of dashyAngular
- */
-angular.module('cookorico').controller('ChartCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
+cookorico.controller('ChartCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
     $scope.line = {
 	    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 	          data: [

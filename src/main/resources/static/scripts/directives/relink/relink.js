@@ -1,4 +1,4 @@
-angular.module('cookorico').directive('relinkEvent', function($rootScope) {
+cookorico.directive('relinkEvent', function($rootScope) {
     return {
         transclude: 'element',
         restrict: 'A',

@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name dashyAngular.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of dashyAngular
- */
-angular.module('cookorico')
+cookorico
   .controller('LoginCtrl', function($scope, $location) {
 
 

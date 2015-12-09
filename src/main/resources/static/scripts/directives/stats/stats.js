@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cookorico')
+cookorico
   .directive('stats',function(){
     return {
         templateUrl:'scripts/directives/stats/stats.html?v='+window.app_version,
