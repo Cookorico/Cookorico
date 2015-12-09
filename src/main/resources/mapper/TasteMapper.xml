@@ -31,7 +31,7 @@
 	</insert>
 	
 	<update id="updateTaste" parameterType="fil.iagl.cookorico.entity.Taste">
-		UPDATE taste
+		UPDATE taste 
 		SET tst_grading = #{taste.grading}
 		WHERE tst_fk_id_member = #{taste.member.idMember} AND tst_fk_id_ingredient = #{taste.ingredient.idIngredient}
 	</update>
