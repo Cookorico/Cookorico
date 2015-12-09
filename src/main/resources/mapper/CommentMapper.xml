@@ -14,7 +14,7 @@
 		<result property='validator' column='cmt_validator' />
 		<result property='disabled' column='cmt_disabled' />
 		<association property='member' resultMap='fil.iagl.cookorico.dao.MemberDao.memberResultMap' />
-		<association property='recipe' resultMap='fil.iagl.cookorico.dao.RecipeDao.recipeResultMap' />
+		<association property='recipe' column='cmt_id_comment' select='fil.iagl.cookorico.dao.RecipeDao.recipe' />
 	</resultMap>
 	
 	<select id="getAllComments" resultMap="commentResultMap">

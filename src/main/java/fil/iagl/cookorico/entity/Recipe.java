@@ -32,6 +32,7 @@ public class Recipe {
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<RecipeStep> steps;
 	private List<Picture> photos;
+	private List<Comment> comments;
 	private Integer experienceVal;
 	private Picture mainPicture;
 	

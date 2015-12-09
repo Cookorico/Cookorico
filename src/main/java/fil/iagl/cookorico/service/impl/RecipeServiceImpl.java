@@ -49,6 +49,7 @@ public class RecipeServiceImpl implements RecipeService{
 	
 	@Override
 	public Recipe getRecipeById(int id) {
+		System.out.println("***********************");
 		return recipeDao.getRecipeById(id);
 	}
 
