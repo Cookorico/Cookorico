@@ -13,7 +13,7 @@
 		<result property='email' column='mbr_email' />
 		<result property='password' column='mbr_password' />
 		<result property='experience' column='mbr_experience' />
-		<result property='salt' column='mbr_salt' />
+		<!-- <result property='salt' column='mbr_salt' /> -->
 		<result property='gender' column='mbr_gender' />
 		<result property='disabled' column='mbr_disabled' />
 		<result property='birthday' column='mbr_birthday' />
