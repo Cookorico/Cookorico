@@ -13,7 +13,7 @@ angular.module('auth', []).factory(
                     $location.path(auth.loginPath);
                 }
             }
-        }
+        };
 
         var auth = {
 

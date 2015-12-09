@@ -11,7 +11,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			//console.log(value);
 		}
 
-		console.log(data);
+		//console.log(data);
 		$scope.recipes = data;
 	})
 	.error(function(data, status, headers, config) {
@@ -26,8 +26,8 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 
 		var recipe = angular.toJson($scope.recipe);
 
-		console.log($scope.recipe);
-		console.log(recipe);
+		//console.log($scope.recipe);
+		//console.log(recipe);
 
 		// send recipe to the recipe controller
 		$http({
@@ -46,7 +46,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	};
 
 }]).controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
-	console.log("-------------------- RecipeCtrl --------------------");
+	//console.log("-------------------- RecipeCtrl --------------------");
 
 
 	$http({
@@ -55,11 +55,11 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	}).then(function successCallback(response) {
 
 		$scope.recipe = response.data;
-		console.log(response.data);
+		//console.log(response.data);
 
 
 	}, function errorCallback(response) {
-		console.log(data, status, header, config);
+		console.error(data, status, header, config);
 	});
 
 
@@ -70,11 +70,11 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	}).then(function successCallback(response) {
 
 		$scope.iscreator = response.data;
-		console.log(response.data);
+		//console.log(response.data);
 
 
 	}, function errorCallback(response) {
-		console.log(data, status, header, config);
+		console.error(data, status, header, config);
 	});
 
 
@@ -101,17 +101,17 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			}
 
 
-			console.log($scope.idUser +  "   " + $scope.newXp);
+			//console.log($scope.idUser +  "   " + $scope.newXp);
 
 
 			$http({
 				method: 'GET', 
 				url : '/level/xp/'+ $rootScope.newXp
 			}).then(function successCallback(response){
-				console.log(response);
+				//console.log(response);
 				$rootScope.level = response.data;
 			},function errorCallback(response) {
-				console.log(data, status, header, config);
+				console.error(data, status, header, config);
 			});
 
 
@@ -125,7 +125,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	}
 
 }]).controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams','$http', function ($scope, $window, $stateParams, $http, auth, cssInjector) {
-	console.log("-------------------- addRecipeStepCtrl --------------------");
+	//console.log("-------------------- addRecipeStepCtrl --------------------");
 
 
 	$http({
@@ -134,7 +134,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	}).then(function successCallback(response) {
 
 		$scope.recipe = response.data;
-		console.log(response.data);
+		//console.log(response.data);
 
 
 	}, function errorCallback(response) {
@@ -153,7 +153,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			data : recipestep
 		})
 		.success(function(data, status, header, config){
-			console.log(data);
+			//console.log(data);
 			$window.location.href = '#/dashboard/recipe/'+$stateParams.idRecipe;
 
 		})
