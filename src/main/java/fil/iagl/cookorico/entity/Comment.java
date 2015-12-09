@@ -1,0 +1,26 @@
+package fil.iagl.cookorico.entity;
+
+import java.sql.Timestamp;
+
+import org.apache.ibatis.type.Alias;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import lombok.Data;
+
+@JsonSerialize
+@Data
+@Alias("Comment")
+public class Comment {
+
+	private int idComment;
+	private String title;
+	private String description;
+	private Member member;
+	private Recipe recipe;
+	private int validator;
+	private boolean validation;
+	private boolean disabled;
+	private Timestamp creationDate;
+	private Timestamp modifDate;
+}
