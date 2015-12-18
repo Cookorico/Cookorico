@@ -56,10 +56,9 @@
 					<button class="btn btn-default" type="button" ng-click="click()">Ajouter</button>
 				</span>
 						</div>
-			<ul>
-				<li	ng-repeat="ingredient in bdd_taste | filter:findIngredient">
-					<a ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
-					
+			<ul class="ingredient-list">
+				<li class="ingredient-choice-item" ng-repeat="ingredient in bdd_taste | filter:findIngredient">
+					<a class="ingredient-item" ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
 				</li>
 			</ul>
 			<!-- /input-group -->
@@ -69,8 +68,9 @@
 	<!-- /.row -->
 	<div class="bs-glyphicons">
 		<ul class="bs-glyphicons-list">
-			<li ng-repeat="ingredient in taste.ingredients | orderObjectBy:order_item:order_reverse">
+			<li ng-repeat="ingredient in taste.ingredients | orderObjectBy:order_item:order_reverse" onMouseOver="show_delete_icon=true">
 				<span aria-hidden="true">
+					<img class="cross-remove-taste" src="js/taste/cross.png" ng-show=show_delete_icon>
 					<img class="ingredient-pic" src="{{ ingredient.mainPicture  == null ? 'js/taste/default.png' :   ingredient.mainPicture.filePath + '/' + ingredient.mainPicture.fileName  }}">
 				</span> 
 				<span class="glyphicon-class">

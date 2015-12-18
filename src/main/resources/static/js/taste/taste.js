@@ -50,6 +50,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.order_reverse;
 	$scope.button_order_alpha = 'A--Z';
 	$scope.button_order_num = '0--10';
+	$scope.show_delete_icon = false;
 	
 	$scope.taste = {
 			'ingredients':[]

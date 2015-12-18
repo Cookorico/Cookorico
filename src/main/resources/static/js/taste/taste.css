@@ -50,9 +50,39 @@ bs-glyphicons .glyphicon {
     background-color: #F3F3D1;
 }
 
+ul.ingredient-list{
+	background-color:blue;
+}
+
+ul.ingredient-list a.ingredient-item {
+	color:yellow !important;
+}
+
+a.ingredient-item {
+	color:yellow !important;
+}
+
+/* ul .ingredient */
+
+/* li { */
+/* 	background-color:red; */
+/* } */
+
 input.input_value{
 	color:#000;
 	max-width: 40px;
+}
+
+.cross-remove-taste{
+	position:absolute;
+	display:block;
+	visibility:hidden;
+/* 	background-color:blue !important; */
+}
+
+.cross-remove-taste:hover{
+	display:block;
+	visibility:visible;
 }
 
 .taste-zero{
