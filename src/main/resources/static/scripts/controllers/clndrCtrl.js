@@ -1,6 +1,13 @@
 'use strict';
 
-cookorico.controller('calendarCtrl', function ($scope) {
+/**
+ * @ngdoc function
+ * @name dashyAngular.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of dashyAngular
+ */
+angular.module('cookorico').controller('calendarCtrl', function ($scope) {
    
    $scope.eventSources = [];
     

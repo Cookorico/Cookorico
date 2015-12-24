@@ -7,11 +7,11 @@
     });
 });*/
 
-cookorico.controller('maprogressionCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
+angular.module('taste').controller('maprogressionCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
 }]);
 
-cookorico.controller('ModalAddTasteCtrl', function ($scope, $modal, $log) {
+angular.module('taste').controller('ModalAddTasteCtrl', function ($scope, $modal, $log) {
 
 	$scope.items = ['item1', 'item2', 'item3'];
 
@@ -36,7 +36,7 @@ cookorico.controller('ModalAddTasteCtrl', function ($scope, $modal, $log) {
 	};
 });
 
-cookorico.controller('ModalAddTasteInstanceCtrl', function ($scope, $modalInstance, items) {
+angular.module('taste').controller('ModalAddTasteInstanceCtrl', function ($scope, $modalInstance, items) {
 
 	$scope.items = items;
 	$scope.selected = {

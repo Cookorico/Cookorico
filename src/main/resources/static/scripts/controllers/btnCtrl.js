@@ -1,6 +1,13 @@
 'use strict';
 
-cookorico.controller('ButtonsCtrl', function ($scope) {
+/**
+ * @ngdoc function
+ * @name dashyAngular.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of dashyAngular
+ */
+angular.module('cookorico').controller('ButtonsCtrl', function ($scope) {
   $scope.singleModel = 1;
 
   $scope.radioModel = 'Middle';

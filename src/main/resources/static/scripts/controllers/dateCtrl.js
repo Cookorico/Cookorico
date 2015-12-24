@@ -1,6 +1,13 @@
 'use strict';
 
-cookorico.controller('DatepickerDemoCtrl', function ($scope) {
+/**
+ * @ngdoc function
+ * @name dashyAngular.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of dashyAngular
+ */
+angular.module('cookorico').controller('DatepickerDemoCtrl', function ($scope) {
   $scope.today = function() {
     $scope.dt = new Date();
   };

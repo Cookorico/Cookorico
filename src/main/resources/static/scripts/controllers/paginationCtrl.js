@@ -1,6 +1,13 @@
 'use strict';
 
-cookorico.controller('PaginationDemoCtrl', function ($scope, $log) {
+/**
+ * @ngdoc function
+ * @name dashyAngular.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of dashyAngular
+ */
+angular.module('cookorico').controller('PaginationDemoCtrl', function ($scope, $log) {
   $scope.totalItems = 64;
   $scope.currentPage = 4;
 

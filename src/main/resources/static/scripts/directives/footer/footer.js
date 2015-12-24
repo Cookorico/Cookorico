@@ -1,6 +1,6 @@
 'use strict';
 
-cookorico
+angular.module('cookorico')
 	.directive('footer',function(){
 		return {
         templateUrl:'scripts/directives/footer/footer.html?v='+window.app_version,

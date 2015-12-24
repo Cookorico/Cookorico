@@ -1,6 +1,13 @@
 'use strict';
 
-cookorico.controller('ProgressDemoCtrl', function ($scope) {
+/**
+ * @ngdoc function
+ * @name dashyAngular.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of dashyAngular
+ */
+angular.module('cookorico').controller('ProgressDemoCtrl', function ($scope) {
   $scope.max = 200;
 
   $scope.random = function() {

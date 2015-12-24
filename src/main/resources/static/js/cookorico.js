@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',

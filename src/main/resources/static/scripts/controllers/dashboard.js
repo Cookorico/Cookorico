@@ -1,6 +1,6 @@
 'use strict';
 
-cookorico
+angular.module('cookorico')
     .controller('DashboardCtrl', function ($scope, $state, cssInjector) {
 
         cssInjector.add("bower_components/fontawesome/css/fonts-awesome.css");

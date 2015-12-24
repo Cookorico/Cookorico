@@ -1,6 +1,12 @@
 'use strict';
 
-cookorico
+/**
+ * @ngdoc directive
+ * @name DashdashyAngular.directive:pageHeader
+ * @description
+ * # pageHeader
+ */
+angular.module('cookorico')
 	.directive('homeChart',function(){
 		return {
 	        templateUrl:'scripts/directives/home-chart/home-chart.html?v='+window.app_version,
