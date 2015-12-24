@@ -1,8 +1,5 @@
 package fil.iagl.cookorico.entity;
 
-import java.sql.Timestamp;
-import java.util.List;
-
 import org.apache.ibatis.type.Alias;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;

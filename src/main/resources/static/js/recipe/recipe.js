@@ -1,5 +1,4 @@
-
-angular.module('recipe', ['flash', 'ngAnimate'])
+angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
 .controller('RecipesCtrl', function($scope, $http) {
 	$http.get('/recipes?mainpic=true')
 	.success(function(data, status, headers, config) {
@@ -8,16 +7,52 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 
 		for(var key in objects) {
 			var value = objects[key];
-			//console.log(value);
 		}
 
-		//console.log(data);
 		$scope.recipes = data;
 	})
 	.error(function(data, status, headers, config) {
 		// log error
 	});
-}).controller('addRecipeCtrl', ['$scope','$window', '$location','$http','Flash',  function ($scope, $window, $location, $http, Flash) {
+}).controller('savePicture', ['$scope', 'Upload', function ($scope, Upload) {
+    $scope.$watch('files', function () {
+        $scope.upload($scope.files);
+    });
+    $scope.log = '';
+
+    $scope.upload = function (files) {
+        if (files && files.length) {
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                
+                console.log(file);
+                
+                Upload.upload({
+                    url: '/picture',
+                    data: {file: file}
+                }).success(function (data, status, headers, config) {
+                	console.log(data);
+                });
+                
+                
+                /*Upload.upload({
+                    url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
+                    fields: {
+                        'username': $scope.username
+                    },
+                    file: file
+                }).progress(function (evt) {
+                    var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                    $scope.log = 'progress: ' + progressPercentage + '% ' +
+                                evt.config.file.name + '\n' + $scope.log;
+                }).success(function (data, status, headers, config) {
+                    $scope.log = 'file ' + config.file.name + 'uploaded. Response: ' + JSON.stringify(data) + '\n' + $scope.log;
+                    $scope.$apply();
+                });*/
+            }
+        }
+    };
+}]).controller('addRecipeCtrl', ['$scope','$window', '$location','$http','Flash',  function ($scope, $window, $location, $http, Flash) {
 
 	//Function to add a new recipe
 	$scope.add = function () {
@@ -40,7 +75,7 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			$window.location.href = '#/dashboard/recipe/'+data.idRecipe+'/addstep';
 		})
 		.error(function(data, status, header, config){
-			Flash.create('danger', 'Suite à une erreur votre recette na pas été sauvegardée');
+			Flash.create('danger', 'Suite à une erreur votre recette n\'a pas pu être sauvegardée');
 			$location.path('/dashboard/home');
 		});
 	};
