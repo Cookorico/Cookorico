@@ -12,5 +12,4 @@ public interface RecipeService {
 	List<Recipe> getAllRecipes(boolean mainpic, boolean tags);
 	
 	Recipe getRecipeById(int id);
-	
 }

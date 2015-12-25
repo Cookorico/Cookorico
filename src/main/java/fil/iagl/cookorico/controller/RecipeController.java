@@ -69,28 +69,6 @@ public class RecipeController {
 	public @ResponseBody List<Recipe> getListRecipe(
 			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
 			@RequestParam(value = "tags", required = false) boolean tags) {
-		/*
-		// USED TO TEST WITHOUT DATABASE
-		List<Recipe> lst = new ArrayList();
-		Recipe r1 = new Recipe();
-		r1.setIdRecipe(1);
-		r1.setName("Recette des chips salés");
-		r1.setDescription("Attraper un paquet de chips, pincer les deux cotés avec chacun une main. En tirant vous ouvrirez le sachet. Puis déguster.");
-		Recipe r2 = new Recipe();
-		r2.setIdRecipe(2);
-		r2.setName("Deuxieme recette");
-		r2.setDescription("description de la deuxieme");		
-		lst.add(r1);
-		lst.add(r2);
-		
-		return lst;
-		List<Recipe> lst = recipeService.getAllRecipes();
-		ystem.out.println(lst.size());
-		for (Recipe recipe : lst) {
-			System.out.println("RECETTE :");
-			System.out.println(recipe.getCreator());
-			System.out.println(recipe.getName());
-		}*/
 		
 		return recipeService.getAllRecipes(mainpic, tags);
 	}

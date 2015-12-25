@@ -9,13 +9,6 @@ var recipeModule = angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload
 recipeModule.controller('RecipesCtrl', function($scope, $http) {
 	
 	$http.get('/recipes?mainpic=true').success(function(data, status, headers, config) {
-
-		objects = data;
-
-		for(var key in objects) {
-			var value = objects[key];
-		}
-
 		$scope.recipes = data;
 	}).error(function(data, status, headers, config) {
 		
@@ -25,7 +18,7 @@ recipeModule.controller('RecipesCtrl', function($scope, $http) {
 /**
  * Conroller to save pictures
  */
-recipeModule.controller('savePictureCtrl', ['$scope', 'Upload', '$modal', '$http', function ($scope, Upload, $modal, $http) {
+recipeModule.controller('pictureCtrl', ['$scope', 'Upload', '$modal', '$http', function ($scope, Upload, $modal, $http) {
 	
 	// initialize the images paths array
 	$scope.images = new Array();
@@ -54,11 +47,16 @@ recipeModule.controller('savePictureCtrl', ['$scope', 'Upload', '$modal', '$http
 			url : '/picture/delete',
 			data : pictureJson
 		}).success(function(data, status, header, config){
+			// remove related element deleted from DOM
+			$("#img_" + picture.creationDate).remove();
 			
-			// TODO : remove element from DOM
-			$( "#" + picture.fileName ).remove();
+			// remove element from array
+			$scope.images = jQuery.grep($scope.images, function(value) {
+		        return value != picture;
+			});
+			
 		}).error(function(data, status, header, config){
-			console.log('error');
+			console.log(data);
 		});
 	}
 	

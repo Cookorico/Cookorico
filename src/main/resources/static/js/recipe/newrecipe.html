@@ -10,11 +10,11 @@
 			<div class="panel-heading">Galerie photos</div>
 			
 		  	<div class="panel-body">
-		    	<div ng-controller="savePictureCtrl">
+		    	<div ng-controller="pictureCtrl">
 		    	
 		    		<!-- uploaded images-->
 		    		<div class="row">
-						<div class="col-xs-6 col-md-1" ng-repeat="image in images" id="{{image.fileName}}">
+						<div class="col-xs-6 col-md-1" ng-repeat="image in images" id="img_{{image.creationDate}}">
 							<a href="#" class="thumbnail">
 								<img ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/image-added-icon.png" >
 							</a>
