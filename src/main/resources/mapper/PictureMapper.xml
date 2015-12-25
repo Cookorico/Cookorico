@@ -17,6 +17,18 @@
 		INSERT INTO picture (pic_fk_id_member, pic_file_path, pic_file_name, pic_title, pic_description, pic_creation_date, pic_disabled)
 		VALUES (#{picture.member.idMember}, #{picture.filePath}, #{picture.fileName}, #{picture.title}, #{picture.description}, #{picture.creationDate}, #{picture.disabled})
 	</insert>
+	
+	<select id="delete" parameterType="fil.iagl.cookorico.entity.Picture" >
+		DELETE FROM picture 
+		WHERE pic_id_picture=#{picture.idPicture}
+		AND pic_fk_id_member=#{picture.member.idMember}
+		AND pic_file_path=#{picture.filePath}
+		AND pic_file_name=#{picture.fileName}
+		AND pic_title=#{picture.title}
+		AND pic_description=#{picture.description}
+		AND pic_creation_date=#{picture.creationDate}
+		AND pic_disabled=#{picture.disabled}
+	</select>
 
 <!--
 	<select id="getPictureById" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Picture">

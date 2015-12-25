@@ -14,5 +14,5 @@ public final class Constant {
   
   public static final String STATIC_RESSOURCE_LOCATION = Arrays.asList("src", "main", "resources", "static").stream().collect(Collectors.joining(Character.toString(File.separatorChar)));
   
-  public static final String UPLOADED_PICTURE_LOCATION = Arrays.asList("img", "uploaded").stream().collect(Collectors.joining(Character.toString(File.separatorChar)));
+  public static final String UPLOADED_PICTURE_LOCATION = Arrays.asList("images", "uploaded").stream().collect(Collectors.joining(Character.toString(File.separatorChar)));
 }

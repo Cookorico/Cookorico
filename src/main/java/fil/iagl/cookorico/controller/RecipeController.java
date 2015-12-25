@@ -30,7 +30,6 @@ public class RecipeController {
 	@Autowired
 	AdministratorService administratorService;
 	
-	
 	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
 	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
 		
@@ -66,8 +65,6 @@ public class RecipeController {
 	    return m.getIdMember() == recipe.getCreator().getIdMember();
 	}
 	
-	
-	
 	@RequestMapping(value="/recipes", method = RequestMethod.GET)
 	public @ResponseBody List<Recipe> getListRecipe(
 			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
@@ -96,9 +93,7 @@ public class RecipeController {
 		}*/
 		
 		return recipeService.getAllRecipes(mainpic, tags);
-
 	}
-	
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
 	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
@@ -111,12 +106,13 @@ public class RecipeController {
 		String description = String.valueOf(model.get("rcp_description"));
 		String name = String.valueOf(model.get("rcp_name"));
 		String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
+		
 		Date date = new Date();
 		Timestamp creationDate = new Timestamp(date.getTime());
 		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 	    Member creator = currentUser.getMember();
 	    
-	    // create recipe object
+	    // create recipe entity
 		Recipe recipe = new Recipe();
 		recipe.setName(name);
 		recipe.setDescription(description);
@@ -137,6 +133,5 @@ public class RecipeController {
 		// save the recipe to bdd
 		this.recipeService.addRecipe(recipe);
 		return recipe;
-	}
-	
+	}	
 }

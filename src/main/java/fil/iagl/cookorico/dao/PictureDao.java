@@ -16,6 +16,13 @@ public interface PictureDao {
 	Integer savePicture(@Param("picture") Picture picture);
 	
 	/**
+	   * supprime l'image correspondant à l'objet
+	   * 
+	   * @param picture l'objet de l'image
+	   */
+	void delete(@Param("picture") Picture picture);
+	
+	/**
 	   * Recupere l'image d'id passé en parametre
 	   * 
 	   * @param idImage l'id de l'image

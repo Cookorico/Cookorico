@@ -53,27 +53,30 @@ public class PictureServiceImpl implements PictureService {
             String fileName = generateNewName();
             String folderPath = Constant.STATIC_RESSOURCE_LOCATION + File.separatorChar + Constant.UPLOADED_PICTURE_LOCATION + File.separatorChar + creator.getUsername();
             String absolutePath = Constant.STATIC_RESSOURCE_LOCATION + File.separatorChar + Constant.UPLOADED_PICTURE_LOCATION + File.separatorChar + creator.getUsername() + File.separatorChar + fileName + imageExt;
+            String relativePath = Constant.UPLOADED_PICTURE_LOCATION + File.separatorChar + creator.getUsername() + File.separatorChar + fileName + imageExt;
             
             // Create & write the file on the disk
             Path path = Paths.get(folderPath);
             Files.createDirectories(path);
             File file = new File(absolutePath);
             file.createNewFile();
-            
-            FileOutputStream output = new FileOutputStream(file);
+
             BufferedImage bufferedImage = ImageIO.read(new ByteArrayInputStream(picture.getBytes()));
+            bufferedImage.flush();
+            FileOutputStream output = new FileOutputStream(file);
             ImageIO.write(bufferedImage, imageExt.substring(1), output); // substring pour enlever le "." dans imageExt
+            output.flush();
             output.close();
             
             // prepare Picture entity to save
             Picture savedImg = new Picture();
             Date date = new Date();
     		
-            savedImg.setFileName(fileName);
+            savedImg.setFileName(fileName+ imageExt);
             savedImg.setCreationDate(new Timestamp(date.getTime()));
             savedImg.setDescription("Desc"); // TODO à automatiser
             savedImg.setDisabled(false);
-            savedImg.setFilePath(absolutePath);
+            savedImg.setFilePath(relativePath);
             savedImg.setMember(creator);
             savedImg.setTitle("Titre");  // TODO à automatiser
             
@@ -111,4 +114,18 @@ public class PictureServiceImpl implements PictureService {
         
         return filename;
     }
+
+	@Override
+	public void delete(Picture picture) {
+		
+		try {
+			// delete file on disk
+			Path path = Paths.get(Constant.STATIC_RESSOURCE_LOCATION + File.separatorChar + picture.getFilePath());
+			Files.delete(path);
+			
+			// delete picture from database
+			pictureDao.delete(picture);
+		} catch (Exception e) {
+		}
+	}
 }

@@ -5,88 +5,113 @@
 		
 		<div flash-message="3000"></div>
 		
-		<!-- add images test --> 
-		<div ng-controller="savePicture">
-			<div class="button" ngf-select ng-model="files" ngf-multiple="multiple">Select File</div>
-			on file change:
-    		<div class="button" ngf-select ngf-change="upload($files)" ngf-multiple="multiple">Select File</div>
+		<!-- add images -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">Galerie photos</div>
+			
+		  	<div class="panel-body">
+		    	<div ng-controller="savePictureCtrl">
+		    	
+		    		<!-- uploaded images-->
+		    		<div class="row">
+						<div class="col-xs-6 col-md-1" ng-repeat="image in images" id="{{image.fileName}}">
+							<a href="#" class="thumbnail">
+								<img ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/image-added-icon.png" >
+							</a>
+							
+							<div class="btn-group">
+					        	<a class="btn btn-xs btn-danger" ng-click="deletePicture(image)">Suprimer</a>
+					      	</div>
+						</div>
+						
+						<div class="col-xs-6 col-md-1" class="button" ngf-select ngf-change="upload($files)" ngf-multiple="multiple">
+							<a href="#" class="thumbnail">
+								<img class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/image-add-icon.png" >
+							</a>
+						</div>
+					</div>
+					
+				</div>
+		  	</div>
+		  	
 		</div>
 		
-		<form role="form" name="addRecipeForm" ng-controller="addRecipeCtrl" class="form-horizontal" id="formAddRecipe" ng-submit="add()" novalidate>
-
-			<legend>Saisissez les informations de votre recette !</legend>
-			
-			<!-- rcp_main_picture --> 
-			<div class="control-group">
-			  <label class="control-label" for="picFile">Image principale du plat</label>
-			  <div class="controls">
-			    <input id="rcp_main_picture" name="rcp_main_picture" class="input-file" type="file" ng-model="recipe.rcp_main_picture" accept="image/*">
-			  </div>
-			</div>
-			
-			<!-- rcp_dish_type -->
-			<div class="control-group">
-				<label class="control-label" for="rcp_dish_type">Catégorie de la recette</label>
-				<div class="controls">
-					<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Entree" ng-model="recipe.rcp_dish_type">Entrée</label>
-					<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Plat" ng-model="recipe.rcp_dish_type">Plat</label>
-					<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Dessert" ng-model="recipe.rcp_dish_type">Dessert</label>
-				</div>
-			</div>
-			
-			<!-- rcp_name -->
-			<div class="control-group">
-				<label class="control-label" for="rcp_name"></label>
-				<div class="controls">
-					<div class="input-group">
-						<span class="input-group-addon">Nom recette *</span>
-						<input id="rcp_name" name="rcp_name" class=" form-control" placeholder="Le nom de votre recette" type="text" ng-model="recipe.rcp_name" required>
-					</div>
-				</div>
-			</div>
-			
-			<!-- rcp_preparation_time -->
-			<div class="control-group">
-				<label class="control-label" for="rcp_preparation_time">Durée de préparation</label>
-				<div class="controls">
-					<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de prépartion en secondes" ng-model="recipe.rcp_preparation_time" required>
-				</div>
-			</div>
-			
-			<!-- rcp_cooking_time -->
-			<div class="control-group">
-				<label class="control-label" for="rcp_cooking_time">Temps de cuisson</label>
-				<div class="controls">
-					<input class="form-control" name="rcp_cooking_time" id="rcp_cooking_time" type="number" placeholder="Temps de cuisson en secondes" ng-model="recipe.rcp_cooking_time" required>
-				</div>
-			</div>
-			
-			<!-- rcp_difficulty -->
-			<div class="control-group">
-				<label class="control-label" for="rcp_difficulty">Niveau de difficulté (valeur sur 10) *</label>
-				<div class="controls">
-					<input class="form-control" name="rcp_difficulty" id="rcp_difficulty" type="number" placeholder="Difficulté" ng-model="recipe.rcp_difficulty" required>
-				</div>
-			</div>
-			
-			<!-- rcp_description -->
-			<div class="control-group">
-			  <label class="control-label" for="rcp_description">Bref description de la recette</label>
-			  <div class="controls">
-			    <textarea class="form-control" id="rcp_description" name="rcp_description" placeholder="description" ng-model="recipe.rcp_description" required></textarea>		  
-			  </div>
-			</div>
-			
-			<!-- Button -->
-			<div class="control-group">
-			  <label class="control-label" for="btnAddRecipe"></label>
-			  <div class="controls">
-			    <button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
-			    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
-			  </div>
-			</div>
 		
-		</form>
-	     
+		<div class="panel panel-default">
+			<div class="panel-heading">Informations recette</div>
+			
+		  	<div class="panel-body">
+				<form role="form" name="addRecipeForm" ng-controller="addRecipeCtrl" class="form-horizontal" id="formAddRecipe" ng-submit="add()" novalidate>
+					
+					<fieldset>
+									
+						<!-- rcp_dish_type -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_dish_type">Catégorie de la recette</label>
+							<div class="controls">
+								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Entree" ng-model="recipe.rcp_dish_type">Entrée</label>
+								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Plat" ng-model="recipe.rcp_dish_type">Plat</label>
+								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Dessert" ng-model="recipe.rcp_dish_type">Dessert</label>
+							</div>
+						</div>
+						
+						<!-- rcp_name -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_name"></label>
+							<div class="controls">
+								<div class="input-group">
+									<span class="input-group-addon">Nom recette *</span>
+									<input id="rcp_name" name="rcp_name" class=" form-control" placeholder="Le nom de votre recette" type="text" ng-model="recipe.rcp_name" required>
+								</div>
+							</div>
+						</div>
+						
+						<!-- rcp_preparation_time -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_preparation_time">Durée de préparation</label>
+							<div class="controls">
+								<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de prépartion en secondes" ng-model="recipe.rcp_preparation_time" required>
+							</div>
+						</div>
+						
+						<!-- rcp_cooking_time -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_cooking_time">Temps de cuisson</label>
+							<div class="controls">
+								<input class="form-control" name="rcp_cooking_time" id="rcp_cooking_time" type="number" placeholder="Temps de cuisson en secondes" ng-model="recipe.rcp_cooking_time" required>
+							</div>
+						</div>
+						
+						<!-- rcp_difficulty -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_difficulty">Niveau de difficulté (valeur sur 10) *</label>
+							<div class="controls">
+								<input class="form-control" name="rcp_difficulty" id="rcp_difficulty" type="number" placeholder="Difficulté" ng-model="recipe.rcp_difficulty" required>
+							</div>
+						</div>
+						
+						<!-- rcp_description -->
+						<div class="control-group">
+						  <label class="control-label" for="rcp_description">Bref description de la recette</label>
+						  <div class="controls">
+						    <textarea class="form-control" id="rcp_description" name="rcp_description" placeholder="description" ng-model="recipe.rcp_description" required></textarea>		  
+						  </div>
+						</div>
+						
+						<!-- Button -->
+						<div class="control-group">
+						  <label class="control-label" for="btnAddRecipe"></label>
+						  <div class="controls">
+						    <button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
+						    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
+						  </div>
+						</div>
+						
+					</fieldset>
+				</form>
+		
+			</div>
+		</div>
+
 	</div>
 </div>

@@ -1,7 +1,14 @@
-angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
-.controller('RecipesCtrl', function($scope, $http) {
-	$http.get('/recipes?mainpic=true')
-	.success(function(data, status, headers, config) {
+/**
+ * Angular module to manage recipe
+ */
+var recipeModule = angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload']);
+
+/**
+ * Controller to show recipes list
+ */
+recipeModule.controller('RecipesCtrl', function($scope, $http) {
+	
+	$http.get('/recipes?mainpic=true').success(function(data, status, headers, config) {
 
 		objects = data;
 
@@ -10,28 +17,65 @@ angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
 		}
 
 		$scope.recipes = data;
-	})
-	.error(function(data, status, headers, config) {
-		// log error
+	}).error(function(data, status, headers, config) {
+		
 	});
-}).controller('savePicture', ['$scope', 'Upload', function ($scope, Upload) {
-    $scope.$watch('files', function () {
-        $scope.upload($scope.files);
-    });
-    $scope.log = '';
+});
 
+/**
+ * Conroller to save pictures
+ */
+recipeModule.controller('savePictureCtrl', ['$scope', 'Upload', '$modal', '$http', function ($scope, Upload, $modal, $http) {
+	
+	// initialize the images paths array
+	$scope.images = new Array();
+	
+	// define function to show picture
+	$scope.display = function (filePath) {
+		var modalInstance = $modal.open({
+            templateUrl: 'js/recipe/imagestemplate.html',
+            controller: 'displayPicturesCtrl',
+            resolve: {
+            	path: function () {
+                	return filePath;
+                }
+            },
+			size: 300
+	    });
+	}
+	
+	// define function to delete a specified picture object
+	$scope.deletePicture = function (picture) {
+		
+		var pictureJson = angular.toJson(picture);
+		
+		$http({
+			method: 'POST', 
+			url : '/picture/delete',
+			data : pictureJson
+		}).success(function(data, status, header, config){
+			
+			// TODO : remove element from DOM
+			$( "#" + picture.fileName ).remove();
+		}).error(function(data, status, header, config){
+			console.log('error');
+		});
+	}
+	
+	// define function to upload picture file
     $scope.upload = function (files) {
+    	
         if (files && files.length) {
+        	
             for (var i = 0; i < files.length; i++) {
-                var file = files[i];
                 
-                console.log(file);
+            	var file = files[i];
                 
                 Upload.upload({
                     url: '/picture',
                     data: {file: file}
                 }).success(function (data, status, headers, config) {
-                	console.log(data);
+                	$scope.images = $scope.images.concat([data]);
                 });
                 
                 
@@ -52,67 +96,71 @@ angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
             }
         }
     };
-}]).controller('addRecipeCtrl', ['$scope','$window', '$location','$http','Flash',  function ($scope, $window, $location, $http, Flash) {
+}]);
+
+/**
+ * Controller to display image by modal
+ */
+recipeModule.controller('displayPicturesCtrl', ['$scope', 'path', '$modalInstance', function($scope, path, $modalInstance){
+    
+    $scope.path = path;
+    
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+    
+}]);
+
+/**
+ * Controller to add new recipe
+ */
+recipeModule.controller('addRecipeCtrl', ['$scope','$window', '$location','$http','Flash',  function ($scope, $window, $location, $http, Flash) {
 
 	//Function to add a new recipe
 	$scope.add = function () {
+		
 		//Set the value of experienceVal
 		$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
-
+		
 		var recipe = angular.toJson($scope.recipe);
-
-		//console.log($scope.recipe);
-		//console.log(recipe);
 
 		// send recipe to the recipe controller
 		$http({
 			method: 'POST', 
 			url : '/recipe/add',
 			data : recipe
-		})
-		.success(function(data, status, header, config){
+		}).success(function(data, status, header, config){
 			Flash.create('success', 'Votre nouvelle recette a été bien ajoutée !');
 			$window.location.href = '#/dashboard/recipe/'+data.idRecipe+'/addstep';
-		})
-		.error(function(data, status, header, config){
+		}).error(function(data, status, header, config){
 			Flash.create('danger', 'Suite à une erreur votre recette n\'a pas pu être sauvegardée');
 			$location.path('/dashboard/home');
 		});
 	};
+}]);
 
-}]).controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
-	//console.log("-------------------- RecipeCtrl --------------------");
-
+/**
+ * Controller to show a recipe content
+ */
+recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
 
 	$http({
 		method: 'GET', 
 		url : '/recipe/'+$stateParams.idRecipe
 	}).then(function successCallback(response) {
-
 		$scope.recipe = response.data;
-		//console.log(response.data);
-
-
 	}, function errorCallback(response) {
 		console.error(data, status, header, config);
 	});
-
-
 
 	$http({
 		method: 'GET', 
 		url : '/recipe/'+$stateParams.idRecipe+'/currentUserIsCreator'
 	}).then(function successCallback(response) {
-
 		$scope.iscreator = response.data;
-		//console.log(response.data);
-
-
 	}, function errorCallback(response) {
 		console.error(data, status, header, config);
 	});
-
-
 
 	//Valider une recette
 	$scope.doneRecipe = function(){
@@ -135,43 +183,30 @@ angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
 				$rootScope.newXp = $scope.newXp;
 			}
 
-
-			//console.log($scope.idUser +  "   " + $scope.newXp);
-
-
 			$http({
 				method: 'GET', 
 				url : '/level/xp/'+ $rootScope.newXp
 			}).then(function successCallback(response){
-				//console.log(response);
 				$rootScope.level = response.data;
 			},function errorCallback(response) {
 				console.error(data, status, header, config);
 			});
-
-
-
-
-
 		}, function errorCallback(response) {
 			console.log(data, status, header, config);
 		});
-
 	}
+}]);
 
-}]).controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams','$http', function ($scope, $window, $stateParams, $http, auth, cssInjector) {
-	//console.log("-------------------- addRecipeStepCtrl --------------------");
-
+/**
+ * Controller to add a step of a specified recipe
+ */
+recipeModule.controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams','$http', function ($scope, $window, $stateParams, $http, auth, cssInjector) {
 
 	$http({
 		method: 'GET', 
 		url : '/recipe/'+$stateParams.idRecipe
 	}).then(function successCallback(response) {
-
 		$scope.recipe = response.data;
-		//console.log(response.data);
-
-
 	}, function errorCallback(response) {
 		console.log(data, status, header, config);
 	});
@@ -180,22 +215,14 @@ angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload'])
 
 		$scope.recipestep.idRecipe = $stateParams.idRecipe;
 		var recipestep = angular.toJson($scope.recipestep);
-		//recipestep['idRecipe'] = $stateParams.idRecipe;
 
 		$http({
 			method: 'POST', 
 			url : '/recipestep/add',
 			data : recipestep
-		})
-		.success(function(data, status, header, config){
-			//console.log(data);
+		}).success(function(data, status, header, config){
 			$window.location.href = '#/dashboard/recipe/'+$stateParams.idRecipe;
-
-		})
-		.error(function(data, status, header, config){
+		}).error(function(data, status, header, config){
 		});
 	};
-
-
-
 }]);

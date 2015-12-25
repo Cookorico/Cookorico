@@ -13,6 +13,13 @@ public interface PictureService {
    * @param image l'image à sauvegarder
    */
   Picture savePicture(MultipartFile image);
+  
+  /**
+   * supprime l'image correspondant à l'objet
+   * 
+   * @param picture l'objet de l'image
+   */
+  void delete(Picture picture);
 
   /**
    * Recupere une image par son id
