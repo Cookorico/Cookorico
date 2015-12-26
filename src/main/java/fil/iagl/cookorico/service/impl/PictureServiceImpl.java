@@ -92,9 +92,11 @@ public class PictureServiceImpl implements PictureService {
 
     @Override
     public Picture getPictureById(Integer idImage) {
-        if (idImage == null) {
+        
+    	if (idImage == null) {
             throw new CookoricoException("L'id de l'image est null");
         }
+        
         return this.pictureDao.getPictureById(idImage);
     }
 

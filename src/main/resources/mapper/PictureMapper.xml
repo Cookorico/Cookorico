@@ -30,13 +30,13 @@
 		AND pic_disabled=#{picture.disabled}
 	</select>
 
-<!--
 	<select id="getPictureById" parameterType="Integer" resultType="fil.iagl.cookorico.entity.Picture">
 		SELECT * 
 		FROM picture 
 		WHERE pic_id_picture=#{idPicture}
 	</select>
 
+<!--
 	<select id="getAllPictures" resultMap="pictureResultMap">
 		SELECT * 
 		FROM picture

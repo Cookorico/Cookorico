@@ -15,40 +15,60 @@ public class RecipeServiceImpl implements RecipeService{
     @Autowired
     private RecipeDao recipeDao;
 
+    /**
+	 * Ajout recette dans la BDD
+	 * @param recipe l'entité recette à sauvegarder
+	 */
     @Override
     public void addRecipe(Recipe recipe) {
         
         final String recipeName = recipe.getName();
         
-        if (recipeDao.getRecipeWithName(recipeName) == null) {
-            recipeDao.addRecipe(recipe);
+        if (this.recipeDao.getRecipeWithName(recipeName) == null) {
+        	this.recipeDao.addRecipe(recipe);
         }
     }
 
+    /**
+	 * Recuperation des recettes
+	 * @return liste des recettes trouvées
+	 */
     @Override
     public List<Recipe> getAllRecipes() {
-        return recipeDao.getAllRecipes();
+        return this.recipeDao.getAllRecipes();
     }
 
     /**
-     * can probably be improved to avoid 4 differents requests...?
-     */
+	 * Recuperation des recettes
+	 * @param mainpic Si à true alors on recupère aussi les photos de la recette
+	 * @param tags Si à true alors on recupère aussi les tags de la recette
+	 * @return liste des recettes trouvées
+	 */
     @Override
     public List<Recipe> getAllRecipes(boolean mainpic, boolean tags) {
         
         if(mainpic & tags) {
-            return recipeDao.getFullRecipes();
-        } else if(mainpic) {
-            return recipeDao.getAllRecipesWithMainPicture();
-        } else if(tags) {
-            return recipeDao.getAllRecipesWithTags();
+            return this.recipeDao.getFullRecipes();
         }
         
-        return recipeDao.getAllRecipes();
+        if(mainpic) {
+            return this.recipeDao.getAllRecipesWithMainPicture();
+        }
+        
+        if(tags) {
+            return this.recipeDao.getAllRecipesWithTags();
+        }
+        
+        return this.recipeDao.getAllRecipes();
     }
     
+    /**
+	 * Recherche une recette par son id
+	 * @param id L'id de la recette
+	 * @return La recette trouvée
+	 */
     @Override
     public Recipe getRecipeById(int id) {
-        return recipeDao.getRecipeById(id);
+        return this.recipeDao.getRecipeById(id);
     }
 }

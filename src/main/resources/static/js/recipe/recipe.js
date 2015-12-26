@@ -15,13 +15,8 @@ recipeModule.controller('RecipesCtrl', function($scope, $http) {
 	
 	$http.get('/recipes?mainpic=true').success(function(data, status, headers, config) {
 		$scope.recipes = data;
-		
-		
-		console.log(data);
-		
-		
 	}).error(function(data, status, headers, config) {
-		
+		console.log(data);
 	});
 });
 
@@ -138,7 +133,10 @@ recipeModule.controller('addRecipeCtrl', ['$scope','$window', '$location','$http
 		
 		//Set the value of experienceVal
 		$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
-	
+		
+		// Set main picture id
+		$scope.recipe.mainPictureId = picturesRetained[0].idPicture;
+		
 		// send recipe to the recipe controller
 		$http({
 			method: 'POST',
@@ -163,7 +161,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope','$window', '$location','$http
                     data: angular.toJson(associatedData)
                 }).success(function (data, status, headers, config) {
                 	Flash.create('success', 'Votre nouvelle recette a été créée avec succès !');
-        			picturesRetained = $scope.images;
+        			//picturesRetained = $scope.images;
                 }).error(function(data, status, header, config){
         			Flash.create('danger', 'Suite à une erreur l\'association recette-photo n\a pas eu lieu');
         		});;

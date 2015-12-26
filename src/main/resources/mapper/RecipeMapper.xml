@@ -43,7 +43,7 @@
 	
 	<sql id="join_main_picture">
 		LEFT JOIN picture_in_recipe ON rcp_main_picture=pir_id_picture_in_recipe
-		LEFT JOIN picture ON pir_fk_id_picture=pic_id_picture
+		<!-- LEFT JOIN picture ON pir_fk_id_picture=pic_id_picture -->
 	</sql>
 	
 	<sql id="join_recipe_steps">
