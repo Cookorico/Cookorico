@@ -7,7 +7,11 @@
 		
 		<!-- add images -->
 		<div class="panel panel-primary">
-			<div class="panel-heading">Galerie photos</div>
+			<div class="panel-heading">
+				<h5>
+					<strong>Galerie photos</strong>
+				</h5>
+			</div>
 			
 		  	<div class="panel-body">
 		    	<div ng-controller="pictureCtrl">
@@ -36,15 +40,19 @@
 		  	
 		</div>
 		
-		
-		<div class="panel panel-default">
-			<div class="panel-heading">Informations recette</div>
+		<!-- Informations recette -->
+		<div class="panel panel-primary">
+			
+			<div class="panel-heading"><h5>
+					<strong>Informations recette</strong>
+				</h5>
+			</div>
 			
 		  	<div class="panel-body">
 				<form role="form" name="addRecipeForm" ng-controller="addRecipeCtrl" class="form-horizontal" id="formAddRecipe" ng-submit="add()" novalidate>
 					
 					<fieldset>
-									
+					
 						<!-- rcp_dish_type -->
 						<div class="control-group">
 							<label class="control-label" for="rcp_dish_type">Catégorie de la recette</label>
@@ -70,7 +78,7 @@
 						<div class="control-group">
 							<label class="control-label" for="rcp_preparation_time">Durée de préparation</label>
 							<div class="controls">
-								<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de prépartion en secondes" ng-model="recipe.rcp_preparation_time" required>
+								<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de prépartion en secondes" ng-model="recipe.rcp_preparation_time">
 							</div>
 						</div>
 						
@@ -78,7 +86,7 @@
 						<div class="control-group">
 							<label class="control-label" for="rcp_cooking_time">Temps de cuisson</label>
 							<div class="controls">
-								<input class="form-control" name="rcp_cooking_time" id="rcp_cooking_time" type="number" placeholder="Temps de cuisson en secondes" ng-model="recipe.rcp_cooking_time" required>
+								<input class="form-control" name="rcp_cooking_time" id="rcp_cooking_time" type="number" placeholder="Temps de cuisson en secondes" ng-model="recipe.rcp_cooking_time">
 							</div>
 						</div>
 						
@@ -92,19 +100,19 @@
 						
 						<!-- rcp_description -->
 						<div class="control-group">
-						  <label class="control-label" for="rcp_description">Bref description de la recette</label>
-						  <div class="controls">
-						    <textarea class="form-control" id="rcp_description" name="rcp_description" placeholder="description" ng-model="recipe.rcp_description" required></textarea>		  
-						  </div>
+						  	<label class="control-label" for="rcp_description">Breve description de la recette</label>
+					  		<div class="controls">
+						    	<textarea class="form-control" id="rcp_description" name="rcp_description" placeholder="Une petite description..." ng-model="recipe.rcp_description"></textarea>		  
+						  	</div>
 						</div>
 						
 						<!-- Button -->
 						<div class="control-group">
-						  <label class="control-label" for="btnAddRecipe"></label>
-						  <div class="controls">
-						    <button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
-						    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
-						  </div>
+						  	<label class="control-label" for="btnAddRecipe"></label>
+					  		<div class="controls">
+						    	<button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
+						    	<button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
+						  	</div>
 						</div>
 						
 					</fieldset>

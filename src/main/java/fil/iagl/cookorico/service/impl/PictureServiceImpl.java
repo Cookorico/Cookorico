@@ -74,14 +74,14 @@ public class PictureServiceImpl implements PictureService {
     		
             savedImg.setFileName(fileName+ imageExt);
             savedImg.setCreationDate(new Timestamp(date.getTime()));
-            savedImg.setDescription("Desc"); // TODO à automatiser
+            savedImg.setDescription("Default Description"); // TODO à automatiser
             savedImg.setDisabled(false);
             savedImg.setFilePath(relativePath);
             savedImg.setMember(creator);
-            savedImg.setTitle("Titre");  // TODO à automatiser
+            savedImg.setTitle("Default Title");  // TODO à automatiser
             
             // save entity to Database
-            pictureDao.savePicture(savedImg);
+            this.pictureDao.savePicture(savedImg);
             
             // return saved entity to front end
             return savedImg;
@@ -95,7 +95,7 @@ public class PictureServiceImpl implements PictureService {
         if (idImage == null) {
             throw new CookoricoException("L'id de l'image est null");
         }
-        return pictureDao.getPictureById(idImage);
+        return this.pictureDao.getPictureById(idImage);
     }
 
     /*
@@ -124,7 +124,7 @@ public class PictureServiceImpl implements PictureService {
 			Files.delete(path);
 			
 			// delete picture from database
-			pictureDao.delete(picture);
+			this.pictureDao.delete(picture);
 		} catch (Exception e) {
 		}
 	}

@@ -4,12 +4,22 @@
 var recipeModule = angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload']);
 
 /**
+ * variable that contains all saved images
+ */
+var picturesRetained = new Array();
+
+/**
  * Controller to show recipes list
  */
 recipeModule.controller('RecipesCtrl', function($scope, $http) {
 	
 	$http.get('/recipes?mainpic=true').success(function(data, status, headers, config) {
 		$scope.recipes = data;
+		
+		
+		console.log(data);
+		
+		
 	}).error(function(data, status, headers, config) {
 		
 	});
@@ -25,7 +35,9 @@ recipeModule.controller('pictureCtrl', ['$scope', 'Upload', '$modal', '$http', f
 	
 	// define function to show picture
 	$scope.display = function (filePath) {
+		
 		var modalInstance = $modal.open({
+			
             templateUrl: 'js/recipe/imagestemplate.html',
             controller: 'displayPicturesCtrl',
             resolve: {
@@ -47,6 +59,7 @@ recipeModule.controller('pictureCtrl', ['$scope', 'Upload', '$modal', '$http', f
 			url : '/picture/delete',
 			data : pictureJson
 		}).success(function(data, status, header, config){
+			
 			// remove related element deleted from DOM
 			$("#img_" + picture.creationDate).remove();
 			
@@ -54,6 +67,9 @@ recipeModule.controller('pictureCtrl', ['$scope', 'Upload', '$modal', '$http', f
 			$scope.images = jQuery.grep($scope.images, function(value) {
 		        return value != picture;
 			});
+			
+			// update retained images
+			picturesRetained = $scope.images;
 			
 		}).error(function(data, status, header, config){
 			console.log(data);
@@ -73,9 +89,12 @@ recipeModule.controller('pictureCtrl', ['$scope', 'Upload', '$modal', '$http', f
                     url: '/picture',
                     data: {file: file}
                 }).success(function (data, status, headers, config) {
+                	
                 	$scope.images = $scope.images.concat([data]);
+                	
+                	// update retained images
+        			picturesRetained = $scope.images;
                 });
-                
                 
                 /*Upload.upload({
                     url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
@@ -119,20 +138,46 @@ recipeModule.controller('addRecipeCtrl', ['$scope','$window', '$location','$http
 		
 		//Set the value of experienceVal
 		$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
-		
-		var recipe = angular.toJson($scope.recipe);
-
+	
 		// send recipe to the recipe controller
 		$http({
-			method: 'POST', 
+			method: 'POST',
 			url : '/recipe/add',
-			data : recipe
+			data : angular.toJson($scope.recipe)
 		}).success(function(data, status, header, config){
-			Flash.create('success', 'Votre nouvelle recette a été bien ajoutée !');
+			
+			// associate images with recipe
+			Object.keys(picturesRetained).forEach(function(key) {
+				
+				var picture = picturesRetained[key];
+				var associatedData = {
+				    "idComment": 0,
+				    "idPicture": picture.idPicture,
+				    "idRecipe": data.idRecipe
+				};
+				
+				// send data to the back-end controller
+				$http({
+					method: 'POST',
+                    url: '/pictureinrecipe/associate',
+                    data: angular.toJson(associatedData)
+                }).success(function (data, status, headers, config) {
+                	Flash.create('success', 'Votre nouvelle recette a été créée avec succès !');
+        			picturesRetained = $scope.images;
+                }).error(function(data, status, header, config){
+        			Flash.create('danger', 'Suite à une erreur l\'association recette-photo n\a pas eu lieu');
+        		});;
+			});
+			
+			// redirect to add recipe steps
 			$window.location.href = '#/dashboard/recipe/'+data.idRecipe+'/addstep';
+		
 		}).error(function(data, status, header, config){
+			
+			// redirect to the home page
 			Flash.create('danger', 'Suite à une erreur votre recette n\'a pas pu être sauvegardée');
 			$location.path('/dashboard/home');
+			
 		});
 	};
 }]);

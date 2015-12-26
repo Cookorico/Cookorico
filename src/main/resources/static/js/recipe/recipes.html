@@ -2,16 +2,23 @@
 <div class="container">
 	<div class="conter-wrapper">
 		<div class="row">
-					<div flash-message="3000"></div>
+			
+			<div flash-message="3000"></div>
+			
 			<div class="col-md-12">
 				
 				<div class="container dynamicTile">
 					<div class="row">
 						<div ng-controller="RecipesCtrl">
 							<div ng-repeat="recipe in recipes">
+								
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										<img src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
+										
+										<a href="#" class="thumbnail">
+											<img ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" src="images/image-add-icon.png" >
+										</a>
+										
 										<div class="caption">
 											<h3>{{recipe.name}}</h3>
 	

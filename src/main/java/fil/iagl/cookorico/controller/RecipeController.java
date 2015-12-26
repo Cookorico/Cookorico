@@ -66,17 +66,14 @@ public class RecipeController {
 	}
 	
 	@RequestMapping(value="/recipes", method = RequestMethod.GET)
-	public @ResponseBody List<Recipe> getListRecipe(
-			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
-			@RequestParam(value = "tags", required = false) boolean tags) {
-		
+	public @ResponseBody List<Recipe> getListRecipe(@RequestParam(value = "mainpic", required = false) boolean mainpic, @RequestParam(value = "tags", required = false) boolean tags) {
 		return recipeService.getAllRecipes(mainpic, tags);
 	}
 	
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
 	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
 		
-		// get form data
+		// get recipe form data
 		int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
 		int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
 		int difficulty = Integer.valueOf(String.valueOf(model.get("rcp_difficulty")));
@@ -100,7 +97,7 @@ public class RecipeController {
 		recipe.setDishType(dish_type);
 		recipe.setDifficulty(difficulty);
 		recipe.setDraft(false); // TODO : valeur par défaut ?
-		// TODO : recipe.setPicture(integer)
+		//TODO recipe.setMainPicture(mainPicture);
 		recipe.setCreationDate(creationDate);
 		recipe.setModifDate(creationDate);
 		recipe.setValidation(false);
@@ -110,6 +107,7 @@ public class RecipeController {
 		
 		// save the recipe to bdd
 		this.recipeService.addRecipe(recipe);
+		
 		return recipe;
 	}	
 }

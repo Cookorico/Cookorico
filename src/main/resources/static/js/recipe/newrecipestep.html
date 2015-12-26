@@ -1,47 +1,67 @@
 <link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
-<pageheader pagename="Nouvelle étape"
-	subtitle="Ajoutez une étape à votre recette"></pageheader>
+
+<pageheader pagename="Une nouvelle étape � votre recette" subtitle="Ajoutez une étape à votre recette"></pageheader>
 
 <div class="container">
-	<div class="" style="padding: 17px;" ng-controller="addRecipeStepCtrl">
-
-		<div class="container dynamicTile">
-			<div class="thumbnail  row header_recipe_step">
-				<div class="img-div col-md-4">
-					<img class="img-circle" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" />
-				</div>
-				<div class="caption col-md-10">
-					<h1>Nouvelle étape pour {{recipe.name}}</h1>
-				</div>
+	<div class="" style="padding:17px;">
+		
+		<div flash-message="3000"></div>
+		
+		<!-- add images -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h5>
+					<strong>Créer une nouvelle étape pour votre recette : <i>{{recipe.name}}</i></strong>
+				</h5>
 			</div>
+			
+		  	<div class="panel-body">
+		  		
+		  		<form role="form" name="addRecipeForm" class="form" id="formAddRecipe" ng-submit="addStep()" novalidate>
+					
+					<fieldset>
+					
+						<!-- recipe_step_name -->
+						<div class="control-group">
+							<label class="control-label" for="recipe_step_name"></label>
+							<div class="controls">
+								<div class="input-group">
+									<span class="input-group-addon">Denomination de l'étape *</span>
+									<input id="recipe_step_name" name="recipe_step_name" class=" form-control" placeholder="Nom de l'étape" type="text" ng-model="recipestep.name" required>
+								</div>
+							</div>
+						</div>
+						
+						<!-- rcp_preparation_time -->
+						<div class="control-group">
+							<label class="control-label" for="step_duration_time">Durée de l'étape (en secondes) *</label>
+							<div class="controls">
+								<input class="form-control" name="step_duration_time" id="step_duration_time" type="number" placeholder="Temps estimée en secondes" ng-model="recipestep.durationTime" required>
+							</div>
+						</div>
+						
+						<!-- rcp_description -->
+						<div class="control-group">
+						  	<label class="control-label" for="recipedescription">Breve description de l'étape *</label>
+						  	<div class="controls">
+						    	<textarea class="form-control" id="recipeDescription" name="recipeDescription" placeholder="Une petite description..." ng-model="recipestep.description" required></textarea>		  
+						  	</div>
+						</div>
+						
+						
+						<!-- Button -->
+						<div class="control-group">
+						  	<label class="control-label" for="btnAddRecipe"></label>
+					  		<div class="controls">
+						    	<button id="btnAddRecipeStep" name="btnAddRecipeStep" class="btn btn-success" role="submit">Créer l'étape</button>
+						    	<button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
+						  	</div>
+						</div>
+					</fieldset>
+				</form>
+		  		
+		  	</div>
+		  	
 		</div>
-
-		<form role="form" name="addRecipeForm" class="form" id="formAddRecipe"
-			ng-submit="addStep()" novalidate>
-			<div class="form-group">
-				<label for="recipe_step_name">Nom de l'étape :</label> <input
-					class="form-control" name="recipe_step_name" id="recipe_step_name"
-					type="text" placeholder="Nom de l'étape" ng-model="recipestep.name"
-					required>
-			</div>
-			<div class="col-xs-6 col-lg-4">
-				<div class="form-group row">
-					<label for="step_duration_time">durée de l'étape (en
-						secondes) :</label> <input class="form-control" name="step_duration_time"
-						id="step_duration_time" type="number" placeholder="Durée"
-						ng-model="recipestep.durationTime" required>
-				</div>
-			</div>
-			<div class="form-group col-xs-12 col-sm-6 col-lg-8">
-				<label for="recipedescription">Description :</label>
-				<textarea class="form-control" name="recipeDescription"
-					id="recipeDescription" type="textarea" rows="6"
-					placeholder="description" ng-model="recipestep.description"
-					required></textarea>
-			</div>
-			<br>
-			<button id="btnAddRecipeStep" role="submit"
-				class="btn btn-success btn-block">Ajouter l'étape</button>
-		</form>
 	</div>
 </div>
