@@ -72,13 +72,13 @@ public class PictureServiceImpl implements PictureService {
             Picture savedImg = new Picture();
             Date date = new Date();
     		
-            savedImg.setFileName(fileName+ imageExt);
+            savedImg.setFileName(fileName + imageExt);
             savedImg.setCreationDate(new Timestamp(date.getTime()));
             savedImg.setDescription("Default Description"); // TODO à automatiser
             savedImg.setDisabled(false);
             savedImg.setFilePath(relativePath);
             savedImg.setMember(creator);
-            savedImg.setTitle("Default Title");  // TODO à automatiser
+            savedImg.setTitle(picture.getOriginalFilename());
             
             // save entity to Database
             this.pictureDao.savePicture(savedImg);

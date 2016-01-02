@@ -18,19 +18,9 @@
 		    	
 		    		<!-- uploaded images-->
 		    		<div class="row">
-						<div class="col-xs-6 col-md-1" ng-repeat="image in images" id="img_{{image.creationDate}}">
+		    			<div class="col-xs-6 col-md-1">
 							<a href="#" class="thumbnail">
-								<img ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/image-added-icon.png" >
-							</a>
-							
-							<div class="btn-group">
-					        	<a class="btn btn-xs btn-danger" ng-click="deletePicture(image)">Suprimer</a>
-					      	</div>
-						</div>
-						
-						<div class="col-xs-6 col-md-1" class="button" ngf-select ngf-change="upload($files)" ngf-multiple="multiple">
-							<a href="#" class="thumbnail">
-								<img class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/image-add-icon.png" >
+								<img ng-click="galery()" class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/user-icon.png" >
 							</a>
 						</div>
 					</div>
