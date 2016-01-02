@@ -1,7 +1,7 @@
 <div  ng-controller="galeryCtrl">
 
 	<div class="modal-header">
-	    <h3 class="modal-title">Galerie photos</h3>
+	    <h3 class="modal-title"><span class="glyphicon glyphicon-import"></span>  <strong>Importez vos photos</strong></h3>
 	</div>
 	
 	<div class="modal-body">
@@ -59,7 +59,7 @@
 			        	<td colspan="5" align="center">
 			        		
 			        		<button type="button" class="btn btn-primary btn-xs" ngf-select ngf-change="uploadFileFn($files)" ngf-multiple="multiple">
-			                    <span class="glyphicon glyphicon-picture"></span> Ajouter
+			                    <span class="glyphicon glyphicon-plus"></span> Ajouter
 			                </button>
 			                
 						</td>
@@ -74,14 +74,14 @@
 	        <span class="glyphicon glyphicon-upload"></span> Upload tout
 	    </button>
 	    
-	    <button type="button" class="btn btn-danger btn-s" ng-click="removeAllItemsFn()" ng-disabled="allItems.length==0">
+	    <button type="button" class="btn btn-warning btn-s" ng-click="removeAllItemsFn()" ng-disabled="allItems.length==0">
 	        <span class="glyphicon glyphicon-trash"></span> Supprimer tout
 	    </button>
 	    
 	  	<!-- TODO : fermer modl ne marche pas -->
 	    <!-- <button type="button" class="btn btn-warning btn-s" ng-click="closeWindowsFn()"> -->
-	    <button type="button" class="btn btn-warning btn-s">
-	        <span class="glyphicon glyphicon-ban-circle"></span> Fermer f&ecirc;netre
+	    <button type="button" class="btn btn-danger btn-s">
+	        <span class="glyphicon glyphicon-remove"></span> Fermer f&ecirc;netre
 	    </button>
 	</div>
 	

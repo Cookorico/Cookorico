@@ -8,21 +8,42 @@
 		<!-- add images -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h5>
-					<strong>Galerie photos</strong>
-				</h5>
+				<h3 class="panel-title"><span class="glyphicon glyphicon-picture"></span>  <strong>Galerie photos</strong></h3>
 			</div>
 			
 		  	<div class="panel-body">
-		    	<div ng-controller="pictureCtrl">
-		    	
-		    		<!-- uploaded images-->
-		    		<div class="row">
-		    			<div class="col-xs-6 col-md-1">
-							<a href="#" class="thumbnail">
-								<img ng-click="galery()" class="medium" data-holder-rendered="true" style="height: 64px; width: 64px; display: block;" src="images/user-icon.png" >
-							</a>
-						</div>
+		    	<div ng-controller="carouselCtrl">
+		    			
+					<!-- Caroussel to display uploaded files -->
+					<div ng-if="uploadedItems.length > 0">
+						<div class="row">
+					    	<div style="height: 305px">
+						    	<uib-carousel interval="interval" no-wrap="noWrapSlides">
+						      		<uib-slide ng-repeat="slide in slides" active="slide.active">
+						      		
+						      			<a href="#" class="thumbnail">
+											<img ng-click="displayFn(slide.image)" class="medium" data-holder-rendered="true" ngf-src="{{slide.image}}" style="height: 260px; width: 1066px; display: block;">
+										</a>
+										
+						        		<div class="carousel-caption">
+								          	<h4>{{slide.image.name}}</h4>
+								          	<p>{{slide.description}}</p>
+						        		</div>
+						        		
+						      		</uib-slide>
+						    	</uib-carousel>
+						  	</div>
+					  	</div>
+					</div>
+			  	</div>
+			  	
+			  	<div ng-controller="pictureCtrl">
+					
+					<!-- uploaded images link -->
+		    		<div class="row" style="text-align: center">
+		    			<button type="button" class="btn btn-primary btn-s" ng-click="galeryFn()">
+		                    <span class="glyphicon glyphicon-new-window"></span> Ajouter une photo...
+		                </button>
 					</div>
 					
 				</div>
@@ -34,8 +55,7 @@
 		<div class="panel panel-primary">
 			
 			<div class="panel-heading"><h5>
-					<strong>Informations recette</strong>
-				</h5>
+				<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>  <strong>Informations recette</strong></h3>
 			</div>
 			
 		  	<div class="panel-body">
@@ -100,8 +120,13 @@
 						<div class="control-group">
 						  	<label class="control-label" for="btnAddRecipe"></label>
 					  		<div class="controls">
-						    	<button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success" role="submit">Ajouter recette</button>
-						    	<button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
+						    	<button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success btn-s" role="submit">
+							        <span class="glyphicon glyphicon-arrow-right"></span> Sauvegarder
+							    </button>
+								
+								<button id="btnRazForm" name="btnRazForm" class="btn btn-warning btn-s" type="reset">
+							        <span class="glyphicon glyphicon-ban-circle"></span> Vider formulaire
+							    </button>
 						  	</div>
 						</div>
 						

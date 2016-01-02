@@ -7,14 +7,30 @@ var recipeModule = angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload
  * Controller to upload images by modal
  */
 recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal', '$http', /*$modalInstance, */ function($scope, $rootScope, Upload, $modal, $http /*, $modalInstance*/) {
-
-	$rootScope.allItems = new Array();
-	$rootScope.notUploadedItems = new Array();
-	$rootScope.uploadedItems = new Array();
-	$rootScope.picturesIdItems = new Array();
-	$rootScope.pictures = new Array();
-    
+	
+	// initialize variables
+	if (typeof $rootScope.allItems == 'undefined') {
+		$rootScope.allItems = new Array();
+	}
+	
+	if (typeof $rootScope.notUploadedItems == 'undefined') {
+		$rootScope.notUploadedItems = new Array();
+	}
+	
+	if (typeof $rootScope.uploadedItems == 'undefined') {
+		$rootScope.uploadedItems = new Array();
+	}
+	
+	if (typeof $rootScope.picturesIdItems == 'undefined') {
+		$rootScope.picturesIdItems = new Array();
+	}
+	
+	if (typeof $rootScope.pictures == 'undefined') {
+		$rootScope.pictures = new Array();
+	}
+	
 	/*
+	// close modal
 	$scope.closeWindowsFn = function () {
         $modalInstance.dismiss('cancel');
     };
@@ -304,12 +320,35 @@ recipeModule.controller('RecipesCtrl', function($scope, $http) {
 });
 
 /**
+ * Conroller to manage carousel
+ */
+recipeModule.controller('carouselCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+	
+	$scope.interval = 4000;
+	$scope.noWrapSlides = false;
+	var slides = $scope.slides = [];
+	
+	$scope.addSlide = function(multipartFile) {
+		slides.push({
+			image: multipartFile,
+			description: 'Petit descriptif'
+	    });
+	};
+	
+	if (typeof $rootScope.uploadedItems != 'undefined') {
+		for (var i=0; i<$rootScope.uploadedItems.length; i++) {
+			$scope.addSlide($rootScope.uploadedItems[i]);
+		}
+	}
+}]);
+
+/**
  * Conroller to save pictures
  */
 recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', function ($scope, $rootScope, Upload, $modal, $http) {
 	
 	// define function to add photo
-	$scope.galery = function () {
+	$scope.galeryFn = function () {
 		
 		var modalInstance = $modal.open({
             templateUrl: 'js/recipe/galerytemplate.html',
@@ -317,11 +356,6 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
 			size: 800
 	    });
 	};
-	
-	
-	
-	
-	
 	
 	// define function to show picture
 	$scope.display = function (filePath) {
@@ -374,7 +408,7 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
  * Controller to add new recipe
  */
 recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$location', '$http', 'Flash',  function ($scope, $rootScope, $window, $location, $http, Flash) {
-
+	
 	//Function to add a new recipe
 	$scope.add = function () {
 		

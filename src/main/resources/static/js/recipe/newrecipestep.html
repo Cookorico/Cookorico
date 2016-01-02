@@ -10,9 +10,7 @@
 		<!-- add images -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h5>
-					<strong>Créer une nouvelle étape pour votre recette : <i>{{recipe.name}}</i></strong>
-				</h5>
+				<h3 class="panel-title"><span class="glyphicon glyphicon-step-forward"></span>  <strong>Créer une nouvelle étape pour votre recette : <i>{{recipe.name}}</strong></h3>
 			</div>
 			
 		  	<div class="panel-body">
@@ -53,8 +51,13 @@
 						<div class="control-group">
 						  	<label class="control-label" for="btnAddRecipe"></label>
 					  		<div class="controls">
-						    	<button id="btnAddRecipeStep" name="btnAddRecipeStep" class="btn btn-success" role="submit">Créer l'étape</button>
-						    	<button id="btnRazForm" name="btnRazForm" class="btn btn-danger" type="reset">Vider formulaire</button>
+					  			<button  id="btnAddRecipeStep" name="btnAddRecipeStep" class="btn btn-success btn-s" role="submit">
+							        <span class="glyphicon glyphicon-floppy-saved"></span> Créer l'étape
+							    </button>
+								
+								<button id="btnRazForm" name="btnRazForm" class="btn btn-warning btn-s" type="reset">
+							        <span class="glyphicon glyphicon-ban-circle"></span> Vider formulaire
+							    </button>
 						  	</div>
 						</div>
 					</fieldset>
