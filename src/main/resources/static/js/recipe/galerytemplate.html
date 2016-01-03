@@ -10,7 +10,7 @@
 			<table class="table">
 			    <thead>
 			        <tr>
-			        	<th>Preview</th>
+			        	<th>Aper&ccedil;u</th>
 			            <th>Nom fichier</th>
 			            <th>Taille</th>
 			            <th>Avancement</th>
@@ -48,7 +48,8 @@
 			                    <span class="glyphicon glyphicon-upload"></span> Upload
 			                </button>
 			                
-			                <button type="button" class="btn btn-danger btn-xs" ng-click="removeSavedFileFn(multipartFile)">
+			                
+			                <button type="button" class="btn btn-warning btn-xs" ng-click="removeSavedFileFn(multipartFile)" confirm="Are you sure, {{name}}?" confirm-settings="{size: 'sm'}">
 			                <!-- <button type="button" class="btn btn-danger btn-xs"> -->
 			                    <span class="glyphicon glyphicon-trash"></span> Supprimer
 			                </button>
@@ -57,11 +58,9 @@
 			        
 			        <tr>
 			        	<td colspan="5" align="center">
-			        		
 			        		<button type="button" class="btn btn-primary btn-xs" ngf-select ngf-change="uploadFileFn($files)" ngf-multiple="multiple">
 			                    <span class="glyphicon glyphicon-plus"></span> Ajouter
 			                </button>
-			                
 						</td>
 					</tr>
 			    </tbody>

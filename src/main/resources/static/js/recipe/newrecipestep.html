@@ -1,6 +1,6 @@
 <link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
 
-<pageheader pagename="Une nouvelle étape � votre recette" subtitle="Ajoutez une étape à votre recette"></pageheader>
+<pageheader pagename="Une nouvelle &eacute;tape � votre recette" subtitle="Ajoutez une &eacute;tape à votre recette"></pageheader>
 
 <div class="container">
 	<div class="" style="padding:17px;">
@@ -10,7 +10,7 @@
 		<!-- add images -->
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h3 class="panel-title"><span class="glyphicon glyphicon-step-forward"></span>  <strong>Créer une nouvelle étape pour votre recette : <i>{{recipe.name}}</strong></h3>
+				<h3 class="panel-title"><span class="glyphicon glyphicon-step-forward"></span>  <strong>Cr&eacute;er une nouvelle &eacute;tape pour votre recette : <i>{{recipe.name}}</strong></h3>
 			</div>
 			
 		  	<div class="panel-body">
@@ -24,23 +24,23 @@
 							<label class="control-label" for="recipe_step_name"></label>
 							<div class="controls">
 								<div class="input-group">
-									<span class="input-group-addon">Denomination de l'étape *</span>
-									<input id="recipe_step_name" name="recipe_step_name" class=" form-control" placeholder="Nom de l'étape" type="text" ng-model="recipestep.name" required>
+									<span class="input-group-addon">Denomination de l'&eacute;tape *</span>
+									<input id="recipe_step_name" name="recipe_step_name" class=" form-control" placeholder="Nom de l'&eacute;tape" type="text" ng-model="recipestep.name" required>
 								</div>
 							</div>
 						</div>
 						
 						<!-- rcp_preparation_time -->
 						<div class="control-group">
-							<label class="control-label" for="step_duration_time">Durée de l'étape (en secondes) *</label>
+							<label class="control-label" for="step_duration_time">Dur&eacute;e de l'&eacute;tape (en secondes) *</label>
 							<div class="controls">
-								<input class="form-control" name="step_duration_time" id="step_duration_time" type="number" placeholder="Temps estimée en secondes" ng-model="recipestep.durationTime" required>
+								<input class="form-control" name="step_duration_time" id="step_duration_time" type="number" placeholder="Temps estim&eacute;e en secondes" ng-model="recipestep.durationTime" required>
 							</div>
 						</div>
 						
 						<!-- rcp_description -->
 						<div class="control-group">
-						  	<label class="control-label" for="recipedescription">Breve description de l'étape *</label>
+						  	<label class="control-label" for="recipedescription">Breve description de l'&eacute;tape *</label>
 						  	<div class="controls">
 						    	<textarea class="form-control" id="recipeDescription" name="recipeDescription" placeholder="Une petite description..." ng-model="recipestep.description" required></textarea>		  
 						  	</div>
@@ -52,7 +52,7 @@
 						  	<label class="control-label" for="btnAddRecipe"></label>
 					  		<div class="controls">
 					  			<button  id="btnAddRecipeStep" name="btnAddRecipeStep" class="btn btn-success btn-s" role="submit">
-							        <span class="glyphicon glyphicon-floppy-saved"></span> Créer l'étape
+							        <span class="glyphicon glyphicon-floppy-saved"></span> Cr&eacute;er l'&eacute;tape
 							    </button>
 								
 								<button id="btnRazForm" name="btnRazForm" class="btn btn-warning btn-s" type="reset">

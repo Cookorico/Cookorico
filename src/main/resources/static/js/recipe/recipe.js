@@ -409,21 +409,47 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
  */
 recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$location', '$http', 'Flash',  function ($scope, $rootScope, $window, $location, $http, Flash) {
 	
+	$scope.infoDifficulteFn = function(value) {
+	    $scope.experience = value * 10;
+	    $scope.difficult = value;
+	};
+	
 	//Function to add a new recipe
-	$scope.add = function () {
+	$scope.addRecipeFn = function () {
 		
-		//Set the value of experienceVal
-		if (typeof $scope.recipe.rcp_difficulty != 'undefined') {
-			$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
+		//Set the value of difficulty and experience
+		if (typeof $scope.difficulty != 'undefined') {
+			$scope.recipe.rcp_difficulty = $scope.difficulty;
+		} else {
+			$scope.recipe.rcp_difficulty = 0;
+		}
+		
+		$scope.recipe.rcp_experienceVal = $scope.recipe.rcp_difficulty * 10;
+		
+		// set preparation time
+		if (typeof $scope.preparation_time != 'undefined') {
+			$scope.recipe.rcp_preparation_time = $scope.preparation_time.getHours() * 60 + $scope.preparation_time.getMinutes(); 
+		} else {
+			$scope.recipe.rcp_preparation_time = 0;
+		}
+		
+		// set cooking time
+		if (typeof $scope.cooking_time != 'undefined') {
+			$scope.recipe.rcp_cooking_time = $scope.cooking_time.getHours() * 60 + $scope.cooking_time.getMinutes(); 
+		} else {
+			$scope.recipe.rcp_cooking_time = 0;
 		}
 		
 		// Set main picture id
-		if ($rootScope.pictures.length > 0) {
+		if (typeof $rootScope.pictures != 'undefined' && $rootScope.pictures.length > 0) {
 			
 			Object.keys($rootScope.pictures).forEach(function(idPicture) {
 				$scope.recipe.mainPictureId = idPicture;
 			});
 		}
+		
+		console.log('$scope.recipe = ');
+		console.log($scope.recipe);
 		
 		// send recipe to the recipe controller
 		$http({
@@ -432,31 +458,35 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
 			data : angular.toJson($scope.recipe)
 		}).success(function(data, status, header, config){
 			
+			console.log('data from add recipe');
+			console.log(data);
+			
 			// associate images with recipe
-			Object.keys($rootScope.pictures).forEach(function(key) {
-				
-				var picture = $rootScope.pictures[key];
-				var associatedData = {
-				    "idComment": 0,
-				    "idPicture": picture.idPicture,
-				    "idRecipe": data.idRecipe
-				};
-				
-				// send data to the back-end controller
-				$http({
-					method: 'POST',
-                    url: '/pictureinrecipe/associate',
-                    data: angular.toJson(associatedData)
-                }).success(function (data, status, headers, config) {
-                	Flash.create('success', 'Votre nouvelle recette a été créée avec succès !');
-                }).error(function(data, status, header, config){
-        			Flash.create('danger', 'Suite à une erreur l\'association recette-photo n\a pas eu lieu');
-        		});
-			});
+			if (typeof $rootScope.pictures != 'undefined' && $rootScope.pictures.length > 0) {
+				Object.keys($rootScope.pictures).forEach(function(key) {
+					
+					var picture = $rootScope.pictures[key];
+					var associatedData = {
+					    "idComment": 0,
+					    "idPicture": picture.idPicture,
+					    "idRecipe": data.idRecipe
+					};
+					
+					// send data to the back-end controller
+					$http({
+						method: 'POST',
+	                    url: '/pictureinrecipe/associate',
+	                    data: angular.toJson(associatedData)
+	                }).success(function (data, status, headers, config) {
+	                	Flash.create('success', 'Votre nouvelle recette a été créée avec succès !');
+	                }).error(function(data, status, header, config){
+	        			Flash.create('danger', 'Suite à une erreur l\'association recette-photo n\a pas eu lieu');
+	        		});
+				});
+			}
 			
 			// redirect to add recipe steps
 			$window.location.href = '#/dashboard/recipe/'+data.idRecipe+'/addstep';
-		
 		}).error(function(data, status, header, config){
 			
 			// redirect to the home page

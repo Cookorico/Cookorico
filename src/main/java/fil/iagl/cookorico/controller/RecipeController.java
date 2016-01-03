@@ -1,9 +1,8 @@
 package fil.iagl.cookorico.controller;
 
-import java.util.Date;
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,21 +15,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import fil.iagl.cookorico.entity.Administrator;
 import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Member;
+import fil.iagl.cookorico.entity.Picture;
 import fil.iagl.cookorico.entity.Recipe;
+import fil.iagl.cookorico.entity.RecipeStep;
+import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.PictureService;
 import fil.iagl.cookorico.service.RecipeService;
 
 @RestController
 public class RecipeController {
-
-	@Autowired
-	private RecipeService recipeService;
 	
 	@Autowired
 	private PictureService pictureServive;
+	
+	@Autowired
+	private RecipeService recipeService;
 	
 	@Autowired
 	AdministratorService administratorService;
@@ -86,7 +89,7 @@ public class RecipeController {
 		int experienceVal = Integer.valueOf(String.valueOf(model.get("rcp_experienceVal")));
 		String description = String.valueOf(model.get("rcp_description"));
 		String name = String.valueOf(model.get("rcp_name"));
-		String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
+		String dish_type = String.valueOf(model.get("rcp_dish_type"));
 		//int mainPictureId = Integer.valueOf(String.valueOf(model.get("mainPictureId")));
 		
 		Date date = new Date();
@@ -103,15 +106,33 @@ public class RecipeController {
 		recipe.setCreator(creator);
 		recipe.setDishType(dish_type);
 		recipe.setDifficulty(difficulty);
-		recipe.setDraft(false); // TODO : valeur par défaut ?
-		//recipe.setMainPicture(this.pictureServive.getPictureById(mainPictureId));
+		recipe.setDraft(false); // TODO : false est valeur par défaut ?
+		//recipe.setMainPicture(this.pictureServive.getPictureById(mainPictureId)); // TODO : verifier mapper Picture pour getPictureById
 		recipe.setCreationDate(creationDate);
 		recipe.setModifDate(creationDate);
 		recipe.setValidation(false);
 		// TODO : recipe.SetValidator(integer)
 		recipe.setDisabled(false);
-		recipe.setExperienceVal(experienceVal); // TODO : à automatiser
+		recipe.setExperienceVal(experienceVal);
 		
+		/*
+		// debug
+		System.out.println("name = " + recipe.getName());
+		System.out.println("description = " + recipe.getDescription());
+		System.out.println("preparationTime = " + recipe.getPreparationTime());
+		System.out.println("cookingTime = " + recipe.getCookingTime());
+		System.out.println("creator id = " + recipe.getCreator().getIdMember());
+		System.out.println("dishType = " + recipe.getDishType());
+		System.out.println("difficulty = " + recipe.getDifficulty());
+		System.out.println("creationDate = " + recipe.getCreationDate());
+		System.out.println("modifDate = " + recipe.getModifDate());
+		System.out.println("validation = " + recipe.getValidation());
+		System.out.println("disabled = " + recipe.getDisabled());
+		System.out.println("experienceVal = " + recipe.getExperienceVal());
+		System.out.println("front : mainPicture id = " + mainPictureId);
+		System.out.println("call service = " + this.pictureServive.getPictureById(mainPictureId).getIdPicture());
+		System.out.println("back : mainPicture id = " + recipe.getMainPicture().getIdPicture());
+		*/
 		
 		// save the recipe to bdd
 		this.recipeService.addRecipe(recipe);

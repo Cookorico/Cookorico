@@ -55,19 +55,19 @@
 		<div class="panel panel-primary">
 			
 			<div class="panel-heading"><h5>
-				<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>  <strong>Informations recette</strong></h3>
+				<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>  <strong>D&eacute;tails de la recette</strong></h3>
 			</div>
 			
-		  	<div class="panel-body">
-				<form role="form" name="addRecipeForm" ng-controller="addRecipeCtrl" class="form-horizontal" id="formAddRecipe" ng-submit="add()" novalidate>
+		  	<div class="panel-body" ng-controller="addRecipeCtrl">
+				<form role="form" name="addRecipeForm" class="form-horizontal" id="formAddRecipe" ng-submit="addRecipeFn()" novalidate>
 					
 					<fieldset>
-					
+						
 						<!-- rcp_dish_type -->
 						<div class="control-group">
-							<label class="control-label" for="rcp_dish_type">Catégorie de la recette</label>
+							<label class="control-label" for="rcp_dish_type">Cat&eacute;gorie de la recette</label>
 							<div class="controls">
-								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Entree" ng-model="recipe.rcp_dish_type">Entrée</label>
+								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Entree" ng-model="recipe.rcp_dish_type">Entr&eacute;e</label>
 								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Plat" ng-model="recipe.rcp_dish_type">Plat</label>
 								<label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Dessert" ng-model="recipe.rcp_dish_type">Dessert</label>
 							</div>
@@ -86,26 +86,41 @@
 						
 						<!-- rcp_preparation_time -->
 						<div class="control-group">
-							<label class="control-label" for="rcp_preparation_time">Durée de préparation</label>
+							<label class="control-label" for="rcp_preparation_time">Dur&eacute;e de pr&eacute;paration</label>
+							<!--
 							<div class="controls">
-								<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de prépartion en secondes" ng-model="recipe.rcp_preparation_time">
+								<input class="form-control" name="rcp_preparation_time" id="rcp_preparation_time" type="number" placeholder="Temps de pr&eacute;partion en secondes" ng-model="recipe.rcp_preparation_time">
 							</div>
+							-->
+							
+						 	<uib-timepicker ng-model="preparation_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
 						</div>
 						
-						<!-- rcp_cooking_time -->
+						<!-- cooking_time -->
 						<div class="control-group">
-							<label class="control-label" for="rcp_cooking_time">Temps de cuisson</label>
+							<label class="control-label" for="cooking_time">Temps de cuisson</label>
+							
+							<!--
 							<div class="controls">
 								<input class="form-control" name="rcp_cooking_time" id="rcp_cooking_time" type="number" placeholder="Temps de cuisson en secondes" ng-model="recipe.rcp_cooking_time">
 							</div>
+							-->
+							
+							<uib-timepicker ng-model="cooking_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
 						</div>
 						
-						<!-- rcp_difficulty -->
+						<!-- difficulty -->
 						<div class="control-group">
-							<label class="control-label" for="rcp_difficulty">Niveau de difficulté (valeur sur 10) *</label>
+							<label class="control-label" for="difficulty">Niveau de difficult&eacute; (valeur sur 10) * : </label>
+							
+							<!--
 							<div class="controls">
-								<input class="form-control" name="rcp_difficulty" id="rcp_difficulty" type="number" placeholder="Difficulté" ng-model="recipe.rcp_difficulty" required>
+								<input class="form-control" name="rcp_difficulty" id="rcp_difficulty" type="number" placeholder="Difficult&eacute;" ng-model="recipe.rcp_difficulty" required>
 							</div>
+							-->
+							
+							<uib-rating ng-model="difficulty" max="10" state-on="'glyphicon-ok-sign'" state-off="'glyphicon-ok-circle'" on-hover="infoDifficulteFn(value)" on-leave="difficult = null" aria-labelledby="custom-icons-1"></uib-rating>
+							<span class="label" ng-class="{'label-success': difficult<6, 'label-warning': difficult>=6}" ng-show="difficult && !isReadonly">Niveau : {{difficult}} | Valeur exp&eacute;rience : + {{experience}}</span>
 						</div>
 						
 						<!-- rcp_description -->
