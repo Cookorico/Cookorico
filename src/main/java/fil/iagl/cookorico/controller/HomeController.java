@@ -11,4 +11,5 @@ public class HomeController {
     public Principal user(Principal user) {
         return user;
     }
+    
 }

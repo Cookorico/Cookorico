@@ -6,6 +6,6 @@ import fil.iagl.cookorico.entity.Member;
 
 public interface AdministratorService {
 
-	public List<Member> getAllAdministrator();
+	public List<Member> getAllAdministrators();
 
 }

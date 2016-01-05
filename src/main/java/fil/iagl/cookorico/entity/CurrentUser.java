@@ -1,10 +1,7 @@
 package fil.iagl.cookorico.entity;
 
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
-
-import java.util.Collection;
 
 /**
  * Created by willl on 17/11/2015.

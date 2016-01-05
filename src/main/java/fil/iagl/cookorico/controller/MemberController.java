@@ -3,6 +3,7 @@ package fil.iagl.cookorico.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -57,6 +58,11 @@ public class MemberController {
 		
 		Member m = memberService.getMemberById(id);
 		return m;
+	}
+	
+	@RequestMapping(value="/register", method=RequestMethod.POST)
+	public void registerMember(@RequestBody Member member) {
+		System.out.println(member);
 	}
 	
 //	@RequestMapping(value = "/login", method = RequestMethod.POST)

@@ -1,16 +1,11 @@
 package fil.iagl.cookorico.controller;
 
-import java.security.Principal;
-import java.util.Date;
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
-import org.apache.catalina.connector.Request;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,13 +15,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import fil.iagl.cookorico.entity.Administrator;
 import fil.iagl.cookorico.entity.CurrentUser;
 import fil.iagl.cookorico.entity.Member;
-import fil.iagl.cookorico.entity.Picture;
 import fil.iagl.cookorico.entity.Recipe;
-import fil.iagl.cookorico.entity.RecipeStep;
-import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;

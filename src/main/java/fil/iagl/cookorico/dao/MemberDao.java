@@ -14,8 +14,8 @@ public interface MemberDao {
 	
 	Member getMemberWithUsername(@Param("username") String username);
 	
-	void addMember(@Param("member") Member member);
+	Member addMember(@Param("member") Member member);
 	
-	Member getMemberById(@Param("id") int id);
+	Member getMemberById(@Param("id") Integer id);
 
 }

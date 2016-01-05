@@ -6,12 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fil.iagl.cookorico.dao.RecipeDao;
-import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.RecipeService;
 
 @Service
-public class RecipeServiceImpl implements RecipeService{
+public class RecipeServiceImpl implements RecipeService {
 	
 	@Autowired
 	private RecipeDao recipeDao;

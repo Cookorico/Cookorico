@@ -17,14 +17,11 @@ public class IngredientServiceImpl implements IngredientService{
 
 	@Override
 	public boolean addIngredient(Ingredient ingredient) {
-		// TODO Auto-generated method stub
 		return ingredientdao.addIngredient(ingredient);
 	}
 
 	@Override
 	public List<Ingredient> getAllIngredients() {
-		// TODO Auto-generated method stub
-		
 		return ingredientdao.getAllIngredients();
 	}
 	
@@ -55,13 +52,11 @@ public class IngredientServiceImpl implements IngredientService{
 
 	@Override
 	public Ingredient getIngredientById(int idIngredient) {
-		// TODO Auto-generated method stub
 		return ingredientdao.getIngredientById(idIngredient);
 	}
 
 	@Override
 	public boolean deleteIngredient(Ingredient ingredient) {
-		// TODO Auto-generated method stub
 		return ingredientdao.deleteIngredient(ingredient);
 	}
 

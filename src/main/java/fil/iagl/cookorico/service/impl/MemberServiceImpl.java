@@ -3,7 +3,6 @@ package fil.iagl.cookorico.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fil.iagl.cookorico.dao.MemberDao;
@@ -13,8 +12,11 @@ import fil.iagl.cookorico.service.MemberService;
 @Service
 public class MemberServiceImpl implements MemberService{
 	
-	@Autowired
 	private MemberDao memberDao;
+	
+	public MemberServiceImpl(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
 
 
 	@Override
@@ -26,7 +28,6 @@ public class MemberServiceImpl implements MemberService{
 	public boolean addMember(Member member) {
 		// check gender value is valid and the member username not yet exists
 		if (memberDao.getMemberWithUsername(member.getUsername()) == null && Arrays.asList(new String[]{"M","F","U"}).contains(member.getGender())) {
-
 			memberDao.addMember(member);
 			return true;
 		}

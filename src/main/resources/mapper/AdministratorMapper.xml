@@ -10,7 +10,7 @@
 		<result property="adminRank" column="adminRank"/>
 	</resultMap>
 	
-	<select id="getAllAdministrator" resultMap="AdministratorResultMap">
+	<select id="getAllAdministrators" resultMap="AdministratorResultMap">
 		SELECT * FROM administrator, member WHERE id_administrator=id_member
 	</select>
 	
