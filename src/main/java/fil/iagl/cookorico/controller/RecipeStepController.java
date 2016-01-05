@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.entity.RecipeStep;
-import fil.iagl.cookorico.service.RecipeService;
 import fil.iagl.cookorico.service.RecipeStepService;
 
 @RestController

@@ -1,0 +1,34 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="fil.iagl.cookorico.dao.PictureInRecipeDao">
+
+	<resultMap type="fil.iagl.cookorico.entity.PictureInRecipe" id="PictureInRecipeResultMap">
+		<id property="idPictureInRecipe" column="pir_id_picture_in_recipe" />
+		<association property="recipe" column='pir_fk_id_recipe' select='fil.iagl.cookorico.dao.RecipeDao.getRecipeById' />
+		<association property="picture" column='pir_fk_id_picture' select='fil.iagl.cookorico.dao.PictureDao.getPictureById' />
+		<association property="comment" column='pir_fk_id_comment' select='fil.iagl.cookorico.dao.CommentDao.getCommentById' />
+	</resultMap>
+	
+	<insert id="associatePictureWithRecipe"  parameterType="fil.iagl.cookorico.entity.PictureInRecipe" useGeneratedKeys="true" keyProperty="pictureInRecipe.idPictureInRecipe" keyColumn="pir_id_picture_in_recipe">
+		INSERT INTO picture_in_recipe (pir_fk_id_recipe, pir_fk_id_picture, pir_fk_id_comment)
+		VALUES (#{pictureInRecipe.recipe}, #{pictureInRecipe.picture}, #{pictureInRecipe.comment})
+	</insert>
+	
+	<select id="deleteByPictureId" parameterType="Integer" >
+		DELETE FROM picture_in_recipe 
+		WHERE pir_fk_id_picture=#{idPicture}
+	</select>
+	
+	<select id="deleteByRecipeId" parameterType="Integer" >
+		DELETE FROM picture_in_recipe 
+		WHERE pir_fk_id_recipe=#{idRecipe}
+	</select>
+
+<!--
+	<select id="deleteById" parameterType="Integer" >
+		DELETE FROM picture_in_recipe 
+		WHERE pir_id_picture_in_recipe=#{idPictureInRecipe}
+	</select>
+-->
+
+</mapper>

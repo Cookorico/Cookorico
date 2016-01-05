@@ -6,51 +6,69 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fil.iagl.cookorico.dao.RecipeDao;
-import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.RecipeService;
 
 @Service
 public class RecipeServiceImpl implements RecipeService{
-	
-	@Autowired
-	private RecipeDao recipeDao;
+    
+    @Autowired
+    private RecipeDao recipeDao;
 
-	@Override
-	public void addRecipe(Recipe recipe) {
-		final String recipeName = recipe.getName();
-		if (recipeDao.getRecipeWithName(recipeName) == null) {
-			recipeDao.addRecipe(recipe);
-		}
-	}
-
-	@Override
-	public List<Recipe> getAllRecipes() {
-		return recipeDao.getAllRecipes();
-	}
-
-	@Override
-	/*
-	 * can probably be improved to avoid 4 differents requests...?
+    /**
+	 * Ajout recette dans la BDD
+	 * @param recipe l'entité recette à sauvegarder
 	 */
-	public List<Recipe> getAllRecipes(boolean mainpic, boolean tags) {
-		if(mainpic & tags){
-			return recipeDao.getFullRecipes();
-		}
-		else if(mainpic){
-			return recipeDao.getAllRecipesWithMainPicture();
-		}
-		else if(tags){
-			return recipeDao.getAllRecipesWithTags();
-		}
-		return recipeDao.getAllRecipes();
-	}
-	
-	
-	@Override
-	public Recipe getRecipeById(int id) {
-		System.out.println("***********************");
-		return recipeDao.getRecipeById(id);
-	}
+    @Override
+    public void addRecipe(Recipe recipe) {
+        
+        final String recipeName = recipe.getName();
+        
+        if (this.recipeDao.getRecipeWithName(recipeName) == null) {
+        	this.recipeDao.addRecipe(recipe);
+        }
+    }
 
+    /**
+	 * Recuperation des recettes
+	 * @return liste des recettes trouvées
+	 */
+    @Override
+    public List<Recipe> getAllRecipes() {
+        return this.recipeDao.getAllRecipes();
+    }
+
+    /**
+	 * Recuperation des recettes
+	 * @param mainpic Si à true alors on recupère aussi les photos de la recette
+	 * @param tags Si à true alors on recupère aussi les tags de la recette
+	 * @return liste des recettes trouvées
+	 */
+    @Override
+    public List<Recipe> getAllRecipes(boolean mainpic, boolean tags) {
+        
+        if(mainpic & tags) {
+            return this.recipeDao.getFullRecipes();
+        }
+        
+        if(mainpic) {
+            return this.recipeDao.getAllRecipesWithMainPicture();
+        }
+        
+        if(tags) {
+            return this.recipeDao.getAllRecipesWithTags();
+        }
+        
+        return this.recipeDao.getAllRecipes();
+    }
+    
+    /**
+	 * Recherche une recette par son id
+	 * @param id L'id de la recette
+	 * @return La recette trouvée
+	 */
+    @Override
+    public Recipe getRecipeById(int id) {
+        return this.recipeDao.getRecipeById(id);
+    }
 }

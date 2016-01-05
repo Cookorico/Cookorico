@@ -20,7 +20,6 @@ public class Recipe {
 	private Integer preparationTime;
 	private Integer cookingTime;
 	private Member creator;
-	//private int fkCreator; //TEMPORAIRE. EN ATTENDANT DE GERER LES OBJETS ETC ON SAIT PAS FAIRE.
 	private String dishType; //TO DO ENUM
 	private int difficulty;
 	private boolean draft;
@@ -36,9 +35,7 @@ public class Recipe {
 	private Integer experienceVal;
 	private Picture mainPicture;
 	
-	public Recipe(){
-		
-	}
+	public Recipe(){}
 	
 	public Recipe(int id){
 		this.idRecipe = id;

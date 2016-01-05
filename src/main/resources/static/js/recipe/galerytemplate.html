@@ -1,0 +1,85 @@
+<div  ng-controller="galeryCtrl">
+
+    <div class="modal-header">
+        <h3 class="modal-title"><span class="glyphicon glyphicon-import"></span>  <strong>Importez vos photos</strong></h3>
+    </div>
+    
+    <div class="modal-body">
+        
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Aper&ccedil;u</th>
+                        <th>Nom fichier</th>
+                        <th>Taille</th>
+                        <th>Avancement</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="multipartFile in allItems">
+                        <td>
+                            <a href="#" class="thumbnail">
+                                <img ng-click="displayFn(multipartFile)" class="medium" data-holder-rendered="true" ngf-src="multipartFile" style="height: 32px; width: 32px; display: block;">
+                            </a>
+                        </td>
+                        
+                        <td>{{multipartFile.name}}</td>
+                        
+                        <td>{{multipartFile.size/1024/1024|number:2}} MB</td>
+                        
+                        <td>
+                            <div class="progress" style="margin-bottom: 0;">
+                                
+                                <div ng-if="uploadedItems.indexOf(multipartFile) > -1">
+                                    <div class="progress-bar" role="progressbar" style="width: {{progress}}%;">{{progress}}%</div>
+                                </div>
+                                
+                                <div ng-if="uploadedItems.indexOf(multipartFile) <= -1">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+                                </div>
+                                
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <button type="button" class="btn btn-success btn-xs" ng-click="saveUploadFileFn(multipartFile)" ng-disabled="uploadedItems.indexOf(multipartFile)!=-1">
+                                <span class="glyphicon glyphicon-upload"></span> Upload
+                            </button>
+                            
+                            <button type="button" class="btn btn-warning btn-xs" ng-click="removeSavedFileFn(multipartFile)">
+                                <span class="glyphicon glyphicon-trash"></span> Supprimer
+                            </button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="5" align="center">
+                            <button type="button" class="btn btn-primary btn-xs" ngf-select ngf-change="uploadFileFn($files)" ngf-multiple="multiple">
+                                <span class="glyphicon glyphicon-plus"></span> Ajouter
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success btn-s" ng-click="saveAllUploadedItemsFn()" ng-disabled="notUploadedItems.length==0">
+            <span class="glyphicon glyphicon-upload"></span> Upload tout
+        </button>
+        
+        <button type="button" class="btn btn-warning btn-s" ng-click="removeAllItemsFn()" ng-disabled="allItems.length==0">
+            <span class="glyphicon glyphicon-trash"></span> Supprimer tout
+        </button>
+        
+          <!-- TODO : fermer modl ne marche pas -->
+        <!-- <button type="button" class="btn btn-warning btn-s" ng-click="closeWindowsFn()"> -->
+        <button type="button" class="btn btn-danger btn-s">
+            <span class="glyphicon glyphicon-remove"></span> Fermer f&ecirc;netre
+        </button>
+    </div>
+    
+</div>

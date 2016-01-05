@@ -1,16 +1,17 @@
-
 <link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
-<pageheader pagename="Liste des recettes" subtitle="Toutes les recettes"></pageheader>
+
+<pageheader pagename="{{recipe.name}}" subtitle="D&eacute;tails de la recette"></pageheader>
+
 <div class="container" ng-controller="RecipeCtrl">
+	
 	<div class="conter-wrapper">
 		<div class="container dynamicTile thumbnail">
 			<div class="row ">
 				<div class="col-md-4">
 					<div class="img-div-recipe">
-						<img class="img-thumbnail"
-							src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}"
-							alt="...">
+						<img class="img-thumbnail" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
 					</div>
+					
 					<h6>tags:</h6>
 					<span ng-repeat="tag in recipe.tags"> #{{tag.name}} </span>
 					<p>
@@ -27,7 +28,7 @@
 					</div>
 					<h6 class="text-center">__________________________________________________________________________________</h6>
 
-					<h2 class="text-center">Les Étapes :</h2>
+					<h2 class="text-center">Les &eacute;tapes :</h2>
 					<h6 class="text-center">--------------------------------------------------------------------------------</h6>
 					<div ng-repeat="step in recipe.steps">
 						<div class=" desc-div-recipe">
@@ -41,7 +42,7 @@
 					</div>
 					<div ng-if="iscreator">
 						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })"
-							class="btn btn-primary" role="button">Ajouter une étape</a>
+							class="btn btn-primary" role="button">Ajouter une &eacute;tape</a>
 					</div>
 				</div>
 			</div>
