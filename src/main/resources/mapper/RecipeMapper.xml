@@ -25,7 +25,7 @@
 		<association property='mainPicture' resultMap="fil.iagl.cookorico.dao.PictureDao.pictureResultMap" />
 		<collection property='tags' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
     	<collection property='steps' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.RecipeStep" resultMap="fil.iagl.cookorico.dao.RecipeStepDao.recipeStepResultMapSingle" />
-    	<collection property='comments' column="rcp_id_comment" javaType="List" ofType="fil.iagl.cookorico.entity.Comment" resultMap="fil.iagl.cookorico.dao.CommentDao.commentResultMap" />
+    	<collection property='comments' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.Comment" resultMap="fil.iagl.cookorico.dao.CommentDao.commentResultMapSingle" />
 	</resultMap>
 
 	<sql id="select_all">
@@ -51,7 +51,7 @@
 		LEFT JOIN recipe_step ON rst_fk_id_recipe=rcp_id_recipe
 	</sql>
 	<sql id="join_comments">
-		LEFT JOIN comment ON cmt_fk_id_recipe=rcp_id_recipe 
+		LEFT JOIN comment ON cmt_fk_id_recipe=rcp_id_recipe
 	</sql>
 	
 	<select id="getAllRecipes" resultMap="recipeResultMap">

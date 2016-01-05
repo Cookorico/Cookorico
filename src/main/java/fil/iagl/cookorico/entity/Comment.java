@@ -10,7 +10,6 @@ import lombok.Data;
 
 @JsonSerialize
 @Data
-@Alias("Comment")
 public class Comment {
 
 	private int idComment;
