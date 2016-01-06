@@ -3,6 +3,7 @@ package fil.iagl.cookorico.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fil.iagl.cookorico.dao.MemberDao;
@@ -12,13 +13,9 @@ import fil.iagl.cookorico.service.MemberService;
 @Service
 public class MemberServiceImpl implements MemberService{
 	
+	@Autowired
 	private MemberDao memberDao;
 	
-	public MemberServiceImpl(MemberDao memberDao) {
-		this.memberDao = memberDao;
-	}
-
-
 	@Override
 	public Member getMemberByUserName(String username) {
 		return memberDao.getMemberWithUsername(username);

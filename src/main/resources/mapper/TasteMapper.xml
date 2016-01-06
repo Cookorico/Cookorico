@@ -19,7 +19,7 @@
     	where tst_fk_id_member=#{id}
 	</select>
 	
-	<select id="getAllTaste" resultMap="tasteResultMap">
+	<select id="getAllTastes" resultMap="tasteResultMap">
 		SELECT * FROM taste
 	</select>
 	

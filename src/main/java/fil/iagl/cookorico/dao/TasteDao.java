@@ -9,7 +9,7 @@ import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Taste;
 public interface TasteDao {
 
-	List<Taste> getAllTaste();
+	List<Taste> getAllTastes();
 	
 	List<Taste> getTastesByMember(Integer id);
 	

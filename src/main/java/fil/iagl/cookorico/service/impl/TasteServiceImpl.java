@@ -11,14 +11,14 @@ import fil.iagl.cookorico.entity.Taste;
 import fil.iagl.cookorico.service.TasteService;
 
 @Service
-public class TasteServiceImpl implements TasteService{
+public class TasteServiceImpl implements TasteService {
 	
 	@Autowired
 	private TasteDao tasteDao;
 
 	@Override
-	public List<Taste> getAllTaste() {
-		return tasteDao.getAllTaste();
+	public List<Taste> getAllTastes() {
+		return tasteDao.getAllTastes();
 	}
 
 	@Override

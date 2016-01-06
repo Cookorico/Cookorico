@@ -9,7 +9,7 @@ import fil.iagl.cookorico.entity.Taste;
 
 public interface TasteService {
 	
-	public List<Taste> getAllTaste();
+	public List<Taste> getAllTastes();
 	
 	public List<Taste> getTastesByMember(@Param("member") Integer id);
 	

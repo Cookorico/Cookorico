@@ -27,6 +27,6 @@ public class TasteController {
 	@RequestMapping(value="/tastes", method = RequestMethod.GET)
 	public @ResponseBody List<Taste> getTastes() {
 		
-		return tasteService.getAllTaste();
+		return tasteService.getAllTastes();
 	}
 }
