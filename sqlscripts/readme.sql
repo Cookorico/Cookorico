@@ -41,6 +41,13 @@ UST ==> USTENSIL
  */
 select enum_range(NULL::tag_type)
 
+/*
+Si un jour on a besoin de supprimer/modifier une valeur d'enum, alors il faut le supprimer et en récreer un..
+*/
+ALTER type UNIT_OF_MEASUREMENT RENAME TO UNIT_OSEF;
+CREATE TYPE UNIT_OF_MEASUREMENT AS ENUM ('gramme(s)','millilitre(s)','unité(s)');
+ALTER TABLE ingredient_in_recipe ALTER column iir_measurement type UNIT_OF_MEASUREMENT USING null;
+
 /* POUR AFFICHER TOUTE LES TABLES
  */
 \dt;

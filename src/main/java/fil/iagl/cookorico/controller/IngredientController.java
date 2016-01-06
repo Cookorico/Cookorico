@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Ingredient;
+import fil.iagl.cookorico.service.IngredientInRecipeService;
 import fil.iagl.cookorico.service.IngredientService;
 import fil.iagl.cookorico.wrapper.IngredientWrapper;
 
@@ -20,6 +21,17 @@ public class IngredientController {
 	
 	@Autowired
 	IngredientService ingredientService;
+	
+	@Autowired
+	IngredientInRecipeService ingredientInRecipeService;
+	
+	
+	
+	@RequestMapping(value="/measurements", method = RequestMethod.GET)
+	public @ResponseBody List<String> getAllMeasurement() {
+		return ingredientInRecipeService.getAllMeasurements();
+	}
+	
 	
 	
 	@RequestMapping(value="/ingredients", method = RequestMethod.GET)

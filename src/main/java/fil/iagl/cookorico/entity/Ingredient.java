@@ -12,7 +12,7 @@ import lombok.Data;
 
 @JsonSerialize
 @Data
-@Alias("Ingredient")
+@Alias("IngredientInRecipe")
 public class Ingredient {
 
 	private Integer idIngredient;
@@ -25,5 +25,11 @@ public class Ingredient {
 	private Picture mainPicture;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<Picture> photos;
-
+	
+	public Ingredient() {
+	}
+	
+	public Ingredient(int idIng) {
+		this.idIngredient = idIng;
+	}
 }

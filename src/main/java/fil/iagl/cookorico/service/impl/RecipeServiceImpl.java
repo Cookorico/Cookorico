@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import fil.iagl.cookorico.dao.IngredientInRecipeDao;
 import fil.iagl.cookorico.dao.RecipeDao;
 import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Recipe;
@@ -16,12 +17,12 @@ public class RecipeServiceImpl implements RecipeService{
 	@Autowired
 	private RecipeDao recipeDao;
 
+	@Autowired
+	private IngredientInRecipeDao ingredientInRecipeDao;
+	
 	@Override
 	public void addRecipe(Recipe recipe) {
-		final String recipeName = recipe.getName();
-		if (recipeDao.getRecipeWithName(recipeName) == null) {
-			recipeDao.addRecipe(recipe);
-		}
+		recipeDao.addRecipe(recipe);
 	}
 
 	@Override

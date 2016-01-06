@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+  'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+
+<mapper namespace='fil.iagl.cookorico.dao.IngredientInRecipeDao'>
+    <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientInRecipeResultMap">
+	    <id property='idIngredient' column='iir_id_ingredient_in_recipe'/>
+	    <result property='name' column='iir_fk_id_ingredient'/>
+	    <!-- TO DO igd_main_picture -->
+		<result property='modifDate' column='igd_modif_date' />
+	    <result property='disabled' column='igd_disabled'/>
+	    <result property='validation' column='igd_validation'/>
+	    <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.pictureResultMap' />
+	    <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+	</resultMap>
+	
+	<sql id="select_all">
+		SELECT *
+		FROM ingredient_in_recipe
+	</sql>
+
+	<sql id="join_ingredient">
+		LEFT JOIN ingredient ON iir_fk_id_ingredient=igd_id_ingredient
+	</sql>
+	
+	<sql id="join_recipe">
+		LEFT JOIN recipe ON iir_fk_id_recipe=rcp_id_recipe
+	</sql>
+	
+	
+   <select id="getIngredientsInRecipeByIdRecipe" resultMap="ingredientInRecipeResultMap" parameterType="int">
+		<include refid="select_all"/>
+		<include refid="join_ingredient"/>
+		WHERE iir_fk_id_recipe = #{id}
+   </select>
+   
+   <select id="getAllMeasurements"  resultType="string">
+   		SELECT unnest(enum_range(NULL::UNIT_OF_MEASUREMENT))
+   </select>
+   
+    <insert id="addIngredientInRecipe" parameterType="fil.iagl.cookorico.entity.IngredientInRecipe">
+  	    INSERT INTO ingredient_in_recipe(iir_fk_id_ingredient, iir_fk_id_recipe, iir_quantity, iir_measurement) VALUES(#{ingredientInRecipe.ingredient.idIngredient}, #{ingredientInRecipe.recipe.idRecipe}, #{ingredientInRecipe.quantity}, #{ingredientInRecipe.unitOfMeasurement}::UNIT_OF_MEASUREMENT)
+    </insert>
+  
+</mapper>

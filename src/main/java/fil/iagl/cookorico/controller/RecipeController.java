@@ -1,11 +1,14 @@
 package fil.iagl.cookorico.controller;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.LinkedHashMap;
 import java.sql.Timestamp;
 import java.util.List;
 
 import org.apache.catalina.connector.Request;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -22,12 +25,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import fil.iagl.cookorico.entity.Administrator;
 import fil.iagl.cookorico.entity.CurrentUser;
+import fil.iagl.cookorico.entity.Ingredient;
+import fil.iagl.cookorico.entity.IngredientInRecipe;
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Picture;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.entity.RecipeStep;
 import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
+import fil.iagl.cookorico.service.IngredientInRecipeService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
 import fil.iagl.cookorico.service.RecipeStepService;
@@ -37,6 +43,9 @@ public class RecipeController {
 
 	@Autowired
 	private RecipeService recipeService;
+	
+	@Autowired
+	private IngredientInRecipeService ingredientInRecipeService;
 	
 	@Autowired
 	private MemberService memberService;
@@ -117,6 +126,26 @@ public class RecipeController {
 	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
 	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
 		
+
+		/* ajoute les ingredients à la recette */
+		List<LinkedHashMap> ingredientsReciped = (List<LinkedHashMap>) model.get("ingredients");
+		List<IngredientInRecipe> ingredients = new ArrayList<IngredientInRecipe>();
+		for(LinkedHashMap ingredient_in_recipe : ingredientsReciped){
+			LinkedHashMap ingredient = (LinkedHashMap) ingredient_in_recipe.get("ingredient");
+			int idIng = (int) ingredient.get("idIngredient");
+			int quantity = (int) ingredient_in_recipe.get("quantity");
+			String unit_of_measure = (String) ingredient_in_recipe.get("measurement");
+			Ingredient ing = new Ingredient(idIng);
+			IngredientInRecipe ingrInRecipe = new IngredientInRecipe();
+			ingrInRecipe.setIngredient(ing);
+			ingrInRecipe.setQuantity(quantity);
+			ingrInRecipe.setUnitOfMeasurement(unit_of_measure);
+			ingredients.add(ingrInRecipe);
+			
+		}
+		
+		
+		
 		// get form data
 		int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
 		int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
@@ -129,6 +158,8 @@ public class RecipeController {
 		Timestamp creationDate = new Timestamp(date.getTime());
 		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 	    Member creator = currentUser.getMember();
+	    
+	    
 	    
 	    // create recipe object
 		Recipe recipe = new Recipe();
@@ -147,9 +178,20 @@ public class RecipeController {
 		// TODO : recipe.SetValidator(integer)
 		recipe.setDisabled(false);
 		recipe.setExperienceVal(experienceVal); // TODO : à automatiser
+		 
+		recipe.setIngredients(ingredients);
 		
-		// save the recipe to bdd
+		
+		// save the recipe to db
 		this.recipeService.addRecipe(recipe);
+		
+		//if well done, add ingredients in recipe to db
+		for(IngredientInRecipe ingredient : recipe.getIngredients()){
+			ingredient.setRecipe(new Recipe(recipe.getIdRecipe()));
+			this.ingredientInRecipeService.addIngredientInRecipe(ingredient);
+			ingredient.getIngredient().getIdIngredient();
+		}
+		
 		return recipe;
 	}
 	

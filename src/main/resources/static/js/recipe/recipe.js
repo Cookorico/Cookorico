@@ -19,15 +19,65 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 	});
 }).controller('addRecipeCtrl', ['$scope','$window', '$location','$http','Flash',  function ($scope, $window, $location, $http, Flash) {
 
+	
+
+	
+    $scope.ingredients = []; //liste de tous les ingredients de la bdd
+    $scope.measurement = []; //liste des unité de mesure possible (actuellement: gramme(s), litre(s), unité(s)).
+    $scope.ingredients_in_recipe = []; //liste des ingrédients dans la recette (bindé au form front)
+    
+    
+    //ajoute un ingredient vide dans la liste (et donc crée dans le form une new ligne vide).
+    $scope.add_ingredient = function () {
+      $scope.ingredients_in_recipe.push({ 
+        ingredient: $scope.ingredients[0],
+        quantity: 0,
+        measurement: $scope.measurement[0]
+      });
+    };
+    
+	$scope.remove_ingredient = function(index){
+	    $scope.ingredients_in_recipe.splice(index, 1);
+	}
+    
+	//charge la liste des ingredients
+	$http({
+		method: 'GET', 
+		url : '/ingredients'
+	}).then(function successCallback(response) {
+		$scope.ingredients = response.data;
+		console.log(response.data);
+	}, function errorCallback(response) {
+		console.log(data, status, header, config);
+	});
+	
+	//charge la liste des unités de mesure
+	$http({
+		method: 'GET', 
+		url : '/measurements'
+	}).then(function successCallback(response) {
+		$scope.measurements = response.data;
+		console.log(response.data);
+	}, function errorCallback(response) {
+		console.log(data, status, header, config);
+	});
+	
+	
+	
+	
+	
+	
 	//Function to add a new recipe
 	$scope.add = function () {
 		//Set the value of experienceVal
 		$scope.recipe.rcp_experienceVal = parseInt($scope.recipe.rcp_difficulty) * 10;
-
+		$scope.recipe.ingredients = $scope.ingredients_in_recipe;
+		
 		var recipe = angular.toJson($scope.recipe);
 
 		console.log($scope.recipe);
-		console.log(recipe);
+		
+
 
 		// send recipe to the recipe controller
 		$http({
@@ -36,16 +86,19 @@ angular.module('recipe', ['flash', 'ngAnimate'])
 			data : recipe
 		})
 		.success(function(data, status, header, config){
+			console.log(data);
 			Flash.create('success', 'Votre nouvelle recette a été bien ajoutée !');
 			$window.location.href = '#/dashboard/recipe/'+data.idRecipe+'/addstep';
 		})
 		.error(function(data, status, header, config){
+			console.log(data);
 			Flash.create('danger', 'Suite à une erreur votre recette na pas été sauvegardée');
 			$location.path('/dashboard/home');
 		});
 	};
 
 }]).controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
+	//Affiche la page d'une recette (recipe.html)
 	console.log("-------------------- RecipeCtrl --------------------");
 
 
