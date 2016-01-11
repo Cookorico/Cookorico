@@ -5,15 +5,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
-
 import org.apache.catalina.connector.Request;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -35,95 +32,74 @@ import fil.iagl.cookorico.entity.Tag;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.IngredientInRecipeService;
 import fil.iagl.cookorico.service.MemberService;
+import fil.iagl.cookorico.service.PictureService;
 import fil.iagl.cookorico.service.RecipeService;
-import fil.iagl.cookorico.service.RecipeStepService;
 
 @RestController
 public class RecipeController {
+	
+    
+@Autowired
+private RecipeService recipeService;
 
-	@Autowired
-	private RecipeService recipeService;
-	
-	@Autowired
-	private IngredientInRecipeService ingredientInRecipeService;
-	
-	@Autowired
-	private MemberService memberService;
-	
-	@Autowired
-	AdministratorService administratorService;
-	
-	
-	@RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
-	public @ResponseBody Recipe getRecipe(@PathVariable String id) {
-		
-		/* // USED TO TEST WITHOUT DATABASE
-		Member createur = new Member();
-		createur.setUsername("Jean-Pierre");
-		Recipe r1 = new Recipe();
-		r1.setName("Recette des chips salés");
-		r1.setDescription("Attraper un paquet de chips, pincer les deux cotés avec chacun une main. En tirant vous ouvrirez le sachet. Puis déguster.");
-		r1.setPreparationTime(30);
-		r1.setCookingTime(5);
-		r1.setCreator(createur);
-		r1.setDifficulty("Facile");
-		r1.setDishType("Apéro");
-		return r1;*/
-		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-		System.out.println("ID = "+id);
-		System.out.println((Integer.parseInt(id)));
-		System.out.println(recipeService.getRecipeById(Integer.parseInt(id)));
-		return recipeService.getRecipeById(Integer.parseInt(id));
-	}
-	
-	/*
-	 * fonction ajouté en vitesse le 02/12, nom à check, utilisé dans recipectrl.
-	 */
-	@RequestMapping(value="/recipe/{id}/currentUserIsCreator", method = RequestMethod.GET)
-	public @ResponseBody Boolean currentUserIsCreator(@PathVariable String id) {
-		
-		Recipe recipe = recipeService.getRecipeById(Integer.parseInt(id));
-		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-	    Member m = currentUser.getMember();
-	    
-	    return m.getIdMember() == recipe.getCreator().getIdMember();
-	}
-	
-	
-	
-	@RequestMapping(value="/recipes", method = RequestMethod.GET)
-	public @ResponseBody List<Recipe> getListRecipe(
-			@RequestParam(value = "mainpic", required = false) boolean mainpic, 
-			@RequestParam(value = "tags", required = false) boolean tags) {
-		/*
-		// USED TO TEST WITHOUT DATABASE
-		List<Recipe> lst = new ArrayList();
-		Recipe r1 = new Recipe();
-		r1.setIdRecipe(1);
-		r1.setName("Recette des chips salés");
-		r1.setDescription("Attraper un paquet de chips, pincer les deux cotés avec chacun une main. En tirant vous ouvrirez le sachet. Puis déguster.");
-		Recipe r2 = new Recipe();
-		r2.setIdRecipe(2);
-		r2.setName("Deuxieme recette");
-		r2.setDescription("description de la deuxieme");		
-		lst.add(r1);
-		lst.add(r2);
-		
-		return lst;
-		List<Recipe> lst = recipeService.getAllRecipes();
-		ystem.out.println(lst.size());
-		for (Recipe recipe : lst) {
-			System.out.println("RECETTE :");
-			System.out.println(recipe.getCreator());
-			System.out.println(recipe.getName());
-		}*/
-		
-		return recipeService.getAllRecipes(mainpic, tags);
+@Autowired
+private IngredientInRecipeService ingredientInRecipeService;
 
-	}
-	
-	
-	@RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
+@Autowired
+private MemberService memberService;
+
+@Autowired
+AdministratorService administratorService;
+
+    /**
+     * Recherche une recette par son id
+     * @param id L'id de la recette
+     * @return La recette trouvée
+     */
+    @RequestMapping(value="/recipe/{id}", method = RequestMethod.GET)
+    public @ResponseBody Recipe getRecipe(@PathVariable String id) {
+        return recipeService.getRecipeById(Integer.parseInt(id));
+    }
+    
+    /**
+     * Ajout en vitesse le 02/12, nom à check, utilisé dans recipectrl.
+     * @param id Id de la recette
+     * @return True si le user courrent est le créateur de la recette
+     */
+    @RequestMapping(value="/recipe/{id}/currentUserIsCreator", method = RequestMethod.GET)
+    public @ResponseBody Boolean currentUserIsCreator(@PathVariable String id) {
+        
+        Recipe recipe = recipeService.getRecipeById(Integer.parseInt(id));
+        CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        Member m = currentUser.getMember();
+        
+        return m.getIdMember() == recipe.getCreator().getIdMember();
+    }
+    
+    
+    
+    
+    /**
+     * Recuperation des recettes
+     * @param mainpic Si à true alors on recupère aussi les photos de la recette
+     * @param tags Si à true alors on recupère aussi les tags de la recette
+     * @return liste des recettes trouvées
+     */
+    @RequestMapping(value="/recipes", method = RequestMethod.GET)
+    public @ResponseBody List<Recipe> getListRecipe(@RequestParam(value = "mainpic", required = false) boolean mainpic, @RequestParam(value = "tags", required = false) boolean tags) {
+        return recipeService.getAllRecipes(mainpic, tags);
+        
+    }
+    
+    
+    
+    
+    /**
+     * Ajout recette dans la BDD
+     * @param model infos recette clé-valeur
+     * @return Recette créée
+     */
+    @RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
 	public @ResponseBody Recipe addRecipe(@RequestBody ModelMap model){
 		
 
@@ -154,6 +130,9 @@ public class RecipeController {
 		String description = String.valueOf(model.get("rcp_description"));
 		String name = String.valueOf(model.get("rcp_name"));
 		String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
+        //int mainPictureId = Integer.valueOf(String.valueOf(model.get("mainPictureId")));
+        
+		
 		Date date = new Date();
 		Timestamp creationDate = new Timestamp(date.getTime());
 		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -171,7 +150,7 @@ public class RecipeController {
 		recipe.setDishType(dish_type);
 		recipe.setDifficulty(difficulty);
 		recipe.setDraft(false); // TODO : valeur par défaut ?
-		// TODO : recipe.setPicture(integer)
+        //recipe.setMainPicture(this.pictureServive.getPictureById(mainPictureId)); // TODO : verifier mapper Picture pour getPictureById
 		recipe.setCreationDate(creationDate);
 		recipe.setModifDate(creationDate);
 		recipe.setValidation(false);
@@ -194,5 +173,4 @@ public class RecipeController {
 		
 		return recipe;
 	}
-	
 }

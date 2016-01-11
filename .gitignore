@@ -16,3 +16,5 @@ buildNumber.properties
 .idea/
 *.iml
 *.iws
+
+/src/main/resources/static/images/uploaded

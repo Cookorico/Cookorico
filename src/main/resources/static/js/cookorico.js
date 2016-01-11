@@ -260,7 +260,7 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
             .state('taste', {
             	url: '/taste',
             	parent: 'dashboard',
-            	templateUrl : 'js/taste/taste.html?v=' + window.app_version
+            	templateUrl : 'js/taste/taste.html'
             })
             .state('recipes', {
                 url: '/recipes',
@@ -287,7 +287,7 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
                 controller: 'addRecipeStepCtrl'
             });
     })
-    .run(function (auth) {
+    .run(function (auth, $rootScope) {
 
         var switchValue = JSON.parse(localStorage.getItem("switched"));
 
@@ -295,4 +295,10 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
             $('body').addClass('box-section');
 
         auth.init("/dashboard/home","/", "/logout");
+
+        $rootScope.$on('$routeChangeStart', function(event, next, current) {
+            console.debug("COUCOU");
+        });
+
+
     });

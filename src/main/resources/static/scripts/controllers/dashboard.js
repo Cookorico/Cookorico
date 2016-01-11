@@ -3,7 +3,6 @@
 angular.module('cookorico')
     .controller('DashboardCtrl', function ($scope, $state, cssInjector) {
 
-
         cssInjector.add("bower_components/fontawesome/css/fonts-awesome.css");
         cssInjector.add("bower_components/textAngular/src/textAngular.css");
         cssInjector.add("bower_components/fullcalendar/fullcalendar.css");
@@ -13,7 +12,6 @@ angular.module('cookorico')
         cssInjector.add("bower_components/angular-loading-bar/build/loading-bar.css");
         cssInjector.add("bower_components/angular-growl-v2/build/angular-growl.css");
         cssInjector.add("styles/app-orange.css");
-
 
         $scope.$state = $state;
 

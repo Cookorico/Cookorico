@@ -14,7 +14,20 @@
 		<result property='validator' column='cmt_validator' />
 		<result property='disabled' column='cmt_disabled' />
 		<association property='member' resultMap='fil.iagl.cookorico.dao.MemberDao.memberResultMap' />
-		<association property='recipe' resultMap='fil.iagl.cookorico.dao.RecipeDao.recipeResultMap' />
+		<association property='recipe' column='cmt_fk_id_recipe' select='fil.iagl.cookorico.dao.RecipeDao.getRecipeById' />
+	</resultMap>
+	
+	<resultMap type="fil.iagl.cookorico.entity.Comment" id="commentResultMapSingle">
+		<id property='idComment' column='cmt_id_comment' />
+		<result property='title' column='cmt_title' />
+		<result property='description' column='cmt_description' />
+		<result property='creationDate' column='cmt_creation_date' />
+		<result property='modifDate' column='cmt_modif_date' />
+		<result property='validation' column='cmt_validation' />
+		<result property='validator' column='cmt_validator' />
+		<result property='disabled' column='cmt_disabled' />
+		<association property='member' resultMap='fil.iagl.cookorico.dao.MemberDao.memberResultMap' />
+		
 	</resultMap>
 	
 	<select id="getAllComments" resultMap="commentResultMap">

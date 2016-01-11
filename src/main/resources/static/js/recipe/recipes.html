@@ -2,23 +2,31 @@
 <div class="container">
 	<div class="conter-wrapper">
 		<div class="row">
-					<div flash-message="3000"></div>
+			
+			<div flash-message="3000"></div>
+			
 			<div class="col-md-12">
 				
 				<div class="container dynamicTile">
 					<div class="row">
 						<div ng-controller="RecipesCtrl">
 							<div ng-repeat="recipe in recipes">
+								
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										<img src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
+										
+										<a href="#" class="thumbnail">
+										<img ng-if="recipe.mainPicture" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
+										<img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" src="images/image-add-icon.png" >
+										</a>
+										
 										<div class="caption">
 											<h3>{{recipe.name}}</h3>
 	
 											<blockquote cite="#">
 												<p>{{recipe.description.substring(0,35)}}...</p>
 												<p>Par <a ui-sref="profileMember({ idMember: '{{recipe.creator.idMember}}' })"> {{recipe.creator.username}}</a></p>
-												<!-- Commenté par johan : ces infos ne sont pas forcément publique non? on a que l'username à montrer. 
+												<!-- Comment&eacute; par johan : ces infos ne sont pas forc&eacute;ment publique non? on a que l'username &agrave; montrer. 
 												<p>Par {{recipe.creator.lastname}} {{recipe.creator.firstname}} (<a href="mailto:{{recipe.creator.email}}">{{recipe.creator.email}}</a>)</p>
 												-->
 											</blockquote>
