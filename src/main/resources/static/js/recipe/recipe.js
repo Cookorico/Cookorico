@@ -521,6 +521,12 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
         url : '/recipe/'+$stateParams.idRecipe
     }).then(function successCallback(response) {
         $scope.recipe = response.data;
+        
+        $scope.myVar = 12;
+        if($scope.recipe.tags.length > 0){
+        	$scope.myVar = 6;
+        }
+        
     }, function errorCallback(response) {
         console.error(data, status, header, config);
     });
@@ -534,6 +540,9 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
         console.error(data, status, header, config);
     });
 
+    
+    
+    
     //Valider une recette
     $scope.doneRecipe = function(){
         

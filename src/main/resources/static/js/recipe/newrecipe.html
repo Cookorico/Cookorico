@@ -144,21 +144,20 @@
 						</div>
 						
 
-						<!-- rcp_difficulty -->
-						<div class="control-group">
-							<label class="control-label" for="rcp_difficulty">Niveau
-								de difficulté (valeur sur 10) *</label>
-							<div class="controls">
-								<input class="form-control" name="rcp_difficulty"
-									id="rcp_difficulty" type="number" placeholder="Difficulté"
-									ng-model="recipe.rcp_difficulty" required>
-							</div>
-							<span style="color: red"
+						<!-- difficulty -->
+                        <div class="control-group">
+                            <label class="control-label" for="difficulty">Niveau de difficult&eacute; (valeur sur 10) * : </label>
+                            <uib-rating ng-model="difficulty" max="10" state-on="'glyphicon-ok-sign'" state-off="'glyphicon-ok-circle'" on-hover="infoDifficultyFn(value)" on-leave="mouse = null" aria-labelledby="custom-icons-1"></uib-rating>
+                            <span class="label" ng-class="{'label-warning': difficulty<6, 'label-success': difficulty>=6}" ng-show="mouse && !isReadonly">Niveau : {{difficulty}} | Valeur exp&eacute;rience : + {{experience}}</span>
+                        	
+                        	<span style="color: red"
 								ng-show="(addRecipeForm.$submitted || addRecipeForm.rcp_difficulty.$dirty) && addRecipeForm.rcp_difficulty.$invalid">
 								<span ng-show=" addRecipeForm.rcp_difficulty.$error.required">Niveau
 									de difficulté requis.</span>
 							</span>
-						</div>
+                        </div>
+						
+						
 
 						<!-- rcp_description -->
 						<div class="control-group">
@@ -200,8 +199,6 @@
 									un ingredient</button>
 							</div>
 						</div>
-
-						<pre>{{ ingredients_in_recipe | json }}</pre>
 
 
 						<!-- Button -->
