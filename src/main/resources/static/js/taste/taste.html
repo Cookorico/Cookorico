@@ -68,13 +68,13 @@
 	<!-- /.row -->
 	<div class="bs-glyphicons">
 		<ul class="bs-glyphicons-list">
-			<li ng-repeat="ingredient in taste.ingredients | orderObjectBy:order_item:order_reverse" onMouseOver="show_delete_icon=true">
+			<li ng-repeat="ingredient in taste.ingredients | orderObjectBy:order_item:order_reverse">
 				<span aria-hidden="true">
-					<img class="cross-remove-taste" src="js/taste/cross.png" ng-show=show_delete_icon>
+					<img class="cross-remove-taste" src="js/taste/cross.png" ng-click="deletePersonnalTaste(ingredient)">
 					<img class="ingredient-pic" src="{{ ingredient.mainPicture  == null ? 'js/taste/default.png' :   ingredient.mainPicture.filePath + '/' + ingredient.mainPicture.fileName  }}">
 				</span> 
 				<span class="glyphicon-class">
-					{{ ingredient.name }} 
+					{{ ingredient.name }}
 				</span> 
 				<span class="badge {{ ingredient.css_value }}" ng-dblclick="ingredient.grading = ''">
 					<input type="number" class="input_value" min="1" max="10" my-enter="sendUserTaste(ingredient)" ng-hide="ingredient.grading">

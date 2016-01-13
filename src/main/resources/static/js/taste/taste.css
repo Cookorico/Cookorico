@@ -51,38 +51,38 @@ bs-glyphicons .glyphicon {
 }
 
 ul.ingredient-list{
-	background-color:blue;
+	background-color:white;
+	border-top :0 solid white;
+	border-bottom:1px solid grey;
+	border-left:1px solid grey;
+	border-right:1px solid grey;
+	border-radius:5px;
 }
 
-ul.ingredient-list a.ingredient-item {
-	color:yellow !important;
+ul.ingredient-list li:hover {
+	background-color:#E5E5E5;
 }
 
-a.ingredient-item {
-	color:yellow !important;
+ul.ingredient-list li a{
+	min-width: 100%;
+	display:block;
 }
-
-/* ul .ingredient */
-
-/* li { */
-/* 	background-color:red; */
-/* } */
-
 input.input_value{
 	color:#000;
 	max-width: 40px;
 }
 
-.cross-remove-taste{
-	position:absolute;
+img.cross-remove-taste{
+/* 	position:absolute; */
+	position:relative;
 	display:block;
-	visibility:hidden;
-/* 	background-color:blue !important; */
+	right: 2px;
+/*  	background-color:blue !important;  */
 }
 
-.cross-remove-taste:hover{
+img.cross-remove-taste:hover{
 	display:block;
-	visibility:visible;
+	cursor:pointer;
 }
 
 .taste-zero{

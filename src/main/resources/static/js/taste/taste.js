@@ -51,7 +51,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.button_order_alpha = 'A--Z';
 	$scope.button_order_num = '0--10';
 	$scope.show_delete_icon = false;
-	
+		
 	$scope.taste = {
 			'ingredients':[]
 	};
@@ -78,7 +78,6 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 		 		console.log(data);
 		 		 ingredient = value.ingredient;
 		 		 ingredient.grading = value.grading;
-		 		 
 		 		 $scope.taste.ingredients.push(ingredient);
 		 	});
 	  })
@@ -103,7 +102,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	$scope.addPersonnalTaste = function(ingredient){
 		ingredient.name = ingredient.name.toLowerCase();
 		$scope.taste['ingredients'].push(ingredient);
-		console.log($scope.taste['ingredients']);
+		//console.log($scope.taste['ingredients']);
 		$('input[type="number"]:first').focus();
 		$scope.inputIngredient = "";
 		
@@ -147,8 +146,26 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 	}
 	
 	$scope.sortByName = function(){
-		
+	
 	}
 	
+	$scope.deletePersonnalTaste = function(ingredient){
+		//console.log($(this));
+		var index;
+		$http({
+		    method: 'DELETE',
+		    url: '/taste/' + ingredient.idIngredient,
+		  }).success(function (data, status, headers, config) {
+			   index = $scope.taste['ingredients'].indexOf(ingredient);
+		  })
+		  .error(function (data, status, headers, config) {
+		    // TODO : erreur de récupération :(
+			  console.log(data);
+			  console.log("not working :(");
+		  });
+			
+		$scope.taste['ingredients'].slice(index, 1);
+		
+	}
 	
 }]);
