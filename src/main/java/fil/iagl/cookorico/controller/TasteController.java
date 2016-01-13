@@ -3,6 +3,8 @@ package fil.iagl.cookorico.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -57,5 +59,20 @@ public class TasteController {
 		taste.setIngredient(new Ingredient(idIngredient));
 		taste.setGrading(grading);
 		tasteService.updateTaste(taste);
+	}
+	
+	@RequestMapping(value="/taste/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<String> deleteTaste(@PathVariable String id){
+		System.out.println("in delete");
+		CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		int idMember = currentUser.getMember().getIdMember();
+		try {
+			int idIngredient = Integer.parseInt(id);
+			tasteService.deleteTaste(idIngredient, idMember);
+		}catch(NumberFormatException e){
+			return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+		}
+		return new ResponseEntity<String>(HttpStatus.ACCEPTED);
+
 	}
 }
