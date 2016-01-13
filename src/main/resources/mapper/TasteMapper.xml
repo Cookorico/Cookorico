@@ -36,4 +36,8 @@
 		WHERE tst_fk_id_member = #{taste.member.idMember} AND tst_fk_id_ingredient = #{taste.ingredient.idIngredient}
 	</update>
 	
+	<delete id="deleteTaste" parameterType="map">
+		delete from taste where tst_fk_id_ingredient=#{idIngredient} AND tst_fk_id_member = #{idMember}
+	</delete>
+	
 </mapper>

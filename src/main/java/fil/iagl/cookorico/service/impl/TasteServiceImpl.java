@@ -27,8 +27,8 @@ public class TasteServiceImpl implements TasteService{
 	}
 	
 	@Override
-	public boolean deleteTaste(Taste taste) {
-		return tasteDao.deleteTaste(taste);
+	public boolean deleteTaste(Integer idIngredient, Integer idMember) {
+		return tasteDao.deleteTaste(idIngredient, idMember);
 	}
 
 	@Override

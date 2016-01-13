@@ -15,7 +15,7 @@ public interface TasteService {
 	
 	public boolean addTaste(@Param("taste") Taste taste);
 	
-	public boolean deleteTaste(@Param("taste") Taste taste);
+	public boolean deleteTaste(@Param("ingredient") Integer idIngredient, @Param("member") Integer idMember);
 
 	public boolean updateTaste(@Param("taste") Taste taste);
 
