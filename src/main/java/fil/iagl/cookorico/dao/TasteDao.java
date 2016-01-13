@@ -14,7 +14,7 @@ public interface TasteDao {
 	
 	boolean addTaste(@Param("taste") Taste taste);
 	
-	boolean deleteTaste(@Param("taste") Taste taste);
+	boolean deleteTaste(@Param("idIngredient") Integer idIngredient, @Param("idMember") Integer idMember);
 	
 	boolean updateTaste(@Param("taste") Taste taste);
 	
