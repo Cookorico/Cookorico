@@ -1,0 +1,17 @@
+.header_recipe_step{
+}
+
+div.img-div{
+    width:150px;
+}
+
+.img-div img{
+max-width: 100%;
+height: auto;
+}
+
+
+.img-div-recipe img{
+   max-width: 100%;
+   height: auto;
+}

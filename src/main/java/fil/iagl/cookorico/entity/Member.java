@@ -9,9 +9,6 @@ import org.apache.ibatis.type.Alias;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.AccessLevel;
 
 @JsonSerialize
 @Data

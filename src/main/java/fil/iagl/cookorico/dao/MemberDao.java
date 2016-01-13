@@ -1,6 +1,7 @@
 package fil.iagl.cookorico.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 
@@ -17,5 +18,9 @@ public interface MemberDao {
 	void addMember(@Param("member") Member member);
 	
 	Member getMemberById(@Param("id") int id);
+
+	void updateXpMember( int id,  int newXp);
+
+	void updateXpMember(Map<String, Integer> parms);
 
 }

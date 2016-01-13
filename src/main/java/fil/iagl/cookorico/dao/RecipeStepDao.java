@@ -10,7 +10,7 @@ public interface RecipeStepDao {
 	
 	List<RecipeStep> getRecipeStepByIdRecipe(@Param("id") int id);
 	
-	void addRecipeStep(@Param("recipe") RecipeStep recipeStep);
+	void addRecipeStep(@Param("recipeStep") RecipeStep recipeStep);
 
 
 }

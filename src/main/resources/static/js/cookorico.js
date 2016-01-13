@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message', 'navigation',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -260,7 +260,7 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
             .state('taste', {
             	url: '/taste',
             	parent: 'dashboard',
-            	templateUrl : 'js/taste/taste.html?v=' + window.app_version
+            	templateUrl : 'js/taste/taste.html'
             })
             .state('recipes', {
                 url: '/recipes',
@@ -279,13 +279,26 @@ angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'me
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/recipe.html',
                 controller: 'RecipeCtrl'
+            })
+            .state('newrecipestep', {
+                url: '/recipe/:idRecipe/addstep',
+                parent: 'dashboard',
+                templateUrl: 'js/recipe/newrecipestep.html',
+                controller: 'addRecipeStepCtrl'
             });
     })
-    .run(function () {
+    .run(function (auth, $rootScope) {
 
         var switchValue = JSON.parse(localStorage.getItem("switched"));
 
         if (switchValue)
             $('body').addClass('box-section');
+
+        auth.init("/dashboard/home","/", "/logout");
+
+        $rootScope.$on('$routeChangeStart', function(event, next, current) {
+            console.debug("COUCOU");
+        });
+
 
     });

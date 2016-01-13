@@ -1,40 +1,166 @@
-<pageheader pagename="Liste des recettes" subtitle="Toutes les recettes"></pageheader>
-<div class="container">	
-	<div class="conter-wrapper">
-		<div class="row">
-			
-			<div flash-message="3000"></div>
-			
-			<div class="col-md-12">
-				
-				<div class="container dynamicTile">
-					<div class="row">
-						<div ng-controller="listingRecipeCtrl">
-							
-							<div ng-repeat="recipe in recipes">
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-										<img src="js/recipe/cake.png" alt="...">
-										<div class="caption">
-											<h3>{{recipe.name}}</h3>
+<link href="js/recipe/recipe.css" rel="stylesheet" type="text/css">
+
+<pageheader pagename="{{recipe.name}}" subtitle="Informartions sur la recette"></pageheader>
+
+<div class="container" ng-controller="RecipeCtrl">
 	
-											<blockquote cite="#">
-												<p>{{recipe.description.substring(0,35)}}...</p>
-												<p>Par {{recipe.creator.lastname}} {{recipe.creator.firstname}} (<a href="mailto:{{recipe.creator.email}}">{{recipe.creator.email}}</a>)</p>
+	<div class="conter-wrapper">
+		
+		<!-- info recette -->
+	    <div class="panel panel-primary">
+	    
+	        <div class="panel-heading">
+	            <h3 class="panel-title"><span class="glyphicon glyphicon-info-sign"></span>  D&eacute;tails sur la recette : <strong><i>{{recipe.name}}</i></strong></h3>
+	        </div>
+	        
+	        <div class="panel-body">
+	        	
+	        	<!-- show recipe images -->
+				<div ng-controller="carouselCtrl">
+					
+					<div ng-switch on="recipe.photos">
+					    
+					    <!-- show default image -->
+					    <div ng-switch-when="null">
+					        <a href="#" class="thumbnail">
+					        	<img class="medium" data-holder-rendered="true" src="images/image-add-icon.png" style="height: 260px; width: 1066px; display: block;">
+							</a>
+					    </div>
+					    <!-- show default image -->
+					    
+					    <!-- show caroussel -->
+					    <div ng-switch-default>
+							<div class="row">
+								<div style="height: 305px">
+									<uib-carousel interval="interval" no-wrap="noWrapSlides">
+									<uib-slide ng-repeat="slide in recipe.photos" active="slide.active">
+	
+									<a href="#" class="thumbnail">
+										<img ng-click="displayFn(slide.image)" class="medium" data-holder-rendered="true" ngf-src="{{slide.image}}" style="height: 260px; width: 1066px; display: block;">
+									</a>
+	
+									<div class="carousel-caption">
+										<h4>{{slide.image.name}}</h4>
+										<p>{{slide.description}}</p>
+									</div>
+	
+									</uib-slide> </uib-carousel>
+								</div>
+							</div>
+					    </div>
+					    <!-- fin show caroussel -->
+					    
+					</div>
+					
+				</div>
+				<!-- fin show recipe images -->
+	        	
+	        	<!-- session recette -->
+				<div class="row ">
+					<div class="col-md-{{myVar}}">
+						<div class="thumbnail">
+							<div class="row" style="text-align: center">
+								<h3><strong><i>Infos recette</i></strong></h3>
+							</div>
+							
+			      			<p><span class="glyphicon glyphicon-user"></span> <strong>Cr&eacute;ateur du tag :</strong> <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a></p>
+			      			<p><span class="glyphicon glyphicon-signal"></span> <strong>Difficult&eacute; de pr&eacute;paration :</strong> {{recipe.difficulty}} / 10</p>
+							<p><span class="glyphicon glyphicon-time"></span> <strong>Temps de pr&eacute;paration :</strong> {{recipe.preparationTime}} secondes</p>
+							<p><span class="glyphicon glyphicon-time"></span> <strong>Temps de cuisson :</strong> {{recipe.cookingTime}} secondes</p>
+				      		<p><span class="glyphicon glyphicon-calendar"></span> <strong>Date de cr&eacute;ation :</strong> {{recipe.creationDate | date:'dd-MM-yyyy &agrave; HH:mm:ss'}}</p>
+			      			<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
+			      			<blockquote cite="#">
+								<p>{{recipe.description}}</p>
+							</blockquote>
+							
+						</div>
+					</div>
+					
+					<!-- affichage des tags -->
+					<div ng-if="recipe.tags.length > 0">
+						<div class="col-md-6">
+							<div class="thumbnail">
+								<div class="row" style="text-align: center">
+									<h4><strong><i>Liste des tags</i></strong></h4>
+								</div>
+								
+								<div ng-repeat="tag in recipe.tags">
+									<uib-accordion>
+										<uib-accordion-group is-open="status.open">
+								      		<uib-accordion-heading>
+								        		<span class="glyphicon glyphicon-tags"></span>  {{tag.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+								      		</uib-accordion-heading>
+								      		
+								      		<p><span class="glyphicon glyphicon-user"></span> <strong>Cr&eacute;ateur du tag :</strong> <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a></p>
+							      			<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
+							      			<blockquote cite="#">
+												<p></p>
 											</blockquote>
 											
-											<a href="#" class="btn btn-primary" role="button">Consulter recette</a>
-											<a href="#" class="btn btn-default" role="button">Ajout aux favoris</a>
-										</div>
-									</div>
-								</div>
-	
-							</div>
+								    	</uib-accordion-group>
+								  	</uib-accordion>
+							  	</div>
+							  	</div>
+							<!-- fin affichage des tags -->
 						</div>
 					</div>
 				</div>
-	
-			</div>
+				<!-- fin session recette -->
+				
+				<!-- add recipe done link -->
+				<div class="row" style="text-align: center">
+					<button id="btnDoneRecipe" name="btnDoneRecipe"  type="button" class="btn btn-success btn-s" ng-click="doneRecipe()">
+						<span class="glyphicon glyphicon-ok"></span> J'ai fait cette recette...
+					</button>
+				</div>
+				<!-- end recipe done link -->
+				
+	        </div>
+	    </div>
+		<!-- fin info recette -->
+		
+		
+		<!-- liste des �tapes -->
+        <div class="panel panel-primary">
+        
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>  <strong>Les &eacute;tapes pour cette recette</strong></h3>
+            </div>
+            
+            <div class="panel-body">
+            	
+            	<div ng-if="recipe.steps.length > 0">
+					<div ng-repeat="step in recipe.steps">
+						<uib-accordion>
+							<uib-accordion-group is-open="status.open">
+					      		<uib-accordion-heading>
+					        		<span class="glyphicon glyphicon-flag"></span>  {{step.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+					      		</uib-accordion-heading>
+					      		
+					      		<p><span class="glyphicon glyphicon-time"></span> <strong>Dur&eacute;e de l'&eacute;tape :</strong> {{step.durationTime}} secondes</p>
+					      		<p><span class="glyphicon glyphicon-calendar"></span> <strong>Date de cr&eacute;ation :</strong> {{step.creationDate | date:'dd-MM-yyyy &agrave; HH:mm:ss'}}</p>
+				      			<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
+				      			<blockquote cite="#">
+									<p>{{step.description}}</p>
+								</blockquote>
+								
+					    	</uib-accordion-group>
+					  	</uib-accordion>
+				  	</div>
+			  	</div>
+			  	
+			  	<!-- add step link -->
+			  	<div ng-if="iscreator">
+			  		<div class="row" style="text-align: center">
+						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })" class="btn btn-success btn-s" role="button"><span class="glyphicon glyphicon-plus"></span> Ajouter une &eacute;tape...</a>
+					</div>
+				</div>
+				<!-- end add step link -->
+				
+		  	</div>
 		</div>
+		<!-- Fin liste des �tapes -->
+		
 	</div>
+	
 </div>
