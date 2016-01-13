@@ -372,36 +372,6 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
             size: 300
         });
     };
-
-/*    
-    // define function to delete a specified picture object
-    $scope.deletePicture = function (picture) {
-        
-        var pictureJson = angular.toJson(picture);
-        
-        $http({
-            method: 'POST', 
-            url : '/picture/delete',
-            data : pictureJson
-        }).success(function(data, status, header, config){
-            
-            // remove related element deleted from DOM
-            $("#img_" + picture.creationDate).remove();
-            
-            // remove element from array
-            $scope.images = jQuery.grep($scope.images, function(value) {
-                return value != picture;
-            });
-            
-            // update retained images
-            picturesRetained = $scope.images;
-            
-        }).error(function(data, status, header, config){
-            console.log(data);
-        });
-    };
-*/
-    
 }]);
 
 /**
@@ -410,46 +380,45 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
 recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$location', '$http', 'Flash',  function ($scope, $rootScope, $window, $location, $http, Flash) {
     
 	
-	 $scope.ingredients = []; //liste de tous les ingredients de la bdd
-	    $scope.measurement = []; //liste des unité de mesure possible (actuellement: gramme(s), litre(s), unité(s)).
-	    $scope.ingredients_in_recipe = []; //liste des ingrédients dans la recette (bindé au form front)
-	    
-	    
-	    //ajoute un ingredient vide dans la liste (et donc crée dans le form une new ligne vide).
-	    $scope.add_ingredient = function () {
-	      $scope.ingredients_in_recipe.push({ 
-	        ingredient: $scope.ingredients[0],
-	        quantity: 0,
-	        measurement: $scope.measurement[0]
-	      });
-	    };
-	    
-		$scope.remove_ingredient = function(index){
-		    $scope.ingredients_in_recipe.splice(index, 1);
-		}
-	    
-		//charge la liste des ingredients
-		$http({
-			method: 'GET', 
-			url : '/ingredients'
-		}).then(function successCallback(response) {
-			$scope.ingredients = response.data;
-			console.log(response.data);
-		}, function errorCallback(response) {
-			console.log(data, status, header, config);
-		});
-		
-		//charge la liste des unités de mesure
-		$http({
-			method: 'GET', 
-			url : '/measurements'
-		}).then(function successCallback(response) {
-			$scope.measurements = response.data;
-			console.log(response.data);
-		}, function errorCallback(response) {
-			console.log(data, status, header, config);
-		});
-		
+ 	$scope.ingredients = []; //liste de tous les ingredients de la bdd
+    $scope.measurement = []; //liste des unité de mesure possible (actuellement: gramme(s), litre(s), unité(s)).
+    $scope.ingredients_in_recipe = []; //liste des ingrédients dans la recette (bindé au form front)
+    
+    
+    //ajoute un ingredient vide dans la liste (et donc crée dans le form une new ligne vide).
+    $scope.add_ingredient = function () {
+      $scope.ingredients_in_recipe.push({ 
+        ingredient: $scope.ingredients[0],
+        quantity: 0,
+        measurement: $scope.measurement[0]
+      });
+    };
+    
+	$scope.remove_ingredient = function(index){
+	    $scope.ingredients_in_recipe.splice(index, 1);
+	}
+    
+	//charge la liste des ingredients
+	$http({
+		method: 'GET', 
+		url : '/ingredients'
+	}).then(function successCallback(response) {
+		$scope.ingredients = response.data;
+		console.log(response.data);
+	}, function errorCallback(response) {
+		console.log(data, status, header, config);
+	});
+	
+	//charge la liste des unités de mesure
+	$http({
+		method: 'GET', 
+		url : '/measurements'
+	}).then(function successCallback(response) {
+		$scope.measurements = response.data;
+		console.log(response.data);
+	}, function errorCallback(response) {
+		console.log(data, status, header, config);
+	});
 	
     /**
      * Function to get difficulty and experience level info 
