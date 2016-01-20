@@ -15,7 +15,9 @@
 	<select id="getTastesByMember" resultMap="tasteResultMap" parameterType="Integer">
     	Select * 
     	from taste 
-    	left join ingredient on tst_fk_id_ingredient=igd_id_ingredient 
+    	left join ingredient on tst_fk_id_ingredient=igd_id_ingredient
+    	LEFT JOIN picture_of_ingredient ON igd_main_picture=poi_id_picture_of_ingredient
+   		LEFT JOIN picture ON poi_fk_id_picture=pic_id_picture
     	where tst_fk_id_member=#{id}
 	</select>
 	
@@ -24,7 +26,18 @@
 	</select>
 	
 	 <insert id="addTaste" parameterType="fil.iagl.cookorico.entity.Taste">
-		<!-- INSERT INTO taste () -->
+		INSERT INTO taste(tst_fk_id_member, tst_fk_id_ingredient, tst_grading) 
+		VALUES(#{taste.member.idMember}, #{taste.ingredient.idIngredient}, #{taste.grading})
 	</insert>
+	
+	<update id="updateTaste" parameterType="fil.iagl.cookorico.entity.Taste">
+		UPDATE taste 
+		SET tst_grading = #{taste.grading}
+		WHERE tst_fk_id_member = #{taste.member.idMember} AND tst_fk_id_ingredient = #{taste.ingredient.idIngredient}
+	</update>
+	
+	<delete id="deleteTaste" parameterType="map">
+		delete from taste where tst_fk_id_ingredient=#{idIngredient} AND tst_fk_id_member = #{idMember}
+	</delete>
 	
 </mapper>

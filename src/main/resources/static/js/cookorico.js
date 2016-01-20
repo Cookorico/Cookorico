@@ -26,7 +26,7 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
     }])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
         $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
         $urlRouterProvider.when('/dashboard', '/dashboard/home');

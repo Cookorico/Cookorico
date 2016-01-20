@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import fil.iagl.cookorico.dao.IngredientInRecipeDao;
 import fil.iagl.cookorico.dao.RecipeDao;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.RecipeService;
@@ -15,19 +16,19 @@ public class RecipeServiceImpl implements RecipeService{
     @Autowired
     private RecipeDao recipeDao;
 
-    /**
+    
+	@Autowired
+	private IngredientInRecipeDao ingredientInRecipeDao;
+	
+	/**
 	 * Ajout recette dans la BDD
 	 * @param recipe l'entité recette à sauvegarder
 	 */
-    @Override
-    public void addRecipe(Recipe recipe) {
-        
-        final String recipeName = recipe.getName();
-        
-        if (this.recipeDao.getRecipeWithName(recipeName) == null) {
-        	this.recipeDao.addRecipe(recipe);
-        }
-    }
+	@Override
+	public void addRecipe(Recipe recipe) {
+		recipeDao.addRecipe(recipe);
+	}
+
 
     /**
 	 * Recuperation des recettes

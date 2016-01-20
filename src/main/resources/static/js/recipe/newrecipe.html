@@ -1,142 +1,217 @@
-<pageheader pagename="Nouvelle recette" subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
+<pageheader pagename="Nouvelle recette"
+	subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
 
 <div class="container">
-    <div class="" style="padding:17px;">
-        
-        <div flash-message="3000"></div>
-        
-        <!-- add images -->
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-picture"></span>  <strong>Galerie photos</strong></h3>
-            </div>
-            
-              <div class="panel-body">
-                <div ng-controller="carouselCtrl">
-                        
-                    <!-- Caroussel to display uploaded files -->
-                    <div ng-if="uploadedItems.length > 0">
-                        <div class="row">
-                            <div style="height: 305px">
-                                <uib-carousel interval="interval" no-wrap="noWrapSlides">
-                                      <uib-slide ng-repeat="slide in slides" active="slide.active">
-                                      
-                                          <a href="#" class="thumbnail">
-                                            <img ng-click="displayFn(slide.image)" class="medium" data-holder-rendered="true" ngf-src="{{slide.image}}" style="height: 260px; width: 1066px; display: block;">
-                                        </a>
-                                        
-                                        <div class="carousel-caption">
-                                              <h4>{{slide.image.name}}</h4>
-                                              <p>{{slide.description}}</p>
-                                        </div>
-                                        
-                                      </uib-slide>
-                                </uib-carousel>
-                              </div>
-                          </div>
-                    </div>
-                  </div>
-                  
-                  <div ng-controller="pictureCtrl">
-                    
-                    <!-- uploaded images link -->
-                    <div class="row" style="text-align: center">
-                        <button type="button" class="btn btn-primary btn-s" ng-click="galeryFn()">
-                            <span class="glyphicon glyphicon-new-window"></span> Ajouter une photo...
-                        </button>
-                    </div>
-                    
-                </div>
-              </div>
-              
-        </div>
-        
-        <!-- Informations recette -->
-        <form role="form" ng-controller="addRecipeCtrl" name="addRecipeForm" class="form-horizontal" id="formAddRecipe" ng-submit="addRecipeFn()" novalidate>
+	<div class="" style="padding: 17px;">
+
+		<div flash-message="3000"></div>
+
+		<!-- add images -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="glyphicon glyphicon-picture"></span> <strong>Galerie
+						photos</strong>
+				</h3>
+			</div>
+
+			<div class="panel-body">
+				<div ng-controller="carouselCtrl">
+
+					<!-- Caroussel to display uploaded files -->
+					<div ng-if="uploadedItems.length > 0">
+						<div class="row">
+							<div style="height: 305px">
+								<uib-carousel interval="interval" no-wrap="noWrapSlides">
+								<uib-slide ng-repeat="slide in slides" active="slide.active">
+
+								<a href="#" class="thumbnail"> <img
+									ng-click="displayFn(slide.image)" class="medium"
+									data-holder-rendered="true" ngf-src="{{slide.image}}"
+									style="height: 260px; width: 1066px; display: block;">
+								</a>
+
+								<div class="carousel-caption">
+									<h4>{{slide.image.name}}</h4>
+									<p>{{slide.description}}</p>
+								</div>
+
+								</uib-slide> </uib-carousel>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div ng-controller="pictureCtrl">
+
+					<!-- uploaded images link -->
+					<div class="row" style="text-align: center">
+						<button type="button" class="btn btn-primary btn-s"
+							ng-click="galeryFn()">
+							<span class="glyphicon glyphicon-new-window"></span> Ajouter une
+							photo...
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Informations recette -->
+		<form role="form" ng-controller="addRecipeCtrl" name="addRecipeForm"
+			class="form-horizontal" id="formAddRecipe" novalidate
+			ng-submit="addRecipeForm.$valid && addRecipeFn()">
 			<fieldset>
-        		
-        		<div class="panel panel-primary">
-            
-            		<div class="panel-heading"><h5>
-		                <h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>  <strong>D&eacute;tails de la recette</strong></h3>
-		            </div>
-            
-	              	<div class="panel-body">
-                        <!-- rcp_dish_type -->
-                        <div class="control-group">
-                            <label class="control-label" for="rcp_dish_type">Cat&eacute;gorie de la recette</label>
-                            <div class="controls">
-                                <label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Entree" ng-model="recipe.rcp_dish_type">Entr&eacute;e</label>
-                                <label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Plat" ng-model="recipe.rcp_dish_type">Plat</label>
-                                <label class="radio-inline"><input type="radio" name="rcp_dish_type" id="rcp_dish_type" value="Dessert" ng-model="recipe.rcp_dish_type">Dessert</label>
-                            </div>
-                        </div>
-                        
-                        <!-- rcp_name -->
-                        <div class="control-group">
-                            <label class="control-label" for="rcp_name"></label>
-                            <div class="controls">
-                                <div class="input-group">
-                                    <span class="input-group-addon">Nom recette *</span>
-                                    <input id="rcp_name" name="rcp_name" class=" form-control" placeholder="Le nom de votre recette" type="text" ng-model="recipe.rcp_name" required>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <br/>
-                        
-                        <!-- rcp_preparation_time -->
-                        <div class="control-group">
-                            <label class="control-label" for="rcp_preparation_time">Dur&eacute;e de pr&eacute;paration</label>
-                            <uib-timepicker ng-model="preparation_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
-                        </div>
-                        
-                        <br/>
-                        
-                        <!-- cooking_time -->
-                        <div class="control-group">
-                            <label class="control-label" for="cooking_time">Temps de cuisson</label>
-                            <uib-timepicker ng-model="cooking_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
-                        </div>
-                        
-                        <br/>
-                        
-                        <!-- difficulty -->
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<h5>
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-cutlery"></span> <strong>D&eacute;tails
+									de la recette</strong>
+							</h3>
+					</div>
+
+					<div class="panel-body">
+						<!-- rcp_dish_type -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_dish_type">Catégorie
+								de la recette *</label>
+							<div class="controls" ng-init="recipe.rcp_dish_type='Plat'">
+								<label class="radio-inline"><input type="radio"
+									name="rcp_dish_type" id="rcp_dish_type1" value="Entree"
+									ng-model="recipe.rcp_dish_type">Entrée</label> <label
+									class="radio-inline"><input type="radio"
+									name="rcp_dish_type" id="rcp_dish_type2" value="Plat"
+									ng-model="recipe.rcp_dish_type">Plat</label> <label
+									class="radio-inline"><input type="radio"
+									name="rcp_dish_type" id="rcp_dish_type3" value="Dessert"
+									ng-model="recipe.rcp_dish_type">Dessert</label>
+							</div>
+
+						</div>
+
+						<!-- rcp_name -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_name">Nom recette *</label>
+							<div class="controls">
+								<input id="rcp_name" name="rcp_name" class=" form-control"
+									placeholder="Le nom de votre recette" type="text"
+									ng-model="recipe.rcp_name" required> <span
+									style="color: red"
+									ng-show="(addRecipeForm.$submitted ||addRecipeForm.rcp_name.$dirty) && addRecipeForm.rcp_name.$invalid">
+									<span ng-show="addRecipeForm.rcp_name.$error.required">Nom
+										de la recette requise.</span>
+								</span>
+							</div>
+						</div>
+
+
+
+						<!-- rcp_preparation_time -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_preparation_time">Durée de préparation *</label>
+							<div class="controls">
+								<uib-timepicker name="rcp_preparation_time" id="rcp_preparation_time" 
+								ng-model="preparation_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
+								
+							<span style="color: red"
+								ng-show="(addRecipeForm.$submitted ||addRecipeForm.rcp_preparation_time.$dirty) && addRecipeForm.rcp_preparation_time.$invalid">
+								<span
+								ng-show="addRecipeForm.rcp_preparation_time.$error.required">Durée
+									de préparation requise.</span>
+							</span>
+							</div>
+						</div>
+						
+
+						<!-- rcp_cooking_time -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_cooking_time">Temps
+								de cuisson *</label>
+							<div class="controls">
+							<uib-timepicker name="rcp_cooking_time" id="rcp_cooking_time" 
+							ng-model="cooking_time" hour-step="1" minute-step="1" show-meridian="false"></uib-timepicker>
+							
+							<span style="color: red"
+								ng-show="(addRecipeForm.$submitted ||addRecipeForm.rcp_cooking_time.$dirty) && addRecipeForm.rcp_cooking_time.$invalid">
+								<span ng-show="addRecipeForm.rcp_cooking_time.$error.required">Temps
+									de cuisson requis.</span>
+							</span>
+							</div>
+						</div>
+						
+
+						<!-- difficulty -->
                         <div class="control-group">
                             <label class="control-label" for="difficulty">Niveau de difficult&eacute; (valeur sur 10) * : </label>
                             <uib-rating ng-model="difficulty" max="10" state-on="'glyphicon-ok-sign'" state-off="'glyphicon-ok-circle'" on-hover="infoDifficultyFn(value)" on-leave="mouse = null" aria-labelledby="custom-icons-1"></uib-rating>
                             <span class="label" ng-class="{'label-warning': difficulty<6, 'label-success': difficulty>=6}" ng-show="mouse && !isReadonly">Niveau : {{difficulty}} | Valeur exp&eacute;rience : + {{experience}}</span>
+                        	
+                        	<span style="color: red"
+								ng-show="(addRecipeForm.$submitted || addRecipeForm.rcp_difficulty.$dirty) && addRecipeForm.rcp_difficulty.$invalid">
+								<span ng-show=" addRecipeForm.rcp_difficulty.$error.required">Niveau
+									de difficulté requis.</span>
+							</span>
                         </div>
-                        
-                        <br/>
-                        
-                        <!-- rcp_description -->
-                        <div class="control-group">
-                              <label class="control-label" for="rcp_description">Breve description de la recette</label>
-                              <div class="controls">
-                                <textarea class="form-control" id="rcp_description" name="rcp_description" placeholder="Une petite description..." ng-model="recipe.rcp_description"></textarea>          
-                              </div>
-                        </div>
-           			</div>
-           			
-           			<div class="panel-footer">
-                        <!-- Button -->
-                        <div class="control-group">
-                              <label class="control-label" for="btnAddRecipe"></label>
-                              <div class="controls">
-                                <button id="btnAddRecipe" name="btnAddRecipe" class="btn btn-success btn-s" role="submit">
-                                    <span class="glyphicon glyphicon-arrow-right"></span> Sauvegarder
-                                </button>
-                                
-                                <button id="btnRazForm" name="btnRazForm" class="btn btn-warning btn-s" type="reset">
-                                    <span class="glyphicon glyphicon-ban-circle"></span> Vider formulaire
-                                </button>
-                              </div>
-                        </div>
-                    </div>
-		        </div>
-		        
-			</fieldset>
-     	</form>
-    </div>
+						
+						
+
+						<!-- rcp_description -->
+						<div class="control-group">
+							<label class="control-label" for="rcp_description">Bref
+								description de la recette</label>
+							<div class="controls">
+								<textarea class="form-control" id="rcp_description"
+									name="rcp_description" placeholder="description"
+									ng-model="recipe.rcp_description"></textarea>
+							</div>
+						</div>
+
+
+						<!-- rcp_ingredients -->
+						<div class="control-group">
+							<label class="control-label">Liste des ingrédients de la
+								recette</label>
+							<div
+								ng-repeat="ingredient in ingredients_in_recipe track by $index">
+								<select id="rcp_ingredients_$index" style="width: 25%;"
+									ng-model="ingredients_in_recipe[$index].ingredient"
+									ng-options="item as item.name for item in ingredients | orderBy:'name'">
+								</select> <label class="control-label"
+									for="quantity_of_ingredient_in_recipe_$index">quantité</label>
+								<input style="width: 5%;" type='number'
+									id="quantity_of_ingredient_in_recipe_$index"
+									ng-model='ingredients_in_recipe[$index].quantity'
+									placeholder='quantity'> <label
+									ng-repeat="measure in measurements" class="radio-inline">
+									<input
+									ng-model="ingredients_in_recipe[$parent.$index].measurement"
+									type="radio" name="rcp_measurement_{{$parent.$index}}"
+									value="{{measure}}"> {{measure}}
+								</label> <span class="glyphicon glyphicon-remove-circle"
+									aria-hidden="true" ng-click="remove_ingredient($index)"></span>
+							</div>
+							<div>
+								<button type="button" ng-click="add_ingredient()">ajouter
+									un ingredient</button>
+							</div>
+						</div>
+
+
+						<!-- Button -->
+						<div class="control-group">
+							<label class="control-label" for="btnAddRecipe"></label>
+							<div class="controls">
+								<button id="btnAddRecipe" name="btnAddRecipe"
+									class="btn btn-success" role="submit">Ajouter des
+									étapes</button>
+								<button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
+									type="reset">Vider formulaire</button>
+							</div>
+						</div>
+		</form>
+	</div>
 </div>

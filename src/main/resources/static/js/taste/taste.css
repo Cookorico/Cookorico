@@ -12,7 +12,7 @@
 }
 
 .bs-glyphicons li {
-	width: 12.5%;
+	max-width: 12.5%;
     font-size: 15px;
     float: left;
     height: 160px;
@@ -21,6 +21,11 @@
     text-align: center;
     background-color: #f9f9f9;
     border: 1px solid #fff;
+}
+
+.bs-glyphicons img.ingredient-pic {
+	max-width: 100px !important;
+	max-height: 100px !important;
 }
 
 bs-glyphicons .glyphicon {
@@ -43,6 +48,41 @@ bs-glyphicons .glyphicon {
 .bs-glyphicons li:hover {
     color: #000;
     background-color: #F3F3D1;
+}
+
+ul.ingredient-list{
+	background-color:white;
+	border-top :0 solid white;
+	border-bottom:1px solid grey;
+	border-left:1px solid grey;
+	border-right:1px solid grey;
+	border-radius:5px;
+}
+
+ul.ingredient-list li:hover {
+	background-color:#E5E5E5;
+}
+
+ul.ingredient-list li a{
+	min-width: 100%;
+	display:block;
+}
+input.input_value{
+	color:#000;
+	max-width: 40px;
+}
+
+img.cross-remove-taste{
+/* 	position:absolute; */
+	position:relative;
+	display:block;
+	right: 2px;
+/*  	background-color:blue !important;  */
+}
+
+img.cross-remove-taste:hover{
+	display:block;
+	cursor:pointer;
 }
 
 .taste-zero{
