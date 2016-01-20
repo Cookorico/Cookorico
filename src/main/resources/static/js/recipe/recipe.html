@@ -75,20 +75,6 @@
 
 						</div>
 						<br>
-					</div>les comments
-					<div ng-repeat="comment in recipe.comments">
-						<div class=" desc-div-comments">
-							<h2 class="text-center">{{comment.title}}</h2>
-							<blockquote cite="#">
-								<p>{{comment.description}}</p>
-								<p></p>
-							</blockquote>
-						</div>
-						<br>
-					</div>les comments
-					<div ng-if="iscreator">
-						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })"
-							class="btn btn-primary" role="button">Ajouter une &eacute;tape</a>
 					</div>
 
 					<!-- affichage des tags -->
@@ -163,6 +149,34 @@
 					  	</uib-accordion>
 				  	</div>
 			  	</div>
+					  	
+			</div>
+		<!-- Fin liste des �tapes -->
+		
+		<!-- Les commentaires -->
+		<div class="panel panel-primary">
+		  	<div class="panel-heading">
+               <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>  <strong>Les Commentaires</strong></h3>
+           	</div>
+
+            <div class="panel-body">
+            {{ recipe.comments.length }}
+
+            	<div ng-if="recipe.comments.length > 0">
+					<div ng-repeat="comment in recipe.comments">
+						<uib-accordion>
+							<uib-accordion-group is-open="status.open">
+					      		<uib-accordion-heading>
+					        		<span class="glyphicon glyphicon-flag"></span>  {{comment.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+					      		</uib-accordion-heading>
+				      			<blockquote cite="#">
+									<p>{{comment.description}}</p>
+								</blockquote>
+
+					    	</uib-accordion-group>
+					  	</uib-accordion>
+				  	</div>
+			  	</div>
 
 			  	<!-- add step link -->
 			  	<div ng-if="iscreator">
@@ -174,7 +188,6 @@
 
 		  	</div>
 		</div>
-		<!-- Fin liste des �tapes -->
 
 	</div>
 
