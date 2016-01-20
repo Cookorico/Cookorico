@@ -39,7 +39,17 @@
 							</blockquote>
 						</div>
 						<br>
-					</div>
+					</div>les comments
+					<div ng-repeat="comment in recipe.comments">
+						<div class=" desc-div-comments">
+							<h2 class="text-center">{{comment.title}}</h2>
+							<blockquote cite="#">
+								<p>{{comment.description}}</p>
+								<p></p>
+							</blockquote>
+						</div>
+						<br>
+					</div>les comments
 					<div ng-if="iscreator">
 						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })"
 							class="btn btn-primary" role="button">Ajouter une &eacute;tape</a>
@@ -49,5 +59,4 @@
 
 		</div>
 	</div>
-</div>
 </div>

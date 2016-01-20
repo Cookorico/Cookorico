@@ -14,11 +14,8 @@
 								
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										
-										<a href="#" class="thumbnail">
-											<img ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" src="images/image-add-icon.png" >
-										</a>
-										
+									<!-- Récup de l'image -->
+										<img src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
 										<div class="caption">
 											<h3>{{recipe.name}}</h3>
 	
