@@ -26,5 +26,4 @@ public class ProducerController {
 	public @ResponseBody List<Producer> getProducersByIngredient (@PathVariable int idIngredient){
 		return producerService.getProducersByIngredient(idIngredient);
 	}
-	
 }
