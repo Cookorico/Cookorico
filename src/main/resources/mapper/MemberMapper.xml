@@ -51,7 +51,7 @@
   
   
   <update id="updateXpMember" parameterType="java.util.Map" >
-  UPDATE member SET mbr_experience = #{newXp} WHERE mbr_id_member = #{id}
+  	UPDATE member SET mbr_experience = #{newXp} WHERE mbr_id_member = #{id}
   </update>
   
   

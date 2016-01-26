@@ -34,4 +34,8 @@
 		select * from comment;		
 	</select>
 	
+	<insert id="addComment" parameterType="java.util.Map">
+  		INSERT INTO comment(cmt_fk_id_recipe, cmt_fk_id_member, cmt_title, cmt_description) VALUES(CAST(#{idRecipe} AS INTEGER), CAST(#{idMember} AS INTEGER), #{title}, #{description})
+  	</insert>
+	
 </mapper>
