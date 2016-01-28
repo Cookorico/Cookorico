@@ -31,7 +31,7 @@
 	</resultMap>
 	
 	<select id="getAllComments" resultMap="commentResultMap">
-		select * from comment;		
+		select * from comment;
 	</select>
 	
 	<insert id="addComment" parameterType="java.util.Map">

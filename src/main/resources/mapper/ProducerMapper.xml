@@ -26,7 +26,12 @@
 		<include refid="select_all"/>
 	</select>
 	
-	<select id="getProducersByIngredient" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
+	<select id="getProducersByIngredient" resultMap="producerResultMap" parameterType="int">
   		SELECT * FROM producer LEFT JOIN ingredient_of_producer ON iop_fk_id_producer=prd_id_producer LEFT JOIN ingredient ON iop_fk_id_ingredient=igd_id_ingredient WHERE igd_id_ingredient = #{idIngredient};
   	</select>
+  	
+  	<insert id="addProducer" parameterType="fil.iagl.cookorico.entity.Producer">
+  		INSERT INTO producer(prd_city, prd_name, prd_description) VALUES (#{producer.city}, #{producer.name}, #{producer.description})
+  	</insert>
+  	
 </mapper>
