@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Cookorico/Cookorico.svg)](https://travis-ci.org/Cookorico)
+[![GetBadges Game](https://cookorico.getbadges.io/shield/company/cookorico)](https://cookorico.getbadges.io/?ref=shield-game)
 
 ![LOGO](src/main/resources/static/img/profile.gif)
 
