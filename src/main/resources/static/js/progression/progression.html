@@ -1,0 +1,94 @@
+<link href="js/progression/styles.css" rel="stylesheet" type="text/css">
+
+<pageheader pagename="Evolution utilisateur" subtitle="Votre niveau de progression"></pageheader>
+
+<div class="container" ng-controller="progressionCtrl">
+	<div class="" style="padding: 17px;">
+
+		<div flash-message="3000"></div>
+
+		<!-- add images -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="glyphicon glyphicon-sort-by-attributes-alt"></span> <strong>Votre niveau d'expérience</strong>
+				</h3>
+			</div>
+
+			<div class="panel-body">
+    			<!-- level 1 -->
+    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 1 : </strong> <i>Amateur</i></p>
+				<uib-progressbar animate="false" value="dynamic" type="success">
+   					<strong>100 /100 | Objectif atteint !</strong>
+  				</uib-progressbar>
+    			
+    			<!-- level 2 -->
+    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 2 : </strong> <i>Interm&eacute;diaire</i></p>
+				<div class="controls">
+					<uib-progressbar class="progress-striped active" max="100" value="60" type="info">
+	   					<strong>60 / 100 | En cours...</strong>
+	  				</uib-progressbar>
+				</div>
+				
+				<!-- level 3 -->
+				<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 3 : </strong> <i>Grand chef<i></p>
+				<uib-progressbar class="progress-striped" max="100" value="0" type="danger">
+   					<strong>0 / 100 | Non initié.</strong>
+  				</uib-progressbar>
+			</div>
+			
+			<div class="panel-footer">
+				<div ng-controller="pictureCtrl">
+
+					<!-- uploaded images link -->
+					<div class="row" style="text-align: center">
+						<button type="button" class="btn btn-primary btn-s" ng-click="galeryFn()">
+							<span class="glyphicon glyphicon-new-window"></span> Vision détaillée...
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="panel panel-primary">
+
+			<div class="panel-body">
+    			<style type="text/css">
+				  form.tab-form-demo .tab-pane {
+				    margin: 20px 20px;
+				  }
+				</style>
+				
+				<div ng-controller="TabsDemoCtrl">
+			  		<p>S&eacute;lectionner votre cat&eacute;gorie d'informations d&eacute;sir&eacute;e !</p>
+				  	<p>
+					    <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Recettes réalisées</button>
+				    	<button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Recettes validées</button>
+				    	<button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Statistiques</button>
+				  	</p>
+				  	
+				  	<hr/>
+				
+				  	<uib-tabset>
+				    	<uib-tab heading="Mes réalisées">
+				    		En cours d'édition...
+			    		</uib-tab>
+				    	
+				    	<uib-tab ng-repeat="tab in tabs" heading="Mes validées" active="tab.active" disable="tab.disabled">
+				      		En cours d'édition...
+				    	</uib-tab>
+				    	
+				    	<uib-tab select="alertMe()">
+				      		<uib-tab-heading>
+				        		<i class="glyphicon glyphicon-bell"></i> Statistiques
+				      		</uib-tab-heading>
+			      			En cours d'édition...
+				    	</uib-tab>
+				  	</uib-tabset>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

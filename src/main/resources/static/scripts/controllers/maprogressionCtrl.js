@@ -3,6 +3,6 @@
  */
 angular.module('cookorico').controller('maprogressionCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
-    $scope.progression = "Cuisinier amateur";
+    $scope.progression = "TOP chef !!";
 
 }]);
