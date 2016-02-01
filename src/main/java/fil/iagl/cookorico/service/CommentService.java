@@ -9,5 +9,7 @@ public interface CommentService {
 
 	List<Comment> getAllComments();
 	
+	List<Comment> getAllCommentsByIdRecipe(int id);
+	
 	void addComment(Map<String, String> parms);
 }

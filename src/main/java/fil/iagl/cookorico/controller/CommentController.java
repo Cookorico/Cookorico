@@ -26,6 +26,12 @@ public class CommentController {
 		return commentService.getAllComments();
 	}
 	
+	@RequestMapping(value="/comments/recipe/{id}", method = RequestMethod.GET)
+	public @ResponseBody List<Comment> getAllCommentsByIdRecipe(@PathVariable String id) {
+		return commentService.getAllCommentsByIdRecipe(Integer.parseInt(id));
+	}
+	
+	
 	@RequestMapping(value="/addComment/{idRecipe}/{idMember}/{title}/{description}", method = RequestMethod.GET)
 	public @ResponseBody void addComment(@PathVariable String idRecipe, @PathVariable String idMember, @PathVariable String title, @PathVariable String description) {
 		
