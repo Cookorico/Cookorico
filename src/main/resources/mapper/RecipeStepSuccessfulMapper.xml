@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
+        'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+
+<mapper namespace='fil.iagl.cookorico.dao.RecipeStepDao'>
+
+    <insert id="addRecipeStepSuccessful">
+        INSERT INTO recipe_step_successful(rss_id_member, rss_id_recipe_step) VALUES(#{id_recipieStep}, #{id_member})
+    </insert>
+
+</mapper>
