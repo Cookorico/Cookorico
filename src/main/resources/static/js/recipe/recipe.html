@@ -163,6 +163,13 @@
 					  	</uib-accordion>
 				  	</div>
 			  	</div>
+				<!-- add step link -->
+			  	<div ng-if="iscreator">
+			  		<div class="row" style="text-align: center">
+						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })" class="btn btn-success btn-s" role="button"><span class="glyphicon glyphicon-plus"></span> Ajouter une &eacute;tape...</a>
+					</div>
+				</div>
+				<!-- end add step link -->
 					  	
 			</div>
 		</div>
@@ -210,14 +217,6 @@
 					  	</uib-accordion>
 				  	</div>-->
 			  	</div>
-
-			  	<!-- add step link -->
-			  	<div ng-if="iscreator">
-			  		<div class="row" style="text-align: center">
-						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })" class="btn btn-success btn-s" role="button"><span class="glyphicon glyphicon-plus"></span> Ajouter une &eacute;tape...</a>
-					</div>
-				</div>
-				<!-- end add step link -->
 
 		  	</div>
 		</div>
