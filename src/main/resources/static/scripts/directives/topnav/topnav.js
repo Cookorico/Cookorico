@@ -6,7 +6,7 @@ angular.module('cookorico')
 	        templateUrl:'scripts/directives/topnav/topnav.html?v='+window.app_version,
 	        restrict: 'E',
 	        replace: true,
-	        controller: function($scope, $rootScope){
+	        controller: function($scope, $rootScope, $http){
 	        	
 	        	$scope.toggleBodyLayout = function(){
 
@@ -14,7 +14,24 @@ angular.module('cookorico')
 			        $scope.val = !$scope.val;
 	        	}
 
+	        	$scope.user= {};
+	    		$scope.level ={};
 
+	    		//Get user details
+	    		$http({
+	    			method: 'GET', 
+	    			url : '/profile'
+	    		}).then(function successCallback(response) {
+
+	    			$scope.user = response.data;
+	    			
+	    			console.log($scope.user);
+	    			
+	    			
+	    		  }, function errorCallback(response) {
+	    				console.log(data, status, header, config);
+	    		  });
+	    		
 			            	
 	        	$scope.$watch('val', function  () {
 	        		if ($scope.val == true) {

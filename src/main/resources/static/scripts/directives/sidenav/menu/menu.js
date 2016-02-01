@@ -7,7 +7,7 @@ angular.module('cookorico')
 	        restrict: 'E',
 	        replace: true,
 
-        	controller: function($scope){
+        	controller: function($scope, $http){
 
 	        	$scope.selectedMenu = 'dashboard';
 				$scope.showingSubNav = 0;
@@ -20,7 +20,26 @@ angular.module('cookorico')
 						$scope.showingSubNav = x;
 
 
-				};				
+				};	
+				
+	        	$scope.user= {};
+	    		$scope.level ={};
+
+	    		//Get user details
+	    		$http({
+	    			method: 'GET', 
+	    			url : '/profile'
+	    		}).then(function successCallback(response) {
+
+	    			$scope.user = response.data;
+	    			
+	    			console.log($scope.user);
+	    			
+	    			
+	    		  }, function errorCallback(response) {
+	    				console.log(data, status, header, config);
+	    		  });
+	    		
 				
 
 	        },
