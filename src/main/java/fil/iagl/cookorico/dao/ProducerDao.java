@@ -11,6 +11,8 @@ public interface ProducerDao {
 	void addProducer(@Param("Producer") Producer producer);
 	
 	void deleteProducer(@Param("Producer") Producer producer);
+	
+	Producer getProducerById(int idProducer);
 
 	List<Producer> getAllProducers();
 	

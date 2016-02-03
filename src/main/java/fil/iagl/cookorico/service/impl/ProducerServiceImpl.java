@@ -36,4 +36,10 @@ public class ProducerServiceImpl implements ProducerService {
 		
 		return producerdao.getProducersByIngredient(idIngredient);
 	}
+
+	@Override
+	public Producer getProducerById(int idProducer) {
+		
+		return producerdao.getProducerById(idProducer);
+	}
 }

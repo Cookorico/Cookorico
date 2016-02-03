@@ -23,8 +23,10 @@ public class CommentServiceImpl implements CommentService{
 	}
 
 	@Override
-	public void addComment(Map<String, String> parms) {
-		System.out.println("add comment");
-		commentDao.addComment(parms);
+	public void addComment(Comment comment) {
+
+		commentDao.addComment(comment);
+		
 	}
+
 }

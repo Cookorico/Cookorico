@@ -6,6 +6,7 @@ import java.util.Map;
 import org.apache.ibatis.annotations.Param;
 
 import fil.iagl.cookorico.entity.Comment;
+import fil.iagl.cookorico.entity.Ingredient;
 import fil.iagl.cookorico.entity.Member;
 
 public interface CommentDao {
@@ -14,6 +15,6 @@ public interface CommentDao {
 	
 	List<Comment> getCommentsRecipeByMember(int idMember, int idRecipe);
 	
-	void addComment(Map<String, String> parms);
+	void addComment(@Param("comment") Comment comment);
 	
 }
