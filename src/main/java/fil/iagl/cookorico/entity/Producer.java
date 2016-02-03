@@ -17,8 +17,8 @@ public class Producer {
 	private String city;
 	private String description;
 	private List<Ingredient> ingredients;
-	private Timestamp creationDate;
-	private Timestamp modifDate;
-	private Boolean disabled;
+//	private Timestamp creationDate;
+//	private Timestamp modifDate;
+//	private Boolean disabled;
 
 }

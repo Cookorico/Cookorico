@@ -23,30 +23,49 @@ public class ProducerController {
 
 	@Autowired
 	ProducerService producerService;
+	
+	/**
+	 * recuperer tout les producteurs 
+	 * @return
+	 */
 	@RequestMapping(value="/producers", method = RequestMethod.GET)
 	public @ResponseBody List<Producer> getAllProducers(){
 		return producerService.getAllProducers();
 	}
 	
-	@RequestMapping(value="/producer/{idIngredient}", method = RequestMethod.GET)
+	/**
+	 * Recuperer les producteurs d'un ingredient
+	 * @param idIngredient
+	 * @return
+	 */
+	@RequestMapping(value="/producers/ingredient/{idIngredient}", method = RequestMethod.GET)
 	public @ResponseBody List<Producer> getProducersByIngredient (@PathVariable int idIngredient){
 		System.out.println("******* "+ idIngredient);
 		return producerService.getProducersByIngredient(idIngredient);
 	}
 	
+	/**
+	 * Recuperer un producteur par son id
+	 * @return
+	 */
+	@RequestMapping(value="/producer/{idProducer}", method = RequestMethod.GET)
+	public @ResponseBody Producer getProducerById (@PathVariable int idProducer){
+		return producerService.getProducerById(idProducer);
+	}
+	
+	/**
+	 * Ajouter un producteur
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/producer/add", method = RequestMethod.POST)
 	public @ResponseBody Producer addProducer(@RequestBody ModelMap model){
 		
-		Producer producer = new Producer();
-		
-
-		int idProducer = Integer.valueOf(String.valueOf(model.get("idProducer")));
 		String description = String.valueOf(model.get("description"));
 		String name = String.valueOf(model.get("name"));
 		String city = String.valueOf(model.get("city"));
 		
-		System.out.println(idProducer+" "+description+" "+name);
-		
+		Producer producer = new Producer();
 		
 		producer.setDescription(description);
 		producer.setName(name);
@@ -55,5 +74,4 @@ public class ProducerController {
 		producerService.addProducer(producer);
 		return producer;
 	}
-	
 }
