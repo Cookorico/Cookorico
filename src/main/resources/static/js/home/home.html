@@ -1,2 +1,145 @@
-<!--  msg duration 5000 milli-secs -->
-<div flash-message="5000" ></div> 
+<link href="js/home/home.css" rel="stylesheet" type="text/css">
+
+<pageheader pagename="{{recipe.name}}"
+	subtitle="Informartions sur la recette"></pageheader>
+
+<div class="conter-wrapper">
+	<div class="container-fluid home-page">
+		<h1 class="text-center" style="font-variant: small-caps">A la Une</h1>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h2>
+								<span class="glyphicon glyphicon-cutlery"><strong>Recettes</strong>
+							</h2>
+						</div>
+
+					</div>
+
+					<div class="panel-body">
+
+						<div id="my_carousel" class="carousel slide" data-ride="carousel">
+							<!-- Bulles -->
+							<ol class="carousel-indicators">
+								<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#my_carousel" data-slide-to="1"></li>
+								<li data-target="#my_carousel" data-slide-to="2"></li>
+							</ol>
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<!-- Page 1 -->
+								<div class="item active">
+									<div class="carousel-page">
+										<img src="http://lorempixel.com/445/215/food"
+											class="img-responsive" style="margin: 0px auto;" />
+									</div>
+									<div class="carousel-caption">Page 1 de présentation</div>
+								</div>
+								<!-- Page 2 -->
+								<div class="item">
+									<div class="carousel-page">
+										<img src="http://lorempixel.com/445/215/food"
+											class="img-responsive img-rounded" style="margin: 0px auto;" />
+									</div>
+									<div class="carousel-caption">Page 2 de présentation</div>
+								</div>
+								<!-- Page 3 -->
+								<div class="item">
+									<div class="carousel-page">
+										<img src="http://lorempixel.com/445/215/food"
+											class="img-responsive img-rounded"
+											style="margin: 0px auto; max-height: 100%;" />
+									</div>
+									<div class="carousel-caption">Page 2 de présentation</div>
+								</div>
+							</div>
+							<!-- Contrôles -->
+							<a class="left carousel-control" href="#my_carousel"
+								data-slide="prev"> <span
+								class="glyphicon glyphicon-chevron-left"></span>
+							</a> <a class="right carousel-control" href="#my_carousel"
+								data-slide="next"> <span
+								class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h2>
+								<span class="glyphicon glyphicon-user"></span><strong>Producteurs</strong>
+							</h2>
+						</div>
+
+					</div>
+
+					<div class="panel-body">
+
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="http://lorempixel.com/440/215/people" alt="...">
+								<div class="caption text-center">
+									<h3>
+										<a>{producteur.name}</a>
+									</h3>
+									<p>{producteur.description}</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="http://lorempixel.com/440/215/people" alt="...">
+								<div class="caption text-center">
+									<h3>
+										<a>{producteur.name}</a>
+									</h3>
+									<p>{producteur.description}</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="http://lorempixel.com/440/215/people" alt="...">
+								<div class="caption text-center">
+									<h3>
+										<a>{producteur.name}</a>
+									</h3>
+									<p>{producteur.description}</p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</div>
+</div>
