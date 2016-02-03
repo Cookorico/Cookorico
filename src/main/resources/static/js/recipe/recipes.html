@@ -10,14 +10,14 @@
 				<div class="container dynamicTile">
 					<div class="row">
 						<div ng-controller="RecipesCtrl">
-							<div ng-repeat="recipe in recipes">
+							<div ng-repeat="recipe in recipes" >
 
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
 
 										<a href="#" class="thumbnail">
-										<img ng-if="recipe.mainPicture" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="...">
-										<img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" src="images/image-add-icon.png" >
+										<img ng-if="recipe.mainPicture" src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}" alt="..." style="max-height:220px;">
+										<img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)" class="medium" data-holder-rendered="true" src="images/default-recipe-icon.png" style="max-height:500px;" >
 										</a>
 										
 										<div class="caption">
