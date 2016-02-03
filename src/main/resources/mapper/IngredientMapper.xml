@@ -13,9 +13,18 @@
     <result property='validation' column='igd_validation'/>
     <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.pictureResultMap' />
     <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
-    
   </resultMap>
-	
+
+    <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="singleIngredientResultMap">
+	    <id property='idIngredient' column='igd_id_ingredient'/>
+	    <result property='name' column='igd_name'/>
+	    <result property='description' column='igd_description'/>
+		<result property='modifDate' column='igd_modif_date' />
+	    <result property='disabled' column='igd_disabled'/>
+	    <result property='validation' column='igd_validation'/>
+	</resultMap>
+
+
   <select id="getAllIngredients" resultMap="ingredientResultMap">
     SELECT * FROM ingredient
   </select>

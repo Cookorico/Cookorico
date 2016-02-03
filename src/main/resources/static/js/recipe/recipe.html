@@ -63,11 +63,11 @@
 								<h3><strong><i>Infos recette</i></strong></h3>
 							</div>
 
-			      			<p><span class="glyphicon glyphicon-user"></span> <strong>Cr&eacute;ateur du tag :</strong> <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a></p>
+			      			<p><span class="glyphicon glyphicon-user"></span> <strong>Cr&eacute;ateur de la recette :</strong> <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a></p>
 			      			<p><span class="glyphicon glyphicon-signal"></span> <strong>Difficult&eacute; de pr&eacute;paration :</strong> {{recipe.difficulty}} / 10</p>
 							<p><span class="glyphicon glyphicon-time"></span> <strong>Temps de pr&eacute;paration :</strong> {{recipe.preparationTime}} secondes</p>
 							<p><span class="glyphicon glyphicon-time"></span> <strong>Temps de cuisson :</strong> {{recipe.cookingTime}} secondes</p>
-				      		<p><span class="glyphicon glyphicon-calendar"></span> <strong>Date de cr&eacute;ation :</strong> {{recipe.creationDate | date:'dd-MM-yyyy &agrave; HH:mm:ss'}}</p>
+				      		<p><span class="glyphicon glyphicon-calendar"></span> <strong>Date de cr&eacute;ation :</strong> {{recipe.creationDate | date:'dd-MM-yyyy'}}</p>
 			      			<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
 			      			<blockquote cite="#">
 								<p>{{recipe.description}}</p>
@@ -84,27 +84,41 @@
 								<div class="row" style="text-align: center">
 									<h4><strong><i>Liste des tags</i></strong></h4>
 								</div>
+								<span ng-repeat="tag in recipe.tags">
+								<span class="glyphicon glyphicon-tags"> {{tag.name}} </span>
+							  	</span>
+							  	</div>
+							<!-- fin affichage des tags -->
+						</div>
+					</div>
+					
+					<!-- affichage des ingredients -->
+					<div ng-if="recipe.ingredients.length > 0">
+						<div class="col-md-6">
+							<div class="thumbnail">
+								<div class="row" style="text-align: center">
+									<h4><strong><i>Liste des ingredients</i></strong></h4>
+								</div>
 
-								<div ng-repeat="tag in recipe.tags">
+								<div ng-repeat="ingredient in recipe.ingredients">
 									<uib-accordion>
 										<uib-accordion-group is-open="status.open">
 								      		<uib-accordion-heading>
-								        		<span class="glyphicon glyphicon-tags"></span>  {{tag.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+								        		<span class="glyphicon glyphicon-apple"></span>  {{ingredient.ingredient.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+								      			<span> {{ingredient.quantity}} : {{ingredient.unitOfMeasurement}}</span>
 								      		</uib-accordion-heading>
-
-								      		<p><span class="glyphicon glyphicon-user"></span> <strong>Cr&eacute;ateur du tag :</strong> <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a></p>
-							      			<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
-							      			<blockquote cite="#">
-												<p></p>
-											</blockquote>
+								      		<p><span class="glyphicon glyphicon-apple"></span> <strong>Name :</strong> {{ingredient.ingredient.name}}</p>
+								      		<p><span class="glyphicon glyphicon-th"></span> <strong>Quantity :</strong> {{ingredient.quantity}}</p>
+								      		<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong> {{ingredient.ingredient.description}}</p>
 
 								    	</uib-accordion-group>
 								  	</uib-accordion>
 							  	</div>
 							  	</div>
-							<!-- fin affichage des tags -->
+							<!-- fin affichage des ingredients -->
 						</div>
-					</div>
+					</div>					
+					
 				</div>
 				<!-- fin session recette -->
 
@@ -133,7 +147,7 @@
             	<div ng-if="recipe.steps.length > 0">
 					<div ng-repeat="step in recipe.steps">
 						<uib-accordion>
-							<uib-accordion-group is-open="status.open">
+							<uib-accordion-group is-open="true">
 					      		<uib-accordion-heading>
 					        		<span class="glyphicon glyphicon-flag"></span>  {{step.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
 					      		</uib-accordion-heading>
@@ -149,8 +163,16 @@
 					  	</uib-accordion>
 				  	</div>
 			  	</div>
+				<!-- add step link -->
+			  	<div ng-if="iscreator">
+			  		<div class="row" style="text-align: center">
+						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })" class="btn btn-success btn-s" role="button"><span class="glyphicon glyphicon-plus"></span> Ajouter une &eacute;tape...</a>
+					</div>
+				</div>
+				<!-- end add step link -->
 					  	
 			</div>
+		</div>
 		<!-- Fin liste des �tapes -->
 		
 		<!-- Les commentaires -->
@@ -159,15 +181,33 @@
                <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span>  <strong>Les Commentaires</strong></h3>
            	</div>
 
-            <div class="panel-body">
-            {{ recipe.comments.length }}
 
+            <div class="panel-body">
             	<div ng-if="recipe.comments.length > 0">
-					<div ng-repeat="comment in recipe.comments">
+	            	<div ng-repeat="comment in recipe.comments" class="panel panel-default comment_panel">
+						<div class="panel-heading" style="text-align: center;">
+						<span style="float:left;">
+						
+							<strong>{{comment.member.username}} </strong> 
+						</span>
+						<span>
+							{{comment.title}}
+						</span>
+						<span class="text-muted" style="float:right;">
+							{{comment.creationDate | date:'dd-MM-yyyy &agrave; HH:mm'}}
+						</span>
+						</div>
+						<div class="panel-body">
+							<p>{{comment.description}}</p>
+						</div><!-- /panel-body -->
+					</div><!-- /panel panel-default -->
+	            	
+            	
+					<!-- <div ng-repeat="comment in recipe.comments">
 						<uib-accordion>
 							<uib-accordion-group is-open="status.open">
 					      		<uib-accordion-heading>
-					        		<span class="glyphicon glyphicon-flag"></span>  {{comment.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+					        		<span class="glyphicon glyphicon-flag"></span>{{comment.member.username}} : {{comment.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
 					      		</uib-accordion-heading>
 				      			<blockquote cite="#">
 									<p>{{comment.description}}</p>
@@ -175,16 +215,8 @@
 
 					    	</uib-accordion-group>
 					  	</uib-accordion>
-				  	</div>
+				  	</div>-->
 			  	</div>
-
-			  	<!-- add step link -->
-			  	<div ng-if="iscreator">
-			  		<div class="row" style="text-align: center">
-						<a ui-sref="newrecipestep({idRecipe: recipe.idRecipe })" class="btn btn-success btn-s" role="button"><span class="glyphicon glyphicon-plus"></span> Ajouter une &eacute;tape...</a>
-					</div>
-				</div>
-				<!-- end add step link -->
 
 		  	</div>
 		</div>

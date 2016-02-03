@@ -30,10 +30,26 @@
 		
 	</resultMap>
 	
+	<sql id="select_all">
+		SELECT *
+		FROM comment
+	</sql>
+
+	<sql id="join_creator">
+		LEFT JOIN member ON cmt_fk_id_member=mbr_id_member
+	</sql>
+	
 	<select id="getAllComments" resultMap="commentResultMap">
-		select * from comment;
+		<include refid="select_all"/>
 	</select>
 	
+	<select id="getAllCommentsByIdRecipe" parameterType="int" resultMap="commentResultMap">
+		<include refid="select_all"/>
+		<include refid="join_creator"/>
+		where cmt_fk_id_recipe = #{id}
+	</select>
+	
+		
 	<insert id="addComment" parameterType="java.util.Map">
   		INSERT INTO comment(cmt_fk_id_recipe, cmt_fk_id_member, cmt_title, cmt_description) VALUES(CAST(#{idRecipe} AS INTEGER), CAST(#{idMember} AS INTEGER), #{title}, #{description})
   	</insert>

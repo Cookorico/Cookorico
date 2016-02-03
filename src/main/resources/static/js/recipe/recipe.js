@@ -516,6 +516,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
  */
 recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
 
+	//get main infos
     $http({
         method: 'GET', 
         url : '/recipe/'+$stateParams.idRecipe
@@ -530,7 +531,19 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
     }, function errorCallback(response) {
         console.error(data, status, header, config);
     });
+    
+    //get comments
+    $http({
+        method: 'GET', 
+        url : '/comments/recipe/'+$stateParams.idRecipe
+    }).then(function successCallback(response) {
+    	$scope.recipe.comments = response.data;
+    	console.log($scope.recipe.comments);
+    }, function errorCallback(response) {
+        console.error(data, status, header, config);
+    });
 
+    
     $http({
         method: 'GET', 
         url : '/recipe/'+$stateParams.idRecipe+'/currentUserIsCreator'

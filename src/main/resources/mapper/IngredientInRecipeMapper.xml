@@ -3,17 +3,13 @@
   'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 
 <mapper namespace='fil.iagl.cookorico.dao.IngredientInRecipeDao'>
-    <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientInRecipeResultMap">
-	    <id property='idIngredient' column='iir_id_ingredient_in_recipe'/>
-	    <result property='name' column='iir_fk_id_ingredient'/>
-	    <!-- TO DO igd_main_picture -->
-		<result property='modifDate' column='igd_modif_date' />
-	    <result property='disabled' column='igd_disabled'/>
-	    <result property='validation' column='igd_validation'/>
-	    <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.pictureResultMap' />
-	    <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+    <resultMap type="fil.iagl.cookorico.entity.IngredientInRecipe" id="ingredientInRecipeResultMap">
+	    <id property='idIngredientInRecipe' column='iir_id_ingredient_in_recipe'/>
+	    <result property='quantity' column='iir_quantity' />
+	    <result property='unitOfMeasurement' column='iir_measurement' />    
+		<association property='ingredient' resultMap="fil.iagl.cookorico.dao.IngredientDao.singleIngredientResultMap" />
 	</resultMap>
-	
+
 	<sql id="select_all">
 		SELECT *
 		FROM ingredient_in_recipe
@@ -22,12 +18,12 @@
 	<sql id="join_ingredient">
 		LEFT JOIN ingredient ON iir_fk_id_ingredient=igd_id_ingredient
 	</sql>
-	
+
 	<sql id="join_recipe">
 		LEFT JOIN recipe ON iir_fk_id_recipe=rcp_id_recipe
 	</sql>
-	
-	
+
+
    <select id="getIngredientsInRecipeByIdRecipe" resultMap="ingredientInRecipeResultMap" parameterType="int">
 		<include refid="select_all"/>
 		<include refid="join_ingredient"/>
