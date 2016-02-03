@@ -11,6 +11,8 @@ import fil.iagl.cookorico.entity.Producer;
 public interface CommentService {
 
 	List<Comment> getAllComments();
+
+	List<Comment> getAllCommentsByIdRecipe(int id);
 	
-	void addComment(@Param("Comment") Comment comment);
+	void addComment(Comment comment);
 }

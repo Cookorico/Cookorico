@@ -23,8 +23,12 @@ public class CommentServiceImpl implements CommentService{
 	}
 
 	@Override
-	public void addComment(Comment comment) {
+	public List<Comment> getAllCommentsByIdRecipe(int id) {
+		return commentDao.getAllCommentsByIdRecipe(id);
+	}
 
+	@Override
+	public void addComment(Comment comment) {
 		commentDao.addComment(comment);
 		
 	}

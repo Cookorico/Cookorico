@@ -32,6 +32,7 @@ public class CommentController {
 		return commentService.getAllComments();
 	}
 	
+
 	
 	/**
 	 * A refaire
@@ -57,10 +58,17 @@ public class CommentController {
 		comment.setTitle(title);
 		comment.setDescription(description);
 		comment.setCreationDate(creationDate);
-		
-		
 		commentService.addComment(comment);
 		
 	}
+	
+	
+	@RequestMapping(value="/comments/recipe/{id}", method = RequestMethod.GET)
+	public @ResponseBody List<Comment> getAllCommentsByIdRecipe(@PathVariable String id) {
+		return commentService.getAllCommentsByIdRecipe(Integer.parseInt(id));
+	}
+
+		
+
 	
 }

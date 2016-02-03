@@ -15,3 +15,13 @@ height: auto;
    max-width: 100%;
    height: auto;
 }
+
+.comment_panel{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+
+.comment_panel .panel-heading{
+	padding: 5px !important;
+}

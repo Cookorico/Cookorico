@@ -13,6 +13,8 @@ public interface CommentDao {
 
 	List<Comment> getAllComments();
 	
+	List<Comment> getAllCommentsByIdRecipe(int id);
+	
 	List<Comment> getCommentsRecipeByMember(int idMember, int idRecipe);
 	
 	void addComment(@Param("comment") Comment comment);
