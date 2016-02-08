@@ -67,8 +67,8 @@ public class CookoricoApplication {
 
         ds.setUsername("cookorico");
 		ds.setPassword("cookorico");
-		//ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
-		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/draftdb");
+		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
+		// ds.setUrl("jdbc:postgresql://172.28.1.104:5432/draftdb");
 
 
         // url to dev at home
