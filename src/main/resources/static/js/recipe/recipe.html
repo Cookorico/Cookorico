@@ -109,6 +109,15 @@
 								      		<p><span class="glyphicon glyphicon-apple"></span> <strong>Name :</strong> {{ingredient.ingredient.name}}</p>
 								      		<p><span class="glyphicon glyphicon-th"></span> <strong>Quantity :</strong> {{ingredient.quantity}}</p>
 								      		<p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong> {{ingredient.ingredient.description}}</p>
+											<p><span class="glyphicon glyphicon-user"></span> <strong>Producteurs :</strong>
+											
+            									<span ng-if="ingredient.ingredient.producers.length == 0">
+            										Aucun producteur de {{ingredient.ingredient.name}} !
+            									</span>
+												<span ng-repeat="producer in ingredient.ingredient.producers">
+													<a ui-sref="producer({ idProducer: producer.idProducer })">{{producer.name}}</a> ({{producer.city}}), 
+												</span>
+											</p>
 
 								    	</uib-accordion-group>
 								  	</uib-accordion>

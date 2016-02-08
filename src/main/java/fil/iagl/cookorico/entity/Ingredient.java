@@ -25,6 +25,7 @@ public class Ingredient {
 	private Picture mainPicture;
 	private List<Tag> tags; // TO CHECK IF NOT NEW OBJECT, CREATION DATE IS MISSING.
 	private List<Picture> photos;
+	private List<Producer> producers;
 	
 	public Ingredient() {
 	}
