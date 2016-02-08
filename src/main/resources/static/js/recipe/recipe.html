@@ -5,7 +5,6 @@
 <div class="container" ng-controller="RecipeCtrl">
 
 	<div class="conter-wrapper">
-
 		<!-- info recette -->
 	    <div class="panel panel-primary">
 
@@ -23,7 +22,7 @@
 					    <!-- show default image -->
 					    <div ng-switch-when="null">
 					        <a href="#" class="thumbnail">
-					        	<img class="medium" data-holder-rendered="true" src="images/image-add-icon.png" style="height: 260px; width: 1066px; display: block;">
+					        	<img class="medium" data-holder-rendered="true" src="images/default-recipe-banner.png" style="height: 260px; width: 1066px; display: block;">
 							</a>
 					    </div>
 					    <!-- show default image -->
@@ -201,7 +200,8 @@
 							<p>{{comment.description}}</p>
 						</div><!-- /panel-body -->
 					</div><!-- /panel panel-default -->
-	            	
+					<!-- Ajouter un commentaire -->
+	            	<span>Ajouter un commentaire <input type="text" name="comment"></span>
             	
 					<!-- <div ng-repeat="comment in recipe.comments">
 						<uib-accordion>
@@ -215,6 +215,7 @@
 
 					    	</uib-accordion-group>
 					  	</uib-accordion>
+
 				  	</div>-->
 			  	</div>
 

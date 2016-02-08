@@ -26,11 +26,11 @@ public class CommentServiceImpl implements CommentService{
 	public List<Comment> getAllCommentsByIdRecipe(int id) {
 		return commentDao.getAllCommentsByIdRecipe(id);
 	}
-	
+
 	@Override
-	public void addComment(Map<String, String> parms) {
-		System.out.println("add comment");
-		commentDao.addComment(parms);
+	public void addComment(Comment comment) {
+		commentDao.addComment(comment);
+		
 	}
 
 }
