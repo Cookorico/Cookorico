@@ -61,6 +61,13 @@
 		LEFT JOIN ingredient ON iir_fk_id_ingredient=igd_id_ingredient
 	</sql>
 	
+	<sql id="join_ingredients_with_producers">
+		LEFT JOIN ingredient_in_recipe ON iir_fk_id_recipe=rcp_id_recipe
+		LEFT JOIN ingredient ON iir_fk_id_ingredient=igd_id_ingredient
+		LEFT JOIN ingredient_of_producer ON igd_id_ingredient=iop_fk_id_ingredient
+		LEFT JOIN producer ON iop_fk_id_producer=prd_id_producer
+	</sql>
+	
 	<select id="getAllRecipes" resultMap="recipeResultMap">
 		<include refid="select_all"/>
 		<include refid="join_creator"/>
@@ -92,7 +99,7 @@
 		<include refid="join_main_picture"/>
 		<include refid="join_tags"/>
 		<include refid="join_recipe_steps"/>
-		<include refid="join_ingredients"/>
+		<include refid="join_ingredients_with_producers"/>
 		WHERE rcp_id_recipe = #{id}
 	</select>
 

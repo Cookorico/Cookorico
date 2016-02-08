@@ -3,6 +3,7 @@
   'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 
 <mapper namespace='fil.iagl.cookorico.dao.IngredientDao'>
+	<!-- complete mapping with all informations -->
     <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientResultMap">
     <id property='idIngredient' column='igd_id_ingredient'/>
     <result property='name' column='igd_name'/>
@@ -11,10 +12,13 @@
 	<result property='modifDate' column='igd_modif_date' />
     <result property='disabled' column='igd_disabled'/>
     <result property='validation' column='igd_validation'/>
-    <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.pictureResultMap' />
+    <association property='mainPicture' resultMap='fil.iagl.cookorico.dao.PictureDao.singlePictureResultMap' />
     <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
+  	<collection property='producers' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Producer" resultMap="fil.iagl.cookorico.dao.ProducerDao.SingleProducerResultMap" />
   </resultMap>
 
+
+	<!-- Single ingredient (only its informations) -->
     <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="singleIngredientResultMap">
 	    <id property='idIngredient' column='igd_id_ingredient'/>
 	    <result property='name' column='igd_name'/>
@@ -23,7 +27,18 @@
 	    <result property='disabled' column='igd_disabled'/>
 	    <result property='validation' column='igd_validation'/>
 	</resultMap>
-
+	
+	<!-- only producers (useful for the recipe page) -->
+    <resultMap type="fil.iagl.cookorico.entity.Ingredient" id="ingredientWithProducerResultMap">
+	    <id property='idIngredient' column='igd_id_ingredient'/>
+	    <result property='name' column='igd_name'/>
+	    <result property='description' column='igd_description'/>
+	    <!-- TO DO igd_main_picture -->
+		<result property='modifDate' column='igd_modif_date' />
+	    <result property='disabled' column='igd_disabled'/>
+	    <result property='validation' column='igd_validation'/>
+	    <collection property='producers' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Producer" resultMap="fil.iagl.cookorico.dao.ProducerDao.SingleProducerResultMap" />
+	</resultMap>
 
   <select id="getAllIngredients" resultMap="ingredientResultMap">
     SELECT * FROM ingredient

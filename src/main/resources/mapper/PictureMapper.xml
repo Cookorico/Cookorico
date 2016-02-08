@@ -13,6 +13,16 @@
 		<association property="member" column='pic_fk_id_member' select='fil.iagl.cookorico.dao.MemberDao.getMemberById' />
 	</resultMap>
 	
+	<resultMap type="fil.iagl.cookorico.entity.Picture" id="singlePictureResultMap">
+		<id property="idPicture" column="pic_id_picture" />
+		<result property="filePath" column="pic_file_path" />
+		<result property="fileName" column="pic_file_name" />
+		<result property="title" column="pic_title" />
+		<result property="description" column="pic_description" />
+		<result property="creationDate" column="pic_creation_date" />
+		<result property="disabled" column="pic_disabled" />
+	</resultMap>
+	
 	<insert id="savePicture" parameterType="fil.iagl.cookorico.entity.Picture" useGeneratedKeys="true" keyProperty="picture.idPicture" keyColumn="pic_id_picture">
 		INSERT INTO picture (pic_fk_id_member, pic_file_path, pic_file_name, pic_title, pic_description, pic_creation_date, pic_disabled)
 		VALUES (#{picture.member.idMember}, #{picture.filePath}, #{picture.fileName}, #{picture.title}, #{picture.description}, #{picture.creationDate}, #{picture.disabled})

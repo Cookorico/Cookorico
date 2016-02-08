@@ -14,6 +14,18 @@
     <!-- <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" select="fil.iagl.cookorico.dao.Tagdao.selectTagFromIngredient" resultMap="fil.iagl.cookorico.dao.Tagdao.tagResultMap" />
     -->
   </resultMap>
+  
+  
+  <resultMap type="fil.iagl.cookorico.entity.Tag" id="SingleTagResultMap">
+    <id property='idTag' column='tag_id_tag'/>
+    <result property='name' column='tag_name'/>
+    <result property='tagType' column='tag_type'/>
+    <result property='creationDate' column='tag_creation_date' />
+    <!--  to do EVENTUEL, (à voir) (je sais pas) (peut etre) (possiblement) collection recipe, ingredient -->
+    <!-- <collection property='tags' column="id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" select="fil.iagl.cookorico.dao.Tagdao.selectTagFromIngredient" resultMap="fil.iagl.cookorico.dao.Tagdao.tagResultMap" />
+    -->
+  </resultMap>
+	
 	
 	
 <!-- 

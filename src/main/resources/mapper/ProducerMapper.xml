@@ -17,6 +17,20 @@
 		<collection property='ingredients' column="igd_id_ingredient" javaType="List" ofType="fil.iagl.cookorico.entity.Ingredient" resultMap="fil.iagl.cookorico.dao.IngredientDao.ingredientResultMap" />
 	</resultMap>
 	
+	
+	<resultMap type="fil.iagl.cookorico.entity.Producer" id="SingleProducerResultMap">
+		<id property='idProducer' column='prd_id_producer' />
+		<result property='name' column='prd_name' />
+		<result property='city' column='prd_city' />
+		<result property='description' column='prd_description' />
+		<result property='creationDate' column='cmt_creation_date' />
+		<result property='modifDate' column='cmt_modif_date' />
+		<result property='validation' column='cmt_validation' />
+		<result property='validator' column='cmt_validator' />
+		<result property='disabled' column='cmt_disabled' />
+	</resultMap>
+	
+	
 	<sql id="select_all">
 		SELECT *
 		FROM producer

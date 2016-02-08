@@ -7,7 +7,7 @@
 	    <id property='idIngredientInRecipe' column='iir_id_ingredient_in_recipe'/>
 	    <result property='quantity' column='iir_quantity' />
 	    <result property='unitOfMeasurement' column='iir_measurement' />    
-		<association property='ingredient' resultMap="fil.iagl.cookorico.dao.IngredientDao.singleIngredientResultMap" />
+		<association property='ingredient' resultMap="fil.iagl.cookorico.dao.IngredientDao.ingredientWithProducerResultMap" />
 	</resultMap>
 
 	<sql id="select_all">
