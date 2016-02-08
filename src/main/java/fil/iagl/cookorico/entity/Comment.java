@@ -15,7 +15,7 @@ public class Comment {
 	private int idComment;
 	private String title;
 	private String description;
-	private Member member;
+	private Member member; //why not creator ?!
 	private Recipe recipe;
 	private int validator;
 	private boolean validation;
