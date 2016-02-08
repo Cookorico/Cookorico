@@ -29,6 +29,12 @@
             		<span class="menu-text">Voir les recettes</span>
            		</a>
             </li>
+            <li ng-class="{active: $state.includes('producers')}">
+            	<a ui-sref="producers" ng-click="showSubNav(0)">
+            		<i class="fa fa-file-o"></i>
+            		<span class="menu-text">Voir les producteurs</span>
+           		</a>
+            </li>
             <li ng-class="{active: $state.includes('progression')}">
             	<a ui-sref="progression" ng-click="showSubNav(0)">
             		<i class="fa fa-file-o"></i>

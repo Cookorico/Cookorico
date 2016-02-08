@@ -285,6 +285,12 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/newrecipestep.html',
                 controller: 'addRecipeStepCtrl'
+            })
+            .state('producers', {
+                url: '/producers',
+                parent: 'dashboard',
+                templateUrl: 'js/producer/producers.html',
+                controller: 'ProducerCtrl'
             });
     })
     .run(function (auth, $rootScope) {
