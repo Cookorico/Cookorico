@@ -37,4 +37,11 @@ public interface RecipeService {
 	 * @return La recette trouvée
 	 */
 	Recipe getRecipeById(int id);
+	
+	/**
+	 * Recupère nb recettes au hasard
+	 * @param nb le nombre de recette voulue
+	 * @return la liste des recettes séléctionnées
+	 */
+	List<Recipe> getRandomRecipes(int nb);
 }

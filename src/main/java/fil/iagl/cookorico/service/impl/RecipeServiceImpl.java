@@ -81,4 +81,9 @@ public class RecipeServiceImpl implements RecipeService{
     }
 
 
+	@Override
+	public List<Recipe> getRandomRecipes(int nb) {
+		return this.recipeDao.getRandomRecipes(nb);
+	}
+
 }
