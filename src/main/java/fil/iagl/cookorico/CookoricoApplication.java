@@ -64,18 +64,17 @@ public class CookoricoApplication {
         BasicDataSource ds = new BasicDataSource();
         
 		// en production
-/*
+
         ds.setUsername("cookorico");
 		ds.setPassword("cookorico");
-		//ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
-		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/draftdb");*/
+		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
 
 
-        // url to dev at home
+       /* // url to dev at home
 		ds.setUsername("sais");
 		ds.setPassword("sais");
         ds.setUrl("jdbc:postgresql://localhost:5432/cookoricodb");
-
+*/
 
         ds.setDriverClassName("org.postgresql.Driver");
         ds.setMaxWait(25);
