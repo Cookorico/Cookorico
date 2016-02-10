@@ -1,6 +1,9 @@
 package fil.iagl.cookorico.service;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import fil.iagl.cookorico.entity.Recipe;
 
 public interface RecipeService {
@@ -16,6 +19,9 @@ public interface RecipeService {
 	 * @return liste des recettes trouvées
 	 */
 	List<Recipe> getAllRecipes();
+	
+	
+	List<Recipe> getAllRecipesByUserId(@Param("id") int id);
 	
 	/**
 	 * Recuperation des recettes

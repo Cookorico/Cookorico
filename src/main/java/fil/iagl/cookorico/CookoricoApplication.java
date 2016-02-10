@@ -62,9 +62,8 @@ public class CookoricoApplication {
     public DataSource dataSource() {
 
         BasicDataSource ds = new BasicDataSource();
-        
-		// en production
 
+        // en production
         ds.setUsername("cookorico");
 		ds.setPassword("cookorico");
 		ds.setUrl("jdbc:postgresql://172.28.1.104:5432/cookoricodb");
