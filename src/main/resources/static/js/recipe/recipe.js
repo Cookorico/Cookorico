@@ -555,7 +555,6 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
 
     
     
-    
     //Valider une recette
     $scope.doneRecipe = function(){
         

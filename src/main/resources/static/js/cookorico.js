@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'producer', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -285,6 +285,18 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
                 parent: 'dashboard',
                 templateUrl: 'js/recipe/newrecipestep.html',
                 controller: 'addRecipeStepCtrl'
+            })
+            .state('producers', {
+                url: '/producers',
+                parent: 'dashboard',
+                templateUrl: 'js/producer/producers.html',
+                controller: 'ProducersCtrl'
+            })
+            .state('producer', {
+                url: '/producer/:idProducer',
+                parent: 'dashboard',
+                templateUrl: 'js/producer/producer.html',
+                controller: 'ProducerCtrl'
             });
     })
     .run(function (auth, $rootScope) {
