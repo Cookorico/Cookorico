@@ -101,7 +101,12 @@
 		SELECT * FROM recipe WHERE rcp_name = #{name}
 	</select>
 
-
+	<select id="getRandomRecipes" parameterType="int" resultMap="recipeResultMap">
+		SELECT * FROM recipe
+		ORDER BY RANDOM()
+		LIMIT #{nb}
+	</select>
+	
 	<insert id="addRecipe" parameterType="fil.iagl.cookorico.entity.Recipe" useGeneratedKeys="true" keyProperty="recipe.idRecipe" keyColumn="rcp_id_recipe">
 		INSERT INTO recipe(rcp_name,
 		rcp_description, rcp_preparation_time,

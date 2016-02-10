@@ -72,4 +72,10 @@ public class RecipeServiceImpl implements RecipeService{
     public Recipe getRecipeById(int id) {
         return this.recipeDao.getRecipeById(id);
     }
+
+
+	@Override
+	public List<Recipe> getRandomRecipes(int nb) {
+		return this.recipeDao.getRandomRecipes(nb);
+	}
 }

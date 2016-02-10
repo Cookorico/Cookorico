@@ -66,7 +66,7 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
             .state('home', {
                 url: '/home',
                 parent: 'dashboard',
-                templateUrl: 'js/home/home.html?v=' + window.app_version,
+                templateUrl: 'js/home/home.html',
             })
             .state('reports', {
                 url: '/reports',

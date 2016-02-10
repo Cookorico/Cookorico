@@ -62,6 +62,17 @@ AdministratorService administratorService;
     }
     
     /**
+	 * Recupère nb recettes au hasard
+	 * @param nb le nombre de recette voulue
+	 * @return la liste des recettes séléctionnées
+	 */
+    @RequestMapping(value="/recipeUne/{nb}", method = RequestMethod.GET)
+    public @ResponseBody List<Recipe> getRandomRecipe(@PathVariable String nb) {
+        return recipeService.getRandomRecipes(Integer.parseInt(nb));
+    
+    }
+    
+    /**
      * Ajout en vitesse le 02/12, nom à check, utilisé dans recipectrl.
      * @param id Id de la recette
      * @return True si le user courrent est le créateur de la recette
