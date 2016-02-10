@@ -45,7 +45,11 @@
   	</select>
   	
   	<select id="getProducerById" resultMap="producerResultMap" parameterType="int">
-  		SELECT * FROM producer WHERE prd_id_producer = #{idProducteur};
+  		SELECT * FROM producer
+  		LEFT JOIN ingredient_of_producer ON iop_fk_id_producer=prd_id_producer 
+  		LEFT JOIN ingredient ON iop_fk_id_ingredient=igd_id_ingredient
+  		 WHERE prd_id_producer = #{idProducteur}
+  		;
   	</select>
   	
   	<insert id="addProducer" parameterType="fil.iagl.cookorico.entity.Producer">

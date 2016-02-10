@@ -4,7 +4,7 @@
 
 window.app_version = 2;
 
-var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'message',
+var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile', 'recipe', 'producer', 'message',
         'ui.router',
         'ngAnimate',
         'ui.bootstrap',
@@ -290,6 +290,12 @@ var cookorico = angular.module('cookorico', ['ngRoute', 'auth', 'home', 'profile
                 url: '/producers',
                 parent: 'dashboard',
                 templateUrl: 'js/producer/producers.html',
+                controller: 'ProducersCtrl'
+            })
+            .state('producer', {
+                url: '/producer/:idProducer',
+                parent: 'dashboard',
+                templateUrl: 'js/producer/producer.html',
                 controller: 'ProducerCtrl'
             });
     })

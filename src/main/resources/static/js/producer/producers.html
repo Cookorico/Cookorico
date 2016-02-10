@@ -1,1 +1,36 @@
-producer html
+<pageheader pagename="Liste des producteurs" subtitle="Toutes les producteurs"></pageheader>
+<div class="container">
+	<div class="conter-wrapper">
+		<div class="row">
+
+			<div flash-message="3000"></div>
+
+			<div class="col-md-12">
+				<div class="container dynamicTile">
+					<div class="row">
+						<div ng-controller="ProducersCtrl">
+							<div ng-repeat="producer in producers" >
+
+								<div class="col-sm-6 col-md-4">
+									<div class="thumbnail">
+										<div class="caption">
+											<h3>{{producer.name}}</h3>
+											<p>{{producer.city}}</p>
+											<blockquote cite="#">
+												<p>{{producer.description.substring(0,35)}}...</p>
+											</blockquote>
+
+
+											<a ui-sref="producer({ idProducer: producer.idProducer })" class="btn btn-primary" role="button">Voir fiche producteur</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
