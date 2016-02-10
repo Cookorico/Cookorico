@@ -14,6 +14,9 @@ public interface RecipeDao {
 	 */
 	List<Recipe> getAllRecipes();
 	
+	
+	List<Recipe> getAllRecipesByUserId(@Param("id") int id);
+	
 	/**
 	 * Recuperation des recettes avec tous les pictures et les tags
 	 * @return liste des recettes trouvées

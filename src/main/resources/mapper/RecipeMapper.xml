@@ -59,6 +59,13 @@
 		<include refid="join_creator"/>
 	</select>
 	
+	<select id="getAllRecipesByUserId"  parameterType="int" resultMap="recipeResultMap">
+		<include refid="select_all"/>
+		<include refid="join_creator"/>
+		WHERE mbr_id_member = #{id}
+	</select>
+	
+	
 	<select id="getFullRecipes" resultMap="recipeResultMap">
 		<include refid="select_all"/>
 		<include refid="join_creator"/>

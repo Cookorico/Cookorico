@@ -540,9 +540,7 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
         console.error(data, status, header, config);
     });
 
-    
-    
-    
+   
     //Valider une recette
     $scope.doneRecipe = function(){
         

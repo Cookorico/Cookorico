@@ -17,13 +17,13 @@
 
 			<div class="panel-body">
     			<!-- level 1 -->
-    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 1 : </strong> <i>Amateur</i></p>
+    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 1 : </strong> <i>Nouveau cuisinier</i></p>
 				<uib-progressbar animate="false" value="dynamic" type="success">
    					<strong>100 /100 | Objectif atteint !</strong>
   				</uib-progressbar>
     			
     			<!-- level 2 -->
-    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 2 : </strong> <i>Interm&eacute;diaire</i></p>
+    			<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 2 : </strong> <i>Casseur d'oeuf</i></p>
 				<div class="controls">
 					<uib-progressbar class="progress-striped active" max="100" value="60" type="info">
 	   					<strong>60 / 100 | En cours...</strong>
@@ -31,9 +31,21 @@
 				</div>
 				
 				<!-- level 3 -->
-				<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 3 : </strong> <i>Grand chef<i></p>
+				<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 3 : </strong> <i>Cuisinier toqu&eacute;<i></p>
 				<uib-progressbar class="progress-striped" max="100" value="0" type="danger">
-   					<strong>0 / 100 | Non initié.</strong>
+   					<strong>100 / 100 | Non initié.</strong>
+  				</uib-progressbar>
+  				
+  				<!-- level 4 -->
+				<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 4 : </strong> <i>Commis de cuisine<i></p>
+				<uib-progressbar class="progress-striped" max="100" value="0" type="danger">
+   					<strong>100 / 100 | Non initié.</strong>
+  				</uib-progressbar>
+  				
+  				<!-- level 5 -->
+				<p><span class="glyphicon glyphicon-flag"></span> <strong>Niveau 5 : </strong> <i>Chef &eacute;toil&eacute;<i></p>
+				<uib-progressbar class="progress-striped" max="100" value="0" type="danger">
+   					<strong>10 / 100 | Non initié.</strong>
   				</uib-progressbar>
 			</div>
 			
@@ -52,43 +64,44 @@
 
 		</div>
 		
-		<div class="panel panel-primary">
+		<!--div class="panel panel-primary">
 
 			<div class="panel-body">
-    			<style type="text/css">
-				  form.tab-form-demo .tab-pane {
-				    margin: 20px 20px;
-				  }
-				</style>
-				
+			
 				<div ng-controller="TabsDemoCtrl">
 			  		<p>S&eacute;lectionner votre cat&eacute;gorie d'informations d&eacute;sir&eacute;e !</p>
 				  	<p>
 					    <button type="button" class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Recettes réalisées</button>
 				    	<button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Recettes validées</button>
-				    	<button type="button" class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Statistiques</button>
+				    	<button type="button" class="btn btn-default btn-sm" ng-click="tabs[2].active = true">Statistiques</button>
 				  	</p>
 				  	
 				  	<hr/>
 				
 				  	<uib-tabset>
-				    	<uib-tab heading="Mes réalisées">
-				    		En cours d'édition...
-			    		</uib-tab>
-				    	
-				    	<uib-tab ng-repeat="tab in tabs" heading="Mes validées" active="tab.active" disable="tab.disabled">
-				      		En cours d'édition...
-				    	</uib-tab>
-				    	
-				    	<uib-tab select="alertMe()">
+				  		<uib-tab>
 				      		<uib-tab-heading>
-				        		<i class="glyphicon glyphicon-bell"></i> Statistiques
+				        		<i class="glyphicon glyphicon-plus"></i> Vos recettes r&eacute;alis&eacute;es
+				      		</uib-tab-heading>
+			      			En cours d'édition...
+				    	</uib-tab>
+				  		
+				  		<uib-tab>
+				      		<uib-tab-heading>
+				        		<i class="glyphicon glyphicon-ok"></i> Recettes valid&eacute;es
+				      		</uib-tab-heading>
+			      			En cours d'édition...
+				    	</uib-tab>
+				  	
+				    	<uib-tab>
+				      		<uib-tab-heading>
+				        		<i class="glyphicon glyphicon-stats"></i> Statistiques g&eacute;n&eacute;rales
 				      		</uib-tab-heading>
 			      			En cours d'édition...
 				    	</uib-tab>
 				  	</uib-tabset>
 				</div>
 			</div>
-		</div>
+		</div-->
 	</div>
 </div>

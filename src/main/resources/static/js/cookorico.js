@@ -257,8 +257,7 @@ var cookorico = angular.module('cookorico', [
         .state('progression', {
             url: '/progression',
             parent: 'dashboard',
-            templateUrl: 'js/progression/progression.html',
-            controller: 'progressionCtrl'
+            templateUrl: 'js/progression/progression.html'
         })
         .state('taste', {
         	url: '/taste',

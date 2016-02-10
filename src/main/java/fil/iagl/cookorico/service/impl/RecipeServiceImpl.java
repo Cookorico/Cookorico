@@ -39,6 +39,13 @@ public class RecipeServiceImpl implements RecipeService{
         return this.recipeDao.getAllRecipes();
     }
 
+    
+	@Override
+	public List<Recipe> getAllRecipesByUserId(int id) {
+		return this.recipeDao.getAllRecipesByUserId(id);
+	}
+    
+    
     /**
 	 * Recuperation des recettes
 	 * @param mainpic Si à true alors on recupère aussi les photos de la recette
@@ -72,4 +79,6 @@ public class RecipeServiceImpl implements RecipeService{
     public Recipe getRecipeById(int id) {
         return this.recipeDao.getRecipeById(id);
     }
+
+
 }
