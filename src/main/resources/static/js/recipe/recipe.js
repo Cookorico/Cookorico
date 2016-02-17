@@ -1,27 +1,27 @@
 /**
  * Controller to upload images by modal
  */
-angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', /*$modalInstance, */ function ($scope, $rootScope, Upload, $modal, $http /*, $modalInstance*/) {
+angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'Upload', '$uibModal', '$http', /*$modalInstance, */ function ($scope, $rootScope, Upload, $modal, $http /*, $modalInstance*/) {
 
     // initialize variables
     if (typeof $rootScope.allItems == 'undefined') {
-        $rootScope.allItems = new Array();
+        $rootScope.allItems = [];
     }
 
     if (typeof $rootScope.notUploadedItems == 'undefined') {
-        $rootScope.notUploadedItems = new Array();
+        $rootScope.notUploadedItems = [];
     }
 
     if (typeof $rootScope.uploadedItems == 'undefined') {
-        $rootScope.uploadedItems = new Array();
+        $rootScope.uploadedItems = [];
     }
 
     if (typeof $rootScope.picturesIdItems == 'undefined') {
-        $rootScope.picturesIdItems = new Array();
+        $rootScope.picturesIdItems = [];
     }
 
     if (typeof $rootScope.pictures == 'undefined') {
-        $rootScope.pictures = new Array();
+        $rootScope.pictures = [];
     }
 
     /*
@@ -42,47 +42,24 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
             }
         }
 
-        // debug
-        console.log('***function : uploadFileFn***')
-        console.log('$rootScope.allItems = ');
-        console.log($rootScope.allItems);
-        console.log('$rootScope.notUploadedItems = ');
-        console.log($rootScope.notUploadedItems);
-        console.log('$rootScope.uploadedItems = ');
-        console.log($rootScope.uploadedItems);
-        console.log('$rootScope.picturesIdItems = ');
-        console.log($rootScope.picturesIdItems);
-        console.log('$rootScope.pictures = ');
-        console.log($rootScope.pictures);
     };
 
     // function to upload a file to server
     $scope.saveUploadFileFn = function (multipartFile) {
 
-        $scope.progress = 0
+        $scope.progress = 0;
 
         Upload.upload({
             url: '/picture',
             data: {file: multipartFile}
-        }).success(function (data, status, headers, config) {
+        }).success(function (data) {
 
             $rootScope.uploadedItems = $rootScope.uploadedItems.concat([multipartFile]);
             $rootScope.picturesIdItems[data.idPicture] = multipartFile;
             $rootScope.pictures[data.idPicture] = data;
             $rootScope.notUploadedItems.splice($rootScope.notUploadedItems.indexOf(multipartFile), 1);
 
-            // debug
-            console.log('***function : uploadFileFn***');
-            console.log('$rootScope.allItems = ');
-            console.log($rootScope.allItems);
-            console.log('$rootScope.notUploadedItems = ');
-            console.log($rootScope.notUploadedItems);
-            console.log('$rootScope.uploadedItems = ');
-            console.log($rootScope.uploadedItems);
-            console.log('$rootScope.picturesIdItems = ');
-            console.log($rootScope.picturesIdItems);
-            console.log('$rootScope.pictures = ');
-            console.log($rootScope.pictures);
+
         }).progress(function (evt) {
             $scope.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
         });
@@ -91,10 +68,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
     // function to show a picture
     $scope.displayFn = function (multipartFile) {
 
-        // debug
-        console.log("***function : displayFn***");
-        console.log('multipartFile = ');
-        console.log(multipartFile);
 
         var modalInstance = $modal.open({
 
@@ -152,18 +125,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
                     $rootScope.picturesIdItems.splice(pictureIndex, 1);
                 }
 
-                // debug
-                console.log('***function : removeSavedFileFn***');
-                console.log('$rootScope.allItems = ');
-                console.log($rootScope.allItems);
-                console.log('$rootScope.notUploadedItems = ');
-                console.log($rootScope.notUploadedItems);
-                console.log('$rootScope.uploadedItems = ');
-                console.log($rootScope.uploadedItems);
-                console.log('$rootScope.picturesIdItems = ');
-                console.log($rootScope.picturesIdItems);
-                console.log('$rootScope.pictures = ');
-                console.log($rootScope.pictures);
             });
         } else {
             var index = $rootScope.allItems.indexOf(multipartFile);
@@ -180,18 +141,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
                 $rootScope.notUploadedItems.splice(index, 1);
             }
 
-            // debug
-            console.log('***function : removeSavedFileFn***');
-            console.log('$rootScope.allItems = ');
-            console.log($rootScope.allItems);
-            console.log('$rootScope.notUploadedItems = ');
-            console.log($rootScope.notUploadedItems);
-            console.log('$rootScope.uploadedItems = ');
-            console.log($rootScope.uploadedItems);
-            console.log('$rootScope.picturesIdItems = ');
-            console.log($rootScope.picturesIdItems);
-            console.log('$rootScope.pictures = ');
-            console.log($rootScope.pictures);
         }
     };
 
@@ -213,18 +162,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
                     $rootScope.picturesIdItems = [];
                     $rootScope.pictures = [];
 
-                    // debug
-                    console.log('***function : removeAllItemsFn***');
-                    console.log('$rootScope.allItems = ');
-                    console.log($rootScope.allItems);
-                    console.log('$rootScope.notUploadedItems = ');
-                    console.log($rootScope.notUploadedItems);
-                    console.log('$rootScope.uploadedItems = ');
-                    console.log($rootScope.uploadedItems);
-                    console.log('$rootScope.picturesIdItems = ');
-                    console.log($rootScope.picturesIdItems);
-                    console.log('$rootScope.pictures = ');
-                    console.log($rootScope.pictures);
                 });
             });
         } else {
@@ -233,18 +170,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
             $rootScope.uploadedItems = [];
             $rootScope.picturesIdItems = [];
 
-            // debug
-            console.log('***function : removeAllItemsFn***');
-            console.log('$rootScope.allItems = ');
-            console.log($rootScope.allItems);
-            console.log('$rootScope.notUploadedItems = ');
-            console.log($rootScope.notUploadedItems);
-            console.log('$rootScope.uploadedItems = ');
-            console.log($rootScope.uploadedItems);
-            console.log('$rootScope.picturesIdItems = ');
-            console.log($rootScope.picturesIdItems);
-            console.log('$rootScope.pictures = ');
-            console.log($rootScope.pictures);
         }
     };
 
@@ -267,18 +192,7 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
                     $rootScope.pictures[data.idPicture] = data;
                     $rootScope.notUploadedItems.splice($rootScope.notUploadedItems.indexOf(multipartFile), 1);
 
-                    // debug
-                    console.log('***function : saveAllUploadedItemsFn***');
-                    console.log('$rootScope.allItems = ');
-                    console.log($rootScope.allItems);
-                    console.log('$rootScope.notUploadedItems = ');
-                    console.log($rootScope.notUploadedItems);
-                    console.log('$rootScope.uploadedItems = ');
-                    console.log($rootScope.uploadedItems);
-                    console.log('$rootScope.picturesIdItems = ');
-                    console.log($rootScope.picturesIdItems);
-                    console.log('$rootScope.pictures = ');
-                    console.log($rootScope.pictures);
+
                 });
             });
         }
@@ -289,11 +203,6 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
  * Controller to display image by modal
  */
 angular.module('cookorico').controller('displayPicturesCtrl', ['$scope', 'multipartFile', '$modalInstance', function ($scope, multipartFile, $modalInstance) {
-
-    // debug
-    console.log('***function : displayPicturesCtrl***');
-    console.log('multipartFile');
-    console.log(multipartFile)
 
     $scope.multipartFile = multipartFile;
 
@@ -307,10 +216,9 @@ angular.module('cookorico').controller('displayPicturesCtrl', ['$scope', 'multip
  */
 angular.module('cookorico').controller('RecipesCtrl', function ($scope, $http) {
 
-    $http.get('/recipes?mainpic=true').success(function (data, status, headers, config) {
+    $http.get('/recipes?mainpic=true').success(function (data) {
         $scope.recipes = data;
-        console.debug(JSON.stringify((data), null, 4));
-    }).error(function (data, status, headers, config) {
+    }).error(function (data) {
         console.log(data);
     });
 });
@@ -341,7 +249,7 @@ angular.module('cookorico').controller('carouselCtrl', ['$scope', '$rootScope', 
 /**
  * Conroller to save pictures
  */
-angular.module('cookorico').controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', function ($scope, $rootScope, Upload, $modal, $http) {
+angular.module('cookorico').controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$uibModal', '$http', function ($scope, $rootScope, Upload, $modal, $http) {
 
     // define function to add photo
     $scope.galeryFn = function () {
