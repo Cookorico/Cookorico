@@ -1,4 +1,4 @@
-angular.module('home', ['auth'])
+angular.module('cookorico')
     .controller('homeCtrl', function ($scope, $http) {
 
 

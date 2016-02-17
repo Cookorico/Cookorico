@@ -1,12 +1,7 @@
 /**
- * Angular module to manage recipe
- */
-var recipeModule = angular.module('recipe', ['flash', 'ngAnimate', 'ngFileUpload']);
-
-/**
  * Controller to upload images by modal
  */
-recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal', '$http', /*$modalInstance, */ function($scope, $rootScope, Upload, $modal, $http /*, $modalInstance*/) {
+angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', /*$modalInstance, */ function ($scope, $rootScope, Upload, $modal, $http /*, $modalInstance*/) {
 
     // initialize variables
     if (typeof $rootScope.allItems == 'undefined') {
@@ -30,11 +25,11 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
     }
 
     /*
-    // close modal
-    $scope.closeWindowsFn = function () {
-        $modalInstance.dismiss('cancel');
-    };
-    */
+     // close modal
+     $scope.closeWindowsFn = function () {
+     $modalInstance.dismiss('cancel');
+     };
+     */
 
     // Define function to upload a multipart file
     $scope.uploadFileFn = function (files) {
@@ -114,7 +109,7 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
         });
     };
 
-    $scope.removeSavedFileFn = function(multipartFile) {
+    $scope.removeSavedFileFn = function (multipartFile) {
 
         var pictureIndex = $rootScope.picturesIdItems.indexOf(multipartFile);
 
@@ -126,9 +121,9 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
             // delete from server
             $http({
                 method: 'POST',
-                url : '/picture/delete',
-                data : picture
-            }).success(function(data, status, header, config){
+                url: '/picture/delete',
+                data: picture
+            }).success(function (data, status, header, config) {
 
                 var index = $rootScope.allItems.indexOf(multipartFile);
                 console.log('allItems index = ' + index);
@@ -201,16 +196,16 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
     };
 
     // function that delete all uploaded and unuploaded items
-    $scope.removeAllItemsFn = function() {
+    $scope.removeAllItemsFn = function () {
 
         if ($rootScope.pictures.length > 0) {
 
             Object.keys($rootScope.pictures).forEach(function (idPicture) {
                 $http({
                     method: 'POST',
-                    url : '/picture/delete',
-                    data : angular.toJson($rootScope.pictures[idPicture])
-                }).success(function(data, status, header, config){
+                    url: '/picture/delete',
+                    data: angular.toJson($rootScope.pictures[idPicture])
+                }).success(function (data, status, header, config) {
 
                     $rootScope.allItems = [];
                     $rootScope.notUploadedItems = [];
@@ -254,7 +249,7 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
     };
 
     // function that save all unuploaded file to server
-    $scope.saveAllUploadedItemsFn = function() {
+    $scope.saveAllUploadedItemsFn = function () {
 
         if ($rootScope.notUploadedItems.length != 0) {
 
@@ -293,7 +288,7 @@ recipeModule.controller('galeryCtrl', ['$scope','$rootScope', 'Upload', '$modal'
 /**
  * Controller to display image by modal
  */
-recipeModule.controller('displayPicturesCtrl', ['$scope', 'multipartFile', '$modalInstance', function($scope, multipartFile, $modalInstance){
+angular.module('cookorico').controller('displayPicturesCtrl', ['$scope', 'multipartFile', '$modalInstance', function ($scope, multipartFile, $modalInstance) {
 
     // debug
     console.log('***function : displayPicturesCtrl***');
@@ -310,11 +305,12 @@ recipeModule.controller('displayPicturesCtrl', ['$scope', 'multipartFile', '$mod
 /**
  * Controller to show recipes list
  */
-recipeModule.controller('RecipesCtrl', function($scope, $http) {
+angular.module('cookorico').controller('RecipesCtrl', function ($scope, $http) {
 
-    $http.get('/recipes?mainpic=true').success(function(data, status, headers, config) {
+    $http.get('/recipes?mainpic=true').success(function (data, status, headers, config) {
         $scope.recipes = data;
-    }).error(function(data, status, headers, config) {
+        console.debug(JSON.stringify((data), null, 4));
+    }).error(function (data, status, headers, config) {
         console.log(data);
     });
 });
@@ -322,13 +318,13 @@ recipeModule.controller('RecipesCtrl', function($scope, $http) {
 /**
  * Conroller to manage carousel
  */
-recipeModule.controller('carouselCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+angular.module('cookorico').controller('carouselCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
     $scope.interval = 4000;
     $scope.noWrapSlides = false;
     var slides = $scope.slides = [];
 
-    $scope.addSlide = function(multipartFile) {
+    $scope.addSlide = function (multipartFile) {
         slides.push({
             image: multipartFile,
             description: 'Petit descriptif'
@@ -336,7 +332,7 @@ recipeModule.controller('carouselCtrl', ['$scope', '$rootScope', function ($scop
     };
 
     if (typeof $rootScope.uploadedItems != 'undefined') {
-        for (var i=0; i<$rootScope.uploadedItems.length; i++) {
+        for (var i = 0; i < $rootScope.uploadedItems.length; i++) {
             $scope.addSlide($rootScope.uploadedItems[i]);
         }
     }
@@ -345,7 +341,7 @@ recipeModule.controller('carouselCtrl', ['$scope', '$rootScope', function ($scop
 /**
  * Conroller to save pictures
  */
-recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', function ($scope, $rootScope, Upload, $modal, $http) {
+angular.module('cookorico').controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$modal', '$http', function ($scope, $rootScope, Upload, $modal, $http) {
 
     // define function to add photo
     $scope.galeryFn = function () {
@@ -377,51 +373,51 @@ recipeModule.controller('pictureCtrl', ['$scope', '$rootScope', 'Upload', '$moda
 /**
  * Controller to add new recipe
  */
-recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$location', '$http', 'Flash',  function ($scope, $rootScope, $window, $location, $http, Flash) {
+angular.module('cookorico').controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$location', '$http', 'Flash', function ($scope, $rootScope, $window, $location, $http, Flash) {
 
 
- 	$scope.ingredients = []; //liste de tous les ingredients de la bdd
+    $scope.ingredients = []; //liste de tous les ingredients de la bdd
     $scope.measurement = []; //liste des unité de mesure possible (actuellement: gramme(s), litre(s), unité(s)).
     $scope.ingredients_in_recipe = []; //liste des ingrédients dans la recette (bindé au form front)
 
 
     //ajoute un ingredient vide dans la liste (et donc crée dans le form une new ligne vide).
     $scope.add_ingredient = function () {
-      $scope.ingredients_in_recipe.push({
-        ingredient: $scope.ingredients[0],
-        quantity: 0,
-        measurement: $scope.measurement[0]
-      });
+        $scope.ingredients_in_recipe.push({
+            ingredient: $scope.ingredients[0],
+            quantity: 0,
+            measurement: $scope.measurement[0]
+        });
     };
 
-	$scope.remove_ingredient = function(index){
-	    $scope.ingredients_in_recipe.splice(index, 1);
-	}
+    $scope.remove_ingredient = function (index) {
+        $scope.ingredients_in_recipe.splice(index, 1);
+    };
 
-	//charge la liste des ingredients
-	$http({
-		method: 'GET',
-		url : '/ingredients'
-	}).then(function successCallback(response) {
-		$scope.ingredients = response.data;
-	}, function errorCallback(response) {
-		console.log(data, status, header, config);
-	});
+    //charge la liste des ingredients
+    $http({
+        method: 'GET',
+        url: '/ingredients'
+    }).then(function successCallback(response) {
+        $scope.ingredients = response.data;
+    }, function errorCallback(response) {
+        console.log(data, status, header, config);
+    });
 
-	//charge la liste des unités de mesure
-	$http({
-		method: 'GET',
-		url : '/measurements'
-	}).then(function successCallback(response) {
-		$scope.measurements = response.data;
-	}, function errorCallback(response) {
-		console.log(data, status, header, config);
-	});
+    //charge la liste des unités de mesure
+    $http({
+        method: 'GET',
+        url: '/measurements'
+    }).then(function successCallback(response) {
+        $scope.measurements = response.data;
+    }, function errorCallback(response) {
+        console.log(data, status, header, config);
+    });
 
     /**
      * Function to get difficulty and experience level info
      */
-    $scope.infoDifficultyFn = function(value) {
+    $scope.infoDifficultyFn = function (value) {
         $scope.experience = value * 10;
         $scope.difficulty = value;
         $scope.mouse = value;
@@ -438,7 +434,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
         }
 
         $scope.recipe.rcp_experienceVal = $scope.recipe.rcp_difficulty * 10;
-		$scope.recipe.ingredients = $scope.ingredients_in_recipe;
+        $scope.recipe.ingredients = $scope.ingredients_in_recipe;
 
 
         // set preparation time
@@ -458,7 +454,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
         // Set main picture id
         if (typeof $rootScope.pictures != 'undefined' && $rootScope.pictures.length > 0) {
 
-            Object.keys($rootScope.pictures).forEach(function(idPicture) {
+            Object.keys($rootScope.pictures).forEach(function (idPicture) {
                 $scope.recipe.mainPictureId = idPicture;
             });
         }
@@ -466,16 +462,16 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
         // send recipe to the recipe controller
         $http({
             method: 'POST',
-            url : '/recipe/add',
-            data : angular.toJson($scope.recipe)
-        }).success(function(data, status, header, config){
+            url: '/recipe/add',
+            data: angular.toJson($scope.recipe)
+        }).success(function (data, status, header, config) {
 
             console.log('data from add recipe');
             console.log(data);
 
             // associate images with recipe
             if (typeof $rootScope.pictures != 'undefined' && $rootScope.pictures.length > 0) {
-                Object.keys($rootScope.pictures).forEach(function(key) {
+                Object.keys($rootScope.pictures).forEach(function (key) {
 
                     var picture = $rootScope.pictures[key];
                     var associatedData = {
@@ -490,7 +486,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
                         url: '/pictureinrecipe/associate',
                         data: angular.toJson(associatedData)
                     }).success(function (data, status, headers, config) {
-                    }).error(function(data, status, header, config){
+                    }).error(function (data, status, header, config) {
                         Flash.create('danger', 'Suite à une erreur l\'association recette-photo n\a pas eu lieu');
                     });
                 });
@@ -500,7 +496,7 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
             var message = '<strong> Opération réussie </strong>  Votre nouvelle recette a été créée avec succès. ';
             Flash.create('success', message, 'custom-class');
             $window.location.href = '#/dashboard/recipe/' + data.idRecipe + '/addstep';
-        }).error(function(data, status, header, config){
+        }).error(function (data, status, header, config) {
 
             // redirect to the home page
             Flash.create('danger', 'Suite à une erreur votre recette n\'a pas pu être sauvegardée');
@@ -512,18 +508,18 @@ recipeModule.controller('addRecipeCtrl', ['$scope', '$rootScope', '$window', '$l
 /**
  * Controller to show a recipe content
  */
-recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
+angular.module('cookorico').controller('RecipeCtrl', ['$scope', '$stateParams', '$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
 
-	//get main infos
+    //get main infos
     $http({
         method: 'GET',
-        url : '/recipe/'+$stateParams.idRecipe
+        url: '/recipe/' + $stateParams.idRecipe
     }).then(function successCallback(response) {
         $scope.recipe = response.data;
 
         $scope.myVar = 12;
-        if($scope.recipe.tags.length > 0){
-        	$scope.myVar = 6;
+        if ($scope.recipe.tags.length > 0) {
+            $scope.myVar = 6;
         }
 
     }, function errorCallback(response) {
@@ -533,10 +529,10 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
     //get comments
     $http({
         method: 'GET',
-        url : '/comments/recipe/'+$stateParams.idRecipe
+        url: '/comments/recipe/' + $stateParams.idRecipe
     }).then(function successCallback(response) {
-    	$scope.recipe.comments = response.data;
-    	console.log($scope.recipe.comments);
+        $scope.recipe.comments = response.data;
+        console.log($scope.recipe.comments);
     }, function errorCallback(response) {
         console.error(data, status, header, config);
     });
@@ -544,7 +540,7 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
 
     $http({
         method: 'GET',
-        url : '/recipe/'+$stateParams.idRecipe+'/currentUserIsCreator'
+        url: '/recipe/' + $stateParams.idRecipe + '/currentUserIsCreator'
     }).then(function successCallback(response) {
         $scope.iscreator = response.data;
     }, function errorCallback(response) {
@@ -553,7 +549,7 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
 
 
     //Valider une recette
-    $scope.doneRecipe = function(){
+    $scope.doneRecipe = function () {
 
         $scope.idUser;
         $rootScope.newXp;
@@ -561,24 +557,24 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
         //Get user details
         $http({
             method: 'GET',
-            url : '/profile'
+            url: '/profile'
         }).then(function successCallback(response) {
 
             $scope.idUser = response.data.idMember;
-            if($rootScope.newXp == null){
+            if ($rootScope.newXp == null) {
                 $scope.newXp = response.data.experience + $scope.recipe.experienceVal;
                 $rootScope.newXp = $scope.newXp;
-            }else{
+            } else {
                 $scope.newXp = $rootScope.newXp + $scope.recipe.experienceVal;
                 $rootScope.newXp = $scope.newXp;
             }
 
             $http({
                 method: 'GET',
-                url : '/level/xp/'+ $rootScope.newXp
-            }).then(function successCallback(response){
+                url: '/level/xp/' + $rootScope.newXp
+            }).then(function successCallback(response) {
                 $rootScope.level = response.data;
-            },function errorCallback(response) {
+            }, function errorCallback(response) {
                 console.error(data, status, header, config);
             });
         }, function errorCallback(response) {
@@ -590,11 +586,11 @@ recipeModule.controller('RecipeCtrl',  ['$scope','$stateParams','$http', '$rootS
 /**
  * Controller to add a step of a specified recipe
  */
-recipeModule.controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams','$http', 'Flash', function ($scope, $window, $stateParams, $http, Flash, auth, cssInjector) {
+angular.module('cookorico').controller('addRecipeStepCtrl', ['$scope', '$window', '$stateParams', '$http', 'Flash', function ($scope, $window, $stateParams, $http, Flash, auth, cssInjector) {
 
     $http({
         method: 'GET',
-        url : '/recipe/'+$stateParams.idRecipe
+        url: '/recipe/' + $stateParams.idRecipe
     }).then(function successCallback(response) {
         $scope.recipe = response.data;
     }, function errorCallback(response) {
@@ -614,11 +610,11 @@ recipeModule.controller('addRecipeStepCtrl',  ['$scope','$window','$stateParams'
 
         $http({
             method: 'POST',
-            url : '/recipestep/add',
-            data : angular.toJson($scope.recipestep)
-        }).success(function(data, status, header, config) {
+            url: '/recipestep/add',
+            data: angular.toJson($scope.recipestep)
+        }).success(function (data, status, header, config) {
             $window.location.href = '#/dashboard/recipe/' + $stateParams.idRecipe;
-        }).error(function(data, status, header, config) {
+        }).error(function (data, status, header, config) {
         });
     };
 }]);

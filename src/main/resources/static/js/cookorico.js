@@ -3,18 +3,15 @@ window.app_version = 2;
 var cookorico = angular.module('cookorico', [
         'ngRoute',
         'auth',
-        'home',
         'profile',
-        'recipe',
         'producer',
-        //'message',
         'progression',
         'ui.router',
         //'ngAnimate',
         'ui.bootstrap',
         //'textAngular',
         //'ui.calendar',
-        //'perfect_scrollbar',
+        'perfect_scrollbar',
         'angular-loading-bar'
         //'chart.js',
         //'angular-growl',
@@ -24,7 +21,7 @@ var cookorico = angular.module('cookorico', [
     ])
     .config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {
         cfpLoadingBarProvider.latencyThreshold = 5;
-        cfpLoadingBarProvider.includeSpinner = false;
+        cfpLoadingBarProvider.includeSpinner = true;
     }])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 

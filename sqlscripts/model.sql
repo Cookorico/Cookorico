@@ -3,7 +3,7 @@
 -- Create types
 CREATE TYPE TAG_TYPE AS ENUM ('Origine','Type de nourriture','Saveur');
 
-CREATE TYPE UNIT_OF_MEASUREMENT AS ENUM ('gramme(s)','millilitre(s)','unité(s)');
+CREATE TYPE UNIT_OF_MEASUREMENT AS ENUM ('gramme(s)','millilitre(s)','unité(s)', 'cuillère(s) à soupe', 'centilitre(s)');
 
 /*
 devenu inutile depuis que difficulty est un nombre.
