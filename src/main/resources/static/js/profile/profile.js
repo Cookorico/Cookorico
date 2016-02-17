@@ -1,6 +1,4 @@
-window.app_version = 2;
-
-angular.module('profile', ['angular.css.injector', 'auth'])
+angular.module('profile', ['auth'])
 .controller('profileCtrl', function ($scope, $rootScope, $http, auth, cssInjector) {
 	console.log("-------------------- profileCtrl --------------------");
 	$scope.user= {};
@@ -41,7 +39,7 @@ angular.module('profile', ['angular.css.injector', 'auth'])
 	
 	
 
-}).controller('profileMemberCtrl', ['$scope','$stateParams','$http', function ($scope, $stateParams, $http, auth, cssInjector) {
+}).controller('profileMemberCtrl', ['$scope','$stateParams','$http', function ($scope, $stateParams, $http, auth) {
 	console.log("-------------------- profileMemberCtrl --------------------");
 	// utilise le fichier profileMember.html mais est presque une copie de views/pages/dashboard/profile.html?
 	

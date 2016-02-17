@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc directive
- * @name DashdashyAngular.directive:pageHeader
+ * @name cookorico.directive:pageHeader
  * @description
  * # pageHeader
  */

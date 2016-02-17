@@ -3,7 +3,7 @@
 angular.module('cookorico')
 	.directive('menu',function(){
 		return {
-	        templateUrl:'scripts/directives/sidenav/menu/menu.html?v='+window.app_version,
+	        templateUrl:'scripts/directives/sidenav/menu/menu.html',
 	        restrict: 'E',
 	        replace: true,
 
@@ -32,16 +32,13 @@ angular.module('cookorico')
 	    		}).then(function successCallback(response) {
 
 	    			$scope.user = response.data;
-	    			
-	    			console.log($scope.user);
-	    			
-	    			
+
 	    		  }, function errorCallback(response) {
 	    				console.log(data, status, header, config);
 	    		  });
 	    		
 				
 
-	        },
-    	}
+	        }
+		}
 	});

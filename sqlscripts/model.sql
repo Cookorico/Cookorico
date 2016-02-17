@@ -16,7 +16,6 @@ CREATE TYPE DISH_TYPE AS ENUM ('Dessert','Entree','Plat');
 CREATE TYPE GENDER AS ENUM ('M','F','U');
 
 
-
 -- Create schemas
 
 -- Create tables

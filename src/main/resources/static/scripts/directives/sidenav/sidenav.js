@@ -3,7 +3,7 @@
 angular.module('cookorico')
 	.directive('sidenav',function(){
 		return {
-	        templateUrl:'scripts/directives/sidenav/sidenav.html?v='+window.app_version,
+	        templateUrl:'scripts/directives/sidenav/sidenav.html',
 	        restrict: 'E',
 	        replace: true,
 	        controller: function($scope, $timeout, $rootScope){

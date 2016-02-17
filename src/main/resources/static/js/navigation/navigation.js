@@ -1,13 +1,7 @@
-/**
- * Created by leemans on 03/11/15.
- */
 cookorico.controller(
     'navigation',
 
-    function($scope, $route, $uibModal, cssInjector, $state) {
-
-        cssInjector.add("bower_components/freelancer/freelancer.css");
-        cssInjector.add("bower_components/freelancer/custom.css");
+    function($scope, $route, $uibModal, $state) {
 
         $scope.open = function (size) {
 
@@ -32,7 +26,7 @@ cookorico.controller(
 
     });
 
-cookorico.controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth, cssInjector) {
+cookorico.controller('ModalInstanceCtrl', function ($scope, $route, $uibModalInstance, auth) {
 
     $scope.credentials = {};
 
@@ -47,12 +41,9 @@ cookorico.controller('ModalInstanceCtrl', function ($scope, $route, $uibModalIns
     $scope.login = function() {
         auth.authenticate($scope.credentials, function(authenticated) {
             if (authenticated) {
-                console.log("Login succeeded")
                 $scope.error = false;
-                cssInjector.removeAll();
                 $uibModalInstance.dismiss('cancel');
             } else {
-                console.log("Login failed")
                 $scope.error = true;
             }
         })

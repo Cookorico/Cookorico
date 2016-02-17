@@ -3,7 +3,7 @@
 angular.module('cookorico')
 	.directive('topnav',function(){
 		return {
-	        templateUrl:'scripts/directives/topnav/topnav.html?v='+window.app_version,
+	        templateUrl:'scripts/directives/topnav/topnav.html',
 	        restrict: 'E',
 	        replace: true,
 	        controller: function($scope, $rootScope, $http){
@@ -12,7 +12,7 @@ angular.module('cookorico')
 
 			        $('body').toggleClass('box-section');
 			        $scope.val = !$scope.val;
-	        	}
+	        	};
 
 	        	$scope.user= {};
 	    		$scope.level ={};
@@ -24,10 +24,8 @@ angular.module('cookorico')
 	    		}).then(function successCallback(response) {
 
 	    			$scope.user = response.data;
-	    			
-	    			console.log($scope.user);
-	    			
-	    			
+
+
 	    		  }, function errorCallback(response) {
 	    				console.log(data, status, header, config);
 	    		  });
@@ -52,7 +50,7 @@ angular.module('cookorico')
 
 			        $('#app-container').toggleClass('push-right');
 
-	        	}
+	        	};
 
 	        	
 
@@ -74,8 +72,8 @@ angular.module('cookorico')
 
 
 
-angular.module('topnav', ['angular.css.injector', 'auth'])
-.controller('topnavCtrl', function ($scope, $http, auth, cssInjector) {
+angular.module('topnav', ['auth'])
+.controller('topnavCtrl', function ($scope, $http, auth) {
 		console.log("-------------------- menuCtrl --------------------");
 		$scope.user= {};
 		$scope.level ={};

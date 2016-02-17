@@ -11,7 +11,6 @@ producerModule.controller('ProducersCtrl', function($scope, $http) {
     
     $http.get('/producers').success(function(data, status, headers, config) {
         $scope.producers = data;
-        console.log($scope.producers);
     }).error(function(data, status, headers, config) {
         console.log(data);
     });
