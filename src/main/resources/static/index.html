@@ -11,23 +11,17 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <base href="/"/>
 
-    <!-- css files -->
-    <!--<link href="font/font-awesome/css/font-awesome.css" rel="stylesheet">-->
-    <!--<link href="styles/angular-flash.css" rel="stylesheet">-->
-    <!--<link href="bower_components/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="bower_components/freelancer/custom.css" rel="stylesheet">-->
-
-
     <!-- theme style -->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css"/>
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
           type="text/css">
 
-    <link href="vendor/theme/style/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/theme/style/bootstrap.min.css" rel="stylesheet"/>
 
-    <link href="vendor/theme/style/loading-bar.min.css" rel="stylesheet">
-    <link href="vendor/theme/style/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="vendor/theme/style/loading-bar.min.css" rel="stylesheet"/>
+    <link href="vendor/theme/style/perfect-scrollbar.min.css" rel="stylesheet"/>
+    <link href="vendor/theme/style/select.min.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="styles/app-orange.css"/>
 
@@ -39,7 +33,7 @@
 <div flash-message="5000"></div>
 
 <!-- page content here -->
-<div ui-view></div>
+<div ui-view class="ng-scope"></div>
 
 <!-- Vendor files -->
 <script src="vendor/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -50,7 +44,7 @@
 <script src="vendor/angular/angular-route.min.js" type="text/javascript"></script>
 <script src="vendor/angular/angular-animate.min.js" type="text/javascript"></script>
 <script src="vendor/angular/angular-ui-router.min.js" type="text/javascript"></script>
-
+<script src="vendor/angular/angular-sanitize.min.js" type="text/javascript"></script>
 
 <script src="vendor/ng-file-upload.min.js" type="text/javascript"></script>
 
@@ -60,7 +54,7 @@
 <script src="vendor/theme/js/perfect-scrollbar.min.js" type="text/javascript"></script>
 <script src="vendor/theme/js/angular-perfect-scrollbar.js" type="text/javascript"></script>
 <script src="vendor/theme/js/ui-bootstrap-tpls-1.1.2.min.js" type="text/javascript"></script>
-
+<script src="vendor/theme/js/select.min.js" type="application/javascript"></script>
 
 
 <!--<script src="bower_components/angular-mocks/angular-mocks.js"></script>-->
@@ -90,10 +84,13 @@
 <!--<script src="bower_components/c3-angular/c3-angular.min.js"></script>-->
 
 
-
 <!-- Angular modules files -->
 <script src="js/cookorico.js" type="text/javascript"></script>
 
+<!-- Directives -->
+<script src="js/recipe/recipeDirective.js" type="text/javascript"></script>
+
+<!-- Controllers -->
 <script src="js/home/home.js" type="text/javascript"></script>
 <script src="js/recipe/recipe.js" type="text/javascript"></script>
 <script src="js/producer/producers.js" type="text/javascript"></script>
@@ -103,8 +100,6 @@
 <script src="js/message/message.js" type="text/javascript"></script>
 <script src="js/profile/profile.js" type="text/javascript"></script>
 <script src="js/navigation/navigation.js" type="text/javascript"></script>
-
-
 <script src="scripts/controllers/tabsCtrl.js"></script>
 <script src="scripts/controllers/collapseCtrl.js"></script>
 
@@ -112,6 +107,8 @@
 <script src="js/angular-flash.js"></script>
 <script src="scripts/controllers/dashboard.js"></script>
 
+
+<!-- directives themes -->
 <script src="scripts/directives/pageheader/pageheader.js"></script>
 <script src="scripts/directives/sidenav/sidenav.js"></script>
 <script src="scripts/directives/sidenav/menu/menu.js"></script>

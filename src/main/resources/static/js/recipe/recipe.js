@@ -63,7 +63,7 @@ angular.module('cookorico').controller('galeryCtrl', ['$scope', '$rootScope', 'U
         }).progress(function (evt) {
             $scope.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
         });
-    }
+    };
 
     // function to show a picture
     $scope.displayFn = function (multipartFile) {
@@ -216,11 +216,12 @@ angular.module('cookorico').controller('displayPicturesCtrl', ['$scope', 'multip
  */
 angular.module('cookorico').controller('RecipesCtrl', function ($scope, $http) {
 
+    $scope.typePlat = 'Plat';
+
     $http.get('/recipes?mainpic=true').success(function (data) {
         $scope.recipes = data;
-    }).error(function (data) {
-        console.log(data);
     });
+
 });
 
 /**

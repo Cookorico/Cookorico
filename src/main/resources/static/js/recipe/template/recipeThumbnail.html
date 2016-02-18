@@ -1,0 +1,29 @@
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="thumbnail">
+            <!--<img ng-if="recipe.mainPicture"-->
+            <!--src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}"-->
+            <!--alt="..." style="max-height:220px;">-->
+            <img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)"
+                 class="medium" data-holder-rendered="true"
+                 src="images/default-recipe-icon.png" style="max-height:500px;">
+        </div>
+
+        <div class="caption">
+            <h3>{{recipe.name}}</h3>
+
+            <blockquote cite="#">
+                <p>{{recipe.description.substring(0,35)}}...</p>
+                <p>Par <a
+                        ui-sref="profileMember({ idMember: '{{recipe.creator.idMember}}' })">
+                    {{recipe.creator.username}}</a></p>
+            </blockquote>
+
+
+            <a ui-sref="recipe({idRecipe: '{{recipe.idRecipe}}'})"
+               class="btn btn-primary" role="button">Consulter recette</a>
+
+            <a href="#" class="btn btn-default" role="button">Ajout aux favoris</a>
+        </div>
+    </div>
+</div>
