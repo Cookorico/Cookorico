@@ -1,15 +1,10 @@
 package fil.iagl.cookorico.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
 import fil.iagl.cookorico.entity.PictureInRecipe;
 import fil.iagl.cookorico.service.PictureInRecipeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/pictureinrecipe")
@@ -33,7 +28,8 @@ public class PictureInRecipeController {
 		
 		this.pictureInRecipeService.associatePictureWithRecipe(pictureInRecipe);
 	}
-	
+
+
 	@RequestMapping(value="/delete/recipe/{idRecipe}", method = RequestMethod.GET)
 	public void deleteByRecipeId(@PathVariable Integer idRecipe) {
 		this.pictureInRecipeService.deleteByRecipeId(idRecipe);

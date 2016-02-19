@@ -4,11 +4,16 @@
 
 <div class="conter-wrapper" ng-controller="recipeShowCtrl">
 
-    <div class="container-fluid">
-
-        <cc-recipe-infos></cc-recipe-infos>
-
+    <div class="col-md-6">
+        <cc-recipe-main-picture></cc-recipe-main-picture>
     </div>
+    <div class="container-fluid row">
+        <div class="col-md-6 ">
+            <cc-recipe-infos></cc-recipe-infos>
+        </div>
+    </div>
+
+    {{recipe.mainPicture}}
 </div>
 
 

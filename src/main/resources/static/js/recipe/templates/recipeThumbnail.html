@@ -1,12 +1,9 @@
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
         <div class="thumbnail">
-            <!--<img ng-if="recipe.mainPicture"-->
-            <!--src="{{recipe.mainPicture.filePath}}{{recipe.mainPicture.fileName}}"-->
-            <!--alt="..." style="max-height:220px;">-->
-            <img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)"
-                 class="medium" data-holder-rendered="true"
-                 src="images/default-recipe-icon.png" style="max-height:500px;">
+            <img ng-if="recipe.mainPicture"
+                 src="{{recipe.mainPicture.filePath}}"
+                 style="max-width:100%; height:230px;">
         </div>
 
         <div class="caption">

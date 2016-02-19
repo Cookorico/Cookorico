@@ -1,16 +1,18 @@
 package fil.iagl.cookorico.dao;
 
+import fil.iagl.cookorico.entity.Picture;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 //import fil.iagl.cookorico.entity.Member;
-import fil.iagl.cookorico.entity.Picture;
 
 public interface PictureDao {
 	
 	/**
 	   * Sauvegarde une image en base de donnée ( son path )
 	   * 
-	   * @param image l'image à sauvegarder
+	   * @param picture l'image à sauvegarder
 	   * @return le nombre de ligne sauvegarder
 	   */
 	Integer savePicture(@Param("picture") Picture picture);
@@ -25,7 +27,7 @@ public interface PictureDao {
 	/**
 	   * Recupere l'image d'id passé en parametre
 	   * 
-	   * @param idImage l'id de l'image
+	   * @param idPicture l'id de l'image
 	   * @return l'image
 	   */
 	Picture getPictureById(@Param("idPicture") Integer idPicture);
@@ -59,4 +61,11 @@ public interface PictureDao {
 	
 	Picture getMemberPicture(Member member);*/
 
+	/**
+	 * Recupere la liste d'images correspondantes a une recette
+	 *
+	 * @param recipeId l'id de la recette
+	 * @return la liste d'images
+	 */
+	List<Picture> getPictureByRecipeId(@Param("idRecipe") Integer recipeId);
 }

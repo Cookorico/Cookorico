@@ -22,7 +22,7 @@
 		<association property='creator' resultMap="fil.iagl.cookorico.dao.MemberDao.memberResultMap" />
 		<!-- validator posera soucis tout de même avec les nom car il a les meme colonne mbr_ que creator -->
 		<!-- <association property='validator' resultMap="fil.iagl.cookorico.dao.AdministratorDao.administratorResultMap" />  -->
-		<association property='mainPicture' resultMap="fil.iagl.cookorico.dao.PictureDao.pictureResultMap" />
+		<association property='mainPicture' resultMap="fil.iagl.cookorico.dao.PictureDao.singlePictureResultMap" />
 		<collection property='tags' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.Tag" resultMap="fil.iagl.cookorico.dao.TagDao.tagResultMap" />
     	<collection property='steps' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.RecipeStep" resultMap="fil.iagl.cookorico.dao.RecipeStepDao.recipeStepResultMapSingle" />
     	<collection property='ingredients' column="rcp_id_recipe" javaType="List" ofType="fil.iagl.cookorico.entity.IngredientInRecipe" resultMap="fil.iagl.cookorico.dao.IngredientInRecipeDao.ingredientInRecipeResultMap" />
@@ -44,8 +44,7 @@
 	</sql>
 	
 	<sql id="join_main_picture">
-		LEFT JOIN picture_in_recipe ON rcp_main_picture=pir_id_picture_in_recipe
-		LEFT JOIN picture ON pir_fk_id_picture=pic_id_picture
+		LEFT JOIN picture ON rcp_main_picture=pic_id_picture
 	</sql>
 	
 	<sql id="join_recipe_steps">

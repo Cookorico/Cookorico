@@ -1,31 +1,20 @@
 package fil.iagl.cookorico.controller;
 
+import fil.iagl.cookorico.entity.*;
+import fil.iagl.cookorico.service.AdministratorService;
+import fil.iagl.cookorico.service.IngredientInRecipeService;
+import fil.iagl.cookorico.service.MemberService;
+import fil.iagl.cookorico.service.RecipeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import fil.iagl.cookorico.entity.CurrentUser;
-import fil.iagl.cookorico.entity.Ingredient;
-import fil.iagl.cookorico.entity.IngredientInRecipe;
-import fil.iagl.cookorico.entity.Member;
-import fil.iagl.cookorico.entity.Recipe;
-import fil.iagl.cookorico.service.AdministratorService;
-import fil.iagl.cookorico.service.IngredientInRecipeService;
-import fil.iagl.cookorico.service.MemberService;
-import fil.iagl.cookorico.service.RecipeService;
 
 @RestController
 public class RecipeController {
@@ -105,8 +94,6 @@ public class RecipeController {
     /**
      * Recuperation des recettes
      *
-     * @param mainpic Si à true alors on recupère aussi les photos de la recette
-     * @param tags    Si à true alors on recupère aussi les tags de la recette
      * @return liste des recettes trouvées
      */
     @RequestMapping(value = "/myrecipes", method = RequestMethod.GET)

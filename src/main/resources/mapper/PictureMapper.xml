@@ -65,4 +65,12 @@
 		WHERE poi_fk_id_ingredient=#{idIngredient}
 	</select>
  -->
+
+	<select id="getPictureByRecipeId" parameterType="Integer" resultMap="singlePictureResultMap">
+        SELECT *
+        FROM picture
+        LEFT JOIN picture_in_recipe ON picture.pic_id_picture = picture_in_recipe.pir_fk_id_picture
+        WHERE pir_fk_id_recipe = #{idRecipe}
+    </select>
+
 </mapper>
