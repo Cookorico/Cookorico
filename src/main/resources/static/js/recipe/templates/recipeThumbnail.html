@@ -4,6 +4,9 @@
             <img ng-if="recipe.mainPicture"
                  src="{{recipe.mainPicture.filePath}}"
                  style="max-width:100%; height:230px;">
+            <img ng-if="!recipe.mainPicture" ng-click="display(image.filePath)"
+                 class="medium" data-holder-rendered="true"
+                 src="images/default-recipe-icon.png" style="height:230px;">
         </div>
 
         <div class="caption">

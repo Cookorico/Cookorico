@@ -6,12 +6,19 @@ angular.module('cookorico').controller('recipeShowCtrl', function ($scope, $http
     }).success(function (response) {
         $scope.recipe = response;
 
-        if($scope.recipe.mainPicture == undefined){
-           $scope.recipe.mainPicture = {filePath: 'images/default-recipe-icon.png'}
+        if ($scope.recipe.mainPicture == undefined) {
+            $scope.recipe.mainPicture = {filePath: 'images/default-recipe-icon.png'}
         }
 
-    });
 
+    }).then(function () {
+        $http({
+            method: 'GET',
+            url: '/comments/recipe/' + $stateParams.idRecipe
+        }).success(function (response) {
+            $scope.recipe.comments = response;
+        });
+    });
 
 
 });

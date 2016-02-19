@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="list-group">
+    <div class="list-group-item active"><h3 class="list-group-item-heading"> Etapes </h3></div>
 
-</body>
-</html>
+    <div class="list-group-item">
+        <div class="list-group-item-text">
+            <div class="list-group">
+                <div class="list-group-item" ng-repeat="step in recipe.steps | orderBy : 'rank'">{{step.rank}}.
+                    {{step.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

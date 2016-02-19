@@ -1,0 +1,13 @@
+<div class="list-group">
+    <div class="list-group-item active"><h3 class="list-group-item-heading"> Commentaires </h3></div>
+
+    <div ng-repeat="comment in recipe.comments" class="list-group-item">
+
+        <div class="list-group-item-heading">
+            <h4>{{comment.title}}</h4>
+            <span class="pull-right"> ~ {{comment.member.username}} le {{comment.creationDate | date:'dd-MM-yyyy à HH:mm'}}</span>
+        </div>
+        <blockquote class="list-group-item-text"> {{comment.description}}</blockquote>
+
+    </div>
+</div>
