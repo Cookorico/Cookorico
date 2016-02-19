@@ -1,0 +1,22 @@
+<div class="thumbnail">
+    <div class="row" style="text-align: center">
+        <h3><strong><i>Infos recette</i></strong></h3>
+    </div>
+
+    <p><span class="glyphicon glyphicon-user"></span> <strong>Créateur de la recette :</strong>
+        <a ui-sref="profileMember({ idMember: recipe.creator.idMember })">{{recipe.creator.username}}</a>
+    </p>
+    <p><span class="glyphicon glyphicon-signal"></span> <strong>Difficulté de préparation
+        :</strong> {{recipe.difficulty}} / 10</p>
+    <p><span class="glyphicon glyphicon-time"></span> <strong>Temps de préparation :</strong>
+        {{recipe.preparationTime}} secondes</p>
+    <p><span class="glyphicon glyphicon-time"></span> <strong>Temps de cuisson :</strong>
+        {{recipe.cookingTime}} secondes</p>
+    <p><span class="glyphicon glyphicon-calendar"></span> <strong>Date de création :</strong>
+        {{recipe.creationDate | date:'dd-MM-yyyy'}}</p>
+    <p><span class="glyphicon glyphicon-list-alt"></span> <strong>Description :</strong></p>
+    <blockquote cite="#">
+        <p>{{recipe.description}}</p>
+    </blockquote>
+
+</div>

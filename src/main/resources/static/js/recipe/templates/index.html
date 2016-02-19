@@ -1,0 +1,17 @@
+<pageheader pagename="Liste des recettes" subtitle="Toutes les recettes"></pageheader>
+<div class="conter-wrapper ng-scope" ng-controller="RecipesCtrl">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div flash-message="3000"></div>
+
+            <cc-recipes-header></cc-recipes-header>
+
+            <div class="row">
+                <cc-recipe recipe="recipe"
+                           ng-repeat="recipe in recipes | filter : typePlat | filter : {name:search}"></cc-recipe>
+            </div>
+
+        </div>
+    </div>
+</div>

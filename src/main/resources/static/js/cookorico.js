@@ -103,7 +103,7 @@ var cookorico = angular.module('cookorico', [
             .state('recipes', {
                 url: '/recipes',
                 parent: 'dashboard',
-                templateUrl: 'js/recipe/recipes.html',
+                templateUrl: 'js/recipe/templates/index.html',
                 controller: 'RecipesCtrl'
             })
             .state('newrecipe', {
@@ -115,8 +115,8 @@ var cookorico = angular.module('cookorico', [
             .state('recipe', {
                 url: '/recipe/:idRecipe',
                 parent: 'dashboard',
-                templateUrl: 'js/recipe/recipe.html',
-                controller: 'RecipeCtrl'
+                templateUrl: 'js/recipe/templates/recipeShow.html',
+                controller: 'recipeShowCtrl'
             })
             .state('newrecipestep', {
                 url: '/recipe/:idRecipe/addstep',

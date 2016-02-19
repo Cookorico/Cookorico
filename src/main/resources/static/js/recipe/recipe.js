@@ -211,18 +211,7 @@ angular.module('cookorico').controller('displayPicturesCtrl', ['$scope', 'multip
     };
 }]);
 
-/**
- * Controller to show recipes list
- */
-angular.module('cookorico').controller('RecipesCtrl', function ($scope, $http) {
 
-    $scope.typePlat = 'Plat';
-
-    $http.get('/recipes?mainpic=true').success(function (data) {
-        $scope.recipes = data;
-    });
-
-});
 
 /**
  * Conroller to manage carousel
