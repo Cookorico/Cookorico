@@ -10,10 +10,15 @@
         <blockquote class="list-group-item-text"> {{comment.description}}</blockquote>
 
     </div>
-
-    <div class="list-group-item-heading">
-        <h4>{{newComment.title}}</h4>
-    </div>
-    <blockquote class="list-group-item-text"> {{newComment.description}}</blockquote>
-
+    <form ng-submit="saveComment(newComment, recipe.idRecipe)">
+        <div class="list-group-item">
+            <div class="list-group-item-heading">
+                <h4>Titre : <input type="text" ng-model="newComment.title"/></h4>
+            </div>
+            <blockquote class="list-group-item-text"><textarea rows="3" ng-model="newComment.description"
+                                                               style="width: 100%; resize: none;"></textarea>
+                <input type="submit" class="btn btn-default" value="Envoyer"/>
+            </blockquote>
+        </div>
+    </form>
 </div>

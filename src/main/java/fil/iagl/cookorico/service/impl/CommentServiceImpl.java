@@ -1,14 +1,12 @@
 package fil.iagl.cookorico.service.impl;
 
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import fil.iagl.cookorico.dao.CommentDao;
 import fil.iagl.cookorico.entity.Comment;
 import fil.iagl.cookorico.service.CommentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CommentServiceImpl implements CommentService{
@@ -18,7 +16,6 @@ public class CommentServiceImpl implements CommentService{
 	
 	@Override
 	public List<Comment> getAllComments() {
-		System.out.println("*****************************");
 		return commentDao.getAllComments();
 	}
 

@@ -50,8 +50,34 @@ angular.module('cookorico').directive('ccRecipeComments', function () {
     return {
         restrict: 'E',
         templateUrl: 'js/recipe/templates/recipeComments.html',
-        controller: function($scope){
+        controller: function ($scope, $http) {
             $scope.newComment = {};
+
+            $scope.saveComment = function (newComment, idRecipe) {
+
+
+                newComment.recipe = {};
+                newComment.recipe.idRecipe = idRecipe;
+
+                console.log(JSON.stringify(newComment, null, 2));
+
+                $http({
+                    method: 'POST',
+                    url: '/comment/add',
+                    data: newComment
+                })
+
+            };
+
+            function refresh() {
+                $http({
+                    method: 'GET',
+                    url: '/comments/recipe/' + $stateParams.idRecipe
+                }).success(function (response) {
+                    $scope.recipe.comments = response;
+                });
+            }
+
         }
     }
 });
