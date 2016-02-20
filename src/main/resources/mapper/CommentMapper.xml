@@ -50,8 +50,8 @@
 	</select>
 	
 		
-	<insert id="addComment" parameterType="java.util.Map">
-  		INSERT INTO comment(cmt_fk_id_recipe, cmt_fk_id_member, cmt_title, cmt_description) VALUES(CAST(#{idRecipe} AS INTEGER), CAST(#{idMember} AS INTEGER), #{title}, #{description})
+	<insert id="addComment" parameterType="fil.iagl.cookorico.entity.Comment">
+  		INSERT INTO comment(cmt_fk_id_recipe, cmt_fk_id_member, cmt_title, cmt_description) VALUES(#{comment.recipe.idRecipe}, #{comment.member.idMember},  #{comment.title}, #{comment.description})
   	</insert>
 	
 </mapper>

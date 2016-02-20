@@ -11,13 +11,6 @@ angular.module('cookorico').controller('recipeShowCtrl', function ($scope, $http
         }
 
 
-    }).then(function () {
-        $http({
-            method: 'GET',
-            url: '/comments/recipe/' + $stateParams.idRecipe
-        }).success(function (response) {
-            $scope.recipe.comments = response;
-        });
     });
 
 
