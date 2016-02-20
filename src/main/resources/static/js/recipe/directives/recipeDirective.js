@@ -49,6 +49,9 @@ angular.module('cookorico').directive('ccRecipeSteps', function () {
 angular.module('cookorico').directive('ccRecipeComments', function () {
     return {
         restrict: 'E',
-        templateUrl: 'js/recipe/templates/recipeComments.html'
+        templateUrl: 'js/recipe/templates/recipeComments.html',
+        controller: function($scope){
+            $scope.newComment = {};
+        }
     }
 });
