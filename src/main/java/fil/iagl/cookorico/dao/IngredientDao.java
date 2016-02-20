@@ -17,7 +17,7 @@ public interface IngredientDao {
 	List<Ingredient> getAllIngredientsWithMainPicture();
 
 	
-	Ingredient getIngredientById(int idIngredient);
+	Ingredient getIngredientById(Integer idIngredient);
 	
 	boolean deleteIngredient(@Param("ingredient") Ingredient ingredient);
 	
