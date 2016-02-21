@@ -1,7 +1,15 @@
 angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $http, $state, $stateParams) {
 
+
+    var rankCount = 1;
+
     $scope.ingredientInRecipe = {
         ingredient: {}
+    };
+
+    $scope.stepInRecipe = {
+        description: '',
+        rank : 1
     };
 
     $http({
@@ -21,7 +29,8 @@ angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $ht
     $scope.recipe = {
         dishType: 'Plat',
         difficulty: 5,
-        ingredients: []
+        ingredients: [],
+        steps: []
     };
 
     $scope.addIngredient = function () {
@@ -44,4 +53,19 @@ angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $ht
         });
 
     };
+
+
+    $scope.addStep = function () {
+
+
+        $scope.stepInRecipe.rank = rankCount++;
+
+        $scope.recipe.steps.push($scope.stepInRecipe);
+
+        $scope.stepInRecipe = {
+            description: ''
+        };
+    };
+
+
 });

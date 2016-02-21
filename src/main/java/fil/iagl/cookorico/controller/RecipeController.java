@@ -1,13 +1,7 @@
 package fil.iagl.cookorico.controller;
 
-import fil.iagl.cookorico.entity.CurrentUser;
-import fil.iagl.cookorico.entity.IngredientInRecipe;
-import fil.iagl.cookorico.entity.Member;
-import fil.iagl.cookorico.entity.Recipe;
-import fil.iagl.cookorico.service.AdministratorService;
-import fil.iagl.cookorico.service.IngredientInRecipeService;
-import fil.iagl.cookorico.service.MemberService;
-import fil.iagl.cookorico.service.RecipeService;
+import fil.iagl.cookorico.entity.*;
+import fil.iagl.cookorico.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +22,9 @@ public class RecipeController {
 
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    private RecipeStepService recipeStepService;
 
     @Autowired
     AdministratorService administratorService;
@@ -127,9 +124,19 @@ public class RecipeController {
         recipe.setExperienceVal(recipe.getDifficulty() * 10);
         this.recipeService.addRecipe(recipe);
 
+        // Workaround to delete
+        Recipe dummyRecipe = new Recipe();
+        dummyRecipe.setIdRecipe(recipe.getIdRecipe());
+
         for (IngredientInRecipe i : recipe.getIngredients()) {
-            i.setRecipe(recipe);
+            i.setRecipe(dummyRecipe);
             ingredientInRecipeService.addIngredientInRecipe(i);
+        }
+
+        for (RecipeStep recipeStep : recipe.getSteps()) {
+            recipeStep.setRecipe(dummyRecipe);
+            recipeStep.setDurationTime(0);
+            recipeStepService.addRecipeStep(recipeStep);
         }
 
 //
