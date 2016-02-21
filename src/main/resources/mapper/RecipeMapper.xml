@@ -124,10 +124,10 @@
 		INSERT INTO recipe(rcp_name,
 		rcp_description, rcp_preparation_time,
 		rcp_cooking_time, rcp_experience_val,
-		rcp_fk_creator)
+		rcp_fk_creator, rcp_difficulty, rcp_dish_type)
 		VALUES(#{recipe.name}, #{recipe.description},
 		#{recipe.preparationTime}, #{recipe.cookingTime},
-		#{recipe.experienceVal}, #{recipe.creator.idMember})
+		#{recipe.experienceVal}, #{recipe.creator.idMember}, #{recipe.difficulty}, #{recipe.dishType})
 	</insert>
 
 </mapper>

@@ -1,6 +1,7 @@
 package fil.iagl.cookorico.controller;
 
 import fil.iagl.cookorico.entity.CurrentUser;
+import fil.iagl.cookorico.entity.IngredientInRecipe;
 import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.AdministratorService;
@@ -11,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -115,6 +118,20 @@ public class RecipeController {
     @ResponseBody
     Recipe addRecipe(@RequestBody Recipe recipe) {
 
+        CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        recipe.setCreator(currentUser.getMember());
+
+        Timestamp creationDate = new Timestamp(new Date().getTime());
+        recipe.setCreationDate(creationDate);
+
+        recipe.setExperienceVal(recipe.getDifficulty() * 10);
+        this.recipeService.addRecipe(recipe);
+
+        for (IngredientInRecipe i : recipe.getIngredients()) {
+            i.setRecipe(recipe);
+            ingredientInRecipeService.addIngredientInRecipe(i);
+        }
+
 //
 //		/* ajoute les ingredients à la recette */
 //        List<LinkedHashMap> ingredientsReciped = (List<LinkedHashMap>) model.get("ingredients");
@@ -144,12 +161,6 @@ public class RecipeController {
 //        //int mainPictureId = Integer.valueOf(String.valueOf(model.get("mainPictureId")));
 //
 //
-//        Date date = new Date();
-//        Timestamp creationDate = new Timestamp(date.getTime());
-//        CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//        Member creator = currentUser.getMember();
-//
-//
 //        // create recipe object
 //        Recipe recipe = new Recipe();
 //        recipe.setName(name);
@@ -172,7 +183,6 @@ public class RecipeController {
 //
 //
 //        // save the recipe to db
-//        this.recipeService.addRecipe(recipe);
 //
 //        //if well done, add ingredients in recipe to db
 //        for (IngredientInRecipe ingredient : recipe.getIngredients()) {

@@ -1,4 +1,4 @@
-angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $http, $stateParams) {
+angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $http, $state, $stateParams) {
 
     $scope.ingredientInRecipe = {
         ingredient: {}
@@ -25,10 +25,23 @@ angular.module('cookorico').controller('recipeCreateCtrl', function ($scope, $ht
     };
 
     $scope.addIngredient = function () {
+
         $scope.recipe.ingredients.push($scope.ingredientInRecipe);
 
         $scope.ingredientInRecipe = {
             ingredient: {}
         };
-    }
+    };
+
+    $scope.addRecipe = function () {
+
+        $http({
+            method: 'POST',
+            url: '/recipe/add',
+            data: angular.toJson($scope.recipe)
+        }).success(function () {
+            $state.go('recipes');
+        });
+
+    };
 });
