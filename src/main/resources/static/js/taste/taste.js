@@ -95,8 +95,8 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 //			console.log(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()));
 //		console.log($scope.inputIngredient.toLowerCase());
 		return ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()) 
-		&& $scope.inputIngredient.length >= 1 
-		&& $.inArray(ingredient.name.toLowerCase(), $scope.taste['ingredients']) == -1; 
+		&& $scope.inputIngredient.length >= 3 
+		&& $scope.taste['ingredients'].indexOf(ingredient.name.toLowerCase()) == -1; 
 	}
 	
 	$scope.addPersonnalTaste = function(ingredient){
@@ -157,6 +157,7 @@ cookorico.controller('tasteCtrl', ['$scope', '$http', function($scope, $http){
 		    url: '/taste/' + ingredient.idIngredient,
 		  }).success(function (data, status, headers, config) {
 			   index = $scope.taste['ingredients'].indexOf(ingredient);
+			   $window.location.reload();
 		  })
 		  .error(function (data, status, headers, config) {
 		    // TODO : erreur de récupération :(
