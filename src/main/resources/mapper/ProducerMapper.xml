@@ -9,6 +9,7 @@
 		<result property='name' column='prd_name' />
 		<result property='city' column='prd_city' />
 		<result property='description' column='prd_description' />
+		<result property='picpath' column='prd_picpath' />
 		<result property='creationDate' column='cmt_creation_date' />
 		<result property='modifDate' column='cmt_modif_date' />
 		<result property='validation' column='cmt_validation' />
@@ -25,6 +26,7 @@
 		<result property='name' column='prd_name' />
 		<result property='city' column='prd_city' />
 		<result property='description' column='prd_description' />
+		<result property='picpath' column='prd_picpath' />
 		<result property='creationDate' column='cmt_creation_date' />
 		<result property='modifDate' column='cmt_modif_date' />
 		<result property='validation' column='cmt_validation' />
@@ -44,7 +46,8 @@
 
 	<select id="getProducersByIngredient" resultMap="producerResultMap"
 		parameterType="int">
-		SELECT * FROM producer LEFT JOIN ingredient_of_producer ON
+		SELECT * FROM producer LEFT JOIN ingredient_of_producer
+		ON
 		iop_fk_id_producer=prd_id_producer LEFT JOIN ingredient ON
 		iop_fk_id_ingredient=igd_id_ingredient WHERE igd_id_ingredient =
 		#{idIngredient};
@@ -53,14 +56,18 @@
 	<select id="getProducerById" resultMap="producerResultMap"
 		parameterType="int">
 		SELECT * FROM producer
-		LEFT JOIN ingredient_of_producer ON iop_fk_id_producer=prd_id_producer
-		LEFT JOIN ingredient ON iop_fk_id_ingredient=igd_id_ingredient
-		WHERE prd_id_producer = #{idProducteur}
+		LEFT JOIN ingredient_of_producer
+		ON iop_fk_id_producer=prd_id_producer
+		LEFT JOIN ingredient ON
+		iop_fk_id_ingredient=igd_id_ingredient
+		WHERE prd_id_producer =
+		#{idProducteur}
 		;
 	</select>
 
 	<insert id="addProducer" parameterType="fil.iagl.cookorico.entity.Producer">
-		INSERT INTO producer(prd_city, prd_name, prd_description) VALUES
+		INSERT INTO
+		producer(prd_city, prd_name, prd_description) VALUES
 		(#{producer.city}, #{producer.name}, #{producer.description})
 	</insert>
 

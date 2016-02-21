@@ -9,3 +9,8 @@
 	text-transform: uppercase;
 	font-size: 150%;
 }
+
+.producerUne img {
+	height: 150px;
+	width: 150px;
+}

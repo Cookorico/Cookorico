@@ -16,6 +16,7 @@ public class Producer {
 	private String name;
 	private String city;
 	private String description;
+	private String picpath;
 	private List<Ingredient> ingredients;
 //	private Timestamp creationDate;
 //	private Timestamp modifDate;
