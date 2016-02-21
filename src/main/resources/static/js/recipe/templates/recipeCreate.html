@@ -84,7 +84,7 @@
 
                 <!-- rcp_description -->
                 <div class="form-group">
-                    <label class="control-label col-sm-3" for="rcp_description">Description de la recette</label>
+                    <label class="control-label col-sm-3" for="rcp_description">Description de la recette *</label>
                     <div class="col-sm-9">
 								<textarea style="width: 100%; resize: none;" rows="5" required class="form-control"
                                           id="rcp_description"
@@ -95,52 +95,29 @@
 
 
                 <!-- rcp_ingredients -->
-                <div class="control-group">
-                    <label class="control-label">Liste des ingrédients de la
-                        recette</label>
-                    <div
-                            ng-repeat="ingredient in ingredients_in_recipe track by $index">
-                        <select id="rcp_ingredients_$index" style="width: 25%;"
-                                ng-model="ingredients_in_recipe[$index].ingredient"
-                                ng-options="item as item.name for item in ingredients | orderBy:'name'">
-                        </select> <label class="control-label"
-                                         for="quantity_of_ingredient_in_recipe_$index">quantité</label>
-                        <input style="width: 5%;" type='number'
-                               id="quantity_of_ingredient_in_recipe_$index"
-                               ng-model='ingredients_in_recipe[$index].quantity'
-                               placeholder='quantity'> <label
-                            ng-repeat="measure in measurements" class="radio-inline">
-                        <input
-                                ng-model="ingredients_in_recipe[$parent.$index].measurement"
-                                type="radio" name="rcp_measurement_{{$parent.$index}}"
-                                value="{{measure}}"> {{measure}}
-                    </label> <span class="glyphicon glyphicon-remove-circle"
-                                   aria-hidden="true" ng-click="remove_ingredient($index)"></span>
-                    </div>
-                    <div>
-                        <button type="button" ng-click="add_ingredient()">ajouter
-                            un ingredient
-                        </button>
-                    </div>
+                <div class="form-group">
+                    <label class="control-label">Ingrédients</label>
+                    <select ng-options="ingredient.name for ingredient in ingredients">{{ingredient}}</select>
                 </div>
+            </div>
 
 
-                <!-- Button -->
-                <div class="control-group">
-                    <label class="control-label" for="btnAddRecipe"></label>
-                    <div class="controls">
-                        <button id="btnAddRecipe" name="btnAddRecipe"
-                                class="btn btn-success" role="submit">Ajouter des
-                            étapes
-                        </button>
-                        <button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
-                                type="reset">Vider formulaire
-                        </button>
-                    </div>
+            <!-- Button -->
+            <div class="control-group">
+                <label class="control-label" for="btnAddRecipe"></label>
+                <div class="controls">
+                    <button id="btnAddRecipe" name="btnAddRecipe"
+                            class="btn btn-success" role="submit">Ajouter des
+                        étapes
+                    </button>
+                    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
+                            type="reset">Vider formulaire
+                    </button>
                 </div>
             </div>
         </div>
     </form>
+</div>
 
-    {{recipe}}
+{{recipe}}
 </div>

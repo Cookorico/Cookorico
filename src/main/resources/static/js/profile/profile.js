@@ -1,5 +1,5 @@
-angular.module('profile', ['auth'])
-.controller('profileCtrl', function ($scope, $rootScope, $http, auth, cssInjector) {
+angular.module('cookorico')
+.controller('profileCtrl', function ($scope, $rootScope, $http) {
 	console.log("-------------------- profileCtrl --------------------");
 	$scope.user= {};
 	$scope.level ={};

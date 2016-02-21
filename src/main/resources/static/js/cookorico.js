@@ -3,7 +3,6 @@ window.app_version = 2;
 var cookorico = angular.module('cookorico', [
         'ngRoute',
         'auth',
-        'profile',
         'producer',
         'progression',
         'ui.router',
