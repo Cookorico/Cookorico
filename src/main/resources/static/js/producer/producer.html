@@ -1,5 +1,52 @@
 <pageheader pagename="Informations d'un producteur" subtitle="les informations d'un producteur"></pageheader>
+<div class="conter-wrapper ng-scope" ng-controller="ProducerCtrl">
 
-TO DO 
-{{producer}}
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-user"></span> <strong>Information compte producteur</strong>
+                        </h3>
+                </div>
+				<div class="caption">
+					<p> Nom : {{producer.name}} </p>
+					<p>Ville : {{producer.city}} </p>
+					Descrption : <blockquote cite="#">
+						<p>  {{producer.description}}</p>
+					</blockquote>
+				</div>
+           </div>
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-cutlery"></span> <strong>Liste des produits</strong>
+                        </h3>
+                 </div>
+                     
+                 <div class="caption">
+                 	<ul ng-repeat="ingredient in producer.ingredients">
+                 		<li>{{ingredient.name}}</li>
+                 	</ul> 
+                 </div>
+           </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-cutlery"></span> <strong>Ajouter un produit</strong>
+                        </h3>
+                </div>
+         		<div class="input-group">
+					<input type="text" class="form-control"
+						placeholder="Chercher un ingredient" ng-model="inputIngredient"> <span
+						class="input-group-btn" >				
+					</span>
+				</div>
+					<ul class="ingredient-list">
+						<li class="ingredient-choice-item" ng-repeat="ingredient in bdd_taste | filter:findIngredient">
+							<a class="ingredient-item" ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
+						</li>
+					</ul>           
+				</div>
+                
 </div>
