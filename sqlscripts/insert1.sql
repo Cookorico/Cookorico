@@ -190,46 +190,19 @@ INSERT INTO COMMENT(CMT_FK_ID_RECIPE,CMT_FK_ID_MEMBER,CMT_TITLE,CMT_DESCRIPTION)
 qu''à la laisser plus longtemps');
 INSERT INTO COMMENT(CMT_FK_ID_RECIPE,CMT_FK_ID_MEMBER,CMT_TITLE,CMT_DESCRIPTION) VALUES('2','6','bien','bono bono');
 
-
-
-
 /* -------------------- INSERT NOTE -------------------- */
 INSERT INTO NOTE(NOT_FK_ID_MEMBER,NOT_FK_ID_RECIPE,NOT_FK_ID_COMMENT,NOT_RATING) VALUES('2','1','2',2);
 
 
-
-
-
-
 /* -------------------- INSERT PICTURE_IN_RECIPE -------------------- */
 
-
-
-
 /* -------------------- INSERT ADMINISTRATOR -------------------- */
+
 /* CREATE TYPE ADMIN_RANK AS ENUM ('Administrateur','Moderateur') */
 INSERT INTO ADMINISTRATOR(ADM_ID_ADMINISTRATOR,ADM_RANK) VALUES(3,'Administrateur');
 INSERT INTO ADMINISTRATOR(ADM_ID_ADMINISTRATOR,ADM_RANK) VALUES(2,'Moderateur');
 
-
-
-
 /* -------------------- INSERT PICTURE_OF_INGREDIENT -------------------- */
 
-
-
-
 /* -------------------- INSERT PICTURE_OF_USER -------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
 

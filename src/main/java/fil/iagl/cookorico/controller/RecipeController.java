@@ -1,19 +1,16 @@
 package fil.iagl.cookorico.controller;
 
-import fil.iagl.cookorico.entity.*;
+import fil.iagl.cookorico.entity.CurrentUser;
+import fil.iagl.cookorico.entity.Member;
+import fil.iagl.cookorico.entity.Recipe;
 import fil.iagl.cookorico.service.AdministratorService;
 import fil.iagl.cookorico.service.IngredientInRecipeService;
 import fil.iagl.cookorico.service.MemberService;
 import fil.iagl.cookorico.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 @RestController
@@ -110,79 +107,79 @@ public class RecipeController {
     /**
      * Ajout recette dans la BDD
      *
-     * @param model infos recette clé-valeur
+     * @param recipe Recette a ajouter
      * @return Recette créée
      */
     @RequestMapping(value = "/recipe/add", method = RequestMethod.POST)
     public
     @ResponseBody
-    Recipe addRecipe(@RequestBody ModelMap model) {
+    Recipe addRecipe(@RequestBody Recipe recipe) {
 
-
-		/* ajoute les ingredients à la recette */
-        List<LinkedHashMap> ingredientsReciped = (List<LinkedHashMap>) model.get("ingredients");
-        List<IngredientInRecipe> ingredients = new ArrayList<IngredientInRecipe>();
-        for (LinkedHashMap ingredient_in_recipe : ingredientsReciped) {
-            LinkedHashMap ingredient = (LinkedHashMap) ingredient_in_recipe.get("ingredient");
-            int idIng = (int) ingredient.get("idIngredient");
-            int quantity = (int) ingredient_in_recipe.get("quantity");
-            String unit_of_measure = (String) ingredient_in_recipe.get("measurement");
-            Ingredient ing = new Ingredient(idIng);
-            IngredientInRecipe ingrInRecipe = new IngredientInRecipe();
-            ingrInRecipe.setIngredient(ing);
-            ingrInRecipe.setQuantity(quantity);
-            ingrInRecipe.setUnitOfMeasurement(unit_of_measure);
-            ingredients.add(ingrInRecipe);
-
-        }
-
-        // get form data
-        int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
-        int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
-        int difficulty = Integer.valueOf(String.valueOf(model.get("rcp_difficulty")));
-        int experienceVal = Integer.valueOf(String.valueOf(model.get("rcp_experienceVal")));
-        String description = String.valueOf(model.get("rcp_description"));
-        String name = String.valueOf(model.get("rcp_name"));
-        String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
-        //int mainPictureId = Integer.valueOf(String.valueOf(model.get("mainPictureId")));
-
-
-        Date date = new Date();
-        Timestamp creationDate = new Timestamp(date.getTime());
-        CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        Member creator = currentUser.getMember();
-
-
-        // create recipe object
-        Recipe recipe = new Recipe();
-        recipe.setName(name);
-        recipe.setDescription(description);
-        recipe.setPreparationTime(preparationTime);
-        recipe.setCookingTime(cookingTime);
-        recipe.setCreator(creator);
-        recipe.setDishType(dish_type);
-        recipe.setDifficulty(difficulty);
-        recipe.setDraft(false); // TODO : valeur par défaut ?
-        //recipe.setMainPicture(this.pictureServive.getPictureById(mainPictureId)); // TODO : verifier mapper Picture pour getPictureById
-        recipe.setCreationDate(creationDate);
-        recipe.setModifDate(creationDate);
-        recipe.setValidation(false);
-        // TODO : recipe.SetValidator(integer)
-        recipe.setDisabled(false);
-        recipe.setExperienceVal(experienceVal); // TODO : à automatiser
-
-        recipe.setIngredients(ingredients);
-
-
-        // save the recipe to db
-        this.recipeService.addRecipe(recipe);
-
-        //if well done, add ingredients in recipe to db
-        for (IngredientInRecipe ingredient : recipe.getIngredients()) {
-            ingredient.setRecipe(new Recipe(recipe.getIdRecipe()));
-            this.ingredientInRecipeService.addIngredientInRecipe(ingredient);
-            ingredient.getIngredient().getIdIngredient();
-        }
+//
+//		/* ajoute les ingredients à la recette */
+//        List<LinkedHashMap> ingredientsReciped = (List<LinkedHashMap>) model.get("ingredients");
+//        List<IngredientInRecipe> ingredients = new ArrayList<IngredientInRecipe>();
+//        for (LinkedHashMap ingredient_in_recipe : ingredientsReciped) {
+//            LinkedHashMap ingredient = (LinkedHashMap) ingredient_in_recipe.get("ingredient");
+//            int idIng = (int) ingredient.get("idIngredient");
+//            int quantity = (int) ingredient_in_recipe.get("quantity");
+//            String unit_of_measure = (String) ingredient_in_recipe.get("measurement");
+//            Ingredient ing = new Ingredient(idIng);
+//            IngredientInRecipe ingrInRecipe = new IngredientInRecipe();
+//            ingrInRecipe.setIngredient(ing);
+//            ingrInRecipe.setQuantity(quantity);
+//            ingrInRecipe.setUnitOfMeasurement(unit_of_measure);
+//            ingredients.add(ingrInRecipe);
+//
+//        }
+//
+//        // get form data
+//        int preparationTime = Integer.valueOf(String.valueOf(model.get("rcp_preparation_time")));
+//        int cookingTime = Integer.valueOf(String.valueOf(model.get("rcp_cooking_time")));
+//        int difficulty = Integer.valueOf(String.valueOf(model.get("rcp_difficulty")));
+//        int experienceVal = Integer.valueOf(String.valueOf(model.get("rcp_experienceVal")));
+//        String description = String.valueOf(model.get("rcp_description"));
+//        String name = String.valueOf(model.get("rcp_name"));
+//        String dish_type = String.valueOf(model.get("rcp_dish_type")); // TODO : vérifier valeur dans l'enum
+//        //int mainPictureId = Integer.valueOf(String.valueOf(model.get("mainPictureId")));
+//
+//
+//        Date date = new Date();
+//        Timestamp creationDate = new Timestamp(date.getTime());
+//        CurrentUser currentUser = (CurrentUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//        Member creator = currentUser.getMember();
+//
+//
+//        // create recipe object
+//        Recipe recipe = new Recipe();
+//        recipe.setName(name);
+//        recipe.setDescription(description);
+//        recipe.setPreparationTime(preparationTime);
+//        recipe.setCookingTime(cookingTime);
+//        recipe.setCreator(creator);
+//        recipe.setDishType(dish_type);
+//        recipe.setDifficulty(difficulty);
+//        recipe.setDraft(false); // TODO : valeur par défaut ?
+//        //recipe.setMainPicture(this.pictureServive.getPictureById(mainPictureId)); // TODO : verifier mapper Picture pour getPictureById
+//        recipe.setCreationDate(creationDate);
+//        recipe.setModifDate(creationDate);
+//        recipe.setValidation(false);
+//        // TODO : recipe.SetValidator(integer)
+//        recipe.setDisabled(false);
+//        recipe.setExperienceVal(experienceVal); // TODO : à automatiser
+//
+//        recipe.setIngredients(ingredients);
+//
+//
+//        // save the recipe to db
+//        this.recipeService.addRecipe(recipe);
+//
+//        //if well done, add ingredients in recipe to db
+//        for (IngredientInRecipe ingredient : recipe.getIngredients()) {
+//            ingredient.setRecipe(new Recipe(recipe.getIdRecipe()));
+//            this.ingredientInRecipeService.addIngredientInRecipe(ingredient);
+//            ingredient.getIngredient().getIdIngredient();
+//        }
 
         return recipe;
     }
