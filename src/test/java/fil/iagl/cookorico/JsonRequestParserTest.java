@@ -1,8 +1,9 @@
-package fil.iagl.cookorico.controller.util;
+package fil.iagl.cookorico;
 
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import fil.iagl.cookorico.controller.util.JsonRequestParser;
 import junit.framework.TestCase;
 
 public class JsonRequestParserTest extends TestCase {
