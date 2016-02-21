@@ -1,0 +1,136 @@
+<pageheader pagename="Nouvelle recette"
+            subtitle="Vous allez ajouter une nouvelle recette"></pageheader>
+
+
+<div flash-message="3000"></div>
+
+<div ng-controller="recipeCreateCtrl" class="conter-wrapper ng-scope">
+
+
+    <!-- Informations recette -->
+    <form role="form" class="form-horizontal">
+
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h5>
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-cutlery"></span> <strong>Détails
+                        de la recette</strong>
+                    </h3>
+                </h5>
+            </div>
+
+            <div class="panel-body">
+                <!-- rcp_dish_type -->
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Catégorie de la recette *</label>
+                    <div class="btn-group col-sm-9">
+                        <label class="btn btn-primary" ng-model="recipe.dishType"
+                               uib-btn-radio="'Entree'">Entrée</label>
+                        <label class="btn btn-primary" ng-model="recipe.dishType"
+                               uib-btn-radio="'Plat'">Plat</label>
+                        <label class="btn btn-primary" ng-model="recipe.dishType"
+                               uib-btn-radio="'Dessert'">Dessert</label>
+                    </div>
+                </div>
+
+
+                <!-- rcp_name -->
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="recipe_name">Nom recette * </label>
+                    <div class="col-sm-9">
+                        <input required type="text" ng-model="recipe.name" class="form-control" id="recipe_name">
+                    </div>
+                </div>
+
+
+                <!-- rcp_preparation_time -->
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="recipe_preparation">Temps de préparation *</label>
+                    <div class="col-sm-2">
+                        <input required type="number" step="1" min="1" max="2880" ng-model="recipe.preparationTime"
+                               class="form-control" id="recipe_preparation">
+                    </div>
+                    <div class="col-sm-1 control-label pull-left">
+                        <span>minutes</span>
+                    </div>
+                </div>
+
+                <!-- rcp_cooking_time -->
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="recipe_cooking_time">Temps de cuisson *</label>
+                    <div class="col-sm-2">
+                        <input required type="number" step="1" min="1" max="2880" ng-model="recipe.cookingTime"
+                               class="form-control" id="recipe_cooking_time">
+                    </div>
+                    <div class="col-sm-1 control-label pull-left">
+                        <span>minutes</span>
+                    </div>
+                </div>
+
+
+                <!-- difficulty -->
+                <div class="form-group">
+                    <label class=" control-label col-sm-3" for="difficulty">Niveau de difficulté * </label>
+                    <div class="col-sm-9">
+                        <uib-rating id="difficulty" ng-model="recipe.difficulty" max="10" state-on="'glyphicon-ok-sign'"
+                                    state-off="'glyphicon-ok-circle'" on-hover="infoDifficultyFn(value)"
+                                    on-leave="mouse = null" aria-labelledby="custom-icons-1"></uib-rating>
+                    </div>
+                </div>
+
+
+                <!-- rcp_description -->
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="rcp_description">Description de la recette *</label>
+                    <div class="col-sm-9">
+								<textarea style="width: 100%; resize: none;" rows="5" required class="form-control"
+                                          id="rcp_description"
+                                          name="rcp_description"
+                                          ng-model="recipe.description"></textarea>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="list-group">
+                <div class="list-group-item active"><h3 class="list-group-item-heading"> Ingrédients </h3>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="list-group-item-text"
+                         ng-repeat="ingredient in ingredientsList ">
+                        {{ingredient.name}}
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="list-group-item-text">
+                        Choisir un ingredient :
+                        <select ng-model="ingredientInRecipe.ingredient"
+                                ng-options="ingredient.name for ingredient in ingredients">{{ingredient}}</select>
+                        <input type="number" step="1" ng-model="ingredientInRecipe.quantity"/>
+                        <select ng-model="ingredientInRecipe.unitOfMeasurement"
+                                ng-options="measure for measure in measurements">{{measure}}</select>
+                        <input type="button" ng-click="addIngredient()" class="btn btn-default" value="Ajouter"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="control-group">
+            <label class="control-label" for="btnAddRecipe"></label>
+            <div class="controls">
+                <button id="btnAddRecipe" name="btnAddRecipe"
+                        class="btn btn-success" role="submit">Ajouter la recette
+                </button>
+                <button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
+                        type="reset">Vider formulaire
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -72,7 +72,7 @@ public class CookoricoApplication {
         // url to dev at home
 		ds.setUsername("postgres");
 		ds.setPassword("postgres");
-        ds.setUrl("jdbc:postgresql://localhost:5434/cookoricodb");
+        ds.setUrl("jdbc:postgresql://localhost:5432/cookoricodb");
 
 
         ds.setDriverClassName("org.postgresql.Driver");

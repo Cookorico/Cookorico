@@ -3,7 +3,6 @@ window.app_version = 2;
 var cookorico = angular.module('cookorico', [
         'ngRoute',
         'auth',
-        'profile',
         'producer',
         'progression',
         'ui.router',
@@ -109,8 +108,8 @@ var cookorico = angular.module('cookorico', [
             .state('newrecipe', {
                 url: '/newrecipe',
                 parent: 'dashboard',
-                templateUrl: 'js/recipe/newrecipe.html',
-                controller: 'addRecipeCtrl'
+                templateUrl: 'js/recipe/templates/recipeCreate.html',
+                controller: 'recipeCreateCtrl'
             })
             .state('recipe', {
                 url: '/recipe/:idRecipe',
