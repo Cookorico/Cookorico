@@ -1,6 +1,6 @@
 
 
-angular.module('cookorico').controller('carrouselCtrl', function ($scope, $http) {
+angular.module('cookorico').controller('homeCtrl', function ($scope, $http) {
 	$scope.myInterval = 5000;
 	$scope.noWrapSlides = false;
 

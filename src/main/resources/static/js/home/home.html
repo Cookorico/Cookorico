@@ -21,7 +21,7 @@
 
 					</div>
 
-					<div class="panel-body recipeUne" ng-controller="carrouselCtrl">
+					<div class="panel-body recipeUne" ng-controller="homeCtrl">
 						<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
 						<uib-slide ng-repeat="slide in slides" active="slide.active">
 						<img ng-src="{{slide.mainPicture.filePath}}">
@@ -46,7 +46,7 @@
 
 					</div>
 
-					<div class="panel-body producerUne" ng-controller="carrouselCtrl">
+					<div class="panel-body producerUne" ng-controller="homeCtrl">
 						<div ng-repeat="producer in producers">
 							<div class="col-sm-6 col-md-4">
 								<div class="thumbnail">
@@ -54,7 +54,7 @@
 										class="img-circle" alt="...">
 									<div class="caption text-center">
 										<h3>
-											<a>{{producer.name}}</a>
+											<a ui-sref="producer({idProducer: '{{producer.idProducer}}'})">{{producer.name}}</a>
 										</h3>
 										<h4>{{producer.city}}</h4>
 										<p>{{producer.description}}</p>
