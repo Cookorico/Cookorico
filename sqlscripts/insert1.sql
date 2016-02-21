@@ -38,16 +38,16 @@ INSERT INTO MEMBER(mbr_id_member, MBR_USERNAME,MBR_FIRSTNAME,MBR_LASTNAME,MBR_EM
 
 
 /* -------------------- INSERT PRODUCER -------------------- */
-INSERT INTO MEMBER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
+INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (1,'Lille',
 'Ouamar','Un producteur de carottes incroyable', 'images/producteur1.png');
-INSERT INTO MEMBER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
+INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (2,'Lille',
 'Johan','Un producteur toujours souriant', 'images/producteur2.png');
-INSERT INTO MEMBER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
+INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (3,'Lille',
 'Antoinne','Un producteur parfois nerveux', 'images/producteur3.png');
-INSERT INTO MEMBER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
+INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (4,'Bruxelles',
 'Will','Un producteur de pommes de terre reconnu', 'images/producteur4.png');
 
