@@ -17,4 +17,6 @@ public interface ProducerService {
 	List<Producer> getAllProducers();
 	
 	List<Producer> getProducersByIngredient(int idIngredient);
+
+	List<Producer> getRandomProducers(int nb);
 }

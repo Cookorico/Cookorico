@@ -34,6 +34,15 @@ public class ProducerController {
 	}
 	
 	/**
+	 * recuperer tout les producteurs 
+	 * @return
+	 */
+	@RequestMapping(value="/producerUne/{nb}", method = RequestMethod.GET)
+	public @ResponseBody List<Producer> getRandomProducers(@PathVariable int nb){
+		return producerService.getRandomProducers(nb);
+	}
+	
+	/**
 	 * Recuperer les producteurs d'un ingredient
 	 * @param idIngredient
 	 * @return

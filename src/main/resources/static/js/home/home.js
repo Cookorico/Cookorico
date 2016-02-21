@@ -13,17 +13,14 @@ angular.module('cookorico').controller('carrouselCtrl', function ($scope, $http)
 		url: '/recipeUne/3'
 	}).then(function successCallback(response) {
 		$scope.slides = response.data;
-		console.log($scope.slides)
 
 		var log = [];
 		angular.forEach($scope.slides, function(value, key) {
 			if (value.mainPicture == undefined) {
-				console.log("CHANGEEMENT PIC")
 				value.mainPicture = {filePath: 'images/default-recipe-icon.png'}
 			}
 		}, log);
 
-		console.log($scope.slides)
 
 	}, function errorCallback(response) {
 		console.log(data, status, header, config);
@@ -31,11 +28,10 @@ angular.module('cookorico').controller('carrouselCtrl', function ($scope, $http)
 
 	$http({
 		method: 'GET',
-		url: '/producers'
+		url: '/producerUne/3'
 	}).then(function successCallback(response) {
+		console.log(response);
 		$scope.producers = response.data;
-		console.log($scope.producers)
-
 
 	}, function errorCallback(response) {
 		console.log(data, status, header, config);

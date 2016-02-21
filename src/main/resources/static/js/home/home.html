@@ -22,15 +22,15 @@
 					</div>
 
 					<div class="panel-body recipeUne" ng-controller="carrouselCtrl">
-							<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-							<uib-slide ng-repeat="slide in slides" active="slide.active">
-							<img src="images/default-recipe-icon.png">
-							<div class="carousel-caption">
-								<a ui-sref="recipe({idRecipe: '{{slide.idRecipe}}'})"><strong>{{slide.name}}</strong></a>
-								<p>{{slide.description}} {{slide.mainPicture.filepath}}</p>
-							</div>
-							</uib-slide> </uib-carousel>
+						<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+						<uib-slide ng-repeat="slide in slides" active="slide.active">
+						<img ng-src="{{slide.mainPicture.filePath}}">
+						<div class="carousel-caption">
+							<a ui-sref="recipe({idRecipe: '{{slide.idRecipe}}'})"><strong>{{slide.name}}</strong></a>
+							<p>{{slide.description}}</p>
 						</div>
+						</uib-slide> </uib-carousel>
+					</div>
 
 				</div>
 
@@ -46,49 +46,22 @@
 
 					</div>
 
-					<div class="panel-body">
-
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-								<img src="http://lorempixel.com/200/200/people"
-									class="img-circle" alt="...">
-								<div class="caption text-center">
-									<h3>
-										<a>{producteur.name}</a>
-									</h3>
-									<p>{producteur.description}</p>
-
+					<div class="panel-body producerUne" ng-controller="carrouselCtrl">
+						<div ng-repeat="producer in producers">
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/people"
+										class="img-circle" alt="...">
+									<div class="caption text-center">
+										<h3>
+											<a>{{producer.name}}</a>
+										</h3>
+										<h4>{{producer.city}}</h4>
+										<p>{{producer.description}}</p>
+									</div>
 								</div>
 							</div>
 						</div>
-
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-								<img src="http://lorempixel.com/200/200/people"
-									class="img-circle" alt="...">
-								<div class="caption text-center">
-									<h3>
-										<a>{producteur.name}</a>
-									</h3>
-									<p>{producteur.description}</p>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-								<img src="http://lorempixel.com/200/200/people"
-									class="img-circle" alt="...">
-								<div class="caption text-center">
-									<h3>
-										<a>{producteur.name}</a>
-									</h3>
-									<p>{producteur.description}</p>
-								</div>
-							</div>
-						</div>
-
 
 					</div>
 				</div>
