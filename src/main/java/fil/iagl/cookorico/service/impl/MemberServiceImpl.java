@@ -12,7 +12,7 @@ import fil.iagl.cookorico.entity.Member;
 import fil.iagl.cookorico.service.MemberService;
 
 @Service
-public class MemberServiceImpl implements MemberService{
+public class MemberServiceImpl implements MemberService {
 	
 	@Autowired
 	private MemberDao memberDao;
@@ -45,7 +45,6 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public void updateXpMember(Map<String, Integer> parms){
 		memberDao.updateXpMember(parms);
-		
 	}
 
 }

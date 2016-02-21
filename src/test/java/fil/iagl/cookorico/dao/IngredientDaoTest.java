@@ -42,17 +42,18 @@ public class IngredientDaoTest extends AbstractCookoricoTest {
 				{ 8, "Poivre" },
 				{ 9, "Huile d'Olive" },
 				{ 10, "Beurre" },
-				{ 11, "pomme" },
-				{ 12, "Radis" },
-				{ 13, "Pastèque" },
-				{ 14, "Choux-fleur" }
+				{ 11, "Farine" },
+				{ 12, "Beurre salé" },
+				{ 13, "Lait" },
+				{ 14, "Huile" }
 			};
 		return Arrays.asList(data);
 	}
 	
 	
 	@Test
-	public void testIngredientIdSuccess() {
+	public void testIngredientByIdSuccess() {
+		
 		// when
 		final Ingredient ingredient = ingredientDao.getIngredientById(id);
 
@@ -67,12 +68,6 @@ public class IngredientDaoTest extends AbstractCookoricoTest {
 		Assertions.assertThat(ingredientDao.getIngredientById(null)).isNull();
 		Assertions.assertThat(ingredientDao.getIngredientById(Integer.MIN_VALUE)).isNull();
 		Assertions.assertThat(ingredientDao.getIngredientById(Integer.MAX_VALUE)).isNull();
-	}
-	
-	@Test
-	public void testAddMember() {
-		// TODO not implemented for the moment, since we are using the real database for the tests.
-		// TODO we have to mock the database (and therefore create a fake one) to run this test
 	}
 	
 	@Test

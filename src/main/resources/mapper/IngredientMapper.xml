@@ -67,8 +67,8 @@
     LEFT JOIN picture ON poi_fk_id_picture=pic_id_picture
   </select>
   
-  <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int">
-  	SELECT * FROM ingredient WHERE id_ingredient = #{id}
+  <select id="getIngredientById" resultType="fil.iagl.cookorico.entity.Ingredient" parameterType="int" resultMap="ingredientResultMap">
+  	SELECT * FROM ingredient WHERE igd_id_ingredient = #{id}
   </select>
   
   <insert id="addIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
