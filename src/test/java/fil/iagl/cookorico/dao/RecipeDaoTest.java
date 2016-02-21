@@ -1,9 +1,7 @@
 package fil.iagl.cookorico.dao;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-
+import fil.iagl.cookorico.AbstractCookoricoTest;
+import fil.iagl.cookorico.entity.Recipe;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,8 +9,9 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import fil.iagl.cookorico.AbstractCookoricoTest;
-import fil.iagl.cookorico.entity.Recipe;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
 @RunWith(Parameterized.class)
 public class RecipeDaoTest extends AbstractCookoricoTest {
@@ -41,7 +40,7 @@ public class RecipeDaoTest extends AbstractCookoricoTest {
 		final Object[][] data = {
 				{ 1, "Omelette", "Une superbe omelette baveuse", 300, 360 },
 				{ 2, "Pizza", "Pizza Orientale", 300, 360 },
-				{ 5, "Crêpes", "Pâte à crêpes", 600, 1200 }
+				{ 3, "Crêpes", "Pâte à crêpes", 600, 1200 }
 		};
 		return Arrays.asList(data);
 	}
