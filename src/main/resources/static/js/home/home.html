@@ -1,12 +1,8 @@
-<pageheader pagename="Acceuil"></pageheader>
+<pageheader pagename="A la Une"></pageheader>
 <link rel="stylesheet" type="text/css" href="js/home/home.css">
 
 <div class="conter-wrapper">
 	<div class="container-fluid home-page">
-		<h1 class="text-center" style="font-variant: small-caps">
-			Cookorico !</h1>
-		<h2 class="text-center" style="font-variant: small-caps">A la Une
-		</h2>
 		<div class="row">
 			<div class="col-md-12">
 
@@ -22,7 +18,7 @@
 					</div>
 
 					<div class="panel-body recipeUne" ng-controller="homeCtrl">
-						<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+							<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
 						<uib-slide ng-repeat="slide in slides" active="slide.active">
 						<img ng-src="{{slide.mainPicture.filePath}}">
 						<div class="carousel-caption">

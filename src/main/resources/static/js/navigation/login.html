@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <img src="img/RoosterLight.png"/>
+
 
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -13,7 +13,9 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#page-top">
-                Cookorico
+                <img src="img/logo.png" style="height:inherit;margin-top: -15px;"/>
+
+                <!--<h2 style="margin-top: 0px">Cookorico</h2>-->
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,18 +23,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#comment">Avis</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#portfolio">Cuisinez</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#about">Apprenez</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#new">BLBLBL</a>
                 </li>
                 <li>
                     <a href="" type="button" class="login-button" ng-click="open()">Connexion</a>
@@ -45,219 +35,33 @@
 </nav>
 
 <!-- Header -->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img id="imgProto" class="img-responsive" src="img/thumbnail.png" alt="">
-            </div>
-            <div class="intro-text">
-                <span class="skills"> Apprendre la cuisine en s'amusant !</span>
+<header style="margin-top: 75px">
+    <div class="col-md-10 col-md-offset-1 well-lg" style="color:#d68f51">
 
-                <p style="margin-top:50px;">
-                    Cookorico est une application gratuite permettant d'apprendre à cuisiner en s'amusant comme dans un
-                    jeu.
-                    Avec des récompenses virtuelles, de nombreux talents à maitriser, de nombreux défis et un réseau
-                    social fort pour vous inspirer, Cookorico peut vous aider à
-                    devenir un(e) véritable chef en cuisine et impressioner vos amis !
-                </p>
+        <div class="center text-center">
+            <h1>Cookorico, cuisinez avec des produit locaux !</h1>
+            <h2>Parcourez les nombreuses recettes proposées par la communauté !
+            </h2>
+            <div class="thumbnail center ">
+                <img src="img/recipe.PNG" style="height:200px;">
+            </div>
+            <div class="row">
+                <h2>Découvrez de nouveaux producteurs locaux ! </h2>
+
+                <div class="thumbnail center ">
+                    <img src="img/prod.png">
+                </div>
             </div>
         </div>
     </div>
 </header>
 
-<section id="comment">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Avis utilisateurs</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <!-- <a href="#userCommentModal1" class="portfolio-link" data-toggle="modal"> -->
-                    <div class="caption">
-                        <div class="caption-content">
-                            <!-- <i class="fa fa-search-plus fa-3x"></i> -->
-                        </div>
-                    </div>
-                    <div class="comment-box">
-
-                        <div class="comment-box-title">
-                            Ceci est un avis d'utilisateur
-                        </div>
-                                <span class="comment-box-avatar">
-                                    <img src="img/avatar.png"/>
-                                </span>
-
-                        <div class="comment-box-text">
-                            Bacon ipsum dolor amet pork loin meatball jerky drumstick, biltong ball tip t-bone short
-                            loin.
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Portfolio Grid Section -->
-<section id="portfolio" class="success">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Aperçu recettes</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/1" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/2" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/3" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/4" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/5" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="http://lorempixel.com/900/650/food/6" class="img-responsive" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>Cookorico est un site qui vous permettra d'apprendre à cuisiner en s'amusant ! </p>
-                <p>Réalisez des recettes et ammassez de l'experience ! Faites vous suggerer des recettes et bien plus
-                    encore ! </p>
-                <p>N'attendez plus, rejoingnez la communauté</p>
-            </div>
-
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="new" class="success">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Tongue beef ribs boudin turkey tail, salami shank brisket swine andouille. Ham tenderloin bacon
-                    chicken tri-tip, jerky sirloin cow doner picanha flank pork chop. Rump leberkas filet mignon
-                    tri-tip, pig t-bone chicken ham prosciutto pork belly. Porchetta bacon shankle cow tenderloin
-                    pork.</p>
-            </div>
-            <div class="col-lg-4">
-                <p>Bacon ipsum dolor amet alcatra biltong boudin pork chop. Corned beef brisket turkey t-bone meatloaf,
-                    drumstick porchetta pork belly chicken bresaola kevin. Fatback ham hock filet mignon t-bone boudin
-                    swine. Tri-tip fatback picanha, ball tip bresaola jowl ham t-bone pork swine. Tongue ham hock swine
-                    tail, meatloaf brisket pancetta ribeye beef ribs meatball salami landjaeger boudin pig.</p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Footer -->
 <footer class="text-center">
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <!-- <div class="footer-col col-md-4">
-                     <h3>Location</h3>
-                     <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                 </div>
-                 <div class="footer-col col-md-4">
-                     <h3>Around the Web</h3>
-                     <ul class="list-inline">
-                         <li>
-                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                         </li>
-                         <li>
-                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                         </li>
-                         <li>
-                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                         </li>
-                         <li>
-                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                         </li>
-                         <li>
-                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                         </li>
-                     </ul>
-                 </div>-->
                 <div class="footer-col col-md-4 col-md-offset-4">
                     <h3>A propos</h3>
 
@@ -278,272 +82,6 @@
     </div>
 </footer>
 
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-</div>
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/1" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/2" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/3" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/4" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/5" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="http://lorempixel.com/900/650/food/6" class="img-responsive img-centered" alt="">
-
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script type="text/ng-template" id="myModalContent.html">
     <div class="modal-header">
