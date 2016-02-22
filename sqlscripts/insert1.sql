@@ -177,6 +177,12 @@ INSERT INTO INGREDIENT_IN_RECIPE(IIR_FK_ID_INGREDIENT,IIR_FK_ID_RECIPE,IIR_QUANT
 
 /* -------------------- INSERT PHOTO  -------------------- */
 
+INSERT INTO PICTURE(PIC_ID_PICTURE, PIC_FK_ID_MEMBER,PIC_FILE_PATH, PIC_FILE_NAME) VALUES('1','100', '/src/main/resources/static/images/recipes/', 'omelette.jpg');
+INSERT INTO PICTURE(PIC_ID_PICTURE, PIC_FK_ID_MEMBER,PIC_FILE_PATH, PIC_FILE_NAME) VALUES('2', '2','/src/main/resources/static/images/recipes/', 'pizza.jpg');
+INSERT INTO PICTURE(PIC_ID_PICTURE, PIC_FK_ID_MEMBER,PIC_FILE_PATH, PIC_FILE_NAME) VALUES('3', '5', '/src/main/resources/static/images/recipes/', 'crepes.jpg');
+
+
+
 
 
 /* -------------------- INSERT RECIPE_STEP -------------------- */
@@ -211,6 +217,10 @@ INSERT INTO NOTE(NOT_FK_ID_MEMBER,NOT_FK_ID_RECIPE,NOT_FK_ID_COMMENT,NOT_RATING)
 
 
 /* -------------------- INSERT PICTURE_IN_RECIPE -------------------- */
+INSERT INTO PICTURE_IN_RECIPE(PIR_FK_ID_RECIPE, PIR_FK_ID_PICTURE) VALUES('1', '1');
+INSERT INTO PICTURE_IN_RECIPE(PIR_FK_ID_RECIPE, PIR_FK_ID_PICTURE) VALUES('2', '2');
+INSERT INTO PICTURE_IN_RECIPE(PIR_FK_ID_RECIPE, PIR_FK_ID_PICTURE) VALUES('3', '3');
+
 
 /* -------------------- INSERT ADMINISTRATOR -------------------- */
 
