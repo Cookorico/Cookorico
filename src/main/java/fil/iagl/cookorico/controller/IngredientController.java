@@ -50,7 +50,15 @@ public class IngredientController {
         return ingredientService.addIngredient(ingredient);
 
     }
+    
+    
+    @RequestMapping(value="/ingredients/producer/{idProducer}", method = RequestMethod.GET)
+	public @ResponseBody List<Ingredient> getProducersByIngredient (@PathVariable int idProducer){
+		return ingredientService.getIngredientsByProducer(idProducer);
 
+    }
+    
+    
     @RequestMapping(value = "/ingredient/delete", method = RequestMethod.DELETE)
     public boolean deleteIngredient(@RequestBody IngredientWrapper wrapper) {
         final String name = wrapper.getName();

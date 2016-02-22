@@ -26,6 +26,8 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
 	
 	
 	$scope.inputIngredient = '';
+	$scope.ingredients = {};
+	
 	
 
 	//get main infos

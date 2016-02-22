@@ -71,6 +71,14 @@
   	SELECT * FROM ingredient WHERE igd_id_ingredient = #{id}
   </select>
   
+  <select id="getIngredientsByProducer" resultMap="ingredientResultMap"
+		parameterType="int">
+		SELECT * FROM ingredient LEFT JOIN
+		ingredient_of_producer on iop_fk_id_ingredient =
+		igd_id_ingredient where
+		iop_fk_id_producer = #{idProducer}
+	</select>
+	
   <insert id="addIngredient" parameterType="fil.iagl.cookorico.entity.Ingredient">
   	INSERT INTO ingredient(name, description) VALUES(#{ingredient.name}, #{ingredient.description})
   </insert>

@@ -63,6 +63,11 @@ public class IngredientServiceImpl implements IngredientService{
 		return ingredientdao.deleteIngredient(ingredient);
 	}
 
+	@Override
+	public List<Ingredient> getIngredientsByProducer(int idProducer) {
+		return ingredientdao.getIngredientsByProducer(idProducer);
+	}
+
 	
 	
 }
