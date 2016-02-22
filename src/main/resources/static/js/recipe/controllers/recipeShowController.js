@@ -16,11 +16,13 @@ angular.module('cookorico').controller('recipeShowCtrl', function ($scope, $http
 
 	$scope.toggleModal = function(idIngredient, ingredient) {
 		$scope.ingredientName = ingredient;
-		$scope.producers =[];
+
 		$http({
 			method: 'GET',
 			url: '/producers/ingredient/' + idIngredient
 		}).success(function (response) {
+			console.log(response)
+		
 			$scope.producers = response;
 		});
 
