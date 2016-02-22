@@ -1,6 +1,7 @@
 package fil.iagl.cookorico.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 
@@ -20,5 +21,5 @@ public interface ProducerDao {
 	
 	List<Producer> getRandomProducers(int nb);
 	
-	void addIngredientOfProduct(int id_ingredient, int id_producer);
+	void addIngredientOfProduct(Map<String, Integer> params);
 }

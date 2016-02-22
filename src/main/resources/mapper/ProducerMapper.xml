@@ -80,7 +80,7 @@
 		LIMIT #{nb}
 	</select>
 	
-	<insert id="addIngredientOfProduct">
+	<insert id="addIngredientOfProduct" parameterType="java.util.Map">
 		INSERT INTO ingredient_of_producer(iop_fk_id_ingredient, iop_fk_id_producer) values(#{id_ingredient}, #{id_producer}) 
 	</insert>
 

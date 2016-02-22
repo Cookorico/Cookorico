@@ -1,6 +1,7 @@
 package fil.iagl.cookorico.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 
@@ -20,6 +21,6 @@ public interface ProducerService {
 
 	List<Producer> getRandomProducers(int nb);
 	
-	void addProduct(int id_ingredient, int id_producer);
+	void addIngredientOfProduct(Map<String, Integer> params);
 
 }

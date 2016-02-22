@@ -1,6 +1,8 @@
 package fil.iagl.cookorico.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
@@ -84,15 +86,15 @@ public class ProducerController {
 		return producer;
 	}
 	
-	@RequestMapping(value = "/producer/addProduct", method = RequestMethod.POST)
-	public void addProduct(@RequestBody ModelMap model){
-		
-		int id_ingredient = Integer.parseInt(String.valueOf(model.get("id_ingredient")));
-		int id_producer = Integer.parseInt(String.valueOf(model.get("id_producer")));
+	@RequestMapping(value = "/producer/addProduct/{id_ingredient}/{id_producer}", method = RequestMethod.POST)
+	public void addProduct(@PathVariable int id_ingredient, @PathVariable int id_producer){
+		Map<String, Integer> params = new HashMap<String, Integer>();
+		params.put("id_ingredient", id_ingredient);
+		params.put("id_producer", id_producer);
 		
 		System.out.println("ingredient : " + id_ingredient);
 		System.out.println("producer : " + id_producer);
 		
-		producerService.addProduct(id_ingredient, id_producer);
+		producerService.addIngredientOfProduct(params);
 	}
 }

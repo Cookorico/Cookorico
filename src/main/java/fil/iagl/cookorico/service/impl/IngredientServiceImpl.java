@@ -17,13 +17,11 @@ public class IngredientServiceImpl implements IngredientService{
 
 	@Override
 	public boolean addIngredient(Ingredient ingredient) {
-		// TODO Auto-generated method stub
 		return ingredientdao.addIngredient(ingredient);
 	}
 
 	@Override
 	public List<Ingredient> getAllIngredients() {
-		// TODO Auto-generated method stub
 		
 		return ingredientdao.getAllIngredients();
 	}

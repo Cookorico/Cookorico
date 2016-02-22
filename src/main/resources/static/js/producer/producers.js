@@ -62,7 +62,7 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
 	   console.log(ids);
 		$http({
 		    method: 'POST',
-		    url: '/producer/addProduct',
+		    url: '/producer/addProduct/'+ ingredient.idIngredient +'/'+$scope.producer.idProducer,
 		    data: angular.toJson(ids)
 		  }).success(function (data, status, headers, config) {
 			  console.log("succes !");

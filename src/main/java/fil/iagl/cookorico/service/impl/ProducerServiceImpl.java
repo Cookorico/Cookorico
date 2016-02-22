@@ -1,6 +1,7 @@
 package fil.iagl.cookorico.service.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,7 +49,7 @@ public class ProducerServiceImpl implements ProducerService {
 		return producerdao.getRandomProducers(nb);
 	}
 	
-	public void addProduct(int id_ingredient, int id_producer){
-		producerdao.addIngredientOfProduct(id_ingredient, id_producer);
+	public void addIngredientOfProduct(Map<String, Integer> params){
+		producerdao.addIngredientOfProduct(params);
 	}
 }
