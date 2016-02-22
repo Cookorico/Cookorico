@@ -39,8 +39,7 @@ public class RecipeDaoTest extends AbstractCookoricoTest {
 	public static Collection<Object[]> data() {
 		final Object[][] data = {
 				{ 1, "Omelette", "Une superbe omelette baveuse", 300, 360 },
-				{ 2, "Pizza", "Pizza Orientale", 300, 360 },
-				{ 3, "Crêpes", "Pâte à crêpes", 600, 1200 }
+				{ 2, "Pizza", "Pizza Orientale", 300, 360 }
 		};
 		return Arrays.asList(data);
 	}
