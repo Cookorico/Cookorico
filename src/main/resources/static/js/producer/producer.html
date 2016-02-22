@@ -10,7 +10,7 @@
                 </div>
 				<div class="caption">
 					<p> Nom : {{producer.name}} </p>
-					<p>Ville : {{producer.city}} </p>
+					<p> Ville : {{producer.city}} </p>
 					Descrption : <blockquote cite="#">
 						<p>  {{producer.description}}</p>
 					</blockquote>
@@ -43,8 +43,8 @@
 					</span>
 				</div>
 					<ul class="ingredient-list">
-						<li class="ingredient-choice-item" ng-repeat="ingredient in bdd_taste | filter:findIngredient">
-							<a class="ingredient-item" ng-click="addPersonnalTaste(ingredient)">{{ ingredient.name }}</a>
+						<li class="ingredient-choice-item" ng-repeat="ingredient in ingredients | filter:findIngredient">
+							<a class="ingredient-item" ng-click="addProduct(ingredient)">{{ ingredient.name }}</a>
 						</li>
 					</ul>           
 				</div>

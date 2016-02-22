@@ -83,4 +83,13 @@ public class ProducerController {
 		producerService.addProducer(producer);
 		return producer;
 	}
+	
+	@RequestMapping(value = "/producer/addProduct/", method = RequestMethod.POST)
+	public void addProduct(@RequestBody ModelMap model){
+		
+		int id_ingredient = Integer.parseInt(String.valueOf(model.get("id_ingredient")));
+		int id_producer = Integer.parseInt(String.valueOf(model.get("id_producer")));
+		
+		producerService.addProduct(id_ingredient, id_producer);
+	}
 }

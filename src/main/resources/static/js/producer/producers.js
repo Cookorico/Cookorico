@@ -26,7 +26,6 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
 	
 	var ingredients = [{'name':'carottes'}, {'name':'oeuf'}]
 	$scope.producer = {'name':'Antoine', 'city':'Lille', 'description': 'blablalblabla', 'ingredients':ingredients}
-	$scope.listIngre
 	
 	$scope.inputIngredient = '';
 	
@@ -36,7 +35,7 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
         method: 'GET', 
         url : '/producer/'+$stateParams.idProducer
     }).then(function successCallback(response) {
-        //$scope.producer = response.data;
+        $scope.producer = response.data;
     }, function errorCallback(response) {
         console.error(data, status, header, config);
     });
@@ -52,12 +51,13 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
     
     
 	$scope.findIngredient = function(ingredient){
-//		if(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()))
-//			console.log(ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()));
-//		console.log($scope.inputIngredient.toLowerCase());
 		return ingredient.name.toLowerCase().match($scope.inputIngredient.toLowerCase()) 
-		&& $scope.inputIngredient.length >= 2 
+		&& $scope.inputIngredient.length >= 1 
 		&& $scope.ingredients.indexOf(ingredient.name.toLowerCase()) == -1; 
+	}
+	
+	$scope.addProduct = function(ingredient){
+		
 	}
 	
 }]);

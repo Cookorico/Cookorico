@@ -47,4 +47,8 @@ public class ProducerServiceImpl implements ProducerService {
 	public List<Producer> getRandomProducers(int nb) {
 		return producerdao.getRandomProducers(nb);
 	}
+	
+	public void addProduct(int id_ingredient, int id_producer){
+		producerdao.addProduct(id_ingredient, id_producer);
+	}
 }

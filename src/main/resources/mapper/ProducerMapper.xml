@@ -34,7 +34,6 @@
 		<result property='disabled' column='cmt_disabled' />
 	</resultMap>
 
-
 	<sql id="select_all">
 		SELECT *
 		FROM producer
@@ -77,5 +76,9 @@
 		ORDER BY RANDOM()
 		LIMIT #{nb}
 	</select>
+	
+	<insert id="addIngredientOfProduct" parameterType="fil.iagl.cookorico.entity.Producer">
+		INSERT INTO ingredient_of_producer(iop_fk_id_ingredient, iop_fk_id_producer) values(#{id_ingredient}, #{id_producer}) 
+	</insert>
 
 </mapper>

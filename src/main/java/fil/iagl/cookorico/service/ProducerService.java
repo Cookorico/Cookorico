@@ -19,4 +19,7 @@ public interface ProducerService {
 	List<Producer> getProducersByIngredient(int idIngredient);
 
 	List<Producer> getRandomProducers(int nb);
+	
+	void addProduct(int id_ingredient, int id_producer);
+
 }
