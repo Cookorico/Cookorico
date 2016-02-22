@@ -10,9 +10,6 @@
 
                     <li ng-repeat="ingredient in recipe.ingredients">
                         {{ingredient.ingredient.name}} : {{ingredient.quantity}} {{ingredient.unitOfMeasurement}}
-                        <!--<span ng-repeat="producer in ingredient.ingredient.producers">-->
-                        <!--<a ui-sref="producer({ idProducer: producer.idProducer })">{{producer.name}}</a> ({{producer.city}}),-->
-                        <!--</span>-->
                     </li>
                 </ul>
             </div>

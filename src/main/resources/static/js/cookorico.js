@@ -74,7 +74,7 @@ var cookorico = angular.module('cookorico', [
             .state('profile', {
                 url: '/profile',
                 parent: 'dashboard',
-                templateUrl: 'views/pages/dashboard/profile.html?v=' + window.app_version,
+                templateUrl: 'js/profile/profile.html?v=' + window.app_version,
                 controller: 'profileCtrl'
             })
             .state('profileMember', {

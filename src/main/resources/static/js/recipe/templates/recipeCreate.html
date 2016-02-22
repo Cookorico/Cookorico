@@ -8,7 +8,7 @@
 
 
     <!-- Informations recette -->
-    <form role="form" class="form-horizontal">
+    <form role="form" class="form-horizontal" ng-submit="addRecipe()">
 
         <div class="panel panel-primary">
 
@@ -94,30 +94,63 @@
                 </div>
 
 
-                <!-- rcp_ingredients -->
-                <div class="form-group">
-                    <label class="control-label">Ingrédients</label>
-                    <select ng-options="ingredient.name for ingredient in ingredients">{{ingredient}}</select>
-                </div>
+            </div>
+        </div>
+
+        <div class="list-group">
+            <div class="list-group-item active"><h3 class="list-group-item-heading"> Ingrédients </h3>
             </div>
 
-
-            <!-- Button -->
-            <div class="control-group">
-                <label class="control-label" for="btnAddRecipe"></label>
-                <div class="controls">
-                    <button id="btnAddRecipe" name="btnAddRecipe"
-                            class="btn btn-success" role="submit">Ajouter des
-                        étapes
-                    </button>
-                    <button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
-                            type="reset">Vider formulaire
-                    </button>
+            <div class="list-group-item" ng-repeat="ingredient in recipe.ingredients">
+                <div class="list-group-item-text">
+                    {{ingredient.ingredient.name}} {{ingredient.quantity}} {{ingredient.unitOfMeasurement}}
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="list-group-item-text">
+                    Choisir un ingredient :
+                    <select ng-model="ingredientInRecipe.ingredient"
+                            ng-options="ingredient.name for ingredient in ingredients">{{ingredient}}</select>
+                    <input type="number" min="0" step="1" ng-model="ingredientInRecipe.quantity"/>
+                    <select ng-model="ingredientInRecipe.unitOfMeasurement"
+                            ng-options="measure for measure in measurements">{{measure}}</select>
+                    <input type="button" ng-click="addIngredient()" class="btn btn-default" value="Ajouter"/>
                 </div>
             </div>
         </div>
-    </form>
-</div>
 
-{{recipe}}
+
+        <div class="list-group">
+            <div class="list-group-item active"><h3 class="list-group-item-heading"> Etapes </h3>
+            </div>
+
+            <div class="list-group-item" ng-repeat="step in recipe.steps ">
+                <div class="list-group-item-text">
+                    {{step.rank}}. {{step.description}}
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="list-group-item-text">
+
+                    <textarea ng-model="stepInRecipe.description" style="width: 100%; resize: vertical;"></textarea>
+
+                    <input type="button" ng-click="addStep()" class="btn btn-default" value="Ajouter une étape"/>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Button -->
+        <div class="control-group">
+            <label class="control-label" for="btnAddRecipe"></label>
+            <div class="controls">
+                <button id="btnAddRecipe" name="btnAddRecipe"
+                        class="btn btn-success" role="submit">Ajouter la recette
+                </button>
+                <button id="btnRazForm" name="btnRazForm" class="btn btn-danger"
+                        type="reset">Vider formulaire
+                </button>
+            </div>
+        </div>
+    </form>
 </div>

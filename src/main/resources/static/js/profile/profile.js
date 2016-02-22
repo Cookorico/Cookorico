@@ -11,17 +11,8 @@ angular.module('cookorico')
 	}).then(function successCallback(response) {
 
 		$scope.user = response.data;
-		if($rootScope.newXp != null){
-			$scope.user.experience = $rootScope.newXp;
-
-		}
-		if($rootScope.level != null){
-			$scope.user.level = $rootScope.level;
-		}
 		
-		console.log($scope.user);
 		
-		/*
 		$http({
 			method: 'GET', 
 			url : '/level/xp/' + $scope.user.experience
@@ -30,7 +21,7 @@ angular.module('cookorico')
 		}).error(function(data, status, header, config){
 			console.log(data, status, header, config);
 		});
-		*/
+		
 			
 		
 	  }, function errorCallback(response) {
@@ -51,8 +42,6 @@ angular.module('cookorico')
 
 		$scope.user = response.data;
 		
-		console.log($scope.user);
-
 		
 	  }, function errorCallback(response) {
 			console.log(data, status, header, config);

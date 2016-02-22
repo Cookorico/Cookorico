@@ -42,4 +42,9 @@ public class ProducerServiceImpl implements ProducerService {
 		
 		return producerdao.getProducerById(idProducer);
 	}
+
+	@Override
+	public List<Producer> getRandomProducers(int nb) {
+		return producerdao.getRandomProducers(nb);
+	}
 }
