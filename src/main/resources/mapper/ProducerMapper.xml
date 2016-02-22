@@ -42,6 +42,9 @@
 	<select id="getAllProducers" resultMap="producerResultMap">
 		<include refid="select_all" />
 	</select>
+	
+	<select id="getProducerByIngredientId" parameterType="int" resultMap="producerResultMap">
+	</select>
 
 	<select id="getProducersByIngredient" resultMap="producerResultMap"
 		parameterType="int">

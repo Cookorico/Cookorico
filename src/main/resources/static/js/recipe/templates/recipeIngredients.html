@@ -1,18 +1,22 @@
 <!-- affichage des ingredients -->
 <div ng-if="recipe.ingredients.length > 0">
 
-    <div class="list-group">
-        <div class="list-group-item active"><h3 class="list-group-item-heading"> Ingrédients </h3></div>
+	<div class="list-group">
 
-        <div class="list-group-item">
-            <div class="list-group-item-text">
-                <ul>
+		<div class="list-group-item active">
+			<h3 class="list-group-item-heading">Ingrédients</h3>
+		</div>
 
-                    <li ng-repeat="ingredient in recipe.ingredients">
-                        {{ingredient.ingredient.name}} : {{ingredient.quantity}} {{ingredient.unitOfMeasurement}}
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+		<div class="list-group-item">
+			<div class="list-group-item-text">
+				<ul>
+
+					<li ng-repeat="ingredient in recipe.ingredients"><a
+						ng-click='toggleModal()'>{{ingredient.ingredient.name}}</a> :
+						{{ingredient.quantity}} {{ingredient.unitOfMeasurement}}</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
 </div>

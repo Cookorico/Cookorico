@@ -43,15 +43,15 @@ public class MemberDaoTest extends AbstractCookoricoTest {
 	@Parameters
 	public static Collection<Object[]> data() {
 		final Object[][] data = {
-				{ 1, "user", null, null, "user@user.be", null, "Lille" },
+				{ 1, "user", null, null, "user@user.be", null, null },
 				{ 2, "dufaux", "johan", "dufaux", "johan.dufaux@etudiant.univ-lille1.fr", "M", "Lille" },
-				{ 3, "cookorico", "cookorico", "cookorico", "cookorico@yopmail.com", "M", "Lille" },
-				{ 4, "Dieulin", "Dieulin", "Mambouana", "dieulin@cookorico.com", "M", "Lille" },
-				{ 5, "Ly4m", "William", "Leemans", "Ly4m@cookorico.com", "M", "Lille" },
-				{ 6, "Mandrivia", "Antoine", "Philippe", "Mandrivia@cookorico.com", "M", "Lille" },
-				{ 7, "sallareznov", "Salla", "Diagne", "sallareznov@cookorico.com", "M", "Lille" },
-				{ 8, "sofianekabylino", "Sofiane", "Yousfi", "sofianekabylino@cookorico.com", "M", "Lille" },
-				{ 9, "ouams", "Ouamar", "Sais", "ouams@gmail.com", "M", "Lille" }
+				{ 3, "cookorico", "cookorico", "cookorico", "cookorico@yopmail.com", "M", "Villeneuve d'Ascq" },
+				{ 4, "Dieulin", "Dieulin", "Mambouana", "dieulin@cookorico.com", "M", "Villeneuve d'Ascq" },
+				{ 5, "Ly4m", "William", "Leemans", "Ly4m@cookorico.com", "M", "Villeneuve d'Ascq" },
+				{ 6, "Mandrivia", "Antoine", "Philippe", "Mandrivia@cookorico.com", "M", null },
+				{ 8, "sallareznov", "Salla", "Diagne", "sallareznov@cookorico.com", "M", null },
+				{ 9, "sofianekabylino", "Sofiane", "Yousfi", "sofianekabylino@cookorico.com", "M", null },
+				{ 7, "ouams", "Ouamar", "Sais", "ouams@gmail.com", "M", null }
 			};
 		return Arrays.asList(data);
 	}
