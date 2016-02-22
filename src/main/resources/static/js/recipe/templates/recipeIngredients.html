@@ -10,9 +10,8 @@
 		<div class="list-group-item">
 			<div class="list-group-item-text">
 				<ul>
-
 					<li ng-repeat="ingredient in recipe.ingredients"><a
-						ng-click='toggleModal()'>{{ingredient.ingredient.name}}</a> :
+						ng-click='toggleModal(ingredient.ingredient.idIngredient, ingredient.ingredient.name)'>{{ingredient.ingredient.name}}  </a> :
 						{{ingredient.quantity}} {{ingredient.unitOfMeasurement}}</li>
 				</ul>
 			</div>

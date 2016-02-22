@@ -33,7 +33,6 @@ public class ProducerServiceImpl implements ProducerService {
 
 	@Override
 	public List<Producer> getProducersByIngredient(int idIngredient) {
-		
 		return producerdao.getProducersByIngredient(idIngredient);
 	}
 
