@@ -42,17 +42,12 @@
 	<select id="getAllProducers" resultMap="producerResultMap">
 		<include refid="select_all" />
 	</select>
-	
-	<select id="getProducerByIngredientId" parameterType="int" resultMap="producerResultMap">
-	</select>
 
 	<select id="getProducersByIngredient" resultMap="producerResultMap"
 		parameterType="int">
-		SELECT * FROM producer LEFT JOIN ingredient_of_producer
-		ON
-		iop_fk_id_producer=prd_id_producer LEFT JOIN ingredient ON
-		iop_fk_id_ingredient=igd_id_ingredient WHERE igd_id_ingredient =
-		#{idIngredient};
+		SELECT prd_id_producer, prd_city, prd_name, prd_description, prd_picpath
+		FROM producer LEFT JOIN ingredient_of_producer on iop_fk_id_producer =
+		prd_id_producer where iop_fk_id_ingredient = #{idIngredient}
 	</select>
 
 	<select id="getProducerById" resultMap="producerResultMap"

@@ -46,7 +46,7 @@ INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_P
 'Johan','Un producteur toujours souriant', 'images/producteur2.png');
 INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (3,'Lille',
-'Antoinne','Un producteur parfois nerveux', 'images/producteur3.png');
+'Antoine','Un producteur parfois nerveux', 'images/producteur3.png');
 INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_PICPATH) VALUES
 (4,'Bruxelles',
 'Will','Un producteur de pommes de terre reconnu', 'images/producteur4.png');

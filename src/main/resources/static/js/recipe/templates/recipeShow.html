@@ -27,9 +27,18 @@
 		</div>
 	</div>
 	<div class="row">
-		<modal-dialog show='modalShown' width='400px' height='60%'>
-		<p>Modal Content Goes here {{modalShown}}
-		<p>
+		<modal-dialog class="text-center" show='modalShown' width='400px'
+			height='60%'>
+		<h3 class="text-center">Producteurs de {{ingredientName}} :</h3>
+			<ul>
+				<li ng-repeat="producer in producers"><a
+					ui-sref="producer({idProducer: '{{producer.idProducer}}'})">{{producer.name}}</a>
+					de {{producer.city}}</li>
+			</ul>
+		<div ng-hide="producers.length">
+		<p>Aucun producteur de cet ingredient n'est renseigné sur le site</p>
+		</div>
+
 		</modal-dialog>
 	</div>
 

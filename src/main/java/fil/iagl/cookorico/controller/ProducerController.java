@@ -51,7 +51,6 @@ public class ProducerController {
 	 */
 	@RequestMapping(value="/producers/ingredient/{idIngredient}", method = RequestMethod.GET)
 	public @ResponseBody List<Producer> getProducersByIngredient (@PathVariable int idIngredient){
-		System.out.println("******* "+ idIngredient);
 		return producerService.getProducersByIngredient(idIngredient);
 	}
 	
