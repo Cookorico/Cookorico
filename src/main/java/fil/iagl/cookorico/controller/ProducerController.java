@@ -84,11 +84,14 @@ public class ProducerController {
 		return producer;
 	}
 	
-	@RequestMapping(value = "/producer/addProduct/", method = RequestMethod.POST)
+	@RequestMapping(value = "/producer/addProduct", method = RequestMethod.POST)
 	public void addProduct(@RequestBody ModelMap model){
 		
 		int id_ingredient = Integer.parseInt(String.valueOf(model.get("id_ingredient")));
 		int id_producer = Integer.parseInt(String.valueOf(model.get("id_producer")));
+		
+		System.out.println("ingredient : " + id_ingredient);
+		System.out.println("producer : " + id_producer);
 		
 		producerService.addProduct(id_ingredient, id_producer);
 	}

@@ -49,6 +49,6 @@ public class ProducerServiceImpl implements ProducerService {
 	}
 	
 	public void addProduct(int id_ingredient, int id_producer){
-		producerdao.addProduct(id_ingredient, id_producer);
+		producerdao.addIngredientOfProduct(id_ingredient, id_producer);
 	}
 }

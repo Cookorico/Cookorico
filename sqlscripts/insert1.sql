@@ -51,6 +51,8 @@ INSERT INTO PRODUCER(prd_id_producer, PRD_CITY, PRD_NAME, PRD_DESCRIPTION, PRD_P
 (4,'Bruxelles',
 'Will','Un producteur de pommes de terre reconnu', 'images/producteur4.png');
 
+/*------------------- MAJ MEMBER ACCORDING TO PRODUCER ----------------- */
+
 
 /* -------------------- INSERT INGREDIENT -------------------- */
 INSERT INTO INGREDIENT(igd_id_ingredient,IGD_NAME,IGD_DESCRIPTION) VALUES(1,'Banane','Fruit courbé et de couleur jaune');

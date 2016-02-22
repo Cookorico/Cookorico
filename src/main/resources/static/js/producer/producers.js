@@ -24,8 +24,6 @@ producerModule.controller('ProducersCtrl', function($scope, $http) {
 producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$rootScope', function ($scope, $stateParams, $http, $rootScope, auth, cssInjector) {
     
 	
-	var ingredients = [{'name':'carottes'}, {'name':'oeuf'}]
-	$scope.producer = {'name':'Antoine', 'city':'Lille', 'description': 'blablalblabla', 'ingredients':ingredients}
 	
 	$scope.inputIngredient = '';
 	
@@ -45,6 +43,7 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
 	    url: '/ingredients?mainpic=true'
 	  }).success(function (data, status, headers, config) {
 		    $scope.ingredients = data;
+		    console.log(data);
 	  })
 	  .error(function (data, status, headers, config) {
 	  });
@@ -57,7 +56,22 @@ producerModule.controller('ProducerCtrl',  ['$scope','$stateParams','$http', '$r
 	}
 	
 	$scope.addProduct = function(ingredient){
-		
+		console.log(ingredient);
+		console.log($scope.producer);
+		var ids = {"id_ingredient":ingredient.idIngredient, "id_producer":$scope.producer.idProducer}
+	   console.log(ids);
+		$http({
+		    method: 'POST',
+		    url: '/producer/addProduct',
+		    data: angular.toJson(ids)
+		  }).success(function (data, status, headers, config) {
+			  console.log("succes !");
+		  })
+		  .error(function (data, status, headers, config) {
+			  console.log(ids);
+		  });
+		  $scope.inputIngredient = "";
+
 	}
 	
 }]);

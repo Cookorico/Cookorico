@@ -20,5 +20,5 @@ public interface ProducerDao {
 	
 	List<Producer> getRandomProducers(int nb);
 	
-	void addProduct(int id_ingredient, int id_producer);
+	void addIngredientOfProduct(int id_ingredient, int id_producer);
 }
